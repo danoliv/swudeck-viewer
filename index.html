@@ -18,16 +18,84 @@
             padding: 10px; 
             background: white;
             position: relative;
-        }
-        .card img { 
-            width: 100%; 
-            height: auto; 
-            border-radius: 3px;
             cursor: pointer;
-            transition: filter 0.2s ease;
+            transition: filter 0.2s ease, transform 0.2s ease;
         }
-        .card.selected img {
-            filter: grayscale(100%) brightness(70%);
+        .card-images {
+            position: relative;
+            width: 100%;
+            margin-bottom: 10px;
+            perspective: 1000px;
+            height: 0;
+            padding-bottom: 170%; /* Taller aspect ratio for leaders */
+        }
+        .card-images-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card.flipped .card-images-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+        }
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 3px;
+        }
+        .card-back img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 3px;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+        }
+        .flip-button {
+            position: static;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin-left: auto;
+        }
+        .flip-button:hover {
+            background: rgba(0, 0, 0, 0.95);
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        }
+        .card-content {
+            position: relative;
+            z-index: 2;
+            background: white;
+        }
+        .card.selected {
+            filter: grayscale(100%) brightness(95%);
+            transform: scale(0.98);
         }
         .card-name { font-weight: bold; margin: 8px 0; }
         .card-id { 
@@ -39,6 +107,10 @@
             background: #f5f5f5;
             border-radius: 3px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
         .loading { color: #666; margin-left: 10px; }
         .error { color: red; margin-top: 10px; }
@@ -54,9 +126,9 @@
         }
         .deck-header {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding: 15px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 20px;
             background: #f8f8f8;
             border-radius: 4px;
             margin-bottom: 20px;
@@ -176,6 +248,61 @@
             right: 0;
             bottom: 0;
             z-index: 0;
+        }
+        .sort-controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .sort-button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+        .sort-button:hover {
+            background: #f0f0f0;
+            transform: translateY(-1px);
+            border-color: #0066cc;
+            color: #0066cc;
+        }
+        .sort-button.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+            box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+        }
+        .sort-label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        /* Make leader and base cards bigger */
+        .deck-header .card {
+            max-width: 800px; /* Much larger max width */
+            margin: 0 auto;
+            width: 100%;
+        }
+        .deck-header .card-images {
+            padding-bottom: 170%; /* Taller aspect ratio for leaders */
+        }
+        @media (max-width: 2000px) {
+            .deck-header .card {
+                max-width: 600px;
+            }
+        }
+        @media (max-width: 1600px) {
+            .deck-header .card {
+                max-width: 500px;
+            }
         }
     </style>
 </head>
@@ -326,6 +453,8 @@
                         throw new Error(`Invalid data format for set ${set}: expected array in data property`);
                     }
                     
+                    console.log(`Successfully loaded set ${set} with ${cards.length} cards`);
+                    
                     // Index cards by their number for faster lookup
                     cardSets[set] = {};
                     cards.forEach(card => {
@@ -336,7 +465,6 @@
                         }
                     });
                     
-                    console.log(`Successfully loaded set ${set} with ${data.length} cards`);
                     return cardSets[set];
                 } catch (error) {
                     console.error(`Error loading set ${set}:`, error);
@@ -371,6 +499,7 @@
             try {
                 const setData = await loadCardSet(set);
                 if (!setData) {
+                    console.error(`Set ${set} not found`);
                     throw new Error(`Set ${set} not found`);
                 }
 
@@ -381,8 +510,17 @@
                         id: cardId,
                         Name: cardId,
                         Set: set,
-                        Number: number
+                        Number: number,
+                        Type: 'Unknown'
                     };
+                }
+
+                // Add the card ID to the data
+                cardData.id = cardId;
+                
+                // Ensure we have a Type field
+                if (!cardData.Type) {
+                    cardData.Type = 'Unknown';
                 }
 
                 return cardData;
@@ -392,7 +530,8 @@
                     id: cardId,
                     Name: cardId,
                     Set: set,
-                    Number: number
+                    Number: number,
+                    Type: 'Unknown'
                 };
             }
         }
@@ -438,7 +577,7 @@
 
                 // Add to recent decks
                 addToRecentDecks(urlInput, deckData);
-
+                
                 // Process cards
                 const grouped = groupCards(deckData.deck);
                 await displayDeck(deckData, grouped);
@@ -498,6 +637,17 @@
             const { metadata, leader, secondleader, base } = deckData;
             const deckUrl = document.getElementById('deckUrl').value.trim();
             let html = `<h2><a href="${deckUrl}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px dotted #666;">${metadata?.name || 'Unnamed Deck'}</a></h2>`;
+
+            // Add sorting controls
+            html += `
+            <div class="sort-controls">
+                <span class="sort-label">Group by:</span>
+                <button class="sort-button active" onclick="resortCards('set', this)">Set & Number</button>
+                <button class="sort-button" onclick="resortCards('cost', this)">Cost</button>
+                <button class="sort-button" onclick="resortCards('aspect', this)">Aspect</button>
+                <button class="sort-button" onclick="resortCards('type', this)">Card Type</button>
+                <button class="sort-button" onclick="resortCards('trait', this)">Traits</button>
+            </div>`;
             
             // Display leaders and base in the same grid
             if (leader || secondleader || base) {
@@ -518,30 +668,234 @@
                 html += '</div>';
             }
 
-            // Process main deck sets
+            // Store the grouped cards for resorting
+            window.currentDeckCards = [];
             for (const set of Object.keys(grouped)) {
-                html += await buildSetHTML(set, grouped[set]);
+                for (const card of grouped[set]) {
+                    const cardData = await fetchCardData(card.id);
+                    window.currentDeckCards.push({
+                        id: card.id,
+                        count: card.count,
+                        data: cardData
+                    });
+                }
             }
+
+            // Initial sort by set
+            html += await displaySortedCards('set');
 
             output.innerHTML = html;
         }
 
-        async function buildSetHTML(setCode, cardRefs) {
-            // Fetch all cards in parallel
-            const cardPromises = cardRefs.map(async ref => {
-                const cardData = await fetchCardData(ref.id);
-                return buildCardHTML(ref.id, cardData, ref.count);
+        async function displaySortedCards(sortType) {
+            if (!window.currentDeckCards) return '';
+
+            let sortedCards;
+            switch (sortType) {
+                case 'cost':
+                    // Group by cost
+                    const costGroups = {};
+                    window.currentDeckCards.forEach(card => {
+                        const cost = card.data.Cost !== undefined ? card.data.Cost : 'X';
+                        if (!costGroups[cost]) costGroups[cost] = [];
+                        costGroups[cost].push(card);
+                    });
+                    
+                    let html = '';
+                    Object.keys(costGroups).sort((a, b) => {
+                        if (a === 'X') return 1;
+                        if (b === 'X') return -1;
+                        return parseInt(a) - parseInt(b);
+                    }).forEach(cost => {
+                        html += `
+                            <div class="set-group">
+                                <div class="set-header">Cost: ${cost}</div>
+                                <div class="card-grid">
+                                    ${costGroups[cost].map(card => 
+                                        buildCardHTML(card.id, card.data, card.count)
+                                    ).join('')}
+                                </div>
+                            </div>`;
+                    });
+                    return html;
+
+                case 'aspect':
+                    // Group by aspect
+                    const aspectGroups = {};
+                    window.currentDeckCards.forEach(card => {
+                        const aspects = card.data.Aspects || ['None'];
+                        aspects.forEach(aspect => {
+                            if (!aspectGroups[aspect]) aspectGroups[aspect] = [];
+                            aspectGroups[aspect].push(card);
+                        });
+                    });
+                    
+                    return Object.keys(aspectGroups).sort().map(aspect => `
+                        <div class="set-group">
+                            <div class="set-header">${aspect}</div>
+                            <div class="card-grid">
+                                ${aspectGroups[aspect].map(card => 
+                                    buildCardHTML(card.id, card.data, card.count)
+                                ).join('')}
+                            </div>
+                        </div>`
+                    ).join('');
+
+                case 'type':
+                    // Group by card type with space/ground separation
+                    const typeGroups = {};
+                    window.currentDeckCards.forEach(card => {
+                        let type = card.data.Type || 'Unknown';
+                        console.log('Card:', card.data.Name, 'Type:', type, 'Arenas:', card.data.Arenas);
+                        
+                        // Split units into Space and Ground based on Arenas field
+                        if (type === 'Unit') {
+                            if (card.data.Arenas && card.data.Arenas.includes('Space')) {
+                                type = 'Space Unit';
+                            } else {
+                                type = 'Ground Unit';
+                            }
+                        }
+                        if (!typeGroups[type]) typeGroups[type] = [];
+                        typeGroups[type].push(card);
+                    });
+                    
+                    console.log('Final groups:', typeGroups);
+                    
+                    // Define type order with Ground Units first
+                    const typeOrder = ['Ground Unit', 'Space Unit', 'Event', 'Upgrade', 'Unknown'];
+                    return typeOrder
+                        .filter(type => typeGroups[type] && typeGroups[type].length > 0)
+                        .map(type => `
+                            <div class="set-group">
+                                <div class="set-header">${type} (${typeGroups[type].length})</div>
+                                <div class="card-grid">
+                                    ${typeGroups[type].map(card => 
+                                        buildCardHTML(card.id, card.data, card.count)
+                                    ).join('')}
+                                </div>
+                            </div>`
+                        ).join('');
+
+                case 'trait':
+                    // Group by traits
+                    const traitGroups = {};
+                    window.currentDeckCards.forEach(card => {
+                        console.log('Processing card:', card.data.Name);
+                        console.log('Raw Traits:', card.data.Traits);
+                        
+                        // Handle traits that are already an array or convert string to array
+                        const traits = Array.isArray(card.data.Traits) 
+                            ? card.data.Traits 
+                            : (card.data.Traits || '').split(',').map(t => t.trim());
+                        
+                        // Filter out empty traits
+                        const validTraits = traits.filter(t => t);
+                        
+                        console.log('Processed Traits:', validTraits);
+                        
+                        if (validTraits.length === 0) {
+                            // Handle cards with no traits
+                            if (!traitGroups['No Traits']) traitGroups['No Traits'] = [];
+                            traitGroups['No Traits'].push(card);
+                            console.log('Added to No Traits group');
+                        } else {
+                            // Add card to each of its trait groups
+                            validTraits.forEach(trait => {
+                                if (!traitGroups[trait]) {
+                                    traitGroups[trait] = [];
+                                    console.log('Created new trait group:', trait);
+                                }
+                                traitGroups[trait].push(card);
+                                console.log('Added to trait group:', trait);
+                            });
+                        }
+                    });
+                    
+                    console.log('Final trait groups:', traitGroups);
+                    
+                    // Sort trait groups alphabetically, but put "No Traits" at the end
+                    const sortedTraits = Object.keys(traitGroups)
+                        .sort((a, b) => {
+                            if (a === 'No Traits') return 1;
+                            if (b === 'No Traits') return -1;
+                            return a.localeCompare(b);
+                        });
+
+                    console.log('Sorted traits:', sortedTraits);
+
+                    return sortedTraits
+                        .map(trait => `
+                            <div class="set-group">
+                                <div class="set-header">${trait} (${traitGroups[trait].length})</div>
+                                <div class="card-grid">
+                                    ${traitGroups[trait].map(card => 
+                                        buildCardHTML(card.id, card.data, card.count)
+                                    ).join('')}
+                                </div>
+                            </div>`
+                        ).join('');
+
+                default: // 'set'
+                    // Group by set
+                    const setGroups = {};
+                    window.currentDeckCards.forEach(card => {
+                        const [set] = card.id.split('_');
+                        if (!setGroups[set]) setGroups[set] = [];
+                        setGroups[set].push(card);
+                    });
+                    
+                    // Use the specified set order
+                    const setOrder = ['SOR', 'SHD', 'TWI', 'JTL'];
+                    return setOrder.filter(set => setGroups[set]).map(set => `
+                        <div class="set-group">
+                            <div class="set-header">${set}</div>
+                            <div class="card-grid">
+                                ${setGroups[set].map(card => 
+                                    buildCardHTML(card.id, card.data, card.count)
+                                ).join('')}
+                            </div>
+                        </div>`
+                    ).join('');
+            }
+        }
+
+        async function resortCards(sortType, clickedButton) {
+            // Update active button state
+            document.querySelectorAll('.sort-button').forEach(button => {
+                button.classList.remove('active');
             });
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
 
-            const cardHtml = await Promise.all(cardPromises);
+            // Store currently selected cards by their IDs
+            const selectedCardIds = new Set(
+                Array.from(document.querySelectorAll('.card.selected'))
+                    .map(card => card.getAttribute('data-card-id'))
+            );
 
-            return `
-                <div class="set-group">
-                    <div class="set-header">${setCode}</div>
-                    <div class="card-grid">
-                        ${cardHtml.join('')}
-                    </div>
-                </div>`;
+            const mainContent = await displaySortedCards(sortType);
+            
+            // Find the deck-header (leaders & base section)
+            const deckHeader = document.querySelector('.deck-header');
+            if (deckHeader) {
+                // Replace everything after the deck-header
+                let next = deckHeader.nextElementSibling;
+                while (next) {
+                    const current = next;
+                    next = current.nextElementSibling;
+                    current.remove();
+                }
+                deckHeader.insertAdjacentHTML('afterend', mainContent);
+
+                // Restore selected states
+                document.querySelectorAll('.card').forEach(card => {
+                    if (selectedCardIds.has(card.getAttribute('data-card-id'))) {
+                        card.classList.add('selected');
+                    }
+                });
+            }
         }
 
         function buildCardHTML(cardId, cardData = {}, count = 1) {
@@ -551,29 +905,66 @@
             if (cardData.Power !== undefined) stats.push(['Power', cardData.Power]);
             if (cardData.HP !== undefined) stats.push(['HP', cardData.HP]);
 
+            const formattedId = cardId.replace('_', ' ');
+            const isDoubleSided = cardData.DoubleSided === true;
+            
             return `
-            <div class="card" onclick="this.classList.toggle('selected')">
-                <div class="card-id">${cardId.replace('_', ' ')}</div>
-                ${cardData.FrontArt ? 
-                    `<img src="${cardData.FrontArt}" alt="${cardData.Name || cardId}">` : 
-                    `<div class="card-placeholder">${cardId}</div>`}
-                <div class="card-name">${cardData.Name || cardId}${count > 1 ? ` (${count})` : ''}</div>
-                ${aspects.length ? `
-                    <div class="aspects">
-                        ${aspects.map(aspect => `
-                            <span class="aspect ${aspect}">${aspect}</span>
-                        `).join('')}
+            <div class="card" 
+                onclick="this.classList.toggle('selected')" 
+                data-card-id="${formattedId}">
+                <div class="card-id">
+                    <span>${formattedId}</span>
+                    ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
+                </div>
+                <div class="card-images">
+                    <div class="card-images-inner">
+                        <div class="card-front">
+                            ${cardData.FrontArt ? 
+                                `<img src="${cardData.FrontArt}" alt="${cardData.Name || cardId} (Front)">` : 
+                                `<div class="card-placeholder">${cardId}</div>`}
+                        </div>
+                        ${isDoubleSided && cardData.BackArt ? `
+                            <div class="card-back">
+                                <img src="${cardData.BackArt}" alt="${cardData.Name || cardId} (Back)">
+                            </div>
+                        ` : ''}
                     </div>
-                ` : ''}
-                ${stats.length ? `
-                    <div class="card-stats">
-                        ${stats.map(([label, value]) => `
-                            <span class="stat">${label}: ${value}</span>
-                        `).join('')}
-                    </div>
-                ` : ''}
+                </div>
+                <div class="card-content">
+                    <div class="card-name">${cardData.Name || cardId}${count > 1 ? ` (${count})` : ''}</div>
+                    ${aspects.length ? `
+                        <div class="aspects">
+                            ${aspects.map(aspect => `
+                                <span class="aspect ${aspect}">${aspect}</span>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                    ${stats.length ? `
+                        <div class="card-stats">
+                            ${stats.map(([label, value]) => `
+                                <span class="stat">${label}: ${value}</span>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
             </div>`;
         }
+
+        // Add a helper function to find elements by text content
+        Document.prototype.querySelector = (function(querySelector) {
+            return function(selector) {
+                if (selector.includes(':contains(')) {
+                    const match = selector.match(/:contains\('([^']+)'\)/);
+                    if (match) {
+                        const text = match[1];
+                        const baseSelector = selector.replace(/:contains\('[^']+'\)/, '');
+                        const elements = this.querySelectorAll(baseSelector);
+                        return Array.from(elements).find(el => el.textContent.trim() === text);
+                    }
+                }
+                return querySelector.call(this, selector);
+            };
+        })(Document.prototype.querySelector);
 
         // Initialize recent decks UI
         updateRecentDecksUI();
