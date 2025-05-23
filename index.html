@@ -20,14 +20,15 @@
             position: relative;
             cursor: pointer;
             transition: filter 0.2s ease, transform 0.2s ease;
+            text-align: center;
         }
         .card-images {
             position: relative;
             width: 100%;
-            margin-bottom: 10px;
+            margin: 5px 0;
             perspective: 1000px;
             height: 0;
-            padding-bottom: 170%; /* Taller aspect ratio for leaders */
+            padding-bottom: 140%;
         }
         .card-images-inner {
             position: absolute;
@@ -74,9 +75,9 @@
             position: static;
             background: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 6px 12px;
+            padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.85em;
+            font-size: 0.75em;
             border: none;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -96,8 +97,8 @@
         .card.selected {
             filter: grayscale(100%) brightness(95%);
             transform: scale(0.98);
+            opacity: 0.7;
         }
-        .card-name { font-weight: bold; margin: 8px 0; }
         .card-id { 
             font-size: 1.2em; 
             font-weight: bold;
@@ -111,6 +112,11 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+        }
+        .card-name {
+            font-weight: bold;
+            margin: 8px 0;
+            text-align: center;
         }
         .loading { color: #666; margin-left: 10px; }
         .error { color: red; margin-top: 10px; }
@@ -127,8 +133,8 @@
         .deck-header {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 20px;
+            gap: 20px;
+            padding: 10px;
             background: #f8f8f8;
             border-radius: 4px;
             margin-bottom: 20px;
@@ -145,18 +151,35 @@
             display: flex;
             gap: 10px;
             margin: 5px 0;
-            font-size: 0.9em;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .stat {
             background: #eee;
-            padding: 2px 6px;
+            padding: 2px 8px;
             border-radius: 3px;
+            color: white;
+            font-size: 1.1em;
+        }
+        .stat[data-type="Cost"] {
+            background: #FFB300; /* Yellow for cost */
+        }
+        .stat[data-type="Power"] {
+            background: #D32F2F; /* Red for power */
+        }
+        .stat[data-type="HP"] {
+            background: #1976D2; /* Blue for HP */
+        }
+        .stat-value {
+            font-weight: bold;
+            margin-left: 2px;
         }
         .aspects {
             display: flex;
             flex-wrap: wrap;
             gap: 5px;
             margin: 5px 0;
+            justify-content: center;
         }
         .aspect {
             padding: 2px 8px;
@@ -164,12 +187,12 @@
             font-size: 0.8em;
             color: white;
         }
-        .aspect.Heroism { background: #FFFFFF; color: #000000; } /* White with black text */
-        .aspect.Vigilance { background: #0066CC; } /* Blue */
-        .aspect.Cunning { background: #FFD700; color: #000000; } /* Yellow with black text */
-        .aspect.Command { background: #00A651; } /* Green */
-        .aspect.Aggression { background: #FF0000; } /* Red */
-        .aspect.Villainy { background: #000000; } /* Black */
+        .aspect.Heroism { background: #FFFFFF; color: #000000; border: 1px solid #000000; } /* White with black text and border */
+        .aspect.Vigilance { background: #0066CC; } /* Official SWU Blue */
+        .aspect.Cunning { background: #FFD700; color: #000000; } /* Official SWU Yellow */
+        .aspect.Command { background: #00A651; } /* Official SWU Green */
+        .aspect.Aggression { background: #FF0000; } /* Official SWU Red */
+        .aspect.Villainy { background: #000000; } /* Official SWU Black */
         
         @media (max-width: 600px) {
             input { width: 100%; margin-bottom: 10px; }
@@ -292,7 +315,8 @@
             width: 100%;
         }
         .deck-header .card-images {
-            padding-bottom: 170%; /* Taller aspect ratio for leaders */
+            padding-bottom: 140%; /* Same aspect ratio as other cards */
+            margin: 5px 0; /* Reduced vertical margin */
         }
         @media (max-width: 2000px) {
             .deck-header .card {
@@ -351,14 +375,22 @@
         }
 
         // Add deck to recent list
-        function addToRecentDecks(url, deckData) {
+        async function addToRecentDecks(url, deckData) {
             const now = new Date();
             const dateStr = now.toLocaleDateString();
             
             // Get leader art URL and base aspect
             console.log('Deck data:', deckData);
             const leaderArt = deckData.leader?.FrontArt || (deckData.leader ? `https://cdn.swu-db.com/images/cards/${deckData.leader.id.replace('_', '/')}.png` : null);
-            const baseAspect = deckData.base?.Aspects?.[0] || 'Command';
+            
+            // Fetch base card data to get correct aspect
+            let baseAspect = 'Command'; // Default
+            if (deckData.base?.id) {
+                const baseCardData = await fetchCardData(deckData.base.id);
+                if (baseCardData?.Aspects?.length > 0) {
+                    baseAspect = baseCardData.Aspects[0];
+                }
+            }
             
             console.log('Leader art:', leaderArt);
             console.log('Base aspect:', baseAspect);
@@ -375,7 +407,7 @@
                 date: dateStr 
             });
             
-            // Keep only last 5
+            // Keep only last 8 recent decks
             if (recentDecks.length > MAX_RECENT_DECKS) {
                 recentDecks = recentDecks.slice(0, MAX_RECENT_DECKS);
             }
@@ -605,7 +637,7 @@
                 }
 
                 // Add to recent decks
-                addToRecentDecks(`https://swudb.com/deck/${deckId}`, deckData);
+                await addToRecentDecks(`https://swudb.com/deck/${deckId}`, deckData);
                 
                 // Process cards
                 const grouped = groupCards(deckData.deck);
@@ -949,6 +981,14 @@
                     <span>${formattedId}</span>
                     ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
                 </div>
+                <div class="card-name">${cardData.Name || cardId}${count > 1 ? ` (${count})` : ''}</div>
+                ${aspects.length ? `
+                    <div class="aspects">
+                        ${aspects.map(aspect => `
+                            <span class="aspect ${aspect}">${aspect}</span>
+                        `).join('')}
+                    </div>
+                ` : ''}
                 <div class="card-images">
                     <div class="card-images-inner">
                         <div class="card-front">
@@ -964,18 +1004,10 @@
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-name">${cardData.Name || cardId}${count > 1 ? ` (${count})` : ''}</div>
-                    ${aspects.length ? `
-                        <div class="aspects">
-                            ${aspects.map(aspect => `
-                                <span class="aspect ${aspect}">${aspect}</span>
-                            `).join('')}
-                        </div>
-                    ` : ''}
                     ${stats.length ? `
                         <div class="card-stats">
                             ${stats.map(([label, value]) => `
-                                <span class="stat">${label}: ${value}</span>
+                                <span class="stat" data-type="${label}">${label}: <span class="stat-value">${value}</span></span>
                             `).join('')}
                         </div>
                     ` : ''}
