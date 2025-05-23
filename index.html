@@ -12,7 +12,16 @@
         .card { border: 1px solid #eee; border-radius: 4px; padding: 10px; background: white; }
         .card img { width: 100%; height: auto; border-radius: 3px; }
         .card-name { font-weight: bold; margin: 8px 0; }
-        .card-id { color: #666; font-size: 0.9em; }
+        .card-id { 
+            font-size: 1.2em; 
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            padding: 5px;
+            background: #f5f5f5;
+            border-radius: 3px;
+            text-align: center;
+        }
         .loading { color: #666; margin-left: 10px; }
         .error { color: red; margin-top: 10px; }
         
@@ -51,16 +60,90 @@
             font-size: 0.8em;
             color: white;
         }
-        .aspect.Heroism { background: #4a90e2; }
-        .aspect.Vigilance { background: #7ed321; }
-        .aspect.Cunning { background: #9013fe; }
-        .aspect.Command { background: #f5a623; }
-        .aspect.Aggression { background: #d0021b; }
-        .aspect.Villainy { background: #4a4a4a; }
+        .aspect.Heroism { background: #FFFFFF; color: #000000; } /* White with black text */
+        .aspect.Vigilance { background: #0066CC; } /* Blue */
+        .aspect.Cunning { background: #FFD700; color: #000000; } /* Yellow with black text */
+        .aspect.Command { background: #00A651; } /* Green */
+        .aspect.Aggression { background: #FF0000; } /* Red */
+        .aspect.Villainy { background: #000000; } /* Black */
         
         @media (max-width: 600px) {
             input { width: 100%; margin-bottom: 10px; }
             .card-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+        }
+
+        /* Recent decks styles */
+        .recent-decks {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 4px;
+        }
+        .recent-decks-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .recent-decks-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 15px 0;
+        }
+        .recent-deck-btn {
+            padding: 16px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 142px;  /* 110px + 16px padding on each side */
+            position: relative;
+            overflow: hidden;
+        }
+        .recent-deck-btn img {
+            width: 110px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .recent-deck-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+        }
+        .recent-deck-name {
+            font-weight: bold;
+            margin-bottom: 12px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.4em;
+            min-height: 2.4em;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+        .recent-deck-name span {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2;
+        }
+        .recent-deck-base-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
         }
     </style>
 </head>
@@ -72,12 +155,84 @@
         <button onclick="loadDeck()">Load Deck</button>
         <span id="loading" class="loading" style="display: none;">Loading...</span>
     </div>
+    <div id="recentDecks" class="recent-decks"></div>
     <div id="error" class="error"></div>
     <div id="output"></div>
 <script>
         // Use only AllOrigins as the CORS proxy
         const PROXY = 'https://api.allorigins.win/raw?url=';
         const TIMEOUT_MS = 10000; // 10 second timeout
+
+        // Recent decks storage
+        const MAX_RECENT_DECKS = 5;
+        let recentDecks = JSON.parse(localStorage.getItem('recentDecks') || '[]');
+
+        // Update recent decks UI
+        function updateRecentDecksUI() {
+            const recentDecksDiv = document.getElementById('recentDecks');
+            if (recentDecks.length === 0) {
+                recentDecksDiv.style.display = 'none';
+                return;
+            }
+
+            let html = '<div class="recent-decks-title">Recent Decks:</div><div class="recent-decks-list">';
+            recentDecks.forEach((deck, index) => {
+                const leaderImg = deck.leaderArt ? 
+                    `<img src="${deck.leaderArt}" alt="Leader" onerror="this.style.display='none'">` : '';
+                
+                html += `<button onclick="loadDeckFromUrl('${deck.url}')" class="recent-deck-btn">
+                    <div class="aspect ${deck.baseAspect} recent-deck-base-bg"></div>
+                    <div class="recent-deck-name"><span>${deck.name || 'Unnamed Deck'}</span></div>
+                    ${leaderImg}
+                </button>`;
+            });
+            html += '</div>';
+            recentDecksDiv.innerHTML = html;
+            recentDecksDiv.style.display = 'block';
+        }
+
+        // Add deck to recent list
+        function addToRecentDecks(url, deckData) {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString();
+            
+            // Get leader art URL and base aspect
+            console.log('Deck data:', deckData);
+            const leaderArt = deckData.leader?.FrontArt || (deckData.leader ? `https://cdn.swu-db.com/images/cards/${deckData.leader.id.replace('_', '/')}.png` : null);
+            const baseAspect = deckData.base?.Aspects?.[0] || 'Command';
+            
+            console.log('Leader art:', leaderArt);
+            console.log('Base aspect:', baseAspect);
+            
+            // Remove if already exists
+            recentDecks = recentDecks.filter(deck => deck.url !== url);
+            
+            // Add to front of array
+            recentDecks.unshift({ 
+                url, 
+                name: deckData.metadata?.name || 'Unnamed Deck',
+                leaderArt,
+                baseAspect,
+                date: dateStr 
+            });
+            
+            // Keep only last 5
+            if (recentDecks.length > MAX_RECENT_DECKS) {
+                recentDecks = recentDecks.slice(0, MAX_RECENT_DECKS);
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('recentDecks', JSON.stringify(recentDecks));
+            
+            // Update UI
+            updateRecentDecksUI();
+        }
+
+        // Load deck from URL
+        async function loadDeckFromUrl(url) {
+            document.getElementById('deckUrl').value = url;
+            await loadDeck();
+        }
 
         // Utility function to retry failed fetch requests
         async function fetchWithRetry(url, retries = 3) {
@@ -210,6 +365,7 @@
             }
         }
 
+        // Update the loadDeck function
         async function loadDeck() {
             const urlInput = document.getElementById('deckUrl').value.trim();
             const output = document.getElementById('output');
@@ -247,6 +403,9 @@
                 if (!deckData.deck) {
                     throw new Error('Invalid deck data format received from server');
                 }
+
+                // Add to recent decks
+                addToRecentDecks(urlInput, deckData);
 
                 // Process cards
                 const grouped = groupCards(deckData.deck);
@@ -286,11 +445,21 @@
                 });
             });
             
-            // Sort sets and cards
-            return Object.keys(sets).sort().reduce((acc, set) => {
-                acc[set] = sets[set].sort((a, b) => a.number - b.number);
-                return acc;
-            }, {});
+            // Sort cards within each set
+            Object.keys(sets).forEach(set => {
+                sets[set].sort((a, b) => a.number - b.number);
+            });
+
+            // Create a new object with sets in the desired order
+            const orderedSets = {};
+            const setOrder = ['SOR', 'SHD', 'TWI', 'JTL'];
+            setOrder.forEach(set => {
+                if (sets[set]) {
+                    orderedSets[set] = sets[set];
+                }
+            });
+
+            return orderedSets;
         }
 
         async function displayDeck(deckData, grouped) {
@@ -358,6 +527,7 @@
 
             return `
             <div class="card">
+                <div class="card-id">${cardId.replace('_', ' ')}</div>
                 ${cardData.FrontArt ? 
                     `<img src="${cardData.FrontArt}" alt="${cardData.Name || cardId}">` : 
                     `<div class="card-placeholder">${cardId}</div>`}
@@ -376,9 +546,11 @@
                         `).join('')}
                     </div>
                 ` : ''}
-                <div class="card-id">${cardId}</div>
             </div>`;
         }
+
+        // Initialize recent decks UI
+        updateRecentDecksUI();
     </script>
 </body>
 </html>
