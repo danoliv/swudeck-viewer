@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SWU Deck Set Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        input { width: 300px; padding: 8px; }
+        button { padding: 8px 16px; background: #0066cc; color: white; border: none; cursor: pointer; }
+        .set-group { margin: 20px 0; border: 1px solid #ddd; border-radius: 4px; }
+        .set-header { background: #f5f5f5; padding: 10px; font-weight: bold; }
+        .card-list { padding: 10px; columns: 3; }
+        .card-id { font-family: monospace; padding: 2px 0; }
+        .error { color: red; margin-top: 10px; }
+        .loading { color: #666; margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>SWU Deck Set Viewer</h1>
+    <div>
+        <input type="text" id="deckUrl" 
+               placeholder="Paste SWUDB deck URL (e.g., https://swudb.com/deck/123...)">
+        <button onclick="loadDeck()">Load Deck</button>
+        <span id="loading" class="loading" style="display: none;">Loading...</span>
+    </div>
+    <div id="error" class="error"></div>
+    <div id="output"></div>
+
+    <script>
+        async function loadDeck() {
+            const urlInput = document.getElementById('deckUrl').value.trim();
+            const output = document.getElementById('output');
+            const errorDiv = document.getElementById('error');
+            const loading = document.getElementById('loading');
+            
+            errorDiv.textContent = '';
+            output.innerHTML = '';
+            loading.style.display = 'inline';
+
+            try {
+                // Extract deck ID from URL
+                const deckId = urlInput.split('/').pop();
+                if (!deckId) throw new Error('Invalid SWUDB URL');
+                
+                // Fetch deck data (Note: Requires CORS proxy)
+                const proxyUrl = 'https://api.allorigins.win/raw?url=';
+                const apiUrl = `https://swudb.com/api/getDeckJson/${deckId}`;
+                const response = await fetch(proxyUrl + encodeURIComponent(apiUrl));
+                
+                if (!response.ok) throw new Error('Deck not found');
+                const deckData = await response.json();
+                
+                displayDeck(deckData);
+            } catch (err) {
+                errorDiv.textContent = `Error: ${err.message}`;
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+
+        function displayDeck(deckData) {
+            const sets = new Map();
+            
+            // Process main deck cards
+            deckData.deck.forEach(card => {
+                const [setCode] = card.id.split('_');
+                if (!sets.has(setCode)) sets.set(setCode, []);
+                sets.get(setCode).push(card.id);
+            });
+
+            // Build HTML output
+            let html = `
+                <h2>${deckData.metadata.name}</h2>
+                <div class="set-group">
+                    <div class="set-header">Leaders & Base</div>
+                    <div class="card-list">
+                        <div class="card-id">Leader 1: ${deckData.leader.id}</div>
+                        <div class="card-id">Leader 2: ${deckData.secondleader.id}</div>
+                        <div class="card-id">Base: ${deckData.base.id}</div>
+                    </div>
+                </div>`;
+
+            // Sort sets alphabetically
+            const sortedSets = [...sets.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+            // Add card groups
+            sortedSets.forEach(([setCode, cards]) => {
+                html += `
+                <div class="set-group">
+                    <div class="set-header">${setCode}</div>
+                    <div class="card-list">
+                        ${cards.sort().map(card => `
+                            <div class="card-id">${card}</div>
+                        `).join('')}
+                    </div>
+                </div>`;
+            });
+
+            document.getElementById('output').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
