@@ -8,9 +8,27 @@
         button { padding: 8px 16px; background: #0066cc; color: white; border: none; cursor: pointer; }
         .set-group { margin: 30px 0; border: 1px solid #ddd; border-radius: 4px; }
         .set-header { background: #f5f5f5; padding: 10px; font-weight: bold; }
-        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 15px; }
-        .card { border: 1px solid #eee; border-radius: 4px; padding: 10px; background: white; }
-        .card img { width: 100%; height: auto; border-radius: 3px; }
+        .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 15px; }
+        @media (max-width: 1000px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 800px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { 
+            border: 1px solid #eee; 
+            border-radius: 4px; 
+            padding: 10px; 
+            background: white;
+            position: relative;
+        }
+        .card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 3px;
+            cursor: pointer;
+            transition: filter 0.2s ease;
+        }
+        .card.selected img {
+            filter: grayscale(100%) brightness(70%);
+        }
         .card-name { font-weight: bold; margin: 8px 0; }
         .card-id { 
             font-size: 1.2em; 
@@ -30,7 +48,21 @@
             background: #f8f8f8; 
             padding: 15px; 
             margin-bottom: 20px; 
-            border-radius: 4px; 
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .deck-header {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .deck-header .section-title {
+            grid-column: 1 / -1;
         }
         .section-title {
             font-size: 1.2em;
@@ -464,13 +496,13 @@
 
         async function displayDeck(deckData, grouped) {
             const { metadata, leader, secondleader, base } = deckData;
-            let html = `<h2>${metadata?.name || 'Unnamed Deck'}</h2>`;
+            const deckUrl = document.getElementById('deckUrl').value.trim();
+            let html = `<h2><a href="${deckUrl}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px dotted #666;">${metadata?.name || 'Unnamed Deck'}</a></h2>`;
             
-            // Display leaders section
-            if (leader || secondleader) {
-                html += '<div class="leaders-section">';
-                html += '<div class="section-title">Leaders</div>';
-                html += '<div class="card-grid">';
+            // Display leaders and base in the same grid
+            if (leader || secondleader || base) {
+                html += '<div class="deck-header">';
+                html += '<div class="section-title">Leaders & Base</div>';
                 if (leader) {
                     const leaderCard = await fetchCardData(leader.id);
                     html += buildCardHTML(leader.id, leaderCard);
@@ -479,17 +511,11 @@
                     const secondLeaderCard = await fetchCardData(secondleader.id);
                     html += buildCardHTML(secondleader.id, secondLeaderCard);
                 }
-                html += '</div></div>';
-            }
-
-            // Display base section
-            if (base) {
-                html += '<div class="base-section">';
-                html += '<div class="section-title">Base</div>';
-                html += '<div class="card-grid">';
-                const baseCard = await fetchCardData(base.id);
-                html += buildCardHTML(base.id, baseCard);
-                html += '</div></div>';
+                if (base) {
+                    const baseCard = await fetchCardData(base.id);
+                    html += buildCardHTML(base.id, baseCard);
+                }
+                html += '</div>';
             }
 
             // Process main deck sets
@@ -526,7 +552,7 @@
             if (cardData.HP !== undefined) stats.push(['HP', cardData.HP]);
 
             return `
-            <div class="card">
+            <div class="card" onclick="this.classList.toggle('selected')">
                 <div class="card-id">${cardId.replace('_', ' ')}</div>
                 ${cardData.FrontArt ? 
                     `<img src="${cardData.FrontArt}" alt="${cardData.Name || cardId}">` : 
