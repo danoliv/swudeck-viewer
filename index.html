@@ -536,7 +536,18 @@
             }
         }
 
-        // Update the loadDeck function
+        // Check for deck ID in URL when page loads
+        window.addEventListener('load', function() {
+            // Check for deck in query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const deckId = urlParams.get('deck');
+            
+            if (deckId) {
+                loadDeckById(deckId);
+            }
+        });
+
+        // Modify the loadDeck function
         async function loadDeck() {
             const urlInput = document.getElementById('deckUrl').value.trim();
             const output = document.getElementById('output');
@@ -557,6 +568,24 @@
                     throw new Error('Invalid SWUDB URL - Could not extract deck ID');
                 }
 
+                await loadDeckById(deckId);
+                
+                // Update URL without reloading the page
+                window.history.pushState({}, '', `?deck=${deckId}`);
+
+            } catch (err) {
+                console.error('Error loading deck:', err);
+                errorDiv.textContent = `Error: ${err.message}. Please verify the deck URL is correct and try again.`;
+                loading.style.display = 'none';
+            }
+        }
+
+        async function loadDeckById(deckId) {
+            const errorDiv = document.getElementById('error');
+            const output = document.getElementById('output');
+            const loading = document.getElementById('loading');
+            
+            try {
                 console.log('Loading deck:', deckId);
                 
                 // Use the CORS proxy for the API endpoint
@@ -576,14 +605,18 @@
                 }
 
                 // Add to recent decks
-                addToRecentDecks(urlInput, deckData);
+                addToRecentDecks(`https://swudb.com/deck/${deckId}`, deckData);
                 
                 // Process cards
                 const grouped = groupCards(deckData.deck);
                 await displayDeck(deckData, grouped);
+                
+                // Update URL without reloading the page
+                window.history.pushState({}, '', `?deck=${deckId}`);
+                
             } catch (err) {
                 console.error('Error loading deck:', err);
-                errorDiv.textContent = `Error: ${err.message}. Please verify the deck URL is correct and try again.`;
+                errorDiv.textContent = `Error: ${err.message}. Please verify the deck ID is correct and try again.`;
             } finally {
                 loading.style.display = 'none';
             }
