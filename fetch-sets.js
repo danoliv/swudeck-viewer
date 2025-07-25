@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 
 // List of all sets
-const SETS = ['SOR', 'SHD', 'JTL', 'TWI'];
+const SETS = ['SOR', 'SHD', 'JTL', 'TWI', 'LOF'];
 
 // Function to fetch data with retries
 function fetchWithRetry(url, retries = 3) {

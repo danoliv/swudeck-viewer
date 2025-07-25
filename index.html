@@ -336,6 +336,7 @@
         <input type="text" id="deckUrl" 
                placeholder="Paste SWUDB deck URL (e.g., https://swudb.com/deck/123...)">
         <button onclick="loadDeck()">Load Deck</button>
+        <button onclick="clearSetCache()" style="background: #ff9800; margin-left: 10px;">Clear All Cache</button>
         <span id="loading" class="loading" style="display: none;">Loading...</span>
     </div>
     <div id="recentDecks" class="recent-decks"></div>
@@ -422,17 +423,25 @@
         // Load deck from URL
         async function loadDeckFromUrl(url) {
             document.getElementById('deckUrl').value = url;
-            await loadDeck();
+            // Estrai il deck ID dall'URL e carica sempre dati freschi
+            const deckId = url.split('/').pop();
+            await loadDeckById(deckId, true); // true = bypass cache
         }
 
         // Utility function to retry failed fetch requests
-        async function fetchWithRetry(url, retries = 3) {
+        async function fetchWithRetry(url, retries = 3, bypassCache = false) {
             for (let i = 0; i < retries; i++) {
                 try {
                     const controller = new AbortController();
                     const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
                     
-                    const response = await fetch(url, { signal: controller.signal });
+                    // Aggiungi parametro per bypassare la cache se richiesto
+                    const fetchUrl = bypassCache ? `${url}${url.includes('?') ? '&' : '?'}_t=${Date.now()}` : url;
+                    
+                    const response = await fetch(fetchUrl, { 
+                        signal: controller.signal,
+                        cache: bypassCache ? 'no-cache' : 'default'
+                    });
                     clearTimeout(timeoutId);
                     
                     if (!response.ok) {
@@ -575,6 +584,8 @@
             const deckId = urlParams.get('deck');
             
             if (deckId) {
+                // Popola il campo input con l'URL completo
+                document.getElementById('deckUrl').value = `https://swudb.com/deck/${deckId}`;
                 loadDeckById(deckId);
             }
         });
@@ -612,16 +623,16 @@
             }
         }
 
-        async function loadDeckById(deckId) {
+        async function loadDeckById(deckId, bypassCache = false) {
             const errorDiv = document.getElementById('error');
             const output = document.getElementById('output');
             const loading = document.getElementById('loading');
             
             try {
-                console.log('Loading deck:', deckId);
+                console.log('Loading deck:', deckId, bypassCache ? '(bypassing cache)' : '');
                 
                 // Use the CORS proxy for the API endpoint
-                const deckData = await fetchWithRetry(`${PROXY}${encodeURIComponent(`https://swudb.com/api/getDeckJson/${deckId}`)}`);
+                const deckData = await fetchWithRetry(`${PROXY}${encodeURIComponent(`https://swudb.com/api/getDeckJson/${deckId}`)}`, 3, bypassCache);
                 
                 if (!deckData) {
                     throw new Error('Failed to load deck data - Server returned empty response');
@@ -641,6 +652,15 @@
                 
                 // Process cards
                 const grouped = groupCards(deckData.deck);
+                console.log('Grouped sets:', grouped);
+                
+                // Log sideboard info
+                console.log('Sideboard data:', deckData.sideboard);
+                if (deckData.sideboard) {
+                    console.log('Sideboard length:', deckData.sideboard.length);
+                    console.log('Sideboard cards:', deckData.sideboard);
+                }
+                
                 await displayDeck(deckData, grouped);
                 
                 // Update URL without reloading the page
@@ -688,9 +708,15 @@
 
             // Create a new object with sets in the desired order
             const orderedSets = {};
-            const setOrder = ['SOR', 'SHD', 'TWI', 'JTL'];
+            const setOrder = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF']; // corretto LOF
             setOrder.forEach(set => {
                 if (sets[set]) {
+                    orderedSets[set] = sets[set];
+                }
+            });
+            // Aggiungi eventuali set non previsti in setOrder
+            Object.keys(sets).forEach(set => {
+                if (!orderedSets[set]) {
                     orderedSets[set] = sets[set];
                 }
             });
@@ -699,7 +725,7 @@
         }
 
         async function displayDeck(deckData, grouped) {
-            const { metadata, leader, secondleader, base } = deckData;
+            const { metadata, leader, secondleader, base, sideboard } = deckData;
             const deckUrl = document.getElementById('deckUrl').value.trim();
             let html = `<h2><a href="${deckUrl}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px dotted #666;">${metadata?.name || 'Unnamed Deck'}</a></h2>`;
 
@@ -735,16 +761,45 @@
 
             // Store the grouped cards for resorting
             window.currentDeckCards = [];
+            const cardMap = new Map(); // Per tenere traccia delle carte uniche
+            
+            // Process main deck cards
             for (const set of Object.keys(grouped)) {
                 for (const card of grouped[set]) {
                     const cardData = await fetchCardData(card.id);
-                    window.currentDeckCards.push({
+                    cardMap.set(card.id, {
                         id: card.id,
                         count: card.count,
+                        sideboardCount: 0,
                         data: cardData
                     });
                 }
             }
+
+            // Add sideboard cards to the same map
+            if (Array.isArray(deckData.sideboard) && deckData.sideboard.length > 0) {
+                const groupedSide = groupCards(deckData.sideboard);
+                for (const set of Object.keys(groupedSide)) {
+                    for (const card of groupedSide[set]) {
+                        if (cardMap.has(card.id)) {
+                            // Carta già presente nel main deck, aggiungi solo il conteggio sideboard
+                            cardMap.get(card.id).sideboardCount = card.count;
+                        } else {
+                            // Carta solo nel sideboard
+                            const cardData = await fetchCardData(card.id);
+                            cardMap.set(card.id, {
+                                id: card.id,
+                                count: 0,
+                                sideboardCount: card.count,
+                                data: cardData
+                            });
+                        }
+                    }
+                }
+            }
+            
+            // Convert map to array
+            window.currentDeckCards = Array.from(cardMap.values());
 
             // Initial sort by set
             html += await displaySortedCards('set');
@@ -755,7 +810,7 @@
         async function displaySortedCards(sortType) {
             if (!window.currentDeckCards) return '';
 
-            let sortedCards;
+            let html = '';
             switch (sortType) {
                 case 'cost':
                     // Group by cost
@@ -766,7 +821,6 @@
                         costGroups[cost].push(card);
                     });
                     
-                    let html = '';
                     Object.keys(costGroups).sort((a, b) => {
                         if (a === 'X') return 1;
                         if (b === 'X') return -1;
@@ -777,7 +831,7 @@
                                 <div class="set-header">Cost: ${cost}</div>
                                 <div class="card-grid">
                                     ${costGroups[cost].map(card => 
-                                        buildCardHTML(card.id, card.data, card.count)
+                                        buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
                                     ).join('')}
                                 </div>
                             </div>`;
@@ -800,7 +854,7 @@
                             <div class="set-header">${aspect}</div>
                             <div class="card-grid">
                                 ${aspectGroups[aspect].map(card => 
-                                    buildCardHTML(card.id, card.data, card.count)
+                                    buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
                                 ).join('')}
                             </div>
                         </div>`
@@ -836,7 +890,7 @@
                                 <div class="set-header">${type} (${typeGroups[type].length})</div>
                                 <div class="card-grid">
                                     ${typeGroups[type].map(card => 
-                                        buildCardHTML(card.id, card.data, card.count)
+                                        buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
                                     ).join('')}
                                 </div>
                             </div>`
@@ -895,7 +949,7 @@
                                 <div class="set-header">${trait} (${traitGroups[trait].length})</div>
                                 <div class="card-grid">
                                     ${traitGroups[trait].map(card => 
-                                        buildCardHTML(card.id, card.data, card.count)
+                                        buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
                                     ).join('')}
                                 </div>
                             </div>`
@@ -910,18 +964,39 @@
                         setGroups[set].push(card);
                     });
                     
-                    // Use the specified set order
-                    const setOrder = ['SOR', 'SHD', 'TWI', 'JTL'];
-                    return setOrder.filter(set => setGroups[set]).map(set => `
-                        <div class="set-group">
-                            <div class="set-header">${set}</div>
-                            <div class="card-grid">
-                                ${setGroups[set].map(card => 
-                                    buildCardHTML(card.id, card.data, card.count)
-                                ).join('')}
-                            </div>
-                        </div>`
-                    ).join('');
+                    // Log per debug
+                    console.log('Set groups for display:', setGroups);
+                    
+                    // Usa lo stesso setOrder di groupCards
+                    const setOrder = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF'];
+                    setOrder.forEach(set => {
+                        if (setGroups[set]) {
+                            html += `
+                                <div class="set-group">
+                                    <div class="set-header">${set}</div>
+                                    <div class="card-grid">
+                                        ${setGroups[set].map(card => 
+                                            buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
+                                        ).join('')}
+                                    </div>
+                                </div>`;
+                        }
+                    });
+                    // Aggiungi eventuali set non previsti in setOrder
+                    Object.keys(setGroups).forEach(set => {
+                        if (!setOrder.includes(set)) {
+                            html += `
+                                <div class="set-group">
+                                    <div class="set-header">${set}</div>
+                                    <div class="card-grid">
+                                        ${setGroups[set].map(card => 
+                                            buildCardHTML(card.id, card.data, card.count, card.sideboardCount)
+                                        ).join('')}
+                                    </div>
+                                </div>`;
+                        }
+                    });
+                    return html;
             }
         }
 
@@ -963,7 +1038,7 @@
             }
         }
 
-        function buildCardHTML(cardId, cardData = {}, count = 1) {
+        function buildCardHTML(cardId, cardData = {}, count = 1, sideboardCount = 0) {
             const aspects = cardData.Aspects || [];
             const stats = [];
             if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
@@ -973,6 +1048,16 @@
             const formattedId = cardId.replace('_', ' ');
             const isDoubleSided = cardData.DoubleSided === true;
             
+            // Crea il testo dei conteggi
+            let countText = '';
+            if (count > 0 && sideboardCount > 0) {
+                countText = `Deck: ${count} | Side: ${sideboardCount}`;
+            } else if (count > 0) {
+                countText = `Deck: ${count}`;
+            } else if (sideboardCount > 0) {
+                countText = `Side: ${sideboardCount}`;
+            }
+            
             return `
             <div class="card" 
                 onclick="this.classList.toggle('selected')" 
@@ -981,7 +1066,8 @@
                     <span>${formattedId}</span>
                     ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
                 </div>
-                <div class="card-name">${cardData.Name || cardId}${count > 1 ? ` (${count})` : ''}</div>
+                ${countText ? `<div class="card-counts" style="background: #f0f0f0; padding: 4px; margin: 5px 0; border-radius: 3px; font-size: 0.9em; font-weight: bold; text-align: center;">${countText}</div>` : ''}
+                <div class="card-name">${cardData.Name || cardId}</div>
                 ${aspects.length ? `
                     <div class="aspects">
                         ${aspects.map(aspect => `
@@ -1033,6 +1119,39 @@
 
         // Initialize recent decks UI
         updateRecentDecksUI();
+
+        function clearSetCache() {
+            // Svuota TUTTO completamente
+            Object.keys(cardSets).forEach(k => delete cardSets[k]);
+            Object.keys(loadingPromises).forEach(k => delete loadingPromises[k]);
+            
+            // Svuota anche i deck recenti dal localStorage
+            localStorage.removeItem('recentDecks');
+            recentDecks = [];
+            
+            // Svuota la variabile globale del deck corrente
+            if (window.currentDeckCards) {
+                delete window.currentDeckCards;
+            }
+            
+            // Svuota la UI
+            document.getElementById('recentDecks').style.display = 'none';
+            document.getElementById('output').innerHTML = '';
+            document.getElementById('error').textContent = '';
+            document.getElementById('deckUrl').value = '';
+            
+            // Svuota anche la cache del browser per le immagini
+            if ('caches' in window) {
+                caches.keys().then(names => {
+                    names.forEach(name => {
+                        caches.delete(name);
+                    });
+                });
+            }
+            
+            // Ricarica la pagina per assicurarsi che tutto sia completamente resettato
+            window.location.href = window.location.pathname;
+        }
     </script>
 </body>
 </html>
