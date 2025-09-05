@@ -2,335 +2,17 @@
 <html>
 <head>
     <title>SWU Deck Viewer</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 20px auto; padding: 0 20px; }
-        input { width: 500px; padding: 8px; margin-right: 10px; }
-        button { padding: 8px 16px; background: #0066cc; color: white; border: none; cursor: pointer; }
-        .set-group { margin: 30px 0; border: 1px solid #ddd; border-radius: 4px; }
-        .set-header { background: #f5f5f5; padding: 10px; font-weight: bold; }
-        .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 15px; }
-        @media (max-width: 1000px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 800px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 500px) { .card-grid { grid-template-columns: 1fr; } }
-        .card { 
-            border: 1px solid #eee; 
-            border-radius: 4px; 
-            padding: 10px; 
-            background: white;
-            position: relative;
-            cursor: pointer;
-            transition: filter 0.2s ease, transform 0.2s ease;
-            text-align: center;
-        }
-        .card-images {
-            position: relative;
-            width: 100%;
-            margin: 5px 0;
-            perspective: 1000px;
-            height: 0;
-            padding-bottom: 140%;
-        }
-        .card-images-inner {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        .card.flipped .card-images-inner {
-            transform: rotateY(180deg);
-        }
-        .card-front, .card-back {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f5f5f5;
-        }
-        .card-front img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 3px;
-        }
-        .card-back img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            border-radius: 3px;
-        }
-        .card-back {
-            transform: rotateY(180deg);
-        }
-        .flip-button {
-            position: static;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            border: none;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            margin-left: auto;
-        }
-        .flip-button:hover {
-            background: rgba(0, 0, 0, 0.95);
-            transform: translateY(-1px);
-            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-        }
-        .card-content {
-            position: relative;
-            z-index: 2;
-            background: white;
-        }
-        .card.selected {
-            filter: grayscale(100%) brightness(95%);
-            transform: scale(0.98);
-            opacity: 0.7;
-        }
-        .card-id { 
-            font-size: 1.2em; 
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-            padding: 5px;
-            background: #f5f5f5;
-            border-radius: 3px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-        .card-name {
-            font-weight: bold;
-            margin: 8px 0;
-            text-align: center;
-        }
-        .loading { color: #666; margin-left: 10px; }
-        .error { color: red; margin-top: 10px; }
-        
-        /* New styles */
-        .leaders-section, .base-section { 
-            background: #f8f8f8; 
-            padding: 15px; 
-            margin-bottom: 20px; 
-            border-radius: 4px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .deck-header {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 10px;
-            background: #f8f8f8;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        .deck-header .section-title {
-            grid-column: 1 / -1;
-        }
-        .section-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .card-stats {
-            display: flex;
-            gap: 10px;
-            margin: 5px 0;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .stat {
-            background: #eee;
-            padding: 2px 8px;
-            border-radius: 3px;
-            color: white;
-            font-size: 1.1em;
-        }
-        .stat[data-type="Cost"] {
-            background: #FFB300; /* Yellow for cost */
-        }
-        .stat[data-type="Power"] {
-            background: #D32F2F; /* Red for power */
-        }
-        .stat[data-type="HP"] {
-            background: #1976D2; /* Blue for HP */
-        }
-        .stat-value {
-            font-weight: bold;
-            margin-left: 2px;
-        }
-        .aspects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin: 5px 0;
-            justify-content: center;
-        }
-        .aspect {
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            color: white;
-        }
-        .aspect.Heroism { background: #FFFFFF; color: #000000; border: 1px solid #000000; } /* White with black text and border */
-        .aspect.Vigilance { background: #0066CC; } /* Official SWU Blue */
-        .aspect.Cunning { background: #FFD700; color: #000000; } /* Official SWU Yellow */
-        .aspect.Command { background: #00A651; } /* Official SWU Green */
-        .aspect.Aggression { background: #FF0000; } /* Official SWU Red */
-        .aspect.Villainy { background: #000000; } /* Official SWU Black */
-        
-        @media (max-width: 600px) {
-            input { width: 100%; margin-bottom: 10px; }
-            .card-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-        }
-
-        /* Recent decks styles */
-        .recent-decks {
-            margin: 20px 0;
-            padding: 15px;
-            background: #f8f8f8;
-            border-radius: 4px;
-        }
-        .recent-decks-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .recent-decks-list {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            padding: 15px 0;
-        }
-        .recent-deck-btn {
-            padding: 16px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 142px;  /* 110px + 16px padding on each side */
-            position: relative;
-            overflow: hidden;
-        }
-        .recent-deck-btn img {
-            width: 110px;
-            height: auto;
-            border-radius: 12px;
-            object-fit: cover;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .recent-deck-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transition: all 0.2s ease;
-        }
-        .recent-deck-name {
-            font-weight: bold;
-            margin-bottom: 12px;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 2.4em;
-            min-height: 2.4em;
-            width: 100%;
-            text-align: center;
-            overflow: hidden;
-        }
-        .recent-deck-name span {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.2;
-        }
-        .recent-deck-base-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-        }
-        .sort-controls {
-            margin: 20px 0;
-            padding: 15px;
-            background: #f8f8f8;
-            border-radius: 4px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .sort-button {
-            padding: 8px 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background: white;
-            color: #333;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-weight: 500;
-        }
-        .sort-button:hover {
-            background: #f0f0f0;
-            transform: translateY(-1px);
-            border-color: #0066cc;
-            color: #0066cc;
-        }
-        .sort-button.active {
-            background: #0066cc;
-            color: white;
-            border-color: #0066cc;
-            box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
-        }
-        .sort-label {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        /* Make leader and base cards bigger */
-        .deck-header .card {
-            max-width: 800px; /* Much larger max width */
-            margin: 0 auto;
-            width: 100%;
-        }
-        .deck-header .card-images {
-            padding-bottom: 140%; /* Same aspect ratio as other cards */
-            margin: 5px 0; /* Reduced vertical margin */
-        }
-        @media (max-width: 2000px) {
-            .deck-header .card {
-                max-width: 600px;
-            }
-        }
-        @media (max-width: 1600px) {
-            .deck-header .card {
-                max-width: 500px;
-            }
-        }
+        /* Page-specific styles only */
     </style>
 </head>
 <body>
+    <div class="navigation">
+        <a href="index.html">Deck Viewer</a>
+        <a href="compare.html">Deck Comparison</a>
+    </div>
+    
     <h1>SWU Deck Viewer</h1>
     <div>
         <input type="text" id="deckUrl" 
@@ -342,6 +24,7 @@
     <div id="recentDecks" class="recent-decks"></div>
     <div id="error" class="error"></div>
     <div id="output"></div>
+<script src="card-module.js"></script>
 <script>
         // Use only AllOrigins as the CORS proxy
         const PROXY = 'https://api.allorigins.win/raw?url=';
@@ -359,16 +42,24 @@
                 return;
             }
 
-            let html = '<div class="recent-decks-title">Recent Decks:</div><div class="recent-decks-list">';
+            let html = '<div class="recent-decks-title">Recent Decks:</div>';
+            html += '<div class="quick-compare-section" style="margin-bottom: 15px; padding: 10px; background: #e8f4fd; border-radius: 4px;">';
+            html += '<strong>Quick Compare:</strong> Select two decks to compare them instantly. ';
+            html += '<button onclick="quickCompare()" style="background: #0066cc; color: white; border: none; padding: 4px 8px; border-radius: 3px; cursor: pointer;">Compare Selected</button>';
+            html += '</div>';
+            html += '<div class="recent-decks-list">';
             recentDecks.forEach((deck, index) => {
                 const leaderImg = deck.leaderArt ? 
                     `<img src="${deck.leaderArt}" alt="Leader" onerror="this.style.display='none'">` : '';
                 
-                html += `<button onclick="loadDeckFromUrl('${deck.url}')" class="recent-deck-btn">
-                    <div class="aspect ${deck.baseAspect} recent-deck-base-bg"></div>
-                    <div class="recent-deck-name"><span>${deck.name || 'Unnamed Deck'}</span></div>
-                    ${leaderImg}
-                </button>`;
+                html += `<div class="recent-deck-container" style="position: relative;">
+                    <button onclick="loadDeckFromUrl('${deck.url}')" class="recent-deck-btn">
+                        <div class="aspect ${deck.baseAspect} recent-deck-base-bg"></div>
+                        <div class="recent-deck-name"><span>${deck.name || 'Unnamed Deck'}</span></div>
+                        ${leaderImg}
+                    </button>
+                    <input type="checkbox" onclick="toggleDeckSelection('${deck.url}', this)" class="deck-checkbox" style="position: absolute; top: 8px; left: 8px; z-index: 10; width: 16px; height: 16px; cursor: pointer;">
+                </div>`;
             });
             html += '</div>';
             recentDecksDiv.innerHTML = html;
@@ -428,6 +119,68 @@
             await loadDeckById(deckId, true); // true = bypass cache
         }
 
+
+        // Track selected decks for quick compare
+        let selectedDecks = [];
+
+        // Toggle deck selection for quick compare
+        function toggleDeckSelection(url, checkbox) {
+            const container = checkbox.closest('.recent-deck-container');
+            
+            if (checkbox.checked) {
+                if (selectedDecks.length < 2) {
+                    selectedDecks.push(url);
+                    container.classList.add('selected');
+                } else {
+                    // Already have 2 selected, uncheck this one
+                    checkbox.checked = false;
+                    alert('You can only select 2 decks for comparison. Uncheck another deck first.');
+                }
+            } else {
+                selectedDecks = selectedDecks.filter(deck => deck !== url);
+                container.classList.remove('selected');
+            }
+            
+            // Update the compare button state
+            updateCompareButton();
+        }
+
+        // Update the compare button based on selection
+        function updateCompareButton() {
+            const compareBtn = document.querySelector('button[onclick="quickCompare()"]');
+            if (compareBtn) {
+                if (selectedDecks.length === 2) {
+                    compareBtn.textContent = 'Compare Selected (2)';
+                    compareBtn.style.background = '#00a651';
+                } else {
+                    compareBtn.textContent = `Compare Selected (${selectedDecks.length}/2)`;
+                    compareBtn.style.background = '#0066cc';
+                }
+            }
+        }
+
+        // Quick compare function
+        function quickCompare() {
+            if (selectedDecks.length !== 2) {
+                alert('Please select exactly 2 decks to compare.');
+                return;
+            }
+            
+            const deck1Id = selectedDecks[0].split('/').pop();
+            const deck2Id = selectedDecks[1].split('/').pop();
+            
+            // Open compare page with both decks
+            window.open(`compare.html?deck1=${deck1Id}&deck2=${deck2Id}`, '_blank');
+            
+            // Clear selection
+            selectedDecks = [];
+            document.querySelectorAll('.deck-checkbox').forEach(cb => {
+                cb.checked = false;
+                cb.closest('.recent-deck-container').classList.remove('selected');
+            });
+            updateCompareButton();
+        }
+
         // Utility function to retry failed fetch requests
         async function fetchWithRetry(url, retries = 3, bypassCache = false) {
             for (let i = 0; i < retries; i++) {
@@ -462,120 +215,6 @@
             }
         }
 
-        // Card data cache
-        const cardSets = {};
-        const loadingPromises = {};
-
-        // Load card set data
-        async function loadCardSet(set) {
-            // Return cached data if available
-            if (cardSets[set]) {
-                return cardSets[set];
-            }
-
-            // Return existing promise if the set is already being loaded
-            if (loadingPromises[set]) {
-                return loadingPromises[set];
-            }
-
-            // Create new loading promise
-            loadingPromises[set] = (async () => {
-                try {
-                    console.log(`Loading set ${set}...`);
-                    const response = await fetch(`data/${set.toLowerCase()}.json`);
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${set} data: ${response.status}`);
-                    }
-                    const data = await response.json();
-                    
-                    // Check if data has the expected structure
-                    const cards = data.data;
-                    if (!Array.isArray(cards)) {
-                        throw new Error(`Invalid data format for set ${set}: expected array in data property`);
-                    }
-                    
-                    console.log(`Successfully loaded set ${set} with ${cards.length} cards`);
-                    
-                    // Index cards by their number for faster lookup
-                    cardSets[set] = {};
-                    cards.forEach(card => {
-                        if (card.Number) {
-                            // Convert string numbers to integers if needed
-                            const cardNumber = parseInt(card.Number, 10);
-                            cardSets[set][cardNumber] = card;
-                        }
-                    });
-                    
-                    return cardSets[set];
-                } catch (error) {
-                    console.error(`Error loading set ${set}:`, error);
-                    delete cardSets[set]; // Remove failed cache entry
-                    throw error;
-                } finally {
-                    delete loadingPromises[set]; // Clean up loading promise
-                }
-            })();
-
-            return loadingPromises[set];
-        }
-
-        // Preload all sets
-        async function preloadSets() {
-            const sets = ['SOR', 'SHD', 'JTL', 'TWI'];
-            try {
-                await Promise.all(sets.map(set => loadCardSet(set)));
-                console.log('All sets preloaded successfully');
-            } catch (error) {
-                console.error('Error preloading sets:', error);
-            }
-        }
-
-        // Start preloading sets immediately
-        preloadSets();
-
-        async function fetchCardData(cardId) {
-            const [set, num] = cardId.split('_');
-            const number = parseInt(num, 10);
-            
-            try {
-                const setData = await loadCardSet(set);
-                if (!setData) {
-                    console.error(`Set ${set} not found`);
-                    throw new Error(`Set ${set} not found`);
-                }
-
-                const cardData = setData[number];
-                if (!cardData) {
-                    console.warn(`Card ${cardId} not found in set ${set}`);
-                    return {
-                        id: cardId,
-                        Name: cardId,
-                        Set: set,
-                        Number: number,
-                        Type: 'Unknown'
-                    };
-                }
-
-                // Add the card ID to the data
-                cardData.id = cardId;
-                
-                // Ensure we have a Type field
-                if (!cardData.Type) {
-                    cardData.Type = 'Unknown';
-                }
-
-                return cardData;
-            } catch (error) {
-                console.error(`Error fetching card ${cardId}:`, error);
-                return {
-                    id: cardId,
-                    Name: cardId,
-                    Set: set,
-                    Number: number,
-                    Type: 'Unknown'
-                };
-            }
-        }
 
         // Check for deck ID in URL when page loads
         window.addEventListener('load', function() {
@@ -1038,68 +677,6 @@
             }
         }
 
-        function buildCardHTML(cardId, cardData = {}, count = 1, sideboardCount = 0) {
-            const aspects = cardData.Aspects || [];
-            const stats = [];
-            if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
-            if (cardData.Power !== undefined) stats.push(['Power', cardData.Power]);
-            if (cardData.HP !== undefined) stats.push(['HP', cardData.HP]);
-
-            const formattedId = cardId.replace('_', ' ');
-            const isDoubleSided = cardData.DoubleSided === true;
-            
-            // Crea il testo dei conteggi
-            let countText = '';
-            if (count > 0 && sideboardCount > 0) {
-                countText = `Deck: ${count} | Side: ${sideboardCount}`;
-            } else if (count > 0) {
-                countText = `Deck: ${count}`;
-            } else if (sideboardCount > 0) {
-                countText = `Side: ${sideboardCount}`;
-            }
-            
-            return `
-            <div class="card" 
-                onclick="this.classList.toggle('selected')" 
-                data-card-id="${formattedId}">
-                <div class="card-id">
-                    <span>${formattedId}</span>
-                    ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
-                </div>
-                ${countText ? `<div class="card-counts" style="background: #f0f0f0; padding: 4px; margin: 5px 0; border-radius: 3px; font-size: 0.9em; font-weight: bold; text-align: center;">${countText}</div>` : ''}
-                <div class="card-name">${cardData.Name || cardId}</div>
-                ${aspects.length ? `
-                    <div class="aspects">
-                        ${aspects.map(aspect => `
-                            <span class="aspect ${aspect}">${aspect}</span>
-                        `).join('')}
-                    </div>
-                ` : ''}
-                <div class="card-images">
-                    <div class="card-images-inner">
-                        <div class="card-front">
-                            ${cardData.FrontArt ? 
-                                `<img src="${cardData.FrontArt}" alt="${cardData.Name || cardId} (Front)">` : 
-                                `<div class="card-placeholder">${cardId}</div>`}
-                        </div>
-                        ${isDoubleSided && cardData.BackArt ? `
-                            <div class="card-back">
-                                <img src="${cardData.BackArt}" alt="${cardData.Name || cardId} (Back)">
-                            </div>
-                        ` : ''}
-                    </div>
-                </div>
-                <div class="card-content">
-                    ${stats.length ? `
-                        <div class="card-stats">
-                            ${stats.map(([label, value]) => `
-                                <span class="stat" data-type="${label}">${label}: <span class="stat-value">${value}</span></span>
-                            `).join('')}
-                        </div>
-                    ` : ''}
-                </div>
-            </div>`;
-        }
 
         // Add a helper function to find elements by text content
         Document.prototype.querySelector = (function(querySelector) {
@@ -1121,26 +698,25 @@
         updateRecentDecksUI();
 
         function clearSetCache() {
-            // Svuota TUTTO completamente
-            Object.keys(cardSets).forEach(k => delete cardSets[k]);
-            Object.keys(loadingPromises).forEach(k => delete loadingPromises[k]);
+            // Clear card cache using shared module
+            clearCardCache();
             
-            // Svuota anche i deck recenti dal localStorage
+            // Clear recent decks from localStorage
             localStorage.removeItem('recentDecks');
             recentDecks = [];
             
-            // Svuota la variabile globale del deck corrente
+            // Clear current deck global variable
             if (window.currentDeckCards) {
                 delete window.currentDeckCards;
             }
             
-            // Svuota la UI
+            // Clear UI
             document.getElementById('recentDecks').style.display = 'none';
             document.getElementById('output').innerHTML = '';
             document.getElementById('error').textContent = '';
             document.getElementById('deckUrl').value = '';
             
-            // Svuota anche la cache del browser per le immagini
+            // Clear browser cache for images
             if ('caches' in window) {
                 caches.keys().then(names => {
                     names.forEach(name => {
@@ -1149,7 +725,7 @@
                 });
             }
             
-            // Ricarica la pagina per assicurarsi che tutto sia completamente resettato
+            // Reload page to ensure everything is completely reset
             window.location.href = window.location.pathname;
         }
     </script>
