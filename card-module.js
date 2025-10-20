@@ -60,8 +60,8 @@ async function loadCardSet(set) {
 
 // Preload all sets
 async function preloadSets() {
-    const sets = ['SOR', 'SHD', 'JTL', 'TWI', 'LOF'];
     try {
+        const sets = loadSets();
         await Promise.all(sets.map(set => loadCardSet(set)));
         console.log('All sets preloaded successfully');
     } catch (error) {

@@ -3,6 +3,7 @@
 <head>
     <title>SWU Deck Viewer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="sets.js"></script>
     <style>
         /* Page-specific styles only */
     </style>
@@ -290,7 +291,7 @@
                 await addToRecentDecks(`https://swudb.com/deck/${deckId}`, deckData);
                 
                 // Process cards
-                const grouped = groupCards(deckData.deck);
+                const grouped = await groupCards(deckData.deck);
                 console.log('Grouped sets:', grouped);
                 
                 // Log sideboard info
@@ -313,7 +314,7 @@
             }
         }
 
-        function groupCards(cards) {
+        async function groupCards(cards) {
             if (!Array.isArray(cards)) {
                 console.error('Invalid cards data:', cards);
                 return {};
@@ -347,7 +348,7 @@
 
             // Create a new object with sets in the desired order
             const orderedSets = {};
-            const setOrder = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF']; // corretto LOF
+            const setOrder = loadSets();
             setOrder.forEach(set => {
                 if (sets[set]) {
                     orderedSets[set] = sets[set];
@@ -417,7 +418,7 @@
 
             // Add sideboard cards to the same map
             if (Array.isArray(deckData.sideboard) && deckData.sideboard.length > 0) {
-                const groupedSide = groupCards(deckData.sideboard);
+                const groupedSide = await groupCards(deckData.sideboard);
                 for (const set of Object.keys(groupedSide)) {
                     for (const card of groupedSide[set]) {
                         if (cardMap.has(card.id)) {
@@ -607,7 +608,7 @@
                     console.log('Set groups for display:', setGroups);
                     
                     // Usa lo stesso setOrder di groupCards
-                    const setOrder = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF'];
+                    const setOrder = loadSets();
                     setOrder.forEach(set => {
                         if (setGroups[set]) {
                             html += `

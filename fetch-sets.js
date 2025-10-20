@@ -1,9 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const https = require('https');
-
-// List of all sets
-const SETS = ['SOR', 'SHD', 'JTL', 'TWI', 'LOF'];
+const { loadSets } = require('./sets.js');
 
 // Function to fetch data with retries
 function fetchWithRetry(url, retries = 3) {
@@ -80,6 +78,10 @@ async function fetchAllSets() {
     console.log('Starting to fetch all sets...');
     console.log('Current directory:', __dirname);
     
+    // Load sets from shared module
+    const SETS = await loadSets();
+    console.log('Loaded sets:', SETS);
+    
     // Ensure data directory exists
     const dataDir = path.join(__dirname, 'data');
     try {
@@ -109,9 +111,18 @@ async function fetchAllSets() {
     console.log('\nFinished fetching all sets!');
 }
 
-// Run the script
-console.log('Script starting...');
-fetchAllSets().catch(error => {
-    console.error('Fatal error:', error);
-    process.exit(1);
-}); 
+// Export functions for testing
+module.exports = {
+    fetchWithRetry,
+    saveToFile,
+    fetchAllSets
+};
+
+// Run the script only if this file is executed directly
+if (require.main === module) {
+    console.log('Script starting...');
+    fetchAllSets().catch(error => {
+        console.error('Fatal error:', error);
+        process.exit(1);
+    });
+} 
