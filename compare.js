@@ -1,113 +1,17 @@
 // compare.js
 // Extracted from compare.html - contains deck fetching and comparison logic
 
-// External proxy used for static deployments
-const PROXY = 'https://api.allorigins.win/raw?url=';
-const TIMEOUT_MS = 10000; // 10 second timeout
-
-// Helper to fetch via the external proxy (no direct fetch attempt)
-async function fetchUsingExternalProxy(targetUrl, retries = 3, bypassCache = false) {
-    const build = (u) => `${PROXY}${encodeURIComponent(u)}`;
-    let lastError = null;
-    for (let attempt = 0; attempt < retries; attempt++) {
-        try {
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
-            const urlWithBypass = bypassCache ? `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${Date.now()}` : targetUrl;
-            const response = await fetch(build(urlWithBypass), { signal: controller.signal, cache: 'no-cache' });
-            clearTimeout(timeoutId);
-            if (!response.ok) throw new Error(`Proxy HTTP ${response.status}`);
-            const contentType = response.headers.get('content-type') || '';
-            if (contentType.includes('application/json')) return await response.json();
-            const text = await response.text();
-            try { return JSON.parse(text); } catch (e) { return text; }
-        } catch (err) {
-            lastError = err;
-            console.warn('fetchUsingExternalProxy attempt failed:', err && err.message ? err.message : err);
-            await new Promise(r => setTimeout(r, 500 * (attempt + 1)));
-        }
-    }
-    throw new Error(`Proxy fetch failed: ${lastError ? lastError.message : 'unknown'}`);
-}
+// NOTE: fetch helpers and PROXY/TIMEOUT moved to shared.js. This file assumes
+// shared.js is loaded before compare.js and exposes `fetchWithRetry` and
+// `fetchUsingExternalProxy` on window.
 
 // Store loaded deck data
 let deck1Data = null;
 let deck2Data = null;
 
-// Utility function to retry failed fetch requests with proxy fallbacks
-async function fetchWithRetry(url, retries = 3, bypassCache = false) {
-    // Try direct first (null), then fallbacks
-    const proxies = [
-        'https://api.allorigins.win/get?url=',
-        'https://thingproxy.freeboard.io/fetch/',
-        'https://cors.bridged.cc/'
-    ];
-
-    const buildProxyUrl = (proxy, targetUrl) => {
-        if (!proxy) return targetUrl;
-        if (proxy.includes('allorigins')) return `${proxy}${encodeURIComponent(targetUrl)}`;
-        if (proxy.endsWith('/fetch/') || proxy.endsWith('/')) return `${proxy}${targetUrl}`;
-        return `${proxy}${encodeURIComponent(targetUrl)}`;
-    };
-
-    let lastError = null;
-    for (const proxy of proxies) {
-        for (let attempt = 0; attempt < retries; attempt++) {
-            try {
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
-
-                const target = buildProxyUrl(proxy, bypassCache ? `${url}${url.includes('?') ? '&' : '?'}_t=${Date.now()}` : url);
-
-                const response = await fetch(target, {
-                    signal: controller.signal,
-                    cache: bypassCache ? 'no-cache' : 'default'
-                });
-                clearTimeout(timeoutId);
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error from ${proxy || 'direct'}: ${response.status}`);
-                }
-
-                // Handle AllOrigins.get wrapper: accept only if contents is valid JSON
-                if (proxy && proxy.includes('allorigins') && target.includes('/get?url=')) {
-                    const wrapper = await response.json();
-                    if (wrapper && wrapper.contents) {
-                        const contents = String(wrapper.contents).trim();
-                        try {
-                            return JSON.parse(contents);
-                        } catch (e) {
-                            // Not valid JSON; treat as failure and try next proxy
-                            throw new Error('AllOrigins returned non-JSON contents');
-                        }
-                    }
-                    throw new Error('AllOrigins returned unexpected wrapper');
-                }
-
-                const contentType = response.headers.get('content-type');
-                if (contentType && contentType.includes('application/json')) {
-                    return await response.json();
-                }
-
-                const text = await response.text();
-                try { return JSON.parse(text); } catch (e) { throw new Error('Response was not JSON'); }
-            } catch (err) {
-                lastError = err;
-                if (err instanceof TypeError || /Failed to fetch|NetworkError|CORS|Access-Control-Allow-Origin/.test(String(err.message))) {
-                    console.warn(`fetchWithRetry failed (proxy=${proxy || 'direct'}): likely CORS/network`, err.message || err);
-                } else {
-                    console.warn(`fetchWithRetry failed (proxy=${proxy || 'direct'}):`, err.message || err);
-                }
-                if (attempt === retries - 1) break;
-                await new Promise(r => setTimeout(r, 500 * (attempt + 1)));
-            }
-        }
-    }
-    throw new Error(`All attempts failed: ${lastError ? lastError.message : 'unknown'}`);
-}
-
 async function loadDeck(deckNumber) {
-    const urlInput = document.getElementById(`deck${deckNumber}Url`).value.trim();
+    const inputEl = document.getElementById(`deck${deckNumber}Url`);
+    const urlInput = inputEl ? (inputEl.value || '').trim() : '';
     const errorDiv = document.getElementById(`error${deckNumber}`);
     const loading = document.getElementById(`loading${deckNumber}`);
     const deckInfo = document.getElementById(`deck${deckNumber}Info`);
@@ -117,16 +21,33 @@ async function loadDeck(deckNumber) {
     loading.style.display = 'inline';
 
     try {
-        const url = new URL(urlInput);
-        const pathSegments = url.pathname.split('/').filter(Boolean);
-        const deckId = pathSegments[pathSegments.length - 1];
-        
+        if (!urlInput) {
+            throw new Error('No deck URL or ID provided');
+        }
+
+        // Extract deck ID robustly
+        let deckId = null;
+        if (typeof window !== 'undefined' && typeof window.getDeckIdFromUrl === 'function') {
+            deckId = window.getDeckIdFromUrl(urlInput);
+        } else {
+            const looksLikeId = /^[A-Za-z0-9_-]+$/.test(urlInput);
+            if (looksLikeId) {
+                deckId = urlInput;
+            } else {
+                try {
+                    const u = new URL(urlInput);
+                    const parts = u.pathname.split('/').filter(Boolean);
+                    deckId = parts[parts.length - 1] || null;
+                } catch (e) {
+                    deckId = urlInput.split('/').filter(Boolean).pop() || null;
+                }
+            }
+        }
+
         if (!deckId) {
             throw new Error('Invalid SWUDB URL - Could not extract deck ID');
         }
 
-        // Let code decide: prefer external proxy for static hosting by default,
-        // but allow local/dev direct fetch via localStorage or localhost.
         const targetUrl = `https://swudb.com/api/getDeckJson/${deckId}`;
         const hostname = window.location && window.location.hostname ? window.location.hostname : '';
         const isLocalHost = hostname === 'localhost' || hostname === '127.0.0.1';
@@ -134,10 +55,10 @@ async function loadDeck(deckNumber) {
         let deckData;
         if (isLocalHost || preferDirect) {
             console.info('compare.html: using direct/dev fetch strategy (fetchWithRetry)');
-            deckData = await fetchWithRetry(targetUrl, 3, true);
+            deckData = await window.fetchWithRetry(targetUrl, 3, true);
         } else {
             console.info('compare.html: using external proxy for fetch (production/static)');
-            deckData = await fetchUsingExternalProxy(targetUrl, 3, true);
+            deckData = await window.fetchUsingExternalProxy(targetUrl, 3, true);
         }
 
         if (!deckData) {
@@ -160,27 +81,29 @@ async function loadDeck(deckNumber) {
         }
 
         // Display deck info
-        const deckName = deckData.metadata?.name || 'Unnamed Deck';
-        const deckSize = deckData.deck ? deckData.deck.length : 0;
-        const sideboardSize = deckData.sideboard ? deckData.sideboard.length : 0;
-        
-        deckInfo.innerHTML = `
-            <div class="deck-name">${deckName}</div>
-            <div class="deck-stats">
-                Main Deck: ${deckSize} cards<br>
-                Sideboard: ${sideboardSize} cards
-            </div>
-        `;
+        // Use shared HTML helper for consistent rendering
+        deckInfo.innerHTML = (window.deckInfoHTML && typeof window.deckInfoHTML === 'function')
+            ? window.deckInfoHTML(deckData)
+            : `\n                <div class="deck-name">${deckData.metadata?.name || 'Unnamed Deck'}</div>\n                <div class="deck-stats">\n                    Main Deck: ${deckData.deck ? deckData.deck.length : 0} cards<br>\n                    Sideboard: ${deckData.sideboard ? deckData.sideboard.length : 0} cards\n                </div>\n            `;
         deckInfo.style.display = 'block';
 
         // Update URL with deck ID
-        const currentUrl = new URL(window.location);
-        if (deckNumber === 1) {
-            currentUrl.searchParams.set('deck1', deckId);
+        // Use shared helper to set query params consistently
+        if (window.setQueryParam) {
+            if (deckNumber === 1) {
+                window.setQueryParam('deck1', deckId);
+            } else {
+                window.setQueryParam('deck2', deckId);
+            }
         } else {
-            currentUrl.searchParams.set('deck2', deckId);
+            const currentUrl = new URL(window.location);
+            if (deckNumber === 1) {
+                currentUrl.searchParams.set('deck1', deckId);
+            } else {
+                currentUrl.searchParams.set('deck2', deckId);
+            }
+            window.history.pushState({}, '', currentUrl.toString());
         }
-        window.history.pushState({}, '', currentUrl.toString());
 
         // Check if both decks are loaded and compare
         if (deck1Data && deck2Data) {
@@ -201,57 +124,13 @@ async function compareDecks() {
     const resultsDiv = document.getElementById('comparisonResults');
     resultsDiv.style.display = 'block';
 
-    // Create card maps for both decks (main deck + sideboard)
-    const deck1Cards = new Map();
-    const deck2Cards = new Map();
-
-    // Process deck 1 cards (main deck)
-    if (deck1Data.deck) {
-        deck1Data.deck.forEach(card => {
-            if (card && card.id) {
-                const count = card.count || 1;
-                deck1Cards.set(card.id, { main: count, sideboard: 0 });
-            }
-        });
-    }
-
-    // Process deck 1 sideboard cards
-    if (deck1Data.sideboard) {
-        deck1Data.sideboard.forEach(card => {
-            if (card && card.id) {
-                const count = card.count || 1;
-                if (deck1Cards.has(card.id)) {
-                    deck1Cards.get(card.id).sideboard = count;
-                } else {
-                    deck1Cards.set(card.id, { main: 0, sideboard: count });
-                }
-            }
-        });
-    }
-
-    // Process deck 2 cards (main deck)
-    if (deck2Data.deck) {
-        deck2Data.deck.forEach(card => {
-            if (card && card.id) {
-                const count = card.count || 1;
-                deck2Cards.set(card.id, { main: count, sideboard: 0 });
-            }
-        });
-    }
-
-    // Process deck 2 sideboard cards
-    if (deck2Data.sideboard) {
-        deck2Data.sideboard.forEach(card => {
-            if (card && card.id) {
-                const count = card.count || 1;
-                if (deck2Cards.has(card.id)) {
-                    deck2Cards.get(card.id).sideboard = count;
-                } else {
-                    deck2Cards.set(card.id, { main: 0, sideboard: count });
-                }
-            }
-        });
-    }
+    // Build consolidated card count maps using shared helper
+    const deck1Cards = (window.buildDeckCardCounts && typeof window.buildDeckCardCounts === 'function')
+        ? window.buildDeckCardCounts(deck1Data)
+        : new Map();
+    const deck2Cards = (window.buildDeckCardCounts && typeof window.buildDeckCardCounts === 'function')
+        ? window.buildDeckCardCounts(deck2Data)
+        : new Map();
 
     // Find differences
     const allCardIds = new Set([...deck1Cards.keys(), ...deck2Cards.keys()]);
@@ -397,15 +276,19 @@ async function reverseDeckOrder() {
     deck2Data = tempData;
 
     // Update the URL parameters (swap deck1/deck2)
-    const currentUrl = new URL(window.location);
     const url1 = document.getElementById('deck1Url').value;
     const url2 = document.getElementById('deck2Url').value;
-    const id1 = url1.split('/').pop();
-    const id2 = url2.split('/').pop();
-    
-    currentUrl.searchParams.set('deck1', id2);
-    currentUrl.searchParams.set('deck2', id1);
-    window.history.pushState({}, '', currentUrl.toString());
+    const id1 = window.getDeckIdFromUrl ? window.getDeckIdFromUrl(url1) : url1.split('/').pop();
+    const id2 = window.getDeckIdFromUrl ? window.getDeckIdFromUrl(url2) : url2.split('/').pop();
+
+    if (window.setQueryParams) {
+        window.setQueryParams({ deck1: id2, deck2: id1 });
+    } else {
+        const currentUrl = new URL(window.location);
+        currentUrl.searchParams.set('deck1', id2);
+        currentUrl.searchParams.set('deck2', id1);
+        window.history.pushState({}, '', currentUrl.toString());
+    }
 
     // Swap the input field values
     document.getElementById('deck1Url').value = url2;
@@ -424,16 +307,17 @@ async function reverseDeckOrder() {
 
 // Check for deck IDs in URL when page loads
 window.addEventListener('load', async function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const deck1Id = urlParams.get('deck1');
-    const deck2Id = urlParams.get('deck2');
-    
+    const deck1Id = window.getQueryParam ? window.getQueryParam('deck1') : (new URLSearchParams(window.location.search)).get('deck1');
+    const deck2Id = window.getQueryParam ? window.getQueryParam('deck2') : (new URLSearchParams(window.location.search)).get('deck2');
+
     if (deck1Id) {
-        document.getElementById('deck1Url').value = `https://swudb.com/deck/${deck1Id}`;
+        const el1 = document.getElementById('deck1Url');
+        if (el1) el1.value = `https://swudb.com/deck/${deck1Id}`;
         await loadDeck(1);
     }
     if (deck2Id) {
-        document.getElementById('deck2Url').value = `https://swudb.com/deck/${deck2Id}`;
+        const el2 = document.getElementById('deck2Url');
+        if (el2) el2.value = `https://swudb.com/deck/${deck2Id}`;
         await loadDeck(2);
     }
 });

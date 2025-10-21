@@ -61,7 +61,20 @@ async function loadCardSet(set) {
 // Preload all sets
 async function preloadSets() {
     try {
-        const sets = loadSets();
+        // Simple resolver: prefer browser global, fall back to Node require.
+        let sets = null;
+        if (typeof window !== 'undefined' && typeof window.loadSets === 'function') {
+            sets = window.loadSets();
+        } else if (typeof require === 'function') {
+            const mod = require('./sets.js');
+            if (mod && typeof mod.loadSets === 'function') sets = mod.loadSets();
+        }
+
+        if (!Array.isArray(sets)) {
+            console.error('loadSets() not found: please ensure sets.js is loaded before card-module.js (sets.js must expose loadSets()).');
+            return;
+        }
+
         await Promise.all(sets.map(set => loadCardSet(set)));
         console.log('All sets preloaded successfully');
     } catch (error) {
