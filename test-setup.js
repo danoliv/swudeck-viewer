@@ -1,73 +1,24 @@
-// Test setup for Jest
+// Minimal test setup for Jest
 const fetchMock = require('jest-fetch-mock');
+fetchMock.enableMocks();
 
-// Mock fetch globally
-global.fetch = fetchMock;
+// Silence common console methods without replacing the whole console object
+['log', 'warn', 'error'].forEach(fn => {
+  if (typeof console[fn] === 'function') jest.spyOn(console, fn).mockImplementation(() => {});
+});
 
-// Mock console methods to reduce noise in tests
-global.console = {
-  ...console,
-  log: jest.fn(),
-  warn: jest.fn(),
-  error: jest.fn(),
+// Small in-memory localStorage mock
+const _store = Object.create(null);
+global.localStorage = {
+  getItem: jest.fn((k) => (Object.prototype.hasOwnProperty.call(_store, k) ? _store[k] : null)),
+  setItem: jest.fn((k, v) => { _store[k] = String(v); }),
+  removeItem: jest.fn((k) => { delete _store[k]; }),
+  clear: jest.fn(() => { Object.keys(_store).forEach(k => delete _store[k]); }),
 };
 
-// Mock localStorage
-const localStorageMock = {
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
-};
-global.localStorage = localStorageMock;
-
-// Mock window.location
-delete window.location;
-window.location = {
-  href: 'http://localhost:3000',
-  pathname: '/',
-  search: '',
-  hash: '',
-  assign: jest.fn(),
-  reload: jest.fn(),
-  replace: jest.fn(),
-};
-
-// Mock window.history
-window.history = {
-  pushState: jest.fn(),
-  replaceState: jest.fn(),
-  back: jest.fn(),
-  forward: jest.fn(),
-};
-
-// Mock URL constructor
-global.URL = class URL {
-  constructor(url, base) {
-    this.href = url;
-    this.pathname = url.split('/').slice(3).join('/');
-    this.search = '';
-    this.hash = '';
-  }
-};
-
-// Mock URLSearchParams
-global.URLSearchParams = class URLSearchParams {
-  constructor(search) {
-    this.params = new Map();
-    if (search) {
-      search.split('&').forEach(param => {
-        const [key, value] = param.split('=');
-        if (key) this.params.set(key, value);
-      });
-    }
-  }
-  
-  get(name) {
-    return this.params.get(name);
-  }
-  
-  set(name, value) {
-    this.params.set(name, value);
-  }
-};
+// Reset mocks and storage between tests
+beforeEach(() => {
+  if (fetchMock && typeof fetchMock.resetMocks === 'function') fetchMock.resetMocks();
+  if (global.localStorage && typeof global.localStorage.clear === 'function') global.localStorage.clear();
+  jest.clearAllMocks();
+});
