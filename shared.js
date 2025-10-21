@@ -3,8 +3,11 @@
 (function () {
   'use strict';
 
-  // External proxy used for static deployments (AllOrigins /get wrapper is CORS-friendly)
-  const PROXY = 'https://api.allorigins.win/get?url=';
+  // External proxy used for static deployments (AllOrigins /raw wrapper is CORS-friendly)
+  // Prefer the `raw` endpoint which returns the target response directly and typically includes
+  // Access-Control-Allow-Origin headers so browsers won't block requests from localhost/origins.
+  // Keep the older `/get?url=` wrapper as a fallback in the proxies list below.
+  const PROXY = 'https://api.allorigins.win/raw?url=';
   const TIMEOUT_MS = 10000; // 10 second timeout
 
   // Helper to fetch via the external proxy (no direct fetch attempt)
@@ -51,7 +54,10 @@
   async function fetchWithRetry(url, retries = 3, bypassCache = false) {
     // List of proxies to try (null = direct fetch). Order matters.
     const proxies = [
-      // Prefer the `get` wrapper which returns a CORS-friendly JSON wrapper
+      // Prefer the AllOrigins `raw` endpoint which forwards the original response and
+      // usually includes Access-Control-Allow-Origin.
+      'https://api.allorigins.win/raw?url=',
+      // Fallback to the `/get` JSON wrapper if `raw` is unavailable.
       'https://api.allorigins.win/get?url=',
       // Other known proxies
       'https://thingproxy.freeboard.io/fetch/',
