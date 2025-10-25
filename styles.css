@@ -48,6 +48,29 @@ body {
     } 
 }
 
+/* Cards container for grouped views (stacked groups) */
+.cards-grid {
+    display: block;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Per-set / per-group section */
+.set-section {
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+}
+
+.set-title {
+    background: #f5f5f5;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #e6e6e6;
+}
+
 /* Card styling */
 .card { 
     border: 1px solid #eee; 
