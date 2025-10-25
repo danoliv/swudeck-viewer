@@ -10,7 +10,7 @@ describe('sets.js', () => {
 
     test('should return the correct set names in order', () => {
       const sets = loadSets();
-      const expectedSets = ['SOR', 'SHD', 'JTL', 'TWI', 'LOF', 'SEC', 'IBH'];
+      const expectedSets = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC'];
       expect(sets).toEqual(expectedSets);
     });
 

@@ -1,3004 +1,3004 @@
 {
-    "total_cards": 102,
-    "data": [
-      {
-        "Set": "SEC",
-        "Number": "096",
-        "Name": "Ahsoka Tano",
-        "Subtitle": "I Learned it From You",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "FORCE",
-          "JEDI",
-          "REPUBLIC"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "When this unit completes an attack (and survives): You may disclose Command Heroism. If you do, attack with another unit.",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": true,
-        "Artist": "Envar Entertainment",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/096.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "066",
-        "Name": "Alderaanian Envoys",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "3",
-        "HP": "7",
-        "FrontText": "Restore 3 (When this unit attacks, heal 3 damage from your base.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/066.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "025",
-        "Name": "Amnesty Housing",
-        "Subtitle": "Coruscant",
-        "Type": "Base",
-        "Aspects": [
-          "Cunning"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Roc\u00edo Esp\u00edn",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/025.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "070",
-        "Name": "Armor of Fortune",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "ITEM",
-          "ARMOR"
-        ],
-        "Cost": "2",
-        "FrontText": "Plot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Konstantin Porubov",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/070.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "008",
-        "Name": "Bail Organa",
-        "Subtitle": "Doing Everything He Can",
-        "Type": "Leader",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "3",
-        "HP": "3",
-        "FrontText": "Action [C=1, Exhaust]: If a friendly unit was defeated this phase, return a friendly resource to its owner's hand. If you do, put the top card of your deck into play as a resource.",
-        "EpicAction": "Action [Exhaust, discard 2 cards from your hand]: If you control 4 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/008-b.png",
-        "BackText": "When you play a card from your resources: Heal 1 damage from your base.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Afif Khaled",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/008.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "062",
-        "Name": "Bardottan Ornithopter",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "4",
-        "Power": "3",
-        "HP": "4",
-        "FrontText": "When Played: You may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, draw a card.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "French Carlomagno",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/062.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "051",
-        "Name": "Bo-Katan Kryze",
-        "Subtitle": "Alone",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "MANDALORIAN"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "9",
-        "Power": "8",
-        "HP": "8",
-        "FrontText": "When Played: Give each enemy unit -3/-3 for this phase.\nWhen an enemy unit is defeated: Give an Experience token to a friendly unit.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Monika Pa\u0142osz",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/051.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "015",
-        "Name": "C-3P0",
-        "Subtitle": "Human-Cyborg Relations",
-        "Type": "Leader",
-        "Aspects": [
-          "Cunning",
-          "Heroism"
-        ],
-        "Traits": [
-          "REBEL",
-          "DROID"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "1",
-        "HP": "6",
-        "FrontText": "Action [C=1, Exhaust]: If you control an exhausted unit, exhaust a unit.",
-        "EpicAction": "Epic Action: If you control 4 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/015-b.png",
-        "BackText": "On Attack: If you control another exhausted unit, you may exhaust a unit.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Kyle Petchock",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/015.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "093",
-        "Name": "C-3P0",
-        "Subtitle": "Anything I Might Do?",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "DROID"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "1",
-        "Power": "1",
-        "HP": "3",
-        "FrontText": "Action [Exhaust, return this unit to its owner's hand]: Give a unit +2/+2 for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Artist": "French Carlomago",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/093.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "034",
-        "Name": "Cad Bane",
-        "Subtitle": "Impressed Now?",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "UNDERWORLD",
-          "BOUNTY HUNTER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "4",
-        "HP": "5",
-        "FrontText": "When Played: You may defeat a unit with 2 or less remaining HP.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": true,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Gabriel G\u00f3mez Almenzar",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/034.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "037",
-        "Name": "Cantwell Arrestor Cruiser",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "VEHICLE",
-          "CAPITAL SHIP"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "7",
-        "Power": "6",
-        "HP": "7",
-        "FrontText": "When Played: You may disclose Vigilance Vigilance Villainy (reveal cards from your hand with these aspect icons among them). If you do, exhaust an enemy unit. That unit can't ready while this unit is in play.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "Stephen Zavala\n",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/037.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "048",
-        "Name": "Captain Rex",
-        "Subtitle": "Into the Firefight",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "CLONE",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "7",
-        "HP": "7",
-        "FrontText": "When Played/When this unit completes an attack: Give this unit and an enemy unit Sentinel for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Benjamin Paulus",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/048.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "098",
-        "Name": "Captain Typho",
-        "Subtitle": "All Necessary Precautions",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "NABOO",
-          "REPUBLIC",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "4",
-        "HP": "5",
-        "FrontText": "Sentinel\nWhen this unit is attacked: You may disclose Command Heroism. If you do, heal 1 damage from your base.",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": true,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Sebasti\u00e1n Guidobono",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/098.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "012",
-        "Name": "Cassian Andor",
-        "Subtitle": "Climb!",
-        "Type": "Leader",
-        "Aspects": [
-          "Aggression",
-          "Heroism"
-        ],
-        "Traits": [
-          "REBEL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "6",
-        "HP": "2",
-        "FrontText": "Friendly units that have damaged an opponent's base this phase can't be attacked (unless they have Sentinel).",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/012-b.png",
-        "BackText": "Overwhelm\nWhile you have the initiative, this unit isn't defeated by having no remaining HP and can't be defeated by enemy card abilities.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Overwhelm"
-        ],
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/012.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "042",
-        "Name": "Cassian Andor",
-        "Subtitle": "Lay Low",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "FRINGE"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "2",
-        "FrontText": "While this unit is defending, the attacker gets -2/-0.\nIf an enemy card ability would deal damage to this unit, prevent 2 of that damage.",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Artist": "Afif Khaled",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/042.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "001",
-        "Name": "Chancellor Palpatine",
-        "Subtitle": "How Liberty Dies",
-        "Type": "Leader",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "7",
-        "Power": "6",
-        "HP": "8",
-        "FrontText": "Action [C=1, Exhaust]: Search the top 5 cards of your deck for a card with Plot, reveal it, and draw it. (Put the other cards on the bottom of your deck in a random order.)",
-        "EpicAction": "Epic Action: If you control 7 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/001-b.png",
-        "BackText": "When Deployed: The next card you play using Plot this phase costs 3 less.",
-        "Rarity": "Special",
-        "Unique": true,
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/001.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "082",
-        "Name": "Chancellor Palpatine",
-        "Subtitle": "I Am the Senate",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "2",
-        "HP": "2",
-        "FrontText": "When Played: If you control a leader unit, create 2 Spy tokens and give those tokens Sentinel for this phase.\nPlot",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Plot",
-          "Sentinel"
-        ],
-        "Artist": "Gabriel G\u00f3mez Almenzar",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/082.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "107",
-        "Name": "Chancellor Valorum",
-        "Subtitle": "Civil Servant",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Command"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "3",
-        "HP": "7",
-        "FrontText": "When this unit completes an attack: You may disclose Command Command Command (reveal cards from your hand with these aspect icons among them). If you do, put the top card of your deck into play as a resource.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Milos Slavkovic",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/107.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "043",
-        "Name": "Chandrilan Sponsor",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "3",
-        "FrontText": "Restore 2 (When this unit attacks, heal 2 damage from your base.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Vincent Dutrait",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/043.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "076",
-        "Name": "Charged with Murder",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "LAW"
-        ],
-        "Cost": "4",
-        "FrontText": "You may disclose Vigilance Vigilance (reveal cards from your hand with these aspect icons among them). If you do, defeat a damaged non-leader unit.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "Kyle Petchock",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/076.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "006",
-        "Name": "Colonel Yularen",
-        "Subtitle": "This is Why We Plan",
-        "Type": "Leader",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "4",
-        "HP": "6",
-        "FrontText": "Action [Exhaust]: Attack with a unit. Then, you may attack with another unit that costs less than it.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/006-b.png",
-        "BackText": "When this unit completes an attack (and survives): You may attack with another unit that costs 4 or less.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/006.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "038",
-        "Name": "Condemn",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "CONDITION"
-        ],
-        "Cost": "3",
-        "FrontText": "While attached unit is attacking, it gains: \u201cOn Attack: The defending player may disclose Vigilance Villainy. If they do, this unit gets -6/-0 for this attack\u201d and loses all other abilities.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Aitor Prieto",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/038.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "064",
-        "Name": "Congress of Malastare",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "5",
-        "HP": "5",
-        "FrontText": "The first upgrade you play each phase costs 1 less.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Marc Escachx",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/064.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "047",
-        "Name": "Coronet",
-        "Subtitle": "Stately Vessel",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "MANDALORIAN",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "5",
-        "Power": "4",
-        "HP": "6",
-        "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nEach other friendly unit gains Restore 1.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Vincent Dutrait",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/047.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "091",
-        "Name": "Corporate Warmongering",
-        "Type": "Event",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "PLAN"
-        ],
-        "Cost": "4",
-        "FrontText": "Give a friendly unit +3/+3 for this phase. Give each other friendly unit +1/+1 for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/091.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "079",
-        "Name": "Corrupt Politician",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "1",
-        "Power": "2",
-        "HP": "2",
-        "FrontText": "While you control more units than an opponent, this unit gains Sentinel.",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Steve Morris",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/079.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "039",
-        "Name": "Creditor's Claim",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "SUPPLY"
-        ],
-        "Cost": "3",
-        "FrontText": "Attached unit gains: \u201cWhen Defeated: You may defeat a unit with 3 or less remaining HP.\u201d",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "Aitor Prieto",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/039.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "086",
-        "Name": "Cruel Commandos",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "CLONE",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "5",
-        "HP": "5",
-        "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nOverwhelm (When attacking an enemy unit, deal excess damage to the opponent's base.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Overwhelm",
-          "Sentinel"
-        ],
-        "Artist": "Kevin Libranda",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/086.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "018",
-        "Name": "DJ",
-        "Subtitle": "Need a Lift?",
-        "Type": "Leader",
-        "Aspects": [
-          "Cunning",
-          "Cunning"
-        ],
-        "Traits": [
-          "UNDERWORLD"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "4",
-        "HP": "6",
-        "FrontText": "Action [Exhaust]: Choose a friendly unit. If you do, play a unit from your hand. It costs 1 less. The chosen unit captures it. (When Played abilities resolve after the unit is captured.)",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/018-b.png",
-        "BackText": "Saboteur\nFriendly units that are rescued enter play ready.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Saboteur"
-        ],
-        "Artist": "EJ Dela Cruz",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/018.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "035",
-        "Name": "Darth Sion",
-        "Subtitle": "Lord of Pain",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "FORCE",
-          "SITH"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "5",
-        "HP": "5",
-        "FrontText": "When Played: Give an Experience token to this unit for each enemy unit that was defeated this phase.\nWhen Defeated: If this unit had 7 or more power, return him to his owner's hand.",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Artist": "Jakub Rebelka",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/035.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "030",
-        "Name": "Death Trooper",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "3",
-        "HP": "3",
-        "FrontText": "When Played: Deal 2 damage to a friendly ground unit and 2 damage to an enemy ground unit.\n\n",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Borja Pindado",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/030.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "010",
-        "Name": "Dedra Meero",
-        "Subtitle": "Not Wasting Time",
-        "Type": "Leader",
-        "Aspects": [
-          "Aggression",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "Action [C=1, Exhaust]: Choose an enemy unit. Its controller may deal 2 damage to it. If they don't, draw a card.",
-        "EpicAction": "Epic Action: If you control 4 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/010-b.png",
-        "BackText": "While you have more cards in hand than an opponent, this unit gains Raid 2. (She gets +2/+0 while attacking.)",
-        "Rarity": "Common",
-        "Unique": true,
-        "Keywords": [
-          "Raid"
-        ],
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/010.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "087",
-        "Name": "Dedra Meero",
-        "Subtitle": "With Verifiable Data",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "5",
-        "HP": "5",
-        "FrontText": "Ambush (When you play this unit, it may attack an enemy unit.)\nOn Attack: Create a Spy token.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Ambush"
-        ],
-        "Artist": "Reno",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/087.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "060",
-        "Name": "Defense Fleet X-Wing",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "NEW REPUBLIC",
-          "VEHICLE",
-          "FIGHTER"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "3",
-        "Power": "1",
-        "HP": "4",
-        "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\n",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Amad Mir",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/060.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "055",
-        "Name": "Dhani Pilgrim",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "1",
-        "Power": "1",
-        "HP": "3",
-        "FrontText": "When Played/When Defeated: Heal 1 damage from your base.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Benjamin Paulus",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/055.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "052",
-        "Name": "Diplomatic Immunity",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "LAW"
-        ],
-        "Cost": "2",
-        "FrontText": "Attached unit gains: \u201cWhen this unit is attacked: You may disclose Vigilance Vigilance Heroism Heroism (reveal cards from your hand with these aspect icons among them). If you do, the attacker gets -2/-0 for this attack.\u201d",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "JB Casacop",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/052.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "090",
-        "Name": "Director Krennic",
-        "Subtitle": "I Lose Nothing But Time",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "9",
-        "Power": "8",
-        "HP": "10",
-        "FrontText": "Sentinel\nWhen this unit is attacked: Discard a card from your deck. If it's a unit, you may return it to your hand.",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Omercan Cirit",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/090.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "071",
-        "Name": "Disciples' Devotion",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "INNATE"
-        ],
-        "Cost": "3",
-        "FrontText": "While attached unit is exhausted, it gains Sentinel. (Enemy units in this arena must attack a Sentinel when they attack you.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/071.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "106",
-        "Name": "Dismantle the Conspiracy",
-        "Type": "Event",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "TACTIC"
-        ],
-        "Cost": "6",
-        "FrontText": "A friendly unit captures any number of enemy non-leader units with a total of 7 or less remaining HP.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Envar Entertainment",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/106.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "036",
-        "Name": "Dogmatic Shock Squad",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "CLONE",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "4",
-        "HP": "6",
-        "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Plot",
-          "Sentinel"
-        ],
-        "Artist": "Facundo Moyano",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/036.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "100",
-        "Name": "Dressellian Commandos",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "REBEL",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "4",
-        "HP": "5",
-        "FrontText": "Ambush (When you play this unit, it may attack an enemy unit.)\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Ambush",
-          "Plot"
-        ],
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/100.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "007",
-        "Name": "Dryden Vos",
-        "Subtitle": "I Never Ask Twice",
-        "Type": "Leader",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "UNDERWORLD"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "7",
-        "Power": "5",
-        "HP": "7",
-        "FrontText": "Action [Exhaust, discard a card that costs 6 or more from your hand]: Play a unit that costs 5 or less from your hand (paying its cost). It gains Ambush for this phase.",
-        "EpicAction": "Epic Action: If you control 7 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/007-b.png",
-        "BackText": "Overwhelm\nAction [discard a card from your hand]: Play a unit from your hand (paying its cost). It gains Ambush for this phase.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Ambush",
-          "Overwhelm"
-        ],
-        "Artist": "Johnny Morrow",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/007.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "040",
-        "Name": "Emergency Powers",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "LAW"
-        ],
-        "Cost": "1",
-        "FrontText": "Choose a non-leader unit and pay any number of resources. For each resource paid this way, give an Experience token to the chosen unit.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Natcha Ngamtweerat",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/040.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "056",
-        "Name": "Escape Pod",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "1",
-        "Power": "0",
-        "HP": "3",
-        "FrontText": "When Played: You may have this unit capture a friendly non-Vehicle, non-leader unit.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Amad Mir",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/056.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "054",
-        "Name": "Exiled from the Force",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance",
-          "Vigilance"
-        ],
-        "Traits": [
-          "CONDITION"
-        ],
-        "Cost": "1",
-        "FrontText": "Attached unit loses the Force trait and all abilities except for Grit.\nAttached unit gains Grit.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Keywords": [
-          "Grit"
-        ],
-        "Artist": "Sebasti\u00e1n Guidobono",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/054.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "104",
-        "Name": "Figure of Unity",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "INNATE"
-        ],
-        "Cost": "3",
-        "FrontText": "Attach to a Unique unit.\nAttached unit gains: \u201cWhile this unit is ready, each other friendly unit gains Overwhelm, Raid 1, and Restore 1.\u201d",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Keywords": [
-          "Overwhelm",
-          "Raid",
-          "Restore"
-        ],
-        "Artist": "Benjamin Paulus",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/104.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "046",
-        "Name": "Galen Erso",
-        "Subtitle": "You'll Never Win",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "IMPERIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "When Played: Name a card. While this unit is in play, each non-leader card an opponent owns with that name, including those not in play, loses all abilities (and can't gain abilities).\nPlot",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Reno",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/046.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "011",
-        "Name": "Governor Pryce",
-        "Subtitle": "Tyrant of Lothal",
-        "Type": "Leader",
-        "Aspects": [
-          "Aggression",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "4",
-        "HP": "6",
-        "FrontText": "Action [C=1, Exhaust]: Ready a token unit.",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/011-b.png",
-        "BackText": "This unit gets +1/+0 for each ready friendly token unit.\nOn Attack: Create a Spy token.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Kaihound Studios",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/011.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "078",
-        "Name": "Hyperspace Disaster",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "DISASTER"
-        ],
-        "Cost": "7",
-        "FrontText": "Defeat all space units.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Pandu Mahardika",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/078.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "092",
-        "Name": "I Am the Senate",
-        "Type": "Event",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "LAW"
-        ],
-        "Cost": "6",
-        "FrontText": "Create 5 spy tokens.",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": false,
-        "Artist": "Vincent Dutrait",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/092.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "083",
-        "Name": "ISB Shuttle",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "3",
-        "Power": "3",
-        "HP": "2",
-        "FrontText": "When Played: If a friendly unit was defeated this phase, create a Spy token.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Kaihound Studios",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/083.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "080",
-        "Name": "Imperial Dark Trooper",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "DROID",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "3",
-        "HP": "3",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Afif Khaled",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/080.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "023",
-        "Name": "Imperial Prison Complex",
-        "Subtitle": "Narona 5",
-        "Type": "Base",
-        "Aspects": [
-          "Aggression"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Henning Ludvigsen",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/023.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "002",
-        "Name": "Jabba the Hutt",
-        "Subtitle": "Wonderful Human Being",
-        "Type": "Leader",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "UNDERWORLD",
-          "HUTT"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "2",
-        "HP": "8",
-        "FrontText": "Action [C=1, Exhaust]: A friendly damaged unit deals 1 damage to an enemy unit. If the friendly unit has 3 or more damage on it, it deals 2 damage instead.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/002-b.png",
-        "BackText": "When another friendly unit is dealt damage and survives: You may have that unit deal that much damage to an enemy unit. Use this ability only once each round.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Ivan Shavrin",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/002.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "049",
-        "Name": "Jade Squadron Patrol",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "RESISTANCE",
-          "VEHICLE",
-          "FIGHTER"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "6",
-        "Power": "6",
-        "HP": "6",
-        "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Pandu Mahardika",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/049.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "075",
-        "Name": "Knowledge and Defense",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "LEARNED"
-        ],
-        "Cost": "3",
-        "FrontText": "Give a unit -2/-2 for this phase.\nDraw a card.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Marc Escachx",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/075.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "032",
-        "Name": "Kylo Ren's Command Shuttle",
-        "Subtitle": "Icon of Authority",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "FIRST ORDER",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "4",
-        "Power": "3",
-        "HP": "5",
-        "FrontText": "Each friendly ground unit with Sentinel gets +0/+2.",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "EJ Dela Cruz",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/032.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "003",
-        "Name": "Lama Su",
-        "Subtitle": "We Modified Their Genetics",
-        "Type": "Leader",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "KAMINOAN",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "3",
-        "HP": "7",
-        "FrontText": "Action [Exhaust]: Play an upgrade from your hand on a friendly non-Vehicle unit. It costs 1 less. If you do, deal 1 damage to that unit.",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/003-b.png",
-        "BackText": "When this unit completes an attack (and survives): You may play an upgrade from your discard pile on a friendly non-Vehicle unit. It costs 1 less.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Sebasti\u00e1n Guidobono",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/003.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "068",
-        "Name": "Lando Calrissian",
-        "Subtitle": "Trust Me",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "7",
-        "Power": "6",
-        "HP": "8",
-        "FrontText": "Grit\nWhen Played: You may choose an enemy unit and another friendly non-leader unit. If you do, heal 6 damage from your base and the enemy unit captures the friendly unit.",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Keywords": [
-          "Grit"
-        ],
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/068.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "004",
-        "Name": "Leia Organa",
-        "Subtitle": "Of A Secret Bloodline",
-        "Type": "Leader",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "NEW REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "4",
-        "HP": "7",
-        "FrontText": "Action [C=1, Exhaust]: Disclose Vigilance, Command, Aggression, Cunning, or Heroism (reveal a card from your hand with this aspect icon). If you do, give an Experience token to a unit that doesn't share an aspect with the disclosed card.",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/004-b.png",
-        "BackText": "On Attack: You may disclose Vigilance, Command, Aggression, Cunning, or Heroism. If you do, give an Experience token to a unit that doesn't share an aspect with the disclosed card.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Jessi Ochse",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/004.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "057",
-        "Name": "Lobot",
-        "Subtitle": "Cloud City Coordinator",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "0",
-        "HP": "4",
-        "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nGrit (This unit gets +1/+0 for each damage on him.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Grit",
-          "Sentinel"
-        ],
-        "Artist": "Omercan Cirit",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/057.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "058",
-        "Name": "Lost Jedi",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FORCE",
-          "JEDI"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "1",
-        "HP": "3",
-        "FrontText": "Grit (This unit gets +1/+0 for each damage on it.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Grit"
-        ],
-        "Artist": "Kaihound Studios",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/058.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "013",
-        "Name": "Luthen Rael",
-        "Subtitle": "Don't You Want to Fight For Real?",
-        "Type": "Leader",
-        "Aspects": [
-          "Aggression",
-          "Heroism"
-        ],
-        "Traits": [
-          "REBEL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "2",
-        "HP": "7",
-        "FrontText": "When a friendly unit is defeated while attacking: You may exhaust this leader. If you do, deal 1 damage to a unit or base.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/013-b.png",
-        "BackText": "When a friendly unit is defeated while attacking: You may deal 2 damage to a unit or base.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Reno",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/013.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "081",
-        "Name": "Major Partagaz",
-        "Subtitle": "Healthcare Provider",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "0",
-        "HP": "6",
-        "FrontText": "Overwhelm\nWhen another friendly Official unit attacks: This unit gets +2/+2 for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Overwhelm"
-        ],
-        "Artist": "Benjamin Paulus",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/081.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "084",
-        "Name": "Mas Amedda",
-        "Subtitle": "Accomplice to Power",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "3",
-        "HP": "4",
-        "FrontText": "When Played: Give an Experience token to each of up to 2 other Official units.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Steve Morris",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/084.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "094",
-        "Name": "Mina Bonteri",
-        "Subtitle": "Stop This War",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "SEPARATIST",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "4",
-        "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nWhen Defeated: You may disclose Command Command Heroism (reveal cards from your hand with these aspect icons among them). If you do, draw a card.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Salom\u00e9 Gor\u00e9",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/094.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "009",
-        "Name": "Mon Mothma",
-        "Subtitle": "Forming a Coalition",
-        "Type": "Leader",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "3",
-        "HP": "7",
-        "FrontText": "Ignore the aspect penalties on non\u2011Villainy Official units you play. each other friendly official unit gets +0/+1.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/009-b.png",
-        "BackText": "Ignore the aspect penalties on non\u2011Villainy Official units you play.\nEach other friendly Official unit gets +0/+1.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/009.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "103",
-        "Name": "Mon Mothma",
-        "Subtitle": "Clinging to Hope",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "REBEL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "7",
-        "Power": "5",
-        "HP": "8",
-        "FrontText": "Restore 3\nWhen Played: You may attack with any number of other units (one at a time), even if those units are exhausted. They can't attack bases for these attacks.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Afif Khaled",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/103.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "026",
-        "Name": "Mount Tantiss",
-        "Subtitle": "Wayland",
-        "Type": "Base",
-        "Aspects": [
-          "Cunning"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Tyler Edlin",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/026.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "099",
-        "Name": "Naboo Royal Starship",
-        "Subtitle": "Fit For A Queen",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "NABOO",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "4",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "Each friendly leader unit gains Raid 2 and Overwhelm.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Overwhelm",
-          "Plot",
-          "Raid"
-        ],
-        "Artist": "Francois Cannels",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/099.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "065",
-        "Name": "Nala Se",
-        "Subtitle": "Chief Medical Scientist",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "KAMINOAN"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "4",
-        "HP": "7",
-        "FrontText": "On Attack: You may disclose Vigilance Vigilance (reveal cards from your hand with these aspect icons among them). If you do, heal up to 4 damage from among other units.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Artist": "Aitor Prieto",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/065.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "024",
-        "Name": "Naval Intelligence HQ",
-        "Subtitle": "Coruscant",
-        "Type": "Base",
-        "Aspects": [
-          "Aggression"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Henning Ludvigsen",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/024.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "069",
-        "Name": "Nimble Prowess",
-        "Type": "Upgrade",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "INNATE"
-        ],
-        "Cost": "1",
-        "FrontText": "Attach to a friendly unit.\nWhen Played: You may exhaust a unit in attached unit's arena.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Sandra Chlewi\u0144ska",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/069.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "031",
-        "Name": "Nute Gunray",
-        "Subtitle": "Escaping Justice",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "SEPARATIST",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "3",
-        "HP": "4",
-        "FrontText": "Grit\nWhen Played/On Attack: You may give another friendly Official unit Sentinel for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Grit",
-          "Sentinel"
-        ],
-        "Artist": "Marc Escachx",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/031.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "053",
-        "Name": "One in a Million",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "GAMBIT"
-        ],
-        "Cost": "1",
-        "FrontText": "This card can't be played from your hand.\nDefeat a unit with power and remaining HP both equal to the number of ready resources you control.\nPlot",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Reno",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/053.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "016",
-        "Name": "Padm\u00e9 Amidala",
-        "Subtitle": "What Do You Have to Hide?",
-        "Type": "Leader",
-        "Aspects": [
-          "Cunning",
-          "Heroism"
-        ],
-        "Traits": [
-          "NABOO",
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "3",
-        "HP": "8",
-        "FrontText": "When you reveal or discard 1 or more cards from your hand: You may exhaust this leader. If you do, deal 1 damage to a unit.",
-        "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/016-b.png",
-        "BackText": "When you reveal or discard 1 or more cards from your hand: You may deal 1 damage to a unit.",
-        "Rarity": "Special",
-        "Unique": true,
-        "Artist": "Kaihound Studios",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/016.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "041",
-        "Name": "Populist Advisor",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "NEW REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "1",
-        "Power": "1",
-        "HP": "4",
-        "FrontText": "When an enemy unit deals combat damage to your base: This unit gains Sentinel for this phase. (Enemy units in this arena must attack a Sentinel when they attack you.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Afif Khaled",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/041.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "044",
-        "Name": "Populist Champion",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "NEW REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "3",
-        "HP": "5",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Mali Vasanserekul",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/044.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "089",
-        "Name": "PreMor Personnel Carrier",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "8",
-        "Power": "6",
-        "HP": "6",
-        "FrontText": "Overwhelm (When attacking an enemy unit, deal excess damage to the opponent's base.)\nWhen Played: Give this unit an Experience token for each ground unit you control.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Keywords": [
-          "Overwhelm"
-        ],
-        "Artist": "Shane Molina",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/089.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "074",
-        "Name": "Relief Request",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "LAW"
-        ],
-        "Cost": "2",
-        "FrontText": "Heal 3 damage from a unit.\nYou may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, heal 3 damage from another unit.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Aitor Prieto",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/074.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "021",
-        "Name": "Republic City",
-        "Subtitle": "Hosnian Prime",
-        "Type": "Base",
-        "Aspects": [
-          "Command"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Henning Ludvigsen",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/021.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "077",
-        "Name": "Retaliation",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "TACTIC"
-        ],
-        "Cost": "5",
-        "FrontText": "Defeat a unit that dealt damage to a base this phase.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/077.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "019",
-        "Name": "Rix Road",
-        "Subtitle": "Ferrix",
-        "Type": "Base",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Henning Ludvigsen",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/019.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "063",
-        "Name": "Rotunda Senate Guards",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "4",
-        "HP": "5",
-        "FrontText": "While this unit is undamaged, it gains Sentinel. (Enemy units in this arena must attack a Sentinel when they attack you.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Keywords": [
-          "Sentinel"
-        ],
-        "Artist": "Ario Murti",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/063.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "017",
-        "Name": "Sab\u00e9",
-        "Subtitle": "Queen's Shadow",
-        "Type": "Leader",
-        "Aspects": [
-          "Cunning",
-          "Heroism"
-        ],
-        "Traits": [
-          "NABOO"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "3",
-        "HP": "6",
-        "FrontText": "When a friendly unit deals combat damage to a base: You may exhaust this leader. If you do, look at the top 2 cards of the defending player's deck. Discard 1 of those cards. (Put the other back on top.)",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/017-b.png",
-        "BackText": "Raid 1\nWhen this unit deals combat damage to a base: Look at the defending player's hand. You may discard a card from it. If you do, that player draws a card.",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Raid"
-        ],
-        "Artist": "Jessi Ochse",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/017.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "005",
-        "Name": "Satine Kryze",
-        "Subtitle": "Standing on Principles",
-        "Type": "Leader",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "MANDALORIAN",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "0",
-        "HP": "8",
-        "FrontText": "Action [Exhaust]: Heal up to 2 damage from a unit. If you do, deal that much damage to your base.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/005-b.png",
-        "BackText": "Restore 4",
-        "Rarity": "Rare",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Borja Pindado",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/005.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "072",
-        "Name": "Scour the Archives",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "LEARNED"
-        ],
-        "Cost": "1",
-        "FrontText": "Search the top 8 cards of your deck for an upgrade, reveal it, and draw it. (Put the other cards on the bottom of your deck in a random order.)",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "David Buisan",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/072.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "022",
-        "Name": "Senate Rotunda",
-        "Subtitle": "Coruscant",
-        "Type": "Base",
-        "Aspects": [
-          "Command"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Adrien Girod",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/022.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "059",
-        "Name": "Senate Warden",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "2",
-        "FrontText": "When Defeated: You may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, give an Experience token to a unit.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Ario Anindito",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/059.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "045",
-        "Name": "Senator Chuchi",
-        "Subtitle": "Voice for the Voiceless",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nOn Attack: Give another friendly Official unit Restore 2 for this phase.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Mali Vasanserekul",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/045.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "014",
-        "Name": "Sly Moore",
-        "Subtitle": "Cipher in the Dark",
-        "Type": "Leader",
-        "Aspects": [
-          "Cunning",
-          "Villainy"
-        ],
-        "Traits": [
-          "FORCE",
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "5",
-        "Power": "3",
-        "HP": "6",
-        "FrontText": "Action [C=1, Exhaust]: If there are 4 or more exhausted units in play, create a Spy token.",
-        "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
-        "DoubleSided": true,
-        "BackArt": "https://cdn.swu-db.com/images/cards/SEC/014-b.png",
-        "BackText": "On Attack: You may deal 2 damage to an exhausted unit.",
-        "Rarity": "Common",
-        "Unique": true,
-        "Artist": "Omercan Cirit",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/014.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "033",
-        "Name": "Sly Moore",
-        "Subtitle": "Witness to Power",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "2",
-        "HP": "6",
-        "FrontText": "When Played: For this phase, each enemy unit gets \u20132/\u20130 while it's attacking a base.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Denis Medri",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/033.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "027",
-        "Name": "The Chancellor's Shuttle",
-        "Subtitle": "Grim Harbinger",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "REPUBLIC",
-          "VEHICLE",
-          "TRANSPORT"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "2",
-        "Power": "1",
-        "HP": "3",
-        "FrontText": "Restore 1\nWhen Defeated: If you control Chancellor Palpatine (as a leader or unit), you may give an Experience token to a unit.",
-        "DoubleSided": false,
-        "Rarity": "Special",
-        "Unique": true,
-        "Keywords": [
-          "Restore"
-        ],
-        "Artist": "Christian Papazoglakis",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/027.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "073",
-        "Name": "The Eye of Aldhani",
-        "Type": "Event",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "INNATE",
-          "TRICK"
-        ],
-        "Cost": "1",
-        "FrontText": "At the start of the next action phase, for each enemy unit, its controller must pay 1 or exhaust that unit.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": false,
-        "Artist": "Natcha Ngamtweerat",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/073.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "095",
-        "Name": "Theed Security",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Heroism"
-        ],
-        "Traits": [
-          "NABOO",
-          "TROOPER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "3",
-        "FrontText": "When Played: If an opponent controls an upgrade, give an Experience token to a unit.",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Sandra Chlewi\u0144ska",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/095.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "028",
-        "Name": "Trayus Acolyte",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "FORCE",
-          "SITH"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "2",
-        "HP": "4",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Jakub Rebelka",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/028.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "067",
-        "Name": "Umbaran Mobile Cannon",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE",
-          "VEHICLE",
-          "WALKER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "6",
-        "Power": "7",
-        "HP": "3",
-        "FrontText": "The first time this unit would take damage each phase, prevent that damage.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": false,
-        "Artist": "Aitor Prieto",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/067.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "020",
-        "Name": "Uscru Entertainment District",
-        "Subtitle": "Coruscant",
-        "Type": "Base",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "HP": "30",
-        "FrontText": "",
-        "DoubleSided": false,
-        "Rarity": "Common",
-        "Unique": false,
-        "Artist": "Henning Ludvigsen",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "0.00",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/020.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "085",
-        "Name": "Vice Admiral Rampart",
-        "Subtitle": "On Schedule",
-        "Type": "Unit",
-        "Aspects": [
-          "Command",
-          "Villainy"
-        ],
-        "Traits": [
-          "IMPERIAL",
-          "OFFICIAL"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "4",
-        "Power": "3",
-        "HP": "6",
-        "FrontText": "On Attack: You may disclose Command Command Villainy (reveal cards from your hand with these aspect icons among them). If you do, give an Experience token to each of up to 2 other units.",
-        "DoubleSided": false,
-        "Rarity": "Rare",
-        "Unique": true,
-        "Artist": "Sebasti\u00e1n Guidobono",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/085.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "050",
-        "Name": "Vigil",
-        "Subtitle": "Securing the Future",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Heroism"
-        ],
-        "Traits": [
-          "RESISTANCE",
-          "VEHICLE",
-          "CAPITAL SHIP"
-        ],
-        "Arenas": [
-          "Space"
-        ],
-        "Cost": "7",
-        "Power": "5",
-        "HP": "9",
-        "FrontText": "If damage would be dealt to another friendly unit, prevent 1 of that damage.\nIf damage would be dealt to this unit by another card, deal that much damage plus 1 instead.\nPlot",
-        "DoubleSided": false,
-        "Rarity": "Legendary",
-        "Unique": true,
-        "Keywords": [
-          "Plot"
-        ],
-        "Artist": "Fernando Correa",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/050.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "061",
-        "Name": "Willrow Hood",
-        "Subtitle": "On the Run",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance"
-        ],
-        "Traits": [
-          "FRINGE"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "3",
-        "Power": "2",
-        "HP": "5",
-        "FrontText": "While this unit has exactly 1 friendly upgrade on it, that upgrade can't be defeated or returned to hand by enemy card abilities.",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Artist": "Sebasti\u00e1n Guidobono",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/061.png"
-      },
-      {
-        "Set": "SEC",
-        "Number": "029",
-        "Name": "Zam Wesell",
-        "Subtitle": "Inconspicuous Assassin",
-        "Type": "Unit",
-        "Aspects": [
-          "Vigilance",
-          "Villainy"
-        ],
-        "Traits": [
-          "UNDERWORLD",
-          "BOUNTY HUNTER"
-        ],
-        "Arenas": [
-          "Ground"
-        ],
-        "Cost": "2",
-        "Power": "1",
-        "HP": "5",
-        "FrontText": "While this unit is upgraded, she gains Grit. (She gets +1/+0 for each damage on her.)",
-        "DoubleSided": false,
-        "Rarity": "Uncommon",
-        "Unique": true,
-        "Keywords": [
-          "Grit"
-        ],
-        "Artist": "Sandra Chlewi\u0144ska",
-        "VariantType": "Normal",
-        "MarketPrice": "0.00",
-        "FoilPrice": "",
-        "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/029.png"
-      }
-    ]
-  }
+  "total_cards": 102,
+  "data": [
+    {
+      "Set": "SEC",
+      "Number": "096",
+      "Name": "Ahsoka Tano",
+      "Subtitle": "I Learned it From You",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "When this unit completes an attack (and survives): You may disclose Command Heroism. If you do, attack with another unit.",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": true,
+      "Artist": "Envar Entertainment",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/096.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "066",
+      "Name": "Alderaanian Envoys",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "3",
+      "HP": "7",
+      "FrontText": "Restore 3 (When this unit attacks, heal 3 damage from your base.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/066.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "025",
+      "Name": "Amnesty Housing",
+      "Subtitle": "Coruscant",
+      "Type": "Base",
+      "Aspects": [
+        "Cunning"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Rocío Espín",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/025.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "070",
+      "Name": "Armor of Fortune",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "ITEM",
+        "ARMOR"
+      ],
+      "Cost": "2",
+      "FrontText": "Plot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Konstantin Porubov",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/070.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "008",
+      "Name": "Bail Organa",
+      "Subtitle": "Doing Everything He Can",
+      "Type": "Leader",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "3",
+      "HP": "3",
+      "FrontText": "Action [C=1, Exhaust]: If a friendly unit was defeated this phase, return a friendly resource to its owner's hand. If you do, put the top card of your deck into play as a resource.",
+      "EpicAction": "Action [Exhaust, discard 2 cards from your hand]: If you control 4 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/008-b.png",
+      "BackText": "When you play a card from your resources: Heal 1 damage from your base.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/008.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "062",
+      "Name": "Bardottan Ornithopter",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "4",
+      "Power": "3",
+      "HP": "4",
+      "FrontText": "When Played: You may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, draw a card.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "French Carlomagno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/062.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "051",
+      "Name": "Bo-Katan Kryze",
+      "Subtitle": "Alone",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "MANDALORIAN"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "9",
+      "Power": "8",
+      "HP": "8",
+      "FrontText": "When Played: Give each enemy unit -3/-3 for this phase.\nWhen an enemy unit is defeated: Give an Experience token to a friendly unit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Monika Pałosz",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/051.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "015",
+      "Name": "C-3P0",
+      "Subtitle": "Human-Cyborg Relations",
+      "Type": "Leader",
+      "Aspects": [
+        "Cunning",
+        "Heroism"
+      ],
+      "Traits": [
+        "REBEL",
+        "DROID"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "1",
+      "HP": "6",
+      "FrontText": "Action [C=1, Exhaust]: If you control an exhausted unit, exhaust a unit.",
+      "EpicAction": "Epic Action: If you control 4 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/015-b.png",
+      "BackText": "On Attack: If you control another exhausted unit, you may exhaust a unit.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Kyle Petchock",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/015.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "093",
+      "Name": "C-3P0",
+      "Subtitle": "Anything I Might Do?",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "DROID"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "1",
+      "Power": "1",
+      "HP": "3",
+      "FrontText": "Action [Exhaust, return this unit to its owner's hand]: Give a unit +2/+2 for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "French Carlomago",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/093.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "034",
+      "Name": "Cad Bane",
+      "Subtitle": "Impressed Now?",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "UNDERWORLD",
+        "BOUNTY HUNTER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "4",
+      "HP": "5",
+      "FrontText": "When Played: You may defeat a unit with 2 or less remaining HP.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": true,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/034.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "037",
+      "Name": "Cantwell Arrestor Cruiser",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "VEHICLE",
+        "CAPITAL SHIP"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "7",
+      "Power": "6",
+      "HP": "7",
+      "FrontText": "When Played: You may disclose Vigilance Vigilance Villainy (reveal cards from your hand with these aspect icons among them). If you do, exhaust an enemy unit. That unit can't ready while this unit is in play.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "Stephen Zavala\n",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/037.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "048",
+      "Name": "Captain Rex",
+      "Subtitle": "Into the Firefight",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "7",
+      "HP": "7",
+      "FrontText": "When Played/When this unit completes an attack: Give this unit and an enemy unit Sentinel for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Benjamin Paulus",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/048.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "098",
+      "Name": "Captain Typho",
+      "Subtitle": "All Necessary Precautions",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "NABOO",
+        "REPUBLIC",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "4",
+      "HP": "5",
+      "FrontText": "Sentinel\nWhen this unit is attacked: You may disclose Command Heroism. If you do, heal 1 damage from your base.",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": true,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Sebastián Guidobono",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/098.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "012",
+      "Name": "Cassian Andor",
+      "Subtitle": "Climb!",
+      "Type": "Leader",
+      "Aspects": [
+        "Aggression",
+        "Heroism"
+      ],
+      "Traits": [
+        "REBEL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "6",
+      "HP": "2",
+      "FrontText": "Friendly units that have damaged an opponent's base this phase can't be attacked (unless they have Sentinel).",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/012-b.png",
+      "BackText": "Overwhelm\nWhile you have the initiative, this unit isn't defeated by having no remaining HP and can't be defeated by enemy card abilities.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm"
+      ],
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/012.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "042",
+      "Name": "Cassian Andor",
+      "Subtitle": "Lay Low",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "FRINGE"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "2",
+      "FrontText": "While this unit is defending, the attacker gets -2/-0.\nIf an enemy card ability would deal damage to this unit, prevent 2 of that damage.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/042.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "001",
+      "Name": "Chancellor Palpatine",
+      "Subtitle": "How Liberty Dies",
+      "Type": "Leader",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "7",
+      "Power": "6",
+      "HP": "8",
+      "FrontText": "Action [C=1, Exhaust]: Search the top 5 cards of your deck for a card with Plot, reveal it, and draw it. (Put the other cards on the bottom of your deck in a random order.)",
+      "EpicAction": "Epic Action: If you control 7 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/001-b.png",
+      "BackText": "When Deployed: The next card you play using Plot this phase costs 3 less.",
+      "Rarity": "Special",
+      "Unique": true,
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/001.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "082",
+      "Name": "Chancellor Palpatine",
+      "Subtitle": "I Am the Senate",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "2",
+      "HP": "2",
+      "FrontText": "When Played: If you control a leader unit, create 2 Spy tokens and give those tokens Sentinel for this phase.\nPlot",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Plot",
+        "Sentinel"
+      ],
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/082.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "107",
+      "Name": "Chancellor Valorum",
+      "Subtitle": "Civil Servant",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Command"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "3",
+      "HP": "7",
+      "FrontText": "When this unit completes an attack: You may disclose Command Command Command (reveal cards from your hand with these aspect icons among them). If you do, put the top card of your deck into play as a resource.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Milos Slavkovic",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/107.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "043",
+      "Name": "Chandrilan Sponsor",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "3",
+      "FrontText": "Restore 2 (When this unit attacks, heal 2 damage from your base.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Vincent Dutrait",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/043.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "076",
+      "Name": "Charged with Murder",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "LAW"
+      ],
+      "Cost": "4",
+      "FrontText": "You may disclose Vigilance Vigilance (reveal cards from your hand with these aspect icons among them). If you do, defeat a damaged non-leader unit.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "Kyle Petchock",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/076.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "006",
+      "Name": "Colonel Yularen",
+      "Subtitle": "This is Why We Plan",
+      "Type": "Leader",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "4",
+      "HP": "6",
+      "FrontText": "Action [Exhaust]: Attack with a unit. Then, you may attack with another unit that costs less than it.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/006-b.png",
+      "BackText": "When this unit completes an attack (and survives): You may attack with another unit that costs 4 or less.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/006.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "038",
+      "Name": "Condemn",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "CONDITION"
+      ],
+      "Cost": "3",
+      "FrontText": "While attached unit is attacking, it gains: “On Attack: The defending player may disclose Vigilance Villainy. If they do, this unit gets -6/-0 for this attack” and loses all other abilities.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/038.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "064",
+      "Name": "Congress of Malastare",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "5",
+      "HP": "5",
+      "FrontText": "The first upgrade you play each phase costs 1 less.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Marc Escachx",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/064.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "047",
+      "Name": "Coronet",
+      "Subtitle": "Stately Vessel",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "MANDALORIAN",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "5",
+      "Power": "4",
+      "HP": "6",
+      "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nEach other friendly unit gains Restore 1.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Vincent Dutrait",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/047.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "091",
+      "Name": "Corporate Warmongering",
+      "Type": "Event",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "PLAN"
+      ],
+      "Cost": "4",
+      "FrontText": "Give a friendly unit +3/+3 for this phase. Give each other friendly unit +1/+1 for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/091.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "079",
+      "Name": "Corrupt Politician",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "1",
+      "Power": "2",
+      "HP": "2",
+      "FrontText": "While you control more units than an opponent, this unit gains Sentinel.",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Steve Morris",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/079.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "039",
+      "Name": "Creditor's Claim",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "SUPPLY"
+      ],
+      "Cost": "3",
+      "FrontText": "Attached unit gains: “When Defeated: You may defeat a unit with 3 or less remaining HP.”",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/039.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "086",
+      "Name": "Cruel Commandos",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "5",
+      "HP": "5",
+      "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nOverwhelm (When attacking an enemy unit, deal excess damage to the opponent's base.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Overwhelm",
+        "Sentinel"
+      ],
+      "Artist": "Kevin Libranda",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/086.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "018",
+      "Name": "DJ",
+      "Subtitle": "Need a Lift?",
+      "Type": "Leader",
+      "Aspects": [
+        "Cunning",
+        "Cunning"
+      ],
+      "Traits": [
+        "UNDERWORLD"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "4",
+      "HP": "6",
+      "FrontText": "Action [Exhaust]: Choose a friendly unit. If you do, play a unit from your hand. It costs 1 less. The chosen unit captures it. (When Played abilities resolve after the unit is captured.)",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/018-b.png",
+      "BackText": "Saboteur\nFriendly units that are rescued enter play ready.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Saboteur"
+      ],
+      "Artist": "EJ Dela Cruz",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/018.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "035",
+      "Name": "Darth Sion",
+      "Subtitle": "Lord of Pain",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "FORCE",
+        "SITH"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "5",
+      "HP": "5",
+      "FrontText": "When Played: Give an Experience token to this unit for each enemy unit that was defeated this phase.\nWhen Defeated: If this unit had 7 or more power, return him to his owner's hand.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Artist": "Jakub Rebelka",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/035.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "030",
+      "Name": "Death Trooper",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "3",
+      "HP": "3",
+      "FrontText": "When Played: Deal 2 damage to a friendly ground unit and 2 damage to an enemy ground unit.\n\n",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Borja Pindado",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/030.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "010",
+      "Name": "Dedra Meero",
+      "Subtitle": "Not Wasting Time",
+      "Type": "Leader",
+      "Aspects": [
+        "Aggression",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "Action [C=1, Exhaust]: Choose an enemy unit. Its controller may deal 2 damage to it. If they don't, draw a card.",
+      "EpicAction": "Epic Action: If you control 4 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/010-b.png",
+      "BackText": "While you have more cards in hand than an opponent, this unit gains Raid 2. (She gets +2/+0 while attacking.)",
+      "Rarity": "Common",
+      "Unique": true,
+      "Keywords": [
+        "Raid"
+      ],
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/010.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "087",
+      "Name": "Dedra Meero",
+      "Subtitle": "With Verifiable Data",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "5",
+      "HP": "5",
+      "FrontText": "Ambush (When you play this unit, it may attack an enemy unit.)\nOn Attack: Create a Spy token.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Ambush"
+      ],
+      "Artist": "Reno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/087.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "060",
+      "Name": "Defense Fleet X-Wing",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "NEW REPUBLIC",
+        "VEHICLE",
+        "FIGHTER"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "3",
+      "Power": "1",
+      "HP": "4",
+      "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\n",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Amad Mir",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/060.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "055",
+      "Name": "Dhani Pilgrim",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "1",
+      "Power": "1",
+      "HP": "3",
+      "FrontText": "When Played/When Defeated: Heal 1 damage from your base.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Benjamin Paulus",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/055.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "052",
+      "Name": "Diplomatic Immunity",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "LAW"
+      ],
+      "Cost": "2",
+      "FrontText": "Attached unit gains: “When this unit is attacked: You may disclose Vigilance Vigilance Heroism Heroism (reveal cards from your hand with these aspect icons among them). If you do, the attacker gets -2/-0 for this attack.”",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "JB Casacop",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/052.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "090",
+      "Name": "Director Krennic",
+      "Subtitle": "I Lose Nothing But Time",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "9",
+      "Power": "8",
+      "HP": "10",
+      "FrontText": "Sentinel\nWhen this unit is attacked: Discard a card from your deck. If it's a unit, you may return it to your hand.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Omercan Cirit",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/090.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "071",
+      "Name": "Disciples' Devotion",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "INNATE"
+      ],
+      "Cost": "3",
+      "FrontText": "While attached unit is exhausted, it gains Sentinel. (Enemy units in this arena must attack a Sentinel when they attack you.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/071.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "106",
+      "Name": "Dismantle the Conspiracy",
+      "Type": "Event",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "TACTIC"
+      ],
+      "Cost": "6",
+      "FrontText": "A friendly unit captures any number of enemy non-leader units with a total of 7 or less remaining HP.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Envar Entertainment",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/106.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "036",
+      "Name": "Dogmatic Shock Squad",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "4",
+      "HP": "6",
+      "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Plot",
+        "Sentinel"
+      ],
+      "Artist": "Facundo Moyano",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/036.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "100",
+      "Name": "Dressellian Commandos",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "REBEL",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "4",
+      "HP": "5",
+      "FrontText": "Ambush (When you play this unit, it may attack an enemy unit.)\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Ambush",
+        "Plot"
+      ],
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/100.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "007",
+      "Name": "Dryden Vos",
+      "Subtitle": "I Never Ask Twice",
+      "Type": "Leader",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "UNDERWORLD"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "7",
+      "Power": "5",
+      "HP": "7",
+      "FrontText": "Action [Exhaust, discard a card that costs 6 or more from your hand]: Play a unit that costs 5 or less from your hand (paying its cost). It gains Ambush for this phase.",
+      "EpicAction": "Epic Action: If you control 7 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/007-b.png",
+      "BackText": "Overwhelm\nAction [discard a card from your hand]: Play a unit from your hand (paying its cost). It gains Ambush for this phase.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Ambush",
+        "Overwhelm"
+      ],
+      "Artist": "Johnny Morrow",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/007.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "040",
+      "Name": "Emergency Powers",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "LAW"
+      ],
+      "Cost": "1",
+      "FrontText": "Choose a non-leader unit and pay any number of resources. For each resource paid this way, give an Experience token to the chosen unit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Natcha Ngamtweerat",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/040.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "056",
+      "Name": "Escape Pod",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "1",
+      "Power": "0",
+      "HP": "3",
+      "FrontText": "When Played: You may have this unit capture a friendly non-Vehicle, non-leader unit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Amad Mir",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/056.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "054",
+      "Name": "Exiled from the Force",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance",
+        "Vigilance"
+      ],
+      "Traits": [
+        "CONDITION"
+      ],
+      "Cost": "1",
+      "FrontText": "Attached unit loses the Force trait and all abilities except for Grit.\nAttached unit gains Grit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Keywords": [
+        "Grit"
+      ],
+      "Artist": "Sebastián Guidobono",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/054.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "104",
+      "Name": "Figure of Unity",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "INNATE"
+      ],
+      "Cost": "3",
+      "FrontText": "Attach to a Unique unit.\nAttached unit gains: “While this unit is ready, each other friendly unit gains Overwhelm, Raid 1, and Restore 1.”",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm",
+        "Raid",
+        "Restore"
+      ],
+      "Artist": "Benjamin Paulus",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/104.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "046",
+      "Name": "Galen Erso",
+      "Subtitle": "You'll Never Win",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "IMPERIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "When Played: Name a card. While this unit is in play, each non-leader card an opponent owns with that name, including those not in play, loses all abilities (and can't gain abilities).\nPlot",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Reno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/046.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "011",
+      "Name": "Governor Pryce",
+      "Subtitle": "Tyrant of Lothal",
+      "Type": "Leader",
+      "Aspects": [
+        "Aggression",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "4",
+      "HP": "6",
+      "FrontText": "Action [C=1, Exhaust]: Ready a token unit.",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/011-b.png",
+      "BackText": "This unit gets +1/+0 for each ready friendly token unit.\nOn Attack: Create a Spy token.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Kaihound Studios",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/011.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "078",
+      "Name": "Hyperspace Disaster",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "DISASTER"
+      ],
+      "Cost": "7",
+      "FrontText": "Defeat all space units.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Pandu Mahardika",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/078.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "092",
+      "Name": "I Am the Senate",
+      "Type": "Event",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "LAW"
+      ],
+      "Cost": "6",
+      "FrontText": "Create 5 spy tokens.",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": false,
+      "Artist": "Vincent Dutrait",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/092.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "083",
+      "Name": "ISB Shuttle",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "3",
+      "Power": "3",
+      "HP": "2",
+      "FrontText": "When Played: If a friendly unit was defeated this phase, create a Spy token.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Kaihound Studios",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/083.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "080",
+      "Name": "Imperial Dark Trooper",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "DROID",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "3",
+      "HP": "3",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/080.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "023",
+      "Name": "Imperial Prison Complex",
+      "Subtitle": "Narona 5",
+      "Type": "Base",
+      "Aspects": [
+        "Aggression"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Henning Ludvigsen",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/023.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "002",
+      "Name": "Jabba the Hutt",
+      "Subtitle": "Wonderful Human Being",
+      "Type": "Leader",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "UNDERWORLD",
+        "HUTT"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "2",
+      "HP": "8",
+      "FrontText": "Action [C=1, Exhaust]: A friendly damaged unit deals 1 damage to an enemy unit. If the friendly unit has 3 or more damage on it, it deals 2 damage instead.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/002-b.png",
+      "BackText": "When another friendly unit is dealt damage and survives: You may have that unit deal that much damage to an enemy unit. Use this ability only once each round.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Ivan Shavrin",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/002.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "049",
+      "Name": "Jade Squadron Patrol",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "RESISTANCE",
+        "VEHICLE",
+        "FIGHTER"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "6",
+      "Power": "6",
+      "HP": "6",
+      "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Pandu Mahardika",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/049.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "075",
+      "Name": "Knowledge and Defense",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "LEARNED"
+      ],
+      "Cost": "3",
+      "FrontText": "Give a unit -2/-2 for this phase.\nDraw a card.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Marc Escachx",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/075.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "032",
+      "Name": "Kylo Ren's Command Shuttle",
+      "Subtitle": "Icon of Authority",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "FIRST ORDER",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "4",
+      "Power": "3",
+      "HP": "5",
+      "FrontText": "Each friendly ground unit with Sentinel gets +0/+2.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "EJ Dela Cruz",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/032.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "003",
+      "Name": "Lama Su",
+      "Subtitle": "We Modified Their Genetics",
+      "Type": "Leader",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "KAMINOAN",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "3",
+      "HP": "7",
+      "FrontText": "Action [Exhaust]: Play an upgrade from your hand on a friendly non-Vehicle unit. It costs 1 less. If you do, deal 1 damage to that unit.",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/003-b.png",
+      "BackText": "When this unit completes an attack (and survives): You may play an upgrade from your discard pile on a friendly non-Vehicle unit. It costs 1 less.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Sebastián Guidobono",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/003.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "068",
+      "Name": "Lando Calrissian",
+      "Subtitle": "Trust Me",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "7",
+      "Power": "6",
+      "HP": "8",
+      "FrontText": "Grit\nWhen Played: You may choose an enemy unit and another friendly non-leader unit. If you do, heal 6 damage from your base and the enemy unit captures the friendly unit.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Grit"
+      ],
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/068.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "004",
+      "Name": "Leia Organa",
+      "Subtitle": "Of A Secret Bloodline",
+      "Type": "Leader",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "NEW REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "4",
+      "HP": "7",
+      "FrontText": "Action [C=1, Exhaust]: Disclose Vigilance, Command, Aggression, Cunning, or Heroism (reveal a card from your hand with this aspect icon). If you do, give an Experience token to a unit that doesn't share an aspect with the disclosed card.",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/004-b.png",
+      "BackText": "On Attack: You may disclose Vigilance, Command, Aggression, Cunning, or Heroism. If you do, give an Experience token to a unit that doesn't share an aspect with the disclosed card.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Jessi Ochse",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/004.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "057",
+      "Name": "Lobot",
+      "Subtitle": "Cloud City Coordinator",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "0",
+      "HP": "4",
+      "FrontText": "Sentinel (Enemy units in this arena must attack a Sentinel when they attack you.)\nGrit (This unit gets +1/+0 for each damage on him.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Grit",
+        "Sentinel"
+      ],
+      "Artist": "Omercan Cirit",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/057.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "058",
+      "Name": "Lost Jedi",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FORCE",
+        "JEDI"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "1",
+      "HP": "3",
+      "FrontText": "Grit (This unit gets +1/+0 for each damage on it.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Grit"
+      ],
+      "Artist": "Kaihound Studios",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/058.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "013",
+      "Name": "Luthen Rael",
+      "Subtitle": "Don't You Want to Fight For Real?",
+      "Type": "Leader",
+      "Aspects": [
+        "Aggression",
+        "Heroism"
+      ],
+      "Traits": [
+        "REBEL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "2",
+      "HP": "7",
+      "FrontText": "When a friendly unit is defeated while attacking: You may exhaust this leader. If you do, deal 1 damage to a unit or base.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/013-b.png",
+      "BackText": "When a friendly unit is defeated while attacking: You may deal 2 damage to a unit or base.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Reno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/013.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "081",
+      "Name": "Major Partagaz",
+      "Subtitle": "Healthcare Provider",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "0",
+      "HP": "6",
+      "FrontText": "Overwhelm\nWhen another friendly Official unit attacks: This unit gets +2/+2 for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm"
+      ],
+      "Artist": "Benjamin Paulus",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/081.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "084",
+      "Name": "Mas Amedda",
+      "Subtitle": "Accomplice to Power",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "3",
+      "HP": "4",
+      "FrontText": "When Played: Give an Experience token to each of up to 2 other Official units.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Steve Morris",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/084.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "094",
+      "Name": "Mina Bonteri",
+      "Subtitle": "Stop This War",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "SEPARATIST",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "4",
+      "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nWhen Defeated: You may disclose Command Command Heroism (reveal cards from your hand with these aspect icons among them). If you do, draw a card.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Salomé Goré",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/094.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "009",
+      "Name": "Mon Mothma",
+      "Subtitle": "Forming a Coalition",
+      "Type": "Leader",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "3",
+      "HP": "7",
+      "FrontText": "Ignore the aspect penalties on non‑Villainy Official units you play. each other friendly official unit gets +0/+1.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/009-b.png",
+      "BackText": "Ignore the aspect penalties on non‑Villainy Official units you play.\nEach other friendly Official unit gets +0/+1.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/009.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "103",
+      "Name": "Mon Mothma",
+      "Subtitle": "Clinging to Hope",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "REBEL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "7",
+      "Power": "5",
+      "HP": "8",
+      "FrontText": "Restore 3\nWhen Played: You may attack with any number of other units (one at a time), even if those units are exhausted. They can't attack bases for these attacks.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/103.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "026",
+      "Name": "Mount Tantiss",
+      "Subtitle": "Wayland",
+      "Type": "Base",
+      "Aspects": [
+        "Cunning"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Tyler Edlin",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/026.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "099",
+      "Name": "Naboo Royal Starship",
+      "Subtitle": "Fit For A Queen",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "NABOO",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "4",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "Each friendly leader unit gains Raid 2 and Overwhelm.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm",
+        "Plot",
+        "Raid"
+      ],
+      "Artist": "Francois Cannels",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/099.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "065",
+      "Name": "Nala Se",
+      "Subtitle": "Chief Medical Scientist",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "KAMINOAN"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "4",
+      "HP": "7",
+      "FrontText": "On Attack: You may disclose Vigilance Vigilance (reveal cards from your hand with these aspect icons among them). If you do, heal up to 4 damage from among other units.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/065.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "024",
+      "Name": "Naval Intelligence HQ",
+      "Subtitle": "Coruscant",
+      "Type": "Base",
+      "Aspects": [
+        "Aggression"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Henning Ludvigsen",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/024.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "069",
+      "Name": "Nimble Prowess",
+      "Type": "Upgrade",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "INNATE"
+      ],
+      "Cost": "1",
+      "FrontText": "Attach to a friendly unit.\nWhen Played: You may exhaust a unit in attached unit's arena.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Sandra Chlewińska",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/069.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "031",
+      "Name": "Nute Gunray",
+      "Subtitle": "Escaping Justice",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "SEPARATIST",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "3",
+      "HP": "4",
+      "FrontText": "Grit\nWhen Played/On Attack: You may give another friendly Official unit Sentinel for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Grit",
+        "Sentinel"
+      ],
+      "Artist": "Marc Escachx",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/031.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "053",
+      "Name": "One in a Million",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "GAMBIT"
+      ],
+      "Cost": "1",
+      "FrontText": "This card can't be played from your hand.\nDefeat a unit with power and remaining HP both equal to the number of ready resources you control.\nPlot",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Reno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/053.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "016",
+      "Name": "Padmé Amidala",
+      "Subtitle": "What Do You Have to Hide?",
+      "Type": "Leader",
+      "Aspects": [
+        "Cunning",
+        "Heroism"
+      ],
+      "Traits": [
+        "NABOO",
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "3",
+      "HP": "8",
+      "FrontText": "When you reveal or discard 1 or more cards from your hand: You may exhaust this leader. If you do, deal 1 damage to a unit.",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/016-b.png",
+      "BackText": "When you reveal or discard 1 or more cards from your hand: You may deal 1 damage to a unit.",
+      "Rarity": "Special",
+      "Unique": true,
+      "Artist": "Kaihound Studios",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/016.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "041",
+      "Name": "Populist Advisor",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "NEW REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "1",
+      "Power": "1",
+      "HP": "4",
+      "FrontText": "When an enemy unit deals combat damage to your base: This unit gains Sentinel for this phase. (Enemy units in this arena must attack a Sentinel when they attack you.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/041.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "044",
+      "Name": "Populist Champion",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "NEW REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "3",
+      "HP": "5",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Mali Vasanserekul",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/044.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "089",
+      "Name": "PreMor Personnel Carrier",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "8",
+      "Power": "6",
+      "HP": "6",
+      "FrontText": "Overwhelm (When attacking an enemy unit, deal excess damage to the opponent's base.)\nWhen Played: Give this unit an Experience token for each ground unit you control.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Keywords": [
+        "Overwhelm"
+      ],
+      "Artist": "Shane Molina",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/089.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "074",
+      "Name": "Relief Request",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "LAW"
+      ],
+      "Cost": "2",
+      "FrontText": "Heal 3 damage from a unit.\nYou may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, heal 3 damage from another unit.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/074.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "021",
+      "Name": "Republic City",
+      "Subtitle": "Hosnian Prime",
+      "Type": "Base",
+      "Aspects": [
+        "Command"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Henning Ludvigsen",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/021.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "077",
+      "Name": "Retaliation",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "TACTIC"
+      ],
+      "Cost": "5",
+      "FrontText": "Defeat a unit that dealt damage to a base this phase.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/077.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "019",
+      "Name": "Rix Road",
+      "Subtitle": "Ferrix",
+      "Type": "Base",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Henning Ludvigsen",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/019.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "063",
+      "Name": "Rotunda Senate Guards",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "4",
+      "HP": "5",
+      "FrontText": "While this unit is undamaged, it gains Sentinel. (Enemy units in this arena must attack a Sentinel when they attack you.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Sentinel"
+      ],
+      "Artist": "Ario Murti",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/063.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "017",
+      "Name": "Sabé",
+      "Subtitle": "Queen's Shadow",
+      "Type": "Leader",
+      "Aspects": [
+        "Cunning",
+        "Heroism"
+      ],
+      "Traits": [
+        "NABOO"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "3",
+      "HP": "6",
+      "FrontText": "When a friendly unit deals combat damage to a base: You may exhaust this leader. If you do, look at the top 2 cards of the defending player's deck. Discard 1 of those cards. (Put the other back on top.)",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/017-b.png",
+      "BackText": "Raid 1\nWhen this unit deals combat damage to a base: Look at the defending player's hand. You may discard a card from it. If you do, that player draws a card.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Raid"
+      ],
+      "Artist": "Jessi Ochse",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/017.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "005",
+      "Name": "Satine Kryze",
+      "Subtitle": "Standing on Principles",
+      "Type": "Leader",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "MANDALORIAN",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "0",
+      "HP": "8",
+      "FrontText": "Action [Exhaust]: Heal up to 2 damage from a unit. If you do, deal that much damage to your base.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/005-b.png",
+      "BackText": "Restore 4",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Borja Pindado",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/005.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "072",
+      "Name": "Scour the Archives",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "LEARNED"
+      ],
+      "Cost": "1",
+      "FrontText": "Search the top 8 cards of your deck for an upgrade, reveal it, and draw it. (Put the other cards on the bottom of your deck in a random order.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "David Buisan",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/072.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "022",
+      "Name": "Senate Rotunda",
+      "Subtitle": "Coruscant",
+      "Type": "Base",
+      "Aspects": [
+        "Command"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Adrien Girod",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/022.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "059",
+      "Name": "Senate Warden",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "2",
+      "FrontText": "When Defeated: You may disclose Vigilance (reveal a card from your hand with this aspect icon). If you do, give an Experience token to a unit.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Ario Anindito",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/059.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "045",
+      "Name": "Senator Chuchi",
+      "Subtitle": "Voice for the Voiceless",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.)\nOn Attack: Give another friendly Official unit Restore 2 for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Mali Vasanserekul",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/045.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "014",
+      "Name": "Sly Moore",
+      "Subtitle": "Cipher in the Dark",
+      "Type": "Leader",
+      "Aspects": [
+        "Cunning",
+        "Villainy"
+      ],
+      "Traits": [
+        "FORCE",
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "5",
+      "Power": "3",
+      "HP": "6",
+      "FrontText": "Action [C=1, Exhaust]: If there are 4 or more exhausted units in play, create a Spy token.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/SEC/014-b.png",
+      "BackText": "On Attack: You may deal 2 damage to an exhausted unit.",
+      "Rarity": "Common",
+      "Unique": true,
+      "Artist": "Omercan Cirit",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/014.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "033",
+      "Name": "Sly Moore",
+      "Subtitle": "Witness to Power",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "2",
+      "HP": "6",
+      "FrontText": "When Played: For this phase, each enemy unit gets –2/–0 while it's attacking a base.\nPlot (When you deploy a leader, you may play this card from your resources, paying its cost. Replace it with the top card of your deck.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Denis Medri",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/033.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "027",
+      "Name": "The Chancellor's Shuttle",
+      "Subtitle": "Grim Harbinger",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "VEHICLE",
+        "TRANSPORT"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "2",
+      "Power": "1",
+      "HP": "3",
+      "FrontText": "Restore 1\nWhen Defeated: If you control Chancellor Palpatine (as a leader or unit), you may give an Experience token to a unit.",
+      "DoubleSided": false,
+      "Rarity": "Special",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Christian Papazoglakis",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/027.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "073",
+      "Name": "The Eye of Aldhani",
+      "Type": "Event",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "INNATE",
+        "TRICK"
+      ],
+      "Cost": "1",
+      "FrontText": "At the start of the next action phase, for each enemy unit, its controller must pay 1 or exhaust that unit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Natcha Ngamtweerat",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/073.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "095",
+      "Name": "Theed Security",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Heroism"
+      ],
+      "Traits": [
+        "NABOO",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "3",
+      "FrontText": "When Played: If an opponent controls an upgrade, give an Experience token to a unit.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Sandra Chlewińska",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/095.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "028",
+      "Name": "Trayus Acolyte",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "FORCE",
+        "SITH"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "2",
+      "HP": "4",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Jakub Rebelka",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/028.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "067",
+      "Name": "Umbaran Mobile Cannon",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE",
+        "VEHICLE",
+        "WALKER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "6",
+      "Power": "7",
+      "HP": "3",
+      "FrontText": "The first time this unit would take damage each phase, prevent that damage.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/067.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "020",
+      "Name": "Uscru Entertainment District",
+      "Subtitle": "Coruscant",
+      "Type": "Base",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "HP": "30",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Henning Ludvigsen",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/020.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "085",
+      "Name": "Vice Admiral Rampart",
+      "Subtitle": "On Schedule",
+      "Type": "Unit",
+      "Aspects": [
+        "Command",
+        "Villainy"
+      ],
+      "Traits": [
+        "IMPERIAL",
+        "OFFICIAL"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "4",
+      "Power": "3",
+      "HP": "6",
+      "FrontText": "On Attack: You may disclose Command Command Villainy (reveal cards from your hand with these aspect icons among them). If you do, give an Experience token to each of up to 2 other units.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Sebastián Guidobono",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/085.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "050",
+      "Name": "Vigil",
+      "Subtitle": "Securing the Future",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Heroism"
+      ],
+      "Traits": [
+        "RESISTANCE",
+        "VEHICLE",
+        "CAPITAL SHIP"
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "Cost": "7",
+      "Power": "5",
+      "HP": "9",
+      "FrontText": "If damage would be dealt to another friendly unit, prevent 1 of that damage.\nIf damage would be dealt to this unit by another card, deal that much damage plus 1 instead.\nPlot",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Plot"
+      ],
+      "Artist": "Fernando Correa",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/050.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "061",
+      "Name": "Willrow Hood",
+      "Subtitle": "On the Run",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance"
+      ],
+      "Traits": [
+        "FRINGE"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "3",
+      "Power": "2",
+      "HP": "5",
+      "FrontText": "While this unit has exactly 1 friendly upgrade on it, that upgrade can't be defeated or returned to hand by enemy card abilities.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Sebastián Guidobono",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/061.png"
+    },
+    {
+      "Set": "SEC",
+      "Number": "029",
+      "Name": "Zam Wesell",
+      "Subtitle": "Inconspicuous Assassin",
+      "Type": "Unit",
+      "Aspects": [
+        "Vigilance",
+        "Villainy"
+      ],
+      "Traits": [
+        "UNDERWORLD",
+        "BOUNTY HUNTER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "Cost": "2",
+      "Power": "1",
+      "HP": "5",
+      "FrontText": "While this unit is upgraded, she gains Grit. (She gets +1/+0 for each damage on her.)",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Grit"
+      ],
+      "Artist": "Sandra Chlewińska",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/029.png"
+    }
+  ]
+}
