@@ -2,6 +2,8 @@
 
 A web-based viewer for Star Wars Unlimited deck lists from SWUDB.
 
+**🌐 Live Demo:** https://danoliv.github.io/swudeck-viewer/
+
 ## Features
 
 - 📋 Load and view decks from SWUDB URLs
