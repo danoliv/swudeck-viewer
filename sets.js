@@ -2,7 +2,7 @@
 // Single source of truth with a hardcoded list and one function
 
 function loadSets() {
-    return ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC'];
+    return ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW'];
 }
 
 // Export for Node.js (fetch-sets.js)
