@@ -52,21 +52,32 @@
 
   // Utility function to retry fetch requests with proxy fallbacks
   async function fetchWithRetry(url, retries = 3, bypassCache = false) {
+    // Check if we're on localhost - if so, try direct fetch first
+    const isLocalHost = typeof window !== 'undefined' &&
+                        (window.location.hostname === 'localhost' ||
+                         window.location.hostname === '127.0.0.1' ||
+                         window.location.hostname === '');
+
     // List of proxies to try (null = direct fetch). Order matters.
     const proxies = [
-      // Prefer the AllOrigins `raw` endpoint which forwards the original response and
-      // usually includes Access-Control-Allow-Origin.
-      'https://api.allorigins.win/raw?url=',
-      // Fallback to the `/get` JSON wrapper if `raw` is unavailable.
-      'https://api.allorigins.win/get?url=',
-      // Other known proxies
+      // On localhost, try direct fetch first (CORS is relaxed)
+      ...(isLocalHost ? [null] : []),
+      // Working alternatives - add more as needed
+      'https://api.codetabs.com/v1/proxy?quest=',
+      // These are kept as fallbacks but may be rate-limited
       'https://thingproxy.freeboard.io/fetch/',
-      'https://cors.bridged.cc/'
+      'https://cors.bridged.cc/',
+      'https://corsproxy.io/?',
+      'https://api.allorigins.win/raw?url=',
+      'https://api.allorigins.win/get?url='
     ];
 
     const buildProxyUrl = (proxy, targetUrl) => {
       if (!proxy) return targetUrl;
       if (proxy.includes('allorigins')) return `${proxy}${encodeURIComponent(targetUrl)}`;
+      if (proxy.includes('codetabs')) return `${proxy}${targetUrl}`; // codetabs uses 'quest=' parameter
+      if (proxy.includes('corsproxy.io')) return `${proxy}${encodeURIComponent(targetUrl)}`;
+      if (proxy.includes('bridged.cc')) return `${proxy}${targetUrl}`;
       if (proxy.endsWith('/fetch/') || proxy.endsWith('/')) return `${proxy}${targetUrl}`;
       return `${proxy}${encodeURIComponent(targetUrl)}`;
     };
@@ -206,15 +217,33 @@
     return `\n      <div class="deck-name">${deckName}</div>\n      <div class="deck-stats">\n        Main Deck: ${deckSize} cards<br>\n        Sideboard: ${sideboardSize} cards\n      </div>\n    `;
   }
 
-  // Expose on window for scripts to use
-  window.PROXY = PROXY;
-  window.TIMEOUT_MS = TIMEOUT_MS;
-  window.fetchUsingExternalProxy = fetchUsingExternalProxy;
-  window.fetchWithRetry = fetchWithRetry;
-  window.getDeckIdFromUrl = getDeckIdFromUrl;
-  window.getQueryParam = getQueryParam;
-  window.setQueryParam = setQueryParam;
-  window.setQueryParams = setQueryParams;
-  window.buildDeckCardCounts = buildDeckCardCounts;
-  window.deckInfoHTML = deckInfoHTML;
+  // Export for Node.js (testing)
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+      PROXY,
+      TIMEOUT_MS,
+      fetchUsingExternalProxy,
+      fetchWithRetry,
+      getDeckIdFromUrl,
+      getQueryParam,
+      setQueryParam,
+      setQueryParams,
+      buildDeckCardCounts,
+      deckInfoHTML
+    };
+  }
+
+  // Expose on window for scripts to use (browser)
+  if (typeof window !== 'undefined') {
+    window.PROXY = PROXY;
+    window.TIMEOUT_MS = TIMEOUT_MS;
+    window.fetchUsingExternalProxy = fetchUsingExternalProxy;
+    window.fetchWithRetry = fetchWithRetry;
+    window.getDeckIdFromUrl = getDeckIdFromUrl;
+    window.getQueryParam = getQueryParam;
+    window.setQueryParam = setQueryParam;
+    window.setQueryParams = setQueryParams;
+    window.buildDeckCardCounts = buildDeckCardCounts;
+    window.deckInfoHTML = deckInfoHTML;
+  }
 })();

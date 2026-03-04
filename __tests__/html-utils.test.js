@@ -1,12 +1,35 @@
-// Tests for HTML utility functions and deck processing
-describe('HTML Utilities and Deck Processing', () => {
+// Tests for shared.js utility functions
+const {
+  getDeckIdFromUrl,
+  buildDeckCardCounts,
+  deckInfoHTML
+} = require('../shared.js');
+
+// Mock window.location for query param tests
+global.window = {
+  location: {
+    search: '',
+    href: 'http://localhost/',
+    pathname: '/'
+  },
+  history: {
+    pushState: jest.fn()
+  }
+};
+
+// Mock URLSearchParams if not available
+if (typeof URLSearchParams === 'undefined') {
+  global.URLSearchParams = require('url').URLSearchParams;
+}
+
+describe('shared.js utilities', () => {
   beforeEach(() => {
-    // Reset DOM
-    document.body.innerHTML = '';
+    jest.clearAllMocks();
+    window.location.search = '';
   });
 
-  describe('URL parsing', () => {
-    test('should extract deck ID from SWUDB URL', () => {
+  describe('getDeckIdFromUrl', () => {
+    test('should extract deck ID from full SWUDB URL', () => {
       const testUrls = [
         { url: 'https://swudb.com/deck/123', expected: '123' },
         { url: 'https://swudb.com/deck/456', expected: '456' },
@@ -14,264 +37,222 @@ describe('HTML Utilities and Deck Processing', () => {
       ];
 
       testUrls.forEach(({ url, expected }) => {
-        const urlObj = new URL(url);
-        const pathSegments = urlObj.pathname.split('/').filter(Boolean);
-        const deckId = pathSegments[pathSegments.length - 1];
+        const deckId = getDeckIdFromUrl(url);
         expect(deckId).toBe(expected);
       });
     });
 
-  });
-
-  describe('Card ID parsing', () => {
-    test('should parse valid card IDs correctly', () => {
-      const testCases = [
-        { id: 'SOR_001', expected: { set: 'SOR', number: 1 } },
-        { id: 'SHD_123', expected: { set: 'SHD', number: 123 } },
-        { id: 'JTL_045', expected: { set: 'JTL', number: 45 } },
-        { id: 'TWI_999', expected: { set: 'TWI', number: 999 } }
-      ];
-
-      testCases.forEach(({ id, expected }) => {
-        const [set, num] = id.split('_');
-        const number = parseInt(num, 10);
-        
-        expect(set).toBe(expected.set);
-        expect(number).toBe(expected.number);
-      });
+    test('should handle URLs with trailing slashes', () => {
+      const url = 'https://swudb.com/deck/123/';
+      const deckId = getDeckIdFromUrl(url);
+      expect(deckId).toBe('123');
     });
 
-    test('should handle invalid card ID formats', () => {
-      const invalidIds = ['SOR', 'SOR_', '_001', '', 'INVALID_FORMAT'];
-      
-      invalidIds.forEach(id => {
-        const parts = id.split('_');
-        if (parts.length !== 2) {
-          expect(parts.length).not.toBe(2);
-        }
-      });
+    test('should handle plain deck IDs', () => {
+      const deckId = getDeckIdFromUrl('my-deck-123');
+      expect(deckId).toBe('my-deck-123');
+    });
+
+    test('should handle null input', () => {
+      const deckId = getDeckIdFromUrl(null);
+      expect(deckId).toBeNull();
+    });
+
+    test('should handle empty string', () => {
+      const deckId = getDeckIdFromUrl('');
+      expect(deckId).toBeNull();
+    });
+
+    test('should extract ID from complex paths', () => {
+      const url = 'https://swudb.com/api/deck/test-deck-456';
+      const deckId = getDeckIdFromUrl(url);
+      expect(deckId).toBe('test-deck-456');
+    });
+
+    test('should fallback to naive split on invalid URLs', () => {
+      const invalidUrl = 'not-a-url/deck/789';
+      const deckId = getDeckIdFromUrl(invalidUrl);
+      expect(deckId).toBe('789');
     });
   });
 
-  describe('Deck data validation', () => {
-    test('should validate deck structure', () => {
-      const validDeck = {
+  describe('buildDeckCardCounts', () => {
+    test('should build card counts from deck data', () => {
+      const deckData = {
         deck: [
           { id: 'SOR_001', count: 2 },
-          { id: 'SHD_123', count: 1 }
-        ],
-        metadata: {
-          name: 'Test Deck'
-        },
-        leader: { id: 'SOR_001' },
-        base: { id: 'SOR_002' }
+          { id: 'SOR_002', count: 1 },
+          { id: 'SHD_123', count: 3 }
+        ]
       };
 
-      expect(validDeck.deck).toBeDefined();
-      expect(Array.isArray(validDeck.deck)).toBe(true);
-      expect(validDeck.metadata).toBeDefined();
-      expect(validDeck.metadata.name).toBeDefined();
+      const counts = buildDeckCardCounts(deckData);
+
+      expect(counts.size).toBe(3);
+      expect(counts.get('SOR_001')).toEqual({ main: 2, sideboard: 0 });
+      expect(counts.get('SOR_002')).toEqual({ main: 1, sideboard: 0 });
+      expect(counts.get('SHD_123')).toEqual({ main: 3, sideboard: 0 });
+    });
+
+    test('should include sideboard counts', () => {
+      const deckData = {
+        deck: [
+          { id: 'SOR_001', count: 2 }
+        ],
+        sideboard: [
+          { id: 'SOR_001', count: 1 },
+          { id: 'SOR_003', count: 2 }
+        ]
+      };
+
+      const counts = buildDeckCardCounts(deckData);
+
+      expect(counts.size).toBe(2);
+      expect(counts.get('SOR_001')).toEqual({ main: 2, sideboard: 1 });
+      expect(counts.get('SOR_003')).toEqual({ main: 0, sideboard: 2 });
+    });
+
+    test('should handle cards only in sideboard', () => {
+      const deckData = {
+        deck: [],
+        sideboard: [
+          { id: 'SOR_005', count: 1 }
+        ]
+      };
+
+      const counts = buildDeckCardCounts(deckData);
+
+      expect(counts.size).toBe(1);
+      expect(counts.get('SOR_005')).toEqual({ main: 0, sideboard: 1 });
     });
 
     test('should handle missing deck data', () => {
-      const invalidDeck = {
-        metadata: { name: 'Test Deck' }
-        // Missing deck array
-      };
-
-      expect(invalidDeck.deck).toBeUndefined();
+      const counts = buildDeckCardCounts(null);
+      expect(counts.size).toBe(0);
     });
 
-    test('should validate card objects in deck', () => {
-      const validCard = {
-        id: 'SOR_001',
-        count: 2
+    test('should handle empty deck', () => {
+      const deckData = {
+        deck: [],
+        sideboard: []
       };
 
-      expect(validCard.id).toBeDefined();
-      expect(typeof validCard.id).toBe('string');
-      expect(validCard.count).toBeDefined();
-      expect(typeof validCard.count).toBe('number');
+      const counts = buildDeckCardCounts(deckData);
+      expect(counts.size).toBe(0);
+    });
+
+    test('should default count to 1 if not specified', () => {
+      const deckData = {
+        deck: [
+          { id: 'SOR_001' } // No count specified
+        ]
+      };
+
+      const counts = buildDeckCardCounts(deckData);
+      expect(counts.get('SOR_001')).toEqual({ main: 1, sideboard: 0 });
+    });
+
+    test('should skip cards without IDs', () => {
+      const deckData = {
+        deck: [
+          { id: 'SOR_001', count: 2 },
+          { count: 3 }, // No ID
+          null,
+          { id: 'SOR_002', count: 1 }
+        ]
+      };
+
+      const counts = buildDeckCardCounts(deckData);
+      expect(counts.size).toBe(2);
+      expect(counts.has('SOR_001')).toBe(true);
+      expect(counts.has('SOR_002')).toBe(true);
     });
   });
 
-  describe('Card grouping logic', () => {
-    test('should group cards by set', () => {
-      const cards = [
-        { id: 'SOR_001', count: 2 },
-        { id: 'SOR_002', count: 1 },
-        { id: 'SHD_001', count: 3 },
-        { id: 'JTL_001', count: 1 }
-      ];
-
-      const grouped = {};
-      cards.forEach(card => {
-        const [set] = card.id.split('_');
-        if (!grouped[set]) grouped[set] = [];
-        grouped[set].push(card);
-      });
-
-      expect(grouped.SOR).toHaveLength(2);
-      expect(grouped.SHD).toHaveLength(1);
-      expect(grouped.JTL).toHaveLength(1);
-    });
-
-    test('should sort cards within each set by number', () => {
-      const cards = [
-        { id: 'SOR_003', count: 1 },
-        { id: 'SOR_001', count: 2 },
-        { id: 'SOR_002', count: 1 }
-      ];
-
-      const grouped = {};
-      cards.forEach(card => {
-        const [set, num] = card.id.split('_');
-        if (!grouped[set]) grouped[set] = [];
-        grouped[set].push({
-          ...card,
-          number: parseInt(num, 10)
-        });
-      });
-
-      // Sort cards within each set
-      Object.keys(grouped).forEach(set => {
-        grouped[set].sort((a, b) => a.number - b.number);
-      });
-
-      expect(grouped.SOR[0].id).toBe('SOR_001');
-      expect(grouped.SOR[1].id).toBe('SOR_002');
-      expect(grouped.SOR[2].id).toBe('SOR_003');
-    });
-  });
-
-  describe('Aspect and trait processing', () => {
-    test('should handle single aspects', () => {
-      const card = {
-        Aspects: ['Command']
+  describe('deckInfoHTML', () => {
+    test('should generate HTML for deck with name', () => {
+      const deckData = {
+        metadata: {
+          name: 'Test Deck'
+        },
+        deck: [
+          { id: 'SOR_001', count: 2 },
+          { id: 'SOR_002', count: 1 }
+        ],
+        sideboard: [
+          { id: 'SOR_003', count: 1 }
+        ]
       };
 
-      expect(Array.isArray(card.Aspects)).toBe(true);
-      expect(card.Aspects).toContain('Command');
+      const html = deckInfoHTML(deckData);
+
+      expect(html).toContain('Test Deck');
+      expect(html).toContain('Main Deck: 2 cards');
+      expect(html).toContain('Sideboard: 1 cards');
     });
 
-    test('should handle multiple aspects', () => {
-      const card = {
-        Aspects: ['Command', 'Aggression']
+    test('should handle deck without name', () => {
+      const deckData = {
+        deck: [
+          { id: 'SOR_001', count: 2 }
+        ]
       };
 
-      expect(card.Aspects).toHaveLength(2);
-      expect(card.Aspects).toContain('Command');
-      expect(card.Aspects).toContain('Aggression');
+      const html = deckInfoHTML(deckData);
+      expect(html).toContain('Unnamed Deck');
     });
 
-    test('should handle traits as array', () => {
-      const card = {
-        Traits: ['IMPERIAL', 'VEHICLE']
+    test('should handle empty deck', () => {
+      const deckData = {
+        metadata: {
+          name: 'Empty Deck'
+        },
+        deck: [],
+        sideboard: []
       };
 
-      expect(Array.isArray(card.Traits)).toBe(true);
-      expect(card.Traits).toContain('IMPERIAL');
-      expect(card.Traits).toContain('VEHICLE');
+      const html = deckInfoHTML(deckData);
+      expect(html).toContain('Empty Deck');
+      expect(html).toContain('Main Deck: 0 cards');
+      expect(html).toContain('Sideboard: 0 cards');
     });
 
-    test('should handle empty traits', () => {
-      const card = {
-        Traits: []
+    test('should handle deck without sideboard', () => {
+      const deckData = {
+        metadata: {
+          name: 'Main Deck Only'
+        },
+        deck: [
+          { id: 'SOR_001' },
+          { id: 'SOR_002' }
+        ]
       };
 
-      expect(Array.isArray(card.Traits)).toBe(true);
-      expect(card.Traits).toHaveLength(0);
+      const html = deckInfoHTML(deckData);
+      expect(html).toContain('Main Deck: 2 cards');
+      expect(html).toContain('Sideboard: 0 cards');
     });
 
-    test('should handle missing traits', () => {
-      const card = {
-        Name: 'Test Card'
-        // No Traits property
-      };
-
-      const traits = card.Traits || [];
-      expect(Array.isArray(traits)).toBe(true);
-    });
-  });
-
-  describe('Card type processing', () => {
-    test('should categorize units by arena', () => {
-      const groundUnit = {
-        Type: 'Unit',
-        Arenas: ['Ground']
-      };
-
-      const spaceUnit = {
-        Type: 'Unit',
-        Arenas: ['Space']
-      };
-
-      const multiArenaUnit = {
-        Type: 'Unit',
-        Arenas: ['Ground', 'Space']
-      };
-
-      // Test ground unit categorization
-      let type = groundUnit.Type;
-      if (type === 'Unit') {
-        if (groundUnit.Arenas && groundUnit.Arenas.includes('Space')) {
-          type = 'Space Unit';
-        } else {
-          type = 'Ground Unit';
-        }
-      }
-      expect(type).toBe('Ground Unit');
-
-      // Test space unit categorization
-      type = spaceUnit.Type;
-      if (type === 'Unit') {
-        if (spaceUnit.Arenas && spaceUnit.Arenas.includes('Space')) {
-          type = 'Space Unit';
-        } else {
-          type = 'Ground Unit';
-        }
-      }
-      expect(type).toBe('Space Unit');
+    test('should handle null deck data', () => {
+      const html = deckInfoHTML(null);
+      expect(html).toContain('Unnamed Deck');
+      expect(html).toContain('Main Deck: 0 cards');
+      expect(html).toContain('Sideboard: 0 cards');
     });
 
-    test('should handle non-unit cards', () => {
-      const eventCard = {
-        Type: 'Event',
-        Arenas: []
+    test('should return valid HTML structure', () => {
+      const deckData = {
+        metadata: { name: 'Test' },
+        deck: [{ id: 'SOR_001' }],
+        sideboard: []
       };
 
-      let type = eventCard.Type;
-      if (type === 'Unit') {
-        if (eventCard.Arenas && eventCard.Arenas.includes('Space')) {
-          type = 'Space Unit';
-        } else {
-          type = 'Ground Unit';
-        }
-      }
-      expect(type).toBe('Event');
-    });
-  });
+      const html = deckInfoHTML(deckData);
 
-  describe('Cost sorting', () => {
-    test('should sort costs numerically', () => {
-      const costs = ['5', '1', '3', 'X', '2'];
-      
-      const sorted = costs.sort((a, b) => {
-        if (a === 'X') return 1;
-        if (b === 'X') return -1;
-        return parseInt(a) - parseInt(b);
-      });
-
-      expect(sorted).toEqual(['1', '2', '3', '5', 'X']);
-    });
-
-    test('should handle numeric costs', () => {
-      const costs = ['0', '1', '2', '3', '4', '5'];
-      
-      costs.forEach(cost => {
-        expect(parseInt(cost, 10)).toBeGreaterThanOrEqual(0);
-        expect(parseInt(cost, 10)).toBeLessThanOrEqual(5);
-      });
+      expect(html).toContain('class="deck-name"');
+      expect(html).toContain('class="deck-stats"');
+      expect(html).toContain('<div');
+      expect(html).toContain('</div>');
     });
   });
 });

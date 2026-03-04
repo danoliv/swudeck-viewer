@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SWU Deck Viewer - Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .settings-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .setting-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .setting-item h3 {
+            margin-top: 0;
+        }
+        .setting-item label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .setting-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .info-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .warning-box {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #ffc107;
+        }
+        button {
+            padding: 10px 20px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #0052a3;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="index.html">Deck Viewer</a>
+        <a href="compare.html">Deck Comparison</a>
+        <a href="settings.html" class="active">Settings</a>
+    </div>
+
+    <div class="settings-container">
+        <a href="index.html" class="back-link">← Back to Deck Viewer</a>
+
+        <h1>Settings</h1>
+
+        <div class="warning-box">
+            <strong>⚠️ CORS Proxy Issues Detected</strong><br>
+            Many free CORS proxies are currently experiencing issues or rate limits.
+            For localhost testing, enable the bypass option below.
+        </div>
+
+        <div class="setting-item">
+            <h3>Enable Direct API Fetch (Localhost Only)</h3>
+            <label>
+                <input type="checkbox" id="useDirectFetch">
+                <span>Bypass CORS proxies and fetch directly from SWUDB API</span>
+            </label>
+            <div class="info-box">
+                <strong>ℹ️ When to use this:</strong><br>
+                - You're testing on localhost (http://localhost:8000)<br>
+                - You have a browser extension that handles CORS (like "CORS Unblock" or "Allow CORS")<br>
+                - You're using a browser with relaxed security for testing<br>
+                <br>
+                <strong>Note:</strong> This won't work on production domains without proper CORS headers.
+            </div>
+        </div>
+
+        <div class="setting-item">
+            <h3>Clear All Data</h3>
+            <button onclick="clearAllData()">Clear Cache & Recent Decks</button>
+            <div class="info-box">
+                Clears all cached card data and recent deck history.
+            </div>
+        </div>
+
+        <div class="setting-item">
+            <h3>Test Connection</h3>
+            <button onclick="testConnection()">Test SWUDB API Connection</button>
+            <div id="testResult" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Load current setting
+        const useDirectFetch = localStorage.getItem('useDirectFetch') === 'true';
+        document.getElementById('useDirectFetch').checked = useDirectFetch;
+
+        // Save setting when changed
+        document.getElementById('useDirectFetch').addEventListener('change', function(e) {
+            localStorage.setItem('useDirectFetch', e.target.checked ? 'true' : 'false');
+            alert('Setting saved! Reload any open deck viewer pages for changes to take effect.');
+        });
+
+        function clearAllData() {
+            if (confirm('This will clear all cached data and recent decks. Continue?')) {
+                localStorage.clear();
+                // Reload settings
+                document.getElementById('useDirectFetch').checked = false;
+                alert('All data cleared!');
+            }
+        }
+
+        async function testConnection() {
+            const resultDiv = document.getElementById('testResult');
+            resultDiv.innerHTML = '<span style="color: #666;">Testing...</span>';
+
+            const testDeckId = 'YHNqqVcCe';
+            const testUrl = `https://swudb.com/api/getDeckJson/${testDeckId}`;
+
+            try {
+                // Try direct fetch first
+                resultDiv.innerHTML = '<span style="color: #666;">Trying direct fetch...</span>';
+                const response = await fetch(testUrl);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    resultDiv.innerHTML = '<span style="color: #28a745;">✓ Direct fetch works! No proxy needed.</span>';
+                    return;
+                }
+
+                resultDiv.innerHTML = `<span style="color: #dc3545;">✗ Direct fetch failed (${response.status}). You may need to enable CORS bypass or use a browser extension.</span>`;
+            } catch (error) {
+                resultDiv.innerHTML = `<span style="color: #dc3545;">✗ Connection error: ${error.message}<br><br>
+                    <strong>Solutions:</strong><br>
+                    1. Enable "Direct API Fetch" above<br>
+                    2. Install a CORS browser extension like "CORS Unblock"<br>
+                    3. Use a different browser<br>
+                    4. Deploy to a server with proper CORS proxy</span>`;
+            }
+        }
+    </script>
+</body>
+</html>
+

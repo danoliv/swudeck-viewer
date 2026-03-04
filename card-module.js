@@ -274,5 +274,19 @@ function clearCardCache() {
     Object.keys(loadingPromises).forEach(k => delete loadingPromises[k]);
 }
 
-// Start preloading sets immediately when module loads
-preloadSets();
+// Export for Node.js (testing)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        loadCardSet,
+        preloadSets,
+        fetchCardData,
+        buildCardHTML,
+        buildComparisonCardHTML,
+        clearCardCache
+    };
+}
+
+// Start preloading sets immediately when module loads (only in browser)
+if (typeof window !== 'undefined') {
+    preloadSets();
+}
