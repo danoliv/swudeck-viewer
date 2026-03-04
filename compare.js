@@ -118,6 +118,17 @@ async function loadDeck(deckNumber) {
     }
 }
 
+// ============================================================================
+// EXPORT UTILITY FUNCTIONS FOR TESTING
+// ============================================================================
+
+// Export for Node.js (testing)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        analyzeDeckDifferences
+    };
+}
+
 async function compareDecks() {
     if (!deck1Data || !deck2Data) return;
 
@@ -306,18 +317,69 @@ async function reverseDeckOrder() {
 }
 
 // Check for deck IDs in URL when page loads
-window.addEventListener('load', async function() {
-    const deck1Id = window.getQueryParam ? window.getQueryParam('deck1') : (new URLSearchParams(window.location.search)).get('deck1');
-    const deck2Id = window.getQueryParam ? window.getQueryParam('deck2') : (new URLSearchParams(window.location.search)).get('deck2');
+if (typeof window !== 'undefined' && window.addEventListener) {
+    window.addEventListener('load', async function() {
+        const deck1Id = window.getQueryParam ? window.getQueryParam('deck1') : (new URLSearchParams(window.location.search)).get('deck1');
+        const deck2Id = window.getQueryParam ? window.getQueryParam('deck2') : (new URLSearchParams(window.location.search)).get('deck2');
 
-    if (deck1Id) {
-        const el1 = document.getElementById('deck1Url');
-        if (el1) el1.value = `https://swudb.com/deck/${deck1Id}`;
-        await loadDeck(1);
+        if (deck1Id) {
+            const el1 = document.getElementById('deck1Url');
+            if (el1) el1.value = `https://swudb.com/deck/${deck1Id}`;
+            await loadDeck(1);
+        }
+        if (deck2Id) {
+            const el2 = document.getElementById('deck2Url');
+            if (el2) el2.value = `https://swudb.com/deck/${deck2Id}`;
+            await loadDeck(2);
+        }
+    });
+}
+
+// ============================================================================
+// EXPORT UTILITY FUNCTIONS FOR TESTING
+// ============================================================================
+
+// Helper function to analyze deck differences (testable)
+function analyzeDeckDifferences(deck1Cards, deck2Cards) {
+    const allCardIds = new Set([...deck1Cards.keys(), ...deck2Cards.keys()]);
+    const result = {
+        deck1Only: [],
+        deck2Only: [],
+        differentCounts: [],
+        sameCards: []
+    };
+
+    for (const cardId of allCardIds) {
+        const counts1 = deck1Cards.get(cardId) || { main: 0, sideboard: 0 };
+        const counts2 = deck2Cards.get(cardId) || { main: 0, sideboard: 0 };
+
+        const total1 = counts1.main + counts1.sideboard;
+        const total2 = counts2.main + counts2.sideboard;
+
+        if (total1 > 0 && total2 === 0) {
+            result.deck1Only.push({ id: cardId, main: counts1.main, sideboard: counts1.sideboard });
+        } else if (total1 === 0 && total2 > 0) {
+            result.deck2Only.push({ id: cardId, main: counts2.main, sideboard: counts2.sideboard });
+        } else if (counts1.main !== counts2.main || counts1.sideboard !== counts2.sideboard) {
+            result.differentCounts.push({
+                id: cardId,
+                deck1Main: counts1.main,
+                deck1Sideboard: counts1.sideboard,
+                deck2Main: counts2.main,
+                deck2Sideboard: counts2.sideboard
+            });
+        } else if (total1 > 0 && total2 > 0) {
+            result.sameCards.push({ id: cardId, main: counts1.main, sideboard: counts1.sideboard });
+        }
     }
-    if (deck2Id) {
-        const el2 = document.getElementById('deck2Url');
-        if (el2) el2.value = `https://swudb.com/deck/${deck2Id}`;
-        await loadDeck(2);
-    }
-});
+
+    return result;
+}
+
+// Export for Node.js (testing)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        analyzeDeckDifferences
+    };
+}
+
