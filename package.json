@@ -8,18 +8,30 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
+    "test:visual:headed": "playwright test --headed",
     "fetch-sets": "node fetch-sets.js"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-fetch-mock": "^3.0.3"
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": ["<rootDir>/test-setup.js"],
-    "testMatch": ["**/__tests__/**/*.js", "**/?(*.)+(spec|test).js"],
-    "testPathIgnorePatterns": ["<rootDir>/test.js", "<rootDir>/test-runner.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test-setup.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/test.js",
+      "<rootDir>/test-runner.js"
+    ],
     "collectCoverageFrom": [
       "*.js",
       "!node_modules/**",
