@@ -10,13 +10,13 @@ describe('sets.js', () => {
 
     test('should return the correct set names in order', () => {
       const sets = loadSets();
-      const expectedSets = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW'];
+      const expectedSets = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW', 'TS26'];
       expect(sets).toEqual(expectedSets);
     });
 
-    test('should return 8 sets', () => {
+    test('should return 9 sets', () => {
       const sets = loadSets();
-      expect(sets).toHaveLength(8);
+      expect(sets).toHaveLength(9);
     });
 
     test('should include all expected sets', () => {
@@ -29,6 +29,7 @@ describe('sets.js', () => {
       expect(sets).toContain('SEC');
       expect(sets).toContain('IBH');
       expect(sets).toContain('LAW');
+      expect(sets).toContain('TS26');
     });
 
     test('should not include unexpected sets', () => {
