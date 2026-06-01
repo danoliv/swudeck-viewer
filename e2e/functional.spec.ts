@@ -32,7 +32,7 @@ test.describe('UI Functionality Tests', () => {
   test('settings page - controls visible', async ({ page }) => {
     await page.goto('/settings.html');
     await expect(page.locator('#useDirectFetch')).toBeVisible();
-    await expect(page.locator('button:has-text("Test SWUDB")')).toBeVisible();
+    await expect(page.locator('button:has-text("Test SWUDB API Connection")')).toBeVisible();
   });
   test('all pages have navigation', async ({ page }) => {
     for (const url of ['/', '/compare.html', '/settings.html']) {
@@ -53,13 +53,14 @@ test.describe('UI Functionality Tests', () => {
     });
     expect(cssLoaded).toBe(true);
   });
-  test('shared functions available', async ({ page }) => {
+  test('navigation module renders active link state', async ({ page }) => {
     await page.goto('/');
-    const hasFunctions = await page.evaluate(() => {
-      return typeof window.getDeckIdFromUrl === 'function' &&
-             typeof window.buildDeckCardCounts === 'function' &&
-             typeof window.fetchWithRetry === 'function';
-    });
-    expect(hasFunctions).toBe(true);
+    await expect(page.locator('.navigation a.active')).toHaveText('Deck Viewer');
+
+    await page.goto('/compare.html');
+    await expect(page.locator('.navigation a.active')).toHaveText('Deck Comparison');
+
+    await page.goto('/settings.html');
+    await expect(page.locator('.navigation a.active')).toHaveText('Settings');
   });
 });

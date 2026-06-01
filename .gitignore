@@ -27,3 +27,12 @@ npm-debug.log*
 # Environment
 .env
 .env.local
+
+# Build output
+dist/
+
+# Temporary test artifacts
+test-results/
+
+# Abandoned migration scaffold
+astro/

@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>SWU Deck Comparison</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/src/components/navigation.ts"></script>
+    <script type="module" src="/src/pages/compare.ts"></script>
     <style>
         /* Page-specific styles only */
         .comparison-results {
@@ -15,26 +17,21 @@
     </style>
 </head>
 <body>
-    <div class="navigation">
-        <a href="index.html">Deck Viewer</a>
-        <a href="compare.html">Deck Comparison</a>
-        <a href="settings.html">Settings</a>
-    </div>
-    
+
     <h1>SWU Deck Comparison</h1>
     
     <div class="deck-inputs">
         <div class="deck-input-group">
             <h3>Deck 1</h3>
             <input type="text" id="deck1Url" placeholder="Paste SWUDB deck URL...">
-            <button onclick="loadDeck(1)">Load Deck 1</button>
+            <button id="loadDeck1Btn">Load Deck 1</button>
             <span id="loading1" class="loading" style="display: none;">Loading...</span>
             <div id="error1" class="error"></div>
             <div id="deck1Info" class="deck-info" style="display: none;"></div>
         </div>
         
         <div class="reverse-button-container" style="display: flex; align-items: center; justify-content: center;">
-            <button onclick="reverseDeckOrder()" style="background: #ff9800; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            <button id="reverseDeckBtn" style="background: #ff9800; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                 Reverse Order
             </button>
         </div>
@@ -42,7 +39,7 @@
         <div class="deck-input-group">
             <h3>Deck 2</h3>
             <input type="text" id="deck2Url" placeholder="Paste SWUDB deck URL...">
-            <button onclick="loadDeck(2)">Load Deck 2</button>
+            <button id="loadDeck2Btn">Load Deck 2</button>
             <span id="loading2" class="loading" style="display: none;">Loading...</span>
             <div id="error2" class="error"></div>
             <div id="deck2Info" class="deck-info" style="display: none;"></div>
@@ -50,10 +47,5 @@
     </div>
     
     <div id="comparisonResults" class="comparison-results" style="display: none;"></div>
-
-<script src="shared.js"></script>
-<script src="sets.js"></script>
-<script src="card-module.js"></script>
-<script src="compare.js"></script>
 </body>
 </html>

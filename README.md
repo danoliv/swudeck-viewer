@@ -1,6 +1,6 @@
 # SWU Deck Viewer
 
-A web-based viewer for Star Wars Unlimited deck lists from SWUDB.
+A static multi-page web app for viewing and comparing Star Wars Unlimited deck lists from SWUDB.
 
 **🌐 Live Demo:** https://danoliv.github.io/swudeck-viewer/
 
@@ -12,59 +12,185 @@ A web-based viewer for Star Wars Unlimited deck lists from SWUDB.
 - 📊 Multiple sorting options (Set, Cost, Aspect, Type, Trait)
 - 💾 Recent decks history
 - ⚡ Card data caching for faster loading
+- 🧪 Unit, functional, and visual test coverage
 
 ## Quick Start
 
-1. **Start the server:**
+1. **Install dependencies**
+
    ```bash
-   npm start
-   # Or: python3 -m http.server 8000
+   npm install
    ```
 
-2. **Open in browser:**
-   ```
-   http://localhost:8000
+2. **Start the local dev server**
+
+   ```bash
+   npm run dev
    ```
 
-3. **Fix CORS issues (if needed):**
-   - Go to http://localhost:8000/settings.html
-   - Enable "Direct API Fetch"
-   - Or install a CORS browser extension
+3. **Open in the browser**
+
+   ```text
+   http://localhost:5173
+   ```
+
+4. **If SWUDB fetches are blocked locally**
+
+   - Open `http://localhost:5173/settings.html`
+   - Enable **Direct API Fetch**
+   - Or use a browser setup/extension that relaxes CORS during local testing
 
 ## Usage
 
 ### View a Deck
-1. Paste a SWUDB deck URL (e.g., `https://swudb.com/deck/YHNqqVcCe`)
-2. Click "Load Deck"
+
+1. Paste a SWUDB deck URL such as `https://swudb.com/deck/YHNqqVcCe`
+2. Click **Load Deck**
 3. Browse cards sorted by set, cost, aspect, type, or traits
 
 ### Compare Decks
-1. Open http://localhost:8000/compare.html
-2. Enter two deck URLs
-3. View differences and shared cards
 
-## Testing
+1. Open `http://localhost:5173/compare.html`
+2. Enter two deck URLs
+3. Load both decks to view differences and shared cards
+
+## Build Instructions
+
+### Development build / local dev server
 
 ```bash
-npm test                 # Run all tests
-npm run test:watch      # Watch mode
-npm run test:coverage   # With coverage report
+npm run dev
 ```
+
+This serves the app from Vite on `http://localhost:5173`.
+
+### Production build
+
+```bash
+npm run build
+```
+
+This creates a production-ready `dist/` folder.
+
+### Preview the production build locally
+
+```bash
+npm run preview
+```
+
+By default Vite preview serves the built app locally; Playwright is configured to use preview on port `4173`.
+
+### GitHub Pages-compatible build
+
+```bash
+VITE_BASE=/swudeck-viewer/ npm run build
+```
+
+Use a different repository path if your Pages site is hosted under another repo name.
+
+## Test Run Instructions
+
+### Unit tests (Vitest)
+
+```bash
+npm test
+```
+
+### Unit tests in watch mode
+
+```bash
+npm run test:watch
+```
+
+### Coverage report
+
+```bash
+npm run test:coverage
+```
+
+### End-to-end suite (Playwright)
+
+```bash
+npm run test:e2e
+```
+
+This runs both functional and visual Playwright checks against a production-like `vite preview` server.
+
+### Refresh visual snapshots
+
+```bash
+npm run test:e2e:update
+```
+
+### Headed end-to-end run
+
+```bash
+npm run test:e2e:headed
+```
+
+### Refresh local card catalog data
+
+```bash
+npm run fetch-sets
+```
+
+This updates files in `public/data/`.
+
+## Deploy Instructions
+
+### Automatic GitHub Pages deployment
+
+The repository includes `.github/workflows/deploy.yml`.
+
+On every push to `main`, GitHub Actions will:
+
+1. Install dependencies with `npm ci`
+2. Run unit tests with `npm test`
+3. Build the site with `npm run build`
+4. Set `VITE_BASE` to `/${repo-name}/`
+5. Deploy `dist/` to GitHub Pages
+
+### GitHub repository setup checklist
+
+- Enable **GitHub Pages** for the repository
+- Set the Pages source to **GitHub Actions**
+- Push to `main`
+- Confirm the workflow in `.github/workflows/deploy.yml` succeeds
+
+### Manual pre-deploy verification
+
+```bash
+npm test
+npm run test:e2e
+VITE_BASE=/swudeck-viewer/ npm run build
+```
+
+## Project Structure
+
+- `src/lib/` — pure TypeScript logic
+- `src/pages/` — page orchestration modules
+- `src/components/` — reusable UI pieces such as navigation
+- `public/data/` — local card catalog JSON files
+- `e2e/` — Playwright functional + visual tests
+- `doc/` — migration, CORS, and testing documentation
 
 ## Documentation
 
-All documentation is in the [`doc/`](./doc/) folder:
+Additional documentation lives in [`doc/`](./doc/):
 
-- **[CORS_FIX.md](./doc/CORS_FIX.md)** - CORS issues and quick fixes
-- **[SERVER_INFO.md](./doc/SERVER_INFO.md)** - Server setup and management
-- **[TEST_COVERAGE_SUMMARY.md](./doc/TEST_COVERAGE_SUMMARY.md)** - Test coverage details
-- **[TEST_README.md](./doc/TEST_README.md)** - Testing documentation
+- **[`doc/CORS_FIX.md`](./doc/CORS_FIX.md)** — CORS behavior and local testing guidance
+- **[`doc/MIGRATION_PLAN.md`](./doc/MIGRATION_PLAN.md)** — completed migration plan
+- **[`doc/TEST_README.md`](./doc/TEST_README.md)** — testing notes
+- **[`doc/TEST_COVERAGE_SUMMARY.md`](./doc/TEST_COVERAGE_SUMMARY.md)** — coverage details
 
 ## Tech Stack
 
-- Vanilla JavaScript (no frameworks)
-- Jest for testing
-- Python HTTP server for local development
+- Vite multi-page app
+- TypeScript
+- Browser-native DOM modules (no framework)
+- Vitest + Happy DOM for unit tests
+- Playwright for functional and visual tests
+- GitHub Pages for deployment
 - SWUDB API for deck data
 
 ## License

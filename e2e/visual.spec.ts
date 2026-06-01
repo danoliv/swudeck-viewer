@@ -56,7 +56,7 @@ test.describe('Visual Regression Tests', () => {
     await page.goto('/settings.html');
 
     const checkbox = page.locator('#useDirectFetch');
-    const testButton = page.locator('button:has-text("Test SWUDB")');
+    const testButton = page.locator('button:has-text("Test SWUDB API Connection")');
 
     await expect(checkbox).toBeVisible();
     await expect(testButton).toBeVisible();

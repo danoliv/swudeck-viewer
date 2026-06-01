@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>SWU Deck Viewer - Settings</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/src/components/navigation.ts"></script>
+    <script type="module" src="/src/pages/settings.ts"></script>
     <style>
         .settings-container {
             max-width: 800px;
@@ -69,11 +71,6 @@
     </style>
 </head>
 <body>
-    <div class="navigation">
-        <a href="index.html">Deck Viewer</a>
-        <a href="compare.html">Deck Comparison</a>
-        <a href="settings.html" class="active">Settings</a>
-    </div>
 
     <div class="settings-container">
         <a href="index.html" class="back-link">← Back to Deck Viewer</a>
@@ -104,7 +101,7 @@
 
         <div class="setting-item">
             <h3>Clear All Data</h3>
-            <button onclick="clearAllData()">Clear Cache & Recent Decks</button>
+            <button id="clearDataBtn">Clear Cache & Recent Decks</button>
             <div class="info-box">
                 Clears all cached card data and recent deck history.
             </div>
@@ -112,60 +109,9 @@
 
         <div class="setting-item">
             <h3>Test Connection</h3>
-            <button onclick="testConnection()">Test SWUDB API Connection</button>
+            <button id="testConnectionBtn">Test SWUDB API Connection</button>
             <div id="testResult" style="margin-top: 10px;"></div>
         </div>
     </div>
-
-    <script>
-        // Load current setting
-        const useDirectFetch = localStorage.getItem('useDirectFetch') === 'true';
-        document.getElementById('useDirectFetch').checked = useDirectFetch;
-
-        // Save setting when changed
-        document.getElementById('useDirectFetch').addEventListener('change', function(e) {
-            localStorage.setItem('useDirectFetch', e.target.checked ? 'true' : 'false');
-            alert('Setting saved! Reload any open deck viewer pages for changes to take effect.');
-        });
-
-        function clearAllData() {
-            if (confirm('This will clear all cached data and recent decks. Continue?')) {
-                localStorage.clear();
-                // Reload settings
-                document.getElementById('useDirectFetch').checked = false;
-                alert('All data cleared!');
-            }
-        }
-
-        async function testConnection() {
-            const resultDiv = document.getElementById('testResult');
-            resultDiv.innerHTML = '<span style="color: #666;">Testing...</span>';
-
-            const testDeckId = 'YHNqqVcCe';
-            const testUrl = `https://swudb.com/api/getDeckJson/${testDeckId}`;
-
-            try {
-                // Try direct fetch first
-                resultDiv.innerHTML = '<span style="color: #666;">Trying direct fetch...</span>';
-                const response = await fetch(testUrl);
-
-                if (response.ok) {
-                    const data = await response.json();
-                    resultDiv.innerHTML = '<span style="color: #28a745;">✓ Direct fetch works! No proxy needed.</span>';
-                    return;
-                }
-
-                resultDiv.innerHTML = `<span style="color: #dc3545;">✗ Direct fetch failed (${response.status}). You may need to enable CORS bypass or use a browser extension.</span>`;
-            } catch (error) {
-                resultDiv.innerHTML = `<span style="color: #dc3545;">✗ Connection error: ${error.message}<br><br>
-                    <strong>Solutions:</strong><br>
-                    1. Enable "Direct API Fetch" above<br>
-                    2. Install a CORS browser extension like "CORS Unblock"<br>
-                    3. Use a different browser<br>
-                    4. Deploy to a server with proper CORS proxy</span>`;
-            }
-        }
-    </script>
 </body>
 </html>
-
