@@ -26,12 +26,44 @@ export interface CardData {
   [key: string]: unknown;
 }
 
-type SetIndex = Record<number, CardData>;
+type SetIndex = Record<string, CardData>;
+
+function normalizeCardNumberToken(value: string | number | undefined): string | null {
+  if (value === undefined || value === null) return null;
+
+  const raw = String(value).trim();
+  if (!raw) return null;
+
+  const match = raw.match(/^(0*)(\d+)([A-Z]+)?$/i);
+  if (!match) return raw;
+
+  const [, , digits, suffix = ''] = match;
+  return `${String(parseInt(digits, 10))}${suffix.toUpperCase()}`;
+}
+
+function buildLookupKeys(value: string | number | undefined): string[] {
+  if (value === undefined || value === null) return [];
+
+  const raw = String(value).trim();
+  if (!raw) return [];
+
+  const normalized = normalizeCardNumberToken(raw);
+  const baseRaw = raw.replace(/[A-Z]+$/i, '');
+  const normalizedBase = normalizeCardNumberToken(baseRaw);
+
+  return [...new Set([raw, normalized, normalizedBase].filter((key): key is string => Boolean(key)))];
+}
+
+export function resolveCardArtUrl(artUrl: string | undefined | null): string | undefined {
+  if (!artUrl) return undefined;
+
+  return artUrl.replace(/\/(\d+)F(\.[a-z0-9]+(?:\?.*)?)$/i, '/$1$2');
+}
 
 // ─── Internal cache ───────────────────────────────────────────────────────────
 
-const cardSets: Record<string, SetIndex> = {};
-const loadingPromises: Record<string, Promise<SetIndex>> = {};
+const cardSets: Partial<Record<string, SetIndex>> = {};
+const loadingPromises: Partial<Record<string, Promise<SetIndex>>> = {};
 
 // ─── loadCardSet ──────────────────────────────────────────────────────────────
 
@@ -61,7 +93,15 @@ export async function loadCardSet(set: string): Promise<SetIndex> {
       const index: SetIndex = {};
       for (const card of cards) {
         if (card.Number !== undefined) {
-          index[parseInt(String(card.Number), 10)] = card;
+          const exactNumber = String(card.Number).trim();
+          if (!exactNumber) continue;
+
+          index[exactNumber] = card;
+
+          const normalizedNumber = normalizeCardNumberToken(exactNumber);
+          if (normalizedNumber && !(normalizedNumber in index)) {
+            index[normalizedNumber] = card;
+          }
         }
       }
       cardSets[set] = index;
@@ -98,16 +138,16 @@ export async function preloadSets(): Promise<void> {
  */
 export async function fetchCardData(cardId: string): Promise<CardData> {
   const [set, num] = cardId.split('_');
-  const number = parseInt(num, 10);
+  const lookupKeys = buildLookupKeys(num);
 
   try {
     const setData = await loadCardSet(set);
     if (!setData) throw new Error(`Set ${set} not found`);
 
-    const cardData = setData[number];
+    const cardData = lookupKeys.map((key) => setData[key]).find(Boolean);
     if (!cardData) {
       console.warn(`Card ${cardId} not found in set ${set}`);
-      return { id: cardId, Name: cardId, Set: set, Number: number, Type: 'Unknown' };
+      return { id: cardId, Name: cardId, Set: set, Number: num, Type: 'Unknown' };
     }
 
     cardData.id = cardId;
@@ -115,7 +155,7 @@ export async function fetchCardData(cardId: string): Promise<CardData> {
     return cardData;
   } catch (error) {
     console.error(`Error fetching card ${cardId}:`, error);
-    return { id: cardId, Name: cardId, Set: set, Number: number, Type: 'Unknown' };
+    return { id: cardId, Name: cardId, Set: set, Number: num, Type: 'Unknown' };
   }
 }
 
@@ -147,6 +187,8 @@ export function buildCardHTML(
 
   const formattedId = cardId.replace('_', ' ');
   const isDoubleSided = cardData.DoubleSided === true;
+  const frontArt = resolveCardArtUrl(cardData.FrontArt);
+  const backArt = resolveCardArtUrl(cardData.BackArt);
 
   let countText = '';
   if (count > 0 && sideboardCount > 0) {
@@ -177,13 +219,13 @@ export function buildCardHTML(
             <div class="card-images">
                 <div class="card-images-inner">
                     <div class="card-front">
-                        ${cardData.FrontArt
-                          ? `<img src="${cardData.FrontArt}" alt="${cardData.Name ?? cardId} (Front)">`
+                        ${frontArt
+                          ? `<img src="${frontArt}" alt="${cardData.Name ?? cardId} (Front)">`
                           : `<div class="card-placeholder">${cardId}</div>`}
                     </div>
-                    ${isDoubleSided && cardData.BackArt ? `
+                    ${isDoubleSided && backArt ? `
                         <div class="card-back">
-                            <img src="${cardData.BackArt}" alt="${cardData.Name ?? cardId} (Back)">
+                            <img src="${backArt}" alt="${cardData.Name ?? cardId} (Back)">
                         </div>
                     ` : ''}
                 </div>
@@ -225,6 +267,8 @@ export function buildComparisonCardHTML(
 
   const formattedId = cardId.replace('_', ' ');
   const isDoubleSided = cardData.DoubleSided === true;
+  const frontArt = resolveCardArtUrl(cardData.FrontArt);
+  const backArt = resolveCardArtUrl(cardData.BackArt);
 
   const total1 = count1 + sideboard1;
   const total2 = count2 + sideboard2;
@@ -262,13 +306,13 @@ export function buildComparisonCardHTML(
             <div class="card-images">
                 <div class="card-images-inner">
                     <div class="card-front">
-                        ${cardData.FrontArt
-                          ? `<img src="${cardData.FrontArt}" alt="${cardData.Name ?? cardId} (Front)">`
+                        ${frontArt
+                          ? `<img src="${frontArt}" alt="${cardData.Name ?? cardId} (Front)">`
                           : `<div class="card-placeholder">${cardId}</div>`}
                     </div>
-                    ${isDoubleSided && cardData.BackArt ? `
+                    ${isDoubleSided && backArt ? `
                         <div class="card-back">
-                            <img src="${cardData.BackArt}" alt="${cardData.Name ?? cardId} (Back)">
+                            <img src="${backArt}" alt="${cardData.Name ?? cardId} (Back)">
                         </div>
                     ` : ''}
                 </div>

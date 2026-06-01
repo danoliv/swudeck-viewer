@@ -9,7 +9,7 @@
 import { fetchWithRetry, fetchUsingExternalProxy } from '../lib/api';
 import { getDeckIdFromUrl } from '../lib/url';
 import { loadSets } from '../lib/sets';
-import { fetchCardData, buildCardHTML, clearCardCache } from '../lib/cards';
+import { fetchCardData, buildCardHTML, clearCardCache, resolveCardArtUrl } from '../lib/cards';
 import { groupCards, createDefaultRegistry, type CardEntry } from '../lib/deck';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -104,8 +104,10 @@ function updateRecentDecksUI(): void {
 
 async function addToRecentDecks(url: string, deckData: DeckApiData): Promise<void> {
   const dateStr = new Date().toLocaleDateString();
-  const leaderArt = deckData.leader?.FrontArt
-    ?? (deckData.leader ? `https://cdn.swu-db.com/images/cards/${deckData.leader.id.replace('_', '/')}.png` : null);
+  const leaderArt = resolveCardArtUrl(
+    deckData.leader?.FrontArt
+      ?? (deckData.leader ? `https://cdn.swu-db.com/images/cards/${deckData.leader.id.replace('_', '/')}.png` : null),
+  ) ?? null;
 
   let baseAspect = 'Command';
   if (deckData.base?.id) {

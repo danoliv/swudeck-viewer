@@ -5,6 +5,7 @@ import {
   buildCardHTML,
   buildComparisonCardHTML,
   clearCardCache,
+  resolveCardArtUrl,
 } from './cards';
 import type { CardData } from './cards';
 
@@ -32,6 +33,24 @@ const mockSetResponse = {
       Traits: [],
       Arenas: [],
       Cost: '1',
+    },
+  ],
+};
+
+const mockVariantSetResponse = {
+  data: [
+    {
+      Number: '172',
+      Name: 'Krayt Dragon',
+      Type: 'Unit',
+      FrontArt: 'https://cdn.swu-db.com/images/cards/SHD/172.png',
+    },
+    {
+      Number: '172F',
+      Name: 'Krayt Dragon',
+      Type: 'Unit',
+      FrontArt: 'https://cdn.swu-db.com/images/cards/SHD/172F.png',
+      VariantType: 'Foil',
     },
   ],
 };
@@ -67,6 +86,13 @@ describe('loadCardSet', () => {
     const result = await loadCardSet('SOR');
     expect(result[1].Number).toBe('1');
     expect(result[2].Number).toBe('2');
+  });
+
+  it('keeps normal cards addressable when foil variants share the same numeric part', async () => {
+    (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify(mockVariantSetResponse));
+    const result = await loadCardSet('SHD');
+    expect(result['172'].FrontArt).toBe('https://cdn.swu-db.com/images/cards/SHD/172.png');
+    expect(result['172F'].FrontArt).toBe('https://cdn.swu-db.com/images/cards/SHD/172F.png');
   });
 
   it('throws on HTTP error', async () => {
@@ -116,6 +142,31 @@ describe('fetchCardData', () => {
     (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify(mockSetResponse));
     await fetchCardData('SOR_1');
     expect(fetch).toHaveBeenCalledWith('data/sor.json');
+  });
+
+  it('prefers the normal card entry for a base card ID when a foil variant also exists', async () => {
+    (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify(mockVariantSetResponse));
+    const cardData = await fetchCardData('SHD_172');
+    expect(cardData.FrontArt).toBe('https://cdn.swu-db.com/images/cards/SHD/172.png');
+  });
+
+  it('can still resolve an exact foil variant card ID', async () => {
+    (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify(mockVariantSetResponse));
+    const cardData = await fetchCardData('SHD_172F');
+    expect(cardData.FrontArt).toBe('https://cdn.swu-db.com/images/cards/SHD/172F.png');
+    expect(cardData.id).toBe('SHD_172F');
+  });
+});
+
+describe('resolveCardArtUrl', () => {
+  it('normalizes foil art URLs to the base card image URL', () => {
+    expect(resolveCardArtUrl('https://cdn.swu-db.com/images/cards/SHD/172F.png'))
+      .toBe('https://cdn.swu-db.com/images/cards/SHD/172.png');
+  });
+
+  it('leaves normal art URLs unchanged', () => {
+    expect(resolveCardArtUrl('https://cdn.swu-db.com/images/cards/SHD/172.png'))
+      .toBe('https://cdn.swu-db.com/images/cards/SHD/172.png');
   });
 });
 
@@ -171,6 +222,12 @@ describe('buildCardHTML', () => {
     const html = buildCardHTML('SOR_001', { ...card1, FrontArt: undefined });
     expect(html).toContain('card-placeholder');
     expect(html).toContain('SOR_001');
+  });
+
+  it('uses the normalized non-foil art URL when foil art is provided', () => {
+    const html = buildCardHTML('SHD_172', { ...card1, FrontArt: 'https://cdn.swu-db.com/images/cards/SHD/172F.png' });
+    expect(html).toContain('https://cdn.swu-db.com/images/cards/SHD/172.png');
+    expect(html).not.toContain('https://cdn.swu-db.com/images/cards/SHD/172F.png');
   });
 
   it('applies additional CSS classes to the card wrapper', () => {
