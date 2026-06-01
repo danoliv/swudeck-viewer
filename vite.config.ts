@@ -9,12 +9,17 @@ export default defineConfig({
   publicDir: 'public',
 
   build: {
-    outDir: 'dist',
+    outDir: process.env.VITE_OUT_DIR ?? 'dist',
+    manifest: true,
     rollupOptions: {
       input: {
         main: 'index.html',
         compare: 'compare.html',
         settings: 'settings.html',
+        navigation: 'src/components/navigation.ts',
+        viewerPage: 'src/pages/index.ts',
+        comparePage: 'src/pages/compare.ts',
+        settingsPage: 'src/pages/settings.ts',
       },
     },
   },

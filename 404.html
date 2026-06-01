@@ -4,17 +4,24 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
+        const REPO_BASE = '/swudeck-viewer/';
+
+        function getBasePath() {
+            return window.location.pathname.startsWith(REPO_BASE) ? REPO_BASE : '/';
+        }
+
         // Get the current path
         const path = window.location.pathname;
         const segments = path.split('/').filter(Boolean);
-        
+        const basePath = getBasePath();
+
         if (segments.length > 0) {
             const lastSegment = segments[segments.length - 1];
             // Redirect to the root with the deck ID
-            window.location.replace(`/?deck=${lastSegment}`);
+            window.location.replace(`${basePath}?deck=${lastSegment}`);
         } else {
             // If no segments, just go to the root
-            window.location.replace('/');
+            window.location.replace(basePath);
         }
     </script>
 </head>

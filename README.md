@@ -88,6 +88,22 @@ VITE_BASE=/swudeck-viewer/ npm run build
 
 Use a different repository path if your Pages site is hosted under another repo name.
 
+### GitHub Pages branch-publish build (`docs/` fallback)
+
+```bash
+npm run build:docs
+```
+
+This writes the production site into `docs/` with the correct `/swudeck-viewer/` base path, which works when GitHub Pages is configured to publish from the `main` branch `docs/` folder.
+
+### GitHub Pages branch-root build (`main` / root fallback)
+
+```bash
+npm run build:pages-root
+```
+
+This writes the hashed production bundles to the repository-root `assets/` directory and updates `.vite/manifest.json`. The source HTML pages then boot those built files automatically on static hosts such as GitHub Pages when the repo is still published from `main` / root.
+
 ## Test Run Instructions
 
 ### Unit tests (Vitest)
@@ -153,7 +169,9 @@ On every push to `main`, GitHub Actions will:
 ### GitHub repository setup checklist
 
 - Enable **GitHub Pages** for the repository
-- Set the Pages source to **GitHub Actions**
+- Preferred: set the Pages source to **GitHub Actions**
+- Branch-root fallback: keep Pages on **Deploy from a branch** → `main` / `/ (root)` and run `npm run build:pages-root` before pushing
+- Fallback: set the Pages source to **Deploy from a branch** → `main` / `docs`
 - Push to `main`
 - Confirm the workflow in `.github/workflows/deploy.yml` succeeds
 
@@ -161,8 +179,10 @@ On every push to `main`, GitHub Actions will:
 
 ```bash
 npm test
+npm run build:pages-root
 npm run test:e2e
 VITE_BASE=/swudeck-viewer/ npm run build
+npm run build:docs
 ```
 
 ## Project Structure

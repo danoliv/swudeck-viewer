@@ -1,0 +1,47 @@
+{
+  "_bootstrap-runtime-BrkeuRMW.js": {
+    "file": "assets/bootstrap-runtime-BrkeuRMW.js",
+    "name": "bootstrap-runtime",
+    "css": [
+      "assets/bootstrap-runtime-DxQjXy7F.css"
+    ]
+  },
+  "_bootstrap-runtime-DxQjXy7F.css": {
+    "file": "assets/bootstrap-runtime-DxQjXy7F.css",
+    "src": "_bootstrap-runtime-DxQjXy7F.css"
+  },
+  "_cards-CtRoe6Zn.js": {
+    "file": "assets/cards-CtRoe6Zn.js",
+    "name": "cards"
+  },
+  "src/components/navigation.ts": {
+    "file": "assets/navigation-C2DFJbSn.js",
+    "name": "navigation",
+    "src": "src/components/navigation.ts",
+    "isEntry": true
+  },
+  "src/pages/compare.ts": {
+    "file": "assets/comparePage-cYXsRA4X.js",
+    "name": "comparePage",
+    "src": "src/pages/compare.ts",
+    "isEntry": true,
+    "imports": [
+      "_cards-CtRoe6Zn.js"
+    ]
+  },
+  "src/pages/index.ts": {
+    "file": "assets/viewerPage--ABXiRGX.js",
+    "name": "viewerPage",
+    "src": "src/pages/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_cards-CtRoe6Zn.js"
+    ]
+  },
+  "src/pages/settings.ts": {
+    "file": "assets/settingsPage-6KQ3Wm6U.js",
+    "name": "settingsPage",
+    "src": "src/pages/settings.ts",
+    "isEntry": true
+  }
+}
