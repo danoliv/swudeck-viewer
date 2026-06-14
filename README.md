@@ -9,6 +9,7 @@ A static multi-page web app for viewing and comparing Star Wars Unlimited deck l
 - 📋 Load and view decks from SWUDB URLs
 - 🎴 Display card images with front/back flip support
 - 🔄 Compare two decks side-by-side
+- 🛠️ Build decks from scratch, with a shareable URL-encoded deck state
 - 📊 Multiple sorting options (Set, Cost, Aspect, Type, Trait)
 - 💾 Recent decks history
 - ⚡ Card data caching for faster loading
@@ -53,6 +54,17 @@ A static multi-page web app for viewing and comparing Star Wars Unlimited deck l
 1. Open `http://localhost:5173/compare.html`
 2. Enter two deck URLs
 3. Load both decks to view differences and shared cards
+
+### Build a Deck
+
+1. Open `http://localhost:5173/builder.html`
+2. Pick a leader, then a base
+3. Search and filter the card pool on the right and use the `0`/`1`/`2`/`3` /
+   `SB` controls to add cards to your main deck or sideboard
+4. The deck list on the left updates live, grouped by card type
+
+The deck builder has no backend — see [Deck Builder State Encoding](#deck-builder-state-encoding)
+for how the in-progress deck is persisted and shared.
 
 ## Build Instructions
 
@@ -193,6 +205,44 @@ npm run build:docs
 - `public/data/` — local card catalog JSON files
 - `e2e/` — Playwright functional + visual tests
 - `doc/` — migration, CORS, and testing documentation
+
+## Deck Builder State Encoding
+
+The deck builder (`builder.html`) has no backend or local storage — the entire
+in-progress deck lives in the page's own URL, in the `?d=` query parameter.
+Encoding/decoding is implemented in `src/lib/builder-state.ts`.
+
+**Shape** — the deck is a JSON object matching the `DeckData` type
+(`src/lib/types.ts`):
+
+```json
+{
+  "deck": [{ "id": "SOR_031", "count": 2 }],
+  "sideboard": [{ "id": "SOR_073", "count": 1 }],
+  "leader": { "id": "SOR_001", "count": 1 },
+  "base": { "id": "SOR_022", "count": 1 },
+  "metadata": { "name": "My Deck" }
+}
+```
+
+- `deck` / `sideboard` — arrays of `{ id, count }`, one entry per unique card
+- `leader` / `base` — single `{ id, count }` entries, omitted until chosen
+- `metadata` — optional deck name/description/author/format
+- This mirrors the shape of swudb's "Force Table" export
+
+**Encoding** (`encodeDeckState`): `JSON.stringify` the object, UTF-8 encode it,
+then base64url-encode it (`+` → `-`, `/` → `_`, `=` padding stripped). The
+result is written to the `d` query param via `setQueryParam`.
+
+**Decoding** (`decodeDeckState`): reverses the process — base64url → UTF-8 →
+`JSON.parse`. It never throws: missing, empty, or malformed input falls back
+to an empty deck (`{ deck: [] }`).
+
+Every mutation (choosing a leader/base, changing a card's count, toggling the
+sideboard) goes through a pure `(deck, ...args) -> newDeck` function in
+`builder-state.ts`, which the page then re-encodes back into the URL. Because
+all state lives in the URL, a builder link is a complete, shareable snapshot
+of the deck.
 
 ## Documentation
 

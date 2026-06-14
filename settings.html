@@ -10,58 +10,55 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
         }
         .setting-item {
             margin: 20px 0;
             padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            background: var(--surface-deep);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
         }
         .setting-item h3 {
             margin-top: 0;
+            font-family: var(--font-display);
+            color: var(--text);
         }
         .setting-item label {
             display: flex;
             align-items: center;
             cursor: pointer;
+            color: var(--text);
         }
         .setting-item input[type="checkbox"] {
             margin-right: 10px;
             width: 20px;
             height: 20px;
+            accent-color: var(--accent);
         }
         .info-box {
-            background: #e3f2fd;
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
             padding: 15px;
-            border-radius: 4px;
+            border-radius: var(--radius-sm);
             margin: 10px 0;
         }
         .warning-box {
-            background: #fff3cd;
+            background: rgba(255, 193, 7, 0.1);
+            color: var(--text);
             padding: 15px;
-            border-radius: 4px;
+            border-radius: var(--radius-sm);
             margin: 10px 0;
             border-left: 4px solid #ffc107;
-        }
-        button {
-            padding: 10px 20px;
-            background: #0066cc;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        button:hover {
-            background: #0052a3;
         }
         .back-link {
             display: inline-block;
             margin-bottom: 20px;
-            color: #0066cc;
+            color: var(--accent);
             text-decoration: none;
         }
         .back-link:hover {

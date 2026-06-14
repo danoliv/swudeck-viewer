@@ -3,9 +3,13 @@ import {
   loadCardSet,
   fetchCardData,
   buildCardHTML,
+  buildBuilderRowHTML,
+  buildDeckRowHTML,
+  buildCardDetailHTML,
   buildComparisonCardHTML,
   clearCardCache,
   resolveCardArtUrl,
+  formatCardId,
 } from './cards';
 import type { CardData } from './cards';
 
@@ -170,6 +174,28 @@ describe('resolveCardArtUrl', () => {
   });
 });
 
+// ─── formatCardId ─────────────────────────────────────────────────────────────
+
+describe('formatCardId', () => {
+  it('zero-pads numeric card numbers to 3 digits', () => {
+    expect(formatCardId('SOR', '82')).toBe('SOR_082');
+    expect(formatCardId('SOR', 1)).toBe('SOR_001');
+  });
+
+  it('leaves already-padded numbers unchanged', () => {
+    expect(formatCardId('JTL', '029')).toBe('JTL_029');
+  });
+
+  it('uppercases and preserves letter suffixes', () => {
+    expect(formatCardId('SHD', '172f')).toBe('SHD_172F');
+    expect(formatCardId('SHD', '172F')).toBe('SHD_172F');
+  });
+
+  it('falls back to the raw value when it does not match the expected shape', () => {
+    expect(formatCardId('SOR', '')).toBe('SOR_');
+  });
+});
+
 // ─── buildCardHTML ────────────────────────────────────────────────────────────
 
 describe('buildCardHTML', () => {
@@ -233,6 +259,278 @@ describe('buildCardHTML', () => {
   it('applies additional CSS classes to the card wrapper', () => {
     const html = buildCardHTML('SOR_001', card1, 1, 0, 'highlighted');
     expect(html).toContain('class="card highlighted"');
+  });
+});
+
+// ─── buildBuilderRowHTML ──────────────────────────────────────────────────────
+
+describe('buildBuilderRowHTML', () => {
+  it('generates HTML containing the card ID and name', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1);
+    expect(html).toContain('SOR 001');
+    expect(html).toContain('Test Card');
+  });
+
+  it('includes aspect mini-icons', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1);
+    expect(html).toContain('class="card-row-aspects"');
+    expect(html).toContain('aspect-icon-mini aspect-icon-Command');
+  });
+
+  it('omits the aspects section when Aspects is empty', () => {
+    const html = buildBuilderRowHTML('SOR_001', { ...card1, Aspects: [] });
+    expect(html).not.toContain('class="card-row-aspects"');
+  });
+
+  it('displays a Cost badge when Cost is defined', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1);
+    expect(html).toContain('class="stat card-row-cost" data-type="Cost"');
+    expect(html).toContain('<span class="stat-value">2</span>');
+  });
+
+  it('omits the Cost badge when Cost is undefined', () => {
+    const html = buildBuilderRowHTML('SOR_001', { ...card1, Cost: undefined });
+    expect(html).not.toContain('card-row-cost');
+  });
+
+  it('renders 0/1/2/3 quantity buttons with data-action and data-card-id', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 2);
+    expect(html).toContain('data-action="set-count"');
+    expect(html).toContain('data-card-id="SOR_001"');
+    expect(html).toContain('data-count="0"');
+    expect(html).toContain('data-count="1"');
+    expect(html).toContain('data-count="2"');
+    expect(html).toContain('data-count="3"');
+  });
+
+  it('marks the button matching the current count as active', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 2);
+    expect(html).toMatch(/data-count="2" class="quantity-button active"/);
+    expect(html).not.toMatch(/data-count="1" class="quantity-button active"/);
+  });
+
+  it('renders no active quantity button when count is 0', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 0);
+    expect(html).toMatch(/data-count="0" class="quantity-button active"/);
+  });
+
+  it('renders a sideboard toggle with data-action', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1);
+    expect(html).toContain('data-action="toggle-sideboard"');
+    expect(html).toContain('>SB<');
+  });
+
+  it('shows the sideboard count and active state when sideboardCount > 0', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 0, 2);
+    expect(html).toContain('SB (2)');
+    expect(html).toMatch(/sideboard-toggle active/);
+  });
+
+  it('contains no inline onclick attributes', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 1, 1);
+    expect(html).not.toContain('onclick');
+  });
+
+  it('renders the card name as a toggle-detail button scoped to the "browser" zone', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1);
+    expect(html).toContain('data-action="toggle-detail"');
+    expect(html).toContain('data-zone="browser"');
+  });
+
+  it('appends the card-detail panel only when expanded is true', () => {
+    const collapsed = buildBuilderRowHTML('SOR_001', card1, 0, 0, false);
+    expect(collapsed).not.toContain('class="card-detail"');
+    expect(collapsed).not.toContain('class="card-row expanded"');
+
+    const expanded = buildBuilderRowHTML('SOR_001', card1, 0, 0, true);
+    expect(expanded).toContain('class="card-row expanded"');
+    expect(expanded).toContain('class="card-detail"');
+  });
+});
+
+// ─── buildDeckRowHTML ─────────────────────────────────────────────────────────
+
+describe('buildDeckRowHTML', () => {
+  it('generates HTML containing the card ID, name, aspects, and cost', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck');
+    expect(html).toContain('SOR 001');
+    expect(html).toContain('Test Card');
+    expect(html).toContain('class="card-row-aspects"');
+    expect(html).toContain('aspect-icon-mini aspect-icon-Command');
+    expect(html).toContain('class="stat card-row-cost" data-type="Cost"');
+  });
+
+  it('contains no inline onclick attributes', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 1, 'deck');
+    expect(html).not.toContain('onclick');
+  });
+
+  it('renders the card name as a toggle-detail button scoped to the given zone', () => {
+    expect(buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck')).toContain('data-zone="deck"');
+    expect(buildDeckRowHTML('SOR_001', card1, 0, 2, 'sideboard')).toContain('data-zone="sideboard"');
+  });
+
+  it('appends the card-detail panel only when expanded is true', () => {
+    const collapsed = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck', false);
+    expect(collapsed).not.toContain('class="card-detail"');
+    expect(collapsed).not.toContain('class="card-row expanded"');
+
+    const expanded = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck', true);
+    expect(expanded).toContain('class="card-row expanded"');
+    expect(expanded).toContain('class="card-detail"');
+  });
+
+  describe('zone: deck', () => {
+    it('renders 0/1/2/3 quantity buttons reflecting the main-deck count', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck');
+      expect(html).toContain('data-action="set-count"');
+      expect(html).toMatch(/data-count="2" class="quantity-button active"/);
+      expect(html).not.toMatch(/data-count="0" class="quantity-button active"/);
+    });
+
+    it('renders an enabled move-to-sideboard button when the deck has copies and the sideboard has room', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 1, 0, 'deck');
+      expect(html).toContain('data-action="move-to-sideboard"');
+      expect(html).toContain('data-card-id="SOR_001"');
+      expect(html).not.toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
+    });
+
+    it('disables move-to-sideboard when the main-deck count is 0', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 0, 0, 'deck');
+      expect(html).toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
+    });
+
+    it('disables move-to-sideboard when the sideboard is at the 3-copy cap', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 1, 3, 'deck');
+      expect(html).toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
+    });
+  });
+
+  describe('zone: sideboard', () => {
+    it('renders 0/1/2/3 quantity buttons reflecting the sideboard count', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 0, 2, 'sideboard');
+      expect(html).toContain('data-action="set-sideboard-count"');
+      expect(html).toMatch(/data-count="2" class="quantity-button active"/);
+      expect(html).not.toMatch(/data-count="0" class="quantity-button active"/);
+    });
+
+    it('renders an enabled move-to-deck button when the sideboard has copies and the deck has room', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 0, 1, 'sideboard');
+      expect(html).toContain('data-action="move-to-deck"');
+      expect(html).toContain('data-card-id="SOR_001"');
+      expect(html).not.toMatch(/data-action="move-to-deck"[^>]*disabled/);
+    });
+
+    it('disables move-to-deck when the sideboard count is 0', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 0, 0, 'sideboard');
+      expect(html).toMatch(/data-action="move-to-deck"[^>]*disabled/);
+    });
+
+    it('disables move-to-deck when the main deck is at the 3-copy cap', () => {
+      const html = buildDeckRowHTML('SOR_001', card1, 3, 1, 'sideboard');
+      expect(html).toMatch(/data-action="move-to-deck"[^>]*disabled/);
+    });
+  });
+});
+
+// ─── buildCardDetailHTML ───────────────────────────────────────────────────────
+
+describe('buildCardDetailHTML', () => {
+  it('renders the card name, stats, aspects, and front image', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).toContain('class="card-detail"');
+    expect(html).toContain('class="card-detail-name"');
+    expect(html).toContain('Test Card');
+    expect(html).toContain('Cost: <span class="stat-value">2</span>');
+    expect(html).toContain('Power: <span class="stat-value">2</span>');
+    expect(html).toContain('HP: <span class="stat-value">2</span>');
+    expect(html).toContain('class="aspect Command"');
+    expect(html).toContain('<img src="https://example.com/card.png" alt="Test Card (Front)">');
+  });
+
+  it('renders type, arenas, and traits in the meta line', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).toContain('class="card-detail-meta"');
+    expect(html).toContain('Unit');
+    expect(html).toContain('Ground');
+    expect(html).toContain('IMPERIAL');
+  });
+
+  it('renders FrontText and EpicAction in card-detail-text', () => {
+    const card = { ...card1, FrontText: 'Ability text here.', EpicAction: 'Epic Action: Do something.' };
+    const html = buildCardDetailHTML('SOR_001', card);
+    expect(html).toContain('class="card-detail-text"');
+    expect(html).toContain('<p>Ability text here.</p>');
+    expect(html).toContain('<p>Epic Action: Do something.</p>');
+  });
+
+  it('omits card-detail-text when there is no ability text', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).not.toContain('class="card-detail-text"');
+  });
+
+  it('renders the Subtitle when present', () => {
+    const card = { ...card1, Subtitle: 'The Mandalorian' };
+    const html = buildCardDetailHTML('SOR_001', card);
+    expect(html).toContain('class="card-detail-subtitle"');
+    expect(html).toContain('The Mandalorian');
+  });
+
+  it('omits the subtitle span when Subtitle is absent', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).not.toContain('class="card-detail-subtitle"');
+  });
+
+  it('renders the artist credit when Artist is present', () => {
+    const card = { ...card1, Artist: 'Jane Doe' };
+    const html = buildCardDetailHTML('SOR_001', card);
+    expect(html).toContain('class="card-detail-artist"');
+    expect(html).toContain('Illustrated by Jane Doe');
+  });
+
+  it('omits the artist credit when Artist is absent', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).not.toContain('class="card-detail-artist"');
+  });
+
+  it('renders a placeholder when FrontArt is missing', () => {
+    const card = { ...card1, FrontArt: undefined };
+    const html = buildCardDetailHTML('SOR_001', card);
+    expect(html).toContain('class="card-placeholder"');
+    expect(html).toContain('SOR_001');
+  });
+
+  describe('double-sided cards', () => {
+    const doubleSidedCard: CardData = {
+      ...card1,
+      DoubleSided: true,
+      BackArt: 'https://example.com/card-back.png',
+      BackText: 'Back side ability text.',
+    };
+
+    it('renders a flip button and back image', () => {
+      const html = buildCardDetailHTML('SOR_001', doubleSidedCard);
+      expect(html).toContain('class="flip-button"');
+      expect(html).toContain('Flip Card');
+      expect(html).toContain('class="card-back"');
+      expect(html).toContain('<img src="https://example.com/card-back.png" alt="Test Card (Back)">');
+    });
+
+    it('renders back text prefixed with "Back: "', () => {
+      const html = buildCardDetailHTML('SOR_001', doubleSidedCard);
+      expect(html).toContain('<p>Back: Back side ability text.</p>');
+    });
+
+    it('wires the flip button to toggle .flipped on the closest .card-detail', () => {
+      const html = buildCardDetailHTML('SOR_001', doubleSidedCard);
+      expect(html).toContain(`onclick="this.closest('.card-detail').classList.toggle('flipped')"`);
+    });
+  });
+
+  it('omits the flip button and back image for single-sided cards', () => {
+    const html = buildCardDetailHTML('SOR_001', card1);
+    expect(html).not.toContain('class="flip-button"');
+    expect(html).not.toContain('class="card-back"');
   });
 });
 

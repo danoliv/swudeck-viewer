@@ -10,22 +10,22 @@ beforeEach(() => {
 // ─── buildNavElement ───────────────────────────────────────────────────────────
 
 describe('buildNavElement', () => {
-  it('renders exactly 3 links', () => {
+  it('renders exactly 4 links', () => {
     const nav = buildNavElement('viewer');
-    expect(nav.querySelectorAll('a')).toHaveLength(3);
+    expect(nav.querySelectorAll('a')).toHaveLength(4);
   });
 
   it('has correct href attributes', () => {
     const nav = buildNavElement('viewer');
     const hrefs = Array.from(nav.querySelectorAll('a')).map((a) => (a as HTMLAnchorElement).getAttribute('href'));
     // In Vitest import.meta.env.BASE_URL defaults to '/'
-    expect(hrefs).toEqual(['/index.html', '/compare.html', '/settings.html']);
+    expect(hrefs).toEqual(['/index.html', '/compare.html', '/builder.html', '/settings.html']);
   });
 
   it('has correct link labels', () => {
     const nav = buildNavElement('viewer');
     const labels = Array.from(nav.querySelectorAll('a')).map((a) => a.textContent);
-    expect(labels).toEqual(['Deck Viewer', 'Deck Comparison', 'Settings']);
+    expect(labels).toEqual(['Deck Viewer', 'Deck Comparison', 'Deck Builder', 'Settings']);
   });
 
   it('adds active class to the viewer link when page is viewer', () => {
@@ -34,6 +34,7 @@ describe('buildNavElement', () => {
     expect(links[0].className).toBe('active');
     expect(links[1].className).toBe('');
     expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('');
   });
 
   it('adds active class to the compare link when page is compare', () => {
@@ -42,6 +43,16 @@ describe('buildNavElement', () => {
     expect(links[0].className).toBe('');
     expect(links[1].className).toBe('active');
     expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('');
+  });
+
+  it('adds active class to the builder link when page is builder', () => {
+    const nav = buildNavElement('builder');
+    const links = nav.querySelectorAll('a');
+    expect(links[0].className).toBe('');
+    expect(links[1].className).toBe('');
+    expect(links[2].className).toBe('active');
+    expect(links[3].className).toBe('');
   });
 
   it('adds active class to the settings link when page is settings', () => {
@@ -49,7 +60,8 @@ describe('buildNavElement', () => {
     const links = nav.querySelectorAll('a');
     expect(links[0].className).toBe('');
     expect(links[1].className).toBe('');
-    expect(links[2].className).toBe('active');
+    expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('active');
   });
 
   it('returns a div with class navigation', () => {
@@ -75,6 +87,11 @@ describe('detectCurrentPage', () => {
   it('returns settings for settings.html path', () => {
     vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/settings.html' } as Location);
     expect(detectCurrentPage()).toBe('settings');
+  });
+
+  it('returns builder for builder.html path', () => {
+    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/builder.html' } as Location);
+    expect(detectCurrentPage()).toBe('builder');
   });
 
   it('returns viewer for root path /', () => {

@@ -1,4 +1,4 @@
-export type Page = 'viewer' | 'compare' | 'settings';
+export type Page = 'viewer' | 'compare' | 'settings' | 'builder';
 
 interface NavLink {
   href: string;
@@ -9,6 +9,7 @@ interface NavLink {
 const NAV_LINKS: NavLink[] = [
   { href: `${import.meta.env.BASE_URL}index.html`, label: 'Deck Viewer', page: 'viewer' },
   { href: `${import.meta.env.BASE_URL}compare.html`, label: 'Deck Comparison', page: 'compare' },
+  { href: `${import.meta.env.BASE_URL}builder.html`, label: 'Deck Builder', page: 'builder' },
   { href: `${import.meta.env.BASE_URL}settings.html`, label: 'Settings', page: 'settings' },
 ];
 
@@ -21,6 +22,7 @@ export function detectCurrentPage(): Page {
   const path = window.location.pathname;
   if (path.includes('compare')) return 'compare';
   if (path.includes('settings')) return 'settings';
+  if (path.includes('builder')) return 'builder';
   return 'viewer';
 }
 

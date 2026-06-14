@@ -60,6 +60,20 @@ export function resolveCardArtUrl(artUrl: string | undefined | null): string | u
   return artUrl.replace(/\/(\d+)F(\.[a-z0-9]+(?:\?.*)?)$/i, '/$1$2');
 }
 
+/**
+ * Build a canonical "SET_NNN" card ID from a set code and a raw `Number`
+ * field value, zero-padding the numeric portion to 3 digits (e.g. "82" -> "082").
+ * Used to assign stable IDs to cards loaded for the deck builder's card pool.
+ */
+export function formatCardId(set: string, number: string | number): string {
+  const raw = String(number).trim();
+  const match = raw.match(/^(\d+)([A-Za-z]*)$/);
+  if (!match) return `${set}_${raw}`;
+
+  const [, digits, suffix] = match;
+  return `${set}_${digits.padStart(3, '0')}${suffix.toUpperCase()}`;
+}
+
 // ─── Internal cache ───────────────────────────────────────────────────────────
 
 const cardSets: Partial<Record<string, SetIndex>> = {};
@@ -240,6 +254,180 @@ export function buildCardHTML(
                 ` : ''}
             </div>
         </div>
+    `;
+}
+
+// ─── Row helpers ──────────────────────────────────────────────────────────────
+
+/** 0/1/2/3 segmented quantity control, dispatching `data-action` with the chosen count. */
+function quantityButtonsHTML(cardId: string, count: number, action: string, label: string): string {
+  return `
+                <div class="quantity-buttons" role="group" aria-label="${label}">
+                    ${[0, 1, 2, 3].map((n) => `
+                        <button type="button" data-action="${action}" data-card-id="${cardId}" data-count="${n}" class="quantity-button${count === n ? ' active' : ''}">${n}</button>
+                    `).join('')}
+                </div>`;
+}
+
+/** Shared id/name/aspect-icons/cost markup used by both row layouts. */
+function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string): string {
+  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
+  const formattedId = cardId.replace('_', ' ');
+
+  return `
+            <div class="card-row-id">${formattedId}</div>
+            <button type="button" class="card-row-name" data-action="toggle-detail" data-card-id="${cardId}" data-zone="${zone}">${cardData.Name ?? cardId}</button>
+            ${aspects.length ? `
+                <div class="card-row-aspects">
+                    ${aspects.map((aspect) => `<span class="aspect-icon-mini aspect-icon-${aspect}" title="${aspect}"></span>`).join('')}
+                </div>
+            ` : ''}
+            ${cardData.Cost !== undefined ? `<span class="stat card-row-cost" data-type="Cost"><span class="stat-value">${cardData.Cost}</span></span>` : ''}`;
+}
+
+// ─── buildCardDetailHTML ──────────────────────────────────────────────────────
+
+/**
+ * Render an inline card-detail panel: full card image (with a flip button for
+ * double-sided cards), stats, aspects, type/arena/traits, ability text, and
+ * artist credit. A smaller, integrated version of swudb.com's card-detail page
+ * — shown below a card row when its name is clicked.
+ */
+export function buildCardDetailHTML(cardId: string, cardData: CardData = {}): string {
+  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
+  const traits: string[] = (cardData.Traits as string[]) ?? [];
+  const arenas: string[] = (cardData.Arenas as string[]) ?? [];
+  const stats: [string, unknown][] = [];
+  if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
+  if (cardData.Power !== undefined) stats.push(['Power', cardData.Power]);
+  if (cardData.HP !== undefined) stats.push(['HP', cardData.HP]);
+
+  const name = cardData.Name ?? cardId;
+  const isDoubleSided = cardData.DoubleSided === true;
+  const frontArt = resolveCardArtUrl(cardData.FrontArt);
+  const backArt = resolveCardArtUrl(cardData.BackArt);
+
+  const metaParts = [cardData.Type, ...arenas].filter(Boolean) as string[];
+  const metaLine = [metaParts.join(' • '), traits.join(' • ')].filter(Boolean).join(' — ');
+
+  const textParts: string[] = [];
+  if (cardData.FrontText) textParts.push(String(cardData.FrontText));
+  if (cardData.EpicAction) textParts.push(String(cardData.EpicAction));
+  if (isDoubleSided && cardData.BackText) textParts.push(`Back: ${cardData.BackText}`);
+
+  return `
+        <div class="card-detail">
+            <div class="card-detail-image">
+                <div class="card-images">
+                    <div class="card-images-inner">
+                        <div class="card-front">
+                            ${frontArt
+                              ? `<img src="${frontArt}" alt="${name} (Front)">`
+                              : `<div class="card-placeholder">${cardId}</div>`}
+                        </div>
+                        ${isDoubleSided && backArt ? `
+                            <div class="card-back">
+                                <img src="${backArt}" alt="${name} (Back)">
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+                ${isDoubleSided && backArt
+                  ? '<button type="button" class="flip-button" onclick="this.closest(\'.card-detail\').classList.toggle(\'flipped\')">Flip Card</button>'
+                  : ''}
+            </div>
+            <div class="card-detail-info">
+                <div class="card-detail-name">${name}${cardData.Subtitle ? `<span class="card-detail-subtitle">${cardData.Subtitle}</span>` : ''}</div>
+                ${aspects.length ? `
+                    <div class="aspects">
+                        ${aspects.map((aspect) => `<span class="aspect ${aspect}">${aspect}</span>`).join('')}
+                    </div>
+                ` : ''}
+                ${stats.length ? `
+                    <div class="card-stats">
+                        ${stats.map(([label, value]) => `<span class="stat" data-type="${label}">${label}: <span class="stat-value">${value}</span></span>`).join('')}
+                    </div>
+                ` : ''}
+                ${metaLine ? `<div class="card-detail-meta">${metaLine}</div>` : ''}
+                ${textParts.length ? `
+                    <div class="card-detail-text">
+                        ${textParts.map((p) => `<p>${p}</p>`).join('')}
+                    </div>
+                ` : ''}
+                ${cardData.Artist ? `<div class="card-detail-artist">Illustrated by ${cardData.Artist}</div>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+// ─── buildBuilderRowHTML ──────────────────────────────────────────────────────
+
+/**
+ * Render a card-browser entry as a compact list row: 0/1/2/3 main-deck
+ * quantity buttons, a sideboard toggle, the card's ID/name, aspect
+ * mini-icons, and a Cost badge. Mirrors swudb.com's card-browser row
+ * layout. Uses data-action/data-card-id attributes for event delegation —
+ * no inline onclick handlers.
+ */
+export function buildBuilderRowHTML(
+  cardId: string,
+  cardData: CardData = {},
+  count = 0,
+  sideboardCount = 0,
+  expanded = false,
+): string {
+  return `
+        <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+            <div class="card-row-quantity">
+                ${quantityButtonsHTML(cardId, count, 'set-count', 'Copies in deck')}
+                <button type="button"
+                    data-action="toggle-sideboard" data-card-id="${cardId}"
+                    class="sideboard-toggle${sideboardCount > 0 ? ' active' : ''}">SB${sideboardCount > 0 ? ` (${sideboardCount})` : ''}</button>
+            </div>
+            ${cardRowDetailsHTML(cardId, cardData, 'browser')}
+        </div>
+        ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
+    `;
+}
+
+// ─── buildDeckRowHTML ─────────────────────────────────────────────────────────
+
+/**
+ * Render a deck-list entry as a compact list row, for either the main-deck
+ * (`zone: 'deck'`) or the separate sideboard section (`zone: 'sideboard'`).
+ * Shows 0/1/2/3 quantity buttons for that zone's count, plus a button to
+ * move one copy to the other zone (disabled at the 3-copy cap or when the
+ * source zone is empty) — mirrors swudb.com's "SB"/"MD" move controls.
+ */
+export function buildDeckRowHTML(
+  cardId: string,
+  cardData: CardData = {},
+  count = 0,
+  sideboardCount = 0,
+  zone: 'deck' | 'sideboard' = 'deck',
+  expanded = false,
+): string {
+  const isSideboard = zone === 'sideboard';
+  const zoneCount = isSideboard ? sideboardCount : count;
+  const setAction = isSideboard ? 'set-sideboard-count' : 'set-count';
+  const setLabel = isSideboard ? 'Copies in sideboard' : 'Copies in deck';
+  const moveAction = isSideboard ? 'move-to-deck' : 'move-to-sideboard';
+  const moveLabel = isSideboard ? 'MD' : 'SB';
+  const moveTitle = isSideboard ? 'Move to main deck' : 'Move to sideboard';
+  const moveDisabled = isSideboard ? (sideboardCount <= 0 || count >= 3) : (count <= 0 || sideboardCount >= 3);
+  const moveArrow = isSideboard ? '&#8593;' : '&#8595;';
+
+  return `
+        <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+            <div class="card-row-quantity">
+                ${quantityButtonsHTML(cardId, zoneCount, setAction, setLabel)}
+                <button type="button"
+                    data-action="${moveAction}" data-card-id="${cardId}"
+                    class="move-button"${moveDisabled ? ' disabled' : ''} title="${moveTitle}">${moveArrow} ${moveLabel}</button>
+            </div>
+            ${cardRowDetailsHTML(cardId, cardData, zone)}
+        </div>
+        ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
     `;
 }
 

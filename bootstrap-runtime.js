@@ -6,13 +6,14 @@ function getBasePath() {
 
 function getPageKey() {
   const page = document.documentElement.getAttribute('data-page');
-  if (page === 'compare' || page === 'settings' || page === 'viewer') {
+  if (page === 'compare' || page === 'settings' || page === 'viewer' || page === 'builder') {
     return page;
   }
 
   const path = window.location.pathname;
   if (path.includes('compare')) return 'compare';
   if (path.includes('settings')) return 'settings';
+  if (path.includes('builder')) return 'builder';
   return 'viewer';
 }
 
@@ -27,6 +28,7 @@ async function loadBuiltEntry(basePath, pageKey) {
     viewer: ['src/components/navigation.ts', 'src/pages/index.ts'],
     compare: ['src/components/navigation.ts', 'src/pages/compare.ts'],
     settings: ['src/components/navigation.ts', 'src/pages/settings.ts'],
+    builder: ['src/components/navigation.ts', 'src/pages/builder.ts'],
   };
 
   for (const manifestKey of manifestKeys[pageKey]) {
@@ -44,6 +46,7 @@ async function loadDevEntry(pageKey) {
     viewer: ['/src/components/navigation.ts', '/src/pages/index.ts'],
     compare: ['/src/components/navigation.ts', '/src/pages/compare.ts'],
     settings: ['/src/components/navigation.ts', '/src/pages/settings.ts'],
+    builder: ['/src/components/navigation.ts', '/src/pages/builder.ts'],
   };
 
   for (const modulePath of devModules[pageKey]) {

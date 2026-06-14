@@ -16,6 +16,8 @@ export interface DeckData {
   deck: DeckCard[];
   sideboard?: DeckCard[];
   metadata?: DeckMetadata;
+  leader?: DeckCard;
+  base?: DeckCard;
 }
 
 /** Map value: how many copies appear in main deck vs sideboard */

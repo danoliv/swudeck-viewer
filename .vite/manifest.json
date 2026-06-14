@@ -1,41 +1,62 @@
 {
-  "_bootstrap-runtime-BrkeuRMW.js": {
-    "file": "assets/bootstrap-runtime-BrkeuRMW.js",
-    "name": "bootstrap-runtime",
-    "css": [
-      "assets/bootstrap-runtime-DxQjXy7F.css"
-    ]
+  "_api-nYA5_8jY.js": {
+    "file": "assets/api-nYA5_8jY.js",
+    "name": "api"
   },
   "_bootstrap-runtime-DxQjXy7F.css": {
     "file": "assets/bootstrap-runtime-DxQjXy7F.css",
     "src": "_bootstrap-runtime-DxQjXy7F.css"
   },
-  "_cards-CtRoe6Zn.js": {
-    "file": "assets/cards-CtRoe6Zn.js",
+  "_bootstrap-runtime-wL69OZO-.js": {
+    "file": "assets/bootstrap-runtime-wL69OZO-.js",
+    "name": "bootstrap-runtime",
+    "css": [
+      "assets/bootstrap-runtime-DxQjXy7F.css"
+    ]
+  },
+  "_cards-CUYjArq4.js": {
+    "file": "assets/cards-CUYjArq4.js",
     "name": "cards"
   },
+  "_deck-BeVhnbyQ.js": {
+    "file": "assets/deck-BeVhnbyQ.js",
+    "name": "deck"
+  },
   "src/components/navigation.ts": {
-    "file": "assets/navigation-C2DFJbSn.js",
+    "file": "assets/navigation-BzWupkaY.js",
     "name": "navigation",
     "src": "src/components/navigation.ts",
     "isEntry": true
   },
+  "src/pages/builder.ts": {
+    "file": "assets/builderPage-BTbkVC8g.js",
+    "name": "builderPage",
+    "src": "src/pages/builder.ts",
+    "isEntry": true,
+    "imports": [
+      "_cards-CUYjArq4.js",
+      "_deck-BeVhnbyQ.js"
+    ]
+  },
   "src/pages/compare.ts": {
-    "file": "assets/comparePage-cYXsRA4X.js",
+    "file": "assets/comparePage-xsAzUkY0.js",
     "name": "comparePage",
     "src": "src/pages/compare.ts",
     "isEntry": true,
     "imports": [
-      "_cards-CtRoe6Zn.js"
+      "_api-nYA5_8jY.js",
+      "_cards-CUYjArq4.js"
     ]
   },
   "src/pages/index.ts": {
-    "file": "assets/viewerPage--ABXiRGX.js",
+    "file": "assets/viewerPage-CwLzFLmR.js",
     "name": "viewerPage",
     "src": "src/pages/index.ts",
     "isEntry": true,
     "imports": [
-      "_cards-CtRoe6Zn.js"
+      "_api-nYA5_8jY.js",
+      "_cards-CUYjArq4.js",
+      "_deck-BeVhnbyQ.js"
     ]
   },
   "src/pages/settings.ts": {

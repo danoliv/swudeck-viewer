@@ -16,7 +16,8 @@
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots",
     "test:e2e:headed": "playwright test --headed",
-    "fetch-sets": "node fetch-sets.js"
+    "fetch-sets": "node fetch-sets.js",
+    "fetch-icons": "node fetch-aspect-icons.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
