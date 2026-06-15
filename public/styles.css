@@ -717,6 +717,15 @@ html[data-page="builder"] body {
 .builder-right .card-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+/* Keep Cost/Power/HP on a single line even at the narrowest picker card width. */
+.builder-right .card-stats {
+    flex-wrap: nowrap;
+    gap: 4px;
+}
+.builder-right .stat {
+    padding: 2px 5px;
+    font-size: 0.9em;
+}
 @media (max-width: 900px) {
     .builder-layout {
         grid-template-columns: 1fr;
