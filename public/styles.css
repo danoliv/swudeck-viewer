@@ -816,12 +816,12 @@ button:hover {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px var(--accent-soft);
 }
-.aspect-icon-Vigilance { background-image: url('/images/aspects/Vigilance.webp'); }
-.aspect-icon-Command { background-image: url('/images/aspects/Command.webp'); }
-.aspect-icon-Aggression { background-image: url('/images/aspects/Aggression.webp'); }
-.aspect-icon-Cunning { background-image: url('/images/aspects/Cunning.webp'); }
-.aspect-icon-Villainy { background-image: url('/images/aspects/Villainy.webp'); }
-.aspect-icon-Heroism { background-image: url('/images/aspects/Heroism.webp'); }
+.aspect-icon-Vigilance { background-image: url('images/aspects/Vigilance.webp'); }
+.aspect-icon-Command { background-image: url('images/aspects/Command.webp'); }
+.aspect-icon-Aggression { background-image: url('images/aspects/Aggression.webp'); }
+.aspect-icon-Cunning { background-image: url('images/aspects/Cunning.webp'); }
+.aspect-icon-Villainy { background-image: url('images/aspects/Villainy.webp'); }
+.aspect-icon-Heroism { background-image: url('images/aspects/Heroism.webp'); }
 
 /* "No Penalty" filter toggle: shows the leader+base's allowed aspect icons */
 .no-penalty-button {
