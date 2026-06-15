@@ -11,7 +11,7 @@ import type { CardData } from './cards';
 import type { DeckCard, DeckData } from './types';
 import type { Format, LegalData } from './legal';
 import { getDeckIdFromUrl } from './url';
-import { fetchWithRetry, fetchUsingExternalProxy } from './api';
+import { fetchWithRetry } from './api';
 
 interface SwudbDeckResponse {
   deck: Array<{ id: string; count?: number }>;
@@ -30,13 +30,7 @@ export function parseSwudbDeckId(input: string): string | null {
 
 export async function fetchSwudbDeck(deckId: string): Promise<SwudbDeckResponse> {
   const targetUrl = `https://swudb.com/api/getDeckJson/${deckId}`;
-  const hostname = window.location?.hostname ?? '';
-  const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '';
-  const preferDirect = localStorage.getItem('useDirectFetch') === 'true';
-
-  const deckData = (
-    isLocal || preferDirect ? await fetchWithRetry(targetUrl, 3) : await fetchUsingExternalProxy(targetUrl, 3)
-  ) as SwudbDeckResponse;
+  const deckData = (await fetchWithRetry(targetUrl, 3)) as SwudbDeckResponse;
 
   if (!deckData) throw new Error('Server returned empty response');
   if (deckData.error) throw new Error(`API Error: ${deckData.error}`);

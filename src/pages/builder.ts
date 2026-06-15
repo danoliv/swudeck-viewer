@@ -359,7 +359,7 @@ function renderFormatPickerShell(): string {
   html += `<div class="import-method">
     <label for="importSwudbInput">SWUDB deck URL or ID</label>
     <input type="text" id="importSwudbInput" placeholder="https://swudb.com/deck/..." value="${escapeAttr(importSwudbValue)}"${importLoading ? ' disabled' : ''}>
-    <button type="button" data-action="import-swudb"${importLoading ? ' disabled' : ''}>Import from SWUDB</button>
+    <button type="button" data-action="import-swudb"${importLoading ? ' disabled' : ''}>${importLoading ? '<span class="spinner"></span> Importing…' : 'Import from SWUDB'}</button>
   </div>`;
 
   html += `<div class="import-method">
