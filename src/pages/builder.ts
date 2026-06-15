@@ -14,6 +14,7 @@ import { loadSets } from '../lib/sets';
 import { loadCardSet, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, formatCardId, type CardData } from '../lib/cards';
 import { createDefaultRegistry, type CardEntry } from '../lib/deck';
 import {
+  createEmptyDeck,
   decodeDeckState,
   encodeDeckState,
   setFormat,
@@ -140,7 +141,19 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
   return html;
 }
 
-let deck: DeckData = decodeDeckState(getQueryParam('d'));
+/** localStorage key for the in-progress deck, used to recover it after navigating away and back without a `?d=` link. */
+const BUILDER_STORAGE_KEY = 'builderDeck';
+
+/** Restore deck state from the `?d=` URL param, falling back to the last autosaved deck. */
+function loadInitialDeck(): DeckData {
+  const fromUrl = getQueryParam('d');
+  if (fromUrl) return decodeDeckState(fromUrl);
+
+  const saved = localStorage.getItem(BUILDER_STORAGE_KEY);
+  return saved ? decodeDeckState(saved) : createEmptyDeck();
+}
+
+let deck: DeckData = loadInitialDeck();
 let rawCards: CardData[] = [];
 let allCards: CardData[] = [];
 let legalData: LegalData = { premier: { sets: [], bannedCards: [] }, eternal: { bannedCards: [] } };
@@ -148,6 +161,9 @@ let filter: CardFilter = {};
 let browserSort: CardSortKey = 'cost';
 let browserSortDir: SortDirection = 'asc';
 let browserPage = 1;
+
+/** Which multi-select filter dropdown (if any) is currently open. */
+let openFilterDropdown: 'keywords' | 'traits' | null = null;
 
 let deckSort: CardSortKey = 'cost';
 let deckSortDir: SortDirection = 'asc';
@@ -219,7 +235,9 @@ function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
 // ─── State persistence ────────────────────────────────────────────────────────
 
 function persistDeck(): void {
-  setQueryParam('d', encodeDeckState(deck));
+  const encoded = encodeDeckState(deck);
+  setQueryParam('d', encoded);
+  localStorage.setItem(BUILDER_STORAGE_KEY, encoded);
 }
 
 // ─── Step ─────────────────────────────────────────────────────────────────────
@@ -268,7 +286,10 @@ function renderLeft(): string {
     <div class="deck-name-row">
       <input type="text" id="deckName" placeholder="Unnamed Deck" value="${escapeAttr(name)}">
     </div>
-    <div class="deck-total">Total: ${total} Cards</div>
+    <div class="deck-total-row">
+      <div class="deck-total">Total: ${total} Cards</div>
+      <button type="button" data-action="new-deck" class="filter-button">New Deck</button>
+    </div>
   `;
 
   if (deck.metadata?.format) {
@@ -494,6 +515,26 @@ function renderPagination(current: number, total: number): string {
   return html;
 }
 
+/** A "Keywords"/"Traits"-style filter: a toggle button showing the selection count, plus a checkbox-list panel for selecting multiple values. */
+function renderFilterDropdown(key: 'keywords' | 'traits', label: string, options: string[]): string {
+  const selected = filter[key] ?? [];
+  const open = openFilterDropdown === key;
+  const buttonLabel = selected.length ? `${label} (${selected.length})` : label;
+
+  let html = `<div class="filter-dropdown" data-dropdown-group="${key}">`;
+  html += `<button type="button" data-action="toggle-filter-dropdown" data-dropdown="${key}" class="filter-button filter-dropdown-toggle${selected.length ? ' active' : ''}">${buttonLabel} &#9662;</button>`;
+  if (open) {
+    html += '<div class="filter-dropdown-panel">';
+    for (const value of options) {
+      const checked = selected.includes(value) ? ' checked' : '';
+      html += `<label class="filter-checkbox"><input type="checkbox" data-action="filter-checkbox" data-filter="${key}" data-value="${escapeAttr(value)}"${checked}> ${value}</label>`;
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
+}
+
 function renderFilters(): string {
   const types = ['Unit', 'Upgrade', 'Event'];
   const arenas = ['Ground', 'Space'];
@@ -528,13 +569,8 @@ function renderFilters(): string {
   }
   html += '</div>';
 
-  html += '<select id="filterKeyword" data-action="filter-select" data-filter="keywords"><option value="">All Keywords</option>';
-  for (const k of keywords) html += `<option value="${escapeAttr(k)}"${filter.keywords?.[0] === k ? ' selected' : ''}>${k}</option>`;
-  html += '</select>';
-
-  html += '<select id="filterTrait" data-action="filter-select" data-filter="traits"><option value="">All Traits</option>';
-  for (const t of traits) html += `<option value="${escapeAttr(t)}"${filter.traits?.[0] === t ? ' selected' : ''}>${t}</option>`;
-  html += '</select>';
+  html += renderFilterDropdown('keywords', 'Keywords', keywords);
+  html += renderFilterDropdown('traits', 'Traits', traits);
 
   html += '</div>';
   html += `<div id="browserSortBar">${renderSortBar('browser', browserSort, browserSortDir)}</div>`;
@@ -682,7 +718,7 @@ function handleMeleeImport(): void {
 
 // ─── Filter state ─────────────────────────────────────────────────────────────
 
-function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects', value: string): CardFilter {
+function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'keywords' | 'traits', value: string): CardFilter {
   const current = target[key] ?? [];
   const next = current.includes(value) ? current.filter((v) => v !== value) : [...current, value];
   return { ...target, [key]: next.length ? next : undefined };
@@ -692,18 +728,21 @@ function toggleArrayFilter(key: 'types' | 'arenas' | 'aspects', value: string): 
   filter = toggleArrayFilterValue(filter, key, value);
 }
 
-function setSingleSelectFilter(key: 'keywords' | 'traits', value: string): void {
-  filter = { ...filter, [key]: value ? [value] : undefined };
-}
-
 // ─── Event delegation ─────────────────────────────────────────────────────────
 
 document.addEventListener('click', (e) => {
   const target = e.target as HTMLElement;
   const actionEl = target.closest<HTMLElement>('[data-action]');
+  const action = actionEl?.dataset['action'];
+
+  if (openFilterDropdown && action !== 'toggle-filter-dropdown' && !target.closest('.filter-dropdown-panel')) {
+    openFilterDropdown = null;
+    const filtersEl = el('browserFilters');
+    if (filtersEl) filtersEl.innerHTML = renderFilters();
+  }
+
   if (!actionEl) return;
 
-  const action = actionEl.dataset['action'];
   const cardId = actionEl.dataset['cardId'];
 
   switch (action) {
@@ -719,6 +758,13 @@ document.addEventListener('click', (e) => {
       importStatus = null;
       const left = el('builderLeft');
       if (left) left.innerHTML = renderLeft();
+      return;
+    }
+
+    case 'new-deck': {
+      if (!window.confirm('Start a new deck? This will clear your current deck.')) return;
+      applyFormatFilter(undefined);
+      updateDeck(createEmptyDeck());
       return;
     }
 
@@ -835,6 +881,15 @@ document.addEventListener('click', (e) => {
       return;
     }
 
+    case 'toggle-filter-dropdown': {
+      const key = actionEl.dataset['dropdown'] as 'keywords' | 'traits' | undefined;
+      if (!key) return;
+      openFilterDropdown = openFilterDropdown === key ? null : key;
+      const filtersEl = el('browserFilters');
+      if (filtersEl) filtersEl.innerHTML = renderFilters();
+      return;
+    }
+
     case 'filter-toggle': {
       const filterKey = actionEl.dataset['filter'] as 'types' | 'arenas' | 'aspects' | undefined;
       const value = actionEl.dataset['value'];
@@ -944,13 +999,16 @@ document.addEventListener('change', (e) => {
     return;
   }
 
-  if (action !== 'filter-select') return;
+  if (action !== 'filter-checkbox') return;
 
   const filterKey = target.dataset['filter'] as 'keywords' | 'traits' | undefined;
-  if (!filterKey) return;
+  const value = target.dataset['value'];
+  if (!filterKey || !value) return;
 
-  setSingleSelectFilter(filterKey, (target as HTMLSelectElement).value);
+  filter = toggleArrayFilterValue(filter, filterKey, value);
   browserPage = 1;
+  const filtersEl = el('browserFilters');
+  if (filtersEl) filtersEl.innerHTML = renderFilters();
   renderBrowserResults();
 });
 
@@ -962,6 +1020,7 @@ async function init(): Promise<void> {
 
   [rawCards, legalData] = await Promise.all([loadAllCards(), loadLegalData()]);
   applyFormatFilter(deck.metadata?.format);
+  localStorage.setItem(BUILDER_STORAGE_KEY, encodeDeckState(deck));
   render();
 }
 
