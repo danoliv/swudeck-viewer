@@ -537,7 +537,7 @@ function renderFilters(): string {
   html += '</select>';
 
   html += '</div>';
-  html += renderSortBar('browser', browserSort, browserSortDir);
+  html += `<div id="browserSortBar">${renderSortBar('browser', browserSort, browserSortDir)}</div>`;
   return html;
 }
 
@@ -808,6 +808,8 @@ document.addEventListener('click', (e) => {
       } else {
         [browserSort, browserSortDir] = toggle(browserSort, browserSortDir);
         browserPage = 1;
+        const sortBar = el('browserSortBar');
+        if (sortBar) sortBar.innerHTML = renderSortBar('browser', browserSort, browserSortDir);
         renderBrowserResults();
       }
       return;

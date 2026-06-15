@@ -282,6 +282,46 @@ describe('sortCards', () => {
     });
   });
 
+  describe('secondary sort priority (cost, name, affinity, type)', () => {
+    // All four cards tie on Name ("Same") and Affinity (both "Vigilance"), so
+    // sorting by 'name' or 'aspect' falls through to Cost, then Type.
+    const PRIORITY_CARDS: CardData[] = [
+      { id: 'A', Name: 'Same', Aspects: ['Vigilance'], Cost: 2, Type: 'Upgrade' },
+      { id: 'B', Name: 'Same', Aspects: ['Vigilance'], Cost: 1, Type: 'Event' },
+      { id: 'C', Name: 'Same', Aspects: ['Vigilance'], Cost: 1, Type: 'Unit', Arenas: ['Ground'] },
+    ];
+
+    it('when primary is "name", breaks ties by Cost then Type', () => {
+      const result = sortCards(PRIORITY_CARDS, 'name');
+      // Cost 1 (C, B) before Cost 2 (A); among Cost-1 cards, Ground Units before Event.
+      expect(result.map((c) => c.id)).toEqual(['C', 'B', 'A']);
+    });
+
+    it('when primary is "aspect", breaks ties by Cost then Name then Type', () => {
+      const result = sortCards(PRIORITY_CARDS, 'aspect');
+      expect(result.map((c) => c.id)).toEqual(['C', 'B', 'A']);
+    });
+
+    it('when primary is "cost", breaks ties by Name then Affinity then Type', () => {
+      const cards: CardData[] = [
+        { id: 'A', Name: 'Same', Cost: 1, Aspects: ['Vigilance'] },
+        { id: 'B', Name: 'Same', Cost: 1, Aspects: ['Aggression'] },
+      ];
+      const result = sortCards(cards, 'cost');
+      // Cost ties, Name ties, Affinity decides: Aggression < Vigilance.
+      expect(result.map((c) => c.id)).toEqual(['B', 'A']);
+    });
+
+    it('when primary is "type", breaks ties by Cost then Name then Affinity', () => {
+      const cards: CardData[] = [
+        { id: 'A', Name: 'Same', Type: 'Event', Cost: 2 },
+        { id: 'B', Name: 'Same', Type: 'Event', Cost: 1 },
+      ];
+      const result = sortCards(cards, 'type');
+      expect(result.map((c) => c.id)).toEqual(['B', 'A']);
+    });
+  });
+
   describe('direction', () => {
     const NAME_CARDS: CardData[] = [
       { id: 'A', Name: 'Charlie' },

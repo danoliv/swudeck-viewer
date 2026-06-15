@@ -149,50 +149,74 @@ function compareBySet(a: CardData, b: CardData, setOrder: string[]): number {
   return cardNumber(a) - cardNumber(b);
 }
 
-function compareByCost(a: CardData, b: CardData): number {
+function compareByCostOnly(a: CardData, b: CardData): number {
   const costA = a.Cost === undefined || a.Cost === '' ? Infinity : Number(a.Cost);
   const costB = b.Cost === undefined || b.Cost === '' ? Infinity : Number(b.Cost);
-  return costA !== costB ? costA - costB : compareByName(a, b);
+  return costA === costB ? 0 : costA - costB;
 }
 
-function compareByAspect(a: CardData, b: CardData): number {
+function compareByAspectOnly(a: CardData, b: CardData): number {
   const aspectA = a.Aspects?.[0] ?? '';
   const aspectB = b.Aspects?.[0] ?? '';
-  if (aspectA !== aspectB) {
-    if (!aspectA) return 1;
-    if (!aspectB) return -1;
-    return aspectA.localeCompare(aspectB);
-  }
-  return compareByName(a, b);
+  if (aspectA === aspectB) return 0;
+  if (!aspectA) return 1;
+  if (!aspectB) return -1;
+  return aspectA.localeCompare(aspectB);
 }
 
-function compareByType(a: CardData, b: CardData): number {
+function compareByTypeOnly(a: CardData, b: CardData): number {
   const catA = cardTypeCategory(a);
   const catB = cardTypeCategory(b);
-  if (catA !== catB) {
-    const ia = TYPE_CATEGORY_ORDER.indexOf(catA);
-    const ib = TYPE_CATEGORY_ORDER.indexOf(catB);
-    if (ia !== -1 && ib !== -1) return ia - ib;
-    if (ia !== -1) return -1;
-    if (ib !== -1) return 1;
-    if (catA === 'Unknown') return 1;
-    if (catB === 'Unknown') return -1;
-    return catA.localeCompare(catB);
+  if (catA === catB) return 0;
+  const ia = TYPE_CATEGORY_ORDER.indexOf(catA);
+  const ib = TYPE_CATEGORY_ORDER.indexOf(catB);
+  if (ia !== -1 && ib !== -1) return ia - ib;
+  if (ia !== -1) return -1;
+  if (ib !== -1) return 1;
+  if (catA === 'Unknown') return 1;
+  if (catB === 'Unknown') return -1;
+  return catA.localeCompare(catB);
+}
+
+/**
+ * Fixed secondary-sort priority chain shared by the deck/sideboard/browser
+ * sort bars: whichever of these is chosen as the primary key, the rest are
+ * applied (in this order) as tiebreakers.
+ */
+const SORT_PRIORITY: CardSortKey[] = ['cost', 'name', 'aspect', 'type'];
+
+function compareSingle(key: CardSortKey, a: CardData, b: CardData): number {
+  switch (key) {
+    case 'cost': return compareByCostOnly(a, b);
+    case 'aspect': return compareByAspectOnly(a, b);
+    case 'type': return compareByTypeOnly(a, b);
+    case 'name':
+    default: return compareByName(a, b);
   }
-  return compareByCost(a, b);
+}
+
+/** Compare by `primary`, then by the remaining `SORT_PRIORITY` keys (in order) as tiebreakers. */
+function compareWithPriority(primary: CardSortKey, a: CardData, b: CardData): number {
+  for (const key of [primary, ...SORT_PRIORITY.filter((k) => k !== primary)]) {
+    const result = compareSingle(key, a, b);
+    if (result !== 0) return result;
+  }
+  return 0;
 }
 
 /**
  * Reorder a card pool for the deck/sideboard/browser sort bars and leader/base
  * pickers, without mutating the input.
  * - 'type': Ground Units, Space Units, Event, Upgrade, then other types
- *   alphabetically ("Unknown" last); ties broken by Cost then Name.
+ *   alphabetically ("Unknown" last); ties broken by Cost, then Name, then Affinity.
  * - 'set': canonical set order (via `setOrder`), then card number within a set.
- * - 'cost': ascending Cost, blank/missing Cost last, ties broken by Name.
- * - 'aspect': alphabetical by the first Aspect, cards with no Aspects last, ties by Name.
- * - 'name': alphabetical by Name.
+ * - 'cost': ascending Cost (blank/missing last); ties broken by Name, then Affinity, then Type.
+ * - 'aspect': alphabetical by the first Aspect (cards with no Aspects last); ties broken by
+ *   Cost, then Name, then Type.
+ * - 'name': alphabetical by Name; ties broken by Cost, then Affinity, then Type.
  *
- * `direction: 'desc'` reverses the resulting order.
+ * Whichever key is primary, the remaining keys among cost/name/affinity/type are applied
+ * as tiebreakers in that fixed priority order. `direction: 'desc'` reverses the result.
  */
 export function sortCards(
   cards: CardData[],
@@ -204,16 +228,10 @@ export function sortCards(
 
   switch (sortBy) {
     case 'type':
-      sorted.sort(compareByType);
-      break;
     case 'cost':
-      sorted.sort(compareByCost);
-      break;
     case 'aspect':
-      sorted.sort(compareByAspect);
-      break;
     case 'name':
-      sorted.sort(compareByName);
+      sorted.sort((a, b) => compareWithPriority(sortBy, a, b));
       break;
     case 'set':
     default:
