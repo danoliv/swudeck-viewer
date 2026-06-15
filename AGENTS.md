@@ -34,6 +34,13 @@
 - E2E/visual tests: `npm run test:visual`, `npm run test:visual:headed`, update snapshots with `npm run test:visual:update`
 - Playwright already starts/reuses the local Python server via `playwright.config.ts`; visual baselines live in `e2e/visual.spec.ts-snapshots/`.
 
+## Browser verification
+- For live UI verification (e.g. checking a deployed page or swudb.com), use the `/chrome-connect` skill to attach to the user's already-open Chrome via the `chrome-devtools` MCP server (remote debugging on `127.0.0.1:9222`). This preserves the user's logins — don't launch a fresh/isolated browser instance.
+
+## Deployment
+- Pushes to `main` trigger the "Deploy to GitHub Pages" GitHub Actions workflow (test → build → deploy). After pushing, use `gh run list --branch main --limit 3` (and `gh run watch <id>` if still in progress) to confirm the workflow completes successfully.
+- Once deployed, always verify the feature actually works on the live site at `https://danoliv.github.io/swudeck-viewer/` (not just localhost) — use `/chrome-connect` to navigate there and check the change end-to-end.
+
 ## Testing conventions
 - Jest runs in `jsdom` with `jest-fetch-mock` enabled by `test-setup.js`; browser APIs like `fetch`, `localStorage`, and parts of `window.history` are already mocked.
 - Existing tests are module-oriented (`__tests__/shared.test.js`, `card-module.test.js`, `compare.test.js`, etc.); add tests next to the module whose public helpers you changed.
