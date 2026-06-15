@@ -956,6 +956,7 @@ html[data-page="builder"] body {
     min-width: 160px;
     max-width: 340px;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 10px 14px;
     background: var(--surface);
     border: 1px solid var(--border);
