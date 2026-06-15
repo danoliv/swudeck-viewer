@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:pages-root": "rm -rf assets .vite && VITE_BASE=/swudeck-viewer/ vite build && cp -r dist/assets . && cp -r dist/.vite .",
     "build:docs": "VITE_OUT_DIR=docs VITE_BASE=/swudeck-viewer/ vite build",
     "preview": "vite preview",
     "start": "vite",
