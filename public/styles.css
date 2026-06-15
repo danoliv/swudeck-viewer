@@ -685,6 +685,12 @@ button:hover {
 
 /* ─── Deck builder ───────────────────────────────────────────────────────── */
 
+/* The builder needs more room than other pages so the leader/base picker
+   grids have enough space to lay out multiple full-size cards per row. */
+html[data-page="builder"] body {
+    max-width: 2000px;
+}
+
 .builder-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -705,6 +711,11 @@ button:hover {
 }
 .builder-right {
     min-width: 0;
+}
+/* Leader/base picker grids live in a half-width column, so size columns off
+   the available space here instead of the viewport-based .card-grid breakpoints. */
+.builder-right .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 @media (max-width: 900px) {
     .builder-layout {
