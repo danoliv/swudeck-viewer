@@ -25,6 +25,7 @@ import {
   moveToDeck,
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
+import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
 import {
   filterCards,
   getLeaders,
@@ -161,6 +162,14 @@ let leaderSort: CardSortKey = 'set';
 let baseFilter: CardFilter = {};
 let baseSort: CardSortKey = 'set';
 
+// ─── Import state ─────────────────────────────────────────────────────────────
+
+let importSwudbValue = '';
+let importMeleeValue = '';
+let importLoading = false;
+let importError: string | null = null;
+let importStatus: string | null = null;
+
 // ─── DOM helpers ──────────────────────────────────────────────────────────────
 
 function el<T extends HTMLElement>(id: string): T | null {
@@ -248,7 +257,14 @@ function renderLeft(): string {
   const name = deck.metadata?.name ?? '';
   const total = getTotalCount(deck);
 
-  let html = `
+  let html = '';
+
+  if (importStatus) {
+    html += `<div class="import-status">${escapeAttr(importStatus)}
+      <button type="button" data-action="dismiss-import-status">&times;</button></div>`;
+  }
+
+  html += `
     <div class="deck-name-row">
       <input type="text" id="deckName" placeholder="Unnamed Deck" value="${escapeAttr(name)}">
     </div>
@@ -336,6 +352,26 @@ function renderFormatPickerShell(): string {
         <p>${description}</p>
       </div>`;
   }
+  html += '</div>';
+
+  html += '<div class="import-panel"><h3>Or import an existing deck</h3>';
+
+  html += `<div class="import-method">
+    <label for="importSwudbInput">SWUDB deck URL or ID</label>
+    <input type="text" id="importSwudbInput" placeholder="https://swudb.com/deck/..." value="${escapeAttr(importSwudbValue)}"${importLoading ? ' disabled' : ''}>
+    <button type="button" data-action="import-swudb"${importLoading ? ' disabled' : ''}>Import from SWUDB</button>
+  </div>`;
+
+  html += `<div class="import-method">
+    <label for="importMeleeInput">Melee.gg decklist (paste text)</label>
+    <textarea id="importMeleeInput" rows="6" placeholder="Leader: ...\nBase: ...\n3 Card Name\n..."${importLoading ? ' disabled' : ''}>${escapeAttr(importMeleeValue)}</textarea>
+    <button type="button" data-action="import-melee"${importLoading ? ' disabled' : ''}>Import from Melee</button>
+  </div>`;
+
+  if (importError) {
+    html += `<div class="import-error">${escapeAttr(importError)}</div>`;
+  }
+
   html += '</div>';
   return html;
 }
@@ -585,6 +621,65 @@ function updateDeck(next: DeckData): void {
   }
 }
 
+// ─── Import handlers ────────────────────────────────────────────────────────
+
+/** Apply an imported deck: auto-detect its format, recompute the legal card pool, and reset import UI state. */
+function finishImport(imported: DeckData, unmatchedLines: string[] = []): void {
+  const format = detectFormat(imported, rawCards, legalData);
+  const next: DeckData = { ...imported, metadata: { ...imported.metadata, format } };
+
+  applyFormatFilter(format);
+  importSwudbValue = '';
+  importMeleeValue = '';
+  importError = null;
+  importLoading = false;
+  importStatus = unmatchedLines.length
+    ? `Imported with ${unmatchedLines.length} unrecognized line(s): ${unmatchedLines.join(', ')}`
+    : null;
+
+  updateDeck(next);
+}
+
+async function handleSwudbImport(): Promise<void> {
+  const deckId = parseSwudbDeckId(importSwudbValue);
+  if (!deckId) {
+    importError = 'Enter a valid SWUDB deck URL or ID.';
+    renderRight();
+    return;
+  }
+
+  importLoading = true;
+  importError = null;
+  renderRight();
+
+  try {
+    const apiData = await fetchSwudbDeck(deckId);
+    finishImport(mapSwudbToDeckData(apiData));
+  } catch (err) {
+    importLoading = false;
+    importError = err instanceof Error ? err.message : String(err);
+    renderRight();
+  }
+}
+
+function handleMeleeImport(): void {
+  const text = importMeleeValue.trim();
+  if (!text) {
+    importError = 'Paste a decklist first.';
+    renderRight();
+    return;
+  }
+
+  const { deckData: imported, unmatchedLines } = parseMeleeDecklist(text, rawCards);
+  if (!imported.deck.length && !imported.leader && !imported.base) {
+    importError = 'Could not recognize any cards in this decklist.';
+    renderRight();
+    return;
+  }
+
+  finishImport(imported, unmatchedLines);
+}
+
 // ─── Filter state ─────────────────────────────────────────────────────────────
 
 function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects', value: string): CardFilter {
@@ -612,6 +707,21 @@ document.addEventListener('click', (e) => {
   const cardId = actionEl.dataset['cardId'];
 
   switch (action) {
+    case 'import-swudb':
+      void handleSwudbImport();
+      return;
+
+    case 'import-melee':
+      handleMeleeImport();
+      return;
+
+    case 'dismiss-import-status': {
+      importStatus = null;
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
+      return;
+    }
+
     case 'select-format': {
       const format = actionEl.dataset['format'] as Format | undefined;
       if (!format) return;
@@ -787,6 +897,16 @@ document.addEventListener('input', (e) => {
     filter = { ...filter, search: (target as HTMLInputElement).value };
     browserPage = 1;
     renderBrowserResults();
+    return;
+  }
+
+  if (target.id === 'importSwudbInput') {
+    importSwudbValue = (target as HTMLInputElement).value;
+    return;
+  }
+
+  if (target.id === 'importMeleeInput') {
+    importMeleeValue = (target as HTMLTextAreaElement).value;
     return;
   }
 
