@@ -525,6 +525,9 @@ function renderFilterDropdown(key: 'keywords' | 'traits', label: string, options
   html += `<button type="button" data-action="toggle-filter-dropdown" data-dropdown="${key}" class="filter-button filter-dropdown-toggle${selected.length ? ' active' : ''}">${buttonLabel} &#9662;</button>`;
   if (open) {
     html += '<div class="filter-dropdown-panel">';
+    if (selected.length) {
+      html += `<button type="button" data-action="clear-filter-dropdown" data-filter="${key}" class="filter-dropdown-clear">Clear</button>`;
+    }
     for (const value of options) {
       const checked = selected.includes(value) ? ' checked' : '';
       html += `<label class="filter-checkbox"><input type="checkbox" data-action="filter-checkbox" data-filter="${key}" data-value="${escapeAttr(value)}"${checked}> ${value}</label>`;
@@ -716,6 +719,16 @@ function handleMeleeImport(): void {
   finishImport(imported, unmatchedLines);
 }
 
+function rerenderFiltersPreservingScroll(): void {
+  const filtersEl = el('browserFilters');
+  if (!filtersEl) return;
+  const panel = filtersEl.querySelector<HTMLElement>('.filter-dropdown-panel');
+  const scrollTop = panel?.scrollTop ?? 0;
+  filtersEl.innerHTML = renderFilters();
+  const newPanel = filtersEl.querySelector<HTMLElement>('.filter-dropdown-panel');
+  if (newPanel) newPanel.scrollTop = scrollTop;
+}
+
 // ─── Filter state ─────────────────────────────────────────────────────────────
 
 function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'keywords' | 'traits', value: string): CardFilter {
@@ -890,6 +903,16 @@ document.addEventListener('click', (e) => {
       return;
     }
 
+    case 'clear-filter-dropdown': {
+      const key = actionEl.dataset['filter'] as 'keywords' | 'traits' | undefined;
+      if (!key) return;
+      filter = { ...filter, [key]: undefined };
+      browserPage = 1;
+      rerenderFiltersPreservingScroll();
+      renderBrowserResults();
+      return;
+    }
+
     case 'filter-toggle': {
       const filterKey = actionEl.dataset['filter'] as 'types' | 'arenas' | 'aspects' | undefined;
       const value = actionEl.dataset['value'];
@@ -1007,8 +1030,7 @@ document.addEventListener('change', (e) => {
 
   filter = toggleArrayFilterValue(filter, filterKey, value);
   browserPage = 1;
-  const filtersEl = el('browserFilters');
-  if (filtersEl) filtersEl.innerHTML = renderFilters();
+  rerenderFiltersPreservingScroll();
   renderBrowserResults();
 });
 
