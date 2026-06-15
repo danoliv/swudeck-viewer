@@ -9,6 +9,7 @@
  */
 
 import type { DeckData, DeckCard } from './types';
+import type { Format } from './legal';
 
 // ─── Base64url helpers (UTF-8 safe) ────────────────────────────────────────────
 
@@ -61,6 +62,17 @@ export function decodeDeckState(encoded: string | null | undefined): DeckData {
   } catch {
     return createEmptyDeck();
   }
+}
+
+// ─── Format ───────────────────────────────────────────────────────────────────
+
+/**
+ * Return a new deck with the given format selected.
+ * Resets leader/base/deck/sideboard (a format change can make any of them
+ * illegal), but preserves deck metadata (name/description/author).
+ */
+export function setFormat(deck: DeckData, format: Format): DeckData {
+  return { deck: [], metadata: { ...deck.metadata, format } };
 }
 
 // ─── Leader / Base ────────────────────────────────────────────────────────────

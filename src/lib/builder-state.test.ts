@@ -3,6 +3,7 @@ import {
   createEmptyDeck,
   encodeDeckState,
   decodeDeckState,
+  setFormat,
   setLeader,
   setBase,
   setCardCount,
@@ -73,6 +74,47 @@ describe('encodeDeckState / decodeDeckState', () => {
       .replace(/=+$/, '');
     expect(decodeDeckState(malformed)).toEqual({ deck: [], leader: { id: 'JTL_016', count: 1 } });
     expect(encoded).toBeTruthy();
+  });
+});
+
+// ─── setFormat ────────────────────────────────────────────────────────────────
+
+describe('setFormat', () => {
+  it('sets the format on a fresh deck', () => {
+    const deck = setFormat(createEmptyDeck(), 'premier');
+    expect(deck.metadata?.format).toBe('premier');
+    expect(deck.deck).toEqual([]);
+  });
+
+  it('resets leader/base/deck/sideboard when changing format', () => {
+    let deck = setFormat(createEmptyDeck(), 'premier');
+    deck = setLeader(deck, 'JTL_016');
+    deck = setBase(deck, 'SOR_029');
+    deck = setCardCount(deck, 'SEC_213', 3);
+    deck = setCardCount(deck, 'SOR_001', 2, true);
+
+    deck = setFormat(deck, 'eternal');
+
+    expect(deck.metadata?.format).toBe('eternal');
+    expect(deck.leader).toBeUndefined();
+    expect(deck.base).toBeUndefined();
+    expect(deck.deck).toEqual([]);
+    expect(deck.sideboard).toBeUndefined();
+  });
+
+  it('preserves name/description/author across a format change', () => {
+    let deck = createEmptyDeck();
+    deck = { ...deck, metadata: { name: 'My Deck', description: 'desc', author: 'Han' } };
+    deck = setFormat(deck, 'premier');
+
+    expect(deck.metadata).toEqual({ name: 'My Deck', description: 'desc', author: 'Han', format: 'premier' });
+  });
+
+  it('does not mutate the input deck', () => {
+    const deck = setLeader(createEmptyDeck(), 'JTL_016');
+    setFormat(deck, 'premier');
+    expect(deck.leader).toEqual({ id: 'JTL_016', count: 1 });
+    expect(deck.metadata).toBeUndefined();
   });
 });
 

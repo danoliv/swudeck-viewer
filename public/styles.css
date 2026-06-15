@@ -760,6 +760,40 @@ html[data-page="builder"] body {
     text-align: center;
 }
 
+/* Format picker */
+.format-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+.format-option {
+    flex: 1;
+    min-width: 220px;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+.format-option:hover {
+    border-color: var(--accent);
+}
+.format-option h3 {
+    font-family: var(--font-display);
+    margin-bottom: 8px;
+}
+.format-option p {
+    color: var(--text-muted);
+}
+.format-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: var(--text-muted);
+}
+
 /* Leader / base pickers */
 .picker-card {
     cursor: pointer;

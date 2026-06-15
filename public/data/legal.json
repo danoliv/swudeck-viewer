@@ -1,0 +1,9 @@
+{
+  "premier": {
+    "sets": ["JTL", "LOF", "IBH", "SEC", "LAW"],
+    "bannedCards": []
+  },
+  "eternal": {
+    "bannedCards": ["JTL_140", "JTL_170"]
+  }
+}

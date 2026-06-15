@@ -1,5 +1,7 @@
 // Shared TypeScript interfaces for SWU Deck Viewer
 
+import type { Format } from './legal';
+
 export interface DeckCard {
   id: string;
   count?: number;
@@ -9,7 +11,7 @@ export interface DeckMetadata {
   name?: string;
   description?: string;
   author?: string;
-  format?: string;
+  format?: Format;
 }
 
 export interface DeckData {

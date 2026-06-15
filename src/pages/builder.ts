@@ -16,6 +16,7 @@ import { createDefaultRegistry, type CardEntry } from '../lib/deck';
 import {
   decodeDeckState,
   encodeDeckState,
+  setFormat,
   setLeader,
   setBase,
   setCardCount,
@@ -23,6 +24,7 @@ import {
   moveToSideboard,
   moveToDeck,
 } from '../lib/builder-state';
+import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import {
   filterCards,
   getLeaders,
@@ -138,7 +140,9 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
 }
 
 let deck: DeckData = decodeDeckState(getQueryParam('d'));
+let rawCards: CardData[] = [];
 let allCards: CardData[] = [];
+let legalData: LegalData = { premier: { sets: [], bannedCards: [] }, eternal: { bannedCards: [] } };
 let filter: CardFilter = {};
 let browserSort: CardSortKey = 'cost';
 let browserSortDir: SortDirection = 'asc';
@@ -211,13 +215,32 @@ function persistDeck(): void {
 
 // ─── Step ─────────────────────────────────────────────────────────────────────
 
-type Step = 'leader' | 'base' | 'browser';
+type Step = 'format' | 'leader' | 'base' | 'browser';
 
 function getStep(): Step {
+  if (!deck.metadata?.format) return 'format';
   if (!deck.leader) return 'leader';
   if (!deck.base) return 'base';
   return 'browser';
 }
+
+/** Recompute `allCards` (the format-legal card pool) from `rawCards`. */
+function applyFormatFilter(format: Format | undefined): void {
+  allCards = format ? filterLegalCards(rawCards, format, legalData) : [];
+}
+
+// ─── Format info ──────────────────────────────────────────────────────────────
+
+const FORMAT_INFO: Record<Format, { label: string; description: string }> = {
+  premier: {
+    label: 'Premier',
+    description: 'Standard rotation — only the most recently released sets are legal.',
+  },
+  eternal: {
+    label: 'Eternal',
+    description: 'Every set ever released is legal, aside from a short suspended-cards list.',
+  },
+};
 
 // ─── Left panel: deck overview ───────────────────────────────────────────────
 
@@ -231,6 +254,11 @@ function renderLeft(): string {
     </div>
     <div class="deck-total">Total: ${total} Cards</div>
   `;
+
+  if (deck.metadata?.format) {
+    html += `<div class="format-row">Format: ${FORMAT_INFO[deck.metadata.format].label}
+      <button type="button" data-action="change-format">Change format</button></div>`;
+  }
 
   if (deck.leader || deck.base) {
     html += '<div class="deck-header">';
@@ -292,6 +320,22 @@ function renderDeckList(): string {
   }
   html += '</div>';
 
+  html += '</div>';
+  return html;
+}
+
+// ─── Right panel: format picker ──────────────────────────────────────────────
+
+function renderFormatPickerShell(): string {
+  let html = '<h2>Choose a Format</h2><div class="format-picker">';
+  for (const format of Object.keys(FORMAT_INFO) as Format[]) {
+    const { label, description } = FORMAT_INFO[format];
+    html += `
+      <div class="format-option" data-action="select-format" data-format="${format}">
+        <h3>${label}</h3>
+        <p>${description}</p>
+      </div>`;
+  }
   html += '</div>';
   return html;
 }
@@ -494,6 +538,10 @@ function renderRight(): void {
   if (!right) return;
 
   const step = getStep();
+  if (step === 'format') {
+    right.innerHTML = renderFormatPickerShell();
+    return;
+  }
   if (step === 'leader') {
     right.innerHTML = renderLeaderPickerShell();
     renderLeaderResults();
@@ -564,6 +612,22 @@ document.addEventListener('click', (e) => {
   const cardId = actionEl.dataset['cardId'];
 
   switch (action) {
+    case 'select-format': {
+      const format = actionEl.dataset['format'] as Format | undefined;
+      if (!format) return;
+      applyFormatFilter(format);
+      updateDeck(setFormat(deck, format));
+      return;
+    }
+
+    case 'change-format': {
+      const next: DeckData = { deck: [], metadata: { ...deck.metadata } };
+      delete next.metadata!.format;
+      applyFormatFilter(undefined);
+      updateDeck(next);
+      return;
+    }
+
     case 'select-leader':
       if (cardId) updateDeck(setLeader(deck, cardId));
       return;
@@ -774,7 +838,8 @@ async function init(): Promise<void> {
   const left = el('builderLeft');
   if (left) left.innerHTML = '<div class="loading">Loading card data...</div>';
 
-  allCards = await loadAllCards();
+  [rawCards, legalData] = await Promise.all([loadAllCards(), loadLegalData()]);
+  applyFormatFilter(deck.metadata?.format);
   render();
 }
 
