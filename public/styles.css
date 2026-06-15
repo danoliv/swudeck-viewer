@@ -189,7 +189,7 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 3px;
+    border-radius: 4.5%;
 }
 .card-back img {
     max-width: 100%;
@@ -197,7 +197,7 @@ h1, h2, h3 {
     width: auto;
     height: auto;
     object-fit: contain;
-    border-radius: 3px;
+    border-radius: 4.5%;
 }
 .card-back {
     transform: rotateY(180deg);
@@ -575,6 +575,13 @@ button:hover {
     input {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .card-detail {
+        flex-direction: column;
+    }
+    .card-detail-image {
+        width: 100%;
+        max-width: 220px;
     }
 }
 
@@ -1133,7 +1140,7 @@ html[data-page="builder"] body {
 }
 .card-detail-image {
     flex-shrink: 0;
-    width: 140px;
+    width: 220px;
 }
 .card-detail-image .flip-button {
     display: block;
