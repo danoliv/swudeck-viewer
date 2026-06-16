@@ -5,6 +5,7 @@
  */
 
 import { loadSets } from './sets';
+import type { CardStats } from './stats';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -259,6 +260,22 @@ export function buildCardHTML(
 
 // ─── Row helpers ──────────────────────────────────────────────────────────────
 
+function statsBarsHTML(stats: CardStats | null | undefined): string {
+  if (!stats) return '';
+  const incl = Math.min(100, Math.max(0, stats.inclusionRate));
+  const wr = Math.min(100, Math.max(0, stats.winRate));
+  // Each bar owns half the row. 100% reaches the center; bars never touch or overlap.
+  const blueEnd = (incl * 0.5).toFixed(1);
+  const orangeStart = (100 - wr * 0.5).toFixed(1);
+  const bg = `linear-gradient(to right,rgba(59,130,246,.15) ${blueEnd}%,transparent ${blueEnd}% ${orangeStart}%,rgba(249,115,22,.15) ${orangeStart}%)`;
+  return `<div class="stats-bars" style="background:${bg}" aria-hidden="true"></div>`;
+}
+
+function statsLabelsHTML(stats: CardStats | null | undefined): string {
+  if (!stats) return '';
+  return `<div class="stats-labels" aria-hidden="true"><span class="stats-label-incl" title="Inclusion rate">${Math.round(stats.inclusionRate)}%</span><span class="stats-label-wr" title="Win rate">${Math.round(stats.winRate)}%</span></div>`;
+}
+
 /** 0/1/2/3 segmented quantity control, dispatching `data-action` with the chosen count. */
 function quantityButtonsHTML(cardId: string, count: number, action: string, label: string): string {
   return `
@@ -270,13 +287,14 @@ function quantityButtonsHTML(cardId: string, count: number, action: string, labe
 }
 
 /** Shared id/name/aspect-icons/cost markup used by both row layouts. */
-function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string): string {
+function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string, stats?: CardStats | null): string {
   const aspects: string[] = (cardData.Aspects as string[]) ?? [];
   const formattedId = cardId.replace('_', ' ');
 
   return `
             <div class="card-row-id">${formattedId}</div>
             <button type="button" class="card-row-name" data-action="toggle-detail" data-card-id="${cardId}" data-zone="${zone}">${cardData.Name ?? cardId}</button>
+            ${statsLabelsHTML(stats)}
             ${aspects.length ? `
                 <div class="card-row-aspects">
                     ${aspects.map((aspect) => `<span class="aspect-icon-mini aspect-icon-${aspect}" title="${aspect}"></span>`).join('')}
@@ -375,16 +393,18 @@ export function buildBuilderRowHTML(
   count = 0,
   sideboardCount = 0,
   expanded = false,
+  stats?: CardStats | null,
 ): string {
   return `
         <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+            ${statsBarsHTML(stats)}
             <div class="card-row-quantity">
                 ${quantityButtonsHTML(cardId, count, 'set-count', 'Copies in deck')}
                 <button type="button"
                     data-action="toggle-sideboard" data-card-id="${cardId}"
                     class="sideboard-toggle${sideboardCount > 0 ? ' active' : ''}">SB${sideboardCount > 0 ? ` (${sideboardCount})` : ''}</button>
             </div>
-            ${cardRowDetailsHTML(cardId, cardData, 'browser')}
+            ${cardRowDetailsHTML(cardId, cardData, 'browser', stats)}
         </div>
         ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
     `;
@@ -406,6 +426,7 @@ export function buildDeckRowHTML(
   sideboardCount = 0,
   zone: 'deck' | 'sideboard' = 'deck',
   expanded = false,
+  stats?: CardStats | null,
 ): string {
   const isSideboard = zone === 'sideboard';
   const zoneCount = isSideboard ? sideboardCount : count;
@@ -419,13 +440,14 @@ export function buildDeckRowHTML(
 
   return `
         <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+            ${statsBarsHTML(stats)}
             <div class="card-row-quantity">
                 ${quantityButtonsHTML(cardId, zoneCount, setAction, setLabel)}
                 <button type="button"
                     data-action="${moveAction}" data-card-id="${cardId}"
                     class="move-button"${moveDisabled ? ' disabled' : ''} title="${moveTitle}">${moveArrow} ${moveLabel}</button>
             </div>
-            ${cardRowDetailsHTML(cardId, cardData, zone)}
+            ${cardRowDetailsHTML(cardId, cardData, zone, stats)}
         </div>
         ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
     `;
