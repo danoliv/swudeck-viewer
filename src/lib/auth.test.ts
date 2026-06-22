@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import * as supabaseModule from './supabase';
-import { getCurrentUser, signInWithEmail, signInWithGitHub, signOut, onAuthChange } from './auth';
+import { getCurrentUser, signInWithEmail, signInWithGoogle, signOut, onAuthChange } from './auth';
 
 function mockAuthClient(overrides: Record<string, unknown> = {}) {
   const auth = {
@@ -60,12 +60,12 @@ describe('signInWithEmail', () => {
   });
 });
 
-describe('signInWithGitHub', () => {
+describe('signInWithGoogle', () => {
   it('honors an explicit redirectTo override', async () => {
     const auth = mockAuthClient();
-    await signInWithGitHub('https://example.com/builder.html?id=abc');
+    await signInWithGoogle('https://example.com/builder.html?id=abc');
     expect(auth.signInWithOAuth).toHaveBeenCalledWith({
-      provider: 'github',
+      provider: 'google',
       options: { redirectTo: 'https://example.com/builder.html?id=abc' },
     });
   });

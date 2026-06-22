@@ -17,8 +17,9 @@ VITE_SUPABASE_ANON_KEY=eyJ...
 `src/lib/supabase.ts`'s `isBackendEnabled()` returns `true` only if both are
 present. If either is missing — e.g. local dev without a `.env.local`, or a
 CI/e2e run without secrets — every backend-aware code path (nav sign-in
-control, builder Save button, account.html) silently behaves as if the
-backend doesn't exist. No login UI, `?d=` sharing only. Unit tests force
+control, builder Save button, index.html's gallery) falls back to a plain
+sign-in card with no working backend behind it. `?d=` sharing still works.
+Unit tests force
 both vars empty in `vite.config.ts`'s `test.env` so they stay hermetic
 regardless of what's in a developer's `.env.local`.
 
@@ -103,10 +104,11 @@ with explicit `GRANT`s, and default any owner-id-style column to
 
 ## Auth flow
 
-`src/lib/auth.ts` wraps Supabase's magic-link (`signInWithOtp`) and GitHub
+`src/lib/auth.ts` wraps Supabase's magic-link (`signInWithOtp`) and Google
 OAuth (`signInWithOAuth`). Both accept an optional `redirectTo` — when
-omitted they default to the site root; `account.html` overrides this with a
-same-origin-validated `?return=<url>` so the "Save to my account" flow (see
+omitted they default to the site root; `index.html` (the sign-in card /
+deck gallery home page) overrides this with a same-origin-validated
+`?return=<url>` so the "Save to my account" flow (see
 below) can land the user back on the exact deck they started from.
 
 Supabase's `additional_redirect_urls` allow-list must include a wildcard
@@ -118,6 +120,26 @@ Authentication → URL Configuration (production) — the CLI's
 `supabase config push` does *not* sync this dashboard setting safely (it
 would push your local dev `site_url` to production), so set production's
 Site URL / Redirect URLs manually.
+
+### Enabling Google sign-in
+
+Unlike magic-link email, Google OAuth needs real credentials before the
+"Continue with Google" button does anything — there's no way around the
+manual setup below, on both the Google and Supabase sides:
+
+1. In [Google Cloud Console](https://console.cloud.google.com/apis/credentials),
+   create an OAuth 2.0 Client ID (Application type: **Web application**).
+2. Add an **Authorized redirect URI** of
+   `https://<project-ref>.supabase.co/auth/v1/callback` (find `<project-ref>`
+   in the Supabase dashboard URL or `supabase status`). For local dev, also
+   add `http://127.0.0.1:54321/auth/v1/callback`.
+3. In the Supabase dashboard → Authentication → Sign In / Providers →
+   Google, enable it and paste the Client ID + Client Secret from step 1.
+4. For local dev parity, set `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID` /
+   `_SECRET` in your shell and flip `enabled = true` in
+   `supabase/config.toml`'s `[auth.external.google]` block, then
+   `npm run db:start` (or `db:stop && db:start` if already running) to pick
+   it up.
 
 ## Sharing & "Save to my account"
 
@@ -134,7 +156,7 @@ Builder UI behavior depends on the viewer's relationship to the loaded deck
   in `localStorage` (key `pendingCopySlug` — **not** `sessionStorage`,
   because clicking the magic-link email commonly opens a new browser tab
   that wouldn't share `sessionStorage` with the tab that started sign-in),
-  then redirects to `account.html?return=<original deck URL>`. Once signed
+  then redirects to `index.html?return=<original deck URL>`. Once signed
   in and back on that URL, `applyPendingCopyIfAny()` in `builder.ts`'s
   `init()` finds the matching pending slug and completes the copy
   automatically.

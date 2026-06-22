@@ -15,10 +15,10 @@ export async function signInWithEmail(email: string, redirectTo?: string): Promi
   if (error) throw error;
 }
 
-export async function signInWithGitHub(redirectTo?: string): Promise<void> {
+export async function signInWithGoogle(redirectTo?: string): Promise<void> {
   const target = redirectTo ?? `${window.location.origin}${import.meta.env.BASE_URL ?? '/'}`;
   const { error } = await getSupabaseClient().auth.signInWithOAuth({
-    provider: 'github',
+    provider: 'google',
     options: { redirectTo: target },
   });
   if (error) throw error;

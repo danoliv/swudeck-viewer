@@ -1,12 +1,12 @@
 /**
  * src/pages/index.ts
- * DOM orchestration for the home page: sign in (magic link / GitHub) when
+ * DOM orchestration for the home page: sign in (magic link / Google) when
  * logged out (or when the backend isn't configured at all), or the "My
  * Decks" gallery + "+ New Deck" launcher when signed in.
  */
 
 import { isBackendEnabled } from '../lib/supabase';
-import { getCurrentUser, signInWithEmail, signInWithGitHub, onAuthChange } from '../lib/auth';
+import { getCurrentUser, signInWithEmail, signInWithGoogle, onAuthChange } from '../lib/auth';
 import { listMyDecks, deleteDeck, type DeckRow } from '../lib/decks-api';
 import { loadSets } from '../lib/sets';
 import { loadCardSet, formatCardId, resolveCardArtUrl, type CardData } from '../lib/cards';
@@ -222,10 +222,10 @@ function wireSignInForm(): void {
       .catch((err) => setStatus(`Failed to send link: ${err instanceof Error ? err.message : String(err)}`, true));
   });
 
-  el('githubSignInBtn')?.addEventListener('click', () => {
-    setStatus('Redirecting to GitHub…');
-    signInWithGitHub(getReturnUrl()).catch((err) =>
-      setStatus(`Failed to start GitHub sign-in: ${err instanceof Error ? err.message : String(err)}`, true),
+  el('googleSignInBtn')?.addEventListener('click', () => {
+    setStatus('Redirecting to Google…');
+    signInWithGoogle(getReturnUrl()).catch((err) =>
+      setStatus(`Failed to start Google sign-in: ${err instanceof Error ? err.message : String(err)}`, true),
     );
   });
 }

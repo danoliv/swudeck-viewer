@@ -67,7 +67,7 @@ By default the in-progress deck lives entirely in the page's `?d=` URL —
 no account needed; see [Deck Builder State Encoding](#deck-builder-state-encoding).
 If a Supabase backend is configured (see [`doc/BACKEND.md`](./doc/BACKEND.md)),
 signed-in users additionally get a **Save deck** button for persistent,
-shareable `?id=` links and a "My Decks" list on `account.html`.
+shareable `?id=` links and a "My Decks" gallery on the site root (`index.html`).
 
 ## Build Instructions
 
