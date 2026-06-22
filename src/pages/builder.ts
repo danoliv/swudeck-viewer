@@ -41,7 +41,7 @@ import {
   type SortDirection,
 } from '../lib/card-filter';
 import type { DeckData, DeckCard } from '../lib/types';
-import { loadLeaderStats, getCardStats } from '../lib/stats';
+import { loadLeaderStats, getCardStats, hasLeaderStats } from '../lib/stats';
 import { isBackendEnabled } from '../lib/supabase';
 import { getCurrentUser, onAuthChange, type User } from '../lib/auth';
 import { saveDeck, updateDeck as updateSavedDeck, getDeckBySlug, copyDeckToMyAccount, type DeckRow } from '../lib/decks-api';
@@ -79,7 +79,7 @@ function sortDeckSectionKeys(keys: string[], reverse = false): string[] {
 }
 
 /** Sort-bar options shared by the deck, sideboard, and card-browser sort bars. */
-const SORT_OPTIONS: Array<{ key: CardSortKey; label: string }> = [
+const BASE_SORT_OPTIONS: Array<{ key: CardSortKey; label: string }> = [
   { key: 'type', label: 'Type' },
   { key: 'set', label: 'Set' },
   { key: 'cost', label: 'Cost' },
@@ -87,11 +87,31 @@ const SORT_OPTIONS: Array<{ key: CardSortKey; label: string }> = [
   { key: 'name', label: 'Name' },
 ];
 
+/** Stats lookup for the current leader+format, for the 'popularity'/'winrate' sort keys. */
+function currentStatsLookup(cardId: string) {
+  return getCardStats(deck.leader?.id, deck.metadata?.format, cardId);
+}
+
+/** Popularity/Win Rate only appear once stats exist for the currently selected leader+format. */
+function getSortOptions(): Array<{ key: CardSortKey; label: string }> {
+  if (!hasLeaderStats(deck.leader?.id, deck.metadata?.format)) return BASE_SORT_OPTIONS;
+  return [...BASE_SORT_OPTIONS, { key: 'popularity', label: 'Popularity' }, { key: 'winrate', label: 'Win Rate' }];
+}
+
+/** Falls back to 'cost' if `sortKey` needs stats that aren't available for the current leader+format. */
+function effectiveSortKey(sortKey: CardSortKey): CardSortKey {
+  if ((sortKey === 'popularity' || sortKey === 'winrate') && !hasLeaderStats(deck.leader?.id, deck.metadata?.format)) {
+    return 'cost';
+  }
+  return sortKey;
+}
+
 /** A row of clickable sort-key labels; the active one shows an ascending/descending arrow. */
 function renderSortBar(scope: 'deck' | 'sideboard' | 'browser', sortKey: CardSortKey, dir: SortDirection): string {
+  const effective = effectiveSortKey(sortKey);
   let html = '<div class="sort-controls"><span class="sort-label">Sort:</span>';
-  for (const { key, label } of SORT_OPTIONS) {
-    const active = key === sortKey;
+  for (const { key, label } of getSortOptions()) {
+    const active = key === effective;
     const arrow = active ? (dir === 'asc' ? ' &#9650;' : ' &#9660;') : '';
     html += `<button type="button" data-action="sort-toggle" data-scope="${scope}" data-sort="${key}" class="sort-button${active ? ' active' : ''}">${label}${arrow}</button>`;
   }
@@ -102,7 +122,9 @@ function renderSortBar(scope: 'deck' | 'sideboard' | 'browser', sortKey: CardSor
 /** Reorder CardEntry[] by the underlying card data, for non-"type" sort keys. */
 function sortEntries(entries: CardEntry[], sortKey: CardSortKey, dir: SortDirection): CardEntry[] {
   const byId = new Map(entries.map((e) => [e.id, e]));
-  return sortCards(entries.map((e) => e.data), sortKey, setOrder, dir).map((d) => byId.get(d.id as string)!);
+  return sortCards(entries.map((e) => e.data), effectiveSortKey(sortKey), setOrder, dir, currentStatsLookup).map(
+    (d) => byId.get(d.id as string)!,
+  );
 }
 
 /**
@@ -772,7 +794,7 @@ function renderBrowserResults(): void {
   if (!results) return;
 
   const filtered = filterCards(allCards, filter).filter((c) => !NON_POOL_TYPES.includes(String(c.Type)));
-  const sorted = sortCards(filtered, browserSort, setOrder, browserSortDir);
+  const sorted = sortCards(filtered, effectiveSortKey(browserSort), setOrder, browserSortDir, currentStatsLookup);
   const deckCounts = new Map(deck.deck.map((c) => [c.id, c.count ?? 1]));
   const sideboardCounts = new Map((deck.sideboard ?? []).map((c) => [c.id, c.count ?? 1]));
 

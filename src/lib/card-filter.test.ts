@@ -257,6 +257,40 @@ describe('sortCards', () => {
     });
   });
 
+  describe('popularity / winrate', () => {
+    const STATS_CARDS: CardData[] = [
+      { id: 'A', Name: 'Zeta' },
+      { id: 'B', Name: 'Yara' },
+      { id: 'C', Name: 'Xavier' }, // no stats entry — sorts as unranked
+    ];
+    const statsLookup = (cardId: string): { inclusionRate?: number; winRate?: number } | null => {
+      if (cardId === 'A') return { inclusionRate: 80, winRate: 40 };
+      if (cardId === 'B') return { inclusionRate: 30, winRate: 90 };
+      return null;
+    };
+
+    it('sorts ascending by inclusionRate, cards with no stats first', () => {
+      const result = sortCards(STATS_CARDS, 'popularity', [], 'asc', statsLookup);
+      expect(result.map((c) => c.id)).toEqual(['C', 'B', 'A']);
+    });
+
+    it('sorts ascending by winRate, cards with no stats first', () => {
+      const result = sortCards(STATS_CARDS, 'winrate', [], 'asc', statsLookup);
+      expect(result.map((c) => c.id)).toEqual(['C', 'A', 'B']);
+    });
+
+    it('reverses with direction "desc"', () => {
+      const result = sortCards(STATS_CARDS, 'popularity', [], 'desc', statsLookup);
+      expect(result.map((c) => c.id)).toEqual(['A', 'B', 'C']);
+    });
+
+    it('treats all cards as unranked when no statsLookup is given', () => {
+      const result = sortCards(STATS_CARDS, 'popularity');
+      // No stats for anyone → ties broken by Name (Xavier < Yara < Zeta).
+      expect(result.map((c) => c.id)).toEqual(['C', 'B', 'A']);
+    });
+  });
+
   describe('type', () => {
     const TYPE_CARDS: CardData[] = [
       { id: 'A', Name: 'Upgrade Card', Type: 'Upgrade', Cost: 2 },

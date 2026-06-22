@@ -51,6 +51,15 @@ export async function loadLeaderStats(leaderId: string): Promise<LeaderStats | n
   return promise;
 }
 
+/** Whether stats exist (above the deck-count threshold) for this leader+format, for sort-option visibility. */
+export function hasLeaderStats(leaderId: string | undefined, format: Format | undefined): boolean {
+  if (!leaderId || !format) return false;
+  const leaderStats = statsCache.get(leaderId);
+  if (!leaderStats) return false;
+  const formatStats = leaderStats[format];
+  return Boolean(formatStats && formatStats.deckCount >= DECK_COUNT_THRESHOLD);
+}
+
 export function getCardStats(
   leaderId: string | undefined,
   format: Format | undefined,

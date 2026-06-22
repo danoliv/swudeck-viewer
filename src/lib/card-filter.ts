@@ -103,10 +103,17 @@ function hasAbilityText(card: CardData): boolean {
 // ─── sortCards ────────────────────────────────────────────────────────────────
 
 /** Sort key shared by the deck/sideboard/browser sort bars and the leader/base pickers. */
-export type CardSortKey = 'type' | 'set' | 'cost' | 'aspect' | 'name';
+export type CardSortKey = 'type' | 'set' | 'cost' | 'aspect' | 'name' | 'popularity' | 'winrate';
 
 /** Ascending ('asc') or reversed ('desc') order for a `CardSortKey`. */
 export type SortDirection = 'asc' | 'desc';
+
+/**
+ * Looks up the current leader/format-relative stats for a card, for the
+ * 'popularity'/'winrate' sort keys. Returns `null`/`undefined` when no
+ * stats are available for that card (it sorts as if unranked).
+ */
+export type StatsLookup = (cardId: string) => { inclusionRate?: number; winRate?: number } | null | undefined;
 
 /** Deck-list type-category order: Ground Units, Space Units, Event, Upgrade, then other types alphabetically, "Unknown" last. */
 export const TYPE_CATEGORY_ORDER = ['Ground Units', 'Space Units', 'Event', 'Upgrade'];
@@ -185,20 +192,37 @@ function compareByTypeOnly(a: CardData, b: CardData): number {
  */
 const SORT_PRIORITY: CardSortKey[] = ['cost', 'name', 'aspect', 'type'];
 
-function compareSingle(key: CardSortKey, a: CardData, b: CardData): number {
+/** Cards with no stats sort as if their rate were below 0 — always last in ascending order. */
+function statRate(statsLookup: StatsLookup | undefined, card: CardData, field: 'inclusionRate' | 'winRate'): number {
+  const stats = statsLookup?.(String(card.id ?? ''));
+  const value = stats?.[field];
+  return typeof value === 'number' ? value : -1;
+}
+
+function compareByPopularityOnly(a: CardData, b: CardData, statsLookup: StatsLookup | undefined): number {
+  return statRate(statsLookup, a, 'inclusionRate') - statRate(statsLookup, b, 'inclusionRate');
+}
+
+function compareByWinRateOnly(a: CardData, b: CardData, statsLookup: StatsLookup | undefined): number {
+  return statRate(statsLookup, a, 'winRate') - statRate(statsLookup, b, 'winRate');
+}
+
+function compareSingle(key: CardSortKey, a: CardData, b: CardData, statsLookup?: StatsLookup): number {
   switch (key) {
     case 'cost': return compareByCostOnly(a, b);
     case 'aspect': return compareByAspectOnly(a, b);
     case 'type': return compareByTypeOnly(a, b);
+    case 'popularity': return compareByPopularityOnly(a, b, statsLookup);
+    case 'winrate': return compareByWinRateOnly(a, b, statsLookup);
     case 'name':
     default: return compareByName(a, b);
   }
 }
 
 /** Compare by `primary`, then by the remaining `SORT_PRIORITY` keys (in order) as tiebreakers. */
-function compareWithPriority(primary: CardSortKey, a: CardData, b: CardData): number {
+function compareWithPriority(primary: CardSortKey, a: CardData, b: CardData, statsLookup?: StatsLookup): number {
   for (const key of [primary, ...SORT_PRIORITY.filter((k) => k !== primary)]) {
-    const result = compareSingle(key, a, b);
+    const result = compareSingle(key, a, b, statsLookup);
     if (result !== 0) return result;
   }
   return 0;
@@ -214,6 +238,9 @@ function compareWithPriority(primary: CardSortKey, a: CardData, b: CardData): nu
  * - 'aspect': alphabetical by the first Aspect (cards with no Aspects last); ties broken by
  *   Cost, then Name, then Type.
  * - 'name': alphabetical by Name; ties broken by Cost, then Affinity, then Type.
+ * - 'popularity': ascending inclusion rate from `statsLookup` (cards with no stats last);
+ *   ties broken by Cost, then Name, then Affinity, then Type.
+ * - 'winrate': ascending win rate from `statsLookup` (cards with no stats last); same tiebreakers.
  *
  * Whichever key is primary, the remaining keys among cost/name/affinity/type are applied
  * as tiebreakers in that fixed priority order. `direction: 'desc'` reverses the result.
@@ -223,6 +250,7 @@ export function sortCards(
   sortBy: CardSortKey,
   setOrder: string[] = [],
   direction: SortDirection = 'asc',
+  statsLookup?: StatsLookup,
 ): CardData[] {
   const sorted = [...cards];
 
@@ -231,7 +259,9 @@ export function sortCards(
     case 'cost':
     case 'aspect':
     case 'name':
-      sorted.sort((a, b) => compareWithPriority(sortBy, a, b));
+    case 'popularity':
+    case 'winrate':
+      sorted.sort((a, b) => compareWithPriority(sortBy, a, b, statsLookup));
       break;
     case 'set':
     default:
