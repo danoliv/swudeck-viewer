@@ -27,6 +27,7 @@ npm-debug.log*
 # Environment
 .env
 .env.local
+.env.prod
 
 # Build output
 dist/
@@ -36,3 +37,7 @@ test-results/
 
 # Abandoned migration scaffold
 astro/
+
+# Supabase local Docker data
+supabase/.branches
+supabase/.temp

@@ -64,6 +64,34 @@ h1, h2, h3 {
     color: var(--accent);
     background: var(--accent-soft);
 }
+.nav-auth {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    float: right;
+}
+.nav-auth-email {
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+.nav-auth-signin,
+.nav-auth-signout {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-family: var(--font-body);
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.nav-auth-signin:hover,
+.nav-auth-signout:hover {
+    color: var(--text);
+    background: var(--accent-soft);
+}
 
 /* Card grid system */
 .card-grid {

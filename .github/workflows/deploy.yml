@@ -64,6 +64,9 @@ jobs:
           # Set base path to repo name for GitHub Pages
           # Override this in repo settings if the repo name differs
           VITE_BASE: /${{ github.event.repository.name }}/
+          # Supabase — anon key is safe to expose; RLS protects data
+          VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

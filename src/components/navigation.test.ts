@@ -1,5 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { buildNavElement, detectCurrentPage, renderNavigation, type Page } from './navigation';
+import { buildNavElement, detectCurrentPage, renderNavigation, renderAuthControl, type Page } from './navigation';
+import * as supabaseLib from '../lib/supabase';
+import * as authLib from '../lib/auth';
 
 // happy-dom is the environment; set up a realistic document
 beforeEach(() => {
@@ -139,6 +141,51 @@ describe('renderNavigation', () => {
     renderNavigation();
     const activeLink = document.querySelector('.navigation a.active') as HTMLAnchorElement;
     expect(activeLink?.getAttribute('href')).toBe('/settings.html');
+  });
+});
+
+// ─── renderAuthControl ────────────────────────────────────────────────────────
+
+describe('renderAuthControl', () => {
+  it('does nothing when there is no .navigation element', async () => {
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-auth')).toBeNull();
+  });
+
+  it('renders nothing when the backend is disabled', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(false);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-auth')).toBeNull();
+  });
+
+  it('renders a sign-in link when backend is enabled and no user is signed in', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue(null);
+    await renderAuthControl();
+    const signIn = document.querySelector('.nav-auth-signin') as HTMLAnchorElement;
+    expect(signIn).not.toBeNull();
+    expect(signIn.textContent).toBe('Sign in');
+  });
+
+  it('renders email + sign out button when a user is signed in', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue({ email: 'a@test.com' } as any);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-auth-email')?.textContent).toBe('a@test.com');
+    expect(document.querySelector('.nav-auth-signout')).not.toBeNull();
+  });
+
+  it('is idempotent — calling twice leaves only one .nav-auth', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue(null);
+    await renderAuthControl();
+    await renderAuthControl();
+    expect(document.querySelectorAll('.nav-auth')).toHaveLength(1);
   });
 });
 

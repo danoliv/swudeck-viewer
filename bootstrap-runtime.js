@@ -6,7 +6,7 @@ function getBasePath() {
 
 function getPageKey() {
   const page = document.documentElement.getAttribute('data-page');
-  if (page === 'compare' || page === 'settings' || page === 'viewer' || page === 'builder') {
+  if (page === 'compare' || page === 'settings' || page === 'viewer' || page === 'builder' || page === 'account') {
     return page;
   }
 
@@ -14,6 +14,7 @@ function getPageKey() {
   if (path.includes('compare')) return 'compare';
   if (path.includes('settings')) return 'settings';
   if (path.includes('builder')) return 'builder';
+  if (path.includes('account')) return 'account';
   return 'viewer';
 }
 
@@ -29,6 +30,7 @@ async function loadBuiltEntry(basePath, pageKey) {
     compare: ['src/components/navigation.ts', 'src/pages/compare.ts'],
     settings: ['src/components/navigation.ts', 'src/pages/settings.ts'],
     builder: ['src/components/navigation.ts', 'src/pages/builder.ts'],
+    account: ['src/components/navigation.ts', 'src/pages/account.ts'],
   };
 
   for (const manifestKey of manifestKeys[pageKey]) {
@@ -47,6 +49,7 @@ async function loadDevEntry(pageKey) {
     compare: ['/src/components/navigation.ts', '/src/pages/compare.ts'],
     settings: ['/src/components/navigation.ts', '/src/pages/settings.ts'],
     builder: ['/src/components/navigation.ts', '/src/pages/builder.ts'],
+    account: ['/src/components/navigation.ts', '/src/pages/account.ts'],
   };
 
   for (const modulePath of devModules[pageKey]) {

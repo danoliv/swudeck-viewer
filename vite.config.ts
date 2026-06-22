@@ -17,16 +17,24 @@ export default defineConfig({
         compare: 'compare.html',
         settings: 'settings.html',
         builder: 'builder.html',
+        account: 'account.html',
         navigation: 'src/components/navigation.ts',
         viewerPage: 'src/pages/index.ts',
         comparePage: 'src/pages/compare.ts',
         settingsPage: 'src/pages/settings.ts',
         builderPage: 'src/pages/builder.ts',
+        accountPage: 'src/pages/account.ts',
       },
     },
   },
 
   test: {
+    // Force the Supabase backend flag off in tests, even if a dev .env.local
+    // is present — keeps unit tests hermetic (no real client/network calls).
+    env: {
+      VITE_SUPABASE_URL: '',
+      VITE_SUPABASE_ANON_KEY: '',
+    },
     globals: true,
     environment: 'happy-dom',
     environmentOptions: {
