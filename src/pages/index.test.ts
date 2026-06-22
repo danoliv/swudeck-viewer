@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { getReturnUrl } from './account';
+import { getReturnUrl } from './index';
 
 function mockLocation(origin: string, search: string) {
   vi.spyOn(window, 'location', 'get').mockReturnValue({ origin, search } as Location);

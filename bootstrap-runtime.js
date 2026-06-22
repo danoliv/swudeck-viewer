@@ -6,7 +6,7 @@ function getBasePath() {
 
 function getPageKey() {
   const page = document.documentElement.getAttribute('data-page');
-  if (page === 'compare' || page === 'settings' || page === 'viewer' || page === 'builder' || page === 'account') {
+  if (page === 'compare' || page === 'settings' || page === 'viewer' || page === 'builder' || page === 'home') {
     return page;
   }
 
@@ -14,8 +14,8 @@ function getPageKey() {
   if (path.includes('compare')) return 'compare';
   if (path.includes('settings')) return 'settings';
   if (path.includes('builder')) return 'builder';
-  if (path.includes('account')) return 'account';
-  return 'viewer';
+  if (path.includes('viewer')) return 'viewer';
+  return 'home';
 }
 
 async function loadBuiltEntry(basePath, pageKey) {
@@ -26,11 +26,11 @@ async function loadBuiltEntry(basePath, pageKey) {
 
   const manifest = await manifestResponse.json();
   const manifestKeys = {
-    viewer: ['src/components/navigation.ts', 'src/pages/index.ts'],
+    home: ['src/components/navigation.ts', 'src/pages/index.ts'],
+    viewer: ['src/components/navigation.ts', 'src/pages/viewer.ts'],
     compare: ['src/components/navigation.ts', 'src/pages/compare.ts'],
     settings: ['src/components/navigation.ts', 'src/pages/settings.ts'],
     builder: ['src/components/navigation.ts', 'src/pages/builder.ts'],
-    account: ['src/components/navigation.ts', 'src/pages/account.ts'],
   };
 
   for (const manifestKey of manifestKeys[pageKey]) {
@@ -45,11 +45,11 @@ async function loadBuiltEntry(basePath, pageKey) {
 
 async function loadDevEntry(pageKey) {
   const devModules = {
-    viewer: ['/src/components/navigation.ts', '/src/pages/index.ts'],
+    home: ['/src/components/navigation.ts', '/src/pages/index.ts'],
+    viewer: ['/src/components/navigation.ts', '/src/pages/viewer.ts'],
     compare: ['/src/components/navigation.ts', '/src/pages/compare.ts'],
     settings: ['/src/components/navigation.ts', '/src/pages/settings.ts'],
     builder: ['/src/components/navigation.ts', '/src/pages/builder.ts'],
-    account: ['/src/components/navigation.ts', '/src/pages/account.ts'],
   };
 
   for (const modulePath of devModules[pageKey]) {

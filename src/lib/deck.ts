@@ -3,7 +3,7 @@
  * Pure card-grouping and sort-strategy logic — zero DOM dependencies.
  *
  * All sorting/grouping logic lives here so it can be unit-tested independently
- * of the page layer. DOM orchestration belongs in src/pages/index.ts.
+ * of the page layer. DOM orchestration belongs in src/pages/viewer.ts.
  */
 
 import type { CardData } from './cards';

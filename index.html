@@ -1,25 +1,200 @@
 <!DOCTYPE html>
-<html data-page="viewer">
+<html data-page="home">
 <head>
-    <title>SWU Deck Viewer</title>
+    <meta charset="utf-8">
+    <title>SWU Deck Viewer - My Decks</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="bootstrap-runtime.js"></script>
     <style>
-        /* Page-specific styles only */
+        #homeStatus {
+            margin: 10px 0;
+        }
+        .signin-container {
+            max-width: 480px;
+            margin: 60px auto;
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
+        }
+        .signin-container input[type="email"] {
+            width: 100%;
+            max-width: 320px;
+            padding: 8px 12px;
+            margin-right: 8px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-strong);
+            background: var(--bg);
+            color: var(--text);
+        }
+        .signin-container button {
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-strong);
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .signin-container button:hover {
+            background: var(--accent-soft);
+            color: var(--accent);
+        }
+        .info-box {
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: var(--radius-sm);
+            margin: 10px 0;
+        }
+
+        .home-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .home-layout[hidden] {
+            display: none;
+        }
+        .home-left {
+            flex: 2;
+            min-width: 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+        }
+        .home-right {
+            flex: 1;
+            min-width: 220px;
+        }
+        .new-deck-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+        }
+        .new-deck-card button {
+            margin-top: 12px;
+            padding: 10px 20px;
+            border-radius: var(--radius-pill);
+            border: none;
+            background: var(--accent);
+            color: var(--accent-contrast);
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .new-deck-card button:hover {
+            opacity: 0.9;
+        }
+        .deck-gallery-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .deck-gallery-row:last-child {
+            border-bottom: none;
+        }
+        .deck-gallery-art {
+            display: flex;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+        .deck-gallery-thumb {
+            width: 56px;
+            height: 78px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: var(--surface-deep);
+            border: 1px solid var(--border);
+        }
+        .deck-gallery-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .deck-gallery-name {
+            font-weight: 600;
+            color: var(--text);
+        }
+        .deck-gallery-badges {
+            display: flex;
+            gap: 6px;
+            margin-top: 6px;
+        }
+        .badge {
+            font-size: 0.75em;
+            padding: 2px 10px;
+            border-radius: var(--radius-pill);
+            text-transform: uppercase;
+        }
+        .badge-format {
+            background: var(--accent-soft);
+            color: var(--accent);
+        }
+        .badge-visibility {
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+        }
+        .deck-gallery-actions {
+            display: flex;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+        .deck-gallery-actions button,
+        .deck-gallery-actions a {
+            font-size: 0.85em;
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-strong);
+            background: var(--surface);
+            color: var(--text);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .deck-gallery-actions button:hover,
+        .deck-gallery-actions a:hover {
+            background: var(--accent-soft);
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
 
-    <h1>SWU Deck Viewer</h1>
-    <div>
-        <input type="text" id="deckUrl"
-               placeholder="Paste SWUDB deck URL (e.g., https://swudb.com/deck/123...)">
-        <button id="loadDeckBtn">Load Deck</button>
-        <button id="clearCacheBtn" style="background: #ff9800; margin-left: 10px;">Clear All Cache</button>
-        <span id="loading" class="loading" style="display: none;">Loading...</span>
+    <div id="homeStatus"></div>
+
+    <div id="signinCard" class="signin-container" hidden>
+        <h1>Sign in</h1>
+        <div>
+            <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email">
+            <button id="sendMagicLinkBtn" type="button">Send magic link</button>
+        </div>
+        <div class="info-box">
+            We'll email you a one-time sign-in link. No password needed.
+        </div>
+        <button id="githubSignInBtn" type="button">Continue with GitHub</button>
     </div>
-    <div id="recentDecks" class="recent-decks"></div>
-    <div id="error" class="error"></div>
-    <div id="output"></div>
+
+    <div id="homeLayout" class="home-layout" hidden>
+        <div class="home-left">
+            <h2>My Decks</h2>
+            <div id="decksList"></div>
+            <div id="decksEmpty" class="info-box" hidden>
+                You haven't saved any decks yet.
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="new-deck-card">
+                <h3>Start a new deck</h3>
+                <p>Choose a format and leader to begin building.</p>
+                <button id="newDeckBtn" type="button">+ New Deck</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

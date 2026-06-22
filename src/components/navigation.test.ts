@@ -21,7 +21,7 @@ describe('buildNavElement', () => {
     const nav = buildNavElement('viewer');
     const hrefs = Array.from(nav.querySelectorAll('a')).map((a) => (a as HTMLAnchorElement).getAttribute('href'));
     // In Vitest import.meta.env.BASE_URL defaults to '/'
-    expect(hrefs).toEqual(['/index.html', '/compare.html', '/builder.html', '/settings.html']);
+    expect(hrefs).toEqual(['/viewer.html', '/compare.html', '/builder.html', '/settings.html']);
   });
 
   it('has correct link labels', () => {
@@ -76,8 +76,8 @@ describe('buildNavElement', () => {
 // ─── detectCurrentPage ────────────────────────────────────────────────────────
 
 describe('detectCurrentPage', () => {
-  it('returns viewer for index.html path', () => {
-    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/index.html' } as Location);
+  it('returns viewer for viewer.html path', () => {
+    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/viewer.html' } as Location);
     expect(detectCurrentPage()).toBe('viewer');
   });
 
@@ -96,9 +96,14 @@ describe('detectCurrentPage', () => {
     expect(detectCurrentPage()).toBe('builder');
   });
 
-  it('returns viewer for root path /', () => {
+  it('returns home for index.html path', () => {
+    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/index.html' } as Location);
+    expect(detectCurrentPage()).toBe('home');
+  });
+
+  it('returns home for root path /', () => {
     vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/' } as Location);
-    expect(detectCurrentPage()).toBe('viewer');
+    expect(detectCurrentPage()).toBe('home');
   });
 });
 
@@ -186,6 +191,47 @@ describe('renderAuthControl', () => {
     await renderAuthControl();
     await renderAuthControl();
     expect(document.querySelectorAll('.nav-auth')).toHaveLength(1);
+  });
+
+  it('inserts a "My Decks" link as the first child when signed in', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue({ email: 'a@test.com' } as any);
+    await renderAuthControl();
+    const homeLink = document.querySelector('.nav-link-home') as HTMLAnchorElement;
+    expect(homeLink).not.toBeNull();
+    expect(homeLink.textContent).toBe('My Decks');
+    expect(homeLink.getAttribute('href')).toBe('/index.html');
+    expect(document.querySelector('.navigation')?.firstElementChild).toBe(homeLink);
+  });
+
+  it('does not show "My Decks" when signed out', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue(null);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-link-home')).toBeNull();
+  });
+
+  it('removes "My Decks" when transitioning from signed-in to signed-out', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
+    const getCurrentUser = vi.spyOn(authLib, 'getCurrentUser');
+
+    getCurrentUser.mockResolvedValue({ email: 'a@test.com' } as any);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-link-home')).not.toBeNull();
+
+    getCurrentUser.mockResolvedValue(null);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-link-home')).toBeNull();
+  });
+
+  it('does not show "My Decks" when the backend is disabled, even if stale', async () => {
+    renderNavigation('viewer');
+    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(false);
+    await renderAuthControl();
+    expect(document.querySelector('.nav-link-home')).toBeNull();
   });
 });
 

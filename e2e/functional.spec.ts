@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 test.describe('UI Functionality Tests', () => {
   test('should navigate between pages', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/viewer.html');
     await expect(page).toHaveTitle(/SWU Deck Viewer/);
     await page.click('a:has-text("Deck Comparison")');
     await expect(page).toHaveURL(/compare\.html/);
@@ -9,10 +9,10 @@ test.describe('UI Functionality Tests', () => {
     await expect(page).toHaveURL(/settings\.html/);
     await page.click('a:has-text("Deck Viewer")');
     const url = page.url();
-    expect(url).toMatch(/\/(index\.html)?$/);
+    expect(url).toMatch(/viewer\.html$/);
   });
-  test('should have deck input on index page', async ({ page }) => {
-    await page.goto('/');
+  test('should have deck input on viewer page', async ({ page }) => {
+    await page.goto('/viewer.html');
     const deckInput = page.locator('#deckUrl');
     const loadButton = page.locator('button:has-text("Load Deck")');
     await expect(deckInput).toBeVisible();
@@ -35,7 +35,7 @@ test.describe('UI Functionality Tests', () => {
     await expect(page.locator('button:has-text("Test SWUDB API Connection")')).toBeVisible();
   });
   test('all pages have navigation', async ({ page }) => {
-    for (const url of ['/', '/compare.html', '/settings.html']) {
+    for (const url of ['/viewer.html', '/compare.html', '/settings.html']) {
       await page.goto(url);
       const nav = page.locator('.navigation');
       await expect(nav).toBeVisible();
@@ -44,7 +44,7 @@ test.describe('UI Functionality Tests', () => {
     }
   });
   test('css stylesheet loaded', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/viewer.html');
     const cssLoaded = await page.evaluate(() => {
       for (let i = 0; i < document.styleSheets.length; i++) {
         if (document.styleSheets[i].href?.includes('styles.css')) return true;
@@ -54,7 +54,7 @@ test.describe('UI Functionality Tests', () => {
     expect(cssLoaded).toBe(true);
   });
   test('navigation module renders active link state', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/viewer.html');
     await expect(page.locator('.navigation a.active')).toHaveText('Deck Viewer');
 
     await page.goto('/compare.html');

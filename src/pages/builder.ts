@@ -385,7 +385,7 @@ async function handleSaveToMyAccount(): Promise<void> {
 
   if (!currentUser) {
     localStorage.setItem(PENDING_COPY_KEY, savedDeckMeta.slug);
-    window.location.href = `${import.meta.env.BASE_URL}account.html?return=${encodeURIComponent(window.location.href)}`;
+    window.location.href = `${import.meta.env.BASE_URL}index.html?return=${encodeURIComponent(window.location.href)}`;
     return;
   }
 

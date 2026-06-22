@@ -1,7 +1,7 @@
 import { isBackendEnabled } from '../lib/supabase';
-import { getCurrentUser, signOut, onAuthChange } from '../lib/auth';
+import { getCurrentUser, signOut, onAuthChange, type User } from '../lib/auth';
 
-export type Page = 'viewer' | 'compare' | 'settings' | 'builder' | 'account';
+export type Page = 'home' | 'viewer' | 'compare' | 'settings' | 'builder';
 
 interface NavLink {
   href: string;
@@ -10,7 +10,7 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
-  { href: `${import.meta.env.BASE_URL}index.html`, label: 'Deck Viewer', page: 'viewer' },
+  { href: `${import.meta.env.BASE_URL}viewer.html`, label: 'Deck Viewer', page: 'viewer' },
   { href: `${import.meta.env.BASE_URL}compare.html`, label: 'Deck Comparison', page: 'compare' },
   { href: `${import.meta.env.BASE_URL}builder.html`, label: 'Deck Builder', page: 'builder' },
   { href: `${import.meta.env.BASE_URL}settings.html`, label: 'Settings', page: 'settings' },
@@ -18,16 +18,16 @@ const NAV_LINKS: NavLink[] = [
 
 /**
  * Detect which page is currently active from window.location.pathname.
- * Falls back to 'viewer' if no match.
+ * Falls back to 'home' if no match (the site root, e.g. `/` or `/index.html`).
  */
 export function detectCurrentPage(): Page {
-  if (typeof window === 'undefined') return 'viewer';
+  if (typeof window === 'undefined') return 'home';
   const path = window.location.pathname;
   if (path.includes('compare')) return 'compare';
   if (path.includes('settings')) return 'settings';
   if (path.includes('builder')) return 'builder';
-  if (path.includes('account')) return 'account';
-  return 'viewer';
+  if (path.includes('viewer')) return 'viewer';
+  return 'home';
 }
 
 /**
@@ -83,11 +83,10 @@ function ensureAuthSubscription(): void {
   onAuthChange(() => void renderAuthControl());
 }
 
-async function buildAuthControl(): Promise<HTMLElement> {
+function buildAuthControl(user: User | null): HTMLElement {
   const container = document.createElement('div');
   container.className = 'nav-auth';
 
-  const user = await getCurrentUser();
   if (user) {
     const email = document.createElement('span');
     email.className = 'nav-auth-email';
@@ -103,7 +102,7 @@ async function buildAuthControl(): Promise<HTMLElement> {
   } else {
     const link = document.createElement('a');
     link.className = 'nav-auth-signin';
-    link.href = `${import.meta.env.BASE_URL}account.html`;
+    link.href = `${import.meta.env.BASE_URL}index.html`;
     link.textContent = 'Sign in';
     container.appendChild(link);
   }
@@ -111,9 +110,22 @@ async function buildAuthControl(): Promise<HTMLElement> {
   return container;
 }
 
+function buildMyDecksLink(): HTMLElement {
+  const link = document.createElement('a');
+  link.className = 'nav-link-home';
+  if (detectCurrentPage() === 'home') link.classList.add('active');
+  link.href = `${import.meta.env.BASE_URL}index.html`;
+  link.textContent = 'My Decks';
+  return link;
+}
+
 let authRenderToken = 0;
 
-/** Render (or remove) the sign-in/account control inside the nav bar. */
+/**
+ * Render (or remove) the sign-in/account control and the "My Decks" link
+ * (shown only when signed in), inside the nav bar. Both depend on the same
+ * async getCurrentUser() call, fetched once here.
+ */
 export async function renderAuthControl(): Promise<void> {
   if (typeof document === 'undefined') return;
   const nav = document.querySelector('.navigation');
@@ -122,11 +134,15 @@ export async function renderAuthControl(): Promise<void> {
   // Concurrent calls (e.g. the initial render racing the onAuthChange
   // INITIAL_SESSION event) must not both append — only the latest wins.
   const token = ++authRenderToken;
-  const control = isBackendEnabled() ? await buildAuthControl() : null;
+  const enabled = isBackendEnabled();
+  const user = enabled ? await getCurrentUser() : null;
   if (token !== authRenderToken) return;
 
+  nav.querySelector('.nav-link-home')?.remove();
+  if (user) nav.insertBefore(buildMyDecksLink(), nav.firstChild);
+
   nav.querySelectorAll('.nav-auth').forEach((el) => el.remove());
-  if (control) nav.appendChild(control);
+  if (enabled) nav.appendChild(buildAuthControl(user));
 }
 
 // Auto-init when used as a plain script module in HTML

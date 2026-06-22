@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Visual Regression Tests', () => {
-  test('index page layout should match snapshot', async ({ page }) => {
-    await page.goto('/');
+  test('viewer page layout should match snapshot', async ({ page }) => {
+    await page.goto('/viewer.html');
     await page.waitForLoadState('networkidle');
 
-    await expect(page).toHaveScreenshot('index-page.png', {
+    await expect(page).toHaveScreenshot('viewer-page.png', {
       fullPage: true,
     });
   });
@@ -28,8 +28,8 @@ test.describe('Visual Regression Tests', () => {
     });
   });
 
-  test('index page header should be visible', async ({ page }) => {
-    await page.goto('/');
+  test('viewer page header should be visible', async ({ page }) => {
+    await page.goto('/viewer.html');
 
     const title = page.locator('h1');
     await expect(title).toBeVisible();
@@ -63,7 +63,7 @@ test.describe('Visual Regression Tests', () => {
   });
 
   test('navigation links should be present on all pages', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/viewer.html');
 
     const deckViewerLink = page.locator('a:has-text("Deck Viewer")');
     const comparisonLink = page.locator('a:has-text("Deck Comparison")');
@@ -78,7 +78,7 @@ test.describe('Visual Regression Tests', () => {
   });
 
   test('deck input form should be visible', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/viewer.html');
 
     const deckInput = page.locator('#deckUrl');
     const loadButton = page.locator('button:has-text("Load Deck")');
@@ -96,13 +96,13 @@ test.describe('Visual Regression Tests', () => {
 
   test('responsive design - mobile view', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 });
-    await page.goto('/');
+    await page.goto('/viewer.html');
     await page.waitForLoadState('networkidle');
 
     const title = page.locator('h1');
     await expect(title).toBeVisible();
 
-    await expect(page).toHaveScreenshot('index-mobile.png', {
+    await expect(page).toHaveScreenshot('viewer-mobile.png', {
       fullPage: true,
     });
   });
@@ -121,7 +121,7 @@ test.describe('Visual Regression Tests', () => {
   });
 
   test('all pages should have proper structure', async ({ page }) => {
-    const pages = ['/', '/compare.html', '/settings.html'];
+    const pages = ['/viewer.html', '/compare.html', '/settings.html'];
 
     for (const pagePath of pages) {
       await page.goto(pagePath);
