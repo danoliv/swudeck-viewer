@@ -17,6 +17,16 @@ type DeckPatch = Partial<Pick<DeckRow, 'name' | 'data' | 'visibility'>>;
 
 const TABLE = 'decks';
 
+/** Sane upper bound on a saved deck's JSON size — guards against abuse, not legitimate decks. */
+const MAX_DECK_DATA_BYTES = 200_000;
+
+function assertDeckDataWithinSizeLimit(data: DeckData): void {
+  const bytes = new TextEncoder().encode(JSON.stringify(data)).length;
+  if (bytes > MAX_DECK_DATA_BYTES) {
+    throw new Error(`Deck is too large to save (${bytes} bytes, max ${MAX_DECK_DATA_BYTES}).`);
+  }
+}
+
 export async function listMyDecks(): Promise<DeckRow[]> {
   const { data, error } = await getSupabaseClient()
     .from(TABLE)
@@ -41,6 +51,7 @@ export async function saveDeck(opts: {
   data: DeckData;
   visibility?: DeckRow['visibility'];
 }): Promise<DeckRow> {
+  assertDeckDataWithinSizeLimit(opts.data);
   const slug = generateSlug();
   const { data, error } = await getSupabaseClient()
     .from(TABLE)
@@ -52,6 +63,7 @@ export async function saveDeck(opts: {
 }
 
 export async function updateDeck(id: string, patch: DeckPatch): Promise<DeckRow> {
+  if (patch.data) assertDeckDataWithinSizeLimit(patch.data);
   const { data, error } = await getSupabaseClient()
     .from(TABLE)
     .update(patch)

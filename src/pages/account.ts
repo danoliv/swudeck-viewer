@@ -25,7 +25,7 @@ function setStatus(message: string, isError = false): void {
  * it resolves to our own origin — never hand an attacker-controlled URL to
  * the auth redirect.
  */
-function getReturnUrl(): string | undefined {
+export function getReturnUrl(): string | undefined {
   const raw = new URLSearchParams(window.location.search).get('return');
   if (!raw) return undefined;
   try {

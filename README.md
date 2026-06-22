@@ -63,8 +63,11 @@ A static multi-page web app for viewing and comparing Star Wars Unlimited deck l
    `SB` controls to add cards to your main deck or sideboard
 4. The deck list on the left updates live, grouped by card type
 
-The deck builder has no backend — see [Deck Builder State Encoding](#deck-builder-state-encoding)
-for how the in-progress deck is persisted and shared.
+By default the in-progress deck lives entirely in the page's `?d=` URL —
+no account needed; see [Deck Builder State Encoding](#deck-builder-state-encoding).
+If a Supabase backend is configured (see [`doc/BACKEND.md`](./doc/BACKEND.md)),
+signed-in users additionally get a **Save deck** button for persistent,
+shareable `?id=` links and a "My Decks" list on `account.html`.
 
 ## Build Instructions
 
@@ -234,10 +237,16 @@ sideboard) goes through a pure `(deck, ...args) -> newDeck` function in
 all state lives in the URL, a builder link is a complete, shareable snapshot
 of the deck.
 
+`?d=` always works, with or without a backend. When a Supabase backend is
+configured, `?id=<slug>` is also supported and takes precedence over `?d=`
+when both are present — see [`doc/BACKEND.md`](./doc/BACKEND.md) for the
+full `?d=` vs `?id=` model, schema, and RLS policies.
+
 ## Documentation
 
 Additional documentation lives in [`doc/`](./doc/):
 
+- **[`doc/BACKEND.md`](./doc/BACKEND.md)** — optional Supabase backend: schema, RLS, env vars, `?d=` vs `?id=`
 - **[`doc/CORS_FIX.md`](./doc/CORS_FIX.md)** — CORS behavior and local testing guidance
 - **[`doc/MIGRATION_PLAN.md`](./doc/MIGRATION_PLAN.md)** — completed migration plan
 - **[`doc/TEST_README.md`](./doc/TEST_README.md)** — testing notes
