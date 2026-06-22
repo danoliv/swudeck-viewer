@@ -44,7 +44,7 @@ import type { DeckData, DeckCard } from '../lib/types';
 import { loadLeaderStats, getCardStats } from '../lib/stats';
 import { isBackendEnabled } from '../lib/supabase';
 import { getCurrentUser, onAuthChange, type User } from '../lib/auth';
-import { saveDeck, updateDeck as updateSavedDeck, getDeckBySlug, type DeckRow } from '../lib/decks-api';
+import { saveDeck, updateDeck as updateSavedDeck, getDeckBySlug, copyDeckToMyAccount, type DeckRow } from '../lib/decks-api';
 import { resolveShareTarget } from '../lib/share-target';
 
 // ─── State ────────────────────────────────────────────────────────────────────
@@ -179,9 +179,32 @@ async function loadFromShareTarget(): Promise<void> {
       return;
     }
     deck = row.data;
-    savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+    savedDeckMeta = { id: row.id, slug: row.slug, ownerId: row.owner_id, visibility: row.visibility };
   } catch (err) {
     loadError = `Failed to load saved deck: ${err instanceof Error ? err.message : String(err)}`;
+  }
+}
+
+/**
+ * If a "Save to my account" copy was queued before sign-in (see
+ * handleSaveToMyAccount), and the user is now signed in and viewing the
+ * same shared deck, perform the copy and adopt the new copy as the
+ * working deck.
+ */
+async function applyPendingCopyIfAny(): Promise<void> {
+  if (!currentUser || !savedDeckMeta) return;
+  const pendingSlug = localStorage.getItem(PENDING_COPY_KEY);
+  if (!pendingSlug || pendingSlug !== savedDeckMeta.slug) return;
+  localStorage.removeItem(PENDING_COPY_KEY);
+
+  try {
+    const row = await copyDeckToMyAccount(pendingSlug);
+    deck = row.data;
+    savedDeckMeta = { id: row.id, slug: row.slug, ownerId: row.owner_id, visibility: row.visibility };
+    setQueryParam('id', row.slug);
+    saveStatus = 'Saved to your account.';
+  } catch (err) {
+    saveError = `Failed to save to your account: ${err instanceof Error ? err.message : String(err)}`;
   }
 }
 let rawCards: CardData[] = [];
@@ -212,12 +235,15 @@ let baseSort: CardSortKey = 'set';
 
 let currentUser: User | null = null;
 /** Set once a deck has been saved/loaded from the backend; null for local-only decks. */
-let savedDeckMeta: { id: string; slug: string; visibility: DeckRow['visibility'] } | null = null;
+let savedDeckMeta: { id: string; slug: string; ownerId: string; visibility: DeckRow['visibility'] } | null = null;
 let saveInProgress = false;
 let saveStatus: string | null = null;
 let saveError: string | null = null;
 /** Set when `?id=<slug>` doesn't resolve to a deck (deleted, private, or typo'd). */
 let loadError: string | null = null;
+
+/** localStorage key: a slug queued for copy-to-account once the user signs in (must survive the magic-link/OAuth redirect possibly opening in a new tab — sessionStorage wouldn't). */
+const PENDING_COPY_KEY = 'pendingCopySlug';
 
 // ─── Import state ─────────────────────────────────────────────────────────────
 
@@ -291,15 +317,24 @@ function persistDeck(): void {
 // ─── Backend save controls ────────────────────────────────────────────────────
 
 function renderSaveControls(): string {
-  if (!isBackendEnabled() || !currentUser) return '';
+  if (!isBackendEnabled()) return '';
 
-  const label = saveInProgress ? 'Saving…' : savedDeckMeta ? 'Update deck' : 'Save deck';
-  let html = `<div class="deck-save-row">
-    <button type="button" data-action="save-deck"${saveInProgress ? ' disabled' : ''}>${label}</button>`;
-  if (savedDeckMeta) {
-    html += `<button type="button" data-action="copy-share-link">Copy share link</button>`;
+  const isOwner = !savedDeckMeta || (currentUser != null && currentUser.id === savedDeckMeta.ownerId);
+  let html = '';
+
+  if (currentUser && isOwner) {
+    const label = saveInProgress ? 'Saving…' : savedDeckMeta ? 'Update deck' : 'Save deck';
+    html += `<div class="deck-save-row">
+      <button type="button" data-action="save-deck"${saveInProgress ? ' disabled' : ''}>${label}</button>`;
+    if (savedDeckMeta) {
+      html += `<button type="button" data-action="copy-share-link">Copy share link</button>`;
+    }
+    html += '</div>';
+  } else if (savedDeckMeta && !isOwner) {
+    html += `<div class="deck-save-row">
+      <button type="button" data-action="save-to-account"${saveInProgress ? ' disabled' : ''}>${saveInProgress ? 'Saving…' : 'Save to my account'}</button>
+    </div>`;
   }
-  html += '</div>';
 
   if (saveError) {
     html += `<div class="import-error">${escapeAttr(saveError)}
@@ -324,15 +359,50 @@ async function handleSaveDeck(): Promise<void> {
     const name = deck.metadata?.name?.trim() || 'Untitled deck';
     if (savedDeckMeta) {
       const row = await updateSavedDeck(savedDeckMeta.id, { name, data: deck });
-      savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+      savedDeckMeta = { id: row.id, slug: row.slug, ownerId: row.owner_id, visibility: row.visibility };
     } else {
       const row = await saveDeck({ name, data: deck, visibility: 'unlisted' });
-      savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+      savedDeckMeta = { id: row.id, slug: row.slug, ownerId: row.owner_id, visibility: row.visibility };
       setQueryParam('id', row.slug);
     }
     saveStatus = 'Saved.';
   } catch (err) {
     saveError = `Failed to save: ${err instanceof Error ? err.message : String(err)}`;
+  } finally {
+    saveInProgress = false;
+    const leftAfter = el('builderLeft');
+    if (leftAfter) leftAfter.innerHTML = renderLeft();
+  }
+}
+
+/**
+ * Copy a shared deck into the current user's account. If logged out,
+ * stashes the slug and redirects to sign in, returning to this exact URL
+ * afterward (see applyPendingCopyIfAny, called from init()).
+ */
+async function handleSaveToMyAccount(): Promise<void> {
+  if (!savedDeckMeta || saveInProgress) return;
+
+  if (!currentUser) {
+    localStorage.setItem(PENDING_COPY_KEY, savedDeckMeta.slug);
+    window.location.href = `${import.meta.env.BASE_URL}account.html?return=${encodeURIComponent(window.location.href)}`;
+    return;
+  }
+
+  saveInProgress = true;
+  saveError = null;
+  saveStatus = null;
+  const left = el('builderLeft');
+  if (left) left.innerHTML = renderLeft();
+
+  try {
+    const row = await copyDeckToMyAccount(savedDeckMeta.slug);
+    deck = row.data;
+    savedDeckMeta = { id: row.id, slug: row.slug, ownerId: row.owner_id, visibility: row.visibility };
+    setQueryParam('id', row.slug);
+    saveStatus = 'Saved to your account.';
+  } catch (err) {
+    saveError = `Failed to save to your account: ${err instanceof Error ? err.message : String(err)}`;
   } finally {
     saveInProgress = false;
     const leftAfter = el('builderLeft');
@@ -893,6 +963,10 @@ document.addEventListener('click', (e) => {
       handleCopyShareLink();
       return;
 
+    case 'save-to-account':
+      void handleSaveToMyAccount();
+      return;
+
     case 'dismiss-save-status': {
       saveStatus = null;
       saveError = null;
@@ -1198,6 +1272,7 @@ async function init(): Promise<void> {
 
   if (isBackendEnabled()) {
     currentUser = await getCurrentUser();
+    await applyPendingCopyIfAny();
     render();
     onAuthChange((_event, session) => {
       currentUser = session?.user ?? null;

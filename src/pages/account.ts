@@ -19,6 +19,23 @@ function setStatus(message: string, isError = false): void {
   status.style.color = isError ? '#dc3545' : '';
 }
 
+/**
+ * `?return=<url>` lets callers (e.g. the builder's "Save to my account" flow)
+ * land the user back where they started after sign-in. Only accept it if
+ * it resolves to our own origin — never hand an attacker-controlled URL to
+ * the auth redirect.
+ */
+function getReturnUrl(): string | undefined {
+  const raw = new URLSearchParams(window.location.search).get('return');
+  if (!raw) return undefined;
+  try {
+    const resolved = new URL(raw, window.location.origin);
+    return resolved.origin === window.location.origin ? resolved.toString() : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function buildDeckRow(deck: DeckRow): HTMLElement {
   const row = document.createElement('div');
   row.className = 'deck-row';
@@ -110,14 +127,14 @@ function wireSignInForm(): void {
       return;
     }
     setStatus('Sending magic link…');
-    signInWithEmail(email)
+    signInWithEmail(email, getReturnUrl())
       .then(() => setStatus(`Magic link sent to ${email}. Check your inbox.`))
       .catch((err) => setStatus(`Failed to send link: ${err instanceof Error ? err.message : String(err)}`, true));
   });
 
   el('githubSignInBtn')?.addEventListener('click', () => {
     setStatus('Redirecting to GitHub…');
-    signInWithGitHub().catch((err) =>
+    signInWithGitHub(getReturnUrl()).catch((err) =>
       setStatus(`Failed to start GitHub sign-in: ${err instanceof Error ? err.message : String(err)}`, true),
     );
   });

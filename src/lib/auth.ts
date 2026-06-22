@@ -9,17 +9,17 @@ export async function getCurrentUser(): Promise<User | null> {
   return data.user;
 }
 
-export async function signInWithEmail(email: string): Promise<void> {
-  const redirectTo = `${window.location.origin}${import.meta.env.BASE_URL ?? '/'}`;
-  const { error } = await getSupabaseClient().auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
+export async function signInWithEmail(email: string, redirectTo?: string): Promise<void> {
+  const target = redirectTo ?? `${window.location.origin}${import.meta.env.BASE_URL ?? '/'}`;
+  const { error } = await getSupabaseClient().auth.signInWithOtp({ email, options: { emailRedirectTo: target } });
   if (error) throw error;
 }
 
-export async function signInWithGitHub(): Promise<void> {
-  const redirectTo = `${window.location.origin}${import.meta.env.BASE_URL ?? '/'}`;
+export async function signInWithGitHub(redirectTo?: string): Promise<void> {
+  const target = redirectTo ?? `${window.location.origin}${import.meta.env.BASE_URL ?? '/'}`;
   const { error } = await getSupabaseClient().auth.signInWithOAuth({
     provider: 'github',
-    options: { redirectTo },
+    options: { redirectTo: target },
   });
   if (error) throw error;
 }
