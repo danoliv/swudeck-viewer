@@ -128,18 +128,68 @@ Unlike magic-link email, Google OAuth needs real credentials before the
 manual setup below, on both the Google and Supabase sides:
 
 1. In [Google Cloud Console](https://console.cloud.google.com/apis/credentials),
-   create an OAuth 2.0 Client ID (Application type: **Web application**).
+   pick (or create) a project, configure the **OAuth consent screen**
+   (Branding/Audience tabs — App name, support email, **External** user
+   type), then create an OAuth 2.0 Client ID (Application type: **Web
+   application**).
 2. Add an **Authorized redirect URI** of
    `https://<project-ref>.supabase.co/auth/v1/callback` (find `<project-ref>`
    in the Supabase dashboard URL or `supabase status`). For local dev, also
    add `http://127.0.0.1:54321/auth/v1/callback`.
-3. In the Supabase dashboard → Authentication → Sign In / Providers →
+3. **Publish the app** (Google Auth Platform → Audience → "Publish app").
+   New consent screens start in **Testing**, which caps sign-in to ~100
+   manually-added test users and is the #1 cause of "it works for me but not
+   for anyone else." Publishing to production needs no Google review as long
+   as you only request the default `email`/`profile` scopes (no sensitive
+   scopes, no logo, ≤10 domains).
+4. In the Supabase dashboard → Authentication → Sign In / Providers →
    Google, enable it and paste the Client ID + Client Secret from step 1.
-4. For local dev parity, set `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID` /
-   `_SECRET` in your shell and flip `enabled = true` in
-   `supabase/config.toml`'s `[auth.external.google]` block, then
-   `npm run db:start` (or `db:stop && db:start` if already running) to pick
-   it up.
+5. For local dev parity, set `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID` /
+   `_SECRET` in your shell (or `set -a; source .env.local; set +a` if you keep
+   them there — gitignored, never commit real values) and flip
+   `enabled = true` in `supabase/config.toml`'s `[auth.external.google]`
+   block, then `npm run db:start` (or `db:stop && db:start` if already
+   running) to pick it up. The same two values are also stored as GitHub
+   repo secrets (`SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID`/`_SECRET`) for any
+   future CI job that needs to start the local Supabase stack — the current
+   `deploy.yml` doesn't consume them, since production sign-in only needs the
+   provider configured in the Supabase dashboard (step 4), not in CI.
+
+### Verifying Google sign-in works
+
+1. On the deployed site, open the sign-in page and click **Continue with
+   Google**. You should land on `accounts.google.com` with the URL's
+   `client_id` matching the one pasted into Supabase, `redirect_uri` pointing
+   at `https://<project-ref>.supabase.co/auth/v1/callback`, and
+   `scope=email+profile`.
+2. Pick an account. If you don't see Google's "unverified app" warning
+   screen, the app is in production (not Testing) — good. If you do see it,
+   either add the account as a test user or finish the publish step above.
+3. After consent, you should land back on the site's origin, signed in (nav
+   shows the account's email + a **Sign out** button). The Supabase session
+   JWT's `app_metadata.providers` should include `"google"`.
+
+### Common failure modes
+
+- **Button does nothing / immediate error** — Google provider isn't enabled
+  in the Supabase dashboard, or Client ID/Secret are blank/wrong (step 4).
+- **`redirect_uri_mismatch` on Google's page** — the exact callback URL
+  Supabase used isn't in the GCP client's Authorized redirect URIs (step 2).
+  Check both the production project-ref callback and, for local dev, the
+  `127.0.0.1:54321` one.
+- **Google shows "this app isn't verified" and blocks unlisted users** — the
+  consent screen is still in **Testing**; either publish it (step 3) or add
+  the user under Audience → Test users.
+- **Works for you, fails for other users** — same as above, almost always a
+  Testing-mode cap or a missing test-user entry.
+- **Works on `https://<your-domain>` but not `127.0.0.1`/local dev** — the
+  local callback URI is missing from the GCP client, or
+  `supabase/config.toml`'s `[auth.external.google]` is still `enabled =
+  false` / the env vars aren't exported before `npm run db:start`.
+- **Signed in but redirected to the wrong page, or `?return=` is dropped** —
+  check Supabase's URL Configuration → Redirect URLs includes a wildcard for
+  your deployed origin (see the `additional_redirect_urls` note above), not
+  just the bare origin.
 
 ## Sharing & "Save to my account"
 
