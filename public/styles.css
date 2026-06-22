@@ -41,6 +41,9 @@ h1, h2, h3 {
 
 /* Navigation */
 .navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     padding: 10px;
     background: var(--bg-elevated);
@@ -65,10 +68,10 @@ h1, h2, h3 {
     background: var(--accent-soft);
 }
 .nav-auth {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 10px;
-    float: right;
+    margin-left: auto;
 }
 .nav-auth-email {
     color: var(--text-muted);
@@ -883,6 +886,8 @@ html[data-page="builder"] body {
 }
 .import-method input,
 .import-method textarea {
+    box-sizing: border-box;
+    width: 100%;
     font-family: var(--font-body);
     background: var(--surface-deep);
     color: var(--text);
