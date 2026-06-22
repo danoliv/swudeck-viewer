@@ -41,6 +41,11 @@ import {
   type SortDirection,
 } from '../lib/card-filter';
 import type { DeckData, DeckCard } from '../lib/types';
+import { loadLeaderStats, getCardStats } from '../lib/stats';
+import { isBackendEnabled } from '../lib/supabase';
+import { getCurrentUser, onAuthChange, type User } from '../lib/auth';
+import { saveDeck, updateDeck as updateSavedDeck, getDeckBySlug, type DeckRow } from '../lib/decks-api';
+import { resolveShareTarget } from '../lib/share-target';
 
 // ─── State ────────────────────────────────────────────────────────────────────
 
@@ -125,7 +130,8 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
       html += `<div class="set-section"><div class="set-title">${key} (${total})</div><div class="card-rows">`;
       for (const entry of grp) {
         const expanded = expandedCards.has(`${zone}:${entry.id}`);
-        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded);
+        const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
+        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats);
       }
       html += '</div></div>';
     }
@@ -135,7 +141,8 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
   let html = '<div class="card-rows">';
   for (const entry of sortEntries(entries, sortKey, dir)) {
     const expanded = expandedCards.has(`${zone}:${entry.id}`);
-    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded);
+    const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
+    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats);
   }
   html += '</div>';
   return html;
@@ -154,6 +161,29 @@ function loadInitialDeck(): DeckData {
 }
 
 let deck: DeckData = loadInitialDeck();
+
+/**
+ * If the URL has `?id=<slug>` (takes precedence over `?d=`), fetch the saved
+ * deck from the backend and adopt it as the working deck. No-op if the
+ * backend isn't configured or the URL has no `?id=`.
+ */
+async function loadFromShareTarget(): Promise<void> {
+  if (!isBackendEnabled()) return;
+  const target = resolveShareTarget(new URLSearchParams(window.location.search));
+  if (target.kind !== 'slug') return;
+
+  try {
+    const row = await getDeckBySlug(target.slug);
+    if (!row) {
+      loadError = 'Deck not found.';
+      return;
+    }
+    deck = row.data;
+    savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+  } catch (err) {
+    loadError = `Failed to load saved deck: ${err instanceof Error ? err.message : String(err)}`;
+  }
+}
 let rawCards: CardData[] = [];
 let allCards: CardData[] = [];
 let legalData: LegalData = { premier: { sets: [], bannedCards: [] }, eternal: { bannedCards: [] } };
@@ -177,6 +207,17 @@ let leaderFilter: CardFilter = {};
 let leaderSort: CardSortKey = 'set';
 let baseFilter: CardFilter = {};
 let baseSort: CardSortKey = 'set';
+
+// ─── Backend save state ───────────────────────────────────────────────────────
+
+let currentUser: User | null = null;
+/** Set once a deck has been saved/loaded from the backend; null for local-only decks. */
+let savedDeckMeta: { id: string; slug: string; visibility: DeckRow['visibility'] } | null = null;
+let saveInProgress = false;
+let saveStatus: string | null = null;
+let saveError: string | null = null;
+/** Set when `?id=<slug>` doesn't resolve to a deck (deleted, private, or typo'd). */
+let loadError: string | null = null;
 
 // ─── Import state ─────────────────────────────────────────────────────────────
 
@@ -232,12 +273,81 @@ function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
   return Array.from(values).sort();
 }
 
+// ─── Leader stats ─────────────────────────────────────────────────────────────
+
+async function fetchAndApplyLeaderStats(leaderId: string): Promise<void> {
+  await loadLeaderStats(leaderId);
+  if (deck.leader?.id === leaderId) render();
+}
+
 // ─── State persistence ────────────────────────────────────────────────────────
 
 function persistDeck(): void {
   const encoded = encodeDeckState(deck);
   setQueryParam('d', encoded);
   localStorage.setItem(BUILDER_STORAGE_KEY, encoded);
+}
+
+// ─── Backend save controls ────────────────────────────────────────────────────
+
+function renderSaveControls(): string {
+  if (!isBackendEnabled() || !currentUser) return '';
+
+  const label = saveInProgress ? 'Saving…' : savedDeckMeta ? 'Update deck' : 'Save deck';
+  let html = `<div class="deck-save-row">
+    <button type="button" data-action="save-deck"${saveInProgress ? ' disabled' : ''}>${label}</button>`;
+  if (savedDeckMeta) {
+    html += `<button type="button" data-action="copy-share-link">Copy share link</button>`;
+  }
+  html += '</div>';
+
+  if (saveError) {
+    html += `<div class="import-error">${escapeAttr(saveError)}
+      <button type="button" data-action="dismiss-save-status">&times;</button></div>`;
+  } else if (saveStatus) {
+    html += `<div class="import-status">${escapeAttr(saveStatus)}
+      <button type="button" data-action="dismiss-save-status">&times;</button></div>`;
+  }
+
+  return html;
+}
+
+async function handleSaveDeck(): Promise<void> {
+  if (saveInProgress) return;
+  saveInProgress = true;
+  saveError = null;
+  saveStatus = null;
+  const left = el('builderLeft');
+  if (left) left.innerHTML = renderLeft();
+
+  try {
+    const name = deck.metadata?.name?.trim() || 'Untitled deck';
+    if (savedDeckMeta) {
+      const row = await updateSavedDeck(savedDeckMeta.id, { name, data: deck });
+      savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+    } else {
+      const row = await saveDeck({ name, data: deck, visibility: 'unlisted' });
+      savedDeckMeta = { id: row.id, slug: row.slug, visibility: row.visibility };
+      setQueryParam('id', row.slug);
+    }
+    saveStatus = 'Saved.';
+  } catch (err) {
+    saveError = `Failed to save: ${err instanceof Error ? err.message : String(err)}`;
+  } finally {
+    saveInProgress = false;
+    const leftAfter = el('builderLeft');
+    if (leftAfter) leftAfter.innerHTML = renderLeft();
+  }
+}
+
+function handleCopyShareLink(): void {
+  if (!savedDeckMeta) return;
+  const url = `${window.location.origin}${import.meta.env.BASE_URL}builder.html?id=${savedDeckMeta.slug}`;
+  void navigator.clipboard.writeText(url);
+  saveError = null;
+  saveStatus = 'Share link copied to clipboard.';
+  const left = el('builderLeft');
+  if (left) left.innerHTML = renderLeft();
 }
 
 // ─── Step ─────────────────────────────────────────────────────────────────────
@@ -277,6 +387,11 @@ function renderLeft(): string {
 
   let html = '';
 
+  if (loadError) {
+    html += `<div class="import-error">${escapeAttr(loadError)}
+      <button type="button" data-action="dismiss-load-error">&times;</button></div>`;
+  }
+
   if (importStatus) {
     html += `<div class="import-status">${escapeAttr(importStatus)}
       <button type="button" data-action="dismiss-import-status">&times;</button></div>`;
@@ -291,6 +406,8 @@ function renderLeft(): string {
       <button type="button" data-action="new-deck" class="filter-button">New Deck</button>
     </div>
   `;
+
+  html += renderSaveControls();
 
   if (deck.metadata?.format) {
     html += `<div class="format-row">Format: ${FORMAT_INFO[deck.metadata.format].label}
@@ -598,7 +715,8 @@ function renderBrowserResults(): void {
   for (const card of pageCards) {
     const id = card.id as string;
     const expanded = expandedCards.has(`browser:${id}`);
-    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded);
+    const stats = getCardStats(deck.leader?.id, deck.metadata?.format, id);
+    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded, stats);
   }
   results.innerHTML = html || '<div class="deck-list-empty">No cards match these filters.</div>';
 
@@ -767,6 +885,29 @@ document.addEventListener('click', (e) => {
       handleMeleeImport();
       return;
 
+    case 'save-deck':
+      void handleSaveDeck();
+      return;
+
+    case 'copy-share-link':
+      handleCopyShareLink();
+      return;
+
+    case 'dismiss-save-status': {
+      saveStatus = null;
+      saveError = null;
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
+      return;
+    }
+
+    case 'dismiss-load-error': {
+      loadError = null;
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
+      return;
+    }
+
     case 'dismiss-import-status': {
       importStatus = null;
       const left = el('builderLeft');
@@ -798,7 +939,10 @@ document.addEventListener('click', (e) => {
     }
 
     case 'select-leader':
-      if (cardId) updateDeck(setLeader(deck, cardId));
+      if (cardId) {
+        updateDeck(setLeader(deck, cardId));
+        void fetchAndApplyLeaderStats(cardId);
+      }
       return;
 
     case 'select-base':
@@ -1040,10 +1184,26 @@ async function init(): Promise<void> {
   const left = el('builderLeft');
   if (left) left.innerHTML = '<div class="loading">Loading card data...</div>';
 
-  [rawCards, legalData] = await Promise.all([loadAllCards(), loadLegalData()]);
+  const [[cards, legal]] = await Promise.all([
+    Promise.all([loadAllCards(), loadLegalData()]),
+    loadFromShareTarget(),
+  ]);
+  rawCards = cards;
+  legalData = legal;
   applyFormatFilter(deck.metadata?.format);
   localStorage.setItem(BUILDER_STORAGE_KEY, encodeDeckState(deck));
   render();
+
+  if (deck.leader?.id) void fetchAndApplyLeaderStats(deck.leader.id);
+
+  if (isBackendEnabled()) {
+    currentUser = await getCurrentUser();
+    render();
+    onAuthChange((_event, session) => {
+      currentUser = session?.user ?? null;
+      render();
+    });
+  }
 }
 
 if (document.readyState === 'loading') {

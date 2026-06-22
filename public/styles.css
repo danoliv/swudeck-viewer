@@ -791,6 +791,28 @@ html[data-page="builder"] body {
     gap: 10px;
     margin: 10px 0;
 }
+.deck-save-row {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+.deck-save-row button {
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+}
+.deck-save-row button:hover:not(:disabled) {
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+.deck-save-row button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
 .deck-total {
     font-weight: 600;
     color: var(--text-muted);
