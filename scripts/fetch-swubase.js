@@ -4,7 +4,7 @@
  * Backend: github.com/the-medo/swu-collection (AGPL-3.0)
  * Read-only, low-volume personal use. No auth required.
  *
- * Writes public/data/stats/{LEADER_ID}.json for each leader with ≥20 decks.
+ * Writes public/data/stats/{LEADER_ID}.json for each leader with ≥50 decks.
  * Run: npm run fetch-swubase
  */
 
@@ -18,7 +18,7 @@ const BASE_URL = 'https://swubase.com/api';
 const REQUEST_DELAY_MS = 500;
 const MAX_RETRIES = 3;
 const TOP_PLAYED_LIMIT = 100;
-const MIN_DECK_COUNT = 20;
+const MIN_DECK_COUNT = 50;
 const LEADER_BATCH_SIZE = 30; // keep URLs well under limits
 
 function delay(ms) {
@@ -222,6 +222,9 @@ async function processFormat(formatKey, meta, leaderIdToSlug, leaderSlugToId, sl
 async function main() {
   const outDir = path.join(__dirname, '..', 'public', 'data', 'stats');
   await fs.mkdir(outDir, { recursive: true });
+  for (const f of await fs.readdir(outDir)) {
+    if (f.endsWith('.json')) await fs.unlink(path.join(outDir, f));
+  }
 
   console.log('\n=== fetch-swubase.js ===\n');
 

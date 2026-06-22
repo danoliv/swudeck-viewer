@@ -20,7 +20,7 @@ interface LeaderStats {
   eternal?: FormatStats;
 }
 
-const DECK_COUNT_THRESHOLD = 20;
+const DECK_COUNT_THRESHOLD = 50;
 
 const statsCache = new Map<string, LeaderStats | null>();
 const loadingPromises = new Map<string, Promise<LeaderStats | null>>();
