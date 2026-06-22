@@ -338,7 +338,7 @@ email_optional = false
 # set SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID/_SECRET in your shell env (never
 # commit real values) and flip enabled to true. See doc/BACKEND.md.
 [auth.external.google]
-enabled = false
+enabled = true
 client_id = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID)"
 secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
 redirect_uri = ""
