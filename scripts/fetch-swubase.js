@@ -114,6 +114,14 @@ function slugify(name) {
   return s;
 }
 
+// api.swu-db.com has a few card-name typos that don't match swubase's slugs
+// (which are derived from the correct name). Override by SET_NUM here rather
+// than touching public/data/*.json, since that gets overwritten by `npm run
+// fetch-sets`.
+const SLUG_OVERRIDES = {
+  LAW_014: 'enfys-nest--until-we-can-go-no-higher', // api.swu-db.com: "Enfy Nest" (missing the "s")
+};
+
 // Build bidirectional slug ↔ SET_NUM maps from all local card data.
 // Leaders are also indexed so we can pass their slugs as leader_ids.
 async function buildSlugMaps() {
@@ -129,15 +137,15 @@ async function buildSlugMaps() {
       for (const card of raw.data ?? []) {
         if (card.VariantType && card.VariantType !== 'Normal') continue;
 
-        const name = card.Name ?? '';
-        const subtitle = card.Subtitle ?? '';
-        const fullName = subtitle ? `${name} // ${subtitle}` : name;
-        const slug = slugify(fullName);
-
         const num = String(card.Number ?? '').trim();
         const match = num.match(/^(\d+)([A-Za-z]*)$/);
         if (!match) continue;
         const id = `${setCode}_${match[1].padStart(3, '0')}${match[2].toUpperCase()}`;
+
+        const name = card.Name ?? '';
+        const subtitle = card.Subtitle ?? '';
+        const fullName = subtitle ? `${name} // ${subtitle}` : name;
+        const slug = SLUG_OVERRIDES[id] ?? slugify(fullName);
 
         if (!slugToId[slug]) slugToId[slug] = id;
 
