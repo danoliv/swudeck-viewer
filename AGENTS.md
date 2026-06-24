@@ -18,6 +18,10 @@
 - The “why”: free CORS proxies are unreliable, so localhost and production-like paths intentionally differ. Read `doc/CORS_FIX.md` before changing fetch behavior.
 - `clearSetCache()` in `ui.js` clears both in-memory card cache and recent deck history; that coupling is user-visible.
 
+## Language consistency
+- This project's app and tooling are TypeScript/JavaScript (Node scripts, Vitest, GitHub Actions). Don't introduce another language (Python, etc.) for app code, scripts, or CI — including throwaway one-liners run via `curl | python3` for inspecting data. If a task seems to call for a different language or a new tool/dependency, ask first instead of switching.
+- `swubase_dump.py` is a pre-existing exception, not a precedent — new scripts should still be Node/TS.
+
 ## Code patterns to follow
 - New browser-facing behavior should stay compatible with inline handlers in HTML (`onclick="loadDeck()"`, `onclick="reverseDeckOrder()"`). If a page calls a function from markup, expose it on `window`.
 - For shared/testable logic, follow the existing dual-export pattern: browser globals for runtime plus `module.exports` for Jest (see `shared.js`, `card-module.js`, `compare.js`, `sets.js`).

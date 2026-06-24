@@ -16,6 +16,7 @@
     "test:e2e:update": "playwright test --update-snapshots",
     "test:e2e:headed": "playwright test --headed",
     "fetch-sets": "node fetch-sets.js",
+    "check-new-sets": "node scripts/check-new-sets.js",
     "fetch-icons": "node fetch-aspect-icons.js",
     "fetch-swubase": "node scripts/fetch-swubase.js",
     "db:link": "supabase link",
