@@ -32,10 +32,11 @@
       ],
       "Artist": "Andrea Milana",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.47",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/20.png",
-      "tcgplayerId": "686460"
+      "tcgplayerId": "686460",
+      "LowPrice": "0.39"
     },
     {
       "Set": "TS26",
@@ -59,10 +60,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/37.png",
-      "tcgplayerId": "686463"
+      "tcgplayerId": "686463",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -72,7 +74,7 @@
       "Type": "Leader",
       "Aspects": [
         "Cunning",
-        "Villainy"
+        "Heroism"
       ],
       "Traits": [
         "FORCE"
@@ -95,10 +97,11 @@
       ],
       "Artist": "Axel Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.85",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/8.png",
-      "tcgplayerId": "679163"
+      "tcgplayerId": "679163",
+      "LowPrice": "0.65"
     },
     {
       "Set": "TS26",
@@ -116,16 +119,17 @@
         "LIGHTSABER"
       ],
       "Cost": "4",
-      "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: \u201cOn Attack/When Defeated: You may give a Shield token to an enemy unit. If you do, the next event you play this phase costs 2 less.\u201d",
+      "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: “On Attack/When Defeated: You may give a Shield token to an enemy unit. If you do, the next event you play this phase costs 2 less.”",
       "DoubleSided": false,
       "Rarity": "Rare",
       "Unique": true,
       "Artist": "Lucia Massucco Aguilar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/35.png",
-      "tcgplayerId": "679504"
+      "tcgplayerId": "679504",
+      "LowPrice": "1.98"
     },
     {
       "Set": "TS26",
@@ -160,10 +164,11 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.86",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/2.png",
-      "tcgplayerId": "679143"
+      "tcgplayerId": "679143",
+      "LowPrice": "0.69"
     },
     {
       "Set": "TS26",
@@ -191,10 +196,11 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.41",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/44.png",
-      "tcgplayerId": "679512"
+      "tcgplayerId": "679512",
+      "LowPrice": "0.38"
     },
     {
       "Set": "TS26",
@@ -212,12 +218,13 @@
       "DoubleSided": false,
       "Rarity": "Common",
       "Unique": false,
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.21",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/68.png",
-      "tcgplayerId": "688711"
+      "tcgplayerId": "688711",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -252,10 +259,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/7.png",
-      "tcgplayerId": "679159"
+      "tcgplayerId": "679159",
+      "LowPrice": "0.64"
     },
     {
       "Set": "TS26",
@@ -283,10 +291,11 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.56",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/23.png",
-      "tcgplayerId": "679172"
+      "tcgplayerId": "679172",
+      "LowPrice": "1.39"
     },
     {
       "Set": "TS26",
@@ -306,10 +315,11 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.26",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/70.png",
-      "tcgplayerId": "688713"
+      "tcgplayerId": "688713",
+      "LowPrice": "1.37"
     },
     {
       "Set": "TS26",
@@ -329,10 +339,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.93",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/58.png",
-      "tcgplayerId": "688706"
+      "tcgplayerId": "688706",
+      "LowPrice": "0.64"
     },
     {
       "Set": "TS26",
@@ -361,12 +372,13 @@
       "Keywords": [
         "Hidden"
       ],
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.49",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/78.png",
-      "tcgplayerId": "679528"
+      "tcgplayerId": "679528",
+      "LowPrice": "0.30"
     },
     {
       "Set": "TS26",
@@ -397,10 +409,11 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.40",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/65.png",
-      "tcgplayerId": "679524"
+      "tcgplayerId": "679524",
+      "LowPrice": "0.39"
     },
     {
       "Set": "TS26",
@@ -420,10 +433,11 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.78",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/59.png",
-      "tcgplayerId": "679522"
+      "tcgplayerId": "679522",
+      "LowPrice": "2.70"
     },
     {
       "Set": "TS26",
@@ -448,12 +462,13 @@
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": true,
-      "Artist": "Miki Montll\u00f3",
+      "Artist": "Miki Montlló",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.93",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/15.png",
-      "tcgplayerId": "679168"
+      "tcgplayerId": "679168",
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -485,10 +500,11 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.70",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/39.png",
-      "tcgplayerId": "686464"
+      "tcgplayerId": "686464",
+      "LowPrice": "2.10"
     },
     {
       "Set": "TS26",
@@ -506,12 +522,13 @@
       "DoubleSided": false,
       "Rarity": "Common",
       "Unique": false,
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/45.png",
-      "tcgplayerId": "688698"
+      "tcgplayerId": "688698",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TS26",
@@ -533,10 +550,11 @@
       "Unique": false,
       "Artist": "Konstantin Porubov",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.76",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/31.png",
-      "tcgplayerId": "685547"
+      "tcgplayerId": "685547",
+      "LowPrice": "1.25"
     },
     {
       "Set": "TS26",
@@ -569,10 +587,11 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.84",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/19.png",
-      "tcgplayerId": "685549"
+      "tcgplayerId": "685549",
+      "LowPrice": "2.80"
     },
     {
       "Set": "TS26",
@@ -600,10 +619,11 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/53.png",
-      "tcgplayerId": "688703"
+      "tcgplayerId": "688703",
+      "LowPrice": "0.09"
     },
     {
       "Set": "TS26",
@@ -639,10 +659,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.80",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/1.png",
-      "tcgplayerId": "679142"
+      "tcgplayerId": "679142",
+      "LowPrice": "0.74"
     },
     {
       "Set": "TS26",
@@ -673,12 +694,13 @@
       "Keywords": [
         "Hidden"
       ],
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.50",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/13.png",
-      "tcgplayerId": "679165"
+      "tcgplayerId": "679165",
+      "LowPrice": "2.39"
     },
     {
       "Set": "TS26",
@@ -707,10 +729,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.23",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/77.png",
-      "tcgplayerId": "688720"
+      "tcgplayerId": "688720",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -728,10 +751,11 @@
       "Unique": false,
       "Artist": "Henning Ludvigsen",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.34",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/10.png",
-      "tcgplayerId": "688676"
+      "tcgplayerId": "688676",
+      "LowPrice": "0.64"
     },
     {
       "Set": "TS26",
@@ -760,10 +784,11 @@
       "Unique": true,
       "Artist": "Kursad Karatas",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.67",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/38.png",
-      "tcgplayerId": "688695"
+      "tcgplayerId": "688695",
+      "LowPrice": "1.37"
     },
     {
       "Set": "TS26",
@@ -783,10 +808,11 @@
       "Unique": false,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.42",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/61.png",
-      "tcgplayerId": "688708"
+      "tcgplayerId": "688708",
+      "LowPrice": "0.29"
     },
     {
       "Set": "TS26",
@@ -806,10 +832,11 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.43",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/82.png",
-      "tcgplayerId": "688723"
+      "tcgplayerId": "688723",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -827,10 +854,11 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/11.png",
-      "tcgplayerId": "688677"
+      "tcgplayerId": "688677",
+      "LowPrice": "0.50"
     },
     {
       "Set": "TS26",
@@ -850,10 +878,11 @@
       "Unique": false,
       "Artist": "Joshua Cairos",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.25",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/84.png",
-      "tcgplayerId": "688724"
+      "tcgplayerId": "688724",
+      "LowPrice": "0.18"
     },
     {
       "Set": "TS26",
@@ -871,12 +900,13 @@
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": false,
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.39",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/72.png",
-      "tcgplayerId": "688715"
+      "tcgplayerId": "688715",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -895,12 +925,13 @@
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": false,
-      "Artist": "Lenka \u0160ime\u010dkov\u00e1",
+      "Artist": "Lenka Šimečková",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/25.png",
-      "tcgplayerId": "688690"
+      "tcgplayerId": "688690",
+      "LowPrice": "0.19"
     },
     {
       "Set": "TS26",
@@ -918,10 +949,11 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/9.png",
-      "tcgplayerId": "688675"
+      "tcgplayerId": "688675",
+      "LowPrice": "0.71"
     },
     {
       "Set": "TS26",
@@ -945,19 +977,20 @@
       "Cost": "6",
       "Power": "6",
       "HP": "6",
-      "FrontText": "Sentinel\nYou may have this unit enter play with the \u201dWhen Played\u201d abilities of another unit in play.",
+      "FrontText": "Sentinel\nYou may have this unit enter play with the ”When Played” abilities of another unit in play.",
       "DoubleSided": false,
       "Rarity": "Rare",
       "Unique": true,
       "Keywords": [
         "Sentinel"
       ],
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "3.82",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/34.png",
-      "tcgplayerId": "679501"
+      "tcgplayerId": "679501",
+      "LowPrice": "3.49"
     },
     {
       "Set": "TS26",
@@ -980,7 +1013,7 @@
       "Cost": "4",
       "Power": "3",
       "HP": "5",
-      "FrontText": "When Played: This unit captures a non-leader unit.\nBounty \u2014 A friendly unit captures a non-leader unit. (When this unit is defeated or captured, your opponent collects its bounty.)",
+      "FrontText": "When Played: This unit captures a non-leader unit.\nBounty — A friendly unit captures a non-leader unit. (When this unit is defeated or captured, your opponent collects its bounty.)",
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": true,
@@ -989,10 +1022,11 @@
       ],
       "Artist": "Victor Stoll Toaldo",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.56",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/27.png",
-      "tcgplayerId": "686461"
+      "tcgplayerId": "686461",
+      "LowPrice": "0.37"
     },
     {
       "Set": "TS26",
@@ -1012,10 +1046,11 @@
       "Unique": false,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.76",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/56.png",
-      "tcgplayerId": "679521"
+      "tcgplayerId": "679521",
+      "LowPrice": "0.74"
     },
     {
       "Set": "TS26",
@@ -1050,10 +1085,11 @@
       ],
       "Artist": "Kevin Sidharta",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "3.39",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/21.png",
-      "tcgplayerId": "679170"
+      "tcgplayerId": "679170",
+      "LowPrice": "3.24"
     },
     {
       "Set": "TS26",
@@ -1084,10 +1120,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "5.52",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/50.png",
-      "tcgplayerId": "682311"
+      "tcgplayerId": "682311",
+      "LowPrice": "5.02"
     },
     {
       "Set": "TS26",
@@ -1118,10 +1155,11 @@
       ],
       "Artist": "Manos Sparakis",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/75.png",
-      "tcgplayerId": "688718"
+      "tcgplayerId": "688718",
+      "LowPrice": "1.30"
     },
     {
       "Set": "TS26",
@@ -1151,10 +1189,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.58",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/55.png",
-      "tcgplayerId": "688704"
+      "tcgplayerId": "688704",
+      "LowPrice": "0.48"
     },
     {
       "Set": "TS26",
@@ -1186,10 +1225,11 @@
       ],
       "Artist": "Natcha Ngamtweerat",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "17.58",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/18.png",
-      "tcgplayerId": "688684"
+      "tcgplayerId": "688684",
+      "LowPrice": "18.67"
     },
     {
       "Set": "TS26",
@@ -1219,10 +1259,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.66",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/16.png",
-      "tcgplayerId": "686459"
+      "tcgplayerId": "686459",
+      "LowPrice": "1.65"
     },
     {
       "Set": "TS26",
@@ -1244,10 +1285,11 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.47",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/33.png",
-      "tcgplayerId": "679178"
+      "tcgplayerId": "679178",
+      "LowPrice": "1.48"
     },
     {
       "Set": "TS26",
@@ -1274,10 +1316,11 @@
       "Unique": true,
       "Artist": "Wu Shenyou",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.25",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/51.png",
-      "tcgplayerId": "679519"
+      "tcgplayerId": "679519",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -1309,12 +1352,13 @@
       "Keywords": [
         "Keywords"
       ],
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.83",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/3.png",
-      "tcgplayerId": "679145"
+      "tcgplayerId": "679145",
+      "LowPrice": "1.00"
     },
     {
       "Set": "TS26",
@@ -1345,10 +1389,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "3.31",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/30.png",
-      "tcgplayerId": "688693"
+      "tcgplayerId": "688693",
+      "LowPrice": "3.25"
     },
     {
       "Set": "TS26",
@@ -1368,10 +1413,11 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.40",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/57.png",
-      "tcgplayerId": "688705"
+      "tcgplayerId": "688705",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -1391,10 +1437,11 @@
       "Unique": false,
       "Artist": "Joshua Carson",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.23",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/81.png",
-      "tcgplayerId": "679529"
+      "tcgplayerId": "679529",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -1424,10 +1471,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "6.27",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/73.png",
-      "tcgplayerId": "686492"
+      "tcgplayerId": "686492",
+      "LowPrice": "5.72"
     },
     {
       "Set": "TS26",
@@ -1457,12 +1505,13 @@
       "Keywords": [
         "Sentinel"
       ],
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.52",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/26.png",
-      "tcgplayerId": "685546"
+      "tcgplayerId": "685546",
+      "LowPrice": "2.20"
     },
     {
       "Set": "TS26",
@@ -1494,19 +1543,20 @@
       ],
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "4.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/40.png",
-      "tcgplayerId": "679505"
+      "tcgplayerId": "679505",
+      "LowPrice": "4.10"
     },
     {
       "Set": "TS26",
       "Number": "4",
-      "Name": "Padm\u00e9 Amidala",
+      "Name": "Padmé Amidala",
       "Subtitle": "Follow My Lead",
       "Type": "Leader",
       "Aspects": [
-        "Vigilance",
+        "Command",
         "Heroism"
       ],
       "Traits": [
@@ -1529,10 +1579,11 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.10",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/4.png",
-      "tcgplayerId": "679147"
+      "tcgplayerId": "679147",
+      "LowPrice": "0.92"
     },
     {
       "Set": "TS26",
@@ -1564,10 +1615,11 @@
       ],
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.47",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/74.png",
-      "tcgplayerId": "688717"
+      "tcgplayerId": "688717",
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -1596,12 +1648,13 @@
       "Keywords": [
         "Saboteur"
       ],
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.07",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/28.png",
-      "tcgplayerId": "685548"
+      "tcgplayerId": "685548",
+      "LowPrice": "1.99"
     },
     {
       "Set": "TS26",
@@ -1632,10 +1685,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.74",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/62.png",
-      "tcgplayerId": "686466"
+      "tcgplayerId": "686466",
+      "LowPrice": "0.49"
     },
     {
       "Set": "TS26",
@@ -1656,10 +1710,11 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.74",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/32.png",
-      "tcgplayerId": "686462"
+      "tcgplayerId": "686462",
+      "LowPrice": "1.00"
     },
     {
       "Set": "TS26",
@@ -1686,10 +1741,11 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.23",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/42.png",
-      "tcgplayerId": "688696"
+      "tcgplayerId": "688696",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TS26",
@@ -1709,10 +1765,11 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.49",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/69.png",
-      "tcgplayerId": "686468"
+      "tcgplayerId": "686468",
+      "LowPrice": "0.89"
     },
     {
       "Set": "TS26",
@@ -1732,10 +1789,11 @@
       "Unique": false,
       "Artist": "Kevin Sidharta",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.45",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/80.png",
-      "tcgplayerId": "688722"
+      "tcgplayerId": "688722",
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -1766,10 +1824,11 @@
       "Unique": true,
       "Artist": "Axel Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.86",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/6.png",
-      "tcgplayerId": "679155"
+      "tcgplayerId": "679155",
+      "LowPrice": "0.65"
     },
     {
       "Set": "TS26",
@@ -1785,16 +1844,17 @@
         "WEAPON"
       ],
       "Cost": "3",
-      "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: \u201cWhen an enemy unit readies during the action phase: Ready this unit. Use this ability only once each round.\u201d",
+      "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: “When an enemy unit readies during the action phase: Ready this unit. Use this ability only once each round.”",
       "DoubleSided": false,
       "Rarity": "Rare",
       "Unique": true,
       "Artist": "Alejandro Mirabel",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.01",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/63.png",
-      "tcgplayerId": "679523"
+      "tcgplayerId": "679523",
+      "LowPrice": "0.95"
     },
     {
       "Set": "TS26",
@@ -1823,10 +1883,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.25",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/67.png",
-      "tcgplayerId": "688710"
+      "tcgplayerId": "688710",
+      "LowPrice": "0.09"
     },
     {
       "Set": "TS26",
@@ -1856,12 +1917,13 @@
         "Ambush",
         "Restore"
       ],
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.57",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/17.png",
-      "tcgplayerId": "688680"
+      "tcgplayerId": "688680",
+      "LowPrice": "0.49"
     },
     {
       "Set": "TS26",
@@ -1894,12 +1956,13 @@
         "Overwhelm",
         "Raid"
       ],
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.78",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/5.png",
-      "tcgplayerId": "679151"
+      "tcgplayerId": "679151",
+      "LowPrice": "0.62"
     },
     {
       "Set": "TS26",
@@ -1922,10 +1985,11 @@
       ],
       "Artist": "Robynn Frauhn",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.19",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/46.png",
-      "tcgplayerId": "688699"
+      "tcgplayerId": "688699",
+      "LowPrice": "2.00"
     },
     {
       "Set": "TS26",
@@ -1953,10 +2017,11 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.15",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/49.png",
-      "tcgplayerId": "679517"
+      "tcgplayerId": "679517",
+      "LowPrice": "2.10"
     },
     {
       "Set": "TS26",
@@ -1978,10 +2043,11 @@
       "Unique": false,
       "Artist": "Kevin Sidharta",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/52.png",
-      "tcgplayerId": "688702"
+      "tcgplayerId": "688702",
+      "LowPrice": "0.31"
     },
     {
       "Set": "TS26",
@@ -2012,10 +2078,11 @@
       ],
       "Artist": "Victor Stoll Toaldo",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/24.png",
-      "tcgplayerId": "685545"
+      "tcgplayerId": "685545",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -2033,10 +2100,11 @@
       "Unique": false,
       "Artist": "Christian Piccolo",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.71",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/12.png",
-      "tcgplayerId": "688678"
+      "tcgplayerId": "688678",
+      "LowPrice": "0.60"
     },
     {
       "Set": "TS26",
@@ -2056,10 +2124,11 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/71.png",
-      "tcgplayerId": "688714"
+      "tcgplayerId": "688714",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -2082,10 +2151,11 @@
       ],
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/83.png",
-      "tcgplayerId": "688674"
+      "tcgplayerId": "688674",
+      "LowPrice": "0.24"
     },
     {
       "Set": "TS26",
@@ -2103,12 +2173,13 @@
       "DoubleSided": false,
       "Rarity": "Common",
       "Unique": false,
-      "Artist": "Gabriel G\u00f3mez Almenzar",
+      "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/60.png",
-      "tcgplayerId": "688707"
+      "tcgplayerId": "688707",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -2128,10 +2199,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.23",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/47.png",
-      "tcgplayerId": "688700"
+      "tcgplayerId": "688700",
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -2159,10 +2231,11 @@
       ],
       "Artist": "Konstantin Porubov",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/22.png",
-      "tcgplayerId": "688686"
+      "tcgplayerId": "688686",
+      "LowPrice": "1.98"
     },
     {
       "Set": "TS26",
@@ -2191,10 +2264,11 @@
       "Unique": true,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "1.71",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/36.png",
-      "tcgplayerId": "688694"
+      "tcgplayerId": "688694",
+      "LowPrice": "1.00"
     },
     {
       "Set": "TS26",
@@ -2223,10 +2297,11 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.50",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/41.png",
-      "tcgplayerId": "686465"
+      "tcgplayerId": "686465",
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -2246,10 +2321,11 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/79.png",
-      "tcgplayerId": "688721"
+      "tcgplayerId": "688721",
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -2268,12 +2344,13 @@
       "DoubleSided": false,
       "Rarity": "Rare",
       "Unique": false,
-      "Artist": "David Buis\u00e1n",
+      "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.94",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/64.png",
-      "tcgplayerId": "686467"
+      "tcgplayerId": "686467",
+      "LowPrice": "0.75"
     },
     {
       "Set": "TS26",
@@ -2293,10 +2370,11 @@
       "Unique": false,
       "Artist": "Ivan Fiorelli",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.53",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/48.png",
-      "tcgplayerId": "688701"
+      "tcgplayerId": "688701",
+      "LowPrice": "0.24"
     },
     {
       "Set": "TS26",
@@ -2321,10 +2399,11 @@
       "Unique": false,
       "Artist": "Andrea Milana",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.18",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/54.png",
-      "tcgplayerId": "679520"
+      "tcgplayerId": "679520",
+      "LowPrice": "0.09"
     },
     {
       "Set": "TS26",
@@ -2351,10 +2430,11 @@
       "Unique": false,
       "Artist": "Rocio Espin",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/66.png",
-      "tcgplayerId": "688709"
+      "tcgplayerId": "688709",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TS26",
@@ -2379,10 +2459,11 @@
       "Unique": false,
       "Artist": "Vincent Dutrait",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/76.png",
-      "tcgplayerId": "688719"
+      "tcgplayerId": "688719",
+      "LowPrice": "0.09"
     },
     {
       "Set": "TS26",
@@ -2407,10 +2488,11 @@
       "Unique": false,
       "Artist": "Afif Khaled",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "0.26",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/43.png",
-      "tcgplayerId": "688697"
+      "tcgplayerId": "688697",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TS26",
@@ -2443,10 +2525,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "5.61",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/14.png",
-      "tcgplayerId": "682310"
+      "tcgplayerId": "682310",
+      "LowPrice": "7.20"
     },
     {
       "Set": "TS26",
@@ -2477,10 +2560,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.00",
+      "MarketPrice": "2.37",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/29.png",
-      "tcgplayerId": "679175"
+      "tcgplayerId": "679175",
+      "LowPrice": "2.20"
     }
   ]
 }

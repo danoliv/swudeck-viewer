@@ -1,18 +1,14 @@
 import { describe, it, expect } from 'vitest';
 import { SETS, loadSets } from './sets';
+import setCodes from './sets.json';
 
 describe('SETS constant', () => {
   it('is an array', () => {
     expect(Array.isArray(SETS)).toBe(true);
   });
 
-  it('contains exactly 9 sets', () => {
-    expect(SETS).toHaveLength(9);
-  });
-
   it('contains all expected set codes', () => {
-    const expected = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW', 'TS26'];
-    for (const code of expected) {
+    for (const code of setCodes) {
       expect(SETS).toContain(code);
     }
   });
@@ -24,7 +20,7 @@ describe('SETS constant', () => {
   });
 
   it('has the correct canonical order', () => {
-    expect([...SETS]).toEqual(['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW', 'TS26']);
+    expect([...SETS]).toEqual(setCodes);
   });
 });
 
@@ -34,11 +30,7 @@ describe('loadSets', () => {
   });
 
   it('returns the correct set names in canonical order', () => {
-    expect(loadSets()).toEqual(['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW', 'TS26']);
-  });
-
-  it('returns 9 sets', () => {
-    expect(loadSets()).toHaveLength(9);
+    expect(loadSets()).toEqual(setCodes);
   });
 
   it('returns strings only with length > 0', () => {
@@ -65,4 +57,3 @@ describe('loadSets', () => {
     expect(sets).not.toContain('');
   });
 });
-

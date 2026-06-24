@@ -1,15 +1,15 @@
 // @vitest-environment node
 // Tests for fetch-sets.js functions
 //
-// fetch-sets.js is a Node CLI tool. It no longer imports from sets.js —
-// it has an inline SETS array. Built-in modules (https, fs) are intercepted
-// with vi.spyOn() since vi.mock() cannot intercept CJS built-ins.
+// fetch-sets.js loads its set list from src/lib/sets.json. Built-in modules
+// (https, fs) are intercepted with vi.spyOn() since vi.mock() cannot
+// intercept CJS built-ins.
 
 const https = require('https');
 const fsp = require('fs').promises;
 
-// The expected set list (mirrors fetch-sets.js inline array)
-const REAL_SETS = ['SOR', 'SHD', 'TWI', 'JTL', 'LOF', 'IBH', 'SEC', 'LAW', 'TS26'];
+// The expected set list (the same source fetch-sets.js loads from)
+const REAL_SETS = require('../src/lib/sets.json');
 
 // Load fetch-sets once (after module object references are captured)
 let fetchSets;

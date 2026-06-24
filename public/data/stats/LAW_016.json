@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T23:10:02.543Z",
+  "generatedAt": "2026-06-24T19:31:15.781Z",
   "leaderId": "LAW_016",
   "premier": {
     "metaId": 12,
@@ -175,6 +175,11 @@
         "deckCount": 38,
         "winRate": 55.6,
         "inclusionRate": 29
+      },
+      "SEC_220": {
+        "deckCount": 26,
+        "winRate": 52.4,
+        "inclusionRate": 19.8
       },
       "SEC_069": {
         "deckCount": 26,
