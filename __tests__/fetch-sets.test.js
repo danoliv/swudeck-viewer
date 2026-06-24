@@ -14,7 +14,7 @@ const REAL_SETS = require('../src/lib/sets.json');
 // Load fetch-sets once (after module object references are captured)
 let fetchSets;
 beforeAll(() => {
-  fetchSets = require('../fetch-sets.js');
+  fetchSets = require('../scripts/fetch-sets.js');
 });
 
 afterEach(() => {

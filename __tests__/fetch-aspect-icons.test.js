@@ -11,7 +11,7 @@ const fsp = require('fs').promises;
 
 let fetchAspectIcons;
 beforeAll(() => {
-  fetchAspectIcons = require('../fetch-aspect-icons.js');
+  fetchAspectIcons = require('../scripts/fetch-aspect-icons.js');
 });
 
 afterEach(() => {

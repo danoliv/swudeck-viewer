@@ -44,7 +44,7 @@ export default defineConfig({
     },
     setupFiles: ['./test-setup.js'],
     include: ['**/__tests__/**/*.{js,ts}', '**/*.{spec,test}.{js,ts}'],
-    exclude: ['**/node_modules/**', '**/dist/**', '**/e2e/**', 'test.js', 'test-runner.js'],
+    exclude: ['**/node_modules/**', '**/dist/**', '**/e2e/**'],
     coverage: {
       provider: 'v8',
       include: ['src/**/*.ts'],
