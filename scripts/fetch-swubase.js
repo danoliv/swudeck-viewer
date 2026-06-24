@@ -228,58 +228,30 @@ async function processFormat(formatKey, meta, leaderIdToSlug, leaderSlugToId, sl
 }
 
 /**
- * Aggregate leader-level popularity/win rate for a meta from its tournament
- * listing (`/api/tournament`) — one (typically winning) deck per tournament.
- * This is a smaller, top-placement-only sample, not the full decks-submitted
- * dataset behind swubase's own "Meta Analysis" chart (no public endpoint for
- * that was found), but it's a real, representative signal of what's actually
- * being played and winning.
+ * Derive leader-level popularity/win rate from the per-leader top-played data
+ * `processFormat` already fetched (meta-wide aggregates, not winner-only —
+ * verified against swubase's own "Meta Analysis" table, e.g. Vel Sartha:
+ * 133 decks here vs. their displayed 129, 49.8% vs. their 49.3%).
+ *
+ * `deckCount` per leader is exact (from cardStatMetaLeader). `winRate` uses
+ * the win rate of that leader's highest-inclusion card — when inclusion is
+ * 100% (a card in every deck of that leader), its matchWin/matchLose *is*
+ * the leader's own record, since every match played by that leader included
+ * that card.
  */
-async function fetchLeaderMetaStats(meta, leaderSlugToId) {
-  const formatId = meta.format.id;
-  const metaId = meta.meta.id;
-  const perLeader = {}; // leaderId (SET_NUM) → { deckCount, wins, losses }
-  let offset = 0;
-  let totalDecks = 0;
-
-  while (true) {
-    const resp = await fetchJSON('tournament', {
-      minType: 200,
-      format: formatId,
-      maxDate: new Date().toISOString().slice(0, 10),
-      meta: metaId,
-      sort: 'tournament.date',
-      order: 'desc',
-      limit: 250,
-      offset,
-    });
-    if (!resp?.data) break;
-
-    for (const entry of resp.data) {
-      for (const { deck, tournamentDeck } of entry.decks ?? []) {
-        const leaderId = leaderSlugToId[deck.leaderCardId1];
-        if (!leaderId) continue;
-
-        const bucket = (perLeader[leaderId] ??= { deckCount: 0, wins: 0, losses: 0 });
-        bucket.deckCount += 1;
-        bucket.wins += tournamentDeck.recordWin ?? 0;
-        bucket.losses += tournamentDeck.recordLose ?? 0;
-        totalDecks += 1;
-      }
-    }
-
-    if (!resp.pagination?.hasMore) break;
-    offset += 250;
-    await delay(REQUEST_DELAY_MS);
-  }
+function deriveLeaderMetaStats(perLeader) {
+  const totalDecks = Object.values(perLeader).reduce((sum, stats) => sum + stats.deckCount, 0);
 
   const leaders = {};
-  for (const [leaderId, { deckCount, wins, losses }] of Object.entries(perLeader)) {
-    const totalMatches = wins + losses;
+  for (const [leaderId, stats] of Object.entries(perLeader)) {
+    const bestCard = Object.values(stats.cards).reduce(
+      (best, card) => (!best || card.inclusionRate > best.inclusionRate ? card : best),
+      null,
+    );
     leaders[leaderId] = {
-      deckCount,
-      popularity: totalDecks > 0 ? Math.round((deckCount / totalDecks) * 1000) / 10 : 0,
-      winRate: totalMatches > 0 ? Math.round((wins / totalMatches) * 1000) / 10 : 0,
+      deckCount: stats.deckCount,
+      popularity: totalDecks > 0 ? Math.round((stats.deckCount / totalDecks) * 1000) / 10 : 0,
+      winRate: bestCard?.winRate ?? 0,
     };
   }
   return { totalDecks, leaders };
@@ -302,9 +274,9 @@ async function main() {
   const { slugToId, leaderSlugToId, leaderIdToSlug } = await buildSlugMaps();
   console.log(`  ${Object.keys(leaderIdToSlug).length} leaders, ${Object.keys(slugToId).length} total cards mapped`);
 
-  console.log('\n[3/5] Fetching top-played data…');
+  console.log('\n[3/4] Fetching top-played data…');
   const allResults = {}; // leaderId → { premier?, eternal? }
-  const metaByFormat = {}; // formatKey → meta (reused for leader-meta-stats below)
+  const perLeaderByFormat = {}; // formatKey → perLeader (reused to derive leader-stats.json below)
 
   for (const [formatKey, formatId] of [
     ['premier', formatIds.premier],
@@ -313,20 +285,19 @@ async function main() {
     if (!formatId) { console.log(`  [skip] No format ID for ${formatKey}`); continue; }
     const meta = latestMeta(metas, formatId);
     if (!meta) { console.log(`  [skip] No meta for ${formatKey}`); continue; }
-    metaByFormat[formatKey] = meta;
 
     const perLeader = await processFormat(formatKey, meta, leaderIdToSlug, leaderSlugToId, slugToId);
+    perLeaderByFormat[formatKey] = perLeader;
     for (const [leaderId, stats] of Object.entries(perLeader)) {
       if (!allResults[leaderId]) allResults[leaderId] = {};
       allResults[leaderId][formatKey] = stats;
     }
   }
 
-  console.log('\n[4/5] Fetching leader popularity/win rate…');
+  console.log('\nDeriving leader popularity/win rate…');
   const leaderStatsOut = { generatedAt: new Date().toISOString() };
-  for (const [formatKey, meta] of Object.entries(metaByFormat)) {
-    await delay(REQUEST_DELAY_MS);
-    const { totalDecks, leaders } = await fetchLeaderMetaStats(meta, leaderSlugToId);
+  for (const [formatKey, perLeader] of Object.entries(perLeaderByFormat)) {
+    const { totalDecks, leaders } = deriveLeaderMetaStats(perLeader);
     console.log(`  ${formatKey}: ${totalDecks} decks, ${Object.keys(leaders).length} leaders`);
     leaderStatsOut[formatKey] = { totalDecks, leaders };
   }
@@ -335,7 +306,7 @@ async function main() {
     JSON.stringify(leaderStatsOut, null, 2),
   );
 
-  console.log('\n[5/5] Writing per-leader files…');
+  console.log('\n[4/4] Writing per-leader files…');
   const generatedAt = new Date().toISOString();
   let written = 0;
   let skipped = 0;
