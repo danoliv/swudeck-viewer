@@ -227,6 +227,64 @@ async function processFormat(formatKey, meta, leaderIdToSlug, leaderSlugToId, sl
   return results;
 }
 
+/**
+ * Aggregate leader-level popularity/win rate for a meta from its tournament
+ * listing (`/api/tournament`) — one (typically winning) deck per tournament.
+ * This is a smaller, top-placement-only sample, not the full decks-submitted
+ * dataset behind swubase's own "Meta Analysis" chart (no public endpoint for
+ * that was found), but it's a real, representative signal of what's actually
+ * being played and winning.
+ */
+async function fetchLeaderMetaStats(meta, leaderSlugToId) {
+  const formatId = meta.format.id;
+  const metaId = meta.meta.id;
+  const perLeader = {}; // leaderId (SET_NUM) → { deckCount, wins, losses }
+  let offset = 0;
+  let totalDecks = 0;
+
+  while (true) {
+    const resp = await fetchJSON('tournament', {
+      minType: 200,
+      format: formatId,
+      maxDate: new Date().toISOString().slice(0, 10),
+      meta: metaId,
+      sort: 'tournament.date',
+      order: 'desc',
+      limit: 250,
+      offset,
+    });
+    if (!resp?.data) break;
+
+    for (const entry of resp.data) {
+      for (const { deck, tournamentDeck } of entry.decks ?? []) {
+        const leaderId = leaderSlugToId[deck.leaderCardId1];
+        if (!leaderId) continue;
+
+        const bucket = (perLeader[leaderId] ??= { deckCount: 0, wins: 0, losses: 0 });
+        bucket.deckCount += 1;
+        bucket.wins += tournamentDeck.recordWin ?? 0;
+        bucket.losses += tournamentDeck.recordLose ?? 0;
+        totalDecks += 1;
+      }
+    }
+
+    if (!resp.pagination?.hasMore) break;
+    offset += 250;
+    await delay(REQUEST_DELAY_MS);
+  }
+
+  const leaders = {};
+  for (const [leaderId, { deckCount, wins, losses }] of Object.entries(perLeader)) {
+    const totalMatches = wins + losses;
+    leaders[leaderId] = {
+      deckCount,
+      popularity: totalDecks > 0 ? Math.round((deckCount / totalDecks) * 1000) / 10 : 0,
+      winRate: totalMatches > 0 ? Math.round((wins / totalMatches) * 1000) / 10 : 0,
+    };
+  }
+  return { totalDecks, leaders };
+}
+
 async function main() {
   const outDir = path.join(__dirname, '..', 'public', 'data', 'stats');
   await fs.mkdir(outDir, { recursive: true });
@@ -244,8 +302,9 @@ async function main() {
   const { slugToId, leaderSlugToId, leaderIdToSlug } = await buildSlugMaps();
   console.log(`  ${Object.keys(leaderIdToSlug).length} leaders, ${Object.keys(slugToId).length} total cards mapped`);
 
-  console.log('\n[3/4] Fetching top-played data…');
+  console.log('\n[3/5] Fetching top-played data…');
   const allResults = {}; // leaderId → { premier?, eternal? }
+  const metaByFormat = {}; // formatKey → meta (reused for leader-meta-stats below)
 
   for (const [formatKey, formatId] of [
     ['premier', formatIds.premier],
@@ -254,6 +313,7 @@ async function main() {
     if (!formatId) { console.log(`  [skip] No format ID for ${formatKey}`); continue; }
     const meta = latestMeta(metas, formatId);
     if (!meta) { console.log(`  [skip] No meta for ${formatKey}`); continue; }
+    metaByFormat[formatKey] = meta;
 
     const perLeader = await processFormat(formatKey, meta, leaderIdToSlug, leaderSlugToId, slugToId);
     for (const [leaderId, stats] of Object.entries(perLeader)) {
@@ -262,7 +322,20 @@ async function main() {
     }
   }
 
-  console.log('\n[4/4] Writing per-leader files…');
+  console.log('\n[4/5] Fetching leader popularity/win rate…');
+  const leaderStatsOut = { generatedAt: new Date().toISOString() };
+  for (const [formatKey, meta] of Object.entries(metaByFormat)) {
+    await delay(REQUEST_DELAY_MS);
+    const { totalDecks, leaders } = await fetchLeaderMetaStats(meta, leaderSlugToId);
+    console.log(`  ${formatKey}: ${totalDecks} decks, ${Object.keys(leaders).length} leaders`);
+    leaderStatsOut[formatKey] = { totalDecks, leaders };
+  }
+  await fs.writeFile(
+    path.join(__dirname, '..', 'public', 'data', 'stats', 'leader-stats.json'),
+    JSON.stringify(leaderStatsOut, null, 2),
+  );
+
+  console.log('\n[5/5] Writing per-leader files…');
   const generatedAt = new Date().toISOString();
   let written = 0;
   let skipped = 0;
