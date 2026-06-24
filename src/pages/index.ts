@@ -8,8 +8,7 @@
 import { isBackendEnabled } from '../lib/supabase';
 import { getCurrentUser, signInWithEmail, signInWithGoogle, onAuthChange } from '../lib/auth';
 import { listMyDecks, deleteDeck, type DeckRow } from '../lib/decks-api';
-import { loadSets } from '../lib/sets';
-import { loadCardSet, formatCardId, resolveCardArtUrl, type CardData } from '../lib/cards';
+import { loadAllCards, findCardById, resolveCardArtUrl, cardImagesHTML, type CardData } from '../lib/cards';
 
 /** Matches builder.ts's BUILDER_STORAGE_KEY — cleared so "+ New Deck" always starts blank. */
 const BUILDER_STORAGE_KEY = 'builderDeck';
@@ -46,37 +45,13 @@ export function getReturnUrl(): string | undefined {
 
 let allCards: CardData[] = [];
 
-async function loadAllCards(): Promise<CardData[]> {
-  const cardsById = new Map<string, CardData>();
-
-  for (const set of loadSets()) {
-    const index = await loadCardSet(set);
-    for (const card of Object.values(index)) {
-      if (card.VariantType && card.VariantType !== 'Normal') continue;
-
-      const id = formatCardId(set, card.Number ?? '');
-      if (!cardsById.has(id)) cardsById.set(id, { ...card, id });
-    }
-  }
-
-  return Array.from(cardsById.values());
-}
-
-function findCard(cardId: string): CardData {
-  return allCards.find((c) => c.id === cardId) ?? { id: cardId, Name: cardId };
-}
-
-function buildThumb(cardId: string | undefined): HTMLImageElement {
-  const img = document.createElement('img');
-  img.className = 'deck-gallery-thumb';
-  if (cardId) {
-    const card = findCard(cardId);
-    img.src = resolveCardArtUrl(card.FrontArt) ?? '';
-    img.alt = card.Name ?? cardId;
-  } else {
-    img.alt = '';
-  }
-  return img;
+/** Leader/base thumbnail, rendered with the same card-face markup (and CDN-failure fallback) used everywhere else. */
+function buildThumb(cardId: string | undefined): HTMLElement {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'deck-gallery-thumb';
+  const card = findCardById(allCards, cardId);
+  wrapper.innerHTML = cardImagesHTML(cardId ?? '', card.Name ?? cardId ?? '', resolveCardArtUrl(card.FrontArt), undefined, false);
+  return wrapper;
 }
 
 // ─── Gallery (signed in) ────────────────────────────────────────────────────────

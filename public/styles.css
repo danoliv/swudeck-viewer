@@ -559,6 +559,30 @@ button:hover {
 .deck-header .section-title {
     grid-column: 1 / -1;
 }
+/* Leader/base cards can differ in height (e.g. a base with no Aspects skips that row) — stretch the card box itself to match the taller column, so both card borders end on the same line and each button keeps the same small gap below its own card. */
+.deck-header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.deck-header > div > .card {
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Pins the stats row to the bottom of the stretched card box, so Cost/Power/HP line up across leader/base even though the rest of the card content (title, image) stays at its natural top position. */
+.deck-header > div > .card > .card-content {
+    margin-top: auto;
+}
+/* A card with no Aspects (e.g. a vanilla base) skips the aspects-badge row entirely, which otherwise shifts the image down — reserve the same space so both images start at the same line. */
+.deck-header > div > .card:not(:has(.aspects)) > .card-images {
+    margin-top: 30px;
+}
+.deck-header > div > button {
+    margin-top: 10px;
+}
 .section-title {
     font-family: var(--font-display);
     font-size: 1.2em;
@@ -572,12 +596,13 @@ button:hover {
     width: 100%;
     box-sizing: border-box;
 }
-.deck-header .card-images {
+.leader-card .card-images,
+.base-card .card-images {
     /* Base cards, and the Leader's front side, are landscape */
     padding-bottom: 71.43%;
     margin: 5px 0;
 }
-.deck-header .leader-card.flipped .card-images {
+.leader-card.flipped .card-images {
     /* Leader's deployed (back) side is portrait, like other unit cards */
     padding-bottom: 140%;
 }
@@ -943,6 +968,18 @@ html[data-page="builder"] body {
 .picker-card {
     cursor: pointer;
 }
+.leader-meta-stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+    font-size: 0.8em;
+    color: var(--text-muted);
+}
+/* An auto-fit grid collapses to one giant column when it holds a single item (e.g. the lone "Random vanilla" base) — cap just that case, not normal multi-card rows. */
+.card-grid .picker-card:only-child {
+    max-width: 280px;
+}
 .base-group {
     margin: 20px 0;
 }
@@ -1060,6 +1097,14 @@ html[data-page="builder"] body {
 /* Aspect icon filter toggles */
 .aspect-filters {
     gap: 8px;
+    align-items: center;
+}
+/* Marks the resource-cost vs. alignment (Heroism/Villainy) boundary: selections on either side of it are AND'd, not OR'd. */
+.aspect-filter-separator {
+    width: 1px;
+    height: 24px;
+    background: var(--border-strong);
+    margin: 0 4px;
 }
 .aspect-filter-button {
     width: 32px;

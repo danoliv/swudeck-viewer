@@ -78,7 +78,7 @@ function cardFaceHTML(art: string | undefined, alt: string, cardId: string, face
 }
 
 /** Shared front/back image markup used by every card-rendering function, so a CDN image gap looks the same everywhere. */
-function cardImagesHTML(cardId: string, name: string, frontArt: string | undefined, backArt: string | undefined, isDoubleSided: boolean): string {
+export function cardImagesHTML(cardId: string, name: string, frontArt: string | undefined, backArt: string | undefined, isDoubleSided: boolean): string {
   return `
             <div class="card-images">
                 <div class="card-images-inner">
@@ -170,6 +170,30 @@ export async function preloadSets(): Promise<void> {
   } catch (error) {
     console.error('Error preloading sets:', error);
   }
+}
+
+// ─── loadAllCards ─────────────────────────────────────────────────────────────
+
+/** Load every set, dedupe variants, and assign canonical "SET_NNN" IDs. */
+export async function loadAllCards(): Promise<CardData[]> {
+  const cardsById = new Map<string, CardData>();
+
+  for (const set of loadSets()) {
+    const index = await loadCardSet(set);
+    for (const card of Object.values(index)) {
+      if (card.VariantType && card.VariantType !== 'Normal') continue;
+
+      const id = formatCardId(set, card.Number ?? '');
+      if (!cardsById.has(id)) cardsById.set(id, { ...card, id });
+    }
+  }
+
+  return Array.from(cardsById.values());
+}
+
+/** Look up a card by ID within an already-loaded pool (e.g. from `loadAllCards`). Falls back to a stub so callers can render unconditionally. */
+export function findCardById(cards: CardData[], cardId: string | undefined): CardData {
+  return (cardId && cards.find((c) => c.id === cardId)) || { id: cardId, Name: cardId };
 }
 
 // ─── fetchCardData ────────────────────────────────────────────────────────────

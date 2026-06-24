@@ -11,7 +11,7 @@
 
 import { getQueryParam, setQueryParam } from '../lib/url';
 import { loadSets } from '../lib/sets';
-import { loadCardSet, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, formatCardId, type CardData } from '../lib/cards';
+import { loadAllCards, findCardById, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, type CardData } from '../lib/cards';
 import { createDefaultRegistry, type CardEntry } from '../lib/deck';
 import {
   createEmptyDeck,
@@ -36,12 +36,14 @@ import {
   combineAspects,
   cardTypeCategory,
   TYPE_CATEGORY_ORDER,
+  ASPECT_GROUPS,
   type CardFilter,
   type CardSortKey,
   type SortDirection,
 } from '../lib/card-filter';
 import type { DeckData, DeckCard } from '../lib/types';
 import { loadLeaderStats, getCardStats, hasLeaderStats } from '../lib/stats';
+import { loadLeaderStatsManifest, getLeaderMetaStats, hasLeaderMetaStats } from '../lib/leader-stats';
 import { isBackendEnabled } from '../lib/supabase';
 import { getCurrentUser, onAuthChange, type User } from '../lib/auth';
 import { saveDeck, updateDeck as updateSavedDeck, getDeckBySlug, copyDeckToMyAccount, type DeckRow } from '../lib/decks-api';
@@ -49,8 +51,8 @@ import { resolveShareTarget } from '../lib/share-target';
 
 // ─── State ────────────────────────────────────────────────────────────────────
 
-const ASPECTS = ['Vigilance', 'Command', 'Aggression', 'Cunning', 'Villainy', 'Heroism'];
-const BASE_ASPECTS = ['Vigilance', 'Command', 'Aggression', 'Cunning'];
+/** The base picker only has resource-cost aspects to offer (bases have no Heroism/Villainy). */
+const BASE_ASPECTS = ASPECT_GROUPS[0];
 const NON_POOL_TYPES = ['Leader', 'Base'];
 
 const setOrder = loadSets();
@@ -87,6 +89,22 @@ const BASE_SORT_OPTIONS: Array<{ key: CardSortKey; label: string }> = [
   { key: 'name', label: 'Name' },
 ];
 
+/** The leader/base pickers hold only one card type each, so grouping by 'type' doesn't apply. */
+const PICKER_SORT_OPTIONS = BASE_SORT_OPTIONS.filter((o) => o.key !== 'type');
+
+/** Leader picker also offers Popularity/Win Rate, from the tournament-derived manifest in src/lib/leader-stats.ts. */
+const LEADER_SORT_OPTIONS: Array<{ key: CardSortKey; label: string }> = [
+  ...PICKER_SORT_OPTIONS,
+  { key: 'popularity', label: 'Popularity' },
+  { key: 'winrate', label: 'Win Rate' },
+];
+
+/** Stats lookup adapter: leader-level popularity/win rate, shaped like the per-card StatsLookup sortCards expects. */
+function leaderStatsLookup(leaderId: string): { inclusionRate?: number; winRate?: number } | null {
+  const stats = getLeaderMetaStats(leaderId, deck.metadata?.format);
+  return stats ? { inclusionRate: stats.popularity, winRate: stats.winRate } : null;
+}
+
 /** Stats lookup for the current leader+format, for the 'popularity'/'winrate' sort keys. */
 function currentStatsLookup(cardId: string) {
   return getCardStats(deck.leader?.id, deck.metadata?.format, cardId);
@@ -106,11 +124,19 @@ function effectiveSortKey(sortKey: CardSortKey): CardSortKey {
   return sortKey;
 }
 
-/** A row of clickable sort-key labels; the active one shows an ascending/descending arrow. */
-function renderSortBar(scope: 'deck' | 'sideboard' | 'browser', sortKey: CardSortKey, dir: SortDirection): string {
-  const effective = effectiveSortKey(sortKey);
+/** A row of clickable sort-key labels; the active one shows an ascending/descending arrow. Shared by the deck/sideboard/browser lists and the leader/base pickers. */
+function renderSortBar(
+  scope: 'deck' | 'sideboard' | 'browser' | 'leader' | 'base',
+  sortKey: CardSortKey,
+  dir: SortDirection,
+  options: Array<{ key: CardSortKey; label: string }> = getSortOptions(),
+): string {
+  // effectiveSortKey's cost-fallback only makes sense where popularity/winrate depend on
+  // the *currently selected* leader's per-card stats (deck/sideboard/browser). The leader
+  // picker's own popularity/winrate (src/lib/leader-stats.ts) has no such dependency.
+  const effective = scope === 'leader' || scope === 'base' ? sortKey : effectiveSortKey(sortKey);
   let html = '<div class="sort-controls"><span class="sort-label">Sort:</span>';
-  for (const { key, label } of getSortOptions()) {
+  for (const { key, label } of options) {
     const active = key === effective;
     const arrow = active ? (dir === 'asc' ? ' &#9650;' : ' &#9660;') : '';
     html += `<button type="button" data-action="sort-toggle" data-scope="${scope}" data-sort="${key}" class="sort-button${active ? ' active' : ''}">${label}${arrow}</button>`;
@@ -250,8 +276,12 @@ const expandedCards = new Set<string>();
 
 let leaderFilter: CardFilter = {};
 let leaderSort: CardSortKey = 'set';
+let leaderSortDir: SortDirection = 'asc';
+/** "With Stats" toggle: only show leaders with real tournament presence (see src/lib/leader-stats.ts). */
+let leaderStatsOnly = false;
 let baseFilter: CardFilter = {};
 let baseSort: CardSortKey = 'set';
+let baseSortDir: SortDirection = 'asc';
 
 // ─── Backend save state ───────────────────────────────────────────────────────
 
@@ -287,38 +317,27 @@ function escapeAttr(value: string): string {
 
 // ─── Card pool ────────────────────────────────────────────────────────────────
 
-/** Load every set, dedupe variants, and assign canonical "SET_NNN" IDs. */
-async function loadAllCards(): Promise<CardData[]> {
-  const cardsById = new Map<string, CardData>();
-
-  for (const set of setOrder) {
-    const index = await loadCardSet(set);
-    for (const card of Object.values(index)) {
-      if (card.VariantType && card.VariantType !== 'Normal') continue;
-
-      const id = formatCardId(set, card.Number ?? '');
-      if (!cardsById.has(id)) cardsById.set(id, { ...card, id });
-    }
-  }
-
-  return Array.from(cardsById.values());
-}
-
 function findCard(cardId: string): CardData {
-  return allCards.find((c) => c.id === cardId) ?? { id: cardId, Name: cardId };
+  return findCardById(allCards, cardId);
 }
 
 function cardAspects(deckCard: DeckCard | undefined): string[] | undefined {
   return deckCard ? (findCard(deckCard.id).Aspects as string[] | undefined) : undefined;
 }
 
-function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
+/** Distinct values pulled from `allCards` via `extract`. With `order` given, returns members of `order` that are present (canonical order); otherwise alphabetical. */
+function uniqueValues(extract: (card: CardData) => string[] | string | undefined, order?: string[]): string[] {
   const values = new Set<string>();
   for (const card of allCards) {
-    const arr = card[field] as string[] | undefined;
-    if (Array.isArray(arr)) for (const v of arr) values.add(v);
+    const v = extract(card);
+    if (Array.isArray(v)) for (const x of v) values.add(x);
+    else if (v) values.add(v);
   }
-  return Array.from(values).sort();
+  return order ? order.filter((s) => values.has(s)) : Array.from(values).sort();
+}
+
+function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
+  return uniqueValues((card) => card[field] as string[] | undefined);
 }
 
 /**
@@ -327,8 +346,7 @@ function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
  * `filterLegalCards`), so this naturally differs by format.
  */
 function availableSets(): string[] {
-  const present = new Set(allCards.map((c) => String(c.Set ?? '')));
-  return setOrder.filter((s) => present.has(s));
+  return uniqueValues((card) => card.Set, setOrder);
 }
 
 // ─── Leader stats ─────────────────────────────────────────────────────────────
@@ -618,33 +636,46 @@ function renderFormatPickerShell(): string {
 
 // ─── Right panel: leader / base pickers ──────────────────────────────────────
 
+/**
+ * The aspect-icon filter buttons shared by the main card browser and the leader/base pickers.
+ * `groups` mirrors `ASPECT_GROUPS`'s AND-across-groups/OR-within-group semantics visually:
+ * a separator marks the boundary, so picking Villainy reads as narrowing down, not adding more.
+ */
+function renderAspectFilterButtons(action: string, scope: 'leader' | 'base' | undefined, groups: readonly string[][], selected: string[] | undefined): string {
+  const scopeAttr = scope ? ` data-scope="${scope}"` : '';
+  let html = '<div class="filter-group aspect-filters">';
+  groups.forEach((group, i) => {
+    if (i > 0) html += '<span class="aspect-filter-separator"></span>';
+    for (const a of group) {
+      html += `<button type="button" data-action="${action}"${scopeAttr} data-filter="aspects" data-value="${a}" class="aspect-filter-button aspect-icon-${a}${selected?.includes(a) ? ' active' : ''}" title="${a}" aria-label="${a}"></button>`;
+    }
+  });
+  html += '</div>';
+  return html;
+}
+
 /** Search + aspect-filter + sort controls shared by the leader and base pickers. */
-function renderPickerControls(scope: 'leader' | 'base', pickerFilter: CardFilter, sort: CardSortKey): string {
+function renderPickerControls(scope: 'leader' | 'base', pickerFilter: CardFilter, sort: CardSortKey, dir: SortDirection): string {
   let html = '<div class="builder-filters">';
   html += `<input type="text" data-action="picker-search" data-scope="${scope}" placeholder="Search by name..." value="${escapeAttr(pickerFilter.search ?? '')}">`;
 
-  const aspects = scope === 'base' ? BASE_ASPECTS : ASPECTS;
-  html += '<div class="filter-group aspect-filters">';
-  for (const a of aspects) {
-    html += `<button type="button" data-action="picker-filter-toggle" data-scope="${scope}" data-filter="aspects" data-value="${a}" class="aspect-filter-button aspect-icon-${a}${pickerFilter.aspects?.includes(a) ? ' active' : ''}" title="${a}" aria-label="${a}"></button>`;
+  const groups = scope === 'base' ? [BASE_ASPECTS] : ASPECT_GROUPS;
+  html += renderAspectFilterButtons('picker-filter-toggle', scope, groups, pickerFilter.aspects);
+
+  if (scope === 'leader') {
+    html += `<button type="button" data-action="toggle-leader-stats-only" class="filter-button${leaderStatsOnly ? ' active' : ''}" title="Only show leaders with real tournament data">With Stats</button>`;
   }
-  html += '</div>';
-
-  html += `<select data-action="picker-sort" data-scope="${scope}">`;
-  html += `<option value="set"${sort === 'set' ? ' selected' : ''}>Sort: Set</option>`;
-  html += `<option value="cost"${sort === 'cost' ? ' selected' : ''}>Sort: Cost</option>`;
-  html += `<option value="aspect"${sort === 'aspect' ? ' selected' : ''}>Sort: Affinity</option>`;
-  html += `<option value="name"${sort === 'name' ? ' selected' : ''}>Sort: Name</option>`;
-  html += '</select>';
 
   html += '</div>';
+  const options = scope === 'leader' ? LEADER_SORT_OPTIONS : PICKER_SORT_OPTIONS;
+  html += `<div id="${scope}SortBar">${renderSortBar(scope, sort, dir, options)}</div>`;
   return html;
 }
 
 function renderLeaderPickerShell(): string {
   return `
     <h2>Choose a Leader</h2>
-    ${renderPickerControls('leader', leaderFilter, leaderSort)}
+    ${renderPickerControls('leader', leaderFilter, leaderSort, leaderSortDir)}
     <div id="leaderResults" class="card-grid"></div>
   `;
 }
@@ -653,12 +684,19 @@ function renderLeaderResults(): void {
   const results = el('leaderResults');
   if (!results) return;
 
-  const filtered = filterCards(getLeaders(allCards), leaderFilter);
-  const sorted = sortCards(filtered, leaderSort, setOrder);
+  let filtered = filterCards(getLeaders(allCards), leaderFilter);
+  if (leaderStatsOnly) {
+    filtered = filtered.filter((card) => hasLeaderMetaStats(card.id as string, deck.metadata?.format));
+  }
+  const sorted = sortCards(filtered, leaderSort, setOrder, leaderSortDir, leaderStatsLookup);
 
   let html = '';
   for (const card of sorted) {
-    html += `<div class="picker-card" data-action="select-leader" data-card-id="${card.id}">${buildCardHTML(card.id as string, card, 0)}</div>`;
+    const stats = getLeaderMetaStats(card.id as string, deck.metadata?.format);
+    const statsHTML = stats
+      ? `<div class="leader-meta-stats"><span>${stats.popularity}% popularity</span><span>${stats.winRate}% win rate</span></div>`
+      : '';
+    html += `<div class="picker-card" data-action="select-leader" data-card-id="${card.id}">${buildCardHTML(card.id as string, card, 0, 0, 'leader-card')}${statsHTML}</div>`;
   }
   results.innerHTML = html || '<div class="deck-list-empty">No leaders match these filters.</div>';
 }
@@ -666,7 +704,7 @@ function renderLeaderResults(): void {
 function renderBasePickerShell(): string {
   return `
     <h2>Choose a Base</h2>
-    ${renderPickerControls('base', baseFilter, baseSort)}
+    ${renderPickerControls('base', baseFilter, baseSort, baseSortDir)}
     <div id="baseResults"></div>
   `;
 }
@@ -679,11 +717,11 @@ function renderBaseResults(): void {
   const groups = categorizeBases(filtered);
 
   const section = (title: string, cards: CardData[]): string => {
-    const sorted = sortCards(cards, baseSort, setOrder);
+    const sorted = sortCards(cards, baseSort, setOrder, baseSortDir);
     if (!sorted.length) return '';
     let html = `<div class="base-group"><h3>${title}</h3><div class="card-grid">`;
     for (const card of sorted) {
-      html += `<div class="picker-card" data-action="select-base" data-card-id="${card.id}">${buildCardHTML(card.id as string, card, 0)}</div>`;
+      html += `<div class="picker-card" data-action="select-base" data-card-id="${card.id}">${buildCardHTML(card.id as string, card, 0, 0, 'base-card')}</div>`;
     }
     html += '</div></div>';
     return html;
@@ -785,11 +823,7 @@ function renderFilters(): string {
   }
   html += '</div>';
 
-  html += '<div class="filter-group aspect-filters">';
-  for (const a of ASPECTS) {
-    html += `<button type="button" data-action="filter-toggle" data-filter="aspects" data-value="${a}" class="aspect-filter-button aspect-icon-${a}${filter.aspects?.includes(a) ? ' active' : ''}" title="${a}" aria-label="${a}"></button>`;
-  }
-  html += '</div>';
+  html += renderAspectFilterButtons('filter-toggle', undefined, ASPECT_GROUPS, filter.aspects);
 
   html += renderFilterDropdown('sets', 'Sets', availableSets());
   html += renderFilterDropdown('keywords', 'Keywords', keywords);
@@ -1100,7 +1134,7 @@ document.addEventListener('click', (e) => {
       return;
 
     case 'sort-toggle': {
-      const scope = actionEl.dataset['scope'] as 'deck' | 'sideboard' | 'browser' | undefined;
+      const scope = actionEl.dataset['scope'] as 'deck' | 'sideboard' | 'browser' | 'leader' | 'base' | undefined;
       const sortKey = actionEl.dataset['sort'] as CardSortKey | undefined;
       if (!scope || !sortKey) return;
 
@@ -1115,12 +1149,22 @@ document.addEventListener('click', (e) => {
         [sideboardSort, sideboardSortDir] = toggle(sideboardSort, sideboardSortDir);
         const left = el('builderLeft');
         if (left) left.innerHTML = renderLeft();
-      } else {
+      } else if (scope === 'browser') {
         [browserSort, browserSortDir] = toggle(browserSort, browserSortDir);
         browserPage = 1;
         const sortBar = el('browserSortBar');
         if (sortBar) sortBar.innerHTML = renderSortBar('browser', browserSort, browserSortDir);
         renderBrowserResults();
+      } else if (scope === 'leader') {
+        [leaderSort, leaderSortDir] = toggle(leaderSort, leaderSortDir);
+        const sortBar = el('leaderSortBar');
+        if (sortBar) sortBar.innerHTML = renderSortBar('leader', leaderSort, leaderSortDir, LEADER_SORT_OPTIONS);
+        renderLeaderResults();
+      } else {
+        [baseSort, baseSortDir] = toggle(baseSort, baseSortDir);
+        const sortBar = el('baseSortBar');
+        if (sortBar) sortBar.innerHTML = renderSortBar('base', baseSort, baseSortDir, PICKER_SORT_OPTIONS);
+        renderBaseResults();
       }
       return;
     }
@@ -1211,6 +1255,13 @@ document.addEventListener('click', (e) => {
       }
       return;
     }
+
+    case 'toggle-leader-stats-only': {
+      leaderStatsOnly = !leaderStatsOnly;
+      actionEl.classList.toggle('active');
+      renderLeaderResults();
+      return;
+    }
   }
 });
 
@@ -1259,20 +1310,6 @@ document.addEventListener('change', (e) => {
   const target = e.target as HTMLElement;
   const action = target.dataset['action'];
 
-  if (action === 'picker-sort') {
-    const scope = target.dataset['scope'];
-    const value = (target as HTMLSelectElement).value as CardSortKey;
-
-    if (scope === 'leader') {
-      leaderSort = value;
-      renderLeaderResults();
-    } else if (scope === 'base') {
-      baseSort = value;
-      renderBaseResults();
-    }
-    return;
-  }
-
   if (action !== 'filter-checkbox') return;
 
   const filterKey = target.dataset['filter'] as 'sets' | 'keywords' | 'traits' | undefined;
@@ -1292,7 +1329,7 @@ async function init(): Promise<void> {
   if (left) left.innerHTML = '<div class="loading">Loading card data...</div>';
 
   const [[cards, legal]] = await Promise.all([
-    Promise.all([loadAllCards(), loadLegalData()]),
+    Promise.all([loadAllCards(), loadLegalData(), loadLeaderStatsManifest()]),
     loadFromShareTarget(),
   ]);
   rawCards = cards;

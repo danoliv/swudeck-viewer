@@ -181,12 +181,19 @@
             flex-shrink: 0;
         }
         .deck-gallery-thumb {
-            width: 56px;
-            height: 78px;
-            object-fit: cover;
+            width: 100px;
             border-radius: 4px;
             background: var(--surface-deep);
             border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        /* Leader/base front art is landscape, unlike the portrait default in styles.css */
+        .deck-gallery-thumb .card-images {
+            margin: 0;
+            padding-bottom: 71.43%;
+        }
+        .deck-gallery-thumb .card-placeholder {
+            font-size: 0.7em;
         }
         .deck-gallery-info {
             flex: 1;

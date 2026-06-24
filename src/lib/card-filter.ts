@@ -38,6 +38,22 @@ function overlaps(values: string[] | undefined, wanted: string[]): boolean {
   return values.some((v) => wanted.includes(v));
 }
 
+/**
+ * Aspect filter buttons, grouped: the 4 resource-cost aspects, then the 2
+ * alignment aspects. Selections within a group are OR'd (e.g. Vigilance or
+ * Command); selections across groups are AND'd (e.g. (Vigilance or Command)
+ * and Villainy) — so picking Villainy narrows down rather than adding more
+ * results.
+ */
+export const ASPECT_GROUPS: readonly string[][] = [
+  ['Vigilance', 'Command', 'Aggression', 'Cunning'],
+  ['Heroism', 'Villainy'],
+];
+
+function matchesAspectGroups(values: string[] | undefined, wanted: string[]): boolean {
+  return ASPECT_GROUPS.every((group) => overlaps(values, wanted.filter((v) => group.includes(v))));
+}
+
 function isSubsetOf(values: string[] | undefined, allowed: string[]): boolean {
   if (!Array.isArray(values) || !values.length) return true;
   return values.every((v) => allowed.includes(v));
@@ -62,7 +78,7 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
     if (search && !String(card.Name ?? '').toLowerCase().includes(search)) return false;
     if (types.length && !types.includes(String(card.Type ?? ''))) return false;
     if (!overlaps(card.Arenas, arenas)) return false;
-    if (!overlaps(card.Aspects, aspects)) return false;
+    if (!matchesAspectGroups(card.Aspects, aspects)) return false;
     if (!overlaps(card.Keywords as string[] | undefined, keywords)) return false;
     if (!overlaps(card.Traits, traits)) return false;
     if (sets.length && !sets.includes(String(card.Set ?? ''))) return false;

@@ -64,6 +64,18 @@ describe('filterCards', () => {
     expect(result.map((c) => c.id)).toEqual(['SEC_213', 'JTL_016']);
   });
 
+  it('ANDs a resource-cost aspect with an alignment aspect, instead of OR-ing them together', () => {
+    // Command alone matches JTL_016; Heroism alone matches SEC_213 and JTL_016.
+    // Selecting both should narrow to cards with both, not the union of either.
+    const result = filterCards(CARDS, { aspects: ['Command', 'Heroism'] });
+    expect(result.map((c) => c.id)).toEqual(['JTL_016']);
+  });
+
+  it('still ORs multiple aspects within the same group', () => {
+    const result = filterCards(CARDS, { aspects: ['Vigilance', 'Cunning'] });
+    expect(result.map((c) => c.id)).toEqual(['SOR_001', 'SOR_002', 'SOR_003']);
+  });
+
   it('filters by keyword', () => {
     const result = filterCards(CARDS, { keywords: ['Restore 1'] });
     expect(result.map((c) => c.id)).toEqual(['SEC_213']);
