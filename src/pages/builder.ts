@@ -672,7 +672,7 @@ function renderAspectFilterButtons(action: string, scope: 'leader' | 'base' | un
       const isNeutral = a === NEUTRAL_ALIGNMENT;
       const cls = isNeutral ? 'aspect-filter-button aspect-none' : `aspect-filter-button aspect-icon-${a}`;
       const label = isNeutral ? 'No Affiliation' : a;
-      const content = isNeutral ? '&ndash;' : '';
+      const content = '';
       html += `<button type="button" data-action="${action}"${scopeAttr} data-filter="aspects" data-value="${a}" class="${cls}${selected?.includes(a) ? ' active' : ''}" title="${label}" aria-label="${label}">${content}</button>`;
     }
   });

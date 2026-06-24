@@ -1132,13 +1132,31 @@ html[data-page="builder"] body {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px var(--accent-soft);
 }
+/* "No Affiliation" icon: a prohibition sign (circle + diagonal slash), drawn in CSS since there's no aspect image asset for "neither Heroism nor Villainy". */
 .aspect-filter-button.aspect-none {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    font-weight: 700;
-    font-size: 1.2em;
+    position: relative;
+}
+.aspect-filter-button.aspect-none::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 2px solid var(--text-muted);
+    border-radius: 50%;
+}
+.aspect-filter-button.aspect-none::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    background: var(--text-muted);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.aspect-filter-button.aspect-none.active::before,
+.aspect-filter-button.aspect-none.active::after {
+    border-color: var(--accent);
+    background: var(--accent);
 }
 .aspect-icon-Vigilance { background-image: url('images/aspects/Vigilance.webp'); }
 .aspect-icon-Command { background-image: url('images/aspects/Command.webp'); }
