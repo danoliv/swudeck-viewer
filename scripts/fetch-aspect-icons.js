@@ -44,14 +44,14 @@ function fetchImageWithRetry(url, retries = 3) {
 }
 
 async function saveImage(buffer, filename) {
-  const filePath = path.join(__dirname, 'public', 'images', 'aspects', filename);
+  const filePath = path.join(__dirname, '..', 'public', 'images', 'aspects', filename);
   console.log(`Saving to ${filePath}`);
   await fs.writeFile(filePath, buffer);
   console.log(`Successfully saved ${filename}`);
 }
 
 async function fetchAllIcons() {
-  await fs.mkdir(path.join(__dirname, 'public', 'images', 'aspects'), { recursive: true });
+  await fs.mkdir(path.join(__dirname, '..', 'public', 'images', 'aspects'), { recursive: true });
 
   for (const aspect of ASPECTS) {
     try {

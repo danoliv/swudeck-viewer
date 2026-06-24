@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const https = require('https');
-const setCodes = require('./src/lib/sets.json');
+const setCodes = require('../src/lib/sets.json');
 
 function loadSets() {
     return [...setCodes];
@@ -65,7 +65,7 @@ function fetchWithRetry(url, retries = 3) {
 
 async function saveToFile(data, filename) {
     try {
-        const filePath = path.join(__dirname, 'public', 'data', filename);
+        const filePath = path.join(__dirname, '..', 'public', 'data', filename);
         console.log(`Saving to ${filePath}`);
         await fs.writeFile(filePath, JSON.stringify(data, null, 2));
         console.log(`Successfully saved ${filename}`);
@@ -83,7 +83,7 @@ async function fetchAllSets() {
         console.log('Loaded sets:', sets);
 
         // Ensure data directory exists
-        await fs.mkdir(path.join(__dirname, 'public', 'data'), { recursive: true });
+        await fs.mkdir(path.join(__dirname, '..', 'public', 'data'), { recursive: true });
         console.log('Data directory created/verified');
 
         for (const set of sets) {
