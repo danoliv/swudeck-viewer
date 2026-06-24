@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory } from './card-filter';
+import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, NEUTRAL_ALIGNMENT } from './card-filter';
 import type { CardData } from './cards';
 
 const CARDS: CardData[] = [
@@ -74,6 +74,23 @@ describe('filterCards', () => {
   it('still ORs multiple aspects within the same group', () => {
     const result = filterCards(CARDS, { aspects: ['Vigilance', 'Cunning'] });
     expect(result.map((c) => c.id)).toEqual(['SOR_001', 'SOR_002', 'SOR_003']);
+  });
+
+  it('NEUTRAL_ALIGNMENT matches cards with neither Heroism nor Villainy', () => {
+    // SOR_001/SOR_002 (Vigilance only) and SOR_003 (Cunning only) have no alignment;
+    // SEC_213 (Heroism) and JTL_016 (Command+Heroism) do.
+    const result = filterCards(CARDS, { aspects: [NEUTRAL_ALIGNMENT] });
+    expect(result.map((c) => c.id)).toEqual(['SOR_001', 'SOR_002', 'SOR_003']);
+  });
+
+  it('combines NEUTRAL_ALIGNMENT with a resource-cost aspect (AND across groups, as usual)', () => {
+    const result = filterCards(CARDS, { aspects: ['Vigilance', NEUTRAL_ALIGNMENT] });
+    expect(result.map((c) => c.id)).toEqual(['SOR_001', 'SOR_002']);
+  });
+
+  it('ORs NEUTRAL_ALIGNMENT with an explicit alignment value within the same group', () => {
+    const result = filterCards(CARDS, { aspects: [NEUTRAL_ALIGNMENT, 'Heroism'] });
+    expect(result.map((c) => c.id)).toEqual(['SEC_213', 'SOR_001', 'SOR_002', 'SOR_003', 'JTL_016']);
   });
 
   it('filters by keyword', () => {

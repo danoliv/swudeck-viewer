@@ -1132,6 +1132,14 @@ html[data-page="builder"] body {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px var(--accent-soft);
 }
+.aspect-filter-button.aspect-none {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 1.2em;
+}
 .aspect-icon-Vigilance { background-image: url('images/aspects/Vigilance.webp'); }
 .aspect-icon-Command { background-image: url('images/aspects/Command.webp'); }
 .aspect-icon-Aggression { background-image: url('images/aspects/Aggression.webp'); }

@@ -50,8 +50,21 @@ export const ASPECT_GROUPS: readonly string[][] = [
   ['Heroism', 'Villainy'],
 ];
 
+/** The alignment group (Heroism/Villainy) — most cards have neither, hence the NEUTRAL_ALIGNMENT option below. */
+const ALIGNMENT_GROUP = ASPECT_GROUPS[1];
+
+/** Pseudo-value for the alignment group: matches cards with neither Heroism nor Villainy. */
+export const NEUTRAL_ALIGNMENT = 'None';
+
 function matchesAspectGroups(values: string[] | undefined, wanted: string[]): boolean {
-  return ASPECT_GROUPS.every((group) => overlaps(values, wanted.filter((v) => group.includes(v))));
+  return ASPECT_GROUPS.every((group) => {
+    const groupWanted = wanted.filter((v) => group.includes(v));
+    if (group === ALIGNMENT_GROUP && wanted.includes(NEUTRAL_ALIGNMENT)) {
+      const isNeutral = !overlaps(values, group);
+      return groupWanted.length ? isNeutral || overlaps(values, groupWanted) : isNeutral;
+    }
+    return overlaps(values, groupWanted);
+  });
 }
 
 function isSubsetOf(values: string[] | undefined, allowed: string[]): boolean {

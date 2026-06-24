@@ -38,6 +38,7 @@ import {
   cardTypeCategory,
   TYPE_CATEGORY_ORDER,
   ASPECT_GROUPS,
+  NEUTRAL_ALIGNMENT,
   type CardFilter,
   type CardSortKey,
   type SortDirection,
@@ -54,6 +55,9 @@ import { resolveShareTarget } from '../lib/share-target';
 
 /** The base picker only has resource-cost aspects to offer (bases have no Heroism/Villainy). */
 const BASE_ASPECTS = ASPECT_GROUPS[0];
+
+/** Same groups as ASPECT_GROUPS, but with a "No Affiliation" pseudo-value appended to the alignment group for rendering. */
+const ASPECT_GROUPS_UI: readonly string[][] = [ASPECT_GROUPS[0], [...ASPECT_GROUPS[1], NEUTRAL_ALIGNMENT]];
 const NON_POOL_TYPES = ['Leader', 'Base'];
 
 const setOrder = loadSets();
@@ -665,7 +669,11 @@ function renderAspectFilterButtons(action: string, scope: 'leader' | 'base' | un
   groups.forEach((group, i) => {
     if (i > 0) html += '<span class="aspect-filter-separator"></span>';
     for (const a of group) {
-      html += `<button type="button" data-action="${action}"${scopeAttr} data-filter="aspects" data-value="${a}" class="aspect-filter-button aspect-icon-${a}${selected?.includes(a) ? ' active' : ''}" title="${a}" aria-label="${a}"></button>`;
+      const isNeutral = a === NEUTRAL_ALIGNMENT;
+      const cls = isNeutral ? 'aspect-filter-button aspect-none' : `aspect-filter-button aspect-icon-${a}`;
+      const label = isNeutral ? 'No Affiliation' : a;
+      const content = isNeutral ? '&ndash;' : '';
+      html += `<button type="button" data-action="${action}"${scopeAttr} data-filter="aspects" data-value="${a}" class="${cls}${selected?.includes(a) ? ' active' : ''}" title="${label}" aria-label="${label}">${content}</button>`;
     }
   });
   html += '</div>';
@@ -677,7 +685,7 @@ function renderPickerControls(scope: 'leader' | 'base', pickerFilter: CardFilter
   let html = '<div class="builder-filters">';
   html += `<input type="text" data-action="picker-search" data-scope="${scope}" placeholder="Search by name..." value="${escapeAttr(pickerFilter.search ?? '')}">`;
 
-  const groups = scope === 'base' ? [BASE_ASPECTS] : ASPECT_GROUPS;
+  const groups = scope === 'base' ? [BASE_ASPECTS] : ASPECT_GROUPS_UI;
   html += renderAspectFilterButtons('picker-filter-toggle', scope, groups, pickerFilter.aspects);
 
   if (scope === 'leader') {
@@ -841,7 +849,7 @@ function renderFilters(): string {
   }
   html += '</div>';
 
-  html += renderAspectFilterButtons('filter-toggle', undefined, ASPECT_GROUPS, filter.aspects);
+  html += renderAspectFilterButtons('filter-toggle', undefined, ASPECT_GROUPS_UI, filter.aspects);
 
   html += renderFilterDropdown('sets', 'Sets', availableSets());
   html += renderFilterDropdown('keywords', 'Keywords', keywords);
