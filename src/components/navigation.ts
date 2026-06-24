@@ -23,11 +23,13 @@ const NAV_LINKS: NavLink[] = [
  */
 export function detectCurrentPage(): Page {
   if (typeof window === 'undefined') return 'home';
+  // Match the page filename itself, not just any substring — the GitHub Pages base
+  // path (/swudeck-viewer/...) contains "viewer", which would otherwise false-match.
   const path = window.location.pathname;
-  if (path.includes('compare')) return 'compare';
-  if (path.includes('settings')) return 'settings';
-  if (path.includes('builder')) return 'builder';
-  if (path.includes('viewer')) return 'viewer';
+  if (path.includes('compare.html')) return 'compare';
+  if (path.includes('settings.html')) return 'settings';
+  if (path.includes('builder.html')) return 'builder';
+  if (path.includes('viewer.html')) return 'viewer';
   return 'home';
 }
 

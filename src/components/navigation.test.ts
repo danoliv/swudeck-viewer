@@ -128,6 +128,16 @@ describe('detectCurrentPage', () => {
     vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/' } as Location);
     expect(detectCurrentPage()).toBe('home');
   });
+
+  it('returns home for index.html under the GitHub Pages base path, not viewer (the repo name "swudeck-viewer" itself contains "viewer")', () => {
+    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/swudeck-viewer/index.html' } as Location);
+    expect(detectCurrentPage()).toBe('home');
+  });
+
+  it('returns viewer for viewer.html under the GitHub Pages base path', () => {
+    vi.spyOn(window, 'location', 'get').mockReturnValue({ pathname: '/swudeck-viewer/viewer.html' } as Location);
+    expect(detectCurrentPage()).toBe('viewer');
+  });
 });
 
 // ─── renderNavigation ─────────────────────────────────────────────────────────
