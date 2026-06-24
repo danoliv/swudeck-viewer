@@ -250,6 +250,12 @@ describe('buildCardHTML', () => {
     expect(html).toContain('SOR_001');
   });
 
+  it('wires an onerror fallback to the placeholder when FrontArt is set (e.g. a pre-release set whose CDN art 404s)', () => {
+    const html = buildCardHTML('SOR_001', card1);
+    expect(html).toContain(`onerror="this.style.display='none';this.nextElementSibling.style.display='block'"`);
+    expect(html).toContain('class="card-placeholder" style="display:none"');
+  });
+
   it('uses the normalized non-foil art URL when foil art is provided', () => {
     const html = buildCardHTML('SHD_172', { ...card1, FrontArt: 'https://cdn.swu-db.com/images/cards/SHD/172F.png' });
     expect(html).toContain('https://cdn.swu-db.com/images/cards/SHD/172.png');
@@ -445,7 +451,7 @@ describe('buildCardDetailHTML', () => {
     expect(html).toContain('Power: <span class="stat-value">2</span>');
     expect(html).toContain('HP: <span class="stat-value">2</span>');
     expect(html).toContain('class="aspect Command"');
-    expect(html).toContain('<img src="https://example.com/card.png" alt="Test Card (Front)">');
+    expect(html).toContain('<img src="https://example.com/card.png" alt="Test Card (Front)"');
   });
 
   it('renders type, arenas, and traits in the meta line', () => {
@@ -513,7 +519,7 @@ describe('buildCardDetailHTML', () => {
       expect(html).toContain('class="flip-button"');
       expect(html).toContain('Flip Card');
       expect(html).toContain('class="card-back"');
-      expect(html).toContain('<img src="https://example.com/card-back.png" alt="Test Card (Back)">');
+      expect(html).toContain('<img src="https://example.com/card-back.png" alt="Test Card (Back)"');
     });
 
     it('renders back text prefixed with "Back: "', () => {

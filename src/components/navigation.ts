@@ -10,9 +10,10 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
+  { href: `${import.meta.env.BASE_URL}index.html`, label: 'My Decks', page: 'home' },
+  { href: `${import.meta.env.BASE_URL}builder.html`, label: 'Deck Builder', page: 'builder' },
   { href: `${import.meta.env.BASE_URL}viewer.html`, label: 'Deck Viewer', page: 'viewer' },
   { href: `${import.meta.env.BASE_URL}compare.html`, label: 'Deck Comparison', page: 'compare' },
-  { href: `${import.meta.env.BASE_URL}builder.html`, label: 'Deck Builder', page: 'builder' },
   { href: `${import.meta.env.BASE_URL}settings.html`, label: 'Settings', page: 'settings' },
 ];
 
@@ -110,21 +111,13 @@ function buildAuthControl(user: User | null): HTMLElement {
   return container;
 }
 
-function buildMyDecksLink(): HTMLElement {
-  const link = document.createElement('a');
-  link.className = 'nav-link-home';
-  if (detectCurrentPage() === 'home') link.classList.add('active');
-  link.href = `${import.meta.env.BASE_URL}index.html`;
-  link.textContent = 'My Decks';
-  return link;
-}
-
 let authRenderToken = 0;
 
 /**
- * Render (or remove) the sign-in/account control and the "My Decks" link
- * (shown only when signed in), inside the nav bar. Both depend on the same
- * async getCurrentUser() call, fetched once here.
+ * Render (or remove) the sign-in/account control inside the nav bar. The
+ * "My Decks" nav link (always present, see NAV_LINKS) covers going back to
+ * index.html regardless of auth state — this only renders the
+ * sign-in/sign-out control on the right.
  */
 export async function renderAuthControl(): Promise<void> {
   if (typeof document === 'undefined') return;
@@ -137,9 +130,6 @@ export async function renderAuthControl(): Promise<void> {
   const enabled = isBackendEnabled();
   const user = enabled ? await getCurrentUser() : null;
   if (token !== authRenderToken) return;
-
-  nav.querySelector('.nav-link-home')?.remove();
-  if (user) nav.insertBefore(buildMyDecksLink(), nav.firstChild);
 
   nav.querySelectorAll('.nav-auth').forEach((el) => el.remove());
   if (enabled) nav.appendChild(buildAuthControl(user));

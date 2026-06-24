@@ -62,6 +62,33 @@ export function resolveCardArtUrl(artUrl: string | undefined | null): string | u
 }
 
 /**
+ * One card face (front or back): an `<img>` plus a placeholder div that's
+ * normally hidden. If `art` is missing the placeholder shows immediately;
+ * if `art` is set but the request fails (e.g. a pre-release set whose
+ * images aren't live on the CDN yet), `onerror` swaps to the placeholder
+ * at runtime so a broken image never falls outside the card's rounded
+ * frame.
+ */
+function cardFaceHTML(art: string | undefined, alt: string, cardId: string, faceClass: 'card-front' | 'card-back'): string {
+  return `
+                    <div class="${faceClass}">
+                        ${art ? `<img src="${art}" alt="${alt}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">` : ''}
+                        <div class="card-placeholder"${art ? ' style="display:none"' : ''}>${cardId}</div>
+                    </div>`;
+}
+
+/** Shared front/back image markup used by every card-rendering function, so a CDN image gap looks the same everywhere. */
+function cardImagesHTML(cardId: string, name: string, frontArt: string | undefined, backArt: string | undefined, isDoubleSided: boolean): string {
+  return `
+            <div class="card-images">
+                <div class="card-images-inner">
+                    ${cardFaceHTML(frontArt, `${name} (Front)`, cardId, 'card-front')}
+                    ${isDoubleSided && backArt ? cardFaceHTML(backArt, `${name} (Back)`, cardId, 'card-back') : ''}
+                </div>
+            </div>`;
+}
+
+/**
  * Build a canonical "SET_NNN" card ID from a set code and a raw `Number`
  * field value, zero-padding the numeric portion to 3 digits (e.g. "82" -> "082").
  * Used to assign stable IDs to cards loaded for the deck builder's card pool.
@@ -231,20 +258,7 @@ export function buildCardHTML(
                     `).join('')}
                 </div>
             ` : ''}
-            <div class="card-images">
-                <div class="card-images-inner">
-                    <div class="card-front">
-                        ${frontArt
-                          ? `<img src="${frontArt}" alt="${cardData.Name ?? cardId} (Front)">`
-                          : `<div class="card-placeholder">${cardId}</div>`}
-                    </div>
-                    ${isDoubleSided && backArt ? `
-                        <div class="card-back">
-                            <img src="${backArt}" alt="${cardData.Name ?? cardId} (Back)">
-                        </div>
-                    ` : ''}
-                </div>
-            </div>
+            ${cardImagesHTML(cardId, String(cardData.Name ?? cardId), frontArt, backArt, isDoubleSided)}
             <div class="card-content">
                 ${stats.length ? `
                     <div class="card-stats">
@@ -336,20 +350,7 @@ export function buildCardDetailHTML(cardId: string, cardData: CardData = {}): st
   return `
         <div class="card-detail">
             <div class="card-detail-image">
-                <div class="card-images">
-                    <div class="card-images-inner">
-                        <div class="card-front">
-                            ${frontArt
-                              ? `<img src="${frontArt}" alt="${name} (Front)">`
-                              : `<div class="card-placeholder">${cardId}</div>`}
-                        </div>
-                        ${isDoubleSided && backArt ? `
-                            <div class="card-back">
-                                <img src="${backArt}" alt="${name} (Back)">
-                            </div>
-                        ` : ''}
-                    </div>
-                </div>
+                ${cardImagesHTML(cardId, String(name), frontArt, backArt, isDoubleSided)}
                 ${isDoubleSided && backArt
                   ? '<button type="button" class="flip-button" onclick="this.closest(\'.card-detail\').classList.toggle(\'flipped\')">Flip Card</button>'
                   : ''}
@@ -513,20 +514,7 @@ export function buildComparisonCardHTML(
                     `).join('')}
                 </div>
             ` : ''}
-            <div class="card-images">
-                <div class="card-images-inner">
-                    <div class="card-front">
-                        ${frontArt
-                          ? `<img src="${frontArt}" alt="${cardData.Name ?? cardId} (Front)">`
-                          : `<div class="card-placeholder">${cardId}</div>`}
-                    </div>
-                    ${isDoubleSided && backArt ? `
-                        <div class="card-back">
-                            <img src="${backArt}" alt="${cardData.Name ?? cardId} (Back)">
-                        </div>
-                    ` : ''}
-                </div>
-            </div>
+            ${cardImagesHTML(cardId, String(cardData.Name ?? cardId), frontArt, backArt, isDoubleSided)}
             <div class="card-content">
                 ${stats.length ? `
                     <div class="card-stats">

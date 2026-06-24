@@ -39,7 +39,9 @@
 - Playwright already starts/reuses the local Python server via `playwright.config.ts`; visual baselines live in `e2e/visual.spec.ts-snapshots/`.
 
 ## Browser verification
+- At the start of every session on this project, proactively start the local dev server (`npm run dev`, if not already running) and connect to the user's Chrome via the `/chrome-connect` skill — don't wait to be asked.
 - For live UI verification (e.g. checking a deployed page or swudb.com), use the `/chrome-connect` skill to attach to the user's already-open Chrome via the `chrome-devtools` MCP server (remote debugging on `127.0.0.1:9222`). This preserves the user's logins — don't launch a fresh/isolated browser instance.
+- The local dev server (`npm run dev`, `localhost:5173`) must stay running for the rest of the session once started — the user keeps it open in a browser tab and clicks around between turns. Never `pkill`/stop it as a "cleanup" step after verification. If source files change, Vite's HMR updates the running server automatically — there's no need to restart it; just make sure it's still up and reflects the latest code as soon as possible after each edit.
 
 ## Deployment
 - Pushes to `main` trigger the "Deploy to GitHub Pages" GitHub Actions workflow (test → build → deploy). After pushing, use `gh run list --branch main --limit 3` (and `gh run watch <id>` if still in progress) to confirm the workflow completes successfully.

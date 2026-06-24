@@ -12,49 +12,61 @@ beforeEach(() => {
 // ─── buildNavElement ───────────────────────────────────────────────────────────
 
 describe('buildNavElement', () => {
-  it('renders exactly 4 links', () => {
+  it('renders exactly 5 links', () => {
     const nav = buildNavElement('viewer');
-    expect(nav.querySelectorAll('a')).toHaveLength(4);
+    expect(nav.querySelectorAll('a')).toHaveLength(5);
   });
 
   it('has correct href attributes', () => {
     const nav = buildNavElement('viewer');
     const hrefs = Array.from(nav.querySelectorAll('a')).map((a) => (a as HTMLAnchorElement).getAttribute('href'));
     // In Vitest import.meta.env.BASE_URL defaults to '/'
-    expect(hrefs).toEqual(['/viewer.html', '/compare.html', '/builder.html', '/settings.html']);
+    expect(hrefs).toEqual(['/index.html', '/builder.html', '/viewer.html', '/compare.html', '/settings.html']);
   });
 
-  it('has correct link labels', () => {
+  it('has correct link labels, with Deck Builder second', () => {
     const nav = buildNavElement('viewer');
     const labels = Array.from(nav.querySelectorAll('a')).map((a) => a.textContent);
-    expect(labels).toEqual(['Deck Viewer', 'Deck Comparison', 'Deck Builder', 'Settings']);
+    expect(labels).toEqual(['My Decks', 'Deck Builder', 'Deck Viewer', 'Deck Comparison', 'Settings']);
   });
 
-  it('adds active class to the viewer link when page is viewer', () => {
-    const nav = buildNavElement('viewer');
-    const links = nav.querySelectorAll('a');
-    expect(links[0].className).toBe('active');
-    expect(links[1].className).toBe('');
-    expect(links[2].className).toBe('');
-    expect(links[3].className).toBe('');
-  });
-
-  it('adds active class to the compare link when page is compare', () => {
-    const nav = buildNavElement('compare');
-    const links = nav.querySelectorAll('a');
-    expect(links[0].className).toBe('');
-    expect(links[1].className).toBe('active');
-    expect(links[2].className).toBe('');
-    expect(links[3].className).toBe('');
+  it('always includes a "My Decks" link back to index.html, regardless of which page is active', () => {
+    for (const page of ['home', 'viewer', 'compare', 'builder', 'settings'] as const) {
+      const nav = buildNavElement(page);
+      const homeLink = nav.querySelectorAll('a')[0];
+      expect(homeLink.textContent).toBe('My Decks');
+      expect(homeLink.getAttribute('href')).toBe('/index.html');
+    }
   });
 
   it('adds active class to the builder link when page is builder', () => {
     const nav = buildNavElement('builder');
     const links = nav.querySelectorAll('a');
     expect(links[0].className).toBe('');
+    expect(links[1].className).toBe('active');
+    expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('');
+    expect(links[4].className).toBe('');
+  });
+
+  it('adds active class to the viewer link when page is viewer', () => {
+    const nav = buildNavElement('viewer');
+    const links = nav.querySelectorAll('a');
+    expect(links[0].className).toBe('');
     expect(links[1].className).toBe('');
     expect(links[2].className).toBe('active');
     expect(links[3].className).toBe('');
+    expect(links[4].className).toBe('');
+  });
+
+  it('adds active class to the compare link when page is compare', () => {
+    const nav = buildNavElement('compare');
+    const links = nav.querySelectorAll('a');
+    expect(links[0].className).toBe('');
+    expect(links[1].className).toBe('');
+    expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('active');
+    expect(links[4].className).toBe('');
   });
 
   it('adds active class to the settings link when page is settings', () => {
@@ -63,7 +75,18 @@ describe('buildNavElement', () => {
     expect(links[0].className).toBe('');
     expect(links[1].className).toBe('');
     expect(links[2].className).toBe('');
-    expect(links[3].className).toBe('active');
+    expect(links[3].className).toBe('');
+    expect(links[4].className).toBe('active');
+  });
+
+  it('adds active class to the home link when page is home', () => {
+    const nav = buildNavElement('home');
+    const links = nav.querySelectorAll('a');
+    expect(links[0].className).toBe('active');
+    expect(links[1].className).toBe('');
+    expect(links[2].className).toBe('');
+    expect(links[3].className).toBe('');
+    expect(links[4].className).toBe('');
   });
 
   it('returns a div with class navigation', () => {
@@ -193,45 +216,12 @@ describe('renderAuthControl', () => {
     expect(document.querySelectorAll('.nav-auth')).toHaveLength(1);
   });
 
-  it('inserts a "My Decks" link as the first child when signed in', async () => {
-    renderNavigation('viewer');
-    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
-    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue({ email: 'a@test.com' } as any);
-    await renderAuthControl();
-    const homeLink = document.querySelector('.nav-link-home') as HTMLAnchorElement;
-    expect(homeLink).not.toBeNull();
-    expect(homeLink.textContent).toBe('My Decks');
-    expect(homeLink.getAttribute('href')).toBe('/index.html');
-    expect(document.querySelector('.navigation')?.firstElementChild).toBe(homeLink);
-  });
-
-  it('does not show "My Decks" when signed out', async () => {
-    renderNavigation('viewer');
-    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
-    vi.spyOn(authLib, 'getCurrentUser').mockResolvedValue(null);
-    await renderAuthControl();
-    expect(document.querySelector('.nav-link-home')).toBeNull();
-  });
-
-  it('removes "My Decks" when transitioning from signed-in to signed-out', async () => {
-    renderNavigation('viewer');
-    vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(true);
-    const getCurrentUser = vi.spyOn(authLib, 'getCurrentUser');
-
-    getCurrentUser.mockResolvedValue({ email: 'a@test.com' } as any);
-    await renderAuthControl();
-    expect(document.querySelector('.nav-link-home')).not.toBeNull();
-
-    getCurrentUser.mockResolvedValue(null);
-    await renderAuthControl();
-    expect(document.querySelector('.nav-link-home')).toBeNull();
-  });
-
-  it('does not show "My Decks" when the backend is disabled, even if stale', async () => {
+  it('keeps the "My Decks" link present and unaffected, whether the backend is enabled or not', async () => {
     renderNavigation('viewer');
     vi.spyOn(supabaseLib, 'isBackendEnabled').mockReturnValue(false);
     await renderAuthControl();
-    expect(document.querySelector('.nav-link-home')).toBeNull();
+    const links = Array.from(document.querySelectorAll('.navigation a')).map((a) => a.textContent);
+    expect(links).toContain('My Decks');
   });
 });
 

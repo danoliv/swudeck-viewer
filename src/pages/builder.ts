@@ -238,7 +238,7 @@ let browserSortDir: SortDirection = 'asc';
 let browserPage = 1;
 
 /** Which multi-select filter dropdown (if any) is currently open. */
-let openFilterDropdown: 'keywords' | 'traits' | null = null;
+let openFilterDropdown: 'sets' | 'keywords' | 'traits' | null = null;
 
 let deckSort: CardSortKey = 'cost';
 let deckSortDir: SortDirection = 'asc';
@@ -319,6 +319,16 @@ function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
     if (Array.isArray(arr)) for (const v of arr) values.add(v);
   }
   return Array.from(values).sort();
+}
+
+/**
+ * Sets present in the current format-legal pool (`allCards`), in canonical
+ * set order. Premier and Eternal have different legal sets (see
+ * `filterLegalCards`), so this naturally differs by format.
+ */
+function availableSets(): string[] {
+  const present = new Set(allCards.map((c) => String(c.Set ?? '')));
+  return setOrder.filter((s) => present.has(s));
 }
 
 // ─── Leader stats ─────────────────────────────────────────────────────────────
@@ -725,7 +735,7 @@ function renderPagination(current: number, total: number): string {
 }
 
 /** A "Keywords"/"Traits"-style filter: a toggle button showing the selection count, plus a checkbox-list panel for selecting multiple values. */
-function renderFilterDropdown(key: 'keywords' | 'traits', label: string, options: string[]): string {
+function renderFilterDropdown(key: 'sets' | 'keywords' | 'traits', label: string, options: string[]): string {
   const selected = filter[key] ?? [];
   const open = openFilterDropdown === key;
   const buttonLabel = selected.length ? `${label} (${selected.length})` : label;
@@ -781,6 +791,7 @@ function renderFilters(): string {
   }
   html += '</div>';
 
+  html += renderFilterDropdown('sets', 'Sets', availableSets());
   html += renderFilterDropdown('keywords', 'Keywords', keywords);
   html += renderFilterDropdown('traits', 'Traits', traits);
 
@@ -941,7 +952,7 @@ function rerenderFiltersPreservingScroll(): void {
 
 // ─── Filter state ─────────────────────────────────────────────────────────────
 
-function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'keywords' | 'traits', value: string): CardFilter {
+function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'sets' | 'keywords' | 'traits', value: string): CardFilter {
   const current = target[key] ?? [];
   const next = current.includes(value) ? current.filter((v) => v !== value) : [...current, value];
   return { ...target, [key]: next.length ? next : undefined };
@@ -1135,7 +1146,7 @@ document.addEventListener('click', (e) => {
     }
 
     case 'toggle-filter-dropdown': {
-      const key = actionEl.dataset['dropdown'] as 'keywords' | 'traits' | undefined;
+      const key = actionEl.dataset['dropdown'] as 'sets' | 'keywords' | 'traits' | undefined;
       if (!key) return;
       openFilterDropdown = openFilterDropdown === key ? null : key;
       const filtersEl = el('browserFilters');
@@ -1144,7 +1155,7 @@ document.addEventListener('click', (e) => {
     }
 
     case 'clear-filter-dropdown': {
-      const key = actionEl.dataset['filter'] as 'keywords' | 'traits' | undefined;
+      const key = actionEl.dataset['filter'] as 'sets' | 'keywords' | 'traits' | undefined;
       if (!key) return;
       filter = { ...filter, [key]: undefined };
       browserPage = 1;
@@ -1264,7 +1275,7 @@ document.addEventListener('change', (e) => {
 
   if (action !== 'filter-checkbox') return;
 
-  const filterKey = target.dataset['filter'] as 'keywords' | 'traits' | undefined;
+  const filterKey = target.dataset['filter'] as 'sets' | 'keywords' | 'traits' | undefined;
   const value = target.dataset['value'];
   if (!filterKey || !value) return;
 
