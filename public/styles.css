@@ -884,6 +884,12 @@ html[data-page="builder"] body {
     margin: 10px 0;
     color: var(--text-muted);
 }
+.format-row-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
 
 /* Import panel */
 .import-panel {

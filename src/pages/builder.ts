@@ -27,6 +27,7 @@ import {
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
+import { exportToMeleeText, exportToSwudbJson } from '../lib/export';
 import {
   filterCards,
   getLeaders,
@@ -265,6 +266,8 @@ let browserPage = 1;
 
 /** Which multi-select filter dropdown (if any) is currently open. */
 let openFilterDropdown: 'sets' | 'keywords' | 'traits' | null = null;
+
+let exportMenuOpen = false;
 
 let deckSort: CardSortKey = 'cost';
 let deckSortDir: SortDirection = 'asc';
@@ -523,16 +526,31 @@ function renderLeft(): string {
     </div>
     <div class="deck-total-row">
       <div class="deck-total">Total: ${total} Cards</div>
-      <button type="button" data-action="new-deck" class="filter-button">New Deck</button>
     </div>
   `;
 
   html += renderSaveControls();
 
+  html += '<div class="format-row">';
   if (deck.metadata?.format) {
-    html += `<div class="format-row">Format: ${FORMAT_INFO[deck.metadata.format].label}
-      <button type="button" data-action="change-format">Change format</button></div>`;
+    html += `Format: ${FORMAT_INFO[deck.metadata.format].label}
+      <button type="button" data-action="change-format">Change format</button>`;
   }
+  html += `
+    <div class="format-row-actions">
+      <div class="filter-dropdown export-dropdown">
+        <button type="button" data-action="toggle-export-menu" class="filter-button">Export &#9662;</button>
+        ${exportMenuOpen ? `
+          <div class="filter-dropdown-panel">
+            <button type="button" data-action="export-deck" data-target="swudb">Copy for SWUDB.com</button>
+            <button type="button" data-action="export-deck" data-target="melee">Copy for Melee.gg</button>
+          </div>
+        ` : ''}
+      </div>
+      <button type="button" data-action="new-deck" class="filter-button">New Deck</button>
+    </div>
+  `;
+  html += '</div>';
 
   if (deck.leader || deck.base) {
     html += '<div class="deck-header">';
@@ -1009,6 +1027,12 @@ document.addEventListener('click', (e) => {
     if (filtersEl) filtersEl.innerHTML = renderFilters();
   }
 
+  if (exportMenuOpen && action !== 'toggle-export-menu' && action !== 'export-deck' && !target.closest('.export-dropdown')) {
+    exportMenuOpen = false;
+    const left = el('builderLeft');
+    if (left) left.innerHTML = renderLeft();
+  }
+
   if (!actionEl) return;
 
   const cardId = actionEl.dataset['cardId'];
@@ -1060,6 +1084,26 @@ document.addEventListener('click', (e) => {
       if (!window.confirm('Start a new deck? This will clear your current deck.')) return;
       applyFormatFilter(undefined);
       updateDeck(createEmptyDeck());
+      return;
+    }
+
+    case 'toggle-export-menu': {
+      exportMenuOpen = !exportMenuOpen;
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
+      return;
+    }
+
+    case 'export-deck': {
+      const target = actionEl.dataset['target'] as 'swudb' | 'melee' | undefined;
+      if (!target) return;
+      const text = target === 'swudb' ? exportToSwudbJson(deck) : exportToMeleeText(deck, allCards);
+      void navigator.clipboard.writeText(text);
+      exportMenuOpen = false;
+      saveError = null;
+      saveStatus = target === 'swudb' ? 'Copied SWUDB.com deck JSON to clipboard.' : 'Copied Melee.gg decklist to clipboard.';
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
       return;
     }
 
