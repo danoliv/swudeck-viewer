@@ -17,6 +17,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1209133362",
       "Cost": "1",
       "Power": "1",
       "HP": "2",
@@ -29,7 +30,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.49",
+      "MarketPrice": "0.43",
       "FoilPrice": "2.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/240.png",
       "tcgplayerId": "565465",
@@ -52,6 +53,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "2260777958",
       "Cost": "3",
       "Power": "3",
       "HP": "3",
@@ -123,6 +125,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7252148824",
       "Cost": "3",
       "Power": "3",
       "HP": "3",
@@ -183,6 +186,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "7895170711",
       "Cost": "0",
       "FrontText": "If an enemy unit was defeated this phase, play an upgrade from your hand or from any player's discard pile, ignoring its aspect penalty.",
       "DoubleSided": false,
@@ -190,12 +194,12 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/040.png",
       "tcgplayerId": "588480",
-      "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowFoilPrice": "0.18",
+      "LowPrice": "0.11"
     },
     {
       "Set": "TWI",
@@ -221,7 +225,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/313.png",
       "tcgplayerId": "589511",
       "LowFoilPrice": "2.35",
-      "LowPrice": "0.97"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -239,6 +243,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5350889336",
       "Cost": "8",
       "Power": "6",
       "HP": "9",
@@ -251,11 +256,11 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/247.png",
       "tcgplayerId": "588055",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.09",
       "LowPrice": "0.02"
     },
     {
@@ -286,7 +291,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.63",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/508.png",
       "tcgplayerId": "589707",
@@ -311,6 +316,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6190335038",
       "Cost": "5",
       "Power": "6",
       "HP": "5",
@@ -323,11 +329,11 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "1.25",
+      "MarketPrice": "1.09",
       "FoilPrice": "3.36",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/096.png",
       "tcgplayerId": "583782",
-      "LowFoilPrice": "0.91",
+      "LowFoilPrice": "1.22",
       "LowPrice": "0.80"
     },
     {
@@ -360,12 +366,12 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.02",
+      "MarketPrice": "2.99",
       "FoilPrice": "13.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/368.png",
       "tcgplayerId": "589566",
       "LowFoilPrice": "7.40",
-      "LowPrice": "2.49"
+      "LowPrice": "2.40"
     },
     {
       "Set": "TWI",
@@ -384,6 +390,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7013591351",
       "Cost": "7",
       "Power": "5",
       "HP": "5",
@@ -436,7 +443,7 @@
       "FoilPrice": "0.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/358.png",
       "tcgplayerId": "589556",
-      "LowFoilPrice": "0.50",
+      "LowFoilPrice": "0.48",
       "LowPrice": "0.10"
     },
     {
@@ -456,6 +463,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0268657344",
       "Cost": "3",
       "Power": "2",
       "HP": "5",
@@ -468,7 +476,7 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/092.png",
       "tcgplayerId": "583779",
@@ -504,7 +512,7 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.65",
+      "MarketPrice": "1.62",
       "FoilPrice": "2.84",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/364.png",
       "tcgplayerId": "589562",
@@ -528,6 +536,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8640210306",
       "Cost": "3",
       "Power": "4",
       "HP": "3",
@@ -540,7 +549,7 @@
       ],
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/093.png",
       "tcgplayerId": "588421",
@@ -576,7 +585,7 @@
       ],
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/365.png",
       "tcgplayerId": "589563",
@@ -595,6 +604,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2535372432",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -657,6 +667,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2155351882",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -676,7 +687,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/011.png",
       "tcgplayerId": "565544",
-      "LowPrice": "0.34"
+      "LowPrice": "0.35"
     },
     {
       "Set": "TWI",
@@ -696,6 +707,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7144880397",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -708,12 +720,12 @@
       ],
       "Artist": "Mona Finden",
       "VariantType": "Normal",
-      "MarketPrice": "1.20",
+      "MarketPrice": "1.18",
       "FoilPrice": "2.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/194.png",
       "tcgplayerId": "588043",
       "LowFoilPrice": "1.50",
-      "LowPrice": "0.90"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -752,7 +764,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/268.png",
       "tcgplayerId": "589729",
-      "LowPrice": "66.99"
+      "LowPrice": "67.99"
     },
     {
       "Set": "TWI",
@@ -788,7 +800,7 @@
       "FoilPrice": "11.68",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/459.png",
       "tcgplayerId": "589658",
-      "LowFoilPrice": "10.85",
+      "LowFoilPrice": "10.30",
       "LowPrice": "2.39"
     },
     {
@@ -804,6 +816,7 @@
         "WEAPON",
         "LIGHTSABER"
       ],
+      "cid": "0741296536",
       "Cost": "1",
       "Power": "2",
       "HP": "0",
@@ -813,7 +826,7 @@
       "Unique": true,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/248.png",
       "tcgplayerId": "586676",
@@ -831,6 +844,7 @@
       "Traits": [
         "GAMBIT"
       ],
+      "cid": "7510418786",
       "Cost": "5",
       "FrontText": "Search the top 10 cards of your deck for 2 Heroism non-unit cards and discard them. (Put the other cards on the bottom of your deck in a random order.) \nFor this phase, you may play the discarded cards, and they each cost 2 less.",
       "DoubleSided": false,
@@ -864,11 +878,11 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.54",
+      "MarketPrice": "0.55",
       "FoilPrice": "1.86",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/466.png",
       "tcgplayerId": "589665",
-      "LowFoilPrice": "0.85",
+      "LowFoilPrice": "0.78",
       "LowPrice": "0.24"
     },
     {
@@ -889,6 +903,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8777351722",
       "Cost": "6",
       "Power": "5",
       "HP": "7",
@@ -928,6 +943,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2282198576",
       "Cost": "5",
       "Power": "6",
       "HP": "6",
@@ -940,7 +956,7 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "0.62",
+      "MarketPrice": "0.57",
       "FoilPrice": "3.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/147.png",
       "tcgplayerId": "565533",
@@ -983,7 +999,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/269.png",
       "tcgplayerId": "589730",
-      "LowPrice": "146.47"
+      "LowPrice": "146.49"
     },
     {
       "Set": "TWI",
@@ -1043,6 +1059,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4551109857",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -1057,7 +1074,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/142.png",
       "tcgplayerId": "586739",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.07"
     },
     {
       "Set": "TWI",
@@ -1092,7 +1109,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/410.png",
       "tcgplayerId": "589608",
       "LowFoilPrice": "1.50",
-      "LowPrice": "1.00"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -1110,6 +1127,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7884088000",
       "Cost": "6",
       "Power": "5",
       "HP": "5",
@@ -1182,6 +1200,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8929774056",
       "Cost": "4",
       "Power": "3",
       "HP": "4",
@@ -1194,7 +1213,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/014.png",
       "tcgplayerId": "587992",
@@ -1218,6 +1237,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3556557330",
       "Cost": "4",
       "Power": "2",
       "HP": "4",
@@ -1267,11 +1287,11 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Showcase",
-      "MarketPrice": "58.45",
+      "MarketPrice": "58.28",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/271.png",
       "tcgplayerId": "589732",
-      "LowPrice": "55.00"
+      "LowPrice": "50.00"
     },
     {
       "Set": "TWI",
@@ -1307,7 +1327,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/289.png",
       "tcgplayerId": "589488",
-      "LowPrice": "0.15"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -1343,7 +1363,7 @@
       "FoilPrice": "1.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/402.png",
       "tcgplayerId": "589600",
-      "LowFoilPrice": "0.94",
+      "LowFoilPrice": "0.99",
       "LowPrice": "0.22"
     },
     {
@@ -1362,6 +1382,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3693364726",
       "Cost": "7",
       "Power": "7",
       "HP": "6",
@@ -1374,7 +1395,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/166.png",
       "tcgplayerId": "588442",
@@ -1409,7 +1430,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.42",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/433.png",
       "tcgplayerId": "589632",
@@ -1433,6 +1454,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1313247160",
       "Cost": "3",
       "Power": "5",
       "HP": "2",
@@ -1498,6 +1520,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6257858302",
       "Cost": "2",
       "Power": "3",
       "HP": "1",
@@ -1514,7 +1537,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/207.png",
       "tcgplayerId": "586726",
-      "LowFoilPrice": "0.07",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -1545,11 +1568,11 @@
       ],
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/472.png",
       "tcgplayerId": "589671",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.11"
     },
     {
@@ -1568,6 +1591,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6330903136",
       "Cost": "5",
       "Power": "5",
       "HP": "3",
@@ -1581,7 +1605,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/113.png",
       "tcgplayerId": "588428",
@@ -1640,6 +1664,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5243634234",
       "Cost": "8",
       "Power": "5",
       "HP": "6",
@@ -1714,6 +1739,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7924172103",
       "Cost": "1",
       "Power": "1",
       "HP": "1",
@@ -1728,7 +1754,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/042.png",
       "tcgplayerId": "588400",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.03"
+      "LowPrice": "0.08"
     },
     {
       "Set": "TWI",
@@ -1762,7 +1788,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/315.png",
       "tcgplayerId": "589513",
       "LowFoilPrice": "1.42",
-      "LowPrice": "0.99"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -1781,6 +1807,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6969421569",
       "Cost": "3",
       "Power": "2",
       "HP": "1",
@@ -1846,6 +1873,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5584601885",
       "Cost": "3",
       "Power": "1",
       "HP": "1",
@@ -1855,7 +1883,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.86",
+      "MarketPrice": "0.81",
       "FoilPrice": "0.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/229.png",
       "tcgplayerId": "565485",
@@ -1878,6 +1906,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1083333786",
       "Cost": "9",
       "Power": "6",
       "HP": "5",
@@ -1890,12 +1919,12 @@
       ],
       "Artist": "Facundo Moyano",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/235.png",
       "tcgplayerId": "585104",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.02"
+      "LowPrice": "0.03"
     },
     {
       "Set": "TWI",
@@ -1925,11 +1954,11 @@
       ],
       "Artist": "Facundo Moyano",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.90",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/498.png",
       "tcgplayerId": "589697",
-      "LowFoilPrice": "0.68",
+      "LowFoilPrice": "0.66",
       "LowPrice": "0.24"
     },
     {
@@ -1943,6 +1972,7 @@
       "Traits": [
         "FRINGE"
       ],
+      "cid": "2103133661",
       "Cost": "3",
       "FrontText": "Deal 2 damage to each ground unit.",
       "DoubleSided": false,
@@ -1950,12 +1980,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/173.png",
       "tcgplayerId": "583815",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -1999,6 +2029,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8139901441",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -2012,12 +2043,12 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/130.png",
       "tcgplayerId": "588022",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.04"
+      "LowPrice": "0.09"
     },
     {
       "Set": "TWI",
@@ -2049,7 +2080,7 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.54",
+      "MarketPrice": "1.53",
       "FoilPrice": "2.57",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/398.png",
       "tcgplayerId": "589596",
@@ -2072,6 +2103,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3600744650",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -2138,6 +2170,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "8022262805",
       "Cost": "3",
       "FrontText": "Choose up to 3 units that share the same Trait. Each of those units gets +2/+0 for this phase.",
       "DoubleSided": false,
@@ -2171,12 +2204,12 @@
       "Unique": false,
       "Artist": "Maxine Vee",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/420.png",
       "tcgplayerId": "589618",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.14"
+      "LowPrice": "0.15"
     },
     {
       "Set": "TWI",
@@ -2189,6 +2222,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4602353389",
       "Cost": "4",
       "Power": "2",
       "HP": "4",
@@ -2198,12 +2232,12 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/255.png",
       "tcgplayerId": "588059",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -2225,11 +2259,11 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.73",
+      "MarketPrice": "0.71",
       "FoilPrice": "1.74",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/515.png",
       "tcgplayerId": "589714",
-      "LowFoilPrice": "0.53",
+      "LowFoilPrice": "0.60",
       "LowPrice": "0.49"
     },
     {
@@ -2243,6 +2277,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4910017138",
       "Cost": "2",
       "FrontText": "Attack with a unit. It gets +2/+0 and gains Saboteur for this attack. (When this unit attacks, ignore Sentinel and defeat the defender's Shields.)",
       "DoubleSided": false,
@@ -2257,7 +2292,7 @@
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/224.png",
       "tcgplayerId": "588464",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.06",
       "LowPrice": "0.02"
     },
     {
@@ -2305,6 +2340,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0693815329",
       "Cost": "7",
       "Power": "7",
       "HP": "7",
@@ -2314,12 +2350,12 @@
       "Unique": true,
       "Artist": "James Daly",
       "VariantType": "Normal",
-      "MarketPrice": "1.96",
+      "MarketPrice": "1.92",
       "FoilPrice": "13.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/187.png",
       "tcgplayerId": "588451",
-      "LowFoilPrice": "5.34",
-      "LowPrice": "1.44"
+      "LowFoilPrice": "5.13",
+      "LowPrice": "1.43"
     },
     {
       "Set": "TWI",
@@ -2347,12 +2383,12 @@
       "Unique": true,
       "Artist": "James Daly",
       "VariantType": "Hyperspace",
-      "MarketPrice": "8.46",
+      "MarketPrice": "8.10",
       "FoilPrice": "25.06",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/452.png",
       "tcgplayerId": "589651",
-      "LowFoilPrice": "13.95",
-      "LowPrice": "3.50"
+      "LowFoilPrice": "13.28",
+      "LowPrice": "4.00"
     },
     {
       "Set": "TWI",
@@ -2370,6 +2406,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1039828081",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -2387,7 +2424,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/033.png",
       "tcgplayerId": "578830",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.06"
     },
     {
       "Set": "TWI",
@@ -2417,12 +2454,12 @@
       ],
       "Artist": "Alex Chen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.70",
+      "MarketPrice": "0.68",
       "FoilPrice": "1.72",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/306.png",
       "tcgplayerId": "589504",
       "LowFoilPrice": "1.14",
-      "LowPrice": "0.35"
+      "LowPrice": "0.42"
     },
     {
       "Set": "TWI",
@@ -2442,6 +2479,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7734824762",
       "Cost": "5",
       "Power": "2",
       "HP": "6",
@@ -2458,7 +2496,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/007.png",
       "tcgplayerId": "588394",
-      "LowPrice": "0.03"
+      "LowPrice": "0.07"
     },
     {
       "Set": "TWI",
@@ -2478,6 +2516,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0511508627",
       "Cost": "6",
       "Power": "4",
       "HP": "5",
@@ -2487,7 +2526,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.53",
       "FoilPrice": "2.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/097.png",
       "tcgplayerId": "565540",
@@ -2523,11 +2562,11 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Showcase",
-      "MarketPrice": "123.46",
+      "MarketPrice": "123.59",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/264.png",
       "tcgplayerId": "589725",
-      "LowPrice": "118.00"
+      "LowPrice": "117.60"
     },
     {
       "Set": "TWI",
@@ -2583,6 +2622,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3033790509",
       "Cost": "3",
       "Power": "2",
       "HP": "4",
@@ -2636,7 +2676,7 @@
       "FoilPrice": "0.90",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/319.png",
       "tcgplayerId": "589517",
-      "LowFoilPrice": "0.79",
+      "LowFoilPrice": "0.78",
       "LowPrice": "0.15"
     },
     {
@@ -2650,6 +2690,7 @@
       "Traits": [
         "DISASTER"
       ],
+      "cid": "5013139687",
       "Cost": "6",
       "FrontText": "Choose 2 enemy units in the same arena. Each of those units deals damage equal to its power to the other.",
       "DoubleSided": false,
@@ -2657,7 +2698,7 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/176.png",
       "tcgplayerId": "588448",
@@ -2706,6 +2747,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0038286155",
       "Cost": "4",
       "Power": "2",
       "HP": "6",
@@ -2715,12 +2757,12 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "1.48",
+      "MarketPrice": "1.42",
       "FoilPrice": "3.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/203.png",
       "tcgplayerId": "585102",
       "LowFoilPrice": "1.78",
-      "LowPrice": "0.50"
+      "LowPrice": "0.59"
     },
     {
       "Set": "TWI",
@@ -2748,7 +2790,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.42",
+      "MarketPrice": "5.28",
       "FoilPrice": "7.80",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/468.png",
       "tcgplayerId": "589667",
@@ -2776,6 +2818,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0026166404",
       "Cost": "0",
       "Power": "0",
       "HP": "0",
@@ -2787,7 +2830,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/017.png",
       "tcgplayerId": "588396",
@@ -2826,11 +2869,11 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Showcase",
-      "MarketPrice": "169.31",
+      "MarketPrice": "168.57",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/274.png",
       "tcgplayerId": "589735",
-      "LowPrice": "168.44"
+      "LowPrice": "168.67"
     },
     {
       "Set": "TWI",
@@ -2864,7 +2907,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.34",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/292.png",
       "tcgplayerId": "589490",
@@ -2882,6 +2925,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "9620454519",
       "Cost": "2",
       "FrontText": "Choose a non-leader unit that costs 3 or less. Return it and each enemy non-leader unit with the same name as it to their owners' hands.",
       "DoubleSided": false,
@@ -2915,7 +2959,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.53",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/464.png",
       "tcgplayerId": "589663",
@@ -2936,6 +2980,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0345124206",
       "Cost": "7",
       "Power": "0",
       "HP": "0",
@@ -2945,12 +2990,12 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "1.01",
+      "MarketPrice": "1.00",
       "FoilPrice": "1.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/116.png",
       "tcgplayerId": "588017",
       "LowFoilPrice": "0.90",
-      "LowPrice": "0.73"
+      "LowPrice": "0.72"
     },
     {
       "Set": "TWI",
@@ -2979,7 +3024,7 @@
       "FoilPrice": "4.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/386.png",
       "tcgplayerId": "589584",
-      "LowFoilPrice": "2.48",
+      "LowFoilPrice": "2.45",
       "LowPrice": "2.25"
     },
     {
@@ -2993,6 +3038,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "2007876522",
       "Cost": "2",
       "Power": "0",
       "HP": "0",
@@ -3059,6 +3105,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9017877021",
       "Cost": "5",
       "Power": "4",
       "HP": "4",
@@ -3072,7 +3119,7 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/114.png",
       "tcgplayerId": "586734",
@@ -3109,12 +3156,12 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.26",
+      "MarketPrice": "1.30",
       "FoilPrice": "2.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/384.png",
       "tcgplayerId": "589582",
       "LowFoilPrice": "1.00",
-      "LowPrice": "0.60"
+      "LowPrice": "1.19"
     },
     {
       "Set": "TWI",
@@ -3132,6 +3179,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5445166624",
       "Cost": "1",
       "Power": "2",
       "HP": "1",
@@ -3202,6 +3250,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9227411088",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -3214,7 +3263,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/158.png",
       "tcgplayerId": "583810",
@@ -3271,6 +3320,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5157630261",
       "Cost": "1",
       "Power": "0",
       "HP": "4",
@@ -3311,12 +3361,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/329.png",
       "tcgplayerId": "589527",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -3335,6 +3385,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "3680942691",
       "Cost": "2",
       "Power": "2",
       "HP": "1",
@@ -3402,6 +3453,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6277739341",
       "Cost": "3",
       "Power": "3",
       "HP": "3",
@@ -3464,6 +3516,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "4895747419",
       "Cost": "6",
       "FrontText": "Choose any number of friendly units. You may play a unit from your hand if its cost is less than or equal to the combined power of the chosen units for free. Then, defeat the chosen units.",
       "DoubleSided": false,
@@ -3471,12 +3524,12 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/089.png",
       "tcgplayerId": "588420",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.06"
     },
     {
       "Set": "TWI",
@@ -3497,7 +3550,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.41",
       "FoilPrice": "1.73",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/361.png",
       "tcgplayerId": "589559",
@@ -3516,6 +3569,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "6476609909",
       "Cost": "1",
       "FrontText": "Attack with a unit. It gets +1/+0 for this attack for each damage on the defender at the start of this attack.",
       "DoubleSided": false,
@@ -3523,12 +3577,12 @@
       "Unique": false,
       "Artist": "Benjamin Paulus",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/139.png",
       "tcgplayerId": "588434",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -3572,6 +3626,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7380773849",
       "Cost": "2",
       "Power": "3",
       "HP": "2",
@@ -3621,7 +3676,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/377.png",
       "tcgplayerId": "589575",
@@ -3646,6 +3701,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5683908835",
       "Cost": "7",
       "Power": "5",
       "HP": "9",
@@ -3685,6 +3741,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8655450523",
       "Cost": "8",
       "Power": "6",
       "HP": "3",
@@ -3742,7 +3799,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/262.png",
       "tcgplayerId": "589723",
-      "LowPrice": "81.91"
+      "LowPrice": "81.60"
     },
     {
       "Set": "TWI",
@@ -3777,7 +3834,7 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/280.png",
       "tcgplayerId": "589480",
@@ -3814,7 +3871,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.25",
+      "MarketPrice": "2.26",
       "FoilPrice": "6.74",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/406.png",
       "tcgplayerId": "589604",
@@ -3833,6 +3890,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "0328412140",
       "Cost": "2",
       "FrontText": "Exhaust a non-unique unit. \nCreate a Clone Trooper token.",
       "DoubleSided": false,
@@ -3840,7 +3898,7 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/200.png",
       "tcgplayerId": "576993",
@@ -3866,7 +3924,7 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/465.png",
       "tcgplayerId": "589664",
@@ -3884,6 +3942,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4362937866",
       "Cost": "1",
       "FrontText": "Deal 2 damage to a unit or base.",
       "DoubleSided": false,
@@ -3916,11 +3975,11 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.41",
+      "MarketPrice": "0.39",
       "FoilPrice": "1.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/437.png",
       "tcgplayerId": "589636",
-      "LowFoilPrice": "0.65",
+      "LowFoilPrice": "0.62",
       "LowPrice": "0.29"
     },
     {
@@ -3940,6 +3999,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8613680163",
       "Cost": "5",
       "Power": "5",
       "HP": "6",
@@ -3949,12 +4009,12 @@
       "Unique": true,
       "Artist": "Leonardo Giammichele",
       "VariantType": "Normal",
-      "MarketPrice": "2.67",
+      "MarketPrice": "2.36",
       "FoilPrice": "5.65",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/135.png",
       "tcgplayerId": "578835",
-      "LowFoilPrice": "2.39",
-      "LowPrice": "2.15"
+      "LowFoilPrice": "2.00",
+      "LowPrice": "1.92"
     },
     {
       "Set": "TWI",
@@ -3987,7 +4047,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/403.png",
       "tcgplayerId": "589601",
       "LowFoilPrice": "12.95",
-      "LowPrice": "5.39"
+      "LowPrice": "5.11"
     },
     {
       "Set": "TWI",
@@ -4004,6 +4064,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3420865217",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -4068,6 +4129,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "0968965258",
       "Cost": "5",
       "FrontText": "Defeat a unit that costs 3 or less. Create 2 Battle Droid tokens.",
       "DoubleSided": false,
@@ -4122,6 +4184,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8084593619",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -4193,6 +4256,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "2761325938",
       "Cost": "5",
       "Power": "3",
       "HP": "5",
@@ -4264,6 +4328,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0595607848",
       "Cost": "1",
       "Power": "0",
       "HP": "4",
@@ -4277,7 +4342,7 @@
       "FoilPrice": "0.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/157.png",
       "tcgplayerId": "588439",
-      "LowFoilPrice": "0.03",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -4322,6 +4387,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "3596811933",
       "Cost": "3",
       "FrontText": "Give each enemy unit -1/-1 for this phase.",
       "DoubleSided": false,
@@ -4329,7 +4395,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/075.png",
       "tcgplayerId": "588416",
@@ -4372,6 +4438,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "7547538214",
       "Cost": "1",
       "Power": "1",
       "HP": "1",
@@ -4381,7 +4448,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/218.png",
       "tcgplayerId": "586727",
@@ -4432,6 +4499,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6999668340",
       "Cost": "3",
       "Power": "4",
       "HP": "3",
@@ -4444,7 +4512,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/081.png",
       "tcgplayerId": "583778",
@@ -4498,6 +4566,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "6826668370",
       "Cost": "2",
       "FrontText": "Create 2 Battle Droid tokens.",
       "DoubleSided": false,
@@ -4535,7 +4604,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/499.png",
       "tcgplayerId": "589698",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.03"
+      "LowPrice": "0.09"
     },
     {
       "Set": "TWI",
@@ -4546,6 +4615,7 @@
       "Aspects": [
         "Command"
       ],
+      "cid": "8589863038",
       "HP": "24",
       "FrontText": "When you deploy a leader: Create 2 Battle Droid tokens.",
       "DoubleSided": false,
@@ -4558,7 +4628,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/022.png",
       "tcgplayerId": "583682",
       "LowFoilPrice": "0.12",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -4576,12 +4646,12 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.23",
+      "MarketPrice": "3.14",
       "FoilPrice": "8.41",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/297.png",
       "tcgplayerId": "589495",
-      "LowFoilPrice": "14.12",
-      "LowPrice": "2.58"
+      "LowFoilPrice": "14.52",
+      "LowPrice": "2.60"
     },
     {
       "Set": "TWI",
@@ -4600,6 +4670,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4050810437",
       "Cost": "1",
       "Power": "1",
       "HP": "2",
@@ -4671,6 +4742,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5084084838",
       "Cost": "6",
       "Power": "4",
       "HP": "5",
@@ -4730,6 +4802,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "5074877594",
       "Cost": "4",
       "FrontText": "Create 2 Clone Trooper tokens.",
       "DoubleSided": false,
@@ -4737,7 +4810,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.04",
       "FoilPrice": "0.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/251.png",
       "tcgplayerId": "586714",
@@ -4784,6 +4857,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7289764651",
       "Cost": "3",
       "Power": "1",
       "HP": "8",
@@ -4824,7 +4898,7 @@
       "Unique": false,
       "Artist": "Guillaume Ospital",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/327.png",
       "tcgplayerId": "589525",
@@ -4846,6 +4920,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6787851182",
       "Cost": "4",
       "Power": "3",
       "HP": "4",
@@ -4917,6 +4992,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2265363405",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -4934,7 +5010,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/090.png",
       "tcgplayerId": "576984",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -4966,11 +5042,11 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.61",
       "FoilPrice": "1.82",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/362.png",
       "tcgplayerId": "589560",
-      "LowFoilPrice": "1.00",
+      "LowFoilPrice": "0.96",
       "LowPrice": "0.48"
     },
     {
@@ -4990,6 +5066,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "0036920495",
       "Cost": "3",
       "Power": "3",
       "HP": "2",
@@ -5037,7 +5114,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/446.png",
       "tcgplayerId": "589645",
       "LowFoilPrice": "0.80",
-      "LowPrice": "0.35"
+      "LowPrice": "0.30"
     },
     {
       "Set": "TWI",
@@ -5050,6 +5127,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "4916334670",
       "Cost": "3",
       "FrontText": "Give each friendly unit +1/+1 for this phase.",
       "DoubleSided": false,
@@ -5082,7 +5160,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/394.png",
       "tcgplayerId": "589592",
@@ -5105,6 +5183,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8414572243",
       "Cost": "7",
       "Power": "5",
       "HP": "7",
@@ -5122,7 +5201,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/198.png",
       "tcgplayerId": "588045",
       "LowFoilPrice": "0.35",
-      "LowPrice": "0.15"
+      "LowPrice": "0.18"
     },
     {
       "Set": "TWI",
@@ -5171,6 +5250,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "5013214638",
       "Cost": "3",
       "FrontText": "Give a unit -2/-2 for this phase. Then, if you control fewer units than that unit's controller, give another unit -2/-2 for this phase.",
       "DoubleSided": false,
@@ -5209,7 +5289,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/328.png",
       "tcgplayerId": "589526",
       "LowFoilPrice": "0.90",
-      "LowPrice": "0.66"
+      "LowPrice": "0.60"
     },
     {
       "Set": "TWI",
@@ -5227,6 +5307,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9185282472",
       "Cost": "5",
       "Power": "3",
       "HP": "5",
@@ -5292,6 +5373,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "4569767827",
       "Cost": "4",
       "FrontText": "Deal 6 damage to each Jedi unit. For each unit defeated this way, its controller creates a Clone Trooper token.",
       "DoubleSided": false,
@@ -5299,12 +5381,12 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/239.png",
       "tcgplayerId": "588467",
-      "LowFoilPrice": "0.14",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.10",
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -5347,6 +5429,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8845972926",
       "Cost": "6",
       "Power": "4",
       "HP": "6",
@@ -5359,7 +5442,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.03",
+      "MarketPrice": "0.04",
       "FoilPrice": "0.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/065.png",
       "tcgplayerId": "588410",
@@ -5416,6 +5499,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9479767991",
       "Cost": "2",
       "Power": "1",
       "HP": "5",
@@ -5456,7 +5540,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/473.png",
       "tcgplayerId": "589672",
@@ -5480,6 +5564,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7244268162",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -5494,7 +5579,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/053.png",
       "tcgplayerId": "588403",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -5527,7 +5612,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/326.png",
       "tcgplayerId": "589524",
       "LowFoilPrice": "0.90",
-      "LowPrice": "0.31"
+      "LowPrice": "0.36"
     },
     {
       "Set": "TWI",
@@ -5546,6 +5631,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3434956158",
       "Cost": "5",
       "Power": "5",
       "HP": "5",
@@ -5613,6 +5699,7 @@
       "Traits": [
         "REPUBLIC"
       ],
+      "cid": "7884488904",
       "Cost": "3",
       "Power": "2",
       "HP": "2",
@@ -5631,7 +5718,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/051.png",
       "tcgplayerId": "588402",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -5676,6 +5763,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "3962135775",
       "Cost": "1",
       "Power": "0",
       "HP": "2",
@@ -5716,8 +5804,8 @@
       "FoilPrice": "3.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/341.png",
       "tcgplayerId": "589539",
-      "LowFoilPrice": "2.36",
-      "LowPrice": "0.44"
+      "LowFoilPrice": "2.35",
+      "LowPrice": "0.42"
     },
     {
       "Set": "TWI",
@@ -5733,6 +5821,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8839068683",
       "Cost": "3",
       "Power": "4",
       "HP": "2",
@@ -5772,7 +5861,7 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/477.png",
       "tcgplayerId": "589676",
@@ -5796,6 +5885,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2872203891",
       "Cost": "6",
       "Power": "4",
       "HP": "8",
@@ -5811,11 +5901,11 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Normal",
-      "MarketPrice": "0.66",
+      "MarketPrice": "0.65",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/015.png",
       "tcgplayerId": "565546",
-      "LowPrice": "0.50"
+      "LowPrice": "0.49"
     },
     {
       "Set": "TWI",
@@ -5834,6 +5924,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4776553531",
       "Cost": "3",
       "Power": "4",
       "HP": "4",
@@ -5843,11 +5934,11 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "1.88",
+      "MarketPrice": "1.86",
       "FoilPrice": "7.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/034.png",
       "tcgplayerId": "583683",
-      "LowFoilPrice": "3.50",
+      "LowFoilPrice": "2.99",
       "LowPrice": "1.49"
     },
     {
@@ -5882,11 +5973,11 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Showcase",
-      "MarketPrice": "115.66",
+      "MarketPrice": "118.91",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/272.png",
       "tcgplayerId": "589733",
-      "LowPrice": "194.01"
+      "LowPrice": "165.99"
     },
     {
       "Set": "TWI",
@@ -5914,11 +6005,11 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "9.05",
+      "MarketPrice": "9.11",
       "FoilPrice": "14.81",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/307.png",
       "tcgplayerId": "589505",
-      "LowFoilPrice": "11.08",
+      "LowFoilPrice": "11.21",
       "LowPrice": "5.78"
     },
     {
@@ -5934,6 +6025,7 @@
         "WEAPON",
         "LIGHTSABER"
       ],
+      "cid": "0414253215",
       "Cost": "3",
       "Power": "3",
       "HP": "3",
@@ -5943,12 +6035,12 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "1.08",
+      "MarketPrice": "1.07",
       "FoilPrice": "4.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/121.png",
       "tcgplayerId": "565537",
       "LowFoilPrice": "2.22",
-      "LowPrice": "0.93"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -5995,6 +6087,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3876951742",
       "Cost": "4",
       "Power": "4",
       "HP": "4",
@@ -6004,11 +6097,11 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/083.png",
       "tcgplayerId": "565543",
-      "LowPrice": "0.24"
+      "LowPrice": "0.20"
     },
     {
       "Set": "TWI",
@@ -6026,6 +6119,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "3348783048",
       "Cost": "5",
       "Power": "3",
       "HP": "2",
@@ -6073,7 +6167,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.58",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/480.png",
       "tcgplayerId": "589679",
@@ -6096,6 +6190,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2554988743",
       "Cost": "12",
       "Power": "7",
       "HP": "7",
@@ -6111,7 +6206,7 @@
       ],
       "Artist": "Leonardo Giammichele",
       "VariantType": "Normal",
-      "MarketPrice": "0.65",
+      "MarketPrice": "0.64",
       "FoilPrice": "1.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/118.png",
       "tcgplayerId": "588018",
@@ -6149,11 +6244,11 @@
       ],
       "Artist": "Leonardo Giammichele",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.57",
+      "MarketPrice": "1.62",
       "FoilPrice": "3.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/388.png",
       "tcgplayerId": "589586",
-      "LowFoilPrice": "2.26",
+      "LowFoilPrice": "2.16",
       "LowPrice": "1.20"
     },
     {
@@ -6167,6 +6262,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4042866439",
       "Cost": "2",
       "FrontText": "Deal 2 damage to a unit. You may deal 1 damage to another unit in the same arena.",
       "DoubleSided": false,
@@ -6217,6 +6313,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "6732988831",
       "Cost": "2",
       "FrontText": "Heal 3 damage from a unit. Create a Battle Droid token.",
       "DoubleSided": false,
@@ -6267,6 +6364,7 @@
       "Traits": [
         "VEHICLE"
       ],
+      "cid": "0875550518",
       "Cost": "4",
       "Power": "3",
       "HP": "3",
@@ -6276,7 +6374,7 @@
       "Unique": true,
       "Artist": "Jake Parker",
       "VariantType": "Normal",
-      "MarketPrice": "0.49",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/236.png",
       "tcgplayerId": "586717",
@@ -6293,6 +6391,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "6669050232",
       "Cost": "2",
       "FrontText": "Attack with a non-leader unit. It gains Grit for this attack. (It gets +1/+0 for each damage on it.)",
       "DoubleSided": false,
@@ -6331,7 +6430,7 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/439.png",
       "tcgplayerId": "589638",
@@ -6349,6 +6448,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "2359136621",
       "Cost": "2",
       "FrontText": "Give a unit Sentinel for this phase. (Units in this arena can't attack your non-Sentinel units or your base.) If you have the initiative, also give that unit +2/+2 for this phase.",
       "DoubleSided": false,
@@ -6405,6 +6505,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "7235023816",
       "Cost": "8",
       "FrontText": "Each player defeats a resource they control and discards 2 cards from their hand. Deal 4 damage to each ground unit.",
       "DoubleSided": false,
@@ -6417,7 +6518,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/177.png",
       "tcgplayerId": "588035",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -6461,6 +6562,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6772128891",
       "Cost": "8",
       "Power": "7",
       "HP": "6",
@@ -6529,6 +6631,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "2574847177",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -6591,6 +6694,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4210027426",
       "Cost": "7",
       "Power": "6",
       "HP": "5",
@@ -6658,6 +6762,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "4036958275",
       "Cost": "3",
       "FrontText": "Choose a unit that entered play this phase. It gets -4/-4 for this phase.",
       "DoubleSided": false,
@@ -6665,7 +6770,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/052.png",
       "tcgplayerId": "575202",
@@ -6710,6 +6815,7 @@
         "REPUBLIC",
         "SEPARATIST"
       ],
+      "cid": "5610901450",
       "Cost": "2",
       "FrontText": "Choose up to 1 Republic unit and up to 1 Separatist unit. Give each chosen unit +2/+2 and Saboteur for this phase. (When either of those units attacks, ignore Sentinel and defeat the defender's Shields.)",
       "DoubleSided": false,
@@ -6717,7 +6823,7 @@
       "Unique": false,
       "Artist": "Sandra Chlewiñska",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/249.png",
       "tcgplayerId": "588469",
@@ -6743,7 +6849,7 @@
       "Unique": false,
       "Artist": "Sandra Chlewiñska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/509.png",
       "tcgplayerId": "589708",
@@ -6767,6 +6873,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0683052393",
       "Cost": "4",
       "Power": "4",
       "HP": "4",
@@ -6785,7 +6892,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/164.png",
       "tcgplayerId": "578136",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.07"
     },
     {
       "Set": "TWI",
@@ -6840,6 +6947,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7953154930",
       "Cost": "4",
       "Power": "4",
       "HP": "3",
@@ -6887,7 +6995,7 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/479.png",
       "tcgplayerId": "589678",
@@ -6903,6 +7011,7 @@
         "ITEM",
         "WEAPON"
       ],
+      "cid": "7280804443",
       "Cost": "1",
       "Power": "1",
       "HP": "0",
@@ -6960,6 +7069,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8549156761",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -7024,6 +7134,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8418001763",
       "Cost": "3",
       "Power": "2",
       "HP": "4",
@@ -7033,7 +7144,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.65",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/110.png",
       "tcgplayerId": "588427",
@@ -7070,7 +7181,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/380.png",
       "tcgplayerId": "589578",
       "LowFoilPrice": "2.00",
-      "LowPrice": "1.00"
+      "LowPrice": "0.75"
     },
     {
       "Set": "TWI",
@@ -7083,6 +7194,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "9399634203",
       "Cost": "1",
       "FrontText": "Choose a friendly unit. Each enemy unit gets -4/-0 while attacking that unit this phase.",
       "DoubleSided": false,
@@ -7090,12 +7202,12 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/072.png",
       "tcgplayerId": "583728",
-      "LowFoilPrice": "0.16",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.14",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -7115,7 +7227,7 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.91",
+      "MarketPrice": "0.92",
       "FoilPrice": "9.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/345.png",
       "tcgplayerId": "589543",
@@ -7134,6 +7246,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "1302133998",
       "Cost": "4",
       "FrontText": "Choose a ready non-leader unit controlled by each player. If you do, each player takes control of the chosen unit controlled by the player to their right. At the start of the regroup phase, each player takes control of each unit they own that was chosen for this ability.",
       "DoubleSided": false,
@@ -7141,12 +7254,12 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/204.png",
       "tcgplayerId": "588454",
-      "LowFoilPrice": "0.11",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.10",
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -7167,12 +7280,12 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.52",
       "FoilPrice": "1.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/469.png",
       "tcgplayerId": "589668",
       "LowFoilPrice": "0.99",
-      "LowPrice": "0.30"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TWI",
@@ -7185,6 +7298,7 @@
       "Traits": [
         "REPUBLIC"
       ],
+      "cid": "1272825113",
       "Cost": "4",
       "FrontText": "For this phase, each friendly Republic unit gains Restore 2 and: \"When Defeated: Create a Clone Trooper token.\"",
       "DoubleSided": false,
@@ -7200,7 +7314,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/129.png",
       "tcgplayerId": "587288",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.03"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -7223,12 +7337,12 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.13",
+      "MarketPrice": "1.12",
       "FoilPrice": "2.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/397.png",
       "tcgplayerId": "589595",
-      "LowFoilPrice": "1.89",
-      "LowPrice": "0.97"
+      "LowFoilPrice": "1.85",
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -7241,6 +7355,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "6401761275",
       "Cost": "0",
       "FrontText": "Exhaust a friendly unit. If you do, exhaust an enemy unit.",
       "DoubleSided": false,
@@ -7248,7 +7363,7 @@
       "Unique": false,
       "Artist": "Liana Anatolievich",
       "VariantType": "Normal",
-      "MarketPrice": "0.04",
+      "MarketPrice": "0.05",
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/221.png",
       "tcgplayerId": "586744",
@@ -7273,7 +7388,7 @@
       "Unique": false,
       "Artist": "Liana Anatolievich",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/486.png",
       "tcgplayerId": "589685",
@@ -7295,6 +7410,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9262288850",
       "Cost": "1",
       "Power": "0",
       "HP": "4",
@@ -7358,6 +7474,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4179773207",
       "Cost": "3",
       "Power": "2",
       "HP": "4",
@@ -7412,7 +7529,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/334.png",
       "tcgplayerId": "589532",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.08"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -7430,6 +7547,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6623894685",
       "Cost": "4",
       "Power": "4",
       "HP": "5",
@@ -7503,6 +7621,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9155536481",
       "Cost": "5",
       "Power": "3",
       "HP": "7",
@@ -7515,7 +7634,7 @@
       "Unique": true,
       "Artist": "Jake Parker",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/016.png",
       "tcgplayerId": "583680",
@@ -7550,7 +7669,7 @@
       "Unique": true,
       "Artist": "Jake Parker",
       "VariantType": "Showcase",
-      "MarketPrice": "154.76",
+      "MarketPrice": "163.44",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/273.png",
       "tcgplayerId": "589734",
@@ -7585,7 +7704,7 @@
       "Unique": true,
       "Artist": "Jake Parker",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.20",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/291.png",
       "tcgplayerId": "589489",
@@ -7607,6 +7726,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9216621233",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -7620,7 +7740,7 @@
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/202.png",
       "tcgplayerId": "588048",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -7653,7 +7773,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/467.png",
       "tcgplayerId": "589666",
       "LowFoilPrice": "2.50",
-      "LowPrice": "0.32"
+      "LowPrice": "0.35"
     },
     {
       "Set": "TWI",
@@ -7673,6 +7793,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5936350569",
       "Cost": "3",
       "Power": "4",
       "HP": "4",
@@ -7722,7 +7843,7 @@
       ],
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.65",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/413.png",
       "tcgplayerId": "589611",
@@ -7745,6 +7866,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7099699830",
       "Cost": "2",
       "Power": "3",
       "HP": "2",
@@ -7762,7 +7884,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/143.png",
       "tcgplayerId": "588435",
       "LowFoilPrice": "0.22",
-      "LowPrice": "0.10"
+      "LowPrice": "0.16"
     },
     {
       "Set": "TWI",
@@ -7797,7 +7919,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/411.png",
       "tcgplayerId": "589609",
       "LowFoilPrice": "4.48",
-      "LowPrice": "1.00"
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -7808,6 +7930,7 @@
       "Aspects": [
         "Aggression"
       ],
+      "cid": "0109520913",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -7858,6 +7981,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1039176181",
       "Cost": "6",
       "Power": "5",
       "HP": "7",
@@ -7900,7 +8024,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.57",
+      "MarketPrice": "0.56",
       "FoilPrice": "0.86",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/357.png",
       "tcgplayerId": "589555",
@@ -7922,6 +8046,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8552292852",
       "Cost": "2",
       "Power": "0",
       "HP": "5",
@@ -7938,7 +8063,7 @@
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/044.png",
       "tcgplayerId": "576962",
-      "LowFoilPrice": "0.03",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -7992,6 +8117,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7200475001",
       "Cost": "5",
       "Power": "5",
       "HP": "7",
@@ -8004,12 +8130,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.92",
+      "MarketPrice": "0.94",
       "FoilPrice": "7.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/064.png",
       "tcgplayerId": "578129",
       "LowFoilPrice": "2.50",
-      "LowPrice": "0.66"
+      "LowPrice": "0.70"
     },
     {
       "Set": "TWI",
@@ -8040,12 +8166,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "8.72",
+      "MarketPrice": "8.31",
       "FoilPrice": "13.88",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/337.png",
       "tcgplayerId": "589535",
-      "LowFoilPrice": "9.29",
-      "LowPrice": "6.84"
+      "LowFoilPrice": "9.09",
+      "LowPrice": "4.85"
     },
     {
       "Set": "TWI",
@@ -8064,6 +8190,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1641175580",
       "Cost": "6",
       "Power": "7",
       "HP": "6",
@@ -8077,7 +8204,7 @@
       ],
       "Artist": "Aitor Prieto Reyes",
       "VariantType": "Normal",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/165.png",
       "tcgplayerId": "583814",
@@ -8138,6 +8265,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4541556921",
       "Cost": "6",
       "Power": "4",
       "HP": "7",
@@ -8180,11 +8308,11 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/322.png",
       "tcgplayerId": "589520",
-      "LowFoilPrice": "0.19",
+      "LowFoilPrice": "0.22",
       "LowPrice": "0.03"
     },
     {
@@ -8204,6 +8332,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7979348081",
       "Cost": "5",
       "Power": "2",
       "HP": "5",
@@ -8262,6 +8391,7 @@
       "Aspects": [
         "Command"
       ],
+      "cid": "7827173440",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -8289,7 +8419,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/298.png",
       "tcgplayerId": "589496",
@@ -8307,6 +8437,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "1389085256",
       "Cost": "4",
       "FrontText": "Defeat a non-leader unit. Deal damage to your base equal to that unit's power.",
       "DoubleSided": false,
@@ -8340,12 +8471,12 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/314.png",
       "tcgplayerId": "589512",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.08"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -8356,6 +8487,7 @@
       "Aspects": [
         "Cunning"
       ],
+      "cid": "1023625185",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -8383,7 +8515,7 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/518.png",
       "tcgplayerId": "592147",
@@ -8406,6 +8538,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3476041913",
       "Cost": "6",
       "Power": "6",
       "HP": "5",
@@ -8479,6 +8612,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9832122703",
       "Cost": "7",
       "Power": "4",
       "HP": "9",
@@ -8535,7 +8669,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/323.png",
       "tcgplayerId": "589521",
       "LowFoilPrice": "3.60",
-      "LowPrice": "0.60"
+      "LowPrice": "0.97"
     },
     {
       "Set": "TWI",
@@ -8552,6 +8686,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0199085444",
       "Cost": "2",
       "Power": "3",
       "HP": "2",
@@ -8565,8 +8700,8 @@
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/210.png",
       "tcgplayerId": "588457",
-      "LowFoilPrice": "0.03",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -8592,11 +8727,11 @@
       "Unique": true,
       "Artist": "Ann Maulina",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "1.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/475.png",
       "tcgplayerId": "589674",
-      "LowFoilPrice": "1.00",
+      "LowFoilPrice": "0.85",
       "LowPrice": "0.30"
     },
     {
@@ -8617,6 +8752,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4628885755",
       "Cost": "7",
       "Power": "5",
       "HP": "8",
@@ -8629,7 +8765,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.13",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/013.png",
       "tcgplayerId": "583490",
@@ -8701,11 +8837,11 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.38",
+      "MarketPrice": "0.37",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/288.png",
       "tcgplayerId": "589487",
-      "LowPrice": "0.15"
+      "LowPrice": "0.20"
     },
     {
       "Set": "TWI",
@@ -8721,6 +8857,7 @@
         "WEAPON",
         "LIGHTSABER"
       ],
+      "cid": "6410481716",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -8730,12 +8867,12 @@
       "Unique": true,
       "Artist": "Milos Slavkovic",
       "VariantType": "Normal",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/152.png",
       "tcgplayerId": "583799",
       "LowFoilPrice": "0.30",
-      "LowPrice": "0.12"
+      "LowPrice": "0.14"
     },
     {
       "Set": "TWI",
@@ -8784,6 +8921,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "5630404651",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -8831,7 +8969,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/355.png",
       "tcgplayerId": "589553",
       "LowFoilPrice": "0.30",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -8851,6 +8989,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "3381931079",
       "Cost": "9",
       "Power": "7",
       "HP": "7",
@@ -8902,12 +9041,12 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.16",
+      "MarketPrice": "2.15",
       "FoilPrice": "6.80",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/312.png",
       "tcgplayerId": "589510",
       "LowFoilPrice": "5.00",
-      "LowPrice": "2.00"
+      "LowPrice": "1.92"
     },
     {
       "Set": "TWI",
@@ -8921,6 +9060,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "1192349217",
       "Cost": "3",
       "FrontText": "Choose one: \nCreate 2 Clone Trooper tokens. \nCreate 3 Battle Droid tokens.",
       "DoubleSided": false,
@@ -8978,6 +9118,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0142631581",
       "Cost": "2",
       "Power": "0",
       "HP": "4",
@@ -8987,7 +9128,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/101.png",
       "tcgplayerId": "583785",
@@ -9044,6 +9185,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6461101372",
       "Cost": "6",
       "Power": "6",
       "HP": "6",
@@ -9097,11 +9239,11 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Showcase",
-      "MarketPrice": "94.98",
+      "MarketPrice": "95.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/266.png",
       "tcgplayerId": "589727",
-      "LowPrice": "100.39"
+      "LowPrice": "102.99"
     },
     {
       "Set": "TWI",
@@ -9152,6 +9294,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4412828936",
       "Cost": "3",
       "FrontText": "Each player chooses a non-leader unit they control. Defeat those units.",
       "DoubleSided": false,
@@ -9208,6 +9351,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7789777396",
       "Cost": "1",
       "Power": "3",
       "HP": "1",
@@ -9217,12 +9361,12 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/154.png",
       "tcgplayerId": "588438",
       "LowFoilPrice": "0.18",
-      "LowPrice": "0.03"
+      "LowPrice": "0.09"
     },
     {
       "Set": "TWI",
@@ -9254,8 +9398,8 @@
       "FoilPrice": "3.85",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/421.png",
       "tcgplayerId": "589619",
-      "LowFoilPrice": "3.81",
-      "LowPrice": "0.93"
+      "LowFoilPrice": "3.71",
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -9275,6 +9419,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6412545836",
       "Cost": "4",
       "Power": "3",
       "HP": "6",
@@ -9287,7 +9432,7 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/035.png",
       "tcgplayerId": "587996",
@@ -9324,7 +9469,7 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.14",
+      "MarketPrice": "1.13",
       "FoilPrice": "2.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/308.png",
       "tcgplayerId": "589506",
@@ -9347,6 +9492,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1320229479",
       "Cost": "7",
       "Power": "3",
       "HP": "6",
@@ -9417,6 +9563,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2742665601",
       "Cost": "4",
       "Power": "1",
       "HP": "7",
@@ -9501,7 +9648,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/276.png",
       "tcgplayerId": "589476",
-      "LowPrice": "0.25"
+      "LowPrice": "0.15"
     },
     {
       "Set": "TWI",
@@ -9514,6 +9661,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "4886127868",
       "Cost": "1",
       "Power": "2",
       "HP": "2",
@@ -9526,11 +9674,11 @@
       ],
       "Artist": "Facundo Moyano",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/119.png",
       "tcgplayerId": "588021",
-      "LowFoilPrice": "0.03",
+      "LowFoilPrice": "0.07",
       "LowPrice": "0.01"
     },
     {
@@ -9574,6 +9722,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "6849037019",
       "Cost": "3",
       "FrontText": "If you control exactly one unit, play a non-Vehicle unit from your hand that shares a Trait with the unit you control. It costs 5 less.",
       "DoubleSided": false,
@@ -9581,12 +9730,12 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "1.08",
+      "MarketPrice": "1.11",
       "FoilPrice": "7.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/225.png",
       "tcgplayerId": "588052",
       "LowFoilPrice": "2.99",
-      "LowPrice": "0.70"
+      "LowPrice": "0.65"
     },
     {
       "Set": "TWI",
@@ -9606,7 +9755,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.91",
+      "MarketPrice": "4.69",
       "FoilPrice": "9.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/490.png",
       "tcgplayerId": "589689",
@@ -9630,6 +9779,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6064906790",
       "Cost": "6",
       "Power": "2",
       "HP": "8",
@@ -9677,7 +9827,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto Reyes",
       "VariantType": "Showcase",
-      "MarketPrice": "38.68",
+      "MarketPrice": "38.70",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/259.png",
       "tcgplayerId": "589720",
@@ -9734,6 +9884,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6022703929",
       "Cost": "2",
       "Power": "2",
       "HP": "1",
@@ -9748,7 +9899,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/131.png",
       "tcgplayerId": "578833",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.02"
+      "LowPrice": "0.03"
     },
     {
       "Set": "TWI",
@@ -9775,7 +9926,7 @@
       "Unique": false,
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/399.png",
       "tcgplayerId": "589597",
@@ -9798,6 +9949,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0249398533",
       "Cost": "1",
       "Power": "1",
       "HP": "1",
@@ -9870,6 +10022,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2784756758",
       "Cost": "6",
       "Power": "4",
       "HP": "7",
@@ -9924,11 +10077,11 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Showcase",
-      "MarketPrice": "83.10",
+      "MarketPrice": "84.83",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/260.png",
       "tcgplayerId": "589721",
-      "LowPrice": "95.99"
+      "LowPrice": "91.00"
     },
     {
       "Set": "TWI",
@@ -9963,7 +10116,7 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/278.png",
       "tcgplayerId": "589478",
@@ -9988,6 +10141,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6648824001",
       "Cost": "5",
       "Power": "4",
       "HP": "6",
@@ -10036,8 +10190,8 @@
       "FoilPrice": "2.36",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/321.png",
       "tcgplayerId": "589519",
-      "LowFoilPrice": "0.65",
-      "LowPrice": "0.72"
+      "LowFoilPrice": "0.61",
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -10050,6 +10204,7 @@
       "Traits": [
         "ITEM"
       ],
+      "cid": "3840495762",
       "Cost": "1",
       "Power": "1",
       "HP": "0",
@@ -10090,7 +10245,7 @@
       "FoilPrice": "0.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/435.png",
       "tcgplayerId": "589634",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.03"
     },
     {
@@ -10104,6 +10259,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "2012334456",
       "Cost": "2",
       "Power": "2",
       "HP": "0",
@@ -10159,6 +10315,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "2483302291",
       "Cost": "4",
       "FrontText": "Create 3 Battle Droid tokens and ready them.",
       "DoubleSided": false,
@@ -10166,7 +10323,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/190.png",
       "tcgplayerId": "583822",
@@ -10210,6 +10367,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "5807228000",
       "Cost": "3",
       "FrontText": "Deal 4 damage to a unit.",
       "DoubleSided": false,
@@ -10217,11 +10375,11 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Normal",
-      "MarketPrice": "2.44",
+      "MarketPrice": "2.45",
       "FoilPrice": "0.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/174.png",
       "tcgplayerId": "588485",
-      "LowPrice": "1.83"
+      "LowPrice": "1.84"
     },
     {
       "Set": "TWI",
@@ -10238,6 +10396,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2041344712",
       "Cost": "6",
       "Power": "3",
       "HP": "6",
@@ -10302,6 +10461,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "7344129644",
       "Cost": "1",
       "FrontText": "Attack with 2 units (one at a time).",
       "DoubleSided": false,
@@ -10331,6 +10491,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8919416985",
       "Cost": "2",
       "Power": "0",
       "HP": "3",
@@ -10378,7 +10539,7 @@
       ],
       "Artist": "Leonardo Giammichele",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/316.png",
       "tcgplayerId": "589514",
@@ -10402,6 +10563,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4718895864",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -10469,6 +10631,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2870878795",
       "Cost": "5",
       "Power": "2",
       "HP": "7",
@@ -10509,6 +10672,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8307804692",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -10562,11 +10726,11 @@
       ],
       "Artist": "Maxine Vee",
       "VariantType": "Showcase",
-      "MarketPrice": "68.31",
+      "MarketPrice": "67.95",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/265.png",
       "tcgplayerId": "589726",
-      "LowPrice": "55.00"
+      "LowPrice": "50.00"
     },
     {
       "Set": "TWI",
@@ -10638,7 +10802,7 @@
       ],
       "Artist": "Robynn Frauhn",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/457.png",
       "tcgplayerId": "589656",
@@ -10661,6 +10825,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9927473096",
       "Cost": "5",
       "Power": "4",
       "HP": "5",
@@ -10708,7 +10873,7 @@
       ],
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/495.png",
       "tcgplayerId": "589694",
@@ -10730,6 +10895,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6534973905",
       "Cost": "2",
       "Power": "1",
       "HP": "1",
@@ -10754,6 +10920,7 @@
       "Aspects": [
         "Vigilance"
       ],
+      "cid": "6594935791",
       "HP": "26",
       "FrontText": "Each leader unit you control gets +0/+1.",
       "DoubleSided": false,
@@ -10784,11 +10951,11 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.80",
+      "MarketPrice": "1.82",
       "FoilPrice": "6.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/294.png",
       "tcgplayerId": "589492",
-      "LowFoilPrice": "4.48",
+      "LowFoilPrice": "4.54",
       "LowPrice": "1.41"
     },
     {
@@ -10808,6 +10975,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9966134941",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -10874,6 +11042,7 @@
       "Traits": [
         "CONDITION"
       ],
+      "cid": "8061497086",
       "Cost": "3",
       "Power": "-2",
       "HP": "-2",
@@ -10929,6 +11098,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "3500129784",
       "Cost": "3",
       "FrontText": "If you control 3 or more Official units, draw 3 cards.",
       "DoubleSided": false,
@@ -10940,8 +11110,8 @@
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/100.png",
       "tcgplayerId": "588422",
-      "LowFoilPrice": "0.11",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.12",
+      "LowPrice": "0.07"
     },
     {
       "Set": "TWI",
@@ -10978,6 +11148,7 @@
       "Aspects": [
         "Cunning"
       ],
+      "cid": "9652861741",
       "HP": "26",
       "FrontText": "Each leader unit you control gets +1/+0.",
       "DoubleSided": false,
@@ -11008,11 +11179,11 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.69",
+      "MarketPrice": "2.54",
       "FoilPrice": "10.82",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/303.png",
       "tcgplayerId": "589501",
-      "LowFoilPrice": "9.00",
+      "LowFoilPrice": "8.85",
       "LowPrice": "2.00"
     },
     {
@@ -11031,6 +11202,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9209567613",
       "Cost": "2",
       "Power": "3",
       "HP": "2",
@@ -11040,7 +11212,7 @@
       "Unique": false,
       "Artist": "Ario Anindito",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/241.png",
       "tcgplayerId": "583787",
@@ -11095,6 +11267,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1988887369",
       "Cost": "3",
       "Power": "3",
       "HP": "2",
@@ -11161,6 +11334,7 @@
         "SEPARATIST",
         "PLAN"
       ],
+      "cid": "1167572655",
       "Cost": "12",
       "FrontText": "Exploit 3 \nReady up to 3 units. Each of those units gets +1/+0 and gains Overwhelm for this phase.",
       "DoubleSided": false,
@@ -11176,7 +11350,7 @@
       "FoilPrice": "0.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/178.png",
       "tcgplayerId": "588449",
-      "LowFoilPrice": "0.13",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.14"
     },
     {
@@ -11202,7 +11376,7 @@
       ],
       "Artist": "Afif Khaled",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.98",
+      "MarketPrice": "0.96",
       "FoilPrice": "3.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/444.png",
       "tcgplayerId": "589643",
@@ -11227,6 +11401,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7494987248",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -11246,7 +11421,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/196.png",
       "tcgplayerId": "575204",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.15"
+      "LowPrice": "0.24"
     },
     {
       "Set": "TWI",
@@ -11284,8 +11459,8 @@
       "FoilPrice": "7.76",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/461.png",
       "tcgplayerId": "589660",
-      "LowFoilPrice": "5.96",
-      "LowPrice": "2.55"
+      "LowFoilPrice": "5.39",
+      "LowPrice": "2.57"
     },
     {
       "Set": "TWI",
@@ -11304,6 +11479,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9610332938",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -11318,7 +11494,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/080.png",
       "tcgplayerId": "586729",
       "LowFoilPrice": "0.19",
-      "LowPrice": "0.03"
+      "LowPrice": "0.11"
     },
     {
       "Set": "TWI",
@@ -11346,7 +11522,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.76",
+      "MarketPrice": "3.74",
       "FoilPrice": "6.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/353.png",
       "tcgplayerId": "589551",
@@ -11364,6 +11540,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "3357486161",
       "Cost": "1",
       "FrontText": "Choose an opponent. They may discard a random card from their hand. If they don't, create 2 Battle Droid tokens.",
       "DoubleSided": false,
@@ -11420,6 +11597,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5081383630",
       "Cost": "5",
       "Power": "4",
       "HP": "6",
@@ -11439,7 +11617,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/010.png",
       "tcgplayerId": "588395",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -11473,7 +11651,7 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Showcase",
-      "MarketPrice": "41.62",
+      "MarketPrice": "42.16",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/267.png",
       "tcgplayerId": "589728",
@@ -11515,7 +11693,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/285.png",
       "tcgplayerId": "589485",
-      "LowPrice": "0.12"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -11528,6 +11706,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "3799780905",
       "Cost": "4",
       "FrontText": "A friendly unit captures an enemy non-leader, non-Vehicle unit. If the enemy unit costs less than the friendly unit, create 2 Battle Droid tokens. (Put the captured card facedown under the friendly unit until that unit leaves play.)",
       "DoubleSided": false,
@@ -11539,7 +11718,7 @@
       "FoilPrice": "0.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/227.png",
       "tcgplayerId": "565489",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.03",
       "LowPrice": "0.03"
     },
     {
@@ -11564,7 +11743,7 @@
       "FoilPrice": "0.38",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/491.png",
       "tcgplayerId": "589690",
-      "LowFoilPrice": "0.25",
+      "LowFoilPrice": "0.30",
       "LowPrice": "0.10"
     },
     {
@@ -11575,6 +11754,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "2483520485",
       "Cost": "2",
       "FrontText": "Draw 2 cards. If you control no token units, put 2 cards from your hand on the bottom of your deck in any order.",
       "DoubleSided": false,
@@ -11586,7 +11766,7 @@
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/257.png",
       "tcgplayerId": "585105",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.01"
     },
     {
@@ -11628,6 +11808,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6436543702",
       "Cost": "8",
       "Power": "5",
       "HP": "7",
@@ -11674,7 +11855,7 @@
       "FoilPrice": "1.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/311.png",
       "tcgplayerId": "589509",
-      "LowFoilPrice": "0.95",
+      "LowFoilPrice": "0.99",
       "LowPrice": "0.25"
     },
     {
@@ -11686,6 +11867,7 @@
       "Aspects": [
         "Cunning"
       ],
+      "cid": "2293075446",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -11731,6 +11913,7 @@
       "Traits": [
         "DISASTER"
       ],
+      "cid": "9415708584",
       "Cost": "3",
       "FrontText": "For this phase, each friendly unit gains: \"When Defeated: Deal 2 damage to an enemy unit.\"",
       "DoubleSided": false,
@@ -11738,11 +11921,11 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/103.png",
       "tcgplayerId": "588423",
-      "LowFoilPrice": "0.38",
+      "LowFoilPrice": "0.20",
       "LowPrice": "0.10"
     },
     {
@@ -11789,6 +11972,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2358113881",
       "Cost": "5",
       "Power": "3",
       "HP": "7",
@@ -11837,11 +12021,11 @@
       "Unique": true,
       "Artist": "Cristina Laviña",
       "VariantType": "Showcase",
-      "MarketPrice": "85.85",
+      "MarketPrice": "85.31",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/275.png",
       "tcgplayerId": "589736",
-      "LowPrice": "71.66"
+      "LowPrice": "71.40"
     },
     {
       "Set": "TWI",
@@ -11896,6 +12080,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5616678900",
       "Cost": "2",
       "Power": "2",
       "HP": "4",
@@ -11910,7 +12095,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/193.png",
       "tcgplayerId": "576992",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -11961,6 +12146,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "2298508689",
       "Cost": "3",
       "Power": "3",
       "HP": "1",
@@ -12012,7 +12198,7 @@
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/429.png",
       "tcgplayerId": "589628",
-      "LowFoilPrice": "0.11",
+      "LowFoilPrice": "0.12",
       "LowPrice": "0.03"
     },
     {
@@ -12031,6 +12217,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1368135704",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -12091,6 +12278,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "7579458834",
       "Cost": "3",
       "FrontText": "Choose up to 4 units in your discard pile. Put them on the bottom of your deck in a random order and create that many Battle Droid tokens.",
       "DoubleSided": false,
@@ -12103,7 +12291,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/088.png",
       "tcgplayerId": "588419",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -12147,6 +12335,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9176356859",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -12188,7 +12377,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/381.png",
       "tcgplayerId": "589579",
@@ -12212,6 +12401,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2443835595",
       "Cost": "6",
       "Power": "6",
       "HP": "7",
@@ -12258,7 +12448,7 @@
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/462.png",
       "tcgplayerId": "589661",
-      "LowFoilPrice": "0.13",
+      "LowFoilPrice": "0.14",
       "LowPrice": "0.07"
     },
     {
@@ -12277,6 +12467,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8187818742",
       "Cost": "3",
       "Power": "2",
       "HP": "5",
@@ -12350,6 +12541,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6238512843",
       "Cost": "11",
       "Power": "6",
       "HP": "7",
@@ -12421,6 +12613,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2395430106",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -12430,7 +12623,7 @@
       "Unique": false,
       "Artist": "Ario Anindito",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.05",
       "FoilPrice": "0.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/091.png",
       "tcgplayerId": "576985",
@@ -12467,7 +12660,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/363.png",
       "tcgplayerId": "589561",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.02"
+      "LowPrice": "0.03"
     },
     {
       "Set": "TWI",
@@ -12487,6 +12680,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "2585318816",
       "Cost": "10",
       "Power": "8",
       "HP": "8",
@@ -12534,7 +12728,7 @@
       "FoilPrice": "6.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/418.png",
       "tcgplayerId": "589616",
-      "LowFoilPrice": "4.88",
+      "LowFoilPrice": "4.67",
       "LowPrice": "1.92"
     },
     {
@@ -12548,6 +12742,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "3365254092",
       "Cost": "3",
       "FrontText": "Put this event into play as a resource.",
       "DoubleSided": false,
@@ -12555,7 +12750,7 @@
       "Unique": false,
       "Artist": "Robynn Frauhn",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/127.png",
       "tcgplayerId": "588433",
@@ -12598,6 +12793,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "1555775184",
       "Cost": "1",
       "Power": "1",
       "HP": "1",
@@ -12634,11 +12830,11 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.90",
+      "MarketPrice": "0.89",
       "FoilPrice": "2.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/342.png",
       "tcgplayerId": "589540",
-      "LowFoilPrice": "1.75",
+      "LowFoilPrice": "1.08",
       "LowPrice": "0.80"
     },
     {
@@ -12656,6 +12852,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0598115741",
       "Cost": "2",
       "Power": "2",
       "HP": "5",
@@ -12720,6 +12917,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5333016146",
       "Cost": "2",
       "Power": "3",
       "HP": "2",
@@ -12733,8 +12931,8 @@
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/031.png",
       "tcgplayerId": "583792",
-      "LowFoilPrice": "0.03",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -12762,7 +12960,7 @@
       "Unique": true,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.55",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/304.png",
       "tcgplayerId": "589502",
@@ -12786,6 +12984,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9964112400",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -12798,7 +12997,7 @@
       ],
       "Artist": "Mona Finden",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/183.png",
       "tcgplayerId": "583820",
@@ -12838,8 +13037,8 @@
       "FoilPrice": "1.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/448.png",
       "tcgplayerId": "589647",
-      "LowFoilPrice": "1.03",
-      "LowPrice": "0.59"
+      "LowFoilPrice": "1.05",
+      "LowPrice": "0.58"
     },
     {
       "Set": "TWI",
@@ -12856,6 +13055,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8426882030",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -12902,7 +13102,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/378.png",
       "tcgplayerId": "589576",
@@ -12927,6 +13127,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2843644198",
       "Cost": "4",
       "Power": "4",
       "HP": "4",
@@ -12936,12 +13137,12 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.68",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/195.png",
       "tcgplayerId": "578139",
       "LowFoilPrice": "0.46",
-      "LowPrice": "0.05"
+      "LowPrice": "0.07"
     },
     {
       "Set": "TWI",
@@ -12970,7 +13171,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.88",
+      "MarketPrice": "2.96",
       "FoilPrice": "6.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/460.png",
       "tcgplayerId": "589659",
@@ -12994,6 +13195,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0021045666",
       "Cost": "6",
       "Power": "3",
       "HP": "7",
@@ -13065,6 +13267,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4512764429",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -13116,8 +13319,8 @@
       "FoilPrice": "9.85",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/478.png",
       "tcgplayerId": "589677",
-      "LowFoilPrice": "13.99",
-      "LowPrice": "3.65"
+      "LowFoilPrice": "14.09",
+      "LowPrice": "3.25"
     },
     {
       "Set": "TWI",
@@ -13136,6 +13339,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6384086894",
       "Cost": "4",
       "Power": "0",
       "HP": "6",
@@ -13150,7 +13354,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/047.png",
       "tcgplayerId": "587999",
       "LowFoilPrice": "0.75",
-      "LowPrice": "0.35"
+      "LowPrice": "0.39"
     },
     {
       "Set": "TWI",
@@ -13178,7 +13382,7 @@
       "Unique": true,
       "Artist": "Mona Finden",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.33",
+      "MarketPrice": "2.32",
       "FoilPrice": "7.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/320.png",
       "tcgplayerId": "589518",
@@ -13203,6 +13407,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8540765053",
       "Cost": "7",
       "Power": "7",
       "HP": "7",
@@ -13250,7 +13455,7 @@
       "FoilPrice": "1.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/405.png",
       "tcgplayerId": "589603",
-      "LowFoilPrice": "0.25",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.35"
     },
     {
@@ -13270,6 +13475,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0354710662",
       "Cost": "6",
       "Power": "4",
       "HP": "8",
@@ -13318,7 +13524,7 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.47",
+      "MarketPrice": "0.48",
       "FoilPrice": "2.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/417.png",
       "tcgplayerId": "589615",
@@ -13337,6 +13543,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "8060312086",
       "Cost": "2",
       "FrontText": "Defeat a friendly unit. If you do, deal 4 damage to a unit.",
       "DoubleSided": false,
@@ -13370,11 +13577,11 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/408.png",
       "tcgplayerId": "589606",
-      "LowFoilPrice": "0.35",
+      "LowFoilPrice": "0.25",
       "LowPrice": "0.21"
     },
     {
@@ -13394,6 +13601,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6404471739",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -13446,7 +13654,7 @@
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/415.png",
       "tcgplayerId": "589613",
-      "LowFoilPrice": "0.25",
+      "LowFoilPrice": "0.23",
       "LowPrice": "0.04"
     },
     {
@@ -13466,6 +13674,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5027991609",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -13478,7 +13687,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.38",
       "FoilPrice": "12.71",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/180.png",
       "tcgplayerId": "565493",
@@ -13501,6 +13710,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9283787549",
       "Cost": "9",
       "Power": "8",
       "HP": "8",
@@ -13553,7 +13763,7 @@
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/359.png",
       "tcgplayerId": "589557",
-      "LowFoilPrice": "0.20",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.03"
     },
     {
@@ -13574,6 +13784,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1314547987",
       "Cost": "4",
       "Power": "3",
       "HP": "4",
@@ -13588,7 +13799,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/094.png",
       "tcgplayerId": "578130",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -13633,6 +13844,7 @@
       "Aspects": [
         "Aggression"
       ],
+      "cid": "6854189262",
       "HP": "25",
       "FrontText": "When you deploy a leader: Draw a card.",
       "DoubleSided": false,
@@ -13640,7 +13852,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/025.png",
       "tcgplayerId": "592035",
@@ -13663,11 +13875,11 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.07",
+      "MarketPrice": "1.08",
       "FoilPrice": "6.99",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/300.png",
       "tcgplayerId": "589498",
-      "LowFoilPrice": "4.64",
+      "LowFoilPrice": "4.74",
       "LowPrice": "0.59"
     },
     {
@@ -13681,6 +13893,7 @@
       "Traits": [
         "INNATE"
       ],
+      "cid": "9003830954",
       "Cost": "3",
       "Power": "0",
       "HP": "0",
@@ -13690,12 +13903,12 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.58",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/220.png",
       "tcgplayerId": "588462",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.03"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -13740,6 +13953,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7732981122",
       "Cost": "3",
       "Power": "3",
       "HP": "3",
@@ -13749,7 +13963,7 @@
       "Unique": true,
       "Artist": "Mona Finden",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/211.png",
       "tcgplayerId": "588458",
@@ -13805,6 +14019,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2800918480",
       "Cost": "1",
       "Power": "1",
       "HP": "3",
@@ -13821,7 +14036,7 @@
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/141.png",
       "tcgplayerId": "586737",
-      "LowFoilPrice": "0.03",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.02"
     },
     {
@@ -13878,6 +14093,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6406254252",
       "Cost": "1",
       "Power": "1",
       "HP": "2",
@@ -13887,7 +14103,7 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/179.png",
       "tcgplayerId": "578137",
@@ -13921,11 +14137,11 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/445.png",
       "tcgplayerId": "589644",
-      "LowFoilPrice": "0.32",
+      "LowFoilPrice": "0.35",
       "LowPrice": "0.19"
     },
     {
@@ -13939,6 +14155,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "3292172753",
       "Cost": "3",
       "Power": "0",
       "HP": "0",
@@ -13948,7 +14165,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/122.png",
       "tcgplayerId": "588431",
@@ -14000,6 +14217,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8201333805",
       "Cost": "6",
       "Power": "5",
       "HP": "4",
@@ -14049,7 +14267,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/404.png",
       "tcgplayerId": "589602",
@@ -14071,6 +14289,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3258646001",
       "Cost": "1",
       "Power": "0",
       "HP": "4",
@@ -14080,7 +14299,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/105.png",
       "tcgplayerId": "588424",
@@ -14134,6 +14353,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8096748603",
       "Cost": "4",
       "Power": "4",
       "HP": "3",
@@ -14143,7 +14363,7 @@
       "Unique": true,
       "Artist": "Ann Maulina",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/146.png",
       "tcgplayerId": "588436",
@@ -14180,7 +14400,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/414.png",
       "tcgplayerId": "589612",
       "LowFoilPrice": "2.00",
-      "LowPrice": "0.94"
+      "LowPrice": "0.74"
     },
     {
       "Set": "TWI",
@@ -14193,6 +14413,7 @@
       "Traits": [
         "LEARNED"
       ],
+      "cid": "2397845395",
       "Cost": "1",
       "Power": "0",
       "HP": "2",
@@ -14229,7 +14450,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/390.png",
       "tcgplayerId": "589588",
@@ -14247,6 +14468,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "1417180295",
       "Cost": "5",
       "FrontText": "Draw 3 cards.",
       "DoubleSided": false,
@@ -14302,6 +14524,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4824842849",
       "Cost": "4",
       "Power": "3",
       "HP": "3",
@@ -14349,7 +14572,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/382.png",
       "tcgplayerId": "589580",
@@ -14365,6 +14588,7 @@
       "Aspects": [
         "Vigilance"
       ],
+      "cid": "6672139274",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -14414,6 +14638,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3246242155",
       "Cost": "3",
       "Power": "4",
       "HP": "3",
@@ -14475,6 +14700,7 @@
         "REPUBLIC",
         "TACTIC"
       ],
+      "cid": "8719468890",
       "Cost": "2",
       "FrontText": "Give each friendly Trooper unit Raid 1 for this phase. \nGive each friendly Jedi unit Sentinel for this phase.",
       "DoubleSided": false,
@@ -14513,7 +14739,7 @@
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/510.png",
       "tcgplayerId": "589709",
-      "LowFoilPrice": "0.32",
+      "LowFoilPrice": "0.29",
       "LowPrice": "0.18"
     },
     {
@@ -14528,6 +14754,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "0633620454",
       "Cost": "2",
       "FrontText": "Deal damage to an enemy unit equal to the number of units you control in its arena.",
       "DoubleSided": false,
@@ -14561,11 +14788,11 @@
       "Unique": false,
       "Artist": "Robynn Frauhn",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/370.png",
       "tcgplayerId": "589568",
-      "LowFoilPrice": "0.45",
+      "LowFoilPrice": "0.50",
       "LowPrice": "0.11"
     },
     {
@@ -14579,6 +14806,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "6830921347",
       "Cost": "1",
       "FrontText": "Give a unit +2/+2 for this phase.",
       "DoubleSided": false,
@@ -14609,6 +14837,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3589814405",
       "Cost": "5",
       "Power": "4",
       "HP": "4",
@@ -14621,7 +14850,7 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/184.png",
       "tcgplayerId": "578838",
@@ -14674,6 +14903,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "5316152584",
       "Cost": "3",
       "FrontText": "A friendly unit captures an enemy non-leader unit in the same arena. (Put the captured card facedown under that unit until that unit leaves play.)",
       "DoubleSided": false,
@@ -14706,7 +14936,7 @@
       "Unique": false,
       "Artist": "Guillaume Ospital",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/396.png",
       "tcgplayerId": "589594",
@@ -14724,6 +14954,7 @@
       "Traits": [
         "DISASTER"
       ],
+      "cid": "2267524398",
       "Cost": "2",
       "FrontText": "Pay any number of resources. Create that many Clone Trooper tokens. Each opponent creates that many Battle Droid tokens.",
       "DoubleSided": false,
@@ -14731,7 +14962,7 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/125.png",
       "tcgplayerId": "578133",
@@ -14772,6 +15003,7 @@
       "Aspects": [
         "Vigilance"
       ],
+      "cid": "7303722102",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -14799,7 +15031,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/296.png",
       "tcgplayerId": "589494",
@@ -14817,6 +15049,7 @@
         "SEPARATIST",
         "PLAN"
       ],
+      "cid": "2565830105",
       "Cost": "15",
       "FrontText": "Exploit 4 \nChoose an opponent. Defeat each unit that player controls.",
       "DoubleSided": false,
@@ -14827,7 +15060,7 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.47",
       "FoilPrice": "1.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/078.png",
       "tcgplayerId": "588008",
@@ -14880,6 +15113,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "0398102006",
       "Cost": "8",
       "Power": "4",
       "HP": "7",
@@ -14889,7 +15123,7 @@
       "Unique": false,
       "Artist": "Jake Parker",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/234.png",
       "tcgplayerId": "583790",
@@ -14938,6 +15172,7 @@
       "Aspects": [
         "Aggression"
       ],
+      "cid": "3867306441",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
@@ -14986,6 +15221,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0216922902",
       "Cost": "9",
       "Power": "10",
       "HP": "10",
@@ -15000,7 +15236,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/067.png",
       "tcgplayerId": "588411",
       "LowFoilPrice": "0.23",
-      "LowPrice": "0.14"
+      "LowPrice": "0.15"
     },
     {
       "Set": "TWI",
@@ -15042,13 +15278,14 @@
       "Aspects": [
         "Command"
       ],
+      "cid": "0348855629",
       "HP": "30",
       "DoubleSided": false,
       "Rarity": "Common",
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/024.png",
       "tcgplayerId": "593872",
@@ -15069,7 +15306,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/299.png",
       "tcgplayerId": "589497",
@@ -15091,6 +15328,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8345985976",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -15132,7 +15370,7 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/333.png",
       "tcgplayerId": "589531",
@@ -15156,6 +15394,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6570091935",
       "Cost": "7",
       "Power": "7",
       "HP": "6",
@@ -15165,12 +15404,12 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/246.png",
       "tcgplayerId": "578141",
-      "LowFoilPrice": "0.13",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.15",
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -15198,12 +15437,12 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.60",
+      "MarketPrice": "2.58",
       "FoilPrice": "3.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/507.png",
       "tcgplayerId": "589706",
-      "LowFoilPrice": "2.37",
-      "LowPrice": "1.00"
+      "LowFoilPrice": "2.42",
+      "LowPrice": "0.96"
     },
     {
       "Set": "TWI",
@@ -15222,6 +15461,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6700679522",
       "Cost": "7",
       "Power": "4",
       "HP": "7",
@@ -15234,7 +15474,7 @@
       ],
       "Artist": "André Mealha",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/217.png",
       "tcgplayerId": "585103",
@@ -15270,7 +15510,7 @@
       ],
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/482.png",
       "tcgplayerId": "589681",
@@ -15289,6 +15529,7 @@
       "Traits": [
         "INNATE"
       ],
+      "cid": "7439418148",
       "Cost": "2",
       "Power": "4",
       "HP": "0",
@@ -15303,7 +15544,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/155.png",
       "tcgplayerId": "585100",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -15345,6 +15586,7 @@
       "Traits": [
         "FORCE"
       ],
+      "cid": "0056489820",
       "Cost": "6",
       "FrontText": "Deal 4 damage to a unit, 3 damage to a second unit, 2 damage to a third unit, and 1 damage to a fourth unit. (All damage is dealt simultaneously.)",
       "DoubleSided": false,
@@ -15352,12 +15594,12 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.86",
+      "MarketPrice": "0.88",
       "FoilPrice": "0.98",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/156.png",
       "tcgplayerId": "588029",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.62"
+      "LowPrice": "0.71"
     },
     {
       "Set": "TWI",
@@ -15378,7 +15620,7 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.78",
+      "MarketPrice": "1.74",
       "FoilPrice": "3.92",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/423.png",
       "tcgplayerId": "589621",
@@ -15396,6 +15638,7 @@
       "Traits": [
         "GAMBIT"
       ],
+      "cid": "0959549331",
       "Cost": "1",
       "FrontText": "Discard a card from your hand. If you do, look at an opponent's hand and discard a card from it.",
       "DoubleSided": false,
@@ -15403,11 +15646,11 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/223.png",
       "tcgplayerId": "588463",
-      "LowFoilPrice": "0.03",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.05"
     },
     {
@@ -15428,12 +15671,12 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.73",
+      "MarketPrice": "0.77",
       "FoilPrice": "0.90",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/488.png",
       "tcgplayerId": "589687",
       "LowFoilPrice": "0.35",
-      "LowPrice": "0.30"
+      "LowPrice": "0.56"
     },
     {
       "Set": "TWI",
@@ -15447,6 +15690,7 @@
       "Traits": [
         "FORCE"
       ],
+      "cid": "4113123883",
       "Cost": "3",
       "FrontText": "Play a unit that was defeated this phase from your discard pile. It costs 2 less and enters play ready. At the start of the regroup phase, defeat it.",
       "DoubleSided": false,
@@ -15454,12 +15698,12 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/189.png",
       "tcgplayerId": "576991",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -15485,7 +15729,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/454.png",
       "tcgplayerId": "589653",
       "LowFoilPrice": "1.11",
-      "LowPrice": "0.60"
+      "LowPrice": "0.35"
     },
     {
       "Set": "TWI",
@@ -15498,6 +15742,7 @@
       "Traits": [
         "INNATE"
       ],
+      "cid": "4991712618",
       "Cost": "4",
       "Power": "2",
       "HP": "2",
@@ -15510,12 +15755,12 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/071.png",
       "tcgplayerId": "588413",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "TWI",
@@ -15540,7 +15785,7 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/344.png",
       "tcgplayerId": "589542",
@@ -15564,6 +15809,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "3410014206",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -15624,6 +15870,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "5406361032",
       "Cost": "5",
       "FrontText": "Defeat a non-leader unit.",
       "DoubleSided": false,
@@ -15635,7 +15882,7 @@
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/077.png",
       "tcgplayerId": "588418",
-      "LowFoilPrice": "0.02",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -15656,7 +15903,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/350.png",
       "tcgplayerId": "589548",
@@ -15674,6 +15921,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1358583691",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -15740,6 +15988,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "7000286964",
       "Cost": "4",
       "Power": "3",
       "HP": "3",
@@ -15803,6 +16052,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3504029875",
       "Cost": "1",
       "Power": "1",
       "HP": "4",
@@ -15861,6 +16111,7 @@
       "Traits": [
         "SUPPLY"
       ],
+      "cid": "3459567689",
       "Cost": "1",
       "FrontText": "Look at cards from the top of your deck equal to the number of units that were defeated this phase. Draw 1 and put the others on the bottom of your deck in a random order.",
       "DoubleSided": false,
@@ -15868,11 +16119,11 @@
       "Unique": false,
       "Artist": "Joshua Carson",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/188.png",
       "tcgplayerId": "578840",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -15894,12 +16145,12 @@
       "Unique": false,
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/453.png",
       "tcgplayerId": "589652",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.04"
+      "LowPrice": "0.15"
     },
     {
       "Set": "TWI",
@@ -15917,6 +16168,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0677558416",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -15958,12 +16210,12 @@
       "Unique": false,
       "Artist": "Leonardo Giammichele",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/305.png",
       "tcgplayerId": "589503",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.14"
+      "LowPrice": "0.10"
     },
     {
       "Set": "TWI",
@@ -15982,6 +16234,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1686059165",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -16029,11 +16282,11 @@
       "Unique": true,
       "Artist": "Aitor Prieto Reyes",
       "VariantType": "Showcase",
-      "MarketPrice": "45.71",
+      "MarketPrice": "45.19",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/263.png",
       "tcgplayerId": "589724",
-      "LowPrice": "40.99"
+      "LowPrice": "40.00"
     },
     {
       "Set": "TWI",
@@ -16081,6 +16334,7 @@
       "Traits": [
         "TRICK"
       ],
+      "cid": "5190917242",
       "Cost": "3",
       "FrontText": "Return a non-leader unit to its owner's hand.",
       "DoubleSided": false,
@@ -16088,11 +16342,11 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "4.46",
+      "MarketPrice": "4.36",
       "FoilPrice": "2.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/226.png",
       "tcgplayerId": "588465",
-      "LowPrice": "3.34"
+      "LowPrice": "3.24"
     },
     {
       "Set": "TWI",
@@ -16111,6 +16365,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "1882027961",
       "Cost": "1",
       "Power": "2",
       "HP": "1",
@@ -16120,7 +16375,7 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/191.png",
       "tcgplayerId": "588038",
@@ -16157,7 +16412,7 @@
       "FoilPrice": "0.57",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/456.png",
       "tcgplayerId": "589655",
-      "LowFoilPrice": "0.20",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.15"
     },
     {
@@ -16178,6 +16433,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2847868671",
       "Cost": "7",
       "Power": "4",
       "HP": "9",
@@ -16193,11 +16449,11 @@
       ],
       "Artist": "Sandra Chlewiñska",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.21",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/004.png",
       "tcgplayerId": "587988",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "TWI",
@@ -16271,7 +16527,7 @@
       ],
       "Artist": "Sandra Chlewiñska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.77",
+      "MarketPrice": "0.78",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/279.png",
       "tcgplayerId": "589479",
@@ -16294,6 +16550,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4489623180",
       "Cost": "5",
       "Power": "2",
       "HP": "8",
@@ -16336,7 +16593,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TWI/450.png",
       "tcgplayerId": "589649",

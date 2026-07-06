@@ -18,6 +18,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2022483509",
       "Cost": "3",
       "Power": "3",
       "HP": "1",
@@ -27,7 +28,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "1.69",
+      "MarketPrice": "1.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/82.png",
       "tcgplayerId": "646352",
@@ -50,6 +51,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1858275309",
       "Cost": "3",
       "Power": "3",
       "HP": "1",
@@ -59,11 +61,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.97",
+      "MarketPrice": "0.92",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/85.png",
       "tcgplayerId": "646353",
-      "LowPrice": "0.66"
+      "LowPrice": "0.79"
     },
     {
       "Set": "IBH",
@@ -82,6 +84,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0274964861",
       "Cost": "4",
       "Power": "2",
       "HP": "5",
@@ -95,7 +98,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/60.png",
       "tcgplayerId": "646354",
-      "LowPrice": "0.11"
+      "LowPrice": "0.10"
     },
     {
       "Set": "IBH",
@@ -114,6 +117,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1751668579",
       "Cost": "4",
       "Power": "2",
       "HP": "5",
@@ -123,11 +127,11 @@
       "Unique": true,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/65.png",
       "tcgplayerId": "646355",
-      "LowPrice": "0.14"
+      "LowPrice": "0.12"
     },
     {
       "Set": "IBH",
@@ -147,6 +151,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4184803715",
       "Cost": "8",
       "Power": "8",
       "HP": "6",
@@ -156,7 +161,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/72.png",
       "tcgplayerId": "646356",
@@ -179,6 +184,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6742175030",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -191,7 +197,7 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/103.png",
       "tcgplayerId": "646359",
@@ -214,6 +220,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6199578966",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -226,11 +233,11 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/70.png",
       "tcgplayerId": "646357",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -249,6 +256,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1021393786",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -265,7 +273,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/89.png",
       "tcgplayerId": "646358",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -285,6 +293,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5480486728",
       "Cost": "7",
       "Power": "5",
       "HP": "7",
@@ -318,6 +327,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "5509338180",
       "Cost": "6",
       "Power": "4",
       "HP": "6",
@@ -330,7 +340,7 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Normal",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/14.png",
       "tcgplayerId": "646361",
@@ -354,6 +364,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9215616457",
       "Cost": "6",
       "Power": "4",
       "HP": "6",
@@ -366,7 +377,7 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Normal",
-      "MarketPrice": "0.57",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/26.png",
       "tcgplayerId": "646362",
@@ -389,6 +400,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2404973143",
       "Cost": "3",
       "Power": "1",
       "HP": "4",
@@ -398,11 +410,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/19.png",
       "tcgplayerId": "646363",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -421,6 +433,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5105187536",
       "Cost": "3",
       "Power": "1",
       "HP": "4",
@@ -430,11 +443,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/41.png",
       "tcgplayerId": "646364",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -453,6 +466,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1112130807",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -469,7 +483,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/3.png",
       "tcgplayerId": "646365",
-      "LowPrice": "0.13"
+      "LowPrice": "0.12"
     },
     {
       "Set": "IBH",
@@ -488,6 +502,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0691831929",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -524,6 +539,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9389694773",
       "Cost": "6",
       "Power": "3",
       "HP": "8",
@@ -536,11 +552,11 @@
       "Unique": true,
       "Artist": "Afif Khaled",
       "VariantType": "Normal",
-      "MarketPrice": "0.55",
+      "MarketPrice": "0.51",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/53.png",
       "tcgplayerId": "646459",
-      "LowPrice": "0.38"
+      "LowPrice": "0.36"
     },
     {
       "Set": "IBH",
@@ -559,6 +575,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "0162722840",
       "Cost": "7",
       "Power": "5",
       "HP": "6",
@@ -594,6 +611,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8913839157",
       "Cost": "7",
       "Power": "5",
       "HP": "6",
@@ -610,7 +628,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/98.png",
       "tcgplayerId": "646368",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -628,6 +646,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6815960456",
       "Cost": "3",
       "Power": "0",
       "HP": "4",
@@ -640,7 +659,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.34",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/69.png",
       "tcgplayerId": "646369",
@@ -662,6 +681,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9420878223",
       "Cost": "3",
       "Power": "0",
       "HP": "4",
@@ -674,7 +694,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.48",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/83.png",
       "tcgplayerId": "646370",
@@ -689,6 +709,7 @@
       "Aspects": [
         "Cunning"
       ],
+      "cid": "1049149674",
       "HP": "20",
       "FrontText": "",
       "DoubleSided": false,
@@ -696,11 +717,11 @@
       "Unique": false,
       "Artist": "EJ dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/2.png",
       "tcgplayerId": "646371",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -717,6 +738,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2982161149",
       "Cost": "2",
       "Power": "1",
       "HP": "5",
@@ -730,7 +752,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/43.png",
       "tcgplayerId": "646373",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -747,6 +769,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5617444812",
       "Cost": "2",
       "Power": "1",
       "HP": "5",
@@ -760,7 +783,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/47.png",
       "tcgplayerId": "646374",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -777,6 +800,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8073149642",
       "Cost": "2",
       "Power": "1",
       "HP": "5",
@@ -790,7 +814,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/7.png",
       "tcgplayerId": "646372",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -808,6 +832,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9489761564",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -839,6 +864,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "7219860264",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -848,7 +874,7 @@
       "Unique": false,
       "Artist": "Pandu Mahardika",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/35.png",
       "tcgplayerId": "646376",
@@ -870,6 +896,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8262801332",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -901,6 +928,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8753464080",
       "Cost": "2",
       "Power": "3",
       "HP": "4",
@@ -910,11 +938,11 @@
       "Unique": false,
       "Artist": "Monika Pałosz",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/101.png",
       "tcgplayerId": "646380",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -932,6 +960,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0875657287",
       "Cost": "2",
       "Power": "3",
       "HP": "4",
@@ -941,11 +970,11 @@
       "Unique": false,
       "Artist": "Monika Pałosz",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/55.png",
       "tcgplayerId": "646378",
-      "LowPrice": "0.10"
+      "LowPrice": "0.08"
     },
     {
       "Set": "IBH",
@@ -963,6 +992,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9395521170",
       "Cost": "2",
       "Power": "3",
       "HP": "4",
@@ -972,7 +1002,7 @@
       "Unique": false,
       "Artist": "Monika Pałosz",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/73.png",
       "tcgplayerId": "646379",
@@ -987,6 +1017,7 @@
       "Aspects": [
         "Vigilance"
       ],
+      "cid": "0479107180",
       "HP": "20",
       "FrontText": "",
       "DoubleSided": false,
@@ -994,11 +1025,11 @@
       "Unique": false,
       "Artist": "Stephen Zavala",
       "VariantType": "Normal",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/54.png",
       "tcgplayerId": "646381",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1017,6 +1048,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "0446985285",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -1049,6 +1081,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "7743822377",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -1062,7 +1095,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/33.png",
       "tcgplayerId": "646389",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1081,6 +1114,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9866010614",
       "Cost": "5",
       "Power": "5",
       "HP": "4",
@@ -1113,6 +1147,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8709200009",
       "Cost": "4",
       "Power": "2",
       "HP": "6",
@@ -1145,6 +1180,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6563724409",
       "Cost": "4",
       "Power": "2",
       "HP": "6",
@@ -1177,6 +1213,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6776733024",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -1209,6 +1246,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2867307776",
       "Cost": "5",
       "Power": "3",
       "HP": "6",
@@ -1218,7 +1256,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/88.png",
       "tcgplayerId": "646385",
@@ -1235,6 +1273,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "2859074789",
       "Cost": "1",
       "FrontText": "Exhaust an enemy ground unit.",
       "DoubleSided": false,
@@ -1242,7 +1281,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/18.png",
       "tcgplayerId": "646386",
@@ -1259,6 +1298,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4564775801",
       "Cost": "1",
       "FrontText": "Exhaust an enemy ground unit.",
       "DoubleSided": false,
@@ -1270,7 +1310,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/45.png",
       "tcgplayerId": "646387",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1289,6 +1329,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9655836052",
       "Cost": "6",
       "Power": "5",
       "HP": "7",
@@ -1321,6 +1362,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2466652200",
       "Cost": "6",
       "Power": "5",
       "HP": "7",
@@ -1330,7 +1372,7 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/67.png",
       "tcgplayerId": "646392",
@@ -1352,6 +1394,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4136801536",
       "Cost": "6",
       "Power": "4",
       "HP": "6",
@@ -1386,6 +1429,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3504602511",
       "Cost": "6",
       "Power": "4",
       "HP": "6",
@@ -1398,11 +1442,11 @@
       ],
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
-      "MarketPrice": "0.59",
+      "MarketPrice": "0.56",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/42.png",
       "tcgplayerId": "646394",
-      "LowPrice": "0.14"
+      "LowPrice": "0.13"
     },
     {
       "Set": "IBH",
@@ -1420,6 +1464,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4512477799",
       "Cost": "4",
       "Power": "3",
       "HP": "4",
@@ -1429,11 +1474,11 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "1.11",
+      "MarketPrice": "1.03",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/64.png",
       "tcgplayerId": "646395",
-      "LowPrice": "0.50"
+      "LowPrice": "0.44"
     },
     {
       "Set": "IBH",
@@ -1451,6 +1496,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0722293431",
       "Cost": "4",
       "Power": "3",
       "HP": "4",
@@ -1460,7 +1506,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "2.38",
+      "MarketPrice": "1.93",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/92.png",
       "tcgplayerId": "646396",
@@ -1482,6 +1528,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "4808981574",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -1491,7 +1538,7 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/37.png",
       "tcgplayerId": "646397",
@@ -1513,6 +1560,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3842468148",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -1522,11 +1570,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/38.png",
       "tcgplayerId": "646398",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1544,6 +1592,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0919508424",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -1557,7 +1606,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/48.png",
       "tcgplayerId": "646399",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1571,6 +1620,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "2651147042",
       "Cost": "2",
       "FrontText": "Draw 2 cards, then discard a card from your hand.",
       "DoubleSided": false,
@@ -1582,7 +1632,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/102.png",
       "tcgplayerId": "646401",
-      "LowPrice": "0.18"
+      "LowPrice": "0.15"
     },
     {
       "Set": "IBH",
@@ -1596,6 +1646,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "2796502553",
       "Cost": "2",
       "FrontText": "Draw 2 cards, then discard a card from your hand.",
       "DoubleSided": false,
@@ -1603,7 +1654,7 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.76",
+      "MarketPrice": "0.66",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/74.png",
       "tcgplayerId": "646400",
@@ -1620,6 +1671,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "9755220648",
       "Cost": "3",
       "FrontText": "Deal 1 damage to an enemy unit and 1 damage to another enemy unit.",
       "DoubleSided": false,
@@ -1627,11 +1679,11 @@
       "Unique": false,
       "Artist": "Kursad Karatas",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/39.png",
       "tcgplayerId": "646403",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1644,6 +1696,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "1941072965",
       "Cost": "3",
       "FrontText": "Deal 1 damage to an enemy unit and 1 damage to another enemy unit.",
       "DoubleSided": false,
@@ -1655,7 +1708,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/5.png",
       "tcgplayerId": "646402",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1668,6 +1721,7 @@
       "Traits": [
         "GAMBIT"
       ],
+      "cid": "0434810928",
       "Cost": "2",
       "FrontText": "Reveal the top 3 cards of your deck. Draw a unit revealed this way, then discard the other revealed cards.",
       "DoubleSided": false,
@@ -1679,7 +1733,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/25.png",
       "tcgplayerId": "646405",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1692,6 +1746,7 @@
       "Traits": [
         "GAMBIT"
       ],
+      "cid": "6605408513",
       "Cost": "2",
       "FrontText": "Reveal the top 3 cards of your deck. Draw a unit revealed this way, then discard the other revealed cards.",
       "DoubleSided": false,
@@ -1699,11 +1754,11 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/9.png",
       "tcgplayerId": "646404",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1719,6 +1774,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5258186349",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -1748,6 +1804,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9508246309",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -1774,6 +1831,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "1758639231",
       "Cost": "2",
       "FrontText": "Attack with a unit. It gets +2/+0 for this attack. (You can only attack with a ready friendly unit.)",
       "DoubleSided": false,
@@ -1781,11 +1839,11 @@
       "Unique": false,
       "Artist": "Derek Laufman",
       "VariantType": "Normal",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.40",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/21.png",
       "tcgplayerId": "646408",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1798,6 +1856,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "7693310752",
       "Cost": "2",
       "FrontText": "Attack with a unit. It gets +2/+0 for this attack. (You can only attack with a ready friendly unit.)",
       "DoubleSided": false,
@@ -1805,11 +1864,11 @@
       "Unique": false,
       "Artist": "Derek Laufman",
       "VariantType": "Normal",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/30.png",
       "tcgplayerId": "646409",
-      "LowPrice": "0.14"
+      "LowPrice": "0.13"
     },
     {
       "Set": "IBH",
@@ -1825,6 +1884,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9782761594",
       "Cost": "4",
       "Power": "0",
       "HP": "5",
@@ -1854,6 +1914,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8964238451",
       "Cost": "4",
       "Power": "0",
       "HP": "5",
@@ -1885,6 +1946,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "0008529481",
       "Cost": "4",
       "Power": "2",
       "HP": "5",
@@ -1897,11 +1959,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/58.png",
       "tcgplayerId": "646412",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1919,6 +1981,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "3796077047",
       "Cost": "4",
       "Power": "2",
       "HP": "5",
@@ -1931,11 +1994,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/84.png",
       "tcgplayerId": "646413",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1953,6 +2016,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "7780705512",
       "Cost": "4",
       "Power": "2",
       "HP": "5",
@@ -1965,11 +2029,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/90.png",
       "tcgplayerId": "646414",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -1988,6 +2052,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "9970912404",
       "Cost": "5",
       "Power": "3",
       "HP": "7",
@@ -2000,7 +2065,7 @@
       "Unique": true,
       "Artist": "Afif Khaled",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.27",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/1.png",
       "tcgplayerId": "646457",
@@ -2023,6 +2088,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1174196426",
       "Cost": "7",
       "Power": "6",
       "HP": "6",
@@ -2035,11 +2101,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "1.52",
+      "MarketPrice": "1.34",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/20.png",
       "tcgplayerId": "646415",
-      "LowPrice": "1.00"
+      "LowPrice": "1.04"
     },
     {
       "Set": "IBH",
@@ -2059,6 +2125,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6270777752",
       "Cost": "7",
       "Power": "5",
       "HP": "6",
@@ -2091,6 +2158,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3366353612",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -2100,7 +2168,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/11.png",
       "tcgplayerId": "646417",
@@ -2123,6 +2191,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0735555167",
       "Cost": "2",
       "Power": "1",
       "HP": "4",
@@ -2132,11 +2201,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/49.png",
       "tcgplayerId": "646418",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2152,6 +2221,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5599665266",
       "Cost": "5",
       "Power": "6",
       "HP": "3",
@@ -2184,6 +2254,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "8401089833",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -2216,6 +2287,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "1242820303",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -2248,6 +2320,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9863058946",
       "Cost": "3",
       "Power": "2",
       "HP": "3",
@@ -2257,7 +2330,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/6.png",
       "tcgplayerId": "646420",
@@ -2274,6 +2347,7 @@
       "Traits": [
         "PLAN"
       ],
+      "cid": "0375794695",
       "Cost": "3",
       "FrontText": "Heal 5 damage from a unit.",
       "DoubleSided": false,
@@ -2304,6 +2378,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0056236541",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -2320,7 +2395,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/17.png",
       "tcgplayerId": "646425",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2339,6 +2414,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "7295383567",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -2355,7 +2431,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/34.png",
       "tcgplayerId": "646426",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2374,6 +2450,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "8332320550",
       "Cost": "4",
       "Power": "3",
       "HP": "5",
@@ -2386,7 +2463,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/4.png",
       "tcgplayerId": "646424",
@@ -2408,6 +2485,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "6867378216",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2439,6 +2517,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "1525827462",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2448,7 +2527,7 @@
       "Unique": false,
       "Artist": "Aaron Dhanda",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/81.png",
       "tcgplayerId": "646428",
@@ -2470,6 +2549,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4679553947",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2479,7 +2559,7 @@
       "Unique": false,
       "Artist": "Aaron Dhanda",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/97.png",
       "tcgplayerId": "646429",
@@ -2501,6 +2581,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0581968676",
       "Cost": "1",
       "Power": "1",
       "HP": "3",
@@ -2510,7 +2591,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/63.png",
       "tcgplayerId": "646430",
@@ -2532,6 +2613,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3851011404",
       "Cost": "1",
       "Power": "1",
       "HP": "3",
@@ -2541,7 +2623,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/77.png",
       "tcgplayerId": "646431",
@@ -2563,6 +2645,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6427105703",
       "Cost": "1",
       "Power": "1",
       "HP": "3",
@@ -2572,11 +2655,11 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/87.png",
       "tcgplayerId": "646432",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2594,6 +2677,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3768891856",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -2603,7 +2687,7 @@
       "Unique": false,
       "Artist": "Ivan Fiorelli",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/57.png",
       "tcgplayerId": "646433",
@@ -2625,6 +2709,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2668644505",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -2634,11 +2719,11 @@
       "Unique": false,
       "Artist": "Ivan Fiorelli",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/80.png",
       "tcgplayerId": "646434",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2656,6 +2741,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "0478971928",
       "Cost": "2",
       "Power": "2",
       "HP": "3",
@@ -2688,6 +2774,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "9127322562",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -2700,7 +2787,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/78.png",
       "tcgplayerId": "646436",
@@ -2723,6 +2810,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "4100796757",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -2735,7 +2823,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/93.png",
       "tcgplayerId": "646437",
@@ -2758,6 +2846,7 @@
       "Arenas": [
         "Space"
       ],
+      "cid": "7465295789",
       "Cost": "2",
       "Power": "1",
       "HP": "3",
@@ -2770,7 +2859,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/94.png",
       "tcgplayerId": "646438",
@@ -2787,6 +2876,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "8290455967",
       "Cost": "2",
       "FrontText": "Deal 2 damage to a base.",
       "DoubleSided": false,
@@ -2794,7 +2884,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/59.png",
       "tcgplayerId": "646439",
@@ -2811,6 +2901,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "8728429619",
       "Cost": "2",
       "FrontText": "Deal 2 damage to a base.",
       "DoubleSided": false,
@@ -2838,6 +2929,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2798571364",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2847,7 +2939,7 @@
       "Unique": false,
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/15.png",
       "tcgplayerId": "646441",
@@ -2867,6 +2959,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "1456615169",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2896,6 +2989,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "5577296048",
       "Cost": "2",
       "Power": "2",
       "HP": "2",
@@ -2905,7 +2999,7 @@
       "Unique": false,
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/51.png",
       "tcgplayerId": "646443",
@@ -2922,6 +3016,7 @@
       "Traits": [
         "DISASTER"
       ],
+      "cid": "4087028261",
       "Cost": "6",
       "FrontText": "Defeat up to 2 enemy units that each cost 3 or less.",
       "DoubleSided": false,
@@ -2929,7 +3024,7 @@
       "Unique": false,
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
-      "MarketPrice": "0.71",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/104.png",
       "tcgplayerId": "646444",
@@ -2946,6 +3041,7 @@
       "Traits": [
         "INNATE"
       ],
+      "cid": "7014669428",
       "Cost": "1",
       "FrontText": "Heal 2 damage from a unit.",
       "DoubleSided": false,
@@ -2953,11 +3049,11 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/66.png",
       "tcgplayerId": "646445",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2970,6 +3066,7 @@
       "Traits": [
         "INNATE"
       ],
+      "cid": "2639603441",
       "Cost": "1",
       "FrontText": "Heal 2 damage from a unit.",
       "DoubleSided": false,
@@ -2981,7 +3078,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/91.png",
       "tcgplayerId": "646446",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "IBH",
@@ -2999,6 +3096,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "3048297425",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -3030,6 +3128,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "2679012540",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -3061,6 +3160,7 @@
       "Arenas": [
         "Ground"
       ],
+      "cid": "6699126595",
       "Cost": "3",
       "Power": "3",
       "HP": "4",
@@ -3087,6 +3187,7 @@
       "Traits": [
         "GAMBIT"
       ],
+      "cid": "8765982385",
       "Cost": "6",
       "FrontText": "Return a non-leader unit that costs 6 or less to its owner's hand. Exhaust each other enemy unit in the same arena.",
       "DoubleSided": false,
@@ -3094,11 +3195,11 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "18.74",
+      "MarketPrice": "18.56",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/52.png",
       "tcgplayerId": "646450",
-      "LowPrice": "17.99"
+      "LowPrice": "16.99"
     },
     {
       "Set": "IBH",
@@ -3111,6 +3212,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "7524197668",
       "Cost": "3",
       "FrontText": "Deal 3 damage to a unit.",
       "DoubleSided": false,
@@ -3135,6 +3237,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "0646385311",
       "Cost": "3",
       "FrontText": "Deal 3 damage to a unit.",
       "DoubleSided": false,
@@ -3142,7 +3245,7 @@
       "Unique": false,
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/86.png",
       "tcgplayerId": "646452",
@@ -3160,6 +3263,7 @@
       "Traits": [
         "TACTIC"
       ],
+      "cid": "4187779775",
       "Cost": "4",
       "FrontText": "Defeat a friendly unit. If you do, ready a friendly unit with 5 or less power.",
       "DoubleSided": false,
@@ -3167,7 +3271,7 @@
       "Unique": false,
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/95.png",
       "tcgplayerId": "646453",
