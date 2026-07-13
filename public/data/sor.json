@@ -55,7 +55,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.10",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/059F.png",
       "tcgplayerId": "540180",
@@ -217,7 +217,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/382.png",
       "tcgplayerId": "540504",
       "LowFoilPrice": "0.40",
-      "LowPrice": "0.20"
+      "LowPrice": "0.15"
     },
     {
       "Set": "SOR",
@@ -249,7 +249,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/382F.png",
       "tcgplayerId": "540504",
       "LowFoilPrice": "0.40",
-      "LowPrice": "0.20"
+      "LowPrice": "0.15"
     },
     {
       "Set": "SOR",
@@ -282,7 +282,7 @@
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/039.png",
       "tcgplayerId": "540160",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.05"
     },
     {
@@ -315,7 +315,7 @@
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/039F.png",
       "tcgplayerId": "540160",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.05"
     },
     {
@@ -344,12 +344,12 @@
       "Unique": false,
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.45",
       "FoilPrice": "0.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/305.png",
       "tcgplayerId": "540427",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.20"
+      "LowPrice": "0.27"
     },
     {
       "Set": "SOR",
@@ -377,12 +377,12 @@
       "Unique": false,
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.69",
+      "MarketPrice": "0.71",
       "FoilPrice": "0.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/305F.png",
       "tcgplayerId": "540427",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.20"
+      "LowPrice": "0.27"
     },
     {
       "Set": "SOR",
@@ -418,7 +418,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/232.png",
       "tcgplayerId": "540353",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -448,12 +448,12 @@
       ],
       "Artist": "Stephen Zavala",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/232F.png",
       "tcgplayerId": "540353",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -518,7 +518,7 @@
       ],
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.54",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/493F.png",
       "tcgplayerId": "540615",
@@ -591,7 +591,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/037F.png",
       "tcgplayerId": "540158",
@@ -627,7 +627,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/303.png",
       "tcgplayerId": "540425",
@@ -888,7 +888,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Foil",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.73",
       "FoilPrice": "0.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/097F.png",
       "tcgplayerId": "540218",
@@ -928,8 +928,8 @@
       "FoilPrice": "5.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/361.png",
       "tcgplayerId": "540483",
-      "LowFoilPrice": "5.42",
-      "LowPrice": "1.57"
+      "LowFoilPrice": "5.52",
+      "LowPrice": "1.75"
     },
     {
       "Set": "SOR",
@@ -960,12 +960,12 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "6.32",
+      "MarketPrice": "6.27",
       "FoilPrice": "5.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/361F.png",
       "tcgplayerId": "540483",
-      "LowFoilPrice": "5.42",
-      "LowPrice": "1.57"
+      "LowFoilPrice": "5.52",
+      "LowPrice": "1.75"
     },
     {
       "Set": "SOR",
@@ -1027,7 +1027,7 @@
       "Unique": true,
       "Artist": "Yvette Chua",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/129.png",
       "tcgplayerId": "540250",
@@ -1060,7 +1060,7 @@
       "Unique": true,
       "Artist": "Yvette Chua",
       "VariantType": "Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/129F.png",
       "tcgplayerId": "540250",
@@ -1093,7 +1093,7 @@
       "Unique": true,
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.63",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/393.png",
       "tcgplayerId": "540515",
@@ -1199,7 +1199,7 @@
       ],
       "Artist": "Denis Medri",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/079F.png",
       "tcgplayerId": "540200",
@@ -1235,7 +1235,7 @@
       ],
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.75",
+      "MarketPrice": "0.76",
       "FoilPrice": "1.88",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/344.png",
       "tcgplayerId": "540466",
@@ -1377,7 +1377,7 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.74",
+      "MarketPrice": "1.67",
       "FoilPrice": "2.71",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/379.png",
       "tcgplayerId": "540501",
@@ -1412,7 +1412,7 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.91",
+      "MarketPrice": "2.94",
       "FoilPrice": "2.71",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/379F.png",
       "tcgplayerId": "540501",
@@ -1439,12 +1439,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "2.92",
+      "MarketPrice": "2.70",
       "FoilPrice": "5.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/155.png",
       "tcgplayerId": "540276",
-      "LowFoilPrice": "3.97",
-      "LowPrice": "2.25"
+      "LowFoilPrice": "3.12",
+      "LowPrice": "1.97"
     },
     {
       "Set": "SOR",
@@ -1465,12 +1465,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "5.17",
+      "MarketPrice": "4.60",
       "FoilPrice": "5.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/155F.png",
       "tcgplayerId": "540276",
-      "LowFoilPrice": "3.97",
-      "LowPrice": "2.25"
+      "LowFoilPrice": "3.12",
+      "LowPrice": "1.97"
     },
     {
       "Set": "SOR",
@@ -1496,7 +1496,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/418.png",
       "tcgplayerId": "540540",
       "LowFoilPrice": "13.79",
-      "LowPrice": "4.78"
+      "LowPrice": "5.90"
     },
     {
       "Set": "SOR",
@@ -1517,12 +1517,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "15.69",
+      "MarketPrice": "15.85",
       "FoilPrice": "14.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/418F.png",
       "tcgplayerId": "540540",
       "LowFoilPrice": "13.79",
-      "LowPrice": "4.78"
+      "LowPrice": "5.90"
     },
     {
       "Set": "SOR",
@@ -1549,12 +1549,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/093.png",
       "tcgplayerId": "540214",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -1585,7 +1585,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/093F.png",
       "tcgplayerId": "540214",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -1679,7 +1679,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/237.png",
       "tcgplayerId": "540358",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -1710,7 +1710,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/237F.png",
       "tcgplayerId": "540358",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -1736,11 +1736,11 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/496.png",
       "tcgplayerId": "540618",
-      "LowFoilPrice": "0.15",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.06"
     },
     {
@@ -1767,11 +1767,11 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/496F.png",
       "tcgplayerId": "540618",
-      "LowFoilPrice": "0.15",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.06"
     },
     {
@@ -1802,7 +1802,7 @@
       "FoilPrice": "0.10",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/161.png",
       "tcgplayerId": "540282",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -1832,7 +1832,7 @@
       "FoilPrice": "0.10",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/161F.png",
       "tcgplayerId": "540282",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -1858,7 +1858,7 @@
       "Unique": false,
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/424.png",
       "tcgplayerId": "540546",
@@ -1914,11 +1914,11 @@
       "Unique": false,
       "Artist": "Rebecca Farrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/218.png",
       "tcgplayerId": "540339",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -1943,7 +1943,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/218F.png",
       "tcgplayerId": "540339",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.01"
     },
     {
@@ -1964,7 +1964,7 @@
       "Unique": false,
       "Artist": "Rebecca Farrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/480.png",
       "tcgplayerId": "540602",
@@ -2016,7 +2016,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/106.png",
       "tcgplayerId": "540227",
@@ -2042,7 +2042,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/106F.png",
       "tcgplayerId": "540227",
@@ -2068,7 +2068,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.41",
       "FoilPrice": "1.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/370.png",
       "tcgplayerId": "540492",
@@ -2200,11 +2200,11 @@
       ],
       "Artist": "Mark Zhang",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/457.png",
       "tcgplayerId": "540579",
-      "LowFoilPrice": "0.11",
+      "LowFoilPrice": "0.12",
       "LowPrice": "0.02"
     },
     {
@@ -2239,7 +2239,7 @@
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/457F.png",
       "tcgplayerId": "540579",
-      "LowFoilPrice": "0.11",
+      "LowFoilPrice": "0.12",
       "LowPrice": "0.02"
     },
     {
@@ -2270,12 +2270,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "4.33",
+      "MarketPrice": "4.14",
       "FoilPrice": "12.77",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/040.png",
       "tcgplayerId": "540161",
       "LowFoilPrice": "4.00",
-      "LowPrice": "3.55"
+      "LowPrice": "2.99"
     },
     {
       "Set": "SOR",
@@ -2304,12 +2304,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "8.27",
+      "MarketPrice": "8.31",
       "FoilPrice": "12.77",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/040F.png",
       "tcgplayerId": "540161",
       "LowFoilPrice": "4.00",
-      "LowPrice": "3.55"
+      "LowPrice": "2.99"
     },
     {
       "Set": "SOR",
@@ -2338,12 +2338,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "13.46",
+      "MarketPrice": "13.26",
       "FoilPrice": "27.43",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/306.png",
       "tcgplayerId": "540428",
-      "LowFoilPrice": "19.95",
-      "LowPrice": "10.97"
+      "LowFoilPrice": "19.99",
+      "LowPrice": "8.08"
     },
     {
       "Set": "SOR",
@@ -2372,12 +2372,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "22.12",
+      "MarketPrice": "22.32",
       "FoilPrice": "27.43",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/306F.png",
       "tcgplayerId": "540428",
-      "LowFoilPrice": "19.95",
-      "LowPrice": "10.97"
+      "LowFoilPrice": "19.99",
+      "LowPrice": "8.08"
     },
     {
       "Set": "SOR",
@@ -2406,7 +2406,7 @@
       "Unique": true,
       "Artist": "Milos Slavkovic",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/094.png",
       "tcgplayerId": "540215",
@@ -2439,7 +2439,7 @@
       "Unique": true,
       "Artist": "Milos Slavkovic",
       "VariantType": "Foil",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/094F.png",
       "tcgplayerId": "540215",
@@ -2472,11 +2472,11 @@
       "Unique": true,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.05",
+      "MarketPrice": "1.04",
       "FoilPrice": "1.84",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/358.png",
       "tcgplayerId": "540480",
-      "LowFoilPrice": "1.66",
+      "LowFoilPrice": "1.75",
       "LowPrice": "0.94"
     },
     {
@@ -2509,7 +2509,7 @@
       "FoilPrice": "1.84",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/358F.png",
       "tcgplayerId": "540480",
-      "LowFoilPrice": "1.66",
+      "LowFoilPrice": "1.75",
       "LowPrice": "0.94"
     },
     {
@@ -2537,7 +2537,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/199.png",
       "tcgplayerId": "540320",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -2563,7 +2563,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/199F.png",
       "tcgplayerId": "540320",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -2610,7 +2610,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.13",
+      "MarketPrice": "4.15",
       "FoilPrice": "4.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/461F.png",
       "tcgplayerId": "540583",
@@ -2806,7 +2806,7 @@
       ],
       "Artist": "Milos Slavkovic",
       "VariantType": "Foil",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/065F.png",
       "tcgplayerId": "540186",
@@ -2846,7 +2846,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/330.png",
       "tcgplayerId": "540452",
       "LowFoilPrice": "0.58",
-      "LowPrice": "0.12"
+      "LowPrice": "0.23"
     },
     {
       "Set": "SOR",
@@ -2881,7 +2881,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/330F.png",
       "tcgplayerId": "540452",
       "LowFoilPrice": "0.58",
-      "LowPrice": "0.12"
+      "LowPrice": "0.23"
     },
     {
       "Set": "SOR",
@@ -2913,7 +2913,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.34",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/056.png",
       "tcgplayerId": "540177",
@@ -2985,12 +2985,12 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.11",
+      "MarketPrice": "2.12",
       "FoilPrice": "4.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/321.png",
       "tcgplayerId": "540443",
       "LowFoilPrice": "4.06",
-      "LowPrice": "1.60"
+      "LowPrice": "1.95"
     },
     {
       "Set": "SOR",
@@ -3026,7 +3026,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/321F.png",
       "tcgplayerId": "540443",
       "LowFoilPrice": "4.06",
-      "LowPrice": "1.60"
+      "LowPrice": "1.95"
     },
     {
       "Set": "SOR",
@@ -3062,7 +3062,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/156.png",
       "tcgplayerId": "540277",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.08"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -3097,7 +3097,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/156F.png",
       "tcgplayerId": "540277",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.08"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -3204,7 +3204,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/177.png",
       "tcgplayerId": "540298",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -3235,12 +3235,12 @@
       ],
       "Artist": "Steve Morris",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/177F.png",
       "tcgplayerId": "540298",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -3271,7 +3271,7 @@
       ],
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.91",
+      "MarketPrice": "0.85",
       "FoilPrice": "2.05",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/440.png",
       "tcgplayerId": "540562",
@@ -3342,7 +3342,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.65",
+      "MarketPrice": "0.58",
       "FoilPrice": "1.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/147.png",
       "tcgplayerId": "540268",
@@ -3376,7 +3376,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "1.24",
+      "MarketPrice": "1.25",
       "FoilPrice": "1.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/147F.png",
       "tcgplayerId": "540268",
@@ -3444,7 +3444,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.68",
+      "MarketPrice": "3.67",
       "FoilPrice": "3.71",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/410F.png",
       "tcgplayerId": "540532",
@@ -3511,7 +3511,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/088F.png",
       "tcgplayerId": "540209",
@@ -3647,12 +3647,12 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "4.58",
+      "MarketPrice": "4.55",
       "FoilPrice": "6.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/179.png",
       "tcgplayerId": "540300",
-      "LowFoilPrice": "4.64",
-      "LowPrice": "4.15"
+      "LowFoilPrice": "4.98",
+      "LowPrice": "4.00"
     },
     {
       "Set": "SOR",
@@ -3680,12 +3680,12 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "5.42",
+      "MarketPrice": "5.34",
       "FoilPrice": "6.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/179F.png",
       "tcgplayerId": "540300",
-      "LowFoilPrice": "4.64",
-      "LowPrice": "4.15"
+      "LowFoilPrice": "4.98",
+      "LowPrice": "4.00"
     },
     {
       "Set": "SOR",
@@ -3716,11 +3716,11 @@
       "Unique": true,
       "Artist": "Amélie Hutt",
       "VariantType": "Showcase",
-      "MarketPrice": "260.36",
+      "MarketPrice": "264.60",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/265.png",
       "tcgplayerId": "540684",
-      "LowPrice": "449.99"
+      "LowPrice": "380.00"
     },
     {
       "Set": "SOR",
@@ -3787,7 +3787,7 @@
       "FoilPrice": "23.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/442.png",
       "tcgplayerId": "540564",
-      "LowFoilPrice": "21.61",
+      "LowFoilPrice": "21.53",
       "LowPrice": "7.40"
     },
     {
@@ -3816,11 +3816,11 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "21.61",
+      "MarketPrice": "21.54",
       "FoilPrice": "23.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/442F.png",
       "tcgplayerId": "540564",
-      "LowFoilPrice": "21.61",
+      "LowFoilPrice": "21.53",
       "LowPrice": "7.40"
     },
     {
@@ -3850,7 +3850,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/201.png",
       "tcgplayerId": "540322",
@@ -3883,7 +3883,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.37",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/201F.png",
       "tcgplayerId": "540322",
@@ -3980,7 +3980,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/173.png",
       "tcgplayerId": "540294",
       "LowFoilPrice": "0.94",
-      "LowPrice": "0.24"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -4000,12 +4000,12 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "2.52",
+      "MarketPrice": "2.37",
       "FoilPrice": "3.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/173F.png",
       "tcgplayerId": "540294",
       "LowFoilPrice": "0.94",
-      "LowPrice": "0.24"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -4025,11 +4025,11 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.78",
+      "MarketPrice": "5.71",
       "FoilPrice": "9.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/436.png",
       "tcgplayerId": "540558",
-      "LowFoilPrice": "10.12",
+      "LowFoilPrice": "8.99",
       "LowPrice": "4.95"
     },
     {
@@ -4054,7 +4054,7 @@
       "FoilPrice": "9.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/436F.png",
       "tcgplayerId": "540558",
-      "LowFoilPrice": "10.12",
+      "LowFoilPrice": "8.99",
       "LowPrice": "4.95"
     },
     {
@@ -4087,12 +4087,12 @@
       ],
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/182.png",
       "tcgplayerId": "540303",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.06"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -4128,7 +4128,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/182F.png",
       "tcgplayerId": "540303",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.06"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -4195,7 +4195,7 @@
       ],
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.59",
+      "MarketPrice": "1.63",
       "FoilPrice": "1.78",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/445F.png",
       "tcgplayerId": "540567",
@@ -4336,7 +4336,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.48",
+      "MarketPrice": "0.47",
       "FoilPrice": "0.43",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/446F.png",
       "tcgplayerId": "540568",
@@ -4374,11 +4374,11 @@
       ],
       "Artist": "Randall Mackey",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/099.png",
       "tcgplayerId": "540220",
-      "LowFoilPrice": "0.35",
+      "LowFoilPrice": "0.40",
       "LowPrice": "0.19"
     },
     {
@@ -4411,11 +4411,11 @@
       ],
       "Artist": "Randall Mackey",
       "VariantType": "Foil",
-      "MarketPrice": "0.55",
+      "MarketPrice": "0.54",
       "FoilPrice": "0.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/099F.png",
       "tcgplayerId": "540220",
-      "LowFoilPrice": "0.35",
+      "LowFoilPrice": "0.40",
       "LowPrice": "0.19"
     },
     {
@@ -4518,7 +4518,7 @@
       "Unique": true,
       "Artist": "Ash Pierce",
       "VariantType": "Normal",
-      "MarketPrice": "0.64",
+      "MarketPrice": "0.65",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/238.png",
       "tcgplayerId": "540359",
@@ -4580,7 +4580,7 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/202F.png",
       "tcgplayerId": "540323",
@@ -4611,11 +4611,11 @@
       "Unique": false,
       "Artist": "James Daly",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.74",
+      "MarketPrice": "0.73",
       "FoilPrice": "1.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/464.png",
       "tcgplayerId": "540586",
-      "LowFoilPrice": "1.82",
+      "LowFoilPrice": "1.54",
       "LowPrice": "0.49"
     },
     {
@@ -4646,7 +4646,7 @@
       "FoilPrice": "1.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/464F.png",
       "tcgplayerId": "540586",
-      "LowFoilPrice": "1.82",
+      "LowFoilPrice": "1.54",
       "LowPrice": "0.49"
     },
     {
@@ -4676,11 +4676,11 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.03",
+      "MarketPrice": "0.04",
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/157.png",
       "tcgplayerId": "540278",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -4713,7 +4713,7 @@
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/157F.png",
       "tcgplayerId": "540278",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -4742,7 +4742,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/420.png",
       "tcgplayerId": "540542",
@@ -4887,7 +4887,7 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/068F.png",
       "tcgplayerId": "540189",
@@ -4921,7 +4921,7 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/333.png",
       "tcgplayerId": "540455",
@@ -5055,7 +5055,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.95",
+      "MarketPrice": "0.94",
       "FoilPrice": "3.60",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/441.png",
       "tcgplayerId": "540563",
@@ -5127,7 +5127,7 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.16",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/013.png",
       "tcgplayerId": "540388",
@@ -5164,11 +5164,11 @@
       ],
       "Artist": "Kevin Libranda",
       "VariantType": "Showcase",
-      "MarketPrice": "90.48",
+      "MarketPrice": "90.89",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/263.png",
       "tcgplayerId": "540682",
-      "LowPrice": "98.68"
+      "LowPrice": "95.00"
     },
     {
       "Set": "SOR",
@@ -5201,7 +5201,7 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.47",
+      "MarketPrice": "0.48",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/279.png",
       "tcgplayerId": "540645",
@@ -5283,7 +5283,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/229.png",
       "tcgplayerId": "540350",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -5312,12 +5312,12 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/229F.png",
       "tcgplayerId": "540350",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -5351,7 +5351,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/490.png",
       "tcgplayerId": "540612",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.10"
+      "LowPrice": "0.18"
     },
     {
       "Set": "SOR",
@@ -5385,7 +5385,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/490F.png",
       "tcgplayerId": "540612",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.10"
+      "LowPrice": "0.18"
     },
     {
       "Set": "SOR",
@@ -5406,12 +5406,12 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Normal",
-      "MarketPrice": "1.18",
+      "MarketPrice": "1.12",
       "FoilPrice": "2.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/224.png",
       "tcgplayerId": "540345",
-      "LowFoilPrice": "1.66",
-      "LowPrice": "0.94"
+      "LowFoilPrice": "1.61",
+      "LowPrice": "0.75"
     },
     {
       "Set": "SOR",
@@ -5431,12 +5431,12 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Foil",
-      "MarketPrice": "2.38",
+      "MarketPrice": "2.36",
       "FoilPrice": "2.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/224F.png",
       "tcgplayerId": "540345",
-      "LowFoilPrice": "1.66",
-      "LowPrice": "0.94"
+      "LowFoilPrice": "1.61",
+      "LowPrice": "0.75"
     },
     {
       "Set": "SOR",
@@ -5456,11 +5456,11 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.19",
+      "MarketPrice": "3.27",
       "FoilPrice": "7.41",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/486.png",
       "tcgplayerId": "540608",
-      "LowFoilPrice": "7.52",
+      "LowFoilPrice": "7.61",
       "LowPrice": "2.48"
     },
     {
@@ -5481,11 +5481,11 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.65",
+      "MarketPrice": "7.69",
       "FoilPrice": "7.41",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/486F.png",
       "tcgplayerId": "540608",
-      "LowFoilPrice": "7.52",
+      "LowFoilPrice": "7.61",
       "LowPrice": "2.48"
     },
     {
@@ -5522,7 +5522,7 @@
       ],
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.05",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/003.png",
       "tcgplayerId": "540378",
@@ -5558,7 +5558,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/196.png",
       "tcgplayerId": "540317",
@@ -5638,7 +5638,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/255.png",
       "tcgplayerId": "540674",
-      "LowPrice": "77.47"
+      "LowPrice": "78.55"
     },
     {
       "Set": "SOR",
@@ -5713,7 +5713,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/458.png",
       "tcgplayerId": "540580",
       "LowFoilPrice": "1.00",
-      "LowPrice": "0.35"
+      "LowPrice": "0.45"
     },
     {
       "Set": "SOR",
@@ -5749,7 +5749,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/458F.png",
       "tcgplayerId": "540580",
       "LowFoilPrice": "1.00",
-      "LowPrice": "0.35"
+      "LowPrice": "0.45"
     },
     {
       "Set": "SOR",
@@ -5782,7 +5782,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/185.png",
       "tcgplayerId": "540306",
@@ -5819,7 +5819,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "0.39",
+      "MarketPrice": "0.38",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/185F.png",
       "tcgplayerId": "540306",
@@ -5856,7 +5856,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.69",
+      "MarketPrice": "1.68",
       "FoilPrice": "3.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/448.png",
       "tcgplayerId": "540570",
@@ -5930,11 +5930,11 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/004.png",
       "tcgplayerId": "540379",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -5965,7 +5965,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Showcase",
-      "MarketPrice": "63.64",
+      "MarketPrice": "62.23",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/256.png",
       "tcgplayerId": "540675",
@@ -6037,7 +6037,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.76",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/188.png",
       "tcgplayerId": "540309",
@@ -6074,7 +6074,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Foil",
-      "MarketPrice": "0.71",
+      "MarketPrice": "0.69",
       "FoilPrice": "0.76",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/188F.png",
       "tcgplayerId": "540309",
@@ -6111,7 +6111,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.34",
+      "MarketPrice": "2.28",
       "FoilPrice": "6.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/451.png",
       "tcgplayerId": "540573",
@@ -6148,7 +6148,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.21",
+      "MarketPrice": "7.28",
       "FoilPrice": "6.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/451F.png",
       "tcgplayerId": "540573",
@@ -6260,7 +6260,7 @@
       ],
       "Artist": "Tomas Oleksak",
       "VariantType": "Foil",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/063F.png",
       "tcgplayerId": "540184",
@@ -6294,7 +6294,7 @@
       ],
       "Artist": "Tomas Oleksak",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/328.png",
       "tcgplayerId": "540450",
@@ -6361,7 +6361,7 @@
       "Unique": true,
       "Artist": "David Buisan",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/109.png",
       "tcgplayerId": "540230",
@@ -6484,12 +6484,12 @@
       "Unique": false,
       "Artist": "Maxine Vee",
       "VariantType": "Normal",
-      "MarketPrice": "2.98",
+      "MarketPrice": "2.85",
       "FoilPrice": "5.60",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/107.png",
       "tcgplayerId": "540228",
       "LowFoilPrice": "3.00",
-      "LowPrice": "2.46"
+      "LowPrice": "2.45"
     },
     {
       "Set": "SOR",
@@ -6510,12 +6510,12 @@
       "Unique": false,
       "Artist": "Maxine Vee",
       "VariantType": "Foil",
-      "MarketPrice": "5.14",
+      "MarketPrice": "4.90",
       "FoilPrice": "5.60",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/107F.png",
       "tcgplayerId": "540228",
       "LowFoilPrice": "3.00",
-      "LowPrice": "2.46"
+      "LowPrice": "2.45"
     },
     {
       "Set": "SOR",
@@ -6536,12 +6536,12 @@
       "Unique": false,
       "Artist": "Maxine Vee",
       "VariantType": "Hyperspace",
-      "MarketPrice": "6.32",
+      "MarketPrice": "6.21",
       "FoilPrice": "9.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/371.png",
       "tcgplayerId": "540493",
-      "LowFoilPrice": "8.75",
-      "LowPrice": "1.91"
+      "LowFoilPrice": "8.72",
+      "LowPrice": "1.90"
     },
     {
       "Set": "SOR",
@@ -6562,12 +6562,12 @@
       "Unique": false,
       "Artist": "Maxine Vee",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "8.80",
+      "MarketPrice": "8.77",
       "FoilPrice": "9.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/371F.png",
       "tcgplayerId": "540493",
-      "LowFoilPrice": "8.75",
-      "LowPrice": "1.91"
+      "LowFoilPrice": "8.72",
+      "LowPrice": "1.90"
     },
     {
       "Set": "SOR",
@@ -6606,7 +6606,7 @@
       "Unique": false,
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.35",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/289.png",
       "tcgplayerId": "540411",
@@ -6650,7 +6650,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/251F.png",
       "tcgplayerId": "540372",
@@ -6677,7 +6677,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/509.png",
       "tcgplayerId": "540631",
       "LowFoilPrice": "2.40",
-      "LowPrice": "1.30"
+      "LowPrice": "1.20"
     },
     {
       "Set": "SOR",
@@ -6699,7 +6699,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/509F.png",
       "tcgplayerId": "540631",
       "LowFoilPrice": "2.40",
-      "LowPrice": "1.30"
+      "LowPrice": "1.20"
     },
     {
       "Set": "SOR",
@@ -6734,7 +6734,7 @@
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/112.png",
       "tcgplayerId": "540233",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.06",
       "LowPrice": "0.02"
     },
     {
@@ -6769,7 +6769,7 @@
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/112F.png",
       "tcgplayerId": "540233",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.06",
       "LowPrice": "0.02"
     },
     {
@@ -6800,7 +6800,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/376.png",
       "tcgplayerId": "540498",
@@ -6835,7 +6835,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.34",
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/376F.png",
       "tcgplayerId": "540498",
@@ -6898,7 +6898,7 @@
       "Unique": false,
       "Artist": "Rebecca Farrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/046F.png",
       "tcgplayerId": "540167",
@@ -7054,11 +7054,11 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/508.png",
       "tcgplayerId": "540630",
-      "LowFoilPrice": "0.18",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.03"
     },
     {
@@ -7085,11 +7085,11 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/508F.png",
       "tcgplayerId": "540630",
-      "LowFoilPrice": "0.18",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.03"
     },
     {
@@ -7123,7 +7123,7 @@
       ],
       "Artist": "Mona Finden",
       "VariantType": "Normal",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.34",
       "FoilPrice": "0.75",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/038.png",
       "tcgplayerId": "540159",
@@ -7160,7 +7160,7 @@
       ],
       "Artist": "Mona Finden",
       "VariantType": "Foil",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.76",
       "FoilPrice": "0.75",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/038F.png",
       "tcgplayerId": "540159",
@@ -7367,7 +7367,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.94",
+      "MarketPrice": "0.93",
       "FoilPrice": "1.04",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/469F.png",
       "tcgplayerId": "540591",
@@ -7394,12 +7394,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "4.26",
+      "MarketPrice": "4.03",
       "FoilPrice": "5.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/203.png",
       "tcgplayerId": "540324",
       "LowFoilPrice": "4.26",
-      "LowPrice": "3.49"
+      "LowPrice": "2.99"
     },
     {
       "Set": "SOR",
@@ -7420,12 +7420,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "5.33",
+      "MarketPrice": "5.18",
       "FoilPrice": "5.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/203F.png",
       "tcgplayerId": "540324",
       "LowFoilPrice": "4.26",
-      "LowPrice": "3.49"
+      "LowPrice": "2.99"
     },
     {
       "Set": "SOR",
@@ -7446,12 +7446,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "8.96",
+      "MarketPrice": "8.93",
       "FoilPrice": "12.82",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/465.png",
       "tcgplayerId": "540587",
-      "LowFoilPrice": "8.85",
-      "LowPrice": "7.99"
+      "LowFoilPrice": "7.36",
+      "LowPrice": "7.38"
     },
     {
       "Set": "SOR",
@@ -7472,12 +7472,12 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "12.27",
+      "MarketPrice": "12.36",
       "FoilPrice": "12.82",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/465F.png",
       "tcgplayerId": "540587",
-      "LowFoilPrice": "8.85",
-      "LowPrice": "7.99"
+      "LowFoilPrice": "7.36",
+      "LowPrice": "7.38"
     },
     {
       "Set": "SOR",
@@ -7516,7 +7516,7 @@
       "Unique": false,
       "Artist": "Tyler Edlin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.56",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/287.png",
       "tcgplayerId": "540409",
@@ -7553,11 +7553,11 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "4.27",
+      "MarketPrice": "4.26",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/010.png",
       "tcgplayerId": "540385",
-      "LowPrice": "3.55"
+      "LowPrice": "3.90"
     },
     {
       "Set": "SOR",
@@ -7590,12 +7590,12 @@
       ],
       "Artist": "Ivan Dedov",
       "VariantType": "Normal",
-      "MarketPrice": "10.94",
+      "MarketPrice": "10.31",
       "FoilPrice": "17.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/087.png",
       "tcgplayerId": "540208",
       "LowFoilPrice": "11.93",
-      "LowPrice": "8.96"
+      "LowPrice": "8.45"
     },
     {
       "Set": "SOR",
@@ -7632,7 +7632,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/087F.png",
       "tcgplayerId": "540208",
       "LowFoilPrice": "11.93",
-      "LowPrice": "8.96"
+      "LowPrice": "8.45"
     },
     {
       "Set": "SOR",
@@ -7664,12 +7664,12 @@
       ],
       "Artist": "Ivan Dedov",
       "VariantType": "Hyperspace",
-      "MarketPrice": "16.99",
+      "MarketPrice": "16.90",
       "FoilPrice": "53.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/351.png",
       "tcgplayerId": "540473",
       "LowFoilPrice": "55.99",
-      "LowPrice": "14.01"
+      "LowPrice": "12.58"
     },
     {
       "Set": "SOR",
@@ -7701,12 +7701,12 @@
       ],
       "Artist": "Ivan Dedov",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "58.03",
+      "MarketPrice": "57.92",
       "FoilPrice": "53.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/351F.png",
       "tcgplayerId": "540473",
       "LowFoilPrice": "55.99",
-      "LowPrice": "14.01"
+      "LowPrice": "12.58"
     },
     {
       "Set": "SOR",
@@ -7738,7 +7738,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/128.png",
       "tcgplayerId": "540249",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -7764,12 +7764,12 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/128F.png",
       "tcgplayerId": "540249",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -7826,7 +7826,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.48",
       "FoilPrice": "0.47",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/392F.png",
       "tcgplayerId": "540514",
@@ -7955,7 +7955,7 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.47",
+      "MarketPrice": "0.43",
       "FoilPrice": "0.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/299F.png",
       "tcgplayerId": "540421",
@@ -7992,12 +7992,12 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.46",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/034.png",
       "tcgplayerId": "540155",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.15"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -8028,12 +8028,12 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.38",
       "FoilPrice": "0.46",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/034F.png",
       "tcgplayerId": "540155",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.15"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -8064,7 +8064,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.40",
+      "MarketPrice": "1.35",
       "FoilPrice": "4.51",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/300.png",
       "tcgplayerId": "540422",
@@ -8100,7 +8100,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.94",
+      "MarketPrice": "4.96",
       "FoilPrice": "4.51",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/300F.png",
       "tcgplayerId": "540422",
@@ -8139,12 +8139,12 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Normal",
-      "MarketPrice": "3.58",
+      "MarketPrice": "2.96",
       "FoilPrice": "9.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/090.png",
       "tcgplayerId": "540211",
       "LowFoilPrice": "4.60",
-      "LowPrice": "2.00"
+      "LowPrice": "2.10"
     },
     {
       "Set": "SOR",
@@ -8177,12 +8177,12 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Foil",
-      "MarketPrice": "8.69",
+      "MarketPrice": "8.61",
       "FoilPrice": "9.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/090F.png",
       "tcgplayerId": "540211",
       "LowFoilPrice": "4.60",
-      "LowPrice": "2.00"
+      "LowPrice": "2.10"
     },
     {
       "Set": "SOR",
@@ -8215,12 +8215,12 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Hyperspace",
-      "MarketPrice": "15.16",
+      "MarketPrice": "14.16",
       "FoilPrice": "22.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/354.png",
       "tcgplayerId": "540476",
       "LowFoilPrice": "19.50",
-      "LowPrice": "7.30"
+      "LowPrice": "6.29"
     },
     {
       "Set": "SOR",
@@ -8253,12 +8253,12 @@
       ],
       "Artist": "Ignacio Bazan Lazcano",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "21.27",
+      "MarketPrice": "21.29",
       "FoilPrice": "22.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/354F.png",
       "tcgplayerId": "540476",
       "LowFoilPrice": "19.50",
-      "LowPrice": "7.30"
+      "LowPrice": "6.29"
     },
     {
       "Set": "SOR",
@@ -8288,7 +8288,7 @@
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/070.png",
       "tcgplayerId": "540191",
-      "LowFoilPrice": "0.11",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.05"
     },
     {
@@ -8318,7 +8318,7 @@
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/070F.png",
       "tcgplayerId": "540191",
-      "LowFoilPrice": "0.11",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.05"
     },
     {
@@ -8456,7 +8456,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/253.png",
       "tcgplayerId": "540672",
-      "LowPrice": "61.97"
+      "LowPrice": "61.96"
     },
     {
       "Set": "SOR",
@@ -8527,7 +8527,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/162.png",
       "tcgplayerId": "540283",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -8559,7 +8559,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/162F.png",
       "tcgplayerId": "540283",
       "LowFoilPrice": "0.07",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -8719,7 +8719,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/478F.png",
       "tcgplayerId": "540600",
@@ -8757,7 +8757,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/060.png",
       "tcgplayerId": "540181",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -8784,12 +8784,12 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/060F.png",
       "tcgplayerId": "540181",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -8878,7 +8878,7 @@
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/223.png",
       "tcgplayerId": "540344",
-      "LowFoilPrice": "0.12",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.01"
     },
     {
@@ -8899,11 +8899,11 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Foil",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/223F.png",
       "tcgplayerId": "540344",
-      "LowFoilPrice": "0.12",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.01"
     },
     {
@@ -8924,7 +8924,7 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.59",
       "FoilPrice": "2.60",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/485.png",
       "tcgplayerId": "540607",
@@ -8993,7 +8993,7 @@
       "Unique": false,
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.34",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/290.png",
       "tcgplayerId": "540412",
@@ -9028,12 +9028,12 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/098.png",
       "tcgplayerId": "540219",
-      "LowFoilPrice": "0.05",
-      "LowPrice": "0.07"
+      "LowFoilPrice": "0.04",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -9063,12 +9063,12 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/098F.png",
       "tcgplayerId": "540219",
-      "LowFoilPrice": "0.05",
-      "LowPrice": "0.07"
+      "LowFoilPrice": "0.04",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -9098,12 +9098,12 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.61",
       "FoilPrice": "1.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/362.png",
       "tcgplayerId": "540484",
-      "LowFoilPrice": "0.45",
-      "LowPrice": "0.30"
+      "LowFoilPrice": "0.89",
+      "LowPrice": "0.44"
     },
     {
       "Set": "SOR",
@@ -9133,12 +9133,12 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.12",
+      "MarketPrice": "1.11",
       "FoilPrice": "1.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/362F.png",
       "tcgplayerId": "540484",
-      "LowFoilPrice": "0.45",
-      "LowPrice": "0.30"
+      "LowFoilPrice": "0.89",
+      "LowPrice": "0.44"
     },
     {
       "Set": "SOR",
@@ -9162,12 +9162,12 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/071.png",
       "tcgplayerId": "540192",
       "LowFoilPrice": "0.17",
-      "LowPrice": "0.11"
+      "LowPrice": "0.10"
     },
     {
       "Set": "SOR",
@@ -9190,12 +9190,12 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Foil",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/071F.png",
       "tcgplayerId": "540192",
       "LowFoilPrice": "0.17",
-      "LowPrice": "0.11"
+      "LowPrice": "0.10"
     },
     {
       "Set": "SOR",
@@ -9246,7 +9246,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.39",
+      "MarketPrice": "3.54",
       "FoilPrice": "3.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/336F.png",
       "tcgplayerId": "540458",
@@ -9289,7 +9289,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/006.png",
       "tcgplayerId": "540381",
-      "LowPrice": "0.06"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -9323,12 +9323,12 @@
       ],
       "Artist": "Didier Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.55",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/135.png",
       "tcgplayerId": "540256",
       "LowFoilPrice": "0.37",
-      "LowPrice": "0.20"
+      "LowPrice": "0.22"
     },
     {
       "Set": "SOR",
@@ -9361,12 +9361,12 @@
       ],
       "Artist": "Didier Nguyen",
       "VariantType": "Foil",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.55",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/135F.png",
       "tcgplayerId": "540256",
       "LowFoilPrice": "0.37",
-      "LowPrice": "0.20"
+      "LowPrice": "0.22"
     },
     {
       "Set": "SOR",
@@ -9399,11 +9399,11 @@
       "Unique": true,
       "Artist": "James Daly",
       "VariantType": "Showcase",
-      "MarketPrice": "213.27",
+      "MarketPrice": "212.82",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/257.png",
       "tcgplayerId": "540676",
-      "LowPrice": "209.99"
+      "LowPrice": "210.00"
     },
     {
       "Set": "SOR",
@@ -9473,7 +9473,7 @@
       ],
       "Artist": "Didier Nguyen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.90",
+      "MarketPrice": "3.85",
       "FoilPrice": "8.85",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/399.png",
       "tcgplayerId": "540521",
@@ -9614,7 +9614,7 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.68",
+      "MarketPrice": "2.70",
       "FoilPrice": "4.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/347.png",
       "tcgplayerId": "540469",
@@ -9648,7 +9648,7 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "5.90",
+      "MarketPrice": "5.95",
       "FoilPrice": "4.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/347F.png",
       "tcgplayerId": "540469",
@@ -9675,12 +9675,12 @@
       ],
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.38",
       "FoilPrice": "0.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/022.png",
       "tcgplayerId": "540143",
       "LowFoilPrice": "0.57",
-      "LowPrice": "0.22"
+      "LowPrice": "0.23"
     },
     {
       "Set": "SOR",
@@ -9701,12 +9701,12 @@
       ],
       "Artist": "Adrien Girod",
       "VariantType": "Foil",
-      "MarketPrice": "0.63",
+      "MarketPrice": "0.61",
       "FoilPrice": "0.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/022F.png",
       "tcgplayerId": "540143",
       "LowFoilPrice": "0.57",
-      "LowPrice": "0.22"
+      "LowPrice": "0.23"
     },
     {
       "Set": "SOR",
@@ -9727,7 +9727,7 @@
       ],
       "Artist": "Adrien Girod",
       "VariantType": "Hyperspace",
-      "MarketPrice": "6.50",
+      "MarketPrice": "6.46",
       "FoilPrice": "34.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/288.png",
       "tcgplayerId": "540410",
@@ -9753,7 +9753,7 @@
       ],
       "Artist": "Adrien Girod",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "33.24",
+      "MarketPrice": "32.87",
       "FoilPrice": "34.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/288F.png",
       "tcgplayerId": "540410",
@@ -9808,7 +9808,7 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Foil",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/072F.png",
       "tcgplayerId": "540193",
@@ -9835,7 +9835,7 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.78",
+      "MarketPrice": "2.73",
       "FoilPrice": "3.83",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/337.png",
       "tcgplayerId": "540459",
@@ -9933,7 +9933,7 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/114F.png",
       "tcgplayerId": "540235",
@@ -9968,7 +9968,7 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/378.png",
       "tcgplayerId": "540500",
@@ -10072,7 +10072,7 @@
       "Unique": true,
       "Artist": "Joshua Carson",
       "VariantType": "Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/192F.png",
       "tcgplayerId": "540313",
@@ -10106,7 +10106,7 @@
       "Unique": true,
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.37",
+      "MarketPrice": "2.36",
       "FoilPrice": "4.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/454.png",
       "tcgplayerId": "540576",
@@ -10140,7 +10140,7 @@
       "Unique": true,
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.03",
+      "MarketPrice": "4.28",
       "FoilPrice": "4.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/454F.png",
       "tcgplayerId": "540576",
@@ -10171,12 +10171,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Normal",
-      "MarketPrice": "0.49",
+      "MarketPrice": "0.43",
       "FoilPrice": "1.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/137.png",
       "tcgplayerId": "540258",
       "LowFoilPrice": "0.85",
-      "LowPrice": "0.20"
+      "LowPrice": "0.19"
     },
     {
       "Set": "SOR",
@@ -10201,12 +10201,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Foil",
-      "MarketPrice": "1.58",
+      "MarketPrice": "1.55",
       "FoilPrice": "1.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/137F.png",
       "tcgplayerId": "540258",
       "LowFoilPrice": "0.85",
-      "LowPrice": "0.20"
+      "LowPrice": "0.19"
     },
     {
       "Set": "SOR",
@@ -10231,12 +10231,12 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.65",
+      "MarketPrice": "5.56",
       "FoilPrice": "17.95",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/400.png",
       "tcgplayerId": "540522",
       "LowFoilPrice": "16.50",
-      "LowPrice": "3.47"
+      "LowPrice": "3.45"
     },
     {
       "Set": "SOR",
@@ -10266,7 +10266,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/400F.png",
       "tcgplayerId": "540522",
       "LowFoilPrice": "16.50",
-      "LowPrice": "3.47"
+      "LowPrice": "3.45"
     },
     {
       "Set": "SOR",
@@ -10296,12 +10296,12 @@
       "Unique": true,
       "Artist": "André Mealha",
       "VariantType": "Normal",
-      "MarketPrice": "0.39",
+      "MarketPrice": "0.37",
       "FoilPrice": "0.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/184.png",
       "tcgplayerId": "540305",
-      "LowFoilPrice": "0.30",
-      "LowPrice": "0.19"
+      "LowFoilPrice": "0.24",
+      "LowPrice": "0.15"
     },
     {
       "Set": "SOR",
@@ -10330,12 +10330,12 @@
       "Unique": true,
       "Artist": "André Mealha",
       "VariantType": "Foil",
-      "MarketPrice": "0.61",
+      "MarketPrice": "0.60",
       "FoilPrice": "0.79",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/184F.png",
       "tcgplayerId": "540305",
-      "LowFoilPrice": "0.30",
-      "LowPrice": "0.19"
+      "LowFoilPrice": "0.24",
+      "LowPrice": "0.15"
     },
     {
       "Set": "SOR",
@@ -10364,11 +10364,11 @@
       "Unique": true,
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.36",
+      "MarketPrice": "3.34",
       "FoilPrice": "11.74",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/447.png",
       "tcgplayerId": "540569",
-      "LowFoilPrice": "10.15",
+      "LowFoilPrice": "10.50",
       "LowPrice": "2.03"
     },
     {
@@ -10402,7 +10402,7 @@
       "FoilPrice": "11.74",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/447F.png",
       "tcgplayerId": "540569",
-      "LowFoilPrice": "10.15",
+      "LowFoilPrice": "10.50",
       "LowPrice": "2.03"
     },
     {
@@ -10440,7 +10440,7 @@
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/131.png",
       "tcgplayerId": "540252",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.16",
       "LowPrice": "0.10"
     },
     {
@@ -10477,7 +10477,7 @@
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/131F.png",
       "tcgplayerId": "540252",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.16",
       "LowPrice": "0.10"
     },
     {
@@ -10588,7 +10588,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/143.png",
       "tcgplayerId": "540264",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.10"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -10618,12 +10618,12 @@
       ],
       "Artist": "Yvette Chua",
       "VariantType": "Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/143F.png",
       "tcgplayerId": "540264",
       "LowFoilPrice": "0.15",
-      "LowPrice": "0.10"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -10653,11 +10653,11 @@
       ],
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.02",
+      "MarketPrice": "0.99",
       "FoilPrice": "2.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/406.png",
       "tcgplayerId": "540528",
-      "LowFoilPrice": "2.19",
+      "LowFoilPrice": "2.00",
       "LowPrice": "0.60"
     },
     {
@@ -10688,11 +10688,11 @@
       ],
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.56",
+      "MarketPrice": "2.54",
       "FoilPrice": "2.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/406F.png",
       "tcgplayerId": "540528",
-      "LowFoilPrice": "2.19",
+      "LowFoilPrice": "2.00",
       "LowPrice": "0.60"
     },
     {
@@ -10728,7 +10728,7 @@
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/130.png",
       "tcgplayerId": "540251",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.02"
     },
     {
@@ -10759,11 +10759,11 @@
       ],
       "Artist": "Milos Slavkovic",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/130F.png",
       "tcgplayerId": "540251",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.02"
     },
     {
@@ -10799,7 +10799,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/394.png",
       "tcgplayerId": "540516",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.05"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -10829,12 +10829,12 @@
       ],
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.49",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/394F.png",
       "tcgplayerId": "540516",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.05"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -10923,7 +10923,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.52",
+      "MarketPrice": "0.53",
       "FoilPrice": "1.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/498.png",
       "tcgplayerId": "540620",
@@ -10981,11 +10981,11 @@
       "Unique": false,
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "0.39",
+      "MarketPrice": "0.36",
       "FoilPrice": "1.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/152.png",
       "tcgplayerId": "540273",
-      "LowFoilPrice": "0.73",
+      "LowFoilPrice": "0.77",
       "LowPrice": "0.24"
     },
     {
@@ -11007,11 +11007,11 @@
       "Unique": false,
       "Artist": "Eric Hibbeler",
       "VariantType": "Foil",
-      "MarketPrice": "1.49",
+      "MarketPrice": "1.47",
       "FoilPrice": "1.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/152F.png",
       "tcgplayerId": "540273",
-      "LowFoilPrice": "0.73",
+      "LowFoilPrice": "0.77",
       "LowPrice": "0.24"
     },
     {
@@ -11033,12 +11033,12 @@
       "Unique": false,
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.20",
+      "MarketPrice": "3.02",
       "FoilPrice": "7.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/415.png",
       "tcgplayerId": "540537",
       "LowFoilPrice": "6.85",
-      "LowPrice": "1.77"
+      "LowPrice": "1.72"
     },
     {
       "Set": "SOR",
@@ -11064,7 +11064,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/415F.png",
       "tcgplayerId": "540537",
       "LowFoilPrice": "6.85",
-      "LowPrice": "1.77"
+      "LowPrice": "1.72"
     },
     {
       "Set": "SOR",
@@ -11086,7 +11086,7 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.36",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/139.png",
       "tcgplayerId": "540260",
@@ -11164,7 +11164,7 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "6.55",
+      "MarketPrice": "6.51",
       "FoilPrice": "7.76",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/402F.png",
       "tcgplayerId": "540524",
@@ -11191,7 +11191,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "2.80",
+      "MarketPrice": "2.38",
       "FoilPrice": "14.05",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/138.png",
       "tcgplayerId": "540259",
@@ -11247,7 +11247,7 @@
       "FoilPrice": "28.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/401.png",
       "tcgplayerId": "540523",
-      "LowFoilPrice": "15.00",
+      "LowFoilPrice": "14.99",
       "LowPrice": "7.73"
     },
     {
@@ -11269,11 +11269,11 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "20.04",
+      "MarketPrice": "19.54",
       "FoilPrice": "28.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/401F.png",
       "tcgplayerId": "540523",
-      "LowFoilPrice": "15.00",
+      "LowFoilPrice": "14.99",
       "LowPrice": "7.73"
     },
     {
@@ -11320,7 +11320,7 @@
       "Unique": false,
       "Artist": "Elena Skitalets",
       "VariantType": "Foil",
-      "MarketPrice": "1.06",
+      "MarketPrice": "1.07",
       "FoilPrice": "2.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/167F.png",
       "tcgplayerId": "540288",
@@ -11400,7 +11400,7 @@
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/175.png",
       "tcgplayerId": "540296",
-      "LowFoilPrice": "0.07",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.02"
     },
     {
@@ -11425,7 +11425,7 @@
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/175F.png",
       "tcgplayerId": "540296",
-      "LowFoilPrice": "0.07",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.02"
     },
     {
@@ -11450,7 +11450,7 @@
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/438.png",
       "tcgplayerId": "540560",
-      "LowFoilPrice": "0.23",
+      "LowFoilPrice": "0.20",
       "LowPrice": "0.15"
     },
     {
@@ -11475,7 +11475,7 @@
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/438F.png",
       "tcgplayerId": "540560",
-      "LowFoilPrice": "0.23",
+      "LowFoilPrice": "0.20",
       "LowPrice": "0.15"
     },
     {
@@ -11596,7 +11596,7 @@
       ],
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/507F.png",
       "tcgplayerId": "540629",
@@ -11628,12 +11628,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.38",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/110.png",
       "tcgplayerId": "540231",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -11659,12 +11659,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.38",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/110F.png",
       "tcgplayerId": "540231",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -11694,7 +11694,7 @@
       "FoilPrice": "3.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/374.png",
       "tcgplayerId": "540496",
-      "LowFoilPrice": "3.59",
+      "LowFoilPrice": "3.76",
       "LowPrice": "0.69"
     },
     {
@@ -11721,11 +11721,11 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.78",
+      "MarketPrice": "3.80",
       "FoilPrice": "3.66",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/374F.png",
       "tcgplayerId": "540496",
-      "LowFoilPrice": "3.59",
+      "LowFoilPrice": "3.76",
       "LowPrice": "0.69"
     },
     {
@@ -11822,7 +11822,7 @@
       "Unique": false,
       "Artist": "André Mealha",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.18",
+      "MarketPrice": "4.23",
       "FoilPrice": "3.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/495F.png",
       "tcgplayerId": "540617",
@@ -11860,7 +11860,7 @@
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/211.png",
       "tcgplayerId": "540332",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -11889,11 +11889,11 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/211F.png",
       "tcgplayerId": "540332",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -11993,7 +11993,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/242.png",
       "tcgplayerId": "540363",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -12025,7 +12025,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/242F.png",
       "tcgplayerId": "540363",
       "LowFoilPrice": "0.10",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -12119,12 +12119,12 @@
       "Unique": true,
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.34",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/105.png",
       "tcgplayerId": "540226",
       "LowFoilPrice": "0.11",
-      "LowPrice": "0.10"
+      "LowPrice": "0.07"
     },
     {
       "Set": "SOR",
@@ -12153,12 +12153,12 @@
       "Unique": true,
       "Artist": "Luke Harrington",
       "VariantType": "Foil",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.34",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/105F.png",
       "tcgplayerId": "540226",
       "LowFoilPrice": "0.11",
-      "LowPrice": "0.10"
+      "LowPrice": "0.07"
     },
     {
       "Set": "SOR",
@@ -12187,7 +12187,7 @@
       "Unique": true,
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.08",
+      "MarketPrice": "1.07",
       "FoilPrice": "2.90",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/369.png",
       "tcgplayerId": "540491",
@@ -12288,7 +12288,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/080F.png",
       "tcgplayerId": "540201",
@@ -12321,7 +12321,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.54",
+      "MarketPrice": "0.55",
       "FoilPrice": "0.81",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/345.png",
       "tcgplayerId": "540467",
@@ -12387,12 +12387,12 @@
       "Unique": true,
       "Artist": "Steve Morris",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/230.png",
       "tcgplayerId": "540351",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -12424,7 +12424,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/230F.png",
       "tcgplayerId": "540351",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -12451,7 +12451,7 @@
       "Unique": true,
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.42",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/491.png",
       "tcgplayerId": "540613",
@@ -12517,7 +12517,7 @@
       "Unique": true,
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/036.png",
       "tcgplayerId": "540157",
@@ -12550,7 +12550,7 @@
       "Unique": true,
       "Artist": "Amélie Hutt",
       "VariantType": "Foil",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.55",
       "FoilPrice": "0.62",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/036F.png",
       "tcgplayerId": "540157",
@@ -12761,7 +12761,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.42",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.42",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/350F.png",
       "tcgplayerId": "540472",
@@ -12798,7 +12798,7 @@
       "Unique": true,
       "Artist": "Ivan Dedov",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/016.png",
       "tcgplayerId": "540391",
@@ -12837,7 +12837,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/266.png",
       "tcgplayerId": "540685",
-      "LowPrice": "78.88"
+      "LowPrice": "76.99"
     },
     {
       "Set": "SOR",
@@ -12872,7 +12872,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/282.png",
       "tcgplayerId": "540648",
-      "LowPrice": "0.50"
+      "LowPrice": "0.67"
     },
     {
       "Set": "SOR",
@@ -12905,7 +12905,7 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/011.png",
       "tcgplayerId": "540386",
@@ -12941,7 +12941,7 @@
       "Unique": true,
       "Artist": "David Buisan",
       "VariantType": "Showcase",
-      "MarketPrice": "70.08",
+      "MarketPrice": "70.48",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/261.png",
       "tcgplayerId": "540680",
@@ -12977,7 +12977,7 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.58",
+      "MarketPrice": "0.57",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/277.png",
       "tcgplayerId": "540643",
@@ -13046,7 +13046,7 @@
       "Unique": true,
       "Artist": "Steve Morris",
       "VariantType": "Normal",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.29",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/084.png",
       "tcgplayerId": "540205",
@@ -13081,11 +13081,11 @@
       "Unique": true,
       "Artist": "Stefano Landini",
       "VariantType": "Showcase",
-      "MarketPrice": "81.27",
+      "MarketPrice": "80.82",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/258.png",
       "tcgplayerId": "540677",
-      "LowPrice": "79.99"
+      "LowPrice": "80.82"
     },
     {
       "Set": "SOR",
@@ -13120,7 +13120,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/274.png",
       "tcgplayerId": "540640",
-      "LowPrice": "0.05"
+      "LowPrice": "0.04"
     },
     {
       "Set": "SOR",
@@ -13148,12 +13148,12 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/204.png",
       "tcgplayerId": "540325",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.05"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -13185,7 +13185,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/204F.png",
       "tcgplayerId": "540325",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.05"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -13212,7 +13212,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.97",
+      "MarketPrice": "0.96",
       "FoilPrice": "1.51",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/466.png",
       "tcgplayerId": "540588",
@@ -13281,12 +13281,12 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/141.png",
       "tcgplayerId": "540262",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.07"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -13322,7 +13322,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/141F.png",
       "tcgplayerId": "540262",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.07"
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -13551,12 +13551,12 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/148.png",
       "tcgplayerId": "540269",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -13587,12 +13587,12 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/148F.png",
       "tcgplayerId": "540269",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -13623,11 +13623,11 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/411.png",
       "tcgplayerId": "540533",
-      "LowFoilPrice": "0.28",
+      "LowFoilPrice": "0.27",
       "LowPrice": "0.08"
     },
     {
@@ -13659,11 +13659,11 @@
       ],
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/411F.png",
       "tcgplayerId": "540533",
-      "LowFoilPrice": "0.28",
+      "LowFoilPrice": "0.27",
       "LowPrice": "0.08"
     },
     {
@@ -13695,11 +13695,11 @@
       "Unique": true,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.14",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/017.png",
       "tcgplayerId": "540392",
-      "LowPrice": "0.04"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -13730,12 +13730,12 @@
       ],
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/198.png",
       "tcgplayerId": "540319",
       "LowFoilPrice": "0.19",
-      "LowPrice": "0.13"
+      "LowPrice": "0.14"
     },
     {
       "Set": "SOR",
@@ -13765,12 +13765,12 @@
       ],
       "Artist": "Borja Pindado",
       "VariantType": "Foil",
-      "MarketPrice": "0.79",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/198F.png",
       "tcgplayerId": "540319",
       "LowFoilPrice": "0.19",
-      "LowPrice": "0.13"
+      "LowPrice": "0.14"
     },
     {
       "Set": "SOR",
@@ -13834,7 +13834,7 @@
       "Unique": true,
       "Artist": "David Nash",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.80",
+      "MarketPrice": "0.75",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/283.png",
       "tcgplayerId": "540649",
@@ -13988,7 +13988,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/385.png",
       "tcgplayerId": "540507",
@@ -14054,7 +14054,7 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/008.png",
       "tcgplayerId": "540383",
@@ -14090,11 +14090,11 @@
       "Unique": true,
       "Artist": "Cristina Laviña",
       "VariantType": "Showcase",
-      "MarketPrice": "125.04",
+      "MarketPrice": "125.09",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/259.png",
       "tcgplayerId": "540678",
-      "LowPrice": "108.44"
+      "LowPrice": "125.00"
     },
     {
       "Set": "SOR",
@@ -14126,7 +14126,7 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.29",
+      "MarketPrice": "1.30",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/275.png",
       "tcgplayerId": "540641",
@@ -14152,12 +14152,12 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.43",
       "FoilPrice": "1.10",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/150.png",
       "tcgplayerId": "540271",
       "LowFoilPrice": "0.50",
-      "LowPrice": "0.25"
+      "LowPrice": "0.24"
     },
     {
       "Set": "SOR",
@@ -14183,7 +14183,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/150F.png",
       "tcgplayerId": "540271",
       "LowFoilPrice": "0.50",
-      "LowPrice": "0.25"
+      "LowPrice": "0.24"
     },
     {
       "Set": "SOR",
@@ -14230,7 +14230,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "14.15",
+      "MarketPrice": "14.80",
       "FoilPrice": "9.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/413F.png",
       "tcgplayerId": "540535",
@@ -14268,12 +14268,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "4.81",
+      "MarketPrice": "4.38",
       "FoilPrice": "10.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/102.png",
       "tcgplayerId": "540223",
-      "LowFoilPrice": "5.16",
-      "LowPrice": "3.60"
+      "LowFoilPrice": "5.99",
+      "LowPrice": "3.97"
     },
     {
       "Set": "SOR",
@@ -14305,12 +14305,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Foil",
-      "MarketPrice": "10.20",
+      "MarketPrice": "9.65",
       "FoilPrice": "10.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/102F.png",
       "tcgplayerId": "540223",
-      "LowFoilPrice": "5.16",
-      "LowPrice": "3.60"
+      "LowFoilPrice": "5.99",
+      "LowPrice": "3.97"
     },
     {
       "Set": "SOR",
@@ -14342,12 +14342,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "12.26",
+      "MarketPrice": "11.56",
       "FoilPrice": "19.72",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/366.png",
       "tcgplayerId": "540488",
-      "LowFoilPrice": "38.59",
-      "LowPrice": "6.00"
+      "LowFoilPrice": "34.98",
+      "LowPrice": "5.39"
     },
     {
       "Set": "SOR",
@@ -14379,12 +14379,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "22.90",
+      "MarketPrice": "23.12",
       "FoilPrice": "19.72",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/366F.png",
       "tcgplayerId": "540488",
-      "LowFoilPrice": "38.59",
-      "LowPrice": "6.00"
+      "LowFoilPrice": "34.98",
+      "LowPrice": "5.39"
     },
     {
       "Set": "SOR",
@@ -14418,7 +14418,7 @@
       "FoilPrice": "0.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/113.png",
       "tcgplayerId": "540234",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.03",
       "LowPrice": "0.01"
     },
     {
@@ -14452,7 +14452,7 @@
       "FoilPrice": "0.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/113F.png",
       "tcgplayerId": "540234",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.03",
       "LowPrice": "0.01"
     },
     {
@@ -14482,7 +14482,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/377.png",
       "tcgplayerId": "540499",
@@ -14542,7 +14542,7 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
-      "MarketPrice": "0.62",
+      "MarketPrice": "0.64",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/233.png",
       "tcgplayerId": "540354",
@@ -14620,7 +14620,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.71",
+      "MarketPrice": "0.73",
       "FoilPrice": "1.94",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/450.png",
       "tcgplayerId": "540572",
@@ -14726,7 +14726,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Showcase",
-      "MarketPrice": "44.51",
+      "MarketPrice": "44.45",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/262.png",
       "tcgplayerId": "540681",
@@ -14801,7 +14801,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/176.png",
       "tcgplayerId": "540297",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -14827,12 +14827,12 @@
       "Unique": false,
       "Artist": "Yvette Chua",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/176F.png",
       "tcgplayerId": "540297",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -14862,7 +14862,7 @@
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/439.png",
       "tcgplayerId": "540561",
-      "LowFoilPrice": "0.24",
+      "LowFoilPrice": "0.25",
       "LowPrice": "0.09"
     },
     {
@@ -14889,11 +14889,11 @@
       "Unique": false,
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.39",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/439F.png",
       "tcgplayerId": "540561",
-      "LowFoilPrice": "0.24",
+      "LowFoilPrice": "0.25",
       "LowPrice": "0.09"
     },
     {
@@ -14967,7 +14967,7 @@
       ],
       "Artist": "David Buisan",
       "VariantType": "Showcase",
-      "MarketPrice": "58.82",
+      "MarketPrice": "58.36",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/254.png",
       "tcgplayerId": "540673",
@@ -15038,12 +15038,12 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/132.png",
       "tcgplayerId": "540253",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -15076,7 +15076,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/132F.png",
       "tcgplayerId": "540253",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -15104,12 +15104,12 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.34",
       "FoilPrice": "0.80",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/396.png",
       "tcgplayerId": "540518",
       "LowFoilPrice": "0.45",
-      "LowPrice": "0.21"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -15142,7 +15142,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/396F.png",
       "tcgplayerId": "540518",
       "LowFoilPrice": "0.45",
-      "LowPrice": "0.21"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -15172,7 +15172,7 @@
       "Unique": true,
       "Artist": "Randall Mackey",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.38",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/031.png",
       "tcgplayerId": "540152",
@@ -15245,7 +15245,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/297.png",
       "tcgplayerId": "540419",
       "LowFoilPrice": "6.43",
-      "LowPrice": "2.61"
+      "LowPrice": "2.75"
     },
     {
       "Set": "SOR",
@@ -15279,7 +15279,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/297F.png",
       "tcgplayerId": "540419",
       "LowFoilPrice": "6.43",
-      "LowPrice": "2.61"
+      "LowPrice": "2.75"
     },
     {
       "Set": "SOR",
@@ -15310,7 +15310,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/166.png",
       "tcgplayerId": "540287",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -15340,7 +15340,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/166F.png",
       "tcgplayerId": "540287",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -15370,7 +15370,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/429.png",
       "tcgplayerId": "540551",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.10"
+      "LowPrice": "0.14"
     },
     {
       "Set": "SOR",
@@ -15400,7 +15400,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/429F.png",
       "tcgplayerId": "540551",
       "LowFoilPrice": "0.25",
-      "LowPrice": "0.10"
+      "LowPrice": "0.14"
     },
     {
       "Set": "SOR",
@@ -15471,7 +15471,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.60",
+      "MarketPrice": "3.61",
       "FoilPrice": "4.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/340.png",
       "tcgplayerId": "540462",
@@ -15534,7 +15534,7 @@
       "FoilPrice": "0.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/181.png",
       "tcgplayerId": "540302",
-      "LowFoilPrice": "0.20",
+      "LowFoilPrice": "0.21",
       "LowPrice": "0.09"
     },
     {
@@ -15563,11 +15563,11 @@
       "Unique": true,
       "Artist": "David Nash",
       "VariantType": "Foil",
-      "MarketPrice": "0.42",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/181F.png",
       "tcgplayerId": "540302",
-      "LowFoilPrice": "0.20",
+      "LowFoilPrice": "0.21",
       "LowPrice": "0.09"
     },
     {
@@ -15596,7 +15596,7 @@
       "Unique": true,
       "Artist": "David Nash",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.71",
+      "MarketPrice": "2.83",
       "FoilPrice": "4.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/444.png",
       "tcgplayerId": "540566",
@@ -15664,7 +15664,7 @@
       ],
       "Artist": "Cristina Laviña",
       "VariantType": "Normal",
-      "MarketPrice": "0.05",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/205.png",
       "tcgplayerId": "540326",
@@ -15732,7 +15732,7 @@
       ],
       "Artist": "Cristina Laviña",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.34",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/467.png",
       "tcgplayerId": "540589",
@@ -15766,7 +15766,7 @@
       ],
       "Artist": "Cristina Laviña",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.47",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.34",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/467F.png",
       "tcgplayerId": "540589",
@@ -15833,7 +15833,7 @@
       ],
       "Artist": "Hoan Nguyen",
       "VariantType": "Foil",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/158F.png",
       "tcgplayerId": "540279",
@@ -15946,7 +15946,7 @@
       "Unique": false,
       "Artist": "Rocío Espín",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/028F.png",
       "tcgplayerId": "540149",
@@ -15992,7 +15992,7 @@
       "Unique": false,
       "Artist": "Rocío Espín",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "5.66",
+      "MarketPrice": "5.67",
       "FoilPrice": "5.47",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/294F.png",
       "tcgplayerId": "540416",
@@ -16023,7 +16023,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.85",
+      "MarketPrice": "0.79",
       "FoilPrice": "1.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/054.png",
       "tcgplayerId": "540175",
@@ -16053,7 +16053,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Foil",
-      "MarketPrice": "0.91",
+      "MarketPrice": "0.90",
       "FoilPrice": "1.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/054F.png",
       "tcgplayerId": "540175",
@@ -16113,7 +16113,7 @@
       "Unique": false,
       "Artist": "Arthur Mougne",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.10",
+      "MarketPrice": "7.20",
       "FoilPrice": "8.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/319F.png",
       "tcgplayerId": "540441",
@@ -16183,11 +16183,11 @@
       "Unique": true,
       "Artist": "Eslam Aboshady",
       "VariantType": "Showcase",
-      "MarketPrice": "41.59",
+      "MarketPrice": "41.70",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/268.png",
       "tcgplayerId": "540687",
-      "LowPrice": "45.00"
+      "LowPrice": "38.60"
     },
     {
       "Set": "SOR",
@@ -16217,7 +16217,7 @@
       "Unique": true,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.10",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/284.png",
       "tcgplayerId": "540650",
@@ -16253,12 +16253,12 @@
       ],
       "Artist": "Ross Taylor",
       "VariantType": "Normal",
-      "MarketPrice": "0.57",
+      "MarketPrice": "0.54",
       "FoilPrice": "3.02",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/145.png",
       "tcgplayerId": "540266",
       "LowFoilPrice": "1.75",
-      "LowPrice": "0.45"
+      "LowPrice": "0.40"
     },
     {
       "Set": "SOR",
@@ -16289,12 +16289,12 @@
       ],
       "Artist": "Ross Taylor",
       "VariantType": "Foil",
-      "MarketPrice": "2.63",
+      "MarketPrice": "2.47",
       "FoilPrice": "3.02",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/145F.png",
       "tcgplayerId": "540266",
       "LowFoilPrice": "1.75",
-      "LowPrice": "0.45"
+      "LowPrice": "0.40"
     },
     {
       "Set": "SOR",
@@ -16330,7 +16330,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/408.png",
       "tcgplayerId": "540530",
       "LowFoilPrice": "10.42",
-      "LowPrice": "3.18"
+      "LowPrice": "3.90"
     },
     {
       "Set": "SOR",
@@ -16366,7 +16366,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/408F.png",
       "tcgplayerId": "540530",
       "LowFoilPrice": "10.42",
-      "LowPrice": "3.18"
+      "LowPrice": "3.90"
     },
     {
       "Set": "SOR",
@@ -16397,12 +16397,12 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/047.png",
       "tcgplayerId": "540168",
       "LowFoilPrice": "0.19",
-      "LowPrice": "0.04"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -16432,12 +16432,12 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "0.38",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/047F.png",
       "tcgplayerId": "540168",
       "LowFoilPrice": "0.19",
-      "LowPrice": "0.04"
+      "LowPrice": "0.03"
     },
     {
       "Set": "SOR",
@@ -16467,12 +16467,12 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.15",
+      "MarketPrice": "3.17",
       "FoilPrice": "7.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/313.png",
       "tcgplayerId": "540435",
-      "LowFoilPrice": "5.50",
-      "LowPrice": "2.31"
+      "LowFoilPrice": "3.96",
+      "LowPrice": "2.30"
     },
     {
       "Set": "SOR",
@@ -16502,12 +16502,12 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "6.89",
+      "MarketPrice": "7.05",
       "FoilPrice": "7.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/313F.png",
       "tcgplayerId": "540435",
-      "LowFoilPrice": "5.50",
-      "LowPrice": "2.31"
+      "LowFoilPrice": "3.96",
+      "LowPrice": "2.30"
     },
     {
       "Set": "SOR",
@@ -16581,7 +16581,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "1.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/414.png",
       "tcgplayerId": "540536",
@@ -16607,7 +16607,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.13",
+      "MarketPrice": "1.12",
       "FoilPrice": "1.08",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/414F.png",
       "tcgplayerId": "540536",
@@ -16708,7 +16708,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.31",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/432F.png",
       "tcgplayerId": "540554",
@@ -16969,7 +16969,7 @@
       "Unique": true,
       "Artist": "Robynn Frauhn",
       "VariantType": "Normal",
-      "MarketPrice": "0.57",
+      "MarketPrice": "0.58",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/189.png",
       "tcgplayerId": "540310",
@@ -17011,7 +17011,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/260.png",
       "tcgplayerId": "540679",
-      "LowPrice": "249.60"
+      "LowPrice": "194.04"
     },
     {
       "Set": "SOR",
@@ -17085,7 +17085,7 @@
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/035.png",
       "tcgplayerId": "540156",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.04"
     },
     {
@@ -17121,7 +17121,7 @@
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/035F.png",
       "tcgplayerId": "540156",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.08",
       "LowPrice": "0.04"
     },
     {
@@ -17189,7 +17189,7 @@
       ],
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.40",
+      "MarketPrice": "3.39",
       "FoilPrice": "3.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/301F.png",
       "tcgplayerId": "540423",
@@ -17351,11 +17351,11 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "3.74",
+      "MarketPrice": "3.80",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/005.png",
       "tcgplayerId": "540380",
-      "LowPrice": "3.20"
+      "LowPrice": "3.58"
     },
     {
       "Set": "SOR",
@@ -17388,12 +17388,12 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Normal",
-      "MarketPrice": "11.93",
+      "MarketPrice": "11.38",
       "FoilPrice": "24.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/051.png",
       "tcgplayerId": "540172",
       "LowFoilPrice": "13.49",
-      "LowPrice": "10.50"
+      "LowPrice": "9.90"
     },
     {
       "Set": "SOR",
@@ -17425,12 +17425,12 @@
       ],
       "Artist": "Eric Hibbeler",
       "VariantType": "Foil",
-      "MarketPrice": "17.85",
+      "MarketPrice": "17.61",
       "FoilPrice": "24.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/051F.png",
       "tcgplayerId": "540172",
       "LowFoilPrice": "13.49",
-      "LowPrice": "10.50"
+      "LowPrice": "9.90"
     },
     {
       "Set": "SOR",
@@ -17466,8 +17466,8 @@
       "FoilPrice": "87.75",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/317.png",
       "tcgplayerId": "540439",
-      "LowFoilPrice": "72.89",
-      "LowPrice": "31.00"
+      "LowFoilPrice": "72.00",
+      "LowPrice": "27.99"
     },
     {
       "Set": "SOR",
@@ -17503,8 +17503,8 @@
       "FoilPrice": "87.75",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/317F.png",
       "tcgplayerId": "540439",
-      "LowFoilPrice": "72.89",
-      "LowPrice": "31.00"
+      "LowFoilPrice": "72.00",
+      "LowPrice": "27.99"
     },
     {
       "Set": "SOR",
@@ -17530,7 +17530,7 @@
       "Unique": true,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.41",
+      "MarketPrice": "0.42",
       "FoilPrice": "50.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/053.png",
       "tcgplayerId": "540174",
@@ -17568,7 +17568,7 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.48",
       "FoilPrice": "2.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/149.png",
       "tcgplayerId": "540270",
@@ -17605,7 +17605,7 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "2.00",
+      "MarketPrice": "2.04",
       "FoilPrice": "2.30",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/149F.png",
       "tcgplayerId": "540270",
@@ -17642,7 +17642,7 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.32",
+      "MarketPrice": "5.19",
       "FoilPrice": "7.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/412.png",
       "tcgplayerId": "540534",
@@ -17709,7 +17709,7 @@
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/076.png",
       "tcgplayerId": "540197",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.07",
       "LowPrice": "0.03"
     },
     {
@@ -17730,11 +17730,11 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/076F.png",
       "tcgplayerId": "540197",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.07",
       "LowPrice": "0.03"
     },
     {
@@ -17759,8 +17759,8 @@
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/341.png",
       "tcgplayerId": "540463",
-      "LowFoilPrice": "0.26",
-      "LowPrice": "0.08"
+      "LowFoilPrice": "0.15",
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -17780,12 +17780,12 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/341F.png",
       "tcgplayerId": "540463",
-      "LowFoilPrice": "0.26",
-      "LowPrice": "0.08"
+      "LowFoilPrice": "0.15",
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -17812,7 +17812,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/234.png",
       "tcgplayerId": "540355",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -17838,7 +17838,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/234F.png",
       "tcgplayerId": "540355",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -17916,7 +17916,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/245.png",
       "tcgplayerId": "540366",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -17941,7 +17941,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/245F.png",
       "tcgplayerId": "540366",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -17986,7 +17986,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.49",
       "FoilPrice": "0.51",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/503F.png",
       "tcgplayerId": "540625",
@@ -18162,12 +18162,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "3.33",
+      "MarketPrice": "3.34",
       "FoilPrice": "18.81",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/193.png",
       "tcgplayerId": "540314",
-      "LowFoilPrice": "8.19",
-      "LowPrice": "2.49"
+      "LowFoilPrice": "9.51",
+      "LowPrice": "2.45"
     },
     {
       "Set": "SOR",
@@ -18196,12 +18196,12 @@
       "Unique": true,
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "14.76",
+      "MarketPrice": "14.67",
       "FoilPrice": "18.81",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/193F.png",
       "tcgplayerId": "540314",
-      "LowFoilPrice": "8.19",
-      "LowPrice": "2.49"
+      "LowFoilPrice": "9.51",
+      "LowPrice": "2.45"
     },
     {
       "Set": "SOR",
@@ -18235,7 +18235,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/455.png",
       "tcgplayerId": "540577",
       "LowFoilPrice": "27.00",
-      "LowPrice": "12.00"
+      "LowPrice": "10.79"
     },
     {
       "Set": "SOR",
@@ -18269,7 +18269,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/455F.png",
       "tcgplayerId": "540577",
       "LowFoilPrice": "27.00",
-      "LowPrice": "12.00"
+      "LowPrice": "10.79"
     },
     {
       "Set": "SOR",
@@ -18329,7 +18329,7 @@
       "Unique": false,
       "Artist": "André Mealha",
       "VariantType": "Foil",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/206F.png",
       "tcgplayerId": "540327",
@@ -18361,7 +18361,7 @@
       "Unique": false,
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.47",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/468.png",
       "tcgplayerId": "540590",
@@ -18473,7 +18473,7 @@
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/434.png",
       "tcgplayerId": "540556",
-      "LowFoilPrice": "0.24",
+      "LowFoilPrice": "0.22",
       "LowPrice": "0.03"
     },
     {
@@ -18498,7 +18498,7 @@
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/434F.png",
       "tcgplayerId": "540556",
-      "LowFoilPrice": "0.24",
+      "LowFoilPrice": "0.22",
       "LowPrice": "0.03"
     },
     {
@@ -18574,7 +18574,7 @@
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/338.png",
       "tcgplayerId": "540460",
-      "LowFoilPrice": "0.14",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.03"
     },
     {
@@ -18595,11 +18595,11 @@
       "Unique": false,
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/338F.png",
       "tcgplayerId": "540460",
-      "LowFoilPrice": "0.14",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.03"
     },
     {
@@ -18728,7 +18728,7 @@
       "Unique": true,
       "Artist": "Eric Hibbeler",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.74",
+      "MarketPrice": "1.71",
       "FoilPrice": "1.57",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/360F.png",
       "tcgplayerId": "540482",
@@ -18755,12 +18755,12 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.87",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/186.png",
       "tcgplayerId": "540307",
       "LowFoilPrice": "0.43",
-      "LowPrice": "0.19"
+      "LowPrice": "0.17"
     },
     {
       "Set": "SOR",
@@ -18781,12 +18781,12 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Foil",
-      "MarketPrice": "0.55",
+      "MarketPrice": "0.53",
       "FoilPrice": "0.87",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/186F.png",
       "tcgplayerId": "540307",
       "LowFoilPrice": "0.43",
-      "LowPrice": "0.19"
+      "LowPrice": "0.17"
     },
     {
       "Set": "SOR",
@@ -18811,8 +18811,8 @@
       "FoilPrice": "5.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/449.png",
       "tcgplayerId": "540571",
-      "LowFoilPrice": "3.50",
-      "LowPrice": "2.17"
+      "LowFoilPrice": "3.49",
+      "LowPrice": "2.10"
     },
     {
       "Set": "SOR",
@@ -18837,8 +18837,8 @@
       "FoilPrice": "5.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/449F.png",
       "tcgplayerId": "540571",
-      "LowFoilPrice": "3.50",
-      "LowPrice": "2.17"
+      "LowFoilPrice": "3.49",
+      "LowPrice": "2.10"
     },
     {
       "Set": "SOR",
@@ -18870,7 +18870,7 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/049.png",
       "tcgplayerId": "540170",
@@ -18906,7 +18906,7 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Foil",
-      "MarketPrice": "0.91",
+      "MarketPrice": "0.95",
       "FoilPrice": "0.93",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/049F.png",
       "tcgplayerId": "540170",
@@ -18942,12 +18942,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.63",
+      "MarketPrice": "4.58",
       "FoilPrice": "10.42",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/315.png",
       "tcgplayerId": "540437",
       "LowFoilPrice": "9.00",
-      "LowPrice": "3.80"
+      "LowPrice": "3.78"
     },
     {
       "Set": "SOR",
@@ -18978,12 +18978,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "9.77",
+      "MarketPrice": "9.74",
       "FoilPrice": "10.42",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/315F.png",
       "tcgplayerId": "540437",
       "LowFoilPrice": "9.00",
-      "LowPrice": "3.80"
+      "LowPrice": "3.78"
     },
     {
       "Set": "SOR",
@@ -19084,7 +19084,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/428.png",
       "tcgplayerId": "540550",
@@ -19149,8 +19149,8 @@
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/172.png",
       "tcgplayerId": "540293",
-      "LowFoilPrice": "0.08",
-      "LowPrice": "0.09"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -19174,8 +19174,8 @@
       "FoilPrice": "0.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/172F.png",
       "tcgplayerId": "540293",
-      "LowFoilPrice": "0.08",
-      "LowPrice": "0.09"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -19220,7 +19220,7 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.53",
+      "MarketPrice": "2.56",
       "FoilPrice": "2.76",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/435F.png",
       "tcgplayerId": "540557",
@@ -19361,7 +19361,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/470F.png",
       "tcgplayerId": "540592",
@@ -19392,7 +19392,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/221.png",
       "tcgplayerId": "540342",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.16"
+      "LowPrice": "0.12"
     },
     {
       "Set": "SOR",
@@ -19412,12 +19412,12 @@
       "Unique": false,
       "Artist": "Leonardo Giammichele",
       "VariantType": "Foil",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.36",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/221F.png",
       "tcgplayerId": "540342",
       "LowFoilPrice": "0.20",
-      "LowPrice": "0.16"
+      "LowPrice": "0.12"
     },
     {
       "Set": "SOR",
@@ -19441,7 +19441,7 @@
       "FoilPrice": "4.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/483.png",
       "tcgplayerId": "540605",
-      "LowFoilPrice": "4.80",
+      "LowFoilPrice": "4.77",
       "LowPrice": "2.00"
     },
     {
@@ -19466,7 +19466,7 @@
       "FoilPrice": "4.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/483F.png",
       "tcgplayerId": "540605",
-      "LowFoilPrice": "4.80",
+      "LowFoilPrice": "4.77",
       "LowPrice": "2.00"
     },
     {
@@ -19489,7 +19489,7 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.64",
+      "MarketPrice": "0.63",
       "FoilPrice": "2.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/092.png",
       "tcgplayerId": "540213",
@@ -19515,7 +19515,7 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "2.15",
+      "MarketPrice": "2.16",
       "FoilPrice": "2.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/092F.png",
       "tcgplayerId": "540213",
@@ -19541,11 +19541,11 @@
       "Unique": false,
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.29",
+      "MarketPrice": "5.24",
       "FoilPrice": "13.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/356.png",
       "tcgplayerId": "540478",
-      "LowFoilPrice": "9.32",
+      "LowFoilPrice": "8.09",
       "LowPrice": "3.95"
     },
     {
@@ -19571,7 +19571,7 @@
       "FoilPrice": "13.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/356F.png",
       "tcgplayerId": "540478",
-      "LowFoilPrice": "9.32",
+      "LowFoilPrice": "8.09",
       "LowPrice": "3.95"
     },
     {
@@ -19607,7 +19607,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/159.png",
       "tcgplayerId": "540280",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -19641,7 +19641,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/159F.png",
       "tcgplayerId": "540280",
       "LowFoilPrice": "0.04",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -19767,7 +19767,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/111F.png",
       "tcgplayerId": "540232",
@@ -19829,7 +19829,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/375F.png",
       "tcgplayerId": "540497",
@@ -19870,7 +19870,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/209.png",
       "tcgplayerId": "540330",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -19905,7 +19905,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/209F.png",
       "tcgplayerId": "540330",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -20001,7 +20001,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/170.png",
       "tcgplayerId": "540291",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -20021,12 +20021,12 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/170F.png",
       "tcgplayerId": "540291",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -20046,7 +20046,7 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.48",
+      "MarketPrice": "0.46",
       "FoilPrice": "1.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/433.png",
       "tcgplayerId": "540555",
@@ -20098,7 +20098,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "1.10",
+      "MarketPrice": "1.12",
       "FoilPrice": "2.38",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/041.png",
       "tcgplayerId": "540162",
@@ -20154,7 +20154,7 @@
       "FoilPrice": "16.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/307.png",
       "tcgplayerId": "540429",
-      "LowFoilPrice": "9.88",
+      "LowFoilPrice": "7.28",
       "LowPrice": "3.75"
     },
     {
@@ -20180,7 +20180,7 @@
       "FoilPrice": "16.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/307F.png",
       "tcgplayerId": "540429",
-      "LowFoilPrice": "9.88",
+      "LowFoilPrice": "7.28",
       "LowPrice": "3.75"
     },
     {
@@ -20209,8 +20209,8 @@
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/168.png",
       "tcgplayerId": "540289",
-      "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.08",
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -20237,8 +20237,8 @@
       "FoilPrice": "0.15",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/168F.png",
       "tcgplayerId": "540289",
-      "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowFoilPrice": "0.08",
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -20261,7 +20261,7 @@
       ],
       "Artist": "Ash Pierce",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.27",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/431.png",
       "tcgplayerId": "540553",
@@ -20319,7 +20319,7 @@
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/125.png",
       "tcgplayerId": "540246",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.02",
       "LowPrice": "0.02"
     },
     {
@@ -20344,7 +20344,7 @@
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/125F.png",
       "tcgplayerId": "540246",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.02",
       "LowPrice": "0.02"
     },
     {
@@ -20365,7 +20365,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.53",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/389.png",
       "tcgplayerId": "540511",
@@ -20426,8 +20426,8 @@
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/057.png",
       "tcgplayerId": "540178",
-      "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowFoilPrice": "0.07",
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -20453,12 +20453,12 @@
       ],
       "Artist": "Alex Accorsi",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/057F.png",
       "tcgplayerId": "540178",
-      "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowFoilPrice": "0.07",
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -20484,7 +20484,7 @@
       ],
       "Artist": "Alex Accorsi",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/322.png",
       "tcgplayerId": "540444",
@@ -20582,7 +20582,7 @@
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/154.png",
       "tcgplayerId": "540275",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.02"
     },
     {
@@ -20611,7 +20611,7 @@
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/154F.png",
       "tcgplayerId": "540275",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.02"
     },
     {
@@ -20636,7 +20636,7 @@
       ],
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.82",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/417.png",
       "tcgplayerId": "540539",
@@ -20698,7 +20698,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/103.png",
       "tcgplayerId": "540224",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "SOR",
@@ -20725,7 +20725,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/103F.png",
       "tcgplayerId": "540224",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.10"
+      "LowPrice": "0.09"
     },
     {
       "Set": "SOR",
@@ -20747,12 +20747,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.26",
+      "MarketPrice": "1.24",
       "FoilPrice": "3.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/367.png",
       "tcgplayerId": "540489",
       "LowFoilPrice": "3.01",
-      "LowPrice": "1.08"
+      "LowPrice": "1.19"
     },
     {
       "Set": "SOR",
@@ -20774,12 +20774,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.89",
+      "MarketPrice": "3.97",
       "FoilPrice": "3.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/367F.png",
       "tcgplayerId": "540489",
       "LowFoilPrice": "3.01",
-      "LowPrice": "1.08"
+      "LowPrice": "1.19"
     },
     {
       "Set": "SOR",
@@ -20911,7 +20911,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/497F.png",
       "tcgplayerId": "540619",
@@ -21050,11 +21050,11 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Normal",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.77",
       "FoilPrice": "1.85",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/144.png",
       "tcgplayerId": "540265",
-      "LowFoilPrice": "0.71",
+      "LowFoilPrice": "0.80",
       "LowPrice": "0.51"
     },
     {
@@ -21087,11 +21087,11 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Foil",
-      "MarketPrice": "1.25",
+      "MarketPrice": "1.31",
       "FoilPrice": "1.85",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/144F.png",
       "tcgplayerId": "540265",
-      "LowFoilPrice": "0.71",
+      "LowFoilPrice": "0.80",
       "LowPrice": "0.51"
     },
     {
@@ -21124,7 +21124,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.77",
+      "MarketPrice": "4.73",
       "FoilPrice": "8.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/407.png",
       "tcgplayerId": "540529",
@@ -21161,7 +21161,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "9.65",
+      "MarketPrice": "9.68",
       "FoilPrice": "8.91",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/407F.png",
       "tcgplayerId": "540529",
@@ -21203,7 +21203,7 @@
       "FoilPrice": "1.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/052.png",
       "tcgplayerId": "540173",
-      "LowFoilPrice": "0.48",
+      "LowFoilPrice": "0.47",
       "LowPrice": "0.24"
     },
     {
@@ -21236,11 +21236,11 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Foil",
-      "MarketPrice": "0.76",
+      "MarketPrice": "0.82",
       "FoilPrice": "1.03",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/052F.png",
       "tcgplayerId": "540173",
-      "LowFoilPrice": "0.48",
+      "LowFoilPrice": "0.47",
       "LowPrice": "0.24"
     },
     {
@@ -21310,7 +21310,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "11.17",
+      "MarketPrice": "11.09",
       "FoilPrice": "11.58",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/318F.png",
       "tcgplayerId": "540440",
@@ -21373,7 +21373,7 @@
       "Unique": false,
       "Artist": "Yvette Chua",
       "VariantType": "Foil",
-      "MarketPrice": "0.66",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/062F.png",
       "tcgplayerId": "540183",
@@ -21404,7 +21404,7 @@
       "Unique": false,
       "Artist": "Yvette Chua",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.00",
+      "MarketPrice": "2.99",
       "FoilPrice": "10.56",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/327.png",
       "tcgplayerId": "540449",
@@ -21469,7 +21469,7 @@
       ],
       "Artist": "Liana Anatolevich",
       "VariantType": "Normal",
-      "MarketPrice": "0.02",
+      "MarketPrice": "0.03",
       "FoilPrice": "0.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/243.png",
       "tcgplayerId": "540364",
@@ -21728,7 +21728,7 @@
       "Unique": true,
       "Artist": "Ross Taylor",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/089.png",
       "tcgplayerId": "540210",
@@ -21762,7 +21762,7 @@
       "Unique": true,
       "Artist": "Ross Taylor",
       "VariantType": "Foil",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.47",
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/089F.png",
       "tcgplayerId": "540210",
@@ -21796,7 +21796,7 @@
       "Unique": true,
       "Artist": "Ross Taylor",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.77",
+      "MarketPrice": "3.74",
       "FoilPrice": "7.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/353.png",
       "tcgplayerId": "540475",
@@ -21830,7 +21830,7 @@
       "Unique": true,
       "Artist": "Ross Taylor",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "8.36",
+      "MarketPrice": "8.56",
       "FoilPrice": "7.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/353F.png",
       "tcgplayerId": "540475",
@@ -21962,7 +21962,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/069.png",
       "tcgplayerId": "540190",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.06",
       "LowPrice": "0.01"
     },
     {
@@ -21988,7 +21988,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/069F.png",
       "tcgplayerId": "540190",
-      "LowFoilPrice": "0.05",
+      "LowFoilPrice": "0.06",
       "LowPrice": "0.01"
     },
     {
@@ -22014,7 +22014,7 @@
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/334.png",
       "tcgplayerId": "540456",
-      "LowFoilPrice": "0.12",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.08"
     },
     {
@@ -22040,7 +22040,7 @@
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/334F.png",
       "tcgplayerId": "540456",
-      "LowFoilPrice": "0.12",
+      "LowFoilPrice": "0.10",
       "LowPrice": "0.08"
     },
     {
@@ -22081,7 +22081,7 @@
       "Unique": false,
       "Artist": "Joshua Carson",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/252F.png",
       "tcgplayerId": "540373",
@@ -22162,7 +22162,7 @@
       ],
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/044.png",
       "tcgplayerId": "540165",
@@ -22296,7 +22296,7 @@
       "Unique": false,
       "Artist": "Robynn Frauhn",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/126.png",
       "tcgplayerId": "540247",
@@ -22321,7 +22321,7 @@
       "Unique": false,
       "Artist": "Robynn Frauhn",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/126F.png",
       "tcgplayerId": "540247",
@@ -22371,7 +22371,7 @@
       "Unique": false,
       "Artist": "Robynn Frauhn",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.95",
+      "MarketPrice": "0.93",
       "FoilPrice": "0.97",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/390F.png",
       "tcgplayerId": "540512",
@@ -22412,7 +22412,7 @@
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/194.png",
       "tcgplayerId": "540315",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.01"
     },
     {
@@ -22448,7 +22448,7 @@
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/194F.png",
       "tcgplayerId": "540315",
-      "LowFoilPrice": "0.06",
+      "LowFoilPrice": "0.04",
       "LowPrice": "0.01"
     },
     {
@@ -22558,7 +22558,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/101.png",
       "tcgplayerId": "540222",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -22589,12 +22589,12 @@
       ],
       "Artist": "Ross Taylor",
       "VariantType": "Foil",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/101F.png",
       "tcgplayerId": "540222",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -22625,7 +22625,7 @@
       ],
       "Artist": "Ross Taylor",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.71",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/365.png",
       "tcgplayerId": "540487",
@@ -22761,7 +22761,7 @@
       ],
       "Artist": "Elena Skitalets",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/332.png",
       "tcgplayerId": "540454",
@@ -22834,7 +22834,7 @@
       "FoilPrice": "0.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/085.png",
       "tcgplayerId": "540206",
-      "LowFoilPrice": "0.15",
+      "LowFoilPrice": "0.19",
       "LowPrice": "0.10"
     },
     {
@@ -22865,11 +22865,11 @@
       ],
       "Artist": "Elena Skitalets",
       "VariantType": "Foil",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.45",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/085F.png",
       "tcgplayerId": "540206",
-      "LowFoilPrice": "0.15",
+      "LowFoilPrice": "0.19",
       "LowPrice": "0.10"
     },
     {
@@ -22900,12 +22900,12 @@
       ],
       "Artist": "Elena Skitalets",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.38",
+      "MarketPrice": "1.39",
       "FoilPrice": "3.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/349.png",
       "tcgplayerId": "540471",
       "LowFoilPrice": "2.84",
-      "LowPrice": "1.00"
+      "LowPrice": "1.28"
     },
     {
       "Set": "SOR",
@@ -22940,7 +22940,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/349F.png",
       "tcgplayerId": "540471",
       "LowFoilPrice": "2.84",
-      "LowPrice": "1.00"
+      "LowPrice": "1.28"
     },
     {
       "Set": "SOR",
@@ -23040,7 +23040,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/398.png",
       "tcgplayerId": "540520",
       "LowFoilPrice": "8.09",
-      "LowPrice": "3.48"
+      "LowPrice": "3.00"
     },
     {
       "Set": "SOR",
@@ -23068,12 +23068,12 @@
       "Unique": false,
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "9.22",
+      "MarketPrice": "9.43",
       "FoilPrice": "8.86",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/398F.png",
       "tcgplayerId": "540520",
       "LowFoilPrice": "8.09",
-      "LowPrice": "3.48"
+      "LowPrice": "3.00"
     },
     {
       "Set": "SOR",
@@ -23106,7 +23106,7 @@
       "Unique": true,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/014.png",
       "tcgplayerId": "540389",
@@ -23140,7 +23140,7 @@
       "Unique": true,
       "Artist": "Rebecca Farrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.35",
       "FoilPrice": "1.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/142.png",
       "tcgplayerId": "540263",
@@ -23174,7 +23174,7 @@
       "Unique": true,
       "Artist": "Rebecca Farrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.78",
+      "MarketPrice": "0.73",
       "FoilPrice": "1.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/142F.png",
       "tcgplayerId": "540263",
@@ -23211,11 +23211,11 @@
       "Unique": true,
       "Artist": "Robynn Frauhn",
       "VariantType": "Showcase",
-      "MarketPrice": "126.75",
+      "MarketPrice": "127.03",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/264.png",
       "tcgplayerId": "540683",
-      "LowPrice": "126.00"
+      "LowPrice": "125.83"
     },
     {
       "Set": "SOR",
@@ -23347,11 +23347,11 @@
       "Unique": true,
       "Artist": "David Buisan",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/153.png",
       "tcgplayerId": "540274",
-      "LowFoilPrice": "0.21",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.02"
     },
     {
@@ -23383,7 +23383,7 @@
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/153F.png",
       "tcgplayerId": "540274",
-      "LowFoilPrice": "0.21",
+      "LowFoilPrice": "0.15",
       "LowPrice": "0.02"
     },
     {
@@ -23484,7 +23484,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/032.png",
       "tcgplayerId": "540153",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -23514,12 +23514,12 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/032F.png",
       "tcgplayerId": "540153",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -23549,7 +23549,7 @@
       ],
       "Artist": "Mickael Balloul",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/298.png",
       "tcgplayerId": "540420",
@@ -23611,7 +23611,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/042.png",
       "tcgplayerId": "540163",
@@ -23637,7 +23637,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Foil",
-      "MarketPrice": "0.41",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.49",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/042F.png",
       "tcgplayerId": "540163",
@@ -23667,7 +23667,7 @@
       "FoilPrice": "3.80",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/308.png",
       "tcgplayerId": "540430",
-      "LowFoilPrice": "4.70",
+      "LowFoilPrice": "4.75",
       "LowPrice": "1.00"
     },
     {
@@ -23689,11 +23689,11 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.70",
+      "MarketPrice": "4.81",
       "FoilPrice": "3.80",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/308F.png",
       "tcgplayerId": "540430",
-      "LowFoilPrice": "4.70",
+      "LowFoilPrice": "4.75",
       "LowPrice": "1.00"
     },
     {
@@ -23727,7 +23727,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/081.png",
       "tcgplayerId": "540202",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -23759,7 +23759,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/081F.png",
       "tcgplayerId": "540202",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -23786,11 +23786,11 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.58",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/346.png",
       "tcgplayerId": "540468",
-      "LowFoilPrice": "0.46",
+      "LowFoilPrice": "0.50",
       "LowPrice": "0.15"
     },
     {
@@ -23822,7 +23822,7 @@
       "FoilPrice": "0.58",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/346F.png",
       "tcgplayerId": "540468",
-      "LowFoilPrice": "0.46",
+      "LowFoilPrice": "0.50",
       "LowPrice": "0.15"
     },
     {
@@ -23842,7 +23842,7 @@
       "Unique": false,
       "Artist": "Tyler Edlin",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/019.png",
       "tcgplayerId": "540140",
@@ -23892,7 +23892,7 @@
       "FoilPrice": "7.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/285.png",
       "tcgplayerId": "540407",
-      "LowFoilPrice": "4.93",
+      "LowFoilPrice": "4.41",
       "LowPrice": "2.93"
     },
     {
@@ -23911,11 +23911,11 @@
       "Unique": false,
       "Artist": "Tyler Edlin",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "8.15",
+      "MarketPrice": "7.95",
       "FoilPrice": "7.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/285F.png",
       "tcgplayerId": "540407",
-      "LowFoilPrice": "4.93",
+      "LowFoilPrice": "4.41",
       "LowPrice": "2.93"
     },
     {
@@ -23952,8 +23952,8 @@
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/180.png",
       "tcgplayerId": "540301",
-      "LowFoilPrice": "0.07",
-      "LowPrice": "0.04"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -23988,8 +23988,8 @@
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/180F.png",
       "tcgplayerId": "540301",
-      "LowFoilPrice": "0.07",
-      "LowPrice": "0.04"
+      "LowFoilPrice": "0.06",
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -24131,7 +24131,7 @@
       ],
       "Artist": "Lenka Šimečková",
       "VariantType": "Foil",
-      "MarketPrice": "0.69",
+      "MarketPrice": "0.68",
       "FoilPrice": "0.70",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/133F.png",
       "tcgplayerId": "540254",
@@ -24168,7 +24168,7 @@
       ],
       "Artist": "Lenka Šimečková",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.20",
+      "MarketPrice": "2.21",
       "FoilPrice": "4.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/397.png",
       "tcgplayerId": "540519",
@@ -24205,7 +24205,7 @@
       ],
       "Artist": "Lenka Šimečková",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.24",
+      "MarketPrice": "4.23",
       "FoilPrice": "4.50",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/397F.png",
       "tcgplayerId": "540519",
@@ -24231,12 +24231,12 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/217.png",
       "tcgplayerId": "540338",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -24261,7 +24261,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/217F.png",
       "tcgplayerId": "540338",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.07"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -24337,7 +24337,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/174.png",
       "tcgplayerId": "540295",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -24362,7 +24362,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/174F.png",
       "tcgplayerId": "540295",
       "LowFoilPrice": "0.09",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -24386,8 +24386,8 @@
       "FoilPrice": "1.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/437.png",
       "tcgplayerId": "540559",
-      "LowFoilPrice": "1.45",
-      "LowPrice": "0.31"
+      "LowFoilPrice": "1.40",
+      "LowPrice": "0.38"
     },
     {
       "Set": "SOR",
@@ -24407,12 +24407,12 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.14",
+      "MarketPrice": "1.12",
       "FoilPrice": "1.11",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/437F.png",
       "tcgplayerId": "540559",
-      "LowFoilPrice": "1.45",
-      "LowPrice": "0.31"
+      "LowFoilPrice": "1.40",
+      "LowPrice": "0.38"
     },
     {
       "Set": "SOR",
@@ -24435,7 +24435,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/214.png",
       "tcgplayerId": "540335",
@@ -24462,7 +24462,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/214F.png",
       "tcgplayerId": "540335",
@@ -24617,7 +24617,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.75",
+      "MarketPrice": "0.71",
       "FoilPrice": "0.78",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/477F.png",
       "tcgplayerId": "540599",
@@ -24648,7 +24648,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/219.png",
       "tcgplayerId": "540340",
       "LowFoilPrice": "1.20",
-      "LowPrice": "0.29"
+      "LowPrice": "0.25"
     },
     {
       "Set": "SOR",
@@ -24673,7 +24673,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/219F.png",
       "tcgplayerId": "540340",
       "LowFoilPrice": "1.20",
-      "LowPrice": "0.29"
+      "LowPrice": "0.25"
     },
     {
       "Set": "SOR",
@@ -24693,12 +24693,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "7.21",
+      "MarketPrice": "6.82",
       "FoilPrice": "11.33",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/481.png",
       "tcgplayerId": "540603",
       "LowFoilPrice": "11.03",
-      "LowPrice": "3.50"
+      "LowPrice": "3.15"
     },
     {
       "Set": "SOR",
@@ -24723,7 +24723,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/481F.png",
       "tcgplayerId": "540603",
       "LowFoilPrice": "11.03",
-      "LowPrice": "3.50"
+      "LowPrice": "3.15"
     },
     {
       "Set": "SOR",
@@ -24891,7 +24891,7 @@
       "Unique": false,
       "Artist": "Erik Ly",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/227.png",
       "tcgplayerId": "540348",
@@ -24922,7 +24922,7 @@
       "Unique": false,
       "Artist": "Erik Ly",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/227F.png",
       "tcgplayerId": "540348",
@@ -24953,7 +24953,7 @@
       "Unique": false,
       "Artist": "Erik Ly",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.41",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/488.png",
       "tcgplayerId": "540610",
@@ -25011,12 +25011,12 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Normal",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.44",
       "FoilPrice": "2.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/200.png",
       "tcgplayerId": "540321",
       "LowFoilPrice": "0.90",
-      "LowPrice": "0.23"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -25042,7 +25042,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/200F.png",
       "tcgplayerId": "540321",
       "LowFoilPrice": "0.90",
-      "LowPrice": "0.23"
+      "LowPrice": "0.20"
     },
     {
       "Set": "SOR",
@@ -25063,7 +25063,7 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.02",
+      "MarketPrice": "4.01",
       "FoilPrice": "12.57",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/462.png",
       "tcgplayerId": "540584",
@@ -25230,7 +25230,7 @@
       ],
       "Artist": "Didier Nguyen",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.41",
+      "MarketPrice": "0.40",
       "FoilPrice": "0.42",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/403F.png",
       "tcgplayerId": "540525",
@@ -25293,7 +25293,7 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/163F.png",
       "tcgplayerId": "540284",
@@ -25585,12 +25585,12 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.29",
+      "MarketPrice": "1.25",
       "FoilPrice": "4.55",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/474.png",
       "tcgplayerId": "540596",
       "LowFoilPrice": "4.16",
-      "LowPrice": "0.90"
+      "LowPrice": "0.89"
     },
     {
       "Set": "SOR",
@@ -25622,7 +25622,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/474F.png",
       "tcgplayerId": "540596",
       "LowFoilPrice": "4.16",
-      "LowPrice": "0.90"
+      "LowPrice": "0.89"
     },
     {
       "Set": "SOR",
@@ -25648,7 +25648,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/127.png",
       "tcgplayerId": "540248",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -25673,7 +25673,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/127F.png",
       "tcgplayerId": "540248",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -25746,12 +25746,12 @@
       "Unique": false,
       "Artist": "Liana Anatolevich",
       "VariantType": "Normal",
-      "MarketPrice": "5.03",
+      "MarketPrice": "4.35",
       "FoilPrice": "7.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/043.png",
       "tcgplayerId": "540164",
       "LowFoilPrice": "4.95",
-      "LowPrice": "3.89"
+      "LowPrice": "3.00"
     },
     {
       "Set": "SOR",
@@ -25773,12 +25773,12 @@
       "Unique": false,
       "Artist": "Liana Anatolevich",
       "VariantType": "Foil",
-      "MarketPrice": "6.21",
+      "MarketPrice": "6.43",
       "FoilPrice": "7.25",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/043F.png",
       "tcgplayerId": "540164",
       "LowFoilPrice": "4.95",
-      "LowPrice": "3.89"
+      "LowPrice": "3.00"
     },
     {
       "Set": "SOR",
@@ -25805,7 +25805,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/309.png",
       "tcgplayerId": "540431",
       "LowFoilPrice": "16.80",
-      "LowPrice": "10.70"
+      "LowPrice": "10.69"
     },
     {
       "Set": "SOR",
@@ -25832,7 +25832,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/309F.png",
       "tcgplayerId": "540431",
       "LowFoilPrice": "16.80",
-      "LowPrice": "10.70"
+      "LowPrice": "10.69"
     },
     {
       "Set": "SOR",
@@ -25859,12 +25859,12 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/083.png",
       "tcgplayerId": "540204",
-      "LowFoilPrice": "0.10",
-      "LowPrice": "0.06"
+      "LowFoilPrice": "0.14",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -25894,8 +25894,8 @@
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/083F.png",
       "tcgplayerId": "540204",
-      "LowFoilPrice": "0.10",
-      "LowPrice": "0.06"
+      "LowFoilPrice": "0.14",
+      "LowPrice": "0.05"
     },
     {
       "Set": "SOR",
@@ -25925,7 +25925,7 @@
       "FoilPrice": "2.73",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/348.png",
       "tcgplayerId": "540470",
-      "LowFoilPrice": "1.50",
+      "LowFoilPrice": "2.50",
       "LowPrice": "1.00"
     },
     {
@@ -25952,11 +25952,11 @@
       "Unique": false,
       "Artist": "Denis Medri",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.76",
+      "MarketPrice": "2.69",
       "FoilPrice": "2.73",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/348F.png",
       "tcgplayerId": "540470",
-      "LowFoilPrice": "1.50",
+      "LowFoilPrice": "2.50",
       "LowPrice": "1.00"
     },
     {
@@ -25983,7 +25983,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/220.png",
       "tcgplayerId": "540341",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -26008,7 +26008,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/220F.png",
       "tcgplayerId": "540341",
       "LowFoilPrice": "0.08",
-      "LowPrice": "0.03"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -26053,7 +26053,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.41",
+      "MarketPrice": "1.42",
       "FoilPrice": "1.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/482F.png",
       "tcgplayerId": "540604",
@@ -26174,7 +26174,7 @@
       "Unique": false,
       "Artist": "André Mealha",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/472F.png",
       "tcgplayerId": "540594",
@@ -26241,7 +26241,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Foil",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.18",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/213F.png",
       "tcgplayerId": "540334",
@@ -26274,7 +26274,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.35",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/475.png",
       "tcgplayerId": "540597",
@@ -26376,7 +26376,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/066F.png",
       "tcgplayerId": "540187",
@@ -26444,7 +26444,7 @@
       ],
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.48",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/331F.png",
       "tcgplayerId": "540453",
@@ -26477,12 +26477,12 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.26",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/231.png",
       "tcgplayerId": "540352",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.09"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -26514,7 +26514,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/231F.png",
       "tcgplayerId": "540352",
       "LowFoilPrice": "0.14",
-      "LowPrice": "0.09"
+      "LowPrice": "0.01"
     },
     {
       "Set": "SOR",
@@ -26573,7 +26573,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.84",
+      "MarketPrice": "3.94",
       "FoilPrice": "3.88",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/492F.png",
       "tcgplayerId": "540614",
@@ -26610,7 +26610,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/225.png",
       "tcgplayerId": "540346",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.05"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -26636,12 +26636,12 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/225F.png",
       "tcgplayerId": "540346",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.05"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -26667,11 +26667,11 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.59",
       "FoilPrice": "0.99",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/487.png",
       "tcgplayerId": "540609",
-      "LowFoilPrice": "0.90",
+      "LowFoilPrice": "0.96",
       "LowPrice": "0.30"
     },
     {
@@ -26702,7 +26702,7 @@
       "FoilPrice": "0.99",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/487F.png",
       "tcgplayerId": "540609",
-      "LowFoilPrice": "0.90",
+      "LowFoilPrice": "0.96",
       "LowPrice": "0.30"
     },
     {
@@ -26774,11 +26774,11 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/388.png",
       "tcgplayerId": "540510",
-      "LowFoilPrice": "0.09",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.04"
     },
     {
@@ -26799,11 +26799,11 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/388F.png",
       "tcgplayerId": "540510",
-      "LowFoilPrice": "0.09",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.04"
     },
     {
@@ -26825,12 +26825,12 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/077.png",
       "tcgplayerId": "540198",
       "LowFoilPrice": "0.46",
-      "LowPrice": "0.10"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -26850,12 +26850,12 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Foil",
-      "MarketPrice": "0.77",
+      "MarketPrice": "0.78",
       "FoilPrice": "0.96",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/077F.png",
       "tcgplayerId": "540198",
       "LowFoilPrice": "0.46",
-      "LowPrice": "0.10"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -26879,8 +26879,8 @@
       "FoilPrice": "3.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/342.png",
       "tcgplayerId": "540464",
-      "LowFoilPrice": "2.89",
-      "LowPrice": "1.64"
+      "LowFoilPrice": "2.23",
+      "LowPrice": "1.70"
     },
     {
       "Set": "SOR",
@@ -26904,8 +26904,8 @@
       "FoilPrice": "3.14",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/342F.png",
       "tcgplayerId": "540464",
-      "LowFoilPrice": "2.89",
-      "LowPrice": "1.64"
+      "LowFoilPrice": "2.23",
+      "LowPrice": "1.70"
     },
     {
       "Set": "SOR",
@@ -26924,12 +26924,12 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.41",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.67",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/025.png",
       "tcgplayerId": "540146",
-      "LowFoilPrice": "0.43",
-      "LowPrice": "0.23"
+      "LowFoilPrice": "0.41",
+      "LowPrice": "0.24"
     },
     {
       "Set": "SOR",
@@ -26951,8 +26951,8 @@
       "FoilPrice": "0.67",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/025F.png",
       "tcgplayerId": "540146",
-      "LowFoilPrice": "0.43",
-      "LowPrice": "0.23"
+      "LowFoilPrice": "0.41",
+      "LowPrice": "0.24"
     },
     {
       "Set": "SOR",
@@ -26974,8 +26974,8 @@
       "FoilPrice": "45.05",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/291.png",
       "tcgplayerId": "540413",
-      "LowFoilPrice": "41.09",
-      "LowPrice": "6.79"
+      "LowFoilPrice": "24.99",
+      "LowPrice": "6.73"
     },
     {
       "Set": "SOR",
@@ -26997,8 +26997,8 @@
       "FoilPrice": "45.05",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/291F.png",
       "tcgplayerId": "540413",
-      "LowFoilPrice": "41.09",
-      "LowPrice": "6.79"
+      "LowFoilPrice": "24.99",
+      "LowPrice": "6.73"
     },
     {
       "Set": "SOR",
@@ -27021,7 +27021,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/091.png",
       "tcgplayerId": "540212",
@@ -27048,7 +27048,7 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Foil",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.34",
       "FoilPrice": "0.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/091F.png",
       "tcgplayerId": "540212",
@@ -27075,11 +27075,11 @@
       "Unique": false,
       "Artist": "Eslam Aboshady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.80",
+      "MarketPrice": "0.81",
       "FoilPrice": "1.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/355.png",
       "tcgplayerId": "540477",
-      "LowFoilPrice": "1.20",
+      "LowFoilPrice": "1.00",
       "LowPrice": "0.60"
     },
     {
@@ -27106,7 +27106,7 @@
       "FoilPrice": "1.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/355F.png",
       "tcgplayerId": "540477",
-      "LowFoilPrice": "1.20",
+      "LowFoilPrice": "1.00",
       "LowPrice": "0.60"
     },
     {
@@ -27134,7 +27134,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/055.png",
       "tcgplayerId": "540176",
       "LowFoilPrice": "0.12",
-      "LowPrice": "0.08"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -27160,7 +27160,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/055F.png",
       "tcgplayerId": "540176",
       "LowFoilPrice": "0.12",
-      "LowPrice": "0.08"
+      "LowPrice": "0.06"
     },
     {
       "Set": "SOR",
@@ -27207,7 +27207,7 @@
       "Unique": false,
       "Artist": "Anny Maulina",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.27",
+      "MarketPrice": "4.28",
       "FoilPrice": "4.09",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/320F.png",
       "tcgplayerId": "540442",
@@ -27246,7 +27246,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/050.png",
       "tcgplayerId": "540171",
@@ -27284,7 +27284,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.29",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/050F.png",
       "tcgplayerId": "540171",
@@ -27322,7 +27322,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.25",
+      "MarketPrice": "1.22",
       "FoilPrice": "2.05",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/316.png",
       "tcgplayerId": "540438",
@@ -27388,7 +27388,7 @@
       "Unique": false,
       "Artist": "Gretel Lusky",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.28",
       "FoilPrice": "1.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/122.png",
       "tcgplayerId": "540243",
@@ -27415,7 +27415,7 @@
       "Unique": false,
       "Artist": "Gretel Lusky",
       "VariantType": "Foil",
-      "MarketPrice": "0.84",
+      "MarketPrice": "0.83",
       "FoilPrice": "1.07",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/122F.png",
       "tcgplayerId": "540243",
@@ -27442,11 +27442,11 @@
       "Unique": false,
       "Artist": "Gretel Lusky",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/386.png",
       "tcgplayerId": "540510",
-      "LowFoilPrice": "0.09",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.04"
     },
     {
@@ -27469,11 +27469,11 @@
       "Unique": false,
       "Artist": "Gretel Lusky",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/386F.png",
       "tcgplayerId": "540510",
-      "LowFoilPrice": "0.09",
+      "LowFoilPrice": "0.05",
       "LowPrice": "0.04"
     },
     {
@@ -27496,7 +27496,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.44",
       "FoilPrice": "1.92",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/104.png",
       "tcgplayerId": "540225",
@@ -27522,7 +27522,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "2.04",
+      "MarketPrice": "2.05",
       "FoilPrice": "1.92",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/104F.png",
       "tcgplayerId": "540225",
@@ -27548,11 +27548,11 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "8.22",
+      "MarketPrice": "8.24",
       "FoilPrice": "12.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/368.png",
       "tcgplayerId": "540490",
-      "LowFoilPrice": "11.51",
+      "LowFoilPrice": "11.13",
       "LowPrice": "6.76"
     },
     {
@@ -27574,11 +27574,11 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "13.77",
+      "MarketPrice": "13.70",
       "FoilPrice": "12.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/368F.png",
       "tcgplayerId": "540490",
-      "LowFoilPrice": "11.51",
+      "LowFoilPrice": "11.13",
       "LowPrice": "6.76"
     },
     {
@@ -27656,11 +27656,11 @@
       "Unique": false,
       "Artist": "Felipe Goncalves",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/505.png",
       "tcgplayerId": "540627",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.16",
       "LowPrice": "0.03"
     },
     {
@@ -27683,11 +27683,11 @@
       "Unique": false,
       "Artist": "Felipe Goncalves",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.20",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/505F.png",
       "tcgplayerId": "540627",
-      "LowFoilPrice": "0.10",
+      "LowFoilPrice": "0.16",
       "LowPrice": "0.03"
     },
     {
@@ -27714,7 +27714,7 @@
       "Unique": true,
       "Artist": "Arthur Mougne",
       "VariantType": "Normal",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.53",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/136.png",
       "tcgplayerId": "540257",
@@ -27780,7 +27780,7 @@
       "Unique": false,
       "Artist": "André Mealha",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/191F.png",
       "tcgplayerId": "540312",
@@ -27882,7 +27882,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/108.png",
       "tcgplayerId": "540229",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -27907,12 +27907,12 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.17",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/108F.png",
       "tcgplayerId": "540229",
       "LowFoilPrice": "0.05",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -27937,7 +27937,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/372.png",
       "tcgplayerId": "540494",
@@ -27967,7 +27967,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.32",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/372F.png",
       "tcgplayerId": "540494",
@@ -27997,7 +27997,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/078.png",
       "tcgplayerId": "540199",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -28022,7 +28022,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/078F.png",
       "tcgplayerId": "540199",
-      "LowFoilPrice": "0.04",
+      "LowFoilPrice": "0.01",
       "LowPrice": "0.01"
     },
     {
@@ -28095,12 +28095,12 @@
       "Unique": false,
       "Artist": "Cristina Laviña",
       "VariantType": "Normal",
-      "MarketPrice": "5.65",
+      "MarketPrice": "5.06",
       "FoilPrice": "11.92",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/058.png",
       "tcgplayerId": "540179",
-      "LowFoilPrice": "6.95",
-      "LowPrice": "4.13"
+      "LowFoilPrice": "7.94",
+      "LowPrice": "4.80"
     },
     {
       "Set": "SOR",
@@ -28121,12 +28121,12 @@
       "Unique": false,
       "Artist": "Cristina Laviña",
       "VariantType": "Foil",
-      "MarketPrice": "10.53",
+      "MarketPrice": "10.42",
       "FoilPrice": "11.92",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/058F.png",
       "tcgplayerId": "540179",
-      "LowFoilPrice": "6.95",
-      "LowPrice": "4.13"
+      "LowFoilPrice": "7.94",
+      "LowPrice": "4.80"
     },
     {
       "Set": "SOR",
@@ -28147,7 +28147,7 @@
       "Unique": false,
       "Artist": "Cristina Laviña",
       "VariantType": "Hyperspace",
-      "MarketPrice": "11.49",
+      "MarketPrice": "11.27",
       "FoilPrice": "31.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/323.png",
       "tcgplayerId": "540445",
@@ -28173,7 +28173,7 @@
       "Unique": false,
       "Artist": "Cristina Laviña",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "22.19",
+      "MarketPrice": "22.12",
       "FoilPrice": "31.69",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/323F.png",
       "tcgplayerId": "540445",
@@ -28242,7 +28242,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.12",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/048F.png",
       "tcgplayerId": "540169",
@@ -28276,11 +28276,11 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/314.png",
       "tcgplayerId": "540436",
-      "LowFoilPrice": "0.17",
+      "LowFoilPrice": "0.19",
       "LowPrice": "0.03"
     },
     {
@@ -28314,7 +28314,7 @@
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/314F.png",
       "tcgplayerId": "540436",
-      "LowFoilPrice": "0.17",
+      "LowFoilPrice": "0.19",
       "LowPrice": "0.03"
     },
     {
@@ -28404,7 +28404,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/489.png",
       "tcgplayerId": "540611",
@@ -28435,7 +28435,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.44",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/489F.png",
       "tcgplayerId": "540611",
@@ -28526,7 +28526,7 @@
       ],
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/506.png",
       "tcgplayerId": "540628",
@@ -28556,7 +28556,7 @@
       ],
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.19",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/506F.png",
       "tcgplayerId": "540628",
@@ -28656,7 +28656,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/427.png",
       "tcgplayerId": "540549",
@@ -28689,7 +28689,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.24",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/427F.png",
       "tcgplayerId": "540549",
@@ -28715,12 +28715,12 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.22",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/222.png",
       "tcgplayerId": "540343",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -28745,7 +28745,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/222F.png",
       "tcgplayerId": "540343",
       "LowFoilPrice": "0.06",
-      "LowPrice": "0.04"
+      "LowPrice": "0.02"
     },
     {
       "Set": "SOR",
@@ -28765,7 +28765,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.70",
       "FoilPrice": "3.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/484.png",
       "tcgplayerId": "540606",
@@ -28790,7 +28790,7 @@
       "Unique": false,
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.51",
+      "MarketPrice": "2.37",
       "FoilPrice": "3.16",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/484F.png",
       "tcgplayerId": "540606",
@@ -28826,7 +28826,7 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.47",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/100.png",
       "tcgplayerId": "540221",
@@ -28896,12 +28896,12 @@
       ],
       "Artist": "Amélie Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.12",
+      "MarketPrice": "2.99",
       "FoilPrice": "5.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/364.png",
       "tcgplayerId": "540486",
       "LowFoilPrice": "4.50",
-      "LowPrice": "2.15"
+      "LowPrice": "2.19"
     },
     {
       "Set": "SOR",
@@ -28936,7 +28936,7 @@
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/364F.png",
       "tcgplayerId": "540486",
       "LowFoilPrice": "4.50",
-      "LowPrice": "2.15"
+      "LowPrice": "2.19"
     },
     {
       "Set": "SOR",
@@ -28969,7 +28969,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/064.png",
       "tcgplayerId": "540185",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.07",
       "LowPrice": "0.01"
     },
     {
@@ -29002,7 +29002,7 @@
       "FoilPrice": "0.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/064F.png",
       "tcgplayerId": "540185",
-      "LowFoilPrice": "0.08",
+      "LowFoilPrice": "0.07",
       "LowPrice": "0.01"
     },
     {
@@ -29064,7 +29064,7 @@
       ],
       "Artist": "Ash Pierce",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.23",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/329F.png",
       "tcgplayerId": "540451",
@@ -29097,7 +29097,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/241.png",
       "tcgplayerId": "540362",
@@ -29129,7 +29129,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Foil",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.40",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/241F.png",
       "tcgplayerId": "540362",
@@ -29165,7 +29165,7 @@
       "FoilPrice": "3.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/499.png",
       "tcgplayerId": "540621",
-      "LowFoilPrice": "2.75",
+      "LowFoilPrice": "3.19",
       "LowPrice": "1.00"
     },
     {
@@ -29197,7 +29197,7 @@
       "FoilPrice": "3.64",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/499F.png",
       "tcgplayerId": "540621",
-      "LowFoilPrice": "2.75",
+      "LowFoilPrice": "3.19",
       "LowPrice": "1.00"
     },
     {
@@ -29229,7 +29229,7 @@
       ],
       "Artist": "Elena Skitalets",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.51",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/160.png",
       "tcgplayerId": "540281",
@@ -29334,7 +29334,7 @@
       ],
       "Artist": "Elena Skitalets",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.27",
+      "MarketPrice": "3.32",
       "FoilPrice": "3.61",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/423F.png",
       "tcgplayerId": "540545",
@@ -29479,7 +29479,7 @@
       ],
       "Artist": "Alexandria Huntington",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.47",
+      "MarketPrice": "2.51",
       "FoilPrice": "2.37",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/311F.png",
       "tcgplayerId": "540433",
@@ -29580,7 +29580,7 @@
       "Unique": false,
       "Artist": "Gretel Lusky",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "6.59",
+      "MarketPrice": "6.50",
       "FoilPrice": "6.21",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/504F.png",
       "tcgplayerId": "540626",
@@ -29647,7 +29647,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.28",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/146F.png",
       "tcgplayerId": "540267",
@@ -29680,7 +29680,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.61",
       "FoilPrice": "1.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/409.png",
       "tcgplayerId": "540531",
@@ -29713,7 +29713,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.31",
+      "MarketPrice": "1.30",
       "FoilPrice": "1.13",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SOR/409F.png",
       "tcgplayerId": "540531",
