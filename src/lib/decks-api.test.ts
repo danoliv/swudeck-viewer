@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import * as supabaseModule from './supabase';
+import * as authModule from './auth';
 import {
   listMyDecks,
   getDeckBySlug,
@@ -47,12 +48,22 @@ beforeEach(() => {
 });
 
 describe('listMyDecks', () => {
-  it('returns rows on success', async () => {
-    mockClientReturning({ data: [ROW], error: null });
+  it('returns rows scoped to the current user', async () => {
+    vi.spyOn(authModule, 'getCurrentUser').mockResolvedValue({ id: 'owner-1' } as never);
+    const { query } = mockClientReturning({ data: [ROW], error: null });
     expect(await listMyDecks()).toEqual([ROW]);
+    expect(query.eq).toHaveBeenCalledWith('owner_id', 'owner-1');
+  });
+
+  it('returns an empty list without querying when logged out', async () => {
+    vi.spyOn(authModule, 'getCurrentUser').mockResolvedValue(null);
+    const { from } = mockClientReturning({ data: [ROW], error: null });
+    expect(await listMyDecks()).toEqual([]);
+    expect(from).not.toHaveBeenCalled();
   });
 
   it('throws the Postgrest error', async () => {
+    vi.spyOn(authModule, 'getCurrentUser').mockResolvedValue({ id: 'owner-1' } as never);
     mockClientReturning({ data: null, error: new Error('boom') });
     await expect(listMyDecks()).rejects.toThrow('boom');
   });
