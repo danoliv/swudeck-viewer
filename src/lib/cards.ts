@@ -324,6 +324,46 @@ function quantityButtonsHTML(cardId: string, count: number, action: string, labe
                 </div>`;
 }
 
+/**
+ * Compact Main/Side count badge for a card row: a single button showing both
+ * zone counts that toggles the quantity popup. `zone` namespaces the popup's
+ * open/expanded state the same way `cardRowDetailsHTML`'s `toggle-detail`
+ * does, so browser/deck/sideboard rows for the same card don't share state.
+ */
+function quantityControlHTML(
+  cardId: string,
+  count: number,
+  sideboardCount: number,
+  zone: string,
+  popupOpen: boolean,
+): string {
+  return `
+        <div class="card-row-quantity">
+            <button type="button"
+                data-action="toggle-qty-popup" data-card-id="${cardId}" data-zone="${zone}"
+                class="qty-badge${popupOpen ? ' active' : ''}"
+                aria-haspopup="true" aria-expanded="${popupOpen}">
+                <span class="qty-badge-item"><span class="qty-badge-label">Main</span><span class="qty-badge-value">${count}</span></span>
+                <span class="qty-badge-item"><span class="qty-badge-label">Side</span><span class="qty-badge-value">${sideboardCount}</span></span>
+            </button>
+        </div>`;
+}
+
+/** Popup with independent 0/1/2/3 controls for main-deck and sideboard counts. */
+function quantityPopupHTML(cardId: string, count: number, sideboardCount: number): string {
+  return `
+        <div class="qty-popup" role="dialog" aria-label="Set copies">
+            <div class="qty-popup-row">
+                <span class="qty-popup-label">Main deck</span>
+                ${quantityButtonsHTML(cardId, count, 'set-main-count', 'Main deck copies')}
+            </div>
+            <div class="qty-popup-row">
+                <span class="qty-popup-label">Sideboard</span>
+                ${quantityButtonsHTML(cardId, sideboardCount, 'set-side-count', 'Sideboard copies')}
+            </div>
+        </div>`;
+}
+
 /** Shared id/name/aspect-icons/cost markup used by both row layouts. */
 function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string, stats?: CardStats | null): string {
   const aspects: string[] = (cardData.Aspects as string[]) ?? [];
@@ -419,17 +459,16 @@ export function buildBuilderRowHTML(
   sideboardCount = 0,
   expanded = false,
   stats?: CardStats | null,
+  popupOpen = false,
 ): string {
   return `
-        <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
-            ${statsBarsHTML(stats)}
-            <div class="card-row-quantity">
-                ${quantityButtonsHTML(cardId, count, 'set-count', 'Copies in deck')}
-                <button type="button"
-                    data-action="toggle-sideboard" data-card-id="${cardId}"
-                    class="sideboard-toggle${sideboardCount > 0 ? ' active' : ''}">SB${sideboardCount > 0 ? ` (${sideboardCount})` : ''}</button>
+        <div class="card-row-wrap">
+            <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+                ${statsBarsHTML(stats)}
+                ${quantityControlHTML(cardId, count, sideboardCount, 'browser', popupOpen)}
+                ${cardRowDetailsHTML(cardId, cardData, 'browser', stats)}
             </div>
-            ${cardRowDetailsHTML(cardId, cardData, 'browser', stats)}
+            ${popupOpen ? quantityPopupHTML(cardId, count, sideboardCount) : ''}
         </div>
         ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
     `;
@@ -452,27 +491,16 @@ export function buildDeckRowHTML(
   zone: 'deck' | 'sideboard' = 'deck',
   expanded = false,
   stats?: CardStats | null,
+  popupOpen = false,
 ): string {
-  const isSideboard = zone === 'sideboard';
-  const zoneCount = isSideboard ? sideboardCount : count;
-  const setAction = isSideboard ? 'set-sideboard-count' : 'set-count';
-  const setLabel = isSideboard ? 'Copies in sideboard' : 'Copies in deck';
-  const moveAction = isSideboard ? 'move-to-deck' : 'move-to-sideboard';
-  const moveLabel = isSideboard ? 'MD' : 'SB';
-  const moveTitle = isSideboard ? 'Move to main deck' : 'Move to sideboard';
-  const moveDisabled = isSideboard ? (sideboardCount <= 0 || count >= 3) : (count <= 0 || sideboardCount >= 3);
-  const moveArrow = isSideboard ? '&#8593;' : '&#8595;';
-
   return `
-        <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
-            ${statsBarsHTML(stats)}
-            <div class="card-row-quantity">
-                ${quantityButtonsHTML(cardId, zoneCount, setAction, setLabel)}
-                <button type="button"
-                    data-action="${moveAction}" data-card-id="${cardId}"
-                    class="move-button"${moveDisabled ? ' disabled' : ''} title="${moveTitle}">${moveArrow} ${moveLabel}</button>
+        <div class="card-row-wrap">
+            <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
+                ${statsBarsHTML(stats)}
+                ${quantityControlHTML(cardId, count, sideboardCount, zone, popupOpen)}
+                ${cardRowDetailsHTML(cardId, cardData, zone, stats)}
             </div>
-            ${cardRowDetailsHTML(cardId, cardData, zone, stats)}
+            ${popupOpen ? quantityPopupHTML(cardId, count, sideboardCount) : ''}
         </div>
         ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
     `;

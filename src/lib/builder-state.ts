@@ -136,29 +136,24 @@ function countOf(deck: DeckData, cardId: string, sideboard: boolean): number {
 }
 
 /**
- * Move one copy of `cardId` from the main deck to the sideboard.
- * No-op if the main deck has no copies, or the sideboard is already at the 3-copy cap.
+ * Set `cardId`'s count in one zone (`'deck'` or `'sideboard'`), enforcing a combined
+ * cap of `MAX_COPIES` across both zones: the requested count is clamped to
+ * `[0, MAX_COPIES]`, and if that leaves the other zone's existing count over the
+ * remaining allowance, the other zone is reduced down to fit (floored at 0).
  */
-export function moveToSideboard(deck: DeckData, cardId: string): DeckData {
-  const deckCount = countOf(deck, cardId, false);
-  const sideboardCount = countOf(deck, cardId, true);
-  if (deckCount <= 0 || sideboardCount >= MAX_COPIES) return deck;
+export function setCombinedCardCount(
+  deck: DeckData,
+  cardId: string,
+  zone: 'deck' | 'sideboard',
+  count: number,
+): DeckData {
+  const clamped = Math.max(0, Math.min(MAX_COPIES, count));
+  const otherSideboard = zone === 'deck';
+  const otherCount = countOf(deck, cardId, otherSideboard);
+  const nextOtherCount = Math.min(otherCount, MAX_COPIES - clamped);
 
-  const next = setCardCount(deck, cardId, deckCount - 1, false);
-  return setCardCount(next, cardId, sideboardCount + 1, true);
-}
-
-/**
- * Move one copy of `cardId` from the sideboard to the main deck.
- * No-op if the sideboard has no copies, or the main deck is already at the 3-copy cap.
- */
-export function moveToDeck(deck: DeckData, cardId: string): DeckData {
-  const deckCount = countOf(deck, cardId, false);
-  const sideboardCount = countOf(deck, cardId, true);
-  if (sideboardCount <= 0 || deckCount >= MAX_COPIES) return deck;
-
-  const next = setCardCount(deck, cardId, sideboardCount - 1, true);
-  return setCardCount(next, cardId, deckCount + 1, false);
+  const next = setCardCount(deck, cardId, clamped, zone === 'sideboard');
+  return setCardCount(next, cardId, nextOtherCount, otherSideboard);
 }
 
 // ─── Totals ───────────────────────────────────────────────────────────────────

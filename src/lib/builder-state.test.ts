@@ -10,8 +10,7 @@ import {
   addCard,
   removeCard,
   getTotalCount,
-  moveToSideboard,
-  moveToDeck,
+  setCombinedCardCount,
 } from './builder-state';
 import type { DeckData } from './types';
 
@@ -256,94 +255,52 @@ describe('getTotalCount', () => {
   });
 });
 
-// ─── moveToSideboard / moveToDeck ─────────────────────────────────────────────
+// ─── setCombinedCardCount ──────────────────────────────────────────────────────
 
-describe('moveToSideboard', () => {
-  it('moves one copy from the main deck to the sideboard', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
-    deck = moveToSideboard(deck, 'SEC_213');
-
-    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 1 }]);
-    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
+describe('setCombinedCardCount', () => {
+  it('sets the deck zone count when there is room', () => {
+    const deck = setCombinedCardCount(createEmptyDeck(), 'SEC_213', 'deck', 2);
+    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
   });
 
-  it('removes the card from the main deck once its count reaches 0', () => {
+  it('sets the sideboard zone count when there is room', () => {
+    const deck = setCombinedCardCount(createEmptyDeck(), 'SEC_213', 'sideboard', 2);
+    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 2 }]);
+  });
+
+  it('leaves the other zone untouched when the combined total stays within the cap', () => {
     let deck = setCardCount(createEmptyDeck(), 'SEC_213', 1);
-    deck = moveToSideboard(deck, 'SEC_213');
-
-    expect(deck.deck).toEqual([]);
-    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
-  });
-
-  it('adds to an existing sideboard count', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
-    deck = setCardCount(deck, 'SEC_213', 1, true);
-    deck = moveToSideboard(deck, 'SEC_213');
-
+    deck = setCombinedCardCount(deck, 'SEC_213', 'sideboard', 2);
     expect(deck.deck).toEqual([{ id: 'SEC_213', count: 1 }]);
     expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 2 }]);
   });
 
-  it('is a no-op when the card has no copies in the main deck', () => {
-    const deck = createEmptyDeck();
-    expect(moveToSideboard(deck, 'SEC_213')).toEqual(deck);
-  });
-
-  it('is a no-op when the sideboard is already at the 3-copy cap', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 1);
-    deck = setCardCount(deck, 'SEC_213', 3, true);
-    expect(moveToSideboard(deck, 'SEC_213')).toEqual(deck);
-  });
-
-  it('does not mutate the input deck', () => {
-    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
-    moveToSideboard(deck, 'SEC_213');
-    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
-    expect(deck.sideboard).toBeUndefined();
-  });
-});
-
-describe('moveToDeck', () => {
-  it('moves one copy from the sideboard to the main deck', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2, true);
-    deck = moveToDeck(deck, 'SEC_213');
-
-    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
-    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 1 }]);
-  });
-
-  it('removes the card from the sideboard once its count reaches 0', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 1, true);
-    deck = moveToDeck(deck, 'SEC_213');
-
-    expect(deck.sideboard).toEqual([]);
-    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 1 }]);
-  });
-
-  it('adds to an existing main-deck count', () => {
-    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 1);
-    deck = setCardCount(deck, 'SEC_213', 2, true);
-    deck = moveToDeck(deck, 'SEC_213');
-
-    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
-    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
-  });
-
-  it('is a no-op when the card has no copies in the sideboard', () => {
-    const deck = createEmptyDeck();
-    expect(moveToDeck(deck, 'SEC_213')).toEqual(deck);
-  });
-
-  it('is a no-op when the main deck is already at the 3-copy cap', () => {
+  it('reduces the other zone by the exact overflow to keep the combined total at 3', () => {
     let deck = setCardCount(createEmptyDeck(), 'SEC_213', 3);
-    deck = setCardCount(deck, 'SEC_213', 1, true);
-    expect(moveToDeck(deck, 'SEC_213')).toEqual(deck);
+    deck = setCombinedCardCount(deck, 'SEC_213', 'sideboard', 1);
+    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
+    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
+  });
+
+  it('floors the reduced zone at 0', () => {
+    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    deck = setCombinedCardCount(deck, 'SEC_213', 'sideboard', 3);
+    expect(deck.deck).toEqual([]);
+    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 3 }]);
+  });
+
+  it('clamps the requested count itself to [0, 3]', () => {
+    const over = setCombinedCardCount(createEmptyDeck(), 'SEC_213', 'deck', 5);
+    expect(over.deck).toEqual([{ id: 'SEC_213', count: 3 }]);
+
+    const under = setCombinedCardCount(createEmptyDeck(), 'SEC_213', 'deck', -1);
+    expect(under.deck).toEqual([]);
   });
 
   it('does not mutate the input deck', () => {
-    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 1, true);
-    moveToDeck(deck, 'SEC_213');
-    expect(deck.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
-    expect(deck.deck).toEqual([]);
+    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 3);
+    setCombinedCardCount(deck, 'SEC_213', 'sideboard', 1);
+    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 3 }]);
+    expect(deck.sideboard).toBeUndefined();
   });
 });

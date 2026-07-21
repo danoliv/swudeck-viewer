@@ -299,37 +299,27 @@ describe('buildBuilderRowHTML', () => {
     expect(html).not.toContain('card-row-cost');
   });
 
-  it('renders 0/1/2/3 quantity buttons with data-action and data-card-id', () => {
-    const html = buildBuilderRowHTML('SOR_001', card1, 2);
-    expect(html).toContain('data-action="set-count"');
+  it('renders a compact Main/Side quantity badge with data-action and data-card-id', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 2, 1);
+    expect(html).toContain('data-action="toggle-qty-popup"');
     expect(html).toContain('data-card-id="SOR_001"');
-    expect(html).toContain('data-count="0"');
-    expect(html).toContain('data-count="1"');
-    expect(html).toContain('data-count="2"');
-    expect(html).toContain('data-count="3"');
+    expect(html).toContain('data-zone="browser"');
+    expect(html).toMatch(/Main<\/span><span class="qty-badge-value">2<\//);
+    expect(html).toMatch(/Side<\/span><span class="qty-badge-value">1<\//);
   });
 
-  it('marks the button matching the current count as active', () => {
-    const html = buildBuilderRowHTML('SOR_001', card1, 2);
-    expect(html).toMatch(/data-count="2" class="quantity-button active"/);
-    expect(html).not.toMatch(/data-count="1" class="quantity-button active"/);
+  it('does not render the quantity popup by default', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 2, 1);
+    expect(html).not.toContain('class="qty-popup"');
   });
 
-  it('renders no active quantity button when count is 0', () => {
-    const html = buildBuilderRowHTML('SOR_001', card1, 0);
-    expect(html).toMatch(/data-count="0" class="quantity-button active"/);
-  });
-
-  it('renders a sideboard toggle with data-action', () => {
-    const html = buildBuilderRowHTML('SOR_001', card1);
-    expect(html).toContain('data-action="toggle-sideboard"');
-    expect(html).toContain('>SB<');
-  });
-
-  it('shows the sideboard count and active state when sideboardCount > 0', () => {
-    const html = buildBuilderRowHTML('SOR_001', card1, 0, 2);
-    expect(html).toContain('SB (2)');
-    expect(html).toMatch(/sideboard-toggle active/);
+  it('renders the quantity popup with Main/Side 0/1/2/3 controls when popupOpen is true', () => {
+    const html = buildBuilderRowHTML('SOR_001', card1, 2, 1, false, undefined, true);
+    expect(html).toContain('class="qty-popup"');
+    expect(html).toContain('data-action="set-main-count"');
+    expect(html).toContain('data-action="set-side-count"');
+    expect(html).toMatch(/data-action="set-main-count"[^>]*data-count="2" class="quantity-button active"/);
+    expect(html).toMatch(/data-action="set-side-count"[^>]*data-count="1" class="quantity-button active"/);
   });
 
   it('contains no inline onclick attributes', () => {
@@ -386,56 +376,24 @@ describe('buildDeckRowHTML', () => {
     expect(expanded).toContain('class="card-detail"');
   });
 
-  describe('zone: deck', () => {
-    it('renders 0/1/2/3 quantity buttons reflecting the main-deck count', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck');
-      expect(html).toContain('data-action="set-count"');
-      expect(html).toMatch(/data-count="2" class="quantity-button active"/);
-      expect(html).not.toMatch(/data-count="0" class="quantity-button active"/);
-    });
-
-    it('renders an enabled move-to-sideboard button when the deck has copies and the sideboard has room', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 1, 0, 'deck');
-      expect(html).toContain('data-action="move-to-sideboard"');
-      expect(html).toContain('data-card-id="SOR_001"');
-      expect(html).not.toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
-    });
-
-    it('disables move-to-sideboard when the main-deck count is 0', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 0, 0, 'deck');
-      expect(html).toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
-    });
-
-    it('disables move-to-sideboard when the sideboard is at the 3-copy cap', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 1, 3, 'deck');
-      expect(html).toMatch(/data-action="move-to-sideboard"[^>]*disabled/);
-    });
+  it('renders a compact Main/Side quantity badge scoped to the given zone', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 1, 'sideboard');
+    expect(html).toContain('data-action="toggle-qty-popup"');
+    expect(html).toContain('data-zone="sideboard"');
+    expect(html).toMatch(/Main<\/span><span class="qty-badge-value">2<\//);
+    expect(html).toMatch(/Side<\/span><span class="qty-badge-value">1<\//);
   });
 
-  describe('zone: sideboard', () => {
-    it('renders 0/1/2/3 quantity buttons reflecting the sideboard count', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 0, 2, 'sideboard');
-      expect(html).toContain('data-action="set-sideboard-count"');
-      expect(html).toMatch(/data-count="2" class="quantity-button active"/);
-      expect(html).not.toMatch(/data-count="0" class="quantity-button active"/);
-    });
+  it('does not render the quantity popup by default', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 1, 'deck');
+    expect(html).not.toContain('class="qty-popup"');
+  });
 
-    it('renders an enabled move-to-deck button when the sideboard has copies and the deck has room', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 0, 1, 'sideboard');
-      expect(html).toContain('data-action="move-to-deck"');
-      expect(html).toContain('data-card-id="SOR_001"');
-      expect(html).not.toMatch(/data-action="move-to-deck"[^>]*disabled/);
-    });
-
-    it('disables move-to-deck when the sideboard count is 0', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 0, 0, 'sideboard');
-      expect(html).toMatch(/data-action="move-to-deck"[^>]*disabled/);
-    });
-
-    it('disables move-to-deck when the main deck is at the 3-copy cap', () => {
-      const html = buildDeckRowHTML('SOR_001', card1, 3, 1, 'sideboard');
-      expect(html).toMatch(/data-action="move-to-deck"[^>]*disabled/);
-    });
+  it('renders the quantity popup with Main/Side 0/1/2/3 controls when popupOpen is true', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 1, 'deck', false, undefined, true);
+    expect(html).toContain('class="qty-popup"');
+    expect(html).toMatch(/data-action="set-main-count"[^>]*data-count="2" class="quantity-button active"/);
+    expect(html).toMatch(/data-action="set-side-count"[^>]*data-count="1" class="quantity-button active"/);
   });
 });
 

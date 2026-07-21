@@ -131,16 +131,19 @@ h1, h2, h3 {
     margin: 20px 0;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    overflow: hidden;
     background: var(--surface);
 }
 
+/* border-radius (not the container's overflow:hidden) clips this to the
+   container's rounded corners, so .qty-popup inside .card-rows can still
+   escape the section to show above/below neighboring rows. */
 .set-title {
     background: var(--bg-elevated);
     padding: 8px 12px;
     font-weight: 600;
     color: var(--text);
     border-bottom: 1px solid var(--border);
+    border-radius: var(--radius) var(--radius) 0 0;
 }
 
 /* Sideboard section: separate from the main-deck type groups, swudb-style */
@@ -1214,46 +1217,76 @@ html[data-page="builder"] body {
     background: var(--accent);
     color: var(--accent-contrast);
 }
-.sideboard-toggle {
-    padding: 4px 12px;
+/* Compact Main/Side count badge — replaces the old quantity-buttons + sideboard-toggle
+   + move-button trio in card rows with a single tap target that opens .qty-popup. */
+.qty-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    min-height: 40px;
     border: 1px solid var(--border);
     border-radius: var(--radius-pill);
     background: var(--surface-deep);
     color: var(--text-muted);
     cursor: pointer;
-    font-weight: 600;
     transition: all 0.2s ease;
 }
-.sideboard-toggle:hover {
-    border-color: #FFB300;
-    color: #FFB300;
+.qty-badge:hover,
+.qty-badge.active {
+    border-color: var(--accent);
+    color: var(--accent);
 }
-.sideboard-toggle.active {
-    background: #FFB300;
-    color: #1a1300;
-    border-color: #FFB300;
+.qty-badge-item {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+.qty-badge-label {
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    opacity: 0.75;
+}
+.qty-badge-value {
+    font-weight: 700;
+    color: var(--text);
+    font-family: var(--font-mono);
 }
 
-/* Move-to-deck / move-to-sideboard button on deck-list rows */
-.move-button {
-    padding: 4px 10px;
+.qty-popup {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 220px;
+    padding: 10px;
+    background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-pill);
-    background: var(--surface-deep);
-    color: var(--text-muted);
-    cursor: pointer;
-    font-weight: 600;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+}
+.qty-popup-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.qty-popup-label {
     font-size: 0.85em;
-    white-space: nowrap;
-    transition: all 0.2s ease;
+    font-weight: 600;
+    color: var(--text-muted);
 }
-.move-button:hover:not(:disabled) {
-    border-color: #FFB300;
-    color: #FFB300;
-}
-.move-button:disabled {
-    opacity: 0.35;
-    cursor: default;
+@media (max-width: 500px) {
+    .qty-popup {
+        left: 0;
+        right: 0;
+        min-width: 0;
+    }
 }
 
 /* Card rows: compact deck-list / card-browser entries, swudb-style */
@@ -1262,6 +1295,10 @@ html[data-page="builder"] body {
     flex-direction: column;
     gap: 4px;
     padding: 10px 0;
+}
+/* Positions .qty-popup outside .card-row's overflow:hidden clipping box. */
+.card-row-wrap {
+    position: relative;
 }
 .card-row {
     display: flex;

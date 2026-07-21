@@ -20,10 +20,8 @@ import {
   setFormat,
   setLeader,
   setBase,
-  setCardCount,
   getTotalCount,
-  moveToSideboard,
-  moveToDeck,
+  setCombinedCardCount,
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
@@ -183,8 +181,9 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
       html += `<div class="set-section"><div class="set-title">${key} (${total})</div><div class="card-rows">`;
       for (const entry of grp) {
         const expanded = expandedCards.has(`${zone}:${entry.id}`);
+        const popupOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === entry.id;
         const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
-        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats);
+        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen);
       }
       html += '</div></div>';
     }
@@ -194,8 +193,9 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
   let html = '<div class="card-rows">';
   for (const entry of sortEntries(entries, sortKey, dir)) {
     const expanded = expandedCards.has(`${zone}:${entry.id}`);
+    const popupOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === entry.id;
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
-    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats);
+    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen);
   }
   html += '</div>';
   return html;
@@ -280,6 +280,9 @@ let sideboardSortDir: SortDirection = 'asc';
 
 /** Card rows with an open inline detail panel, keyed by `${zone}:${cardId}`. */
 const expandedCards = new Set<string>();
+
+/** The single open Main/Side quantity popup, if any (only one open at a time). */
+let openQtyPopup: { zone: 'deck' | 'sideboard' | 'browser'; cardId: string } | null = null;
 
 let leaderFilter: CardFilter = {};
 let leaderSort: CardSortKey = 'set';
@@ -878,8 +881,9 @@ function renderBrowserResults(): void {
   for (const card of pageCards) {
     const id = card.id as string;
     const expanded = expandedCards.has(`browser:${id}`);
+    const popupOpen = openQtyPopup?.zone === 'browser' && openQtyPopup?.cardId === id;
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, id);
-    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded, stats);
+    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded, stats, popupOpen);
   }
   results.innerHTML = html || '<div class="deck-list-empty">No cards match these filters.</div>';
 
@@ -1024,6 +1028,16 @@ function toggleArrayFilter(key: 'types' | 'arenas' | 'aspects', value: string): 
 
 // ─── Event delegation ─────────────────────────────────────────────────────────
 
+/** Re-render whichever panel owns a given card-row zone. */
+function renderQtyPopupZone(zone: 'deck' | 'sideboard' | 'browser'): void {
+  if (zone === 'browser') {
+    renderBrowserResults();
+  } else {
+    const left = el('builderLeft');
+    if (left) left.innerHTML = renderLeft();
+  }
+}
+
 document.addEventListener('click', (e) => {
   const target = e.target as HTMLElement;
   const actionEl = target.closest<HTMLElement>('[data-action]');
@@ -1039,6 +1053,19 @@ document.addEventListener('click', (e) => {
     exportMenuOpen = false;
     const left = el('builderLeft');
     if (left) left.innerHTML = renderLeft();
+  }
+
+  if (
+    openQtyPopup &&
+    action !== 'toggle-qty-popup' &&
+    action !== 'set-main-count' &&
+    action !== 'set-side-count' &&
+    !target.closest('.qty-popup') &&
+    !target.closest('.qty-badge')
+  ) {
+    const zone = openQtyPopup.zone;
+    openQtyPopup = null;
+    renderQtyPopupZone(zone);
   }
 
   if (!actionEl) return;
@@ -1156,34 +1183,29 @@ document.addEventListener('click', (e) => {
       return;
     }
 
-    case 'set-count': {
+    case 'toggle-qty-popup': {
+      const zone = actionEl.dataset['zone'] as 'deck' | 'sideboard' | 'browser' | undefined;
+      if (!cardId || !zone) return;
+
+      const isOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === cardId;
+      openQtyPopup = isOpen ? null : { zone, cardId };
+      renderQtyPopupZone(zone);
+      return;
+    }
+
+    case 'set-main-count': {
       if (!cardId) return;
       const count = Number(actionEl.dataset['count'] ?? '0');
-      updateDeck(setCardCount(deck, cardId, count, false));
+      updateDeck(setCombinedCardCount(deck, cardId, 'deck', count));
       return;
     }
 
-    case 'toggle-sideboard': {
-      if (!cardId) return;
-      const inSideboard = (deck.sideboard ?? []).some((c) => c.id === cardId);
-      updateDeck(setCardCount(deck, cardId, inSideboard ? 0 : 1, true));
-      return;
-    }
-
-    case 'set-sideboard-count': {
+    case 'set-side-count': {
       if (!cardId) return;
       const count = Number(actionEl.dataset['count'] ?? '0');
-      updateDeck(setCardCount(deck, cardId, count, true));
+      updateDeck(setCombinedCardCount(deck, cardId, 'sideboard', count));
       return;
     }
-
-    case 'move-to-sideboard':
-      if (cardId) updateDeck(moveToSideboard(deck, cardId));
-      return;
-
-    case 'move-to-deck':
-      if (cardId) updateDeck(moveToDeck(deck, cardId));
-      return;
 
     case 'sort-toggle': {
       const scope = actionEl.dataset['scope'] as 'deck' | 'sideboard' | 'browser' | 'leader' | 'base' | undefined;
