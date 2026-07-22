@@ -496,6 +496,72 @@ describe('buildCardDetailHTML', () => {
     expect(html).not.toContain('class="flip-button"');
     expect(html).not.toContain('class="card-back"');
   });
+
+  describe('alternatives', () => {
+    const altCard: CardData = {
+      id: 'SOR_020',
+      Name: 'Alt Card',
+      Cost: 2,
+      Power: 3,
+      HP: 2,
+      FrontArt: 'https://example.com/alt.png',
+    };
+
+    it('omits the alternatives section when there are none', () => {
+      const html = buildCardDetailHTML('SOR_001', card1, 'deck', []);
+      expect(html).not.toContain('card-detail-alternatives');
+    });
+
+    it('renders each alternative with its thumbnail, stats, reasons, and a swap button', () => {
+      const html = buildCardDetailHTML('SOR_001', card1, 'deck', [{ card: altCard, reasons: ['More Power (3 vs 2)'] }]);
+      expect(html).toContain('class="card-detail-alternatives"');
+      expect(html).toContain('<img src="https://example.com/alt.png" alt="Alt Card"');
+      expect(html).toContain('Alt Card');
+      expect(html).toContain('Cost 2 • Power 3 • HP 2');
+      expect(html).toContain('More Power (3 vs 2)');
+      expect(html).toContain('data-action="swap-alternative"');
+      expect(html).toContain('data-card-id="SOR_001"');
+      expect(html).toContain('data-alt-id="SOR_020"');
+      expect(html).toContain('data-zone="deck"');
+    });
+
+    it('renders a placeholder when an alternative has no FrontArt', () => {
+      const html = buildCardDetailHTML('SOR_001', card1, 'deck', [{ card: { ...altCard, FrontArt: undefined }, reasons: ['More HP (4 vs 2)'] }]);
+      expect(html).toContain('class="alternative-card-placeholder"');
+      expect(html).toContain('SOR_020');
+    });
+
+    it('shows only 4 alternatives with a "Show N more" toggle when there are more', () => {
+      const alts = Array.from({ length: 6 }, (_, i) => ({ card: { ...altCard, id: `SOR_0${i}`, Name: `Alt ${i}` }, reasons: ['More Power (3 vs 2)'] }));
+      const html = buildCardDetailHTML('SOR_001', card1, 'deck', alts, false);
+      expect(html.match(/class="alternative-card"/g)).toHaveLength(4);
+      expect(html).toContain('Show 2 more');
+    });
+
+    it('shows all alternatives and "Show fewer" when showAllAlternatives is true', () => {
+      const alts = Array.from({ length: 6 }, (_, i) => ({ card: { ...altCard, id: `SOR_0${i}`, Name: `Alt ${i}` }, reasons: ['More Power (3 vs 2)'] }));
+      const html = buildCardDetailHTML('SOR_001', card1, 'deck', alts, true);
+      expect(html.match(/class="alternative-card"/g)).toHaveLength(6);
+      expect(html).toContain('Show fewer');
+    });
+
+    it('renders a Main/Side quantity control instead of a swap button in the browser zone', () => {
+      const altQtyLookup = () => ({ count: 1, sideboardCount: 2, popupOpen: false });
+      const html = buildCardDetailHTML('SOR_001', card1, 'browser', [{ card: altCard, reasons: ['More Power (3 vs 2)'] }], false, altQtyLookup);
+      expect(html).not.toContain('class="alternative-card-swap"');
+      expect(html).toContain('class="alternative-card-qty"');
+      expect(html).toMatch(/data-action="toggle-qty-popup" data-card-id="SOR_020" data-zone="browser"/);
+      expect(html).toContain('<span class="qty-badge-value">1</span>');
+      expect(html).toContain('<span class="qty-badge-value">2</span>');
+    });
+
+    it('renders the quantity popup for an alternative when its popup is open', () => {
+      const altQtyLookup = () => ({ count: 1, sideboardCount: 0, popupOpen: true });
+      const html = buildCardDetailHTML('SOR_001', card1, 'browser', [{ card: altCard, reasons: ['More Power (3 vs 2)'] }], false, altQtyLookup);
+      expect(html).toContain('class="qty-popup"');
+      expect(html).toMatch(/data-action="set-main-count" data-card-id="SOR_020"/);
+    });
+  });
 });
 
 // ─── buildComparisonCardHTML ──────────────────────────────────────────────────

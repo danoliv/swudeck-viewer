@@ -11,6 +11,7 @@ import {
   removeCard,
   getTotalCount,
   setCombinedCardCount,
+  swapCard,
 } from './builder-state';
 import type { DeckData } from './types';
 
@@ -302,5 +303,42 @@ describe('setCombinedCardCount', () => {
     setCombinedCardCount(deck, 'SEC_213', 'sideboard', 1);
     expect(deck.deck).toEqual([{ id: 'SEC_213', count: 3 }]);
     expect(deck.sideboard).toBeUndefined();
+  });
+});
+
+// ─── swapCard ─────────────────────────────────────────────────────────────────
+
+describe('swapCard', () => {
+  it('replaces the card in both zones, preserving each zone\'s count', () => {
+    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    deck = setCardCount(deck, 'SEC_213', 1, true);
+    const next = swapCard(deck, 'SEC_213', 'SEC_214');
+    expect(next.deck).toEqual([{ id: 'SEC_214', count: 2 }]);
+    expect(next.sideboard).toEqual([{ id: 'SEC_214', count: 1 }]);
+  });
+
+  it('is a no-op in a zone the card is not present in', () => {
+    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    const next = swapCard(deck, 'SEC_213', 'SEC_214');
+    expect(next.deck).toEqual([{ id: 'SEC_214', count: 2 }]);
+    expect(next.sideboard).toBeUndefined();
+  });
+
+  it('is a no-op entirely when fromCardId and toCardId are the same', () => {
+    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    expect(swapCard(deck, 'SEC_213', 'SEC_213')).toBe(deck);
+  });
+
+  it('merges counts, capped at 3, when the target already has copies', () => {
+    let deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    deck = setCardCount(deck, 'SEC_214', 2);
+    const next = swapCard(deck, 'SEC_213', 'SEC_214');
+    expect(next.deck).toEqual([{ id: 'SEC_214', count: 3 }]);
+  });
+
+  it('does not mutate the input deck', () => {
+    const deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
+    swapCard(deck, 'SEC_213', 'SEC_214');
+    expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
   });
 });

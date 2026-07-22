@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, NEUTRAL_ALIGNMENT } from './card-filter';
+import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, cardTriggers, NEUTRAL_ALIGNMENT } from './card-filter';
 import type { CardData } from './cards';
 
 const CARDS: CardData[] = [
@@ -23,6 +23,15 @@ const CARDS: CardData[] = [
     id: 'JTL_016', Set: 'JTL', Name: 'Admiral Ackbar, It\'s a Trap!', Type: 'Leader',
     Aspects: ['Command', 'Heroism'], Arenas: [], Traits: ['REBEL', 'OFFICER'], Keywords: [],
   },
+];
+
+const TRIGGER_CARDS: CardData[] = [
+  { id: 'T1', Name: 'Played Only', FrontText: 'When Played: Deal 2 damage to an enemy unit.' },
+  { id: 'T2', Name: 'Attack Only', FrontText: 'On Attack: Draw a card.' },
+  { id: 'T3', Name: 'Combined Played Defeated', FrontText: 'When Played/When Defeated: You may defeat an enemy unit.' },
+  { id: 'T4', Name: 'Combined Played Attack', FrontText: 'When Played/On Attack: Give another unit +2/+2.' },
+  { id: 'T5', Name: 'Mentions Attack Without Trigger', FrontText: 'Choose a friendly unit. For each of its "On Attack" abilities, deal 2 damage.' },
+  { id: 'T6', Name: 'No Text' },
 ];
 
 const BASES: CardData[] = [
@@ -116,6 +125,40 @@ describe('filterCards', () => {
   it('excludes cards missing the array field entirely when a filter is set', () => {
     const result = filterCards(CARDS, { keywords: ['Restore 1'] });
     expect(result.find((c) => c.id === 'JTL_016')).toBeUndefined();
+  });
+});
+
+// ─── cardTriggers / filterCards by trigger ─────────────────────────────────────
+
+describe('cardTriggers', () => {
+  it('parses a single trigger label from ability text', () => {
+    expect(cardTriggers(TRIGGER_CARDS[0])).toEqual(['When Played']);
+    expect(cardTriggers(TRIGGER_CARDS[1])).toEqual(['On Attack']);
+  });
+
+  it('parses both labels from a combined "A/B:" trigger', () => {
+    expect(cardTriggers(TRIGGER_CARDS[2])).toEqual(['When Played', 'When Defeated']);
+    expect(cardTriggers(TRIGGER_CARDS[3])).toEqual(['When Played', 'On Attack']);
+  });
+
+  it('does not match a trigger label mentioned mid-sentence without a colon/slash', () => {
+    expect(cardTriggers(TRIGGER_CARDS[4])).toEqual([]);
+  });
+
+  it('returns an empty list for cards with no ability text', () => {
+    expect(cardTriggers(TRIGGER_CARDS[5])).toEqual([]);
+  });
+});
+
+describe('filterCards - triggers', () => {
+  it('filters by a single trigger', () => {
+    const result = filterCards(TRIGGER_CARDS, { triggers: ['On Attack'] });
+    expect(result.map((c) => c.id)).toEqual(['T2', 'T4']);
+  });
+
+  it('ORs multiple selected triggers', () => {
+    const result = filterCards(TRIGGER_CARDS, { triggers: ['When Played', 'When Defeated'] });
+    expect(result.map((c) => c.id)).toEqual(['T1', 'T3', 'T4']);
   });
 });
 

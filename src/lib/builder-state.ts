@@ -156,6 +156,34 @@ export function setCombinedCardCount(
   return setCardCount(next, cardId, nextOtherCount, otherSideboard);
 }
 
+// ─── Swap ─────────────────────────────────────────────────────────────────────
+
+/**
+ * Replace `fromCardId` with `toCardId` in both the main deck and sideboard,
+ * preserving whatever counts `fromCardId` had in each zone. If `toCardId`
+ * already has copies in a zone, the counts are added together (capped at
+ * `MAX_COPIES`). A no-op if `fromCardId` and `toCardId` are the same.
+ */
+export function swapCard(deck: DeckData, fromCardId: string, toCardId: string): DeckData {
+  if (fromCardId === toCardId) return deck;
+
+  const swapZone = (list: DeckCard[] = []): DeckCard[] => {
+    const fromEntry = list.find((c) => c.id === fromCardId);
+    if (!fromEntry) return list;
+
+    const toEntry = list.find((c) => c.id === toCardId);
+    const mergedCount = Math.min(MAX_COPIES, (toEntry?.count ?? 0) + (fromEntry.count ?? 1));
+    const rest = list.filter((c) => c.id !== fromCardId && c.id !== toCardId);
+    return [...rest, { id: toCardId, count: mergedCount }];
+  };
+
+  return {
+    ...deck,
+    deck: swapZone(deck.deck),
+    sideboard: deck.sideboard ? swapZone(deck.sideboard) : deck.sideboard,
+  };
+}
+
 // ─── Totals ───────────────────────────────────────────────────────────────────
 
 /** Sum of all card counts in the main deck (leader/base not included). */

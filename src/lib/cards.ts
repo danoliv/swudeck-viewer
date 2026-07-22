@@ -6,6 +6,7 @@
 
 import { loadSets } from './sets';
 import type { CardStats } from './stats';
+import type { CardAlternative } from './alternatives';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -381,15 +382,107 @@ function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string, st
             ${cardData.Cost !== undefined ? `<span class="stat card-row-cost" data-type="Cost"><span class="stat-value">${cardData.Cost}</span></span>` : ''}`;
 }
 
+const ALTERNATIVES_VISIBLE_COUNT = 4;
+
+/** Current main/sideboard counts + quantity-popup state for one alternative card, in the card-browser zone. */
+export interface AltQtyInfo {
+  count: number;
+  sideboardCount: number;
+  popupOpen: boolean;
+}
+
+export type AltQtyLookup = (altId: string) => AltQtyInfo;
+
+/**
+ * One alternative in the "Best alternatives" list: a thumbnail, name, its own
+ * cost/power/hp, and why it qualified. In the card browser (`zone: 'browser'`),
+ * where the alternative isn't necessarily already in the deck, it gets the
+ * same Main/Side quantity control as any other browser row (via
+ * `altQtyLookup`) so it can be added directly; elsewhere it gets a "Swap in"
+ * button that replaces the card being viewed in-place.
+ */
+function alternativeCardHTML(alt: CardAlternative, cardId: string, zone: string, altQtyLookup?: AltQtyLookup): string {
+  const c = alt.card;
+  const id = String(c.id ?? '');
+  const name = String(c.Name ?? id);
+  const art = resolveCardArtUrl(c.FrontArt);
+  const statParts: string[] = [];
+  if (c.Cost !== undefined) statParts.push(`Cost ${c.Cost}`);
+  if (c.Power !== undefined) statParts.push(`Power ${c.Power}`);
+  if (c.HP !== undefined) statParts.push(`HP ${c.HP}`);
+
+  const qty = zone === 'browser' ? altQtyLookup?.(id) : undefined;
+  const actionHTML = qty
+    ? `<div class="alternative-card-qty">
+                                    ${quantityControlHTML(id, qty.count, qty.sideboardCount, 'browser', qty.popupOpen)}
+                                    ${qty.popupOpen ? quantityPopupHTML(id, qty.count, qty.sideboardCount) : ''}
+                                </div>`
+    : `<button type="button" class="alternative-card-swap" data-action="swap-alternative" data-card-id="${cardId}" data-alt-id="${id}" data-zone="${zone}">Swap in</button>`;
+
+  return `
+                        <div class="alternative-card">
+                            <div class="alternative-card-image">
+                                ${art ? `<img src="${art}" alt="${name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` : ''}
+                                <div class="alternative-card-placeholder"${art ? ' style="display:none"' : ''}>${id}</div>
+                            </div>
+                            <div class="alternative-card-info">
+                                <div class="alternative-card-name">${name}</div>
+                                ${statParts.length ? `<div class="alternative-card-stats">${statParts.join(' • ')}</div>` : ''}
+                                <div class="alternative-card-reasons">${alt.reasons.join(' • ')}</div>
+                                ${actionHTML}
+                            </div>
+                        </div>`;
+}
+
+/**
+ * "Best alternatives" section: up to ${ALTERNATIVES_VISIBLE_COUNT} qualifying
+ * alternatives (see findAlternatives in src/lib/alternatives.ts), each with a
+ * way to act on it (see alternativeCardHTML), plus a "Show N more" toggle
+ * when there are more.
+ */
+function alternativesHTML(
+  cardId: string,
+  zone: string,
+  alternatives: CardAlternative[],
+  showAll: boolean,
+  altQtyLookup?: AltQtyLookup,
+): string {
+  if (!alternatives.length) return '';
+
+  const visible = showAll ? alternatives : alternatives.slice(0, ALTERNATIVES_VISIBLE_COUNT);
+  const remaining = alternatives.length - visible.length;
+
+  return `
+            <div class="card-detail-alternatives">
+                <div class="card-detail-alternatives-title">Best alternatives</div>
+                <div class="alternatives-list">
+                    ${visible.map((alt) => alternativeCardHTML(alt, cardId, zone, altQtyLookup)).join('')}
+                </div>
+                ${alternatives.length > ALTERNATIVES_VISIBLE_COUNT ? `
+                    <button type="button" class="alternatives-toggle" data-action="toggle-alternatives" data-card-id="${cardId}" data-zone="${zone}">
+                        ${showAll ? 'Show fewer' : `Show ${remaining} more`}
+                    </button>
+                ` : ''}
+            </div>`;
+}
+
 // ─── buildCardDetailHTML ──────────────────────────────────────────────────────
 
 /**
  * Render an inline card-detail panel: full card image (with a flip button for
  * double-sided cards), stats, aspects, type/arena/traits, ability text, and
  * artist credit. A smaller, integrated version of swudb.com's card-detail page
- * — shown below a card row when its name is clicked.
+ * — shown below a card row when its name is clicked. `alternatives` (if any)
+ * render as their own block below the image+text, per findAlternatives.
  */
-export function buildCardDetailHTML(cardId: string, cardData: CardData = {}): string {
+export function buildCardDetailHTML(
+  cardId: string,
+  cardData: CardData = {},
+  zone = 'detail',
+  alternatives: CardAlternative[] = [],
+  showAllAlternatives = false,
+  altQtyLookup?: AltQtyLookup,
+): string {
   const aspects: string[] = (cardData.Aspects as string[]) ?? [];
   const traits: string[] = (cardData.Traits as string[]) ?? [];
   const arenas: string[] = (cardData.Arenas as string[]) ?? [];
@@ -440,6 +533,7 @@ export function buildCardDetailHTML(cardId: string, cardData: CardData = {}): st
                 ${cardData.Artist ? `<div class="card-detail-artist">Illustrated by ${cardData.Artist}</div>` : ''}
             </div>
         </div>
+        ${alternativesHTML(cardId, zone, alternatives, showAllAlternatives, altQtyLookup)}
     `;
 }
 
@@ -460,6 +554,9 @@ export function buildBuilderRowHTML(
   expanded = false,
   stats?: CardStats | null,
   popupOpen = false,
+  alternatives: CardAlternative[] = [],
+  showAllAlternatives = false,
+  altQtyLookup?: AltQtyLookup,
 ): string {
   return `
         <div class="card-row-wrap">
@@ -470,7 +567,7 @@ export function buildBuilderRowHTML(
             </div>
             ${popupOpen ? quantityPopupHTML(cardId, count, sideboardCount) : ''}
         </div>
-        ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
+        ${expanded ? buildCardDetailHTML(cardId, cardData, 'browser', alternatives, showAllAlternatives, altQtyLookup) : ''}
     `;
 }
 
@@ -492,6 +589,8 @@ export function buildDeckRowHTML(
   expanded = false,
   stats?: CardStats | null,
   popupOpen = false,
+  alternatives: CardAlternative[] = [],
+  showAllAlternatives = false,
 ): string {
   return `
         <div class="card-row-wrap">
@@ -502,7 +601,7 @@ export function buildDeckRowHTML(
             </div>
             ${popupOpen ? quantityPopupHTML(cardId, count, sideboardCount) : ''}
         </div>
-        ${expanded ? buildCardDetailHTML(cardId, cardData) : ''}
+        ${expanded ? buildCardDetailHTML(cardId, cardData, zone, alternatives, showAllAlternatives) : ''}
     `;
 }
 

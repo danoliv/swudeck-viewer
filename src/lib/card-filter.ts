@@ -23,6 +23,7 @@ export interface CardFilter {
   aspects?: string[];
   keywords?: string[];
   traits?: string[];
+  triggers?: string[];
   sets?: string[];
   /**
    * When set, only include cards whose Aspects are a subset of this list —
@@ -72,6 +73,27 @@ function isSubsetOf(values: string[] | undefined, allowed: string[]): boolean {
   return values.every((v) => allowed.includes(v));
 }
 
+// ─── Triggers ─────────────────────────────────────────────────────────────────
+
+/** Ability-trigger labels the browser can filter by (in display order). */
+export const TRIGGER_OPTIONS = ['When Played', 'On Attack', 'When Defeated'] as const;
+
+const TRIGGER_RE = new RegExp(`\\b(${TRIGGER_OPTIONS.join('|')})\\b(?=[:/])`, 'g');
+
+/**
+ * Ability triggers a card has, parsed from its ability text (e.g. "On Attack:",
+ * or combined forms like "When Played/On Attack:"). Text-based rather than a
+ * structured field — the source data has no explicit trigger field.
+ */
+export function cardTriggers(card: CardData): string[] {
+  const text = `${card.FrontText ?? ''} ${card.BackText ?? ''}`;
+  const found = new Set<string>();
+  let match: RegExpExecArray | null;
+  TRIGGER_RE.lastIndex = 0;
+  while ((match = TRIGGER_RE.exec(text))) found.add(match[1]);
+  return Array.from(found);
+}
+
 /**
  * Filter a card pool against the given criteria.
  * Adding a new filter dimension is one new field on CardFilter plus one
@@ -84,6 +106,7 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
   const aspects = filter.aspects ?? [];
   const keywords = filter.keywords ?? [];
   const traits = filter.traits ?? [];
+  const triggers = filter.triggers ?? [];
   const sets = filter.sets ?? [];
   const noPenaltyAspects = filter.noPenaltyAspects;
 
@@ -94,6 +117,7 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
     if (!matchesAspectGroups(card.Aspects, aspects)) return false;
     if (!overlaps(card.Keywords as string[] | undefined, keywords)) return false;
     if (!overlaps(card.Traits, traits)) return false;
+    if (triggers.length && !overlaps(cardTriggers(card), triggers)) return false;
     if (sets.length && !sets.includes(String(card.Set ?? ''))) return false;
     if (noPenaltyAspects && !isSubsetOf(card.Aspects, noPenaltyAspects)) return false;
     return true;

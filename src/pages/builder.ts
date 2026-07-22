@@ -11,7 +11,7 @@
 
 import { getQueryParam, setQueryParam } from '../lib/url';
 import { loadSets } from '../lib/sets';
-import { loadAllCards, findCardById, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, type CardData } from '../lib/cards';
+import { loadAllCards, findCardById, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, type CardData, type AltQtyInfo } from '../lib/cards';
 import { createDefaultRegistry, type CardEntry } from '../lib/deck';
 import {
   createEmptyDeck,
@@ -22,6 +22,7 @@ import {
   setBase,
   getTotalCount,
   setCombinedCardCount,
+  swapCard,
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
@@ -37,12 +38,14 @@ import {
   TYPE_CATEGORY_ORDER,
   ASPECT_GROUPS,
   NEUTRAL_ALIGNMENT,
+  TRIGGER_OPTIONS,
   type CardFilter,
   type CardSortKey,
   type SortDirection,
 } from '../lib/card-filter';
 import type { DeckData, DeckCard } from '../lib/types';
 import { loadLeaderStats, getCardStats, hasLeaderStats } from '../lib/stats';
+import { findAlternatives } from '../lib/alternatives';
 import { loadLeaderStatsManifest, getLeaderMetaStats, hasLeaderMetaStats } from '../lib/leader-stats';
 import { isBackendEnabled } from '../lib/supabase';
 import { getCurrentUser, onAuthChange, type User } from '../lib/auth';
@@ -183,7 +186,9 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
         const expanded = expandedCards.has(`${zone}:${entry.id}`);
         const popupOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === entry.id;
         const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
-        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen);
+        const alternatives = expanded ? findAlternatives(entry.id, entry.data, alternativesPool(), currentStatsLookup) : [];
+        const showAllAlternatives = expandedAlternatives.has(`${zone}:${entry.id}`);
+        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives);
       }
       html += '</div></div>';
     }
@@ -195,7 +200,9 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
     const expanded = expandedCards.has(`${zone}:${entry.id}`);
     const popupOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === entry.id;
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
-    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen);
+    const alternatives = expanded ? findAlternatives(entry.id, entry.data, alternativesPool(), currentStatsLookup) : [];
+    const showAllAlternatives = expandedAlternatives.has(`${zone}:${entry.id}`);
+    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives);
   }
   html += '</div>';
   return html;
@@ -269,7 +276,7 @@ let browserSortDir: SortDirection = 'asc';
 let browserPage = 1;
 
 /** Which multi-select filter dropdown (if any) is currently open. */
-let openFilterDropdown: 'sets' | 'keywords' | 'traits' | null = null;
+let openFilterDropdown: 'sets' | 'keywords' | 'traits' | 'triggers' | null = null;
 
 let exportMenuOpen = false;
 
@@ -280,6 +287,9 @@ let sideboardSortDir: SortDirection = 'asc';
 
 /** Card rows with an open inline detail panel, keyed by `${zone}:${cardId}`. */
 const expandedCards = new Set<string>();
+
+/** Card rows whose "Best alternatives" list is expanded past the default 3, keyed by `${zone}:${cardId}`. */
+const expandedAlternatives = new Set<string>();
 
 /** The single open Main/Side quantity popup, if any (only one open at a time). */
 let openQtyPopup: { zone: 'deck' | 'sideboard' | 'browser'; cardId: string } | null = null;
@@ -357,6 +367,19 @@ function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
  */
 function availableSets(): string[] {
   return uniqueValues((card) => card.Set, setOrder);
+}
+
+/**
+ * Card pool for "suggest alternatives": the format-legal pool narrowed by the
+ * browser's active filters (types/arenas/aspects/keywords/traits/triggers/
+ * sets/noPenaltyAspects), so a suggested swap never falls outside what the
+ * user has already told the browser they want. `search` is excluded — it's a
+ * name lookup for finding one card, not a criterion a substitute must match.
+ */
+function alternativesPool(): CardData[] {
+  return filterCards(allCards, { ...filter, search: undefined }).filter(
+    (c) => !NON_POOL_TYPES.includes(String(c.Type)),
+  );
 }
 
 // ─── Leader stats ─────────────────────────────────────────────────────────────
@@ -802,7 +825,7 @@ function renderPagination(current: number, total: number): string {
 }
 
 /** A "Keywords"/"Traits"-style filter: a toggle button showing the selection count, plus a checkbox-list panel for selecting multiple values. */
-function renderFilterDropdown(key: 'sets' | 'keywords' | 'traits', label: string, options: string[]): string {
+function renderFilterDropdown(key: 'sets' | 'keywords' | 'traits' | 'triggers', label: string, options: string[]): string {
   const selected = filter[key] ?? [];
   const open = openFilterDropdown === key;
   const buttonLabel = selected.length ? `${label} (${selected.length})` : label;
@@ -857,6 +880,7 @@ function renderFilters(): string {
   html += renderFilterDropdown('sets', 'Sets', availableSets());
   html += renderFilterDropdown('keywords', 'Keywords', keywords);
   html += renderFilterDropdown('traits', 'Traits', traits);
+  html += renderFilterDropdown('triggers', 'Triggers', [...TRIGGER_OPTIONS]);
 
   html += '</div>';
   html += `<div id="browserSortBar">${renderSortBar('browser', browserSort, browserSortDir)}</div>`;
@@ -877,13 +901,21 @@ function renderBrowserResults(): void {
   const start = (browserPage - 1) * BROWSER_PAGE_SIZE;
   const pageCards = sorted.slice(start, start + BROWSER_PAGE_SIZE);
 
+  const altQtyLookup = (altId: string): AltQtyInfo => ({
+    count: deckCounts.get(altId) ?? 0,
+    sideboardCount: sideboardCounts.get(altId) ?? 0,
+    popupOpen: openQtyPopup?.zone === 'browser' && openQtyPopup?.cardId === altId,
+  });
+
   let html = '';
   for (const card of pageCards) {
     const id = card.id as string;
     const expanded = expandedCards.has(`browser:${id}`);
     const popupOpen = openQtyPopup?.zone === 'browser' && openQtyPopup?.cardId === id;
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, id);
-    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded, stats, popupOpen);
+    const alternatives = expanded ? findAlternatives(id, card, alternativesPool(), currentStatsLookup) : [];
+    const showAllAlternatives = expandedAlternatives.has(`browser:${id}`);
+    html += buildBuilderRowHTML(id, card, deckCounts.get(id) ?? 0, sideboardCounts.get(id) ?? 0, expanded, stats, popupOpen, alternatives, showAllAlternatives, altQtyLookup);
   }
   results.innerHTML = html || '<div class="deck-list-empty">No cards match these filters.</div>';
 
@@ -1016,7 +1048,7 @@ function rerenderFiltersPreservingScroll(): void {
 
 // ─── Filter state ─────────────────────────────────────────────────────────────
 
-function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'sets' | 'keywords' | 'traits', value: string): CardFilter {
+function toggleArrayFilterValue(target: CardFilter, key: 'types' | 'arenas' | 'aspects' | 'sets' | 'keywords' | 'traits' | 'triggers', value: string): CardFilter {
   const current = target[key] ?? [];
   const next = current.includes(value) ? current.filter((v) => v !== value) : [...current, value];
   return { ...target, [key]: next.length ? next : undefined };
@@ -1250,6 +1282,7 @@ document.addEventListener('click', (e) => {
       const key = `${zone}:${cardId}`;
       if (expandedCards.has(key)) {
         expandedCards.delete(key);
+        expandedAlternatives.delete(key);
       } else {
         expandedCards.add(key);
       }
@@ -1263,8 +1296,35 @@ document.addEventListener('click', (e) => {
       return;
     }
 
+    case 'toggle-alternatives': {
+      const zone = actionEl.dataset['zone'] as 'deck' | 'sideboard' | 'browser' | undefined;
+      if (!cardId || !zone) return;
+
+      const key = `${zone}:${cardId}`;
+      if (expandedAlternatives.has(key)) {
+        expandedAlternatives.delete(key);
+      } else {
+        expandedAlternatives.add(key);
+      }
+
+      if (zone === 'browser') {
+        renderBrowserResults();
+      } else {
+        const left = el('builderLeft');
+        if (left) left.innerHTML = renderLeft();
+      }
+      return;
+    }
+
+    case 'swap-alternative': {
+      const altId = actionEl.dataset['altId'];
+      if (!cardId || !altId) return;
+      updateDeck(swapCard(deck, cardId, altId));
+      return;
+    }
+
     case 'toggle-filter-dropdown': {
-      const key = actionEl.dataset['dropdown'] as 'sets' | 'keywords' | 'traits' | undefined;
+      const key = actionEl.dataset['dropdown'] as 'sets' | 'keywords' | 'traits' | 'triggers' | undefined;
       if (!key) return;
       openFilterDropdown = openFilterDropdown === key ? null : key;
       const filtersEl = el('browserFilters');
@@ -1273,7 +1333,7 @@ document.addEventListener('click', (e) => {
     }
 
     case 'clear-filter-dropdown': {
-      const key = actionEl.dataset['filter'] as 'sets' | 'keywords' | 'traits' | undefined;
+      const key = actionEl.dataset['filter'] as 'sets' | 'keywords' | 'traits' | 'triggers' | undefined;
       if (!key) return;
       filter = { ...filter, [key]: undefined };
       browserPage = 1;
@@ -1386,7 +1446,7 @@ document.addEventListener('change', (e) => {
 
   if (action !== 'filter-checkbox') return;
 
-  const filterKey = target.dataset['filter'] as 'sets' | 'keywords' | 'traits' | undefined;
+  const filterKey = target.dataset['filter'] as 'sets' | 'keywords' | 'traits' | 'triggers' | undefined;
   const value = target.dataset['value'];
   if (!filterKey || !value) return;
 
