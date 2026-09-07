@@ -8,12 +8,20 @@
       "Subtitle": "As Clumsy as He Is Stupid",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -28,7 +36,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "1.52",
+      "MarketPrice": "1.48",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/82.png",
       "tcgplayerId": "646352",
@@ -41,12 +49,20 @@
       "Subtitle": "As Clumsy as He Is Stupid",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -61,7 +77,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "1.35",
+      "MarketPrice": "1.37",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/85.png",
       "tcgplayerId": "646353",
@@ -74,12 +90,20 @@
       "Subtitle": "In Command Now",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -107,12 +131,20 @@
       "Subtitle": "In Command Now",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -140,13 +172,23 @@
       "Subtitle": "Hunting the Rebels",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "CAPITAL SHIP"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "CAPITAL SHIP"
+        }
       ],
       "Arenas": [
         "Space"
@@ -161,7 +203,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/72.png",
       "tcgplayerId": "646356",
@@ -173,13 +215,23 @@
       "Name": "Blizzard Force AT-ST",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -197,7 +249,7 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/103.png",
       "tcgplayerId": "646359",
@@ -209,13 +261,23 @@
       "Name": "Blizzard Force AT-ST",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -245,13 +307,23 @@
       "Name": "Blizzard Force AT-ST",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -282,13 +354,23 @@
       "Subtitle": "Veers at the Helm",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -316,13 +398,23 @@
       "Subtitle": "Narrow Escape",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -353,13 +445,23 @@
       "Subtitle": "Narrow Escape",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -390,12 +492,20 @@
       "Subtitle": "Oh Dear, Oh Dear",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "DROID"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "DROID"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -423,12 +533,20 @@
       "Subtitle": "Oh Dear, Oh Dear",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "DROID"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "DROID"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -443,7 +561,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/41.png",
       "tcgplayerId": "646364",
@@ -456,12 +574,20 @@
       "Subtitle": "Rrruuuurrr",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "WOOKIEE"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "WOOKIEE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -479,7 +605,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/3.png",
       "tcgplayerId": "646365",
@@ -492,12 +618,20 @@
       "Subtitle": "Rrruuuurrr",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "WOOKIEE"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "WOOKIEE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -528,13 +662,23 @@
       "Subtitle": "Don't Fail Me Again",
       "Type": "Leader",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "FORCE",
-        "IMPERIAL",
-        "SITH"
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "SITH"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -552,7 +696,7 @@
       "Unique": true,
       "Artist": "Afif Khaled",
       "VariantType": "Normal",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.42",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/53.png",
       "tcgplayerId": "646459",
@@ -564,13 +708,23 @@
       "Name": "Death Squadron Star Destroyer",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "CAPITAL SHIP"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "CAPITAL SHIP"
+        }
       ],
       "Arenas": [
         "Space"
@@ -600,13 +754,23 @@
       "Name": "Death Squadron Star Destroyer",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "CAPITAL SHIP"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "CAPITAL SHIP"
+        }
       ],
       "Arenas": [
         "Space"
@@ -624,7 +788,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/98.png",
       "tcgplayerId": "646368",
@@ -636,12 +800,20 @@
       "Name": "E-Web Gunner",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -659,7 +831,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/69.png",
       "tcgplayerId": "646369",
@@ -671,12 +843,20 @@
       "Name": "E-Web Gunner",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -694,7 +874,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.42",
+      "MarketPrice": "0.40",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/83.png",
       "tcgplayerId": "646370",
@@ -707,7 +887,9 @@
       "Subtitle": "Hoth",
       "Type": "Base",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "cid": "1049149674",
       "HP": "20",
@@ -729,11 +911,17 @@
       "Name": "Echo Coordinator",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL"
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -748,7 +936,7 @@
       "Unique": false,
       "Artist": "Benjamin Paulus van Onzen",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/43.png",
       "tcgplayerId": "646373",
@@ -760,11 +948,17 @@
       "Name": "Echo Coordinator",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL"
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -791,11 +985,17 @@
       "Name": "Echo Coordinator",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL"
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -822,12 +1022,20 @@
       "Name": "Evacuation Escort",
       "Type": "Unit",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -854,12 +1062,20 @@
       "Name": "Evacuation Escort",
       "Type": "Unit",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -886,12 +1102,20 @@
       "Name": "Evacuation Escort",
       "Type": "Unit",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -918,12 +1142,20 @@
       "Name": "First Legion Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -950,12 +1182,20 @@
       "Name": "First Legion Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -982,12 +1222,20 @@
       "Name": "First Legion Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1015,7 +1263,9 @@
       "Subtitle": "Hoth",
       "Type": "Base",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "cid": "0479107180",
       "HP": "20",
@@ -1037,13 +1287,23 @@
       "Name": "GR-75 Medium Transport",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -1070,13 +1330,23 @@
       "Name": "GR-75 Medium Transport",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -1103,13 +1373,23 @@
       "Name": "GR-75 Medium Transport",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -1137,12 +1417,20 @@
       "Subtitle": "Stalwart Tactician",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "OFFICIAL"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1170,12 +1458,20 @@
       "Subtitle": "Stalwart Tactician",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "OFFICIAL"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1203,12 +1499,20 @@
       "Subtitle": "Leading the Assault",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1236,12 +1540,20 @@
       "Subtitle": "Leading the Assault",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "OFFICIAL"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1256,7 +1568,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/88.png",
       "tcgplayerId": "646385",
@@ -1268,10 +1580,14 @@
       "Name": "Go for the Legs",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "2859074789",
       "Cost": "1",
@@ -1281,7 +1597,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/18.png",
       "tcgplayerId": "646386",
@@ -1293,10 +1609,14 @@
       "Name": "Go for the Legs",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "4564775801",
       "Cost": "1",
@@ -1318,13 +1638,23 @@
       "Name": "Ground Assault AT-AT",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1339,7 +1669,7 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/56.png",
       "tcgplayerId": "646391",
@@ -1351,13 +1681,23 @@
       "Name": "Ground Assault AT-AT",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "WALKER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1385,11 +1725,17 @@
       "Subtitle": "Scruffy-Looking Nerf Herder",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL"
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1420,11 +1766,17 @@
       "Subtitle": "Scruffy-Looking Nerf Herder",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL"
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1442,7 +1794,7 @@
       ],
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.43",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/42.png",
       "tcgplayerId": "646394",
@@ -1454,12 +1806,20 @@
       "Name": "Hoth Lieutenant",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1474,7 +1834,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "1.25",
+      "MarketPrice": "1.42",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/64.png",
       "tcgplayerId": "646395",
@@ -1486,12 +1846,20 @@
       "Name": "Hoth Lieutenant",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1506,7 +1874,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Normal",
-      "MarketPrice": "0.77",
+      "MarketPrice": "0.75",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/92.png",
       "tcgplayerId": "646396",
@@ -1518,12 +1886,20 @@
       "Name": "Hoth Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1550,12 +1926,20 @@
       "Name": "Hoth Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1582,12 +1966,20 @@
       "Name": "Hoth Trooper",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1614,11 +2006,17 @@
       "Name": "I Want Proof, Not Leads",
       "Type": "Event",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "PLAN"
+        {
+          "S": "PLAN"
+        }
       ],
       "cid": "2651147042",
       "Cost": "2",
@@ -1640,11 +2038,17 @@
       "Name": "I Want Proof, Not Leads",
       "Type": "Event",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "PLAN"
+        {
+          "S": "PLAN"
+        }
       ],
       "cid": "2796502553",
       "Cost": "2",
@@ -1666,10 +2070,14 @@
       "Name": "I'll Cover For You",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "9755220648",
       "Cost": "3",
@@ -1691,10 +2099,14 @@
       "Name": "I'll Cover For You",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "1941072965",
       "Cost": "3",
@@ -1716,10 +2128,14 @@
       "Name": "I've Found Them",
       "Type": "Event",
       "Aspects": [
-        "Command"
+        {
+          "S": "Command"
+        }
       ],
       "Traits": [
-        "GAMBIT"
+        {
+          "S": "GAMBIT"
+        }
       ],
       "cid": "0434810928",
       "Cost": "2",
@@ -1741,10 +2157,14 @@
       "Name": "I've Found Them",
       "Type": "Event",
       "Aspects": [
-        "Command"
+        {
+          "S": "Command"
+        }
       ],
       "Traits": [
-        "GAMBIT"
+        {
+          "S": "GAMBIT"
+        }
       ],
       "cid": "6605408513",
       "Cost": "2",
@@ -1766,10 +2186,14 @@
       "Name": "Imperial Deck Officer",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "IMPERIAL"
+        {
+          "S": "IMPERIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1784,7 +2208,7 @@
       "Unique": false,
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/100.png",
       "tcgplayerId": "646407",
@@ -1796,10 +2220,14 @@
       "Name": "Imperial Deck Officer",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "IMPERIAL"
+        {
+          "S": "IMPERIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1826,10 +2254,14 @@
       "Name": "Improvised Detonation",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "1758639231",
       "Cost": "2",
@@ -1851,10 +2283,14 @@
       "Name": "Improvised Detonation",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "7693310752",
       "Cost": "2",
@@ -1864,7 +2300,7 @@
       "Unique": false,
       "Artist": "Derek Laufman",
       "VariantType": "Normal",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/30.png",
       "tcgplayerId": "646409",
@@ -1876,10 +2312,14 @@
       "Name": "Ion Cannon",
       "Type": "Unit",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "WEAPON"
+        {
+          "S": "WEAPON"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1906,10 +2346,14 @@
       "Name": "Ion Cannon",
       "Type": "Unit",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "WEAPON"
+        {
+          "S": "WEAPON"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -1924,7 +2368,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/27.png",
       "tcgplayerId": "646411",
@@ -1936,12 +2380,20 @@
       "Name": "Lambda Shuttle",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -1971,12 +2423,20 @@
       "Name": "Lambda Shuttle",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2006,12 +2466,20 @@
       "Name": "Lambda Shuttle",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2042,12 +2510,20 @@
       "Subtitle": "Get to Your Transports!",
       "Type": "Leader",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "OFFICIAL"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "OFFICIAL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2078,12 +2554,20 @@
       "Subtitle": "Do You Read Me?",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "FORCE",
-        "REBEL"
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "REBEL"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2114,13 +2598,23 @@
       "Subtitle": "Bucket of Bolts",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "TRANSPORT"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2135,7 +2629,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/31.png",
       "tcgplayerId": "646416",
@@ -2148,12 +2642,20 @@
       "Subtitle": "Known to Make Mistakes",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "DROID"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "DROID"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2181,12 +2683,20 @@
       "Subtitle": "Known to Make Mistakes",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "DROID"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "DROID"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2201,7 +2711,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/49.png",
       "tcgplayerId": "646418",
@@ -2213,10 +2723,14 @@
       "Name": "Rampaging Wampa",
       "Type": "Unit",
       "Aspects": [
-        "Aggression"
+        {
+          "S": "Aggression"
+        }
       ],
       "Traits": [
-        "CREATURE"
+        {
+          "S": "CREATURE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2231,7 +2745,7 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/76.png",
       "tcgplayerId": "646419",
@@ -2243,13 +2757,23 @@
       "Name": "Rebellion Y-Wing",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2276,13 +2800,23 @@
       "Name": "Rebellion Y-Wing",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2297,7 +2831,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/32.png",
       "tcgplayerId": "646422",
@@ -2309,13 +2843,23 @@
       "Name": "Rebellion Y-Wing",
       "Type": "Unit",
       "Aspects": [
-        "Cunning",
-        "Heroism"
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2342,10 +2886,14 @@
       "Name": "Recovery",
       "Type": "Event",
       "Aspects": [
-        "Heroism"
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "PLAN"
+        {
+          "S": "PLAN"
+        }
       ],
       "cid": "0375794695",
       "Cost": "3",
@@ -2355,7 +2903,7 @@
       "Unique": false,
       "Artist": "Derek Laufman",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/13.png",
       "tcgplayerId": "646423",
@@ -2367,13 +2915,23 @@
       "Name": "Rogue Squadron Speeder",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "SPEEDER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "SPEEDER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2403,13 +2961,23 @@
       "Name": "Rogue Squadron Speeder",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "SPEEDER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "SPEEDER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2439,13 +3007,23 @@
       "Name": "Rogue Squadron Speeder",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "VEHICLE",
-        "SPEEDER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "SPEEDER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2475,12 +3053,20 @@
       "Name": "Scouting TIE Fighter",
       "Type": "Unit",
       "Aspects": [
-        "Villainy"
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2495,7 +3081,7 @@
       "Unique": false,
       "Artist": "Aaron Dhanda",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/75.png",
       "tcgplayerId": "646427",
@@ -2507,12 +3093,20 @@
       "Name": "Scouting TIE Fighter",
       "Type": "Unit",
       "Aspects": [
-        "Villainy"
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2539,12 +3133,20 @@
       "Name": "Scouting TIE Fighter",
       "Type": "Unit",
       "Aspects": [
-        "Villainy"
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2571,12 +3173,20 @@
       "Name": "Snowtrooper",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2603,12 +3213,20 @@
       "Name": "Snowtrooper",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2623,7 +3241,7 @@
       "Unique": false,
       "Artist": "David Nash",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/77.png",
       "tcgplayerId": "646431",
@@ -2635,12 +3253,20 @@
       "Name": "Snowtrooper",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2667,12 +3293,20 @@
       "Name": "Snowtrooper Vanguard",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2699,12 +3333,20 @@
       "Name": "Snowtrooper Vanguard",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2731,12 +3373,20 @@
       "Name": "Snowtrooper Vanguard",
       "Type": "Unit",
       "Aspects": [
-        "Vigilance",
-        "Villainy"
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "TROOPER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2751,7 +3401,7 @@
       "Unique": false,
       "Artist": "Ivan Fiorelli",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/96.png",
       "tcgplayerId": "646435",
@@ -2763,13 +3413,23 @@
       "Name": "Surface Assault Bomber",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2787,7 +3447,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/78.png",
       "tcgplayerId": "646436",
@@ -2799,13 +3459,23 @@
       "Name": "Surface Assault Bomber",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2835,13 +3505,23 @@
       "Name": "Surface Assault Bomber",
       "Type": "Unit",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "IMPERIAL",
-        "VEHICLE",
-        "FIGHTER"
+        {
+          "S": "IMPERIAL"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "FIGHTER"
+        }
       ],
       "Arenas": [
         "Space"
@@ -2859,7 +3539,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/94.png",
       "tcgplayerId": "646438",
@@ -2871,10 +3551,14 @@
       "Name": "Target the Main Generator",
       "Type": "Event",
       "Aspects": [
-        "Aggression"
+        {
+          "S": "Aggression"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "8290455967",
       "Cost": "2",
@@ -2896,10 +3580,14 @@
       "Name": "Target the Main Generator",
       "Type": "Event",
       "Aspects": [
-        "Aggression"
+        {
+          "S": "Aggression"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "8728429619",
       "Cost": "2",
@@ -2909,7 +3597,7 @@
       "Unique": false,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/71.png",
       "tcgplayerId": "646440",
@@ -2921,10 +3609,14 @@
       "Name": "Tauntaun Mount",
       "Type": "Unit",
       "Aspects": [
-        "Command"
+        {
+          "S": "Command"
+        }
       ],
       "Traits": [
-        "CREATURE"
+        {
+          "S": "CREATURE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2951,10 +3643,14 @@
       "Name": "Tauntaun Mount",
       "Type": "Unit",
       "Aspects": [
-        "Command"
+        {
+          "S": "Command"
+        }
       ],
       "Traits": [
-        "CREATURE"
+        {
+          "S": "CREATURE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -2981,10 +3677,14 @@
       "Name": "Tauntaun Mount",
       "Type": "Unit",
       "Aspects": [
-        "Command"
+        {
+          "S": "Command"
+        }
       ],
       "Traits": [
-        "CREATURE"
+        {
+          "S": "CREATURE"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -3011,10 +3711,14 @@
       "Name": "The Desolation of Hoth",
       "Type": "Event",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "DISASTER"
+        {
+          "S": "DISASTER"
+        }
       ],
       "cid": "4087028261",
       "Cost": "6",
@@ -3036,10 +3740,14 @@
       "Name": "Too Strong for Blasters",
       "Type": "Event",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "INNATE"
+        {
+          "S": "INNATE"
+        }
       ],
       "cid": "7014669428",
       "Cost": "1",
@@ -3061,10 +3769,14 @@
       "Name": "Too Strong for Blasters",
       "Type": "Event",
       "Aspects": [
-        "Vigilance"
+        {
+          "S": "Vigilance"
+        }
       ],
       "Traits": [
-        "INNATE"
+        {
+          "S": "INNATE"
+        }
       ],
       "cid": "2639603441",
       "Cost": "1",
@@ -3086,12 +3798,20 @@
       "Name": "Trench Defender",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -3118,12 +3838,20 @@
       "Name": "Trench Defender",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -3150,12 +3878,20 @@
       "Name": "Trench Defender",
       "Type": "Unit",
       "Aspects": [
-        "Command",
-        "Heroism"
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
       ],
       "Traits": [
-        "REBEL",
-        "TROOPER"
+        {
+          "S": "REBEL"
+        },
+        {
+          "S": "TROOPER"
+        }
       ],
       "Arenas": [
         "Ground"
@@ -3182,10 +3918,14 @@
       "Name": "Watch This",
       "Type": "Event",
       "Aspects": [
-        "Cunning"
+        {
+          "S": "Cunning"
+        }
       ],
       "Traits": [
-        "GAMBIT"
+        {
+          "S": "GAMBIT"
+        }
       ],
       "cid": "8765982385",
       "Cost": "6",
@@ -3199,7 +3939,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IBH/52.png",
       "tcgplayerId": "646450",
-      "LowPrice": "17.99"
+      "LowPrice": "17.66"
     },
     {
       "Set": "IBH",
@@ -3207,10 +3947,14 @@
       "Name": "We're In Trouble",
       "Type": "Event",
       "Aspects": [
-        "Aggression"
+        {
+          "S": "Aggression"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "7524197668",
       "Cost": "3",
@@ -3232,10 +3976,14 @@
       "Name": "We're In Trouble",
       "Type": "Event",
       "Aspects": [
-        "Aggression"
+        {
+          "S": "Aggression"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "0646385311",
       "Cost": "3",
@@ -3257,11 +4005,17 @@
       "Name": "You Have Failed Me",
       "Type": "Event",
       "Aspects": [
-        "Aggression",
-        "Villainy"
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Villainy"
+        }
       ],
       "Traits": [
-        "TACTIC"
+        {
+          "S": "TACTIC"
+        }
       ],
       "cid": "4187779775",
       "Cost": "4",
