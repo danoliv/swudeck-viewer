@@ -7,6 +7,7 @@
  */
 
 import type { CardData } from './cards';
+import { normalizeAspects, normalizeTraits } from './cards';
 
 // ─── CardFilter ───────────────────────────────────────────────────────────────
 
@@ -114,12 +115,12 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
     if (search && !String(card.Name ?? '').toLowerCase().includes(search)) return false;
     if (types.length && !types.includes(String(card.Type ?? ''))) return false;
     if (!overlaps(card.Arenas, arenas)) return false;
-    if (!matchesAspectGroups(card.Aspects, aspects)) return false;
+    if (!matchesAspectGroups(normalizeAspects(card.Aspects), aspects)) return false;
     if (!overlaps(card.Keywords as string[] | undefined, keywords)) return false;
-    if (!overlaps(card.Traits, traits)) return false;
+    if (!overlaps(normalizeTraits(card.Traits), traits)) return false;
     if (triggers.length && !overlaps(cardTriggers(card), triggers)) return false;
     if (sets.length && !sets.includes(String(card.Set ?? ''))) return false;
-    if (noPenaltyAspects && !isSubsetOf(card.Aspects, noPenaltyAspects)) return false;
+    if (noPenaltyAspects && !isSubsetOf(normalizeAspects(card.Aspects), noPenaltyAspects)) return false;
     return true;
   });
 }
@@ -216,8 +217,8 @@ function compareByCostOnly(a: CardData, b: CardData): number {
 }
 
 function compareByAspectOnly(a: CardData, b: CardData): number {
-  const aspectA = a.Aspects?.[0] ?? '';
-  const aspectB = b.Aspects?.[0] ?? '';
+  const aspectA = normalizeAspects(a.Aspects)[0] ?? '';
+  const aspectB = normalizeAspects(b.Aspects)[0] ?? '';
   if (aspectA === aspectB) return 0;
   if (!aspectA) return 1;
   if (!aspectB) return -1;
@@ -329,7 +330,7 @@ export function categorizeBases(bases: CardData[]): BaseGroups {
   const groups: BaseGroups = { random: [], ability: [], vanilla: [] };
 
   for (const base of bases) {
-    const aspects = base.Aspects ?? [];
+    const aspects = normalizeAspects(base.Aspects);
     if (!aspects.length) {
       groups.random.push(base);
       continue;

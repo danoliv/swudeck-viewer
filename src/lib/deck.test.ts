@@ -228,6 +228,10 @@ describe('TraitSortStrategy', () => {
     expect(strategy.groupBy(makeCard('SOR_001', { Traits: [] }))).toBe('Unknown');
   });
 
+  it('groupBy returns the first trait when Traits use the { S: string } object shape (regression: JTL_188 Moff Gideon)', () => {
+    expect(strategy.groupBy(makeCard('JTL_188', { Traits: [{ S: 'IMPERIAL' }, { S: 'OFFICIAL' }] }))).toBe('IMPERIAL');
+  });
+
   it('sortGroups alphabetically with Unknown last', () => {
     const sorted = strategy.sortGroups(['Unknown', 'REBEL', 'IMPERIAL'], {});
     expect(sorted).toEqual(['IMPERIAL', 'REBEL', 'Unknown']);

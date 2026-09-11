@@ -10,6 +10,9 @@ import {
   clearCardCache,
   resolveCardArtUrl,
   formatCardId,
+  normalizeAspects,
+  normalizeTraits,
+  normalizeStringList,
 } from './cards';
 import type { CardData } from './cards';
 
@@ -217,6 +220,13 @@ describe('buildCardHTML', () => {
     expect(html).not.toContain('class="aspects"');
   });
 
+  it('renders aspect names, not "[object Object]", when Aspects use the { S } object shape (public/data/*.json)', () => {
+    const html = buildCardHTML('LAW_016', { ...card1, Aspects: [{ S: 'Cunning' }, { S: 'Villainy' }] });
+    expect(html).toContain('Cunning');
+    expect(html).toContain('Villainy');
+    expect(html).not.toContain('[object Object]');
+  });
+
   it('displays Cost, Power, and HP stats', () => {
     const html = buildCardHTML('SOR_001', card1);
     expect(html).toContain('Cost');
@@ -286,6 +296,14 @@ describe('buildBuilderRowHTML', () => {
   it('omits the aspects section when Aspects is empty', () => {
     const html = buildBuilderRowHTML('SOR_001', { ...card1, Aspects: [] });
     expect(html).not.toContain('class="card-row-aspects"');
+  });
+
+  it('renders aspect mini-icons, not "[object Object]", when Aspects use the { S } object shape', () => {
+    const html = buildBuilderRowHTML('LAW_077', { ...card1, Aspects: [{ S: 'Cunning' }, { S: 'Villainy' }, { S: 'Aggression' }] });
+    expect(html).toContain('aspect-icon-mini aspect-icon-Cunning');
+    expect(html).toContain('aspect-icon-mini aspect-icon-Villainy');
+    expect(html).toContain('aspect-icon-mini aspect-icon-Aggression');
+    expect(html).not.toContain('[object Object]');
   });
 
   it('displays a Cost badge when Cost is defined', () => {
@@ -410,6 +428,24 @@ describe('buildCardDetailHTML', () => {
     expect(html).toContain('HP: <span class="stat-value">2</span>');
     expect(html).toContain('class="aspect Command"');
     expect(html).toContain('<img src="https://example.com/card.png" alt="Test Card (Front)"');
+  });
+
+  it('renders aspect names, not "[object Object]", when Aspects use the { S } object shape', () => {
+    const html = buildCardDetailHTML('SEC_023', { ...card1, Aspects: [{ S: 'Aggression' }] });
+    expect(html).toContain('class="aspect Aggression"');
+    expect(html).not.toContain('[object Object]');
+  });
+
+  it('renders trait names, not "[object Object]", when Traits use the { S } object shape (regression: JTL_188 Moff Gideon)', () => {
+    const html = buildCardDetailHTML('JTL_188', {
+      ...card1,
+      Name: 'Moff Gideon',
+      Traits: [{ S: 'IMPERIAL' }, { S: 'OFFICIAL' }],
+    });
+    expect(html).toContain('class="card-detail-meta"');
+    expect(html).toContain('IMPERIAL');
+    expect(html).toContain('OFFICIAL');
+    expect(html).not.toContain('[object Object]');
   });
 
   it('renders type, arenas, and traits in the meta line', () => {
@@ -579,6 +615,13 @@ describe('buildComparisonCardHTML', () => {
     expect(html).toContain('class="card deck1-only"');
   });
 
+  it('renders aspect names, not "[object Object]", when Aspects use the { S } object shape', () => {
+    const html = buildComparisonCardHTML('LAW_016', { ...card1, Aspects: [{ S: 'Cunning' }, { S: 'Villainy' }] }, 1, 0, 'deck1-only');
+    expect(html).toContain('Cunning');
+    expect(html).toContain('Villainy');
+    expect(html).not.toContain('[object Object]');
+  });
+
   it('uses custom deck names', () => {
     const html = buildComparisonCardHTML('SOR_001', card1, 2, 1, 'both', 'My Deck', 'Other Deck');
     expect(html).toContain('My Deck: 2');
@@ -600,6 +643,74 @@ describe('buildComparisonCardHTML', () => {
     const html = buildComparisonCardHTML('SOR_001', card1, 0, 3);
     expect(html).toContain('Deck 2: 3');
     expect(html).not.toContain('Deck 1');
+  });
+});
+
+// ─── normalizeAspects ─────────────────────────────────────────────────────────
+
+describe('normalizeAspects', () => {
+  it('passes through the plain-string shape returned by api.swu-db.com', () => {
+    expect(normalizeAspects(['Cunning', 'Villainy'])).toEqual(['Cunning', 'Villainy']);
+  });
+
+  it('extracts .S from the { S: string } shape used by public/data/*.json', () => {
+    expect(normalizeAspects([{ S: 'Cunning' }, { S: 'Villainy' }])).toEqual(['Cunning', 'Villainy']);
+  });
+
+  it('handles a mix of both shapes in the same array', () => {
+    expect(normalizeAspects(['Cunning', { S: 'Villainy' }])).toEqual(['Cunning', 'Villainy']);
+  });
+
+  it('drops entries with no usable string (null, empty object, missing S)', () => {
+    expect(normalizeAspects(['Cunning', null, {}, { S: '' }, undefined])).toEqual(['Cunning']);
+  });
+
+  it('returns [] for undefined, null, or non-array input', () => {
+    expect(normalizeAspects(undefined)).toEqual([]);
+    expect(normalizeAspects(null)).toEqual([]);
+    expect(normalizeAspects('Cunning')).toEqual([]);
+  });
+
+  it('returns [] for an empty array', () => {
+    expect(normalizeAspects([])).toEqual([]);
+  });
+
+  it('matches the real LAW_016 (The Client) and SEC_023 (Imperial Prison Complex) shapes', () => {
+    expect(normalizeAspects([{ S: 'Cunning' }, { S: 'Villainy' }])).toEqual(['Cunning', 'Villainy']);
+    expect(normalizeAspects([{ S: 'Aggression' }])).toEqual(['Aggression']);
+  });
+});
+
+// ─── normalizeTraits / normalizeStringList ─────────────────────────────────────
+
+describe('normalizeTraits', () => {
+  it('passes through the plain-string shape returned by api.swu-db.com', () => {
+    expect(normalizeTraits(['IMPERIAL', 'OFFICIAL'])).toEqual(['IMPERIAL', 'OFFICIAL']);
+  });
+
+  it('extracts .S from the { S: string } shape used by public/data/*.json', () => {
+    expect(normalizeTraits([{ S: 'IMPERIAL' }, { S: 'OFFICIAL' }])).toEqual(['IMPERIAL', 'OFFICIAL']);
+  });
+
+  it('matches the real JTL_188 (Moff Gideon) shape', () => {
+    expect(normalizeTraits([{ S: 'IMPERIAL' }, { S: 'OFFICIAL' }])).toEqual(['IMPERIAL', 'OFFICIAL']);
+  });
+
+  it('returns [] for undefined, null, or non-array input', () => {
+    expect(normalizeTraits(undefined)).toEqual([]);
+    expect(normalizeTraits(null)).toEqual([]);
+  });
+});
+
+describe('normalizeStringList (shared implementation)', () => {
+  it('is the implementation normalizeAspects and normalizeTraits delegate to', () => {
+    expect(normalizeStringList([{ S: 'Cunning' }])).toEqual(normalizeAspects([{ S: 'Cunning' }]));
+    expect(normalizeStringList([{ S: 'IMPERIAL' }])).toEqual(normalizeTraits([{ S: 'IMPERIAL' }]));
+  });
+
+  it('passes plain-string Arenas/Keywords through unchanged', () => {
+    expect(normalizeStringList(['Ground', 'Space'])).toEqual(['Ground', 'Space']);
+    expect(normalizeStringList(['Overwhelm'])).toEqual(['Overwhelm']);
   });
 });
 

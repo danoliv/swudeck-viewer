@@ -10,13 +10,22 @@ import type { CardAlternative } from './alternatives';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
+/**
+ * One raw list-field entry as it actually appears across data sources for
+ * fields like `Aspects` and `Traits`: a plain string (the `api.swu-db.com`
+ * shape, e.g. `"Cunning"`/`"IMPERIAL"`) or a `{ S: "Cunning" }` wrapper
+ * object (the shape used by the local `public/data/*.json` set files). See
+ * `normalizeStringList`.
+ */
+export type StringListEntry = string | { S?: string } | null | undefined;
+
 export interface CardData {
   id?: string;
   Number?: string | number;
   Name?: string;
   Type?: string;
-  Aspects?: string[];
-  Traits?: string[];
+  Aspects?: StringListEntry[];
+  Traits?: StringListEntry[];
   Arenas?: string[];
   Cost?: string | number;
   Power?: string | number;
@@ -54,6 +63,40 @@ function buildLookupKeys(value: string | number | undefined): string[] {
   const normalizedBase = normalizeCardNumberToken(baseRaw);
 
   return [...new Set([raw, normalized, normalizedBase].filter((key): key is string => Boolean(key)))];
+}
+
+/**
+ * Normalize a card list field to a flat `string[]`, regardless of which
+ * upstream shape it arrived in: local `public/data/*.json` set files wrap
+ * each entry as `{ S: "..." }` (used by both `Aspects` and `Traits`), while
+ * `api.swu-db.com` returns plain strings. Anything else (missing field,
+ * nulls, empty wrapper objects) is dropped rather than stringified, so
+ * callers never see a literal `"[object Object]"` in rendered HTML or
+ * filter/dropdown/sort comparisons. `Arenas` and `Keywords` are already
+ * plain strings in both sources, but passing them through here is harmless
+ * (they pass through unchanged) should that ever change.
+ */
+export function normalizeStringList(list: unknown): string[] {
+  if (!Array.isArray(list)) return [];
+  return list
+    .map((entry) => {
+      if (typeof entry === 'string') return entry;
+      if (entry && typeof entry === 'object' && typeof (entry as { S?: unknown }).S === 'string') {
+        return (entry as { S: string }).S;
+      }
+      return undefined;
+    })
+    .filter((a): a is string => Boolean(a));
+}
+
+/** Normalize a card's `Aspects` field. See `normalizeStringList`. */
+export function normalizeAspects(aspects: unknown): string[] {
+  return normalizeStringList(aspects);
+}
+
+/** Normalize a card's `Traits` field. See `normalizeStringList`. */
+export function normalizeTraits(traits: unknown): string[] {
+  return normalizeStringList(traits);
 }
 
 export function resolveCardArtUrl(artUrl: string | undefined | null): string | undefined {
@@ -246,7 +289,7 @@ export function buildCardHTML(
   sideboardCount = 0,
   additionalClasses = '',
 ): string {
-  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
+  const aspects: string[] = normalizeAspects(cardData.Aspects);
   const stats: [string, unknown][] = [];
   if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
   if (cardData.Power !== undefined) stats.push(['Power', cardData.Power]);
@@ -367,7 +410,7 @@ function quantityPopupHTML(cardId: string, count: number, sideboardCount: number
 
 /** Shared id/name/aspect-icons/cost markup used by both row layouts. */
 function cardRowDetailsHTML(cardId: string, cardData: CardData, zone: string, stats?: CardStats | null): string {
-  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
+  const aspects: string[] = normalizeAspects(cardData.Aspects);
   const formattedId = cardId.replace('_', ' ');
 
   return `
@@ -483,8 +526,8 @@ export function buildCardDetailHTML(
   showAllAlternatives = false,
   altQtyLookup?: AltQtyLookup,
 ): string {
-  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
-  const traits: string[] = (cardData.Traits as string[]) ?? [];
+  const aspects: string[] = normalizeAspects(cardData.Aspects);
+  const traits: string[] = normalizeTraits(cardData.Traits);
   const arenas: string[] = (cardData.Arenas as string[]) ?? [];
   const stats: [string, unknown][] = [];
   if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
@@ -621,7 +664,7 @@ export function buildComparisonCardHTML(
   sideboard1 = 0,
   sideboard2 = 0,
 ): string {
-  const aspects: string[] = (cardData.Aspects as string[]) ?? [];
+  const aspects: string[] = normalizeAspects(cardData.Aspects);
   const stats: [string, unknown][] = [];
   if (cardData.Cost !== undefined) stats.push(['Cost', cardData.Cost]);
   if (cardData.Power !== undefined) stats.push(['Power', cardData.Power]);

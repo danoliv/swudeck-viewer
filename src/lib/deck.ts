@@ -7,6 +7,7 @@
  */
 
 import type { CardData } from './cards';
+import { normalizeAspects, normalizeTraits } from './cards';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -174,8 +175,8 @@ export class CostSortStrategy extends BaseSortStrategy {
 
 export class AspectSortStrategy extends BaseSortStrategy {
   groupBy(card: CardEntry): string {
-    const aspects = card.data?.Aspects as string[] | undefined;
-    return Array.isArray(aspects) && aspects.length ? String(aspects[0]) : 'Unknown';
+    const aspects = normalizeAspects(card.data?.Aspects);
+    return aspects.length ? aspects[0] : 'Unknown';
   }
 
   sortGroups(keys: string[], _groups: Record<string, CardEntry[]>): string[] {
@@ -203,8 +204,8 @@ export class TypeSortStrategy extends BaseSortStrategy {
 
 export class TraitSortStrategy extends BaseSortStrategy {
   groupBy(card: CardEntry): string {
-    const traits = card.data?.Traits as string[] | undefined;
-    return Array.isArray(traits) && traits.length ? String(traits[0]) : 'Unknown';
+    const traits = normalizeTraits(card.data?.Traits);
+    return traits.length ? traits[0] : 'Unknown';
   }
 
   sortGroups(keys: string[], _groups: Record<string, CardEntry[]>): string[] {

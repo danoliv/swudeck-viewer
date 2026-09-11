@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, cardTriggers, NEUTRAL_ALIGNMENT } from './card-filter';
+import { normalizeAspects } from './cards';
 import type { CardData } from './cards';
 
 const CARDS: CardData[] = [
@@ -112,6 +113,17 @@ describe('filterCards', () => {
     expect(result.map((c) => c.id)).toEqual(['SEC_213', 'SOR_002']);
   });
 
+  // Regression: public/data/*.json stores each Traits entry as `{ S: "IMPERIAL" }`
+  // (same shape as Aspects), which never matched a plain-string traits filter.
+  it('filters by trait when Traits use the { S: string } object shape (regression: JTL_188 Moff Gideon)', () => {
+    const moffGideon: CardData = {
+      id: 'JTL_188', Name: 'Moff Gideon', Type: 'Leader',
+      Traits: [{ S: 'IMPERIAL' }, { S: 'OFFICIAL' }] as unknown as string[],
+    };
+    const result = filterCards([...CARDS, moffGideon], { traits: ['IMPERIAL'] });
+    expect(result.map((c) => c.id)).toEqual(['JTL_188']);
+  });
+
   it('filters by set', () => {
     const result = filterCards(CARDS, { sets: ['JTL'] });
     expect(result.map((c) => c.id)).toEqual(['JTL_016']);
@@ -196,6 +208,49 @@ describe('filterCards - noPenaltyAspects', () => {
   it('applies no restriction when noPenaltyAspects is undefined', () => {
     expect(filterCards(PENALTY_CARDS, {})).toEqual(PENALTY_CARDS);
   });
+
+  // Regression: public/data/*.json stores each Aspects entry as `{ S: "Cunning" }`
+  // (api.swu-db.com uses plain strings). Before normalization, `{S:...}` never
+  // matched a plain-string noPenaltyAspects list, so every aspected card was
+  // wrongly excluded — only truly neutral cards passed.
+  const OBJECT_SHAPE_PENALTY_CARDS: CardData[] = [
+    { id: 'N1', Name: 'Neutral Card', Aspects: [] },
+    { id: 'C1', Name: 'Command Card', Aspects: [{ S: 'Command' }] as unknown as string[] },
+    { id: 'CH1', Name: 'Command Heroism Card', Aspects: [{ S: 'Command' }, { S: 'Heroism' }] as unknown as string[] },
+  ];
+
+  it('handles the { S: string } Aspects shape used by public/data/*.json', () => {
+    const result = filterCards(OBJECT_SHAPE_PENALTY_CARDS, { noPenaltyAspects: ['Command'] });
+    expect(result.map((c) => c.id)).toEqual(['N1', 'C1']);
+  });
+
+  it('duplicate aspect icons are still fully covered by a single matching allowed aspect', () => {
+    const dupCard: CardData = { id: 'D1', Name: 'Double Aggression', Aspects: ['Aggression', 'Aggression'] };
+    expect(filterCards([dupCard], { noPenaltyAspects: ['Aggression'] }).map((c) => c.id)).toEqual(['D1']);
+    expect(filterCards([dupCard], { noPenaltyAspects: ['Command'] }).map((c) => c.id)).toEqual([]);
+  });
+
+  // Concrete real-world regression case from the deck builder: leader The Client
+  // (LAW_016, Cunning+Villainy) + base Imperial Prison Complex (SEC_023,
+  // Aggression) cover Cunning/Villainy/Aggression. Cards using only those
+  // aspects (even as { S } objects, even with a duplicate) must show up.
+  it('LAW_016 + SEC_023 leader/base coverage passes ASH_191 and ASH_247', () => {
+    const allowedAspects = combineAspects(
+      normalizeAspects([{ S: 'Cunning' }, { S: 'Villainy' }]),
+      normalizeAspects([{ S: 'Aggression' }]),
+    ) ?? [];
+    expect(allowedAspects).toEqual(['Cunning', 'Villainy', 'Aggression']);
+
+    const shinHatisFiendFighter: CardData = {
+      id: 'ASH_191', Name: "Shin Hati's Fiend Fighter", Aspects: [{ S: 'Cunning' }, { S: 'Villainy' }] as unknown as string[],
+    };
+    const oneMustDestroyToCreate: CardData = {
+      id: 'ASH_247', Name: 'One Must Destroy to Create', Aspects: [{ S: 'Villainy' }] as unknown as string[],
+    };
+
+    const result = filterCards([shinHatisFiendFighter, oneMustDestroyToCreate], { noPenaltyAspects: allowedAspects });
+    expect(result.map((c) => c.id)).toEqual(['ASH_191', 'ASH_247']);
+  });
 });
 
 // ─── getLeaders / getBases ────────────────────────────────────────────────────
@@ -232,6 +287,13 @@ describe('categorizeBases', () => {
 
   it('returns empty groups for an empty base list', () => {
     expect(categorizeBases([])).toEqual({ random: [], ability: [], vanilla: [] });
+  });
+
+  it('handles the { S: string } Aspects shape used by public/data/*.json', () => {
+    const objectShapeBase: CardData = { id: 'SEC_023', Name: 'Imperial Prison Complex', Aspects: [{ S: 'Aggression' }] as unknown as string[], FrontText: '' };
+    const groups = categorizeBases([objectShapeBase]);
+    expect(groups.vanilla.map((c) => c.id)).toEqual(['SEC_023']);
+    expect(groups.random).toEqual([]);
   });
 });
 
@@ -326,6 +388,15 @@ describe('sortCards', () => {
     it('sorts cards with no Aspects last', () => {
       const result = sortCards(ASPECT_CARDS, 'aspect');
       expect(result[result.length - 1].id).toBe('D');
+    });
+
+    it('sorts correctly when Aspects use the { S: string } object shape', () => {
+      const objectShapeCards: CardData[] = [
+        { id: 'A', Name: 'Zeta', Aspects: [{ S: 'Vigilance' }] as unknown as string[] },
+        { id: 'B', Name: 'Yara', Aspects: [{ S: 'Aggression' }] as unknown as string[] },
+      ];
+      const result = sortCards(objectShapeCards, 'aspect');
+      expect(result.map((c) => c.id)).toEqual(['B', 'A']);
     });
   });
 

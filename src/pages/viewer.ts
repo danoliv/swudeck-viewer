@@ -9,7 +9,7 @@
 import { fetchWithRetry, fetchUsingExternalProxy } from '../lib/api';
 import { getDeckIdFromUrl } from '../lib/url';
 import { loadSets } from '../lib/sets';
-import { fetchCardData, buildCardHTML, clearCardCache, resolveCardArtUrl } from '../lib/cards';
+import { fetchCardData, buildCardHTML, clearCardCache, resolveCardArtUrl, normalizeAspects } from '../lib/cards';
 import { groupCards, createDefaultRegistry, type CardEntry } from '../lib/deck';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -113,8 +113,8 @@ async function addToRecentDecks(url: string, deckData: DeckApiData): Promise<voi
   if (deckData.base?.id) {
     try {
       const baseCardData = await fetchCardData(deckData.base.id);
-      const aspects = baseCardData?.Aspects as string[] | undefined;
-      if (Array.isArray(aspects) && aspects.length > 0) baseAspect = aspects[0];
+      const aspects = normalizeAspects(baseCardData?.Aspects);
+      if (aspects.length > 0) baseAspect = aspects[0];
     } catch {
       // ignore
     }

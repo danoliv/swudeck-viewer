@@ -11,7 +11,7 @@
 
 import { getQueryParam, setQueryParam } from '../lib/url';
 import { loadSets } from '../lib/sets';
-import { loadAllCards, findCardById, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, type CardData, type AltQtyInfo } from '../lib/cards';
+import { loadAllCards, findCardById, buildCardHTML, buildBuilderRowHTML, buildDeckRowHTML, normalizeAspects, normalizeStringList, type CardData, type AltQtyInfo } from '../lib/cards';
 import { createDefaultRegistry, type CardEntry } from '../lib/deck';
 import {
   createEmptyDeck,
@@ -342,7 +342,7 @@ function findCard(cardId: string): CardData {
 }
 
 function cardAspects(deckCard: DeckCard | undefined): string[] | undefined {
-  return deckCard ? (findCard(deckCard.id).Aspects as string[] | undefined) : undefined;
+  return deckCard ? normalizeAspects(findCard(deckCard.id).Aspects) : undefined;
 }
 
 /** Distinct values pulled from `allCards` via `extract`. With `order` given, returns members of `order` that are present (canonical order); otherwise alphabetical. */
@@ -357,7 +357,7 @@ function uniqueValues(extract: (card: CardData) => string[] | string | undefined
 }
 
 function uniqueFieldValues(field: 'Keywords' | 'Traits'): string[] {
-  return uniqueValues((card) => card[field] as string[] | undefined);
+  return uniqueValues((card) => normalizeStringList(card[field]));
 }
 
 /**
