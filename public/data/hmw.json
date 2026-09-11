@@ -1,6 +1,45 @@
 {
-  "total_cards": 155,
+  "total_cards": 179,
   "data": [
+    {
+      "Set": "HMW",
+      "Number": "052",
+      "Name": "A'Koba",
+      "Subtitle": "Restless Raider",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "TUSKEN"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "2",
+      "Power": "1",
+      "HP": "4",
+      "FrontText": "Raid 1 (This unit gets +1/+0 while attacking.) \nWhen Played: Give a unit +2/+0 for this phase.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Raid"
+      ],
+      "Artist": "Afif Khaled",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/052.png"
+    },
     {
       "Set": "HMW",
       "Number": "177",
@@ -65,6 +104,52 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/081.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "001",
+      "Name": "Asajj Ventress",
+      "Subtitle": "No Time for Regret",
+      "Type": "Leader",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Aggression"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "NIGHT"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "5",
+      "Power": "3",
+      "HP": "6",
+      "FrontText": "Action [Exhaust]: Attack with a unit. For this attack, replace any Raid it has or gains with Restore, or vice versa.",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/HMW/001-b.png",
+      "BackText": "Restore 2\nAction: Attack with a unit. For this attack, replace any Raid it has or gains with Restore, or vice versa.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Raid",
+        "Restore"
+      ],
+      "Artist": "Ivan Dedov",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/001.png"
     },
     {
       "Set": "HMW",
@@ -219,6 +304,42 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/143.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "083",
+      "Name": "Batcher",
+      "Subtitle": "Loyal Hound",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "CREATURE"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "2",
+      "Power": "2",
+      "HP": "3",
+      "FrontText": "Restore 1 (When this unit attacks, heal 1 damage from your base.) \nThis unit gets +1/+0 while defending.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Restore"
+      ],
+      "Artist": "Envar Entertainment",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/083.png"
     },
     {
       "Set": "HMW",
@@ -423,6 +544,81 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/225.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "122",
+      "Name": "Boga",
+      "Subtitle": "Loyal Varactyl",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "CREATURE"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "6",
+      "Power": "6",
+      "HP": "6",
+      "FrontText": "When Played/When Defeated: Choose a non-Vehicle unit in your discard pile not named Boga. For this phase, you may play that unit from your discard pile. It costs 1 less.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Kevin Sidharta",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/122.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "057",
+      "Name": "Boss Lyonie",
+      "Subtitle": "Hypnotized",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Vigilance"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "GUNGAN"
+        },
+        {
+          "S": "OFFICIAL"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "5",
+      "Power": "5",
+      "HP": "5",
+      "FrontText": "When Played/On Attack: You may choose a token upgrade attached to another unit. Give another one of those tokens to that unit.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/057.png"
     },
     {
       "Set": "HMW",
@@ -1406,6 +1602,51 @@
     },
     {
       "Set": "HMW",
+      "Number": "042",
+      "Name": "Dooku",
+      "Subtitle": "Corruption Must Be Eradicated",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Aggression"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "JEDI"
+        },
+        {
+          "S": "REPUBLIC"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "8",
+      "Power": "8",
+      "HP": "7",
+      "FrontText": "Overwhelm \nWhen Played: You may ready another unit. If you do, heal damage from a base equal to that unit's cost.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm"
+      ],
+      "Artist": "Konstantin Porubov",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/042.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "154",
       "Name": "Dooku's Solar Sailer",
       "Subtitle": "Droid Army Portent",
@@ -1608,6 +1849,48 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/110.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "047",
+      "Name": "Eravana",
+      "Subtitle": "Hauling Rathtars",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "UNDERWORLD"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "cid": "",
+      "Cost": "5",
+      "Power": "1",
+      "HP": "7",
+      "FrontText": "On Attack: Create a Beast token and ready it.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Johnny Morrow",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/047.png"
     },
     {
       "Set": "HMW",
@@ -1821,6 +2104,87 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/175.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "053",
+      "Name": "Fett's Firespray",
+      "Subtitle": "Settling the Score",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "UNDERWORLD"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "cid": "",
+      "Cost": "6",
+      "Power": "6",
+      "HP": "6",
+      "FrontText": "Friendly units can attack bases while using Ambush.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Ambush"
+      ],
+      "Artist": "Robert Bonchune",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/053.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "104",
+      "Name": "Garnac",
+      "Subtitle": "Let the Hunt Begin!",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Villainy"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "UNDERWORLD"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "1",
+      "Power": "3",
+      "HP": "1",
+      "FrontText": "While an opponent controls a Unique unit, this unit gains Hidden. \nWhen Attack Ends: You may attack with another unit.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Manos Sparakis",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/104.png"
     },
     {
       "Set": "HMW",
@@ -2049,6 +2413,44 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/020.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "049",
+      "Name": "Greater Sarlacc",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "CREATURE"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "9",
+      "Power": "9",
+      "HP": "8",
+      "FrontText": "Overwhelm \nWhile playing this unit, you may defeat any number of ready resources you control. For each resource defeated this way, this unit costs 3 less to play.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Keywords": [
+        "Overwhelm"
+      ],
+      "Artist": "Envar Entertainment",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/049.png"
     },
     {
       "Set": "HMW",
@@ -2596,6 +2998,52 @@
     },
     {
       "Set": "HMW",
+      "Number": "041",
+      "Name": "Keeper of Skara Nal",
+      "Subtitle": "Awoken",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Aggression"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "DROID"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "WALKER"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "6",
+      "Power": "5",
+      "HP": "8",
+      "FrontText": "Restore 2 \nOn Attack: You may discard 2 cards named Keeper of Skara Nal from your hand. If you do, this unit gets +15/+0 and gains Overwhelm for this attack.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Overwhelm",
+        "Restore"
+      ],
+      "Artist": "Stephen Zavala",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/041.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "036",
       "Name": "Kelnacca",
       "Subtitle": "Solitary Master",
@@ -2891,6 +3339,36 @@
     },
     {
       "Set": "HMW",
+      "Number": "050",
+      "Name": "Low Altitude Combat",
+      "Type": "Event",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "TACTIC"
+        }
+      ],
+      "cid": "",
+      "Cost": "2",
+      "FrontText": "Move a space unit to the ground unit (it's now a ground unit). If you do, you may attack with a ground unit. It gets +2/+0 for this attack.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Kyle Petchock",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/050.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "208",
       "Name": "Luke Skywalker",
       "Subtitle": "Dreaming Farmboy",
@@ -2972,6 +3450,80 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/124.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "229",
+      "Name": "Lurking Wampa",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "CREATURE"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "5",
+      "Power": "6",
+      "HP": "5",
+      "FrontText": "Hidden (This unit can't be attacked if it was played this phase.)",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Keywords": [
+        "Hidden"
+      ],
+      "Artist": "Wu Shenyou",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/229.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "128",
+      "Name": "Mace Windu",
+      "Subtitle": "Austere Centrist",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Command"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "JEDI"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "3",
+      "Power": "4",
+      "HP": "5",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/128.png"
     },
     {
       "Set": "HMW",
@@ -3136,6 +3688,48 @@
     },
     {
       "Set": "HMW",
+      "Number": "002",
+      "Name": "Maz Kanata",
+      "Subtitle": "Eclectic Pirate Queen",
+      "Type": "Leader",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "UNDERWORLD"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "6",
+      "Power": "4",
+      "HP": "4",
+      "FrontText": "Action [Exhaust]: Play a Fringe or Underworld unit from your hand. It costs 1 less. Give a Weakness token to it.",
+      "EpicAction": "Epic Action: If you control 6 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/HMW/002-b.png",
+      "BackText": "Hidden (This unit can't be attacked if she was deployed this phase.)\nAction: Play a Fringe or Underworld unit from your hand. It costs 1 less. Give a Weakness token to it.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "HIdden"
+      ],
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/002.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "112",
       "Name": "Military Academy",
       "Type": "Upgrade",
@@ -3193,6 +3787,115 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/032.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "039",
+      "Name": "Mother Talzin",
+      "Subtitle": "Pledged to the Sisterhood",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Aggression"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "NIGHT"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "3",
+      "Power": "3",
+      "HP": "4",
+      "FrontText": "Raid 1 \nEach other friendly unit gains Restore 1.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Raid",
+        "Restore"
+      ],
+      "Artist": "Ivan Shavrin",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/039.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "058",
+      "Name": "Mysterious Disappearance",
+      "Type": "Event",
+      "Aspects": [
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Vigilance"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "TRICK"
+        }
+      ],
+      "cid": "",
+      "Cost": "2",
+      "FrontText": "A player chooses a non-leader unit they control. You may defeat that unit. If you do, that player creates a Beast token.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Alex Alexandrov",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/058.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "082",
+      "Name": "Nala Se",
+      "Subtitle": "Silent Survivor",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Vigilance"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "KAMINOAN"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "2",
+      "Power": "1",
+      "HP": "7",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": true,
+      "Artist": "Aitor Prieto",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/082.png"
     },
     {
       "Set": "HMW",
@@ -3434,6 +4137,48 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/268.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "006",
+      "Name": "Omega",
+      "Subtitle": "Close Your Eyes and Focus",
+      "Type": "Leader",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Heroism"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "CLONE"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "5",
+      "Power": "5",
+      "HP": "7",
+      "FrontText": "Action [C=1, Exhaust]: Attack with a Heroic unit. It gains Grit for this attack. (It gets +1/+0 for each damage on it.)",
+      "EpicAction": "Epic Action: If you control 5 or more resources, deploy this leader.",
+      "DoubleSided": true,
+      "BackArt": "https://cdn.swu-db.com/images/cards/HMW/006-b.png",
+      "BackText": "Other friendly Heroic units gain Grit.",
+      "Rarity": "Rare",
+      "Unique": true,
+      "Keywords": [
+        "Grit"
+      ],
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/006.png"
     },
     {
       "Set": "HMW",
@@ -3788,6 +4533,48 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/078.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "079",
+      "Name": "Radiant VII",
+      "Subtitle": "Negotiating for Naboo",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Heroism"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "REPUBLIC"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "cid": "",
+      "Cost": "6",
+      "Power": "5",
+      "HP": "7",
+      "FrontText": "When Played: You may deal 3 damage to this unit. If you do, give a Shield token to it.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Artist": "Amad Mir",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/079.png"
     },
     {
       "Set": "HMW",
@@ -4294,6 +5081,36 @@
     },
     {
       "Set": "HMW",
+      "Number": "054",
+      "Name": "Seismic Detonation",
+      "Type": "Event",
+      "Aspects": [
+        {
+          "S": "Aggression"
+        },
+        {
+          "S": "Cunning"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "TACTIC"
+        }
+      ],
+      "cid": "",
+      "Cost": "6",
+      "FrontText": "Choose an arena. At the start of the next regroup phase, deal 3 damage to each enemy unit in that arena.",
+      "DoubleSided": false,
+      "Rarity": "Rare",
+      "Unique": false,
+      "Artist": "Ivan Shavrin",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/054.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "030",
       "Name": "Shadowlands",
       "Subtitle": "Kashyyyk",
@@ -4566,6 +5383,51 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/247.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "040",
+      "Name": "Talzin's Shuttle",
+      "Subtitle": "Mysterious Arrival",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Aggression"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "NIGHT"
+        },
+        {
+          "S": "VEHICLE"
+        },
+        {
+          "S": "TRANSPORT"
+        }
+      ],
+      "Arenas": [
+        "Space"
+      ],
+      "cid": "",
+      "Cost": "3",
+      "Power": "2",
+      "HP": "4",
+      "FrontText": "Raid 1 (This unit gets +1/+0 while attacking.) \nWhen Played: If an opponent played 2 or more cards this phase, you may give 2 Weakness tokens to a unit.",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": true,
+      "Keywords": [
+        "Raid"
+      ],
+      "Artist": "Kyle Petchock",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/040.png"
     },
     {
       "Set": "HMW",
@@ -5248,6 +6110,40 @@
     },
     {
       "Set": "HMW",
+      "Number": "126",
+      "Name": "Verdant Fortress",
+      "Type": "Upgrade",
+      "Aspects": [
+        {
+          "S": "Command"
+        },
+        {
+          "S": "Heroism"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORTIFICATION"
+        }
+      ],
+      "cid": "",
+      "Cost": "2",
+      "FrontText": "Fortify (Attach this to your base, not a unit.)\nAttached base gains: \"Friendly units gain Raid 1. (They get +1/+0 while attacking.)\"",
+      "DoubleSided": false,
+      "Rarity": "Uncommon",
+      "Unique": false,
+      "Keywords": [
+        "Fortify",
+        "Raid"
+      ],
+      "Artist": "Natcha Ngamtweerat",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/126.png"
+    },
+    {
+      "Set": "HMW",
       "Number": "048",
       "Name": "Vernestra Rwoh",
       "Subtitle": "We Should Handle This Ourselves",
@@ -5589,6 +6485,54 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/076.png"
+    },
+    {
+      "Set": "HMW",
+      "Number": "056",
+      "Name": "Yoda",
+      "Subtitle": "Trickster in Exile",
+      "Type": "Unit",
+      "Aspects": [
+        {
+          "S": "Cunning"
+        },
+        {
+          "S": "Vigilance"
+        },
+        {
+          "S": "Heroism"
+        }
+      ],
+      "Traits": [
+        {
+          "S": "FORCE"
+        },
+        {
+          "S": "FRINGE"
+        },
+        {
+          "S": "JEDI"
+        }
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "",
+      "Cost": "3",
+      "Power": "4",
+      "HP": "4",
+      "FrontText": "Hidden \nWhen Defeated: You may put this card from your discard pile on top of your deck. If you do, heal 2 damage from a base.",
+      "DoubleSided": false,
+      "Rarity": "Legendary",
+      "Unique": true,
+      "Keywords": [
+        "Hidden"
+      ],
+      "Artist": "Gabriel Gómez Almenzar",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/056.png"
     },
     {
       "Set": "HMW",
