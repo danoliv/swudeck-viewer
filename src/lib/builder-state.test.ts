@@ -14,6 +14,8 @@ import {
   swapCard,
   toggleCardReady,
   countReady,
+  placeReady,
+  nextReadyPlacement,
 } from './builder-state';
 import type { DeckData } from './types';
 
@@ -447,5 +449,41 @@ describe('countReady', () => {
 
   it('handles an empty or missing zone', () => {
     expect(countReady(createEmptyDeck(), 'sideboard')).toEqual({ readyCards: 0, totalCards: 0 });
+  });
+});
+
+describe('placeReady', () => {
+  const items = [{ id: 'A' }, { id: 'B' }, { id: 'C' }, { id: 'D' }, { id: 'E' }];
+  const ready = new Set(['B', 'D']);
+  const ids = (list: Array<{ id: string }>) => list.map((i) => i.id);
+
+  it("keeps the input order when placement is 'off'", () => {
+    expect(ids(placeReady(items, ready, 'off'))).toEqual(['A', 'B', 'C', 'D', 'E']);
+  });
+
+  it("moves ready items to the top, preserving relative order in both groups", () => {
+    expect(ids(placeReady(items, ready, 'top'))).toEqual(['B', 'D', 'A', 'C', 'E']);
+  });
+
+  it("moves ready items to the bottom, preserving relative order in both groups", () => {
+    expect(ids(placeReady(items, ready, 'bottom'))).toEqual(['A', 'C', 'E', 'B', 'D']);
+  });
+
+  it('leaves the order unchanged when nothing is ready', () => {
+    expect(ids(placeReady(items, new Set(), 'top'))).toEqual(['A', 'B', 'C', 'D', 'E']);
+  });
+
+  it('does not mutate the input', () => {
+    const copy = items.map((i) => ({ ...i }));
+    placeReady(items, ready, 'top');
+    expect(items).toEqual(copy);
+  });
+});
+
+describe('nextReadyPlacement', () => {
+  it('cycles off → top → bottom → off', () => {
+    expect(nextReadyPlacement('off')).toBe('top');
+    expect(nextReadyPlacement('top')).toBe('bottom');
+    expect(nextReadyPlacement('bottom')).toBe('off');
   });
 });

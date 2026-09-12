@@ -25,6 +25,9 @@ import {
   swapCard,
   toggleCardReady,
   countReady,
+  placeReady,
+  nextReadyPlacement,
+  type ReadyPlacement,
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
@@ -149,6 +152,11 @@ function renderSortBar(
     const arrow = active ? (dir === 'asc' ? ' &#9650;' : ' &#9660;') : '';
     html += `<button type="button" data-action="sort-toggle" data-scope="${scope}" data-sort="${key}" class="sort-button${active ? ' active' : ''}">${label}${arrow}</button>`;
   }
+  if (scope === 'deck' || scope === 'sideboard') {
+    const placement = scope === 'deck' ? deckReadyPlacement : sideboardReadyPlacement;
+    const label = placement === 'top' ? 'Ready on top' : placement === 'bottom' ? 'Ready at bottom' : 'Ready: off';
+    html += `<button type="button" data-action="ready-placement-toggle" data-scope="${scope}" class="sort-button${placement !== 'off' ? ' active' : ''}">${label}</button>`;
+  }
   html += '</div>';
   return html;
 }
@@ -176,6 +184,7 @@ function readyCounterHTML(zone: 'deck' | 'sideboard'): string {
 function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDirection, zone: 'deck' | 'sideboard'): string {
   if (!entries.length) return '';
   const readyIds = new Set((deck[zone] ?? []).filter((c) => c.ready).map((c) => c.id));
+  const placement = zone === 'deck' ? deckReadyPlacement : sideboardReadyPlacement;
 
   if (sortKey === 'type') {
     const strategy = registry.get('type');
@@ -188,7 +197,7 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
     const sortedKeys = sortDeckSectionKeys(Object.keys(groups), dir === 'desc');
     let html = '';
     for (const key of sortedKeys) {
-      const grp = strategy ? strategy.sortWithinGroup(groups[key], setOrder) : groups[key];
+      const grp = placeReady(strategy ? strategy.sortWithinGroup(groups[key], setOrder) : groups[key], readyIds, placement);
       const total = grp.reduce((sum, e) => sum + (zone === 'sideboard' ? e.sideboardCount : e.count), 0);
       html += `<div class="set-section"><div class="set-title">${key} (${total})</div><div class="card-rows">`;
       for (const entry of grp) {
@@ -205,7 +214,7 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
   }
 
   let html = '<div class="card-rows">';
-  for (const entry of sortEntries(entries, sortKey, dir)) {
+  for (const entry of placeReady(sortEntries(entries, sortKey, dir), readyIds, placement)) {
     const expanded = expandedCards.has(`${zone}:${entry.id}`);
     const popupOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === entry.id;
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
@@ -293,6 +302,9 @@ let deckSort: CardSortKey = 'cost';
 let deckSortDir: SortDirection = 'asc';
 let sideboardSort: CardSortKey = 'cost';
 let sideboardSortDir: SortDirection = 'asc';
+/** Ready rows on top/bottom of each deck list, layered on the active sort (in memory, like the sort state). */
+let deckReadyPlacement: ReadyPlacement = 'off';
+let sideboardReadyPlacement: ReadyPlacement = 'off';
 
 /** Card rows with an open inline detail panel, keyed by `${zone}:${cardId}`. */
 const expandedCards = new Set<string>();
@@ -1252,6 +1264,16 @@ document.addEventListener('click', (e) => {
       if (!cardId) return;
       const count = Number(actionEl.dataset['count'] ?? '0');
       updateDeck(setCombinedCardCount(deck, cardId, 'sideboard', count));
+      return;
+    }
+
+    case 'ready-placement-toggle': {
+      const scope = actionEl.dataset['scope'];
+      if (scope === 'deck') deckReadyPlacement = nextReadyPlacement(deckReadyPlacement);
+      else if (scope === 'sideboard') sideboardReadyPlacement = nextReadyPlacement(sideboardReadyPlacement);
+      else return;
+      const left = el('builderLeft');
+      if (left) left.innerHTML = renderLeft();
       return;
     }
 

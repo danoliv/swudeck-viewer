@@ -223,6 +223,25 @@ export function countReady(deck: DeckData, zone: 'deck' | 'sideboard'): { readyC
   );
 }
 
+/** Where ready rows go in a deck list, on top of the active sort. */
+export type ReadyPlacement = 'off' | 'top' | 'bottom';
+
+/**
+ * Stable partition of an already-sorted list: ready items first ('top') or last
+ * ('bottom'), each group keeping its input order. 'off' returns the order unchanged.
+ */
+export function placeReady<T extends { id: string }>(items: T[], readyIds: ReadonlySet<string>, placement: ReadyPlacement): T[] {
+  if (placement === 'off') return [...items];
+  const ready = items.filter((i) => readyIds.has(i.id));
+  const rest = items.filter((i) => !readyIds.has(i.id));
+  return placement === 'top' ? [...ready, ...rest] : [...rest, ...ready];
+}
+
+/** Toggle cycle for the deck-list button: off → top → bottom → off. */
+export function nextReadyPlacement(placement: ReadyPlacement): ReadyPlacement {
+  return placement === 'off' ? 'top' : placement === 'top' ? 'bottom' : 'off';
+}
+
 // ─── Totals ───────────────────────────────────────────────────────────────────
 
 /** Sum of all card counts in the main deck (leader/base not included). */
