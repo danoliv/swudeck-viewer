@@ -23,6 +23,7 @@ export interface CardData {
   id?: string;
   Number?: string | number;
   Name?: string;
+  Subtitle?: string;
   Type?: string;
   Aspects?: StringListEntry[];
   Traits?: StringListEntry[];

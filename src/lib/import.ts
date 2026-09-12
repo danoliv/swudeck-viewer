@@ -57,19 +57,55 @@ export interface MeleeParseResult {
   unmatchedLines: string[];
 }
 
-const COUNT_LINE = /^(\d+)x?\s+(.+)$/i;
+const COUNT_LINE = /^(\d+)x?(?:\s*\|\s*|\s+)(.+)$/i;
 const LEADER_LINE = /^leader:\s*(.+)$/i;
 const BASE_LINE = /^base:\s*(.+)$/i;
-const SIDEBOARD_LINE = /^sideboard:?\s*$/i;
+/** Section headers, e.g. "Sideboard:" or Melee's bare "Leader" / "Base" / "MainDeck" / "Sideboard". */
+const SECTION_LINE = /^(leader|base|main\s*deck|deck|sideboard)\s*:?\s*(?:\(\d+\))?$/i;
 
-/** Case-insensitive Name -> CardData lookup; later entries (newer sets) win. */
-function buildNameIndex(cards: CardData[]): Map<string, CardData> {
-  const index = new Map<string, CardData>();
+type Section = 'leader' | 'base' | 'deck' | 'sideboard';
+
+/** Case-insensitive Name -> printings lookup, in set order (newest last). */
+function buildNameIndex(cards: CardData[]): Map<string, CardData[]> {
+  const index = new Map<string, CardData[]>();
   for (const card of cards) {
     if (!card.Name) continue;
-    index.set(card.Name.toLowerCase(), card);
+    const key = card.Name.toLowerCase();
+    const list = index.get(key);
+    if (list) list.push(card);
+    else index.set(key, [card]);
   }
   return index;
+}
+
+function isType(card: CardData, type: string): boolean {
+  return String(card.Type ?? '').toLowerCase() === type;
+}
+
+/**
+ * Resolve "Name" or "Name | Subtitle" to a card. Narrows by subtitle (when
+ * given) and by the section's expected type (Leader / Base / neither), but
+ * falls back to looser matches rather than failing. Newest printing wins.
+ */
+function resolveCard(index: Map<string, CardData[]>, rawName: string, section: Section): CardData | undefined {
+  const [name, ...rest] = rawName.split('|').map((part) => part.trim());
+  let candidates = index.get(name.toLowerCase()) ?? [];
+  if (!candidates.length) return undefined;
+
+  const subtitle = rest.join(' | ').toLowerCase();
+  if (subtitle) {
+    const bySubtitle = candidates.filter((c) => String(c.Subtitle ?? '').toLowerCase() === subtitle);
+    if (bySubtitle.length) candidates = bySubtitle;
+  }
+
+  const byType = candidates.filter((c) => {
+    if (section === 'leader') return isType(c, 'leader');
+    if (section === 'base') return isType(c, 'base');
+    return !isType(c, 'leader') && !isType(c, 'base');
+  });
+  if (byType.length) candidates = byType;
+
+  return candidates[candidates.length - 1];
 }
 
 function addCard(list: DeckCard[], id: string, count: number): void {
@@ -82,19 +118,22 @@ function addCard(list: DeckCard[], id: string, count: number): void {
 }
 
 /**
- * Parse a pasted Melee-style decklist:
- *   Leader: <name>
- *   Base: <name>
- *   <count> <card name>     (repeatable, main deck)
- *   Sideboard:
- *   <count> <card name>     (repeatable, after a "Sideboard:" line)
+ * Parse a pasted decklist. Two shapes are accepted (and may be mixed):
  *
- * Card names are matched case-insensitively against `cards` (the full,
- * unfiltered card pool). If a name matches multiple printings, the printing
- * from the latest set (last in set order) wins, since `cards` is iterated in
- * set order and later matches overwrite earlier ones in the name index.
- * Count+name lines whose name doesn't resolve to any card are returned in
- * `unmatchedLines` (original line text).
+ * Melee.gg export:            Legacy inline shape:
+ *   Leader                      Leader: <name>
+ *   1 | <name> | <subtitle>     Base: <name>
+ *   Base                        <count> <card name>
+ *   1 | <name>                  Sideboard:
+ *   MainDeck                    <count> <card name>
+ *   3 | <name> | <subtitle>
+ *   Sideboard
+ *   2 | <name>
+ *
+ * Names match case-insensitively against `cards` (the full, unfiltered pool),
+ * narrowed by subtitle and by section type (Leader/Base sections prefer those
+ * types; deck sections exclude them). Among remaining printings the latest set
+ * wins. Unresolved card lines are returned in `unmatchedLines`.
  */
 export function parseMeleeDecklist(text: string, cards: CardData[]): MeleeParseResult {
   const nameIndex = buildNameIndex(cards);
@@ -103,42 +142,44 @@ export function parseMeleeDecklist(text: string, cards: CardData[]): MeleeParseR
   const unmatchedLines: string[] = [];
   let leader: DeckCard | undefined;
   let base: DeckCard | undefined;
-  let inSideboard = false;
+  let section: Section = 'deck';
 
   for (const rawLine of text.split('\n')) {
     const line = rawLine.trim();
     if (!line) continue;
 
-    if (SIDEBOARD_LINE.test(line)) {
-      inSideboard = true;
+    const sectionMatch = line.match(SECTION_LINE);
+    if (sectionMatch) {
+      const header = sectionMatch[1].toLowerCase().replace(/\s+/g, '');
+      section = header === 'leader' || header === 'base' || header === 'sideboard' ? header : 'deck';
       continue;
     }
 
-    const leaderMatch = line.match(LEADER_LINE);
-    if (leaderMatch) {
-      const card = nameIndex.get(leaderMatch[1].trim().toLowerCase());
-      if (card?.id) leader = { id: card.id, count: 1 };
-      else unmatchedLines.push(line);
-      continue;
-    }
-
-    const baseMatch = line.match(BASE_LINE);
-    if (baseMatch) {
-      const card = nameIndex.get(baseMatch[1].trim().toLowerCase());
-      if (card?.id) base = { id: card.id, count: 1 };
-      else unmatchedLines.push(line);
+    const inlineMatch = line.match(LEADER_LINE) ?? line.match(BASE_LINE);
+    if (inlineMatch) {
+      const target: Section = LEADER_LINE.test(line) ? 'leader' : 'base';
+      const card = resolveCard(nameIndex, inlineMatch[1], target);
+      if (card?.id) {
+        if (target === 'leader') leader = { id: card.id, count: 1 };
+        else base = { id: card.id, count: 1 };
+      } else {
+        unmatchedLines.push(line);
+      }
       continue;
     }
 
     const countMatch = line.match(COUNT_LINE);
     if (countMatch) {
       const count = parseInt(countMatch[1], 10);
-      const name = countMatch[2].trim();
-      const card = nameIndex.get(name.toLowerCase());
-      if (card?.id) {
-        addCard(inSideboard ? sideboard : deck, card.id, count);
-      } else {
+      const card = resolveCard(nameIndex, countMatch[2], section);
+      if (!card?.id) {
         unmatchedLines.push(line);
+      } else if (section === 'leader') {
+        leader = { id: card.id, count: 1 };
+      } else if (section === 'base') {
+        base = { id: card.id, count: 1 };
+      } else {
+        addCard(section === 'sideboard' ? sideboard : deck, card.id, count);
       }
       continue;
     }

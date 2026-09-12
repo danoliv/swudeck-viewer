@@ -146,6 +146,55 @@ describe('parseMeleeDecklist', () => {
     expect(unmatchedLines).toEqual(['Leader: Nobody Special']);
   });
 
+  it('parses the Melee.gg export format (bare section headers, pipe-separated name | subtitle)', () => {
+    const cards: CardData[] = [
+      { id: 'LOF_002', Set: 'LOF', Name: 'Mother Talzin', Subtitle: 'Power Through Magick', Type: 'Leader' },
+      { id: 'LOF_029', Set: 'LOF', Name: 'Crystal Caves', Subtitle: 'Ilum', Type: 'Base' },
+      { id: 'LOF_031', Set: 'LOF', Name: 'Karis', Subtitle: "We Don't Like Strangers", Type: 'Unit' },
+      { id: 'LOF_059', Set: 'LOF', Name: 'Nightsister Warrior', Type: 'Unit' },
+      { id: 'TS26_26', Set: 'TS26', Name: 'Mother Talzin', Subtitle: 'Stealing the Spirit', Type: 'Unit' },
+      { id: 'SEC_213', Set: 'SEC', Name: 'X-Wing', Type: 'Unit' },
+    ];
+    const text = [
+      'Leader',
+      '1 | Mother Talzin | Power Through Magick',
+      '',
+      'Base',
+      '1 | Crystal Caves',
+      '',
+      'MainDeck',
+      "3 | Karis | We Don't Like Strangers",
+      '2 | Nightsister Warrior',
+      '3 X-Wing',
+      '',
+      'Sideboard',
+      '1 | Mother Talzin | Stealing the Spirit',
+    ].join('\n');
+
+    const { deckData, unmatchedLines } = parseMeleeDecklist(text, cards);
+
+    expect(unmatchedLines).toEqual([]);
+    // The newer TS26 unit shares the name; subtitle + section pick the LOF leader.
+    expect(deckData.leader).toEqual({ id: 'LOF_002', count: 1 });
+    expect(deckData.base).toEqual({ id: 'LOF_029', count: 1 });
+    expect(deckData.deck).toEqual([
+      { id: 'LOF_031', count: 3 },
+      { id: 'LOF_059', count: 2 },
+      { id: 'SEC_213', count: 3 },
+    ]);
+    expect(deckData.sideboard).toEqual([{ id: 'TS26_26', count: 1 }]);
+  });
+
+  it('prefers a Leader printing in the Leader section even without a subtitle', () => {
+    const cards: CardData[] = [
+      { id: 'LOF_002', Set: 'LOF', Name: 'Mother Talzin', Type: 'Leader' },
+      { id: 'TS26_26', Set: 'TS26', Name: 'Mother Talzin', Type: 'Unit' },
+    ];
+    const { deckData } = parseMeleeDecklist('Leader\n1 | Mother Talzin\nMainDeck\n2 | Mother Talzin', cards);
+    expect(deckData.leader).toEqual({ id: 'LOF_002', count: 1 });
+    expect(deckData.deck).toEqual([{ id: 'TS26_26', count: 2 }]);
+  });
+
   it('ignores blank lines and lines with no recognizable shape', () => {
     const { deckData, unmatchedLines } = parseMeleeDecklist('\n\n   \nDeck Name: Some Deck\n3 Wampa', CARDS);
     expect(unmatchedLines).toEqual([]);

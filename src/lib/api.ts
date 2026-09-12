@@ -10,14 +10,13 @@
 export const PROXY = 'https://api.allorigins.win/raw?url=';
 export const TIMEOUT_MS = 10_000;
 
-// Ordered list of CORS proxies to attempt. `null` means direct fetch.
+// Ordered list of CORS proxies to attempt. AllOrigins first: it's the only one
+// still answering reliably. thingproxy.freeboard.io and cors.bridged.cc no longer
+// resolve, and corsproxy.io now rejects keyless requests (403).
 const PROXY_LIST: Array<string | null> = [
-  'https://api.codetabs.com/v1/proxy?quest=',
-  'https://thingproxy.freeboard.io/fetch/',
-  'https://cors.bridged.cc/',
-  'https://corsproxy.io/?',
   'https://api.allorigins.win/raw?url=',
   'https://api.allorigins.win/get?url=',
+  'https://api.codetabs.com/v1/proxy?quest=',
 ];
 
 function isLocalHost(): boolean {
@@ -30,8 +29,6 @@ function buildProxyUrl(proxy: string | null, targetUrl: string): string {
   if (!proxy) return targetUrl;
   if (proxy.includes('allorigins')) return `${proxy}${encodeURIComponent(targetUrl)}`;
   if (proxy.includes('codetabs')) return `${proxy}${targetUrl}`;
-  if (proxy.includes('corsproxy.io')) return `${proxy}${encodeURIComponent(targetUrl)}`;
-  if (proxy.includes('bridged.cc')) return `${proxy}${targetUrl}`;
   if (proxy.endsWith('/fetch/') || proxy.endsWith('/')) return `${proxy}${targetUrl}`;
   return `${proxy}${encodeURIComponent(targetUrl)}`;
 }
