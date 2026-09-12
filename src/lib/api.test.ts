@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
-import { fetchUsingExternalProxy, fetchWithRetry, PROXY, TIMEOUT_MS } from './api';
+import { fetchUsingExternalProxy, fetchWithRetry, swudbEdgeFunctionUrl, PROXY, TIMEOUT_MS } from './api';
 
 // jest-fetch-mock is enabled globally via test-setup.js
 // `fetch` is available as a mock.
@@ -143,3 +143,44 @@ describe('fetchWithRetry', () => {
   });
 });
 
+
+describe('swudbEdgeFunctionUrl', () => {
+  const SUPABASE = 'https://proj.supabase.co';
+
+  it('maps a SWUDB deck-JSON URL to the swudb-deck edge function', () => {
+    expect(swudbEdgeFunctionUrl('https://swudb.com/api/getDeckJson/kSygLqrEFL', `${SUPABASE}/`))
+      .toBe(`${SUPABASE}/functions/v1/swudb-deck?id=kSygLqrEFL`);
+  });
+
+  it('returns null for non-deck URLs or when Supabase is not configured', () => {
+    expect(swudbEdgeFunctionUrl('https://example.com/data.json', SUPABASE)).toBeNull();
+    expect(swudbEdgeFunctionUrl('https://swudb.com/api/getDeckJson/../secret', SUPABASE)).toBeNull();
+    expect(swudbEdgeFunctionUrl('https://swudb.com/api/getDeckJson/abc123', '')).toBeNull();
+  });
+});
+
+describe('fetchWithRetry via the swudb-deck edge function', () => {
+  afterEach(() => vi.unstubAllEnvs());
+
+  it('uses the edge function first for SWUDB deck URLs when Supabase is configured', async () => {
+    vi.stubEnv('VITE_SUPABASE_URL', 'https://proj.supabase.co');
+    (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify({ deck: [] }));
+
+    const result = await fetchWithRetry('https://swudb.com/api/getDeckJson/abc123', 1);
+
+    expect(result).toEqual({ deck: [] });
+    expect((fetch as ReturnType<typeof vi.fn>).mock.calls[0][0]).toBe('https://proj.supabase.co/functions/v1/swudb-deck?id=abc123');
+  });
+
+  it('falls back to the normal fetch chain when the edge function fails', async () => {
+    vi.stubEnv('VITE_SUPABASE_URL', 'https://proj.supabase.co');
+    (fetch as ReturnType<typeof vi.fn>)
+      .mockResponseOnce('', { status: 502 })
+      .mockResponseOnce(JSON.stringify({ deck: [{ id: 'SOR_001' }] }));
+
+    const result = await fetchWithRetry('https://swudb.com/api/getDeckJson/abc123', 1);
+
+    expect(result).toEqual({ deck: [{ id: 'SOR_001' }] });
+    expect((fetch as ReturnType<typeof vi.fn>).mock.calls[1][0]).toBe('https://swudb.com/api/getDeckJson/abc123');
+  });
+});

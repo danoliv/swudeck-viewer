@@ -19,6 +19,36 @@ const PROXY_LIST: Array<string | null> = [
   'https://api.codetabs.com/v1/proxy?quest=',
 ];
 
+const SWUDB_DECK_URL = /^https:\/\/swudb\.com\/api\/getDeckJson\/([A-Za-z0-9_-]{1,64})$/;
+
+/**
+ * URL of our own Supabase Edge Function (supabase/functions/swudb-deck) for a
+ * SWUDB deck-JSON target, or null when the target isn't a deck URL or the
+ * Supabase backend isn't configured. Preferred over the free CORS proxies.
+ */
+export function swudbEdgeFunctionUrl(targetUrl: string, supabaseUrl = import.meta.env?.VITE_SUPABASE_URL as string | undefined): string | null {
+  const match = targetUrl.match(SWUDB_DECK_URL);
+  if (!match || !supabaseUrl) return null;
+  return `${supabaseUrl.replace(/\/+$/, '')}/functions/v1/swudb-deck?id=${match[1]}`;
+}
+
+/** Try the edge function; resolves to undefined (never throws) so callers can fall back to proxies. */
+async function tryEdgeFunction(targetUrl: string): Promise<unknown> {
+  const edgeUrl = swudbEdgeFunctionUrl(targetUrl);
+  if (!edgeUrl) return undefined;
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
+    const response = await fetch(edgeUrl, { signal: controller.signal, cache: 'no-cache' });
+    clearTimeout(timeoutId);
+    if (!response.ok) throw new Error(`Edge function HTTP ${response.status}`);
+    return await response.json();
+  } catch (err) {
+    console.warn('swudb-deck edge function failed, falling back to proxies:', err instanceof Error ? err.message : err);
+    return undefined;
+  }
+}
+
 function isLocalHost(): boolean {
   if (typeof window === 'undefined') return false;
   const h = window.location.hostname;
@@ -72,6 +102,9 @@ export async function fetchUsingExternalProxy(
   retries = 3,
   bypassCache = false,
 ): Promise<unknown> {
+  const viaEdge = await tryEdgeFunction(targetUrl);
+  if (viaEdge !== undefined) return viaEdge;
+
   const build = (u: string) => `${PROXY}${encodeURIComponent(u)}`;
   let lastError: Error | null = null;
 
@@ -109,6 +142,7 @@ export async function fetchUsingExternalProxy(
 /**
  * Fetch `url` with automatic proxy fallback.
  *
+ * SWUDB deck URLs go through our Supabase Edge Function first when configured.
  * On localhost: tries direct fetch first, then CORS proxies.
  * On other origins: tries CORS proxies only.
  */
@@ -117,6 +151,9 @@ export async function fetchWithRetry(
   retries = 3,
   bypassCache = false,
 ): Promise<unknown> {
+  const viaEdge = await tryEdgeFunction(url);
+  if (viaEdge !== undefined) return viaEdge;
+
   const proxies: Array<string | null> = [
     ...(isLocalHost() ? [null] : []),
     ...PROXY_LIST,
