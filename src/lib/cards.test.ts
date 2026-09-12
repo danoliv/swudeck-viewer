@@ -413,6 +413,20 @@ describe('buildDeckRowHTML', () => {
     expect(html).toMatch(/data-action="set-main-count"[^>]*data-count="2" class="quantity-button active"/);
     expect(html).toMatch(/data-action="set-side-count"[^>]*data-count="1" class="quantity-button active"/);
   });
+
+  it('renders a ready toggle scoped to the zone, not pressed by default', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 1, 'sideboard');
+    expect(html).toMatch(/data-action="toggle-ready"[^>]*data-card-id="SOR_001"[^>]*data-zone="sideboard"/);
+    expect(html).toContain('aria-pressed="false"');
+    expect(html).not.toContain('card-row-wrap ready');
+  });
+
+  it('marks the row as ready when ready is true, without inline handlers', () => {
+    const html = buildDeckRowHTML('SOR_001', card1, 2, 0, 'deck', false, undefined, false, [], false, true);
+    expect(html).toContain('class="card-row-wrap ready"');
+    expect(html).toContain('aria-pressed="true"');
+    expect(html).not.toContain('onclick');
+  });
 });
 
 // ─── buildCardDetailHTML ───────────────────────────────────────────────────────

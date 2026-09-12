@@ -23,6 +23,8 @@ import {
   getTotalCount,
   setCombinedCardCount,
   swapCard,
+  toggleCardReady,
+  countReady,
 } from '../lib/builder-state';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
@@ -159,6 +161,12 @@ function sortEntries(entries: CardEntry[], sortKey: CardSortKey, dir: SortDirect
   );
 }
 
+/** "· Ready X/N" suffix for a zone header; empty until at least one row is marked. */
+function readyCounterHTML(zone: 'deck' | 'sideboard'): string {
+  const { readyCards, totalCards } = countReady(deck, zone);
+  return readyCards ? ` <span class="ready-counter">· Ready ${readyCards}/${totalCards}</span>` : '';
+}
+
 /**
  * Render the card rows for one deck-list zone (main deck or sideboard).
  * - sort = 'type': grouped sections (Ground Units, Space Units, Event,
@@ -167,6 +175,7 @@ function sortEntries(entries: CardEntry[], sortKey: CardSortKey, dir: SortDirect
  */
 function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDirection, zone: 'deck' | 'sideboard'): string {
   if (!entries.length) return '';
+  const readyIds = new Set((deck[zone] ?? []).filter((c) => c.ready).map((c) => c.id));
 
   if (sortKey === 'type') {
     const strategy = registry.get('type');
@@ -188,7 +197,7 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
         const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
         const alternatives = expanded ? findAlternatives(entry.id, entry.data, alternativesPool(), currentStatsLookup) : [];
         const showAllAlternatives = expandedAlternatives.has(`${zone}:${entry.id}`);
-        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives);
+        html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives, readyIds.has(entry.id));
       }
       html += '</div></div>';
     }
@@ -202,7 +211,7 @@ function renderEntryRows(entries: CardEntry[], sortKey: CardSortKey, dir: SortDi
     const stats = getCardStats(deck.leader?.id, deck.metadata?.format, entry.id);
     const alternatives = expanded ? findAlternatives(entry.id, entry.data, alternativesPool(), currentStatsLookup) : [];
     const showAllAlternatives = expandedAlternatives.has(`${zone}:${entry.id}`);
-    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives);
+    html += buildDeckRowHTML(entry.id, entry.data, entry.count, entry.sideboardCount, zone, expanded, stats, popupOpen, alternatives, showAllAlternatives, readyIds.has(entry.id));
   }
   html += '</div>';
   return html;
@@ -555,7 +564,7 @@ function renderLeft(): string {
       <input type="text" id="deckName" placeholder="Unnamed Deck" value="${escapeAttr(name)}">
     </div>
     <div class="deck-total-row">
-      <div class="deck-total">Total: ${total} Cards</div>
+      <div class="deck-total">Total: ${total} Cards${readyCounterHTML('deck')}</div>
     </div>
   `;
 
@@ -633,7 +642,7 @@ function renderDeckList(): string {
 
   // Sideboard is always shown as a separate section, even when empty.
   const sideboardTotal = sideboardEntries.reduce((sum, e) => sum + e.sideboardCount, 0);
-  html += `<div class="set-section sideboard-section"><div class="set-title">Sideboard (${sideboardTotal})</div>`;
+  html += `<div class="set-section sideboard-section"><div class="set-title">Sideboard (${sideboardTotal})${readyCounterHTML('sideboard')}</div>`;
   html += renderSortBar('sideboard', sideboardSort, sideboardSortDir);
   if (sideboardEntries.length) {
     html += renderEntryRows(sideboardEntries, sideboardSort, sideboardSortDir, 'sideboard');
@@ -1222,6 +1231,13 @@ document.addEventListener('click', (e) => {
       const isOpen = openQtyPopup?.zone === zone && openQtyPopup?.cardId === cardId;
       openQtyPopup = isOpen ? null : { zone, cardId };
       renderQtyPopupZone(zone);
+      return;
+    }
+
+    case 'toggle-ready': {
+      const zone = actionEl.dataset['zone'] as 'deck' | 'sideboard' | undefined;
+      if (!cardId || (zone !== 'deck' && zone !== 'sideboard')) return;
+      updateDeck(toggleCardReady(deck, cardId, zone));
       return;
     }
 

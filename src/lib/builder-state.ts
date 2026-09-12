@@ -102,6 +102,10 @@ export function setCardCount(
   const key = sideboard ? 'sideboard' : 'deck';
   const list = deck[key] ?? [];
 
+  // Unchanged count: keep the entry (and its ready flag) as is.
+  const existing = list.find((c) => c.id === cardId);
+  if (existing && count > 0 && (existing.count ?? 1) === count) return deck;
+
   const next = list.filter((c) => c.id !== cardId);
   if (count > 0) {
     next.push({ id: cardId, count });
@@ -182,6 +186,41 @@ export function swapCard(deck: DeckData, fromCardId: string, toCardId: string): 
     deck: swapZone(deck.deck),
     sideboard: deck.sideboard ? swapZone(deck.sideboard) : deck.sideboard,
   };
+}
+
+// ─── Ready flag ───────────────────────────────────────────────────────────────
+
+/**
+ * Return a new deck with `cardId`'s `ready` mark flipped in one zone. The mark is
+ * per zone (main and sideboard rows are independent) and is stored only when true.
+ * A no-op when the card isn't in that zone.
+ */
+export function toggleCardReady(deck: DeckData, cardId: string, zone: 'deck' | 'sideboard'): DeckData {
+  const list = deck[zone] ?? [];
+  if (!list.some((c) => c.id === cardId)) return deck;
+
+  const next = list.map((c) => {
+    if (c.id !== cardId) return c;
+    if (c.ready) {
+      const { ready: _ready, ...rest } = c;
+      return rest;
+    }
+    return { ...c, ready: true };
+  });
+  return { ...deck, [zone]: next };
+}
+
+/** Copies marked ready vs. all copies in one zone. */
+export function countReady(deck: DeckData, zone: 'deck' | 'sideboard'): { readyCards: number; totalCards: number } {
+  return (deck[zone] ?? []).reduce(
+    (acc, c) => {
+      const n = c.count ?? 1;
+      acc.totalCards += n;
+      if (c.ready) acc.readyCards += n;
+      return acc;
+    },
+    { readyCards: 0, totalCards: 0 },
+  );
 }
 
 // ─── Totals ───────────────────────────────────────────────────────────────────

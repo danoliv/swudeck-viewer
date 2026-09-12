@@ -12,6 +12,8 @@ import {
   getTotalCount,
   setCombinedCardCount,
   swapCard,
+  toggleCardReady,
+  countReady,
 } from './builder-state';
 import type { DeckData } from './types';
 
@@ -340,5 +342,110 @@ describe('swapCard', () => {
     const deck = setCardCount(createEmptyDeck(), 'SEC_213', 2);
     swapCard(deck, 'SEC_213', 'SEC_214');
     expect(deck.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
+  });
+});
+
+// ─── ready flag ───────────────────────────────────────────────────────────────
+
+describe('toggleCardReady', () => {
+  const base: DeckData = {
+    deck: [{ id: 'SEC_213', count: 2 }, { id: 'SOR_001', count: 1 }],
+    sideboard: [{ id: 'SEC_213', count: 1 }],
+  };
+
+  it('marks a main-deck row as ready, then unmarks it', () => {
+    const on = toggleCardReady(base, 'SEC_213', 'deck');
+    expect(on.deck).toEqual([{ id: 'SEC_213', count: 2, ready: true }, { id: 'SOR_001', count: 1 }]);
+    expect(on.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
+
+    const off = toggleCardReady(on, 'SEC_213', 'deck');
+    expect(off.deck).toEqual([{ id: 'SEC_213', count: 2 }, { id: 'SOR_001', count: 1 }]);
+  });
+
+  it('marks only the sideboard row when zone is sideboard', () => {
+    const next = toggleCardReady(base, 'SEC_213', 'sideboard');
+    expect(next.sideboard).toEqual([{ id: 'SEC_213', count: 1, ready: true }]);
+    expect(next.deck[0]).toEqual({ id: 'SEC_213', count: 2 });
+  });
+
+  it('is a no-op when the card is not in that zone', () => {
+    expect(toggleCardReady(base, 'SOR_001', 'sideboard')).toEqual(base);
+    expect(toggleCardReady(base, 'JTL_001', 'deck')).toEqual(base);
+  });
+
+  it('does not mutate the input deck', () => {
+    const copy = JSON.parse(JSON.stringify(base));
+    toggleCardReady(base, 'SEC_213', 'deck');
+    expect(base).toEqual(copy);
+  });
+});
+
+describe('ready flag and count changes', () => {
+  it('setCardCount keeps the flag when the count is unchanged', () => {
+    const deck: DeckData = { deck: [{ id: 'SEC_213', count: 2, ready: true }] };
+    expect(setCardCount(deck, 'SEC_213', 2).deck).toEqual([{ id: 'SEC_213', count: 2, ready: true }]);
+  });
+
+  it('setCardCount clears the flag when the count changes', () => {
+    const deck: DeckData = { deck: [{ id: 'SEC_213', count: 2, ready: true }] };
+    expect(setCardCount(deck, 'SEC_213', 3).deck).toEqual([{ id: 'SEC_213', count: 3 }]);
+    expect(setCardCount(deck, 'SEC_213', 0).deck).toEqual([]);
+  });
+
+  it('addCard / removeCard clear the flag', () => {
+    const deck: DeckData = { deck: [{ id: 'SEC_213', count: 2, ready: true }] };
+    expect(addCard(deck, 'SEC_213').deck).toEqual([{ id: 'SEC_213', count: 3 }]);
+    expect(removeCard(deck, 'SEC_213').deck).toEqual([{ id: 'SEC_213', count: 1 }]);
+  });
+
+  it('setCombinedCardCount clears the changed zone and keeps an unchanged other zone', () => {
+    const deck: DeckData = {
+      deck: [{ id: 'SEC_213', count: 1, ready: true }],
+      sideboard: [{ id: 'SEC_213', count: 1, ready: true }],
+    };
+    const next = setCombinedCardCount(deck, 'SEC_213', 'deck', 2);
+    expect(next.deck).toEqual([{ id: 'SEC_213', count: 2 }]);
+    expect(next.sideboard).toEqual([{ id: 'SEC_213', count: 1, ready: true }]);
+  });
+
+  it('setCombinedCardCount clears the other zone when clamping reduces it', () => {
+    const deck: DeckData = {
+      deck: [{ id: 'SEC_213', count: 1 }],
+      sideboard: [{ id: 'SEC_213', count: 2, ready: true }],
+    };
+    const next = setCombinedCardCount(deck, 'SEC_213', 'deck', 2);
+    expect(next.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
+  });
+
+  it('swapCard does not carry the flag to the swapped-in card', () => {
+    const deck: DeckData = { deck: [{ id: 'SEC_213', count: 2, ready: true }] };
+    expect(swapCard(deck, 'SEC_213', 'SOR_001').deck).toEqual([{ id: 'SOR_001', count: 2 }]);
+  });
+
+  it('survives an encode/decode round-trip', () => {
+    const deck: DeckData = {
+      deck: [{ id: 'SEC_213', count: 2, ready: true }],
+      sideboard: [{ id: 'SOR_001', count: 1, ready: true }],
+    };
+    expect(decodeDeckState(encodeDeckState(deck))).toEqual(deck);
+  });
+});
+
+describe('countReady', () => {
+  const deck: DeckData = {
+    deck: [{ id: 'A_001', count: 3, ready: true }, { id: 'A_002', count: 2 }, { id: 'A_003', count: 1, ready: true }],
+    sideboard: [{ id: 'A_004', count: 2, ready: true }],
+  };
+
+  it('counts ready copies and total copies in the main deck', () => {
+    expect(countReady(deck, 'deck')).toEqual({ readyCards: 4, totalCards: 6 });
+  });
+
+  it('counts the sideboard separately', () => {
+    expect(countReady(deck, 'sideboard')).toEqual({ readyCards: 2, totalCards: 2 });
+  });
+
+  it('handles an empty or missing zone', () => {
+    expect(countReady(createEmptyDeck(), 'sideboard')).toEqual({ readyCards: 0, totalCards: 0 });
   });
 });

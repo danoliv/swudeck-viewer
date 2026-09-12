@@ -5,6 +5,8 @@ import type { Format } from './legal';
 export interface DeckCard {
   id: string;
   count?: number;
+  /** Builder-only mark: this row is decided and physically pulled. Omitted when false; cleared when the count changes. */
+  ready?: boolean;
 }
 
 export interface DeckMetadata {

@@ -635,13 +635,15 @@ export function buildDeckRowHTML(
   popupOpen = false,
   alternatives: CardAlternative[] = [],
   showAllAlternatives = false,
+  ready = false,
 ): string {
   return `
-        <div class="card-row-wrap">
+        <div class="card-row-wrap${ready ? ' ready' : ''}">
             <div class="card-row${expanded ? ' expanded' : ''}" data-card-id="${cardId}">
                 ${statsBarsHTML(stats)}
                 ${quantityControlHTML(cardId, count, sideboardCount, zone, popupOpen)}
                 ${cardRowDetailsHTML(cardId, cardData, zone, stats)}
+                <button type="button" class="ready-toggle" data-action="toggle-ready" data-card-id="${cardId}" data-zone="${zone}" aria-pressed="${ready}" title="${ready ? 'Ready — click to unmark' : 'Mark as ready'}">✓</button>
             </div>
             ${popupOpen ? quantityPopupHTML(cardId, count, sideboardCount) : ''}
         </div>

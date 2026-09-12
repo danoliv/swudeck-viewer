@@ -80,3 +80,20 @@ describe('exportToSwudbJson', () => {
     expect(json.base).toBeUndefined();
   });
 });
+
+describe('ready flag is not exported', () => {
+  const READY_DECK: DeckData = {
+    ...DECK,
+    deck: DECK.deck.map((c) => ({ ...c, ready: true })),
+    sideboard: (DECK.sideboard ?? []).map((c) => ({ ...c, ready: true })),
+  };
+
+  it('exportToSwudbJson drops ready', () => {
+    expect(exportToSwudbJson(READY_DECK)).not.toContain('ready');
+    expect(exportToSwudbJson(READY_DECK)).toEqual(exportToSwudbJson(DECK));
+  });
+
+  it('exportToMeleeText is unchanged by ready', () => {
+    expect(exportToMeleeText(READY_DECK, CARDS)).toEqual(exportToMeleeText(DECK, CARDS));
+  });
+});
