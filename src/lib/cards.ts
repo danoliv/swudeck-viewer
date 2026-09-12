@@ -318,7 +318,7 @@ export function buildCardHTML(
                 <span>${formattedId}</span>
                 ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
             </div>
-            ${countText ? `<div class="card-counts" style="background: #f0f0f0; padding: 4px; margin: 5px 0; border-radius: 3px; font-size: 0.9em; font-weight: bold; text-align: center;">${countText}</div>` : ''}
+            ${countText ? `<div class="card-counts">${countText}</div>` : ''}
             <div class="card-name">${cardData.Name ?? cardId}</div>
             ${aspects.length ? `
                 <div class="aspects">
@@ -700,7 +700,7 @@ export function buildComparisonCardHTML(
                 <span>${formattedId}</span>
                 ${isDoubleSided ? '<button class="flip-button" onclick="event.stopPropagation(); this.closest(\'.card\').classList.toggle(\'flipped\')">Flip Card</button>' : ''}
             </div>
-            ${countText ? `<div class="card-counts" style="background: #f0f0f0; padding: 4px; margin: 5px 0; border-radius: 3px; font-size: 0.9em; font-weight: bold; text-align: center;">${countText}</div>` : ''}
+            ${countText ? `<div class="card-counts">${countText}</div>` : ''}
             <div class="card-name">${cardData.Name ?? cardId}</div>
             ${aspects.length ? `
                 <div class="aspects">
