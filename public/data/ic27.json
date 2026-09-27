@@ -8,20 +8,12 @@
       "Subtitle": "We Are the Spark",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "RESISTANCE"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "RESISTANCE",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -47,23 +39,13 @@
       "Subtitle": "For Light and Life",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Command",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -92,20 +74,12 @@
       "Subtitle": "Compensated if He Dies",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        },
-        {
-          "S": "BOUNTY HUNTER"
-        }
+        "UNDERWORLD",
+        "BOUNTY HUNTER"
       ],
       "Arenas": [
         "Ground"
@@ -131,23 +105,13 @@
       "Subtitle": "Unwavering Belief",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "CLONE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -177,17 +141,11 @@
       "Name": "Cunning Ploy",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Cunning",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "TRICK"
-        }
+        "TRICK"
       ],
       "cid": "",
       "Cost": "4",
@@ -208,20 +166,12 @@
       "Subtitle": "Listen to Me Carefully",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Vigilance",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "IMPERIAL"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "IMPERIAL",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -250,23 +200,13 @@
       "Subtitle": "How the Mighty Will Fall",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Aggression",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "IMPERIAL"
-        },
-        {
-          "S": "INQUISITOR"
-        }
+        "FORCE",
+        "IMPERIAL",
+        "INQUISITOR"
       ],
       "Arenas": [
         "Ground"
@@ -295,17 +235,11 @@
       "Name": "I've Got A Bad Feeling",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Cunning",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "",
       "Cost": "4",
@@ -326,23 +260,13 @@
       "Subtitle": "Unwavering Belief",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Command",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"

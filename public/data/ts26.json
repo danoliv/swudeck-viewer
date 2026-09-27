@@ -1,5 +1,5 @@
 {
-  "total_cards": 84,
+  "total_cards": 88,
   "data": [
     {
       "Set": "TS26",
@@ -7,23 +7,13 @@
       "Name": "501st Veteran",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Aggression"
-        }
+        "Vigilance",
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "CLONE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -47,7 +37,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/20.png",
       "tcgplayerId": "686460",
-      "LowPrice": "0.35"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -55,20 +45,16 @@
       "Name": "Abandoned the Order",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Vigilance"
-        }
+        "Cunning",
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "LEARNED"
-        }
+        "LEARNED"
       ],
       "cid": "8767791219",
       "Cost": "4",
+      "Power": "1",
+      "HP": "1",
       "FrontText": "Attached unit loses the Jedi trait and gains Restore 1.\nWhen Played: You may return a non-leader unit to its owner's hand.",
       "DoubleSided": false,
       "Rarity": "Uncommon",
@@ -91,17 +77,11 @@
       "Subtitle": "I Have an Idea",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Cunning",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        }
+        "FORCE"
       ],
       "Arenas": [
         "Ground"
@@ -134,40 +114,30 @@
       "Name": "Ahsoka's Lightsabers",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Cunning",
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "ITEM"
-        },
-        {
-          "S": "WEAPON"
-        },
-        {
-          "S": "LIGHTSABER"
-        }
+        "ITEM",
+        "WEAPON",
+        "LIGHTSABER"
       ],
       "cid": "6723800914",
       "Cost": "4",
+      "Power": "2",
+      "HP": "3",
       "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: “On Attack/When Defeated: You may give a Shield token to an enemy unit. If you do, the next event you play this phase costs 2 less.”",
       "DoubleSided": false,
       "Rarity": "Rare",
       "Unique": true,
       "Artist": "Lucia Massucco-Aguilar",
       "VariantType": "Normal",
-      "MarketPrice": "1.89",
+      "MarketPrice": "1.88",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/35.png",
       "tcgplayerId": "679504",
-      "LowPrice": "1.47"
+      "LowPrice": "1.46"
     },
     {
       "Set": "TS26",
@@ -176,23 +146,13 @@
       "Subtitle": "Protect Her At All Costs",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -213,11 +173,11 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.62",
+      "MarketPrice": "0.59",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/2.png",
       "tcgplayerId": "679143",
-      "LowPrice": "0.20"
+      "LowPrice": "0.15"
     },
     {
       "Set": "TS26",
@@ -225,14 +185,10 @@
       "Name": "Arena Reek",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "CREATURE"
-        }
+        "CREATURE"
       ],
       "Arenas": [
         "Ground"
@@ -250,11 +206,11 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.44",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/44.png",
       "tcgplayerId": "679512",
-      "LowPrice": "0.40"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -262,14 +218,10 @@
       "Name": "Arms Deal",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "SUPPLY"
-        }
+        "SUPPLY"
       ],
       "cid": "7870233603",
       "Cost": "2",
@@ -279,7 +231,7 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.26",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/68.png",
       "tcgplayerId": "688711",
@@ -292,23 +244,13 @@
       "Subtitle": "Ambitious Apprentice",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "SITH"
-        }
+        "FORCE",
+        "SEPARATIST",
+        "SITH"
       ],
       "Arenas": [
         "Ground"
@@ -329,11 +271,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.66",
+      "MarketPrice": "0.63",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/7.png",
       "tcgplayerId": "679159",
-      "LowPrice": "0.20"
+      "LowPrice": "0.30"
     },
     {
       "Set": "TS26",
@@ -341,23 +283,13 @@
       "Name": "Assault Lander LAAT",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Aggression"
-        }
+        "Command",
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "REPUBLIC",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Ground"
@@ -372,11 +304,11 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "1.09",
+      "MarketPrice": "1.05",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/23.png",
       "tcgplayerId": "679172",
-      "LowPrice": "0.38"
+      "LowPrice": "0.40"
     },
     {
       "Set": "TS26",
@@ -384,14 +316,10 @@
       "Name": "Backed by Black Sun",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "SUPPLY"
-        }
+        "SUPPLY"
       ],
       "cid": "5951272870",
       "Cost": "3",
@@ -401,11 +329,11 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "1.51",
+      "MarketPrice": "1.48",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/70.png",
       "tcgplayerId": "688713",
-      "LowPrice": "1.12"
+      "LowPrice": "1.11"
     },
     {
       "Set": "TS26",
@@ -413,14 +341,10 @@
       "Name": "Backed by the Pykes",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "SUPPLY"
-        }
+        "SUPPLY"
       ],
       "cid": "6707130129",
       "Cost": "3",
@@ -430,11 +354,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.68",
+      "MarketPrice": "0.67",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/58.png",
       "tcgplayerId": "688706",
-      "LowPrice": "0.66"
+      "LowPrice": "0.65"
     },
     {
       "Set": "TS26",
@@ -443,20 +367,12 @@
       "Subtitle": "It's Only a Matter of Time",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -474,11 +390,42 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.36",
+      "MarketPrice": "0.37",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/78.png",
       "tcgplayerId": "679528",
-      "LowPrice": "0.30"
+      "LowPrice": "0.25"
+    },
+    {
+      "Set": "TS26",
+      "Number": "T01",
+      "Name": "Battle Droid",
+      "Type": "Token Unit",
+      "Aspects": [
+        "Villainy"
+      ],
+      "Traits": [
+        "SEPARATIST",
+        "DROID",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "9829774394",
+      "Cost": "0",
+      "Power": "1",
+      "HP": "1",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Eslam AboShady",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T01.png",
+      "LowPrice": "0.00"
     },
     {
       "Set": "TS26",
@@ -487,17 +434,11 @@
       "Subtitle": "The Lawless",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "MANDALORIAN",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -528,14 +469,10 @@
       "Name": "Brothers",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "7421920224",
       "Cost": "3",
@@ -549,7 +486,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/59.png",
       "tcgplayerId": "679522",
-      "LowPrice": "3.00"
+      "LowPrice": "3.02"
     },
     {
       "Set": "TS26",
@@ -558,17 +495,11 @@
       "Subtitle": "Die, Jedi Dogs!",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        }
+        "Vigilance",
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "DROID"
-        }
+        "DROID"
       ],
       "Arenas": [
         "Ground"
@@ -583,7 +514,7 @@
       "Unique": true,
       "Artist": "Miki Montlló",
       "VariantType": "Normal",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/15.png",
       "tcgplayerId": "679168",
@@ -596,23 +527,13 @@
       "Subtitle": "Search the Tunnels",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "CLONE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -630,11 +551,11 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "2.29",
+      "MarketPrice": "2.44",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/39.png",
       "tcgplayerId": "686464",
-      "LowPrice": "2.29"
+      "LowPrice": "2.44"
     },
     {
       "Set": "TS26",
@@ -642,24 +563,22 @@
       "Name": "Champion",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "7640352104",
       "Cost": "5",
+      "Power": "4",
+      "HP": "4",
       "FrontText": "",
       "DoubleSided": false,
       "Rarity": "Common",
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/45.png",
       "tcgplayerId": "688698",
@@ -671,20 +590,12 @@
       "Name": "Chaotic Diversion",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Aggression",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        },
-        {
-          "S": "TRICK"
-        }
+        "TACTIC",
+        "TRICK"
       ],
       "cid": "9572287182",
       "Cost": "1",
@@ -694,11 +605,42 @@
       "Unique": false,
       "Artist": "Konstantin Porubov",
       "VariantType": "Normal",
-      "MarketPrice": "1.24",
+      "MarketPrice": "1.32",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/31.png",
       "tcgplayerId": "685547",
-      "LowPrice": "1.14"
+      "LowPrice": "1.13"
+    },
+    {
+      "Set": "TS26",
+      "Number": "T02",
+      "Name": "Clone Trooper",
+      "Type": "Token Unit",
+      "Aspects": [
+        "Heroism"
+      ],
+      "Traits": [
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
+      ],
+      "Arenas": [
+        "Ground"
+      ],
+      "cid": "7569188482",
+      "Cost": "0",
+      "Power": "2",
+      "HP": "2",
+      "FrontText": "",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Eslam AboShady",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "0.00",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T02.png",
+      "LowPrice": "0.00"
     },
     {
       "Set": "TS26",
@@ -707,26 +649,14 @@
       "Subtitle": "Jedi Rescuer",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -744,11 +674,11 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Normal",
-      "MarketPrice": "5.01",
+      "MarketPrice": "4.93",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/19.png",
       "tcgplayerId": "685549",
-      "LowPrice": "2.98"
+      "LowPrice": "2.44"
     },
     {
       "Set": "TS26",
@@ -756,14 +686,10 @@
       "Name": "Coruscanti Spy",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "OFFICIAL"
-        }
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -794,26 +720,14 @@
       "Subtitle": "Offering Aid",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Vigilance",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "SITH"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "FORCE",
+        "SEPARATIST",
+        "SITH",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -834,11 +748,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.70",
+      "MarketPrice": "0.66",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/1.png",
       "tcgplayerId": "679142",
-      "LowPrice": "0.20"
+      "LowPrice": "0.64"
     },
     {
       "Set": "TS26",
@@ -847,26 +761,14 @@
       "Subtitle": "Under a Cloak of Darkness",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Vigilance",
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "SITH"
-        }
+        "FORCE",
+        "SEPARATIST",
+        "SITH"
       ],
       "Arenas": [
         "Ground"
@@ -884,11 +786,11 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "2.66",
+      "MarketPrice": "2.58",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/13.png",
       "tcgplayerId": "679165",
-      "LowPrice": "1.23"
+      "LowPrice": "0.72"
     },
     {
       "Set": "TS26",
@@ -896,17 +798,11 @@
       "Name": "Deployed Droideka",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "DROID"
-        }
+        "SEPARATIST",
+        "DROID"
       ],
       "Arenas": [
         "Ground"
@@ -937,9 +833,7 @@
       "Subtitle": "Serenno",
       "Type": "Base",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "cid": "4631699773",
       "HP": "27",
@@ -949,11 +843,11 @@
       "Unique": false,
       "Artist": "Henning Ludvigsen",
       "VariantType": "Normal",
-      "MarketPrice": "0.65",
+      "MarketPrice": "0.60",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/10.png",
       "tcgplayerId": "688676",
-      "LowPrice": "0.15"
+      "LowPrice": "0.39"
     },
     {
       "Set": "TS26",
@@ -962,23 +856,13 @@
       "Subtitle": "Beautiful and Expensive",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Vigilance",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "SEPARATIST",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Space"
@@ -997,7 +881,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/38.png",
       "tcgplayerId": "688695",
-      "LowPrice": "0.41"
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -1005,14 +889,10 @@
       "Name": "Encircle",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "9368766211",
       "Cost": "5",
@@ -1034,14 +914,10 @@
       "Name": "Evade Arrest",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "TRICK"
-        }
+        "TRICK"
       ],
       "cid": "3505666313",
       "Cost": "3",
@@ -1051,7 +927,7 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.39",
+      "MarketPrice": "0.38",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/82.png",
       "tcgplayerId": "688723",
@@ -1064,9 +940,7 @@
       "Subtitle": "Geonosis",
       "Type": "Base",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "cid": "1546304694",
       "HP": "27",
@@ -1076,7 +950,7 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/11.png",
       "tcgplayerId": "688677",
@@ -1084,18 +958,36 @@
     },
     {
       "Set": "TS26",
+      "Number": "T03",
+      "Name": "Experience",
+      "Type": "Token Upgrade",
+      "Traits": [
+        "LEARNED"
+      ],
+      "cid": "5904064998",
+      "Cost": "0",
+      "Power": "1",
+      "HP": "1",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Reno",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T03.png",
+      "LowPrice": "0.00"
+    },
+    {
+      "Set": "TS26",
       "Number": "84",
       "Name": "Fearless Attack",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Heroism"
-        }
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "5550216396",
       "Cost": "4",
@@ -1117,14 +1009,10 @@
       "Name": "Fervor",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "3800728779",
       "Cost": "5",
@@ -1138,7 +1026,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/72.png",
       "tcgplayerId": "688715",
-      "LowPrice": "0.34"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -1146,31 +1034,27 @@
       "Name": "Fiery Alliance",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Aggression"
-        }
+        "Command",
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "0798937437",
       "Cost": "2",
+      "Power": "2",
+      "HP": "2",
       "FrontText": "When Played: You may deal 1 damage to another friendly unit and attack with it.",
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": false,
       "Artist": "Lenka Šimečková",
       "VariantType": "Normal",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/25.png",
       "tcgplayerId": "688690",
-      "LowPrice": "0.19"
+      "LowPrice": "0.20"
     },
     {
       "Set": "TS26",
@@ -1179,9 +1063,7 @@
       "Subtitle": "Coruscant",
       "Type": "Base",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "cid": "1352374398",
       "HP": "27",
@@ -1191,7 +1073,7 @@
       "Unique": false,
       "Artist": "Adrien Girod",
       "VariantType": "Normal",
-      "MarketPrice": "0.69",
+      "MarketPrice": "0.68",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/9.png",
       "tcgplayerId": "688675",
@@ -1204,26 +1086,14 @@
       "Subtitle": "I Have Proof!",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Cunning",
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "CLONE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "REPUBLIC",
+        "CLONE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -1241,11 +1111,11 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "3.62",
+      "MarketPrice": "3.70",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/34.png",
       "tcgplayerId": "679501",
-      "LowPrice": "3.57"
+      "LowPrice": "3.70"
     },
     {
       "Set": "TS26",
@@ -1254,23 +1124,13 @@
       "Subtitle": "Hondo's Luxury Yacht",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Command",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "UNDERWORLD",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Space"
@@ -1288,7 +1148,7 @@
       ],
       "Artist": "Victor Stoll Toaldo",
       "VariantType": "Normal",
-      "MarketPrice": "0.54",
+      "MarketPrice": "0.49",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/27.png",
       "tcgplayerId": "686461",
@@ -1300,14 +1160,10 @@
       "Name": "Galactic Escalation",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "SUPPLY"
-        }
+        "SUPPLY"
       ],
       "cid": "1590343202",
       "Cost": "2",
@@ -1317,7 +1173,7 @@
       "Unique": false,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.82",
+      "MarketPrice": "0.83",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/56.png",
       "tcgplayerId": "679521",
@@ -1330,23 +1186,13 @@
       "Subtitle": "Sundari Pillager",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Aggression",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "MANDALORIAN",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -1367,11 +1213,11 @@
       ],
       "Artist": "Kevin Sidharta",
       "VariantType": "Normal",
-      "MarketPrice": "3.92",
+      "MarketPrice": "3.86",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/21.png",
       "tcgplayerId": "679170",
-      "LowPrice": "3.14"
+      "LowPrice": "3.10"
     },
     {
       "Set": "TS26",
@@ -1380,20 +1226,12 @@
       "Subtitle": "Crush Them!",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "SEPARATIST",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -1411,11 +1249,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "11.29",
+      "MarketPrice": "8.77",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/50.png",
       "tcgplayerId": "682311",
-      "LowPrice": "8.60"
+      "LowPrice": "12.00"
     },
     {
       "Set": "TS26",
@@ -1424,20 +1262,12 @@
       "Subtitle": "Guarding the Count",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "BOUNTY HUNTER"
-        }
+        "SEPARATIST",
+        "BOUNTY HUNTER"
       ],
       "Arenas": [
         "Ground"
@@ -1455,11 +1285,11 @@
       ],
       "Artist": "Manos Sparakis",
       "VariantType": "Normal",
-      "MarketPrice": "4.77",
+      "MarketPrice": "4.98",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/75.png",
       "tcgplayerId": "688718",
-      "LowPrice": "5.29"
+      "LowPrice": "4.59"
     },
     {
       "Set": "TS26",
@@ -1467,20 +1297,12 @@
       "Name": "Jedi General",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "JEDI"
-        }
+        "FORCE",
+        "REPUBLIC",
+        "JEDI"
       ],
       "Arenas": [
         "Ground"
@@ -1511,23 +1333,13 @@
       "Subtitle": "Refugee Freighter",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        }
+        "Vigilance",
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "REPUBLIC",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Space"
@@ -1545,11 +1357,11 @@
       ],
       "Artist": "Natcha Ngamtweerat",
       "VariantType": "Normal",
-      "MarketPrice": "29.47",
+      "MarketPrice": "30.35",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/18.png",
       "tcgplayerId": "688684",
-      "LowPrice": "29.20"
+      "LowPrice": "32.00"
     },
     {
       "Set": "TS26",
@@ -1558,17 +1370,11 @@
       "Subtitle": "Great King of Toydaria",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        }
+        "Vigilance",
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "OFFICIAL"
-        }
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -1586,11 +1392,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "1.80",
+      "MarketPrice": "1.65",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/16.png",
       "tcgplayerId": "686459",
-      "LowPrice": "0.84"
+      "LowPrice": "0.83"
     },
     {
       "Set": "TS26",
@@ -1598,20 +1404,12 @@
       "Name": "Kouhun Assassination",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Vigilance",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "GAMBIT"
-        }
+        "GAMBIT"
       ],
       "cid": "6353405903",
       "Cost": "3",
@@ -1621,7 +1419,7 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "1.60",
+      "MarketPrice": "1.52",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/33.png",
       "tcgplayerId": "679178",
@@ -1634,17 +1432,11 @@
       "Subtitle": "Making a Withdrawal",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        }
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -1659,7 +1451,7 @@
       "Unique": true,
       "Artist": "Wu Shenyou",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.25",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/51.png",
       "tcgplayerId": "679519",
@@ -1672,20 +1464,12 @@
       "Subtitle": "Collective Ambition",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "UNDERWORLD"
-        }
+        "FORCE",
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -1706,7 +1490,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "1.62",
+      "MarketPrice": "1.58",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/3.png",
       "tcgplayerId": "679145",
@@ -1719,20 +1503,12 @@
       "Subtitle": "One Last Lesson",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Aggression",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "UNDERWORLD"
-        }
+        "FORCE",
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -1750,11 +1526,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "9.72",
+      "MarketPrice": "8.75",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/30.png",
       "tcgplayerId": "688693",
-      "LowPrice": "7.00"
+      "LowPrice": "8.00"
     },
     {
       "Set": "TS26",
@@ -1762,14 +1538,10 @@
       "Name": "Mechanize",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "SUPPLY"
-        }
+        "SUPPLY"
       ],
       "cid": "9392548494",
       "Cost": "2",
@@ -1779,11 +1551,11 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.42",
+      "MarketPrice": "0.41",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/57.png",
       "tcgplayerId": "688705",
-      "LowPrice": "0.35"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -1791,14 +1563,10 @@
       "Name": "Mislead",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "TRICK"
-        }
+        "TRICK"
       ],
       "cid": "7387838286",
       "Cost": "2",
@@ -1821,17 +1589,11 @@
       "Subtitle": "Infamous Murderer",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        }
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -1849,11 +1611,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "10.26",
+      "MarketPrice": "9.48",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/73.png",
       "tcgplayerId": "686492",
-      "LowPrice": "5.43"
+      "LowPrice": "6.90"
     },
     {
       "Set": "TS26",
@@ -1862,23 +1624,13 @@
       "Subtitle": "Stealing the Spirit",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "NIGHT"
-        }
+        "FORCE",
+        "NIGHT"
       ],
       "Arenas": [
         "Ground"
@@ -1909,23 +1661,13 @@
       "Subtitle": "Steadfast Knight",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -1943,11 +1685,11 @@
       ],
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "6.56",
+      "MarketPrice": "6.59",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/40.png",
       "tcgplayerId": "679505",
-      "LowPrice": "5.68"
+      "LowPrice": "4.45"
     },
     {
       "Set": "TS26",
@@ -1956,23 +1698,13 @@
       "Subtitle": "Follow My Lead",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Command",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "NABOO"
-        },
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "NABOO",
+        "REPUBLIC",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -1990,7 +1722,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.86",
+      "MarketPrice": "0.81",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/4.png",
       "tcgplayerId": "679147",
@@ -2003,20 +1735,12 @@
       "Subtitle": "For Mandalore!",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "MANDALORIAN",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -2048,20 +1772,12 @@
       "Subtitle": "Scheming Populist",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Command",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "MANDALORIAN",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -2083,7 +1799,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/28.png",
       "tcgplayerId": "685548",
-      "LowPrice": "4.69"
+      "LowPrice": "5.00"
     },
     {
       "Set": "TS26",
@@ -2092,20 +1808,12 @@
       "Subtitle": "Getting His Chance",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "DROID"
-        }
+        "REPUBLIC",
+        "DROID"
       ],
       "Arenas": [
         "Ground"
@@ -2123,11 +1831,11 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.49",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/62.png",
       "tcgplayerId": "686466",
-      "LowPrice": "0.48"
+      "LowPrice": "0.26"
     },
     {
       "Set": "TS26",
@@ -2135,17 +1843,11 @@
       "Name": "Reckless Landing",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Cunning"
-        }
+        "Aggression",
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "GAMBIT"
-        }
+        "GAMBIT"
       ],
       "cid": "4432234342",
       "Cost": "2",
@@ -2155,11 +1857,11 @@
       "Unique": false,
       "Artist": "Borja Pindado",
       "VariantType": "Normal",
-      "MarketPrice": "1.05",
+      "MarketPrice": "1.03",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/32.png",
       "tcgplayerId": "686462",
-      "LowPrice": "0.93"
+      "LowPrice": "0.92"
     },
     {
       "Set": "TS26",
@@ -2167,20 +1869,12 @@
       "Name": "Relief Frigate",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "CAPITAL SHIP"
-        }
+        "REPUBLIC",
+        "VEHICLE",
+        "CAPITAL SHIP"
       ],
       "Arenas": [
         "Space"
@@ -2207,14 +1901,10 @@
       "Name": "Remove the Chip",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "MODIFICATION"
-        }
+        "MODIFICATION"
       ],
       "cid": "3750822861",
       "Cost": "2",
@@ -2224,7 +1914,7 @@
       "Unique": false,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.83",
+      "MarketPrice": "0.82",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/69.png",
       "tcgplayerId": "686468",
@@ -2236,14 +1926,10 @@
       "Name": "Reveal Intentions",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "GAMBIT"
-        }
+        "GAMBIT"
       ],
       "cid": "0706465142",
       "Cost": "1",
@@ -2257,7 +1943,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/80.png",
       "tcgplayerId": "688722",
-      "LowPrice": "0.23"
+      "LowPrice": "0.24"
     },
     {
       "Set": "TS26",
@@ -2266,20 +1952,12 @@
       "Subtitle": "No Other Option",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "CLONE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "CLONE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -2297,7 +1975,7 @@
       "Unique": true,
       "Artist": "Axel Hutt",
       "VariantType": "Normal",
-      "MarketPrice": "0.60",
+      "MarketPrice": "0.59",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/6.png",
       "tcgplayerId": "679155",
@@ -2309,23 +1987,17 @@
       "Name": "Rex's DC-17s",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "ITEM"
-        },
-        {
-          "S": "WEAPON"
-        }
+        "ITEM",
+        "WEAPON"
       ],
       "cid": "4781765221",
       "Cost": "3",
+      "Power": "3",
+      "HP": "2",
       "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: “When an enemy unit readies during the action phase: Ready this unit. Use this ability only once each round.”",
       "DoubleSided": false,
       "Rarity": "Rare",
@@ -2344,17 +2016,11 @@
       "Name": "Ruping Rider",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "CREATURE"
-        },
-        {
-          "S": "TROOPER"
-        }
+        "CREATURE",
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -2385,20 +2051,12 @@
       "Subtitle": "Trapped by Authority",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        }
+        "Vigilance",
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "SEPARATIST",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -2421,7 +2079,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/17.png",
       "tcgplayerId": "688680",
-      "LowPrice": "1.33"
+      "LowPrice": "2.09"
     },
     {
       "Set": "TS26",
@@ -2430,20 +2088,12 @@
       "Subtitle": "You Must Have Your Revenge",
       "Type": "Leader",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Aggression",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "UNDERWORLD"
-        }
+        "FORCE",
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -2477,14 +2127,10 @@
       "Name": "Secret Marriage",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "PLAN"
-        }
+        "PLAN"
       ],
       "cid": "8178276439",
       "Cost": "2",
@@ -2497,11 +2143,11 @@
       ],
       "Artist": "Robynn Frauhn",
       "VariantType": "Normal",
-      "MarketPrice": "2.80",
+      "MarketPrice": "2.74",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/46.png",
       "tcgplayerId": "688699",
-      "LowPrice": "2.18"
+      "LowPrice": "2.20"
     },
     {
       "Set": "TS26",
@@ -2510,20 +2156,12 @@
       "Subtitle": "Quarrelsome Holdouts",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "SEPARATIST"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "SEPARATIST",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -2538,11 +2176,34 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "2.78",
+      "MarketPrice": "2.69",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/49.png",
       "tcgplayerId": "679517",
-      "LowPrice": "1.70"
+      "LowPrice": "1.19"
+    },
+    {
+      "Set": "TS26",
+      "Number": "T04",
+      "Name": "Shield",
+      "Type": "Token Upgrade",
+      "Traits": [
+        "ARMOR"
+      ],
+      "cid": "1142403519",
+      "Cost": "0",
+      "Power": "0",
+      "HP": "0",
+      "FrontText": "If damage would be dealt to attached unit, prevent that damage. If you do, defeat a Shield token on it.",
+      "DoubleSided": false,
+      "Rarity": "Common",
+      "Unique": false,
+      "Artist": "Marc Escachx",
+      "VariantType": "Normal",
+      "MarketPrice": "0.00",
+      "FoilPrice": "",
+      "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T04.png",
+      "LowPrice": "0.00"
     },
     {
       "Set": "TS26",
@@ -2550,34 +2211,28 @@
       "Name": "Sith Traditions",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "SITH"
-        },
-        {
-          "S": "LEARNED"
-        }
+        "SITH",
+        "LEARNED"
       ],
       "cid": "1377604550",
       "Cost": "2",
+      "Power": "1",
+      "HP": "1",
       "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains: \"On Attack: Give an Experience token to this unit.\" and \"When Defeated: Give an Experience token to a friendly unit.\"",
       "DoubleSided": false,
       "Rarity": "Uncommon",
       "Unique": false,
       "Artist": "Kevin Sidharta",
       "VariantType": "Normal",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/52.png",
       "tcgplayerId": "688702",
-      "LowPrice": "0.40"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -2585,23 +2240,13 @@
       "Name": "Sundari Gauntlet",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Aggression"
-        }
+        "Command",
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "MANDALORIAN",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Space"
@@ -2619,7 +2264,7 @@
       ],
       "Artist": "Victor Stoll Toaldo",
       "VariantType": "Normal",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/24.png",
       "tcgplayerId": "685545",
@@ -2632,9 +2277,7 @@
       "Subtitle": "Mandalore",
       "Type": "Base",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "cid": "0344986336",
       "HP": "27",
@@ -2656,14 +2299,10 @@
       "Name": "Take Action",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "4650054790",
       "Cost": "3",
@@ -2677,7 +2316,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/71.png",
       "tcgplayerId": "688714",
-      "LowPrice": "0.12"
+      "LowPrice": "0.13"
     },
     {
       "Set": "TS26",
@@ -2685,14 +2324,10 @@
       "Name": "Take Aim",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "6349103776",
       "Cost": "3",
@@ -2717,14 +2352,10 @@
       "Name": "Take Charge",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "4540524041",
       "Cost": "3",
@@ -2734,11 +2365,11 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/60.png",
       "tcgplayerId": "688707",
-      "LowPrice": "0.13"
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -2746,14 +2377,10 @@
       "Name": "Take Cover",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "3088628219",
       "Cost": "3",
@@ -2767,7 +2394,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/47.png",
       "tcgplayerId": "688700",
-      "LowPrice": "0.13"
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -2776,29 +2403,19 @@
       "Subtitle": "Only the Strongest Shall Rule",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Command",
+        "Aggression",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "MANDALORIAN"
-        },
-        {
-          "S": "ITEM"
-        },
-        {
-          "S": "WEAPON"
-        }
+        "MANDALORIAN",
+        "ITEM",
+        "WEAPON"
       ],
       "cid": "8268973927",
       "Cost": "4",
+      "Power": "2",
+      "HP": "2",
       "FrontText": "Attach to a non-Vehicle unit.\nAttached unit gains Sentinel.\nWhen Played: If there are 4 or more different Keywords among friendly units, ready attached unit.",
       "DoubleSided": false,
       "Rarity": "Rare",
@@ -2808,11 +2425,11 @@
       ],
       "Artist": "Konstantin Porubov",
       "VariantType": "Normal",
-      "MarketPrice": "2.11",
+      "MarketPrice": "2.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/22.png",
       "tcgplayerId": "688686",
-      "LowPrice": "2.06"
+      "LowPrice": "2.00"
     },
     {
       "Set": "TS26",
@@ -2821,23 +2438,13 @@
       "Subtitle": "Grave of the 332nd",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Vigilance"
-        }
+        "Cunning",
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "CAPITAL SHIP"
-        }
+        "REPUBLIC",
+        "VEHICLE",
+        "CAPITAL SHIP"
       ],
       "Arenas": [
         "Space"
@@ -2856,7 +2463,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/36.png",
       "tcgplayerId": "688694",
-      "LowPrice": "0.93"
+      "LowPrice": "0.92"
     },
     {
       "Set": "TS26",
@@ -2865,23 +2472,13 @@
       "Subtitle": "Escaping Malevolence",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REPUBLIC"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "TRANSPORT"
-        }
+        "REPUBLIC",
+        "VEHICLE",
+        "TRANSPORT"
       ],
       "Arenas": [
         "Space"
@@ -2900,7 +2497,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/41.png",
       "tcgplayerId": "686465",
-      "LowPrice": "0.29"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -2908,17 +2505,15 @@
       "Name": "Underestimated",
       "Type": "Upgrade",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "INNATE"
-        }
+        "INNATE"
       ],
       "cid": "0122156036",
       "Cost": "1",
+      "Power": "2",
+      "HP": "1",
       "FrontText": "Attach to a unit that costs 4 or less.",
       "DoubleSided": false,
       "Rarity": "Uncommon",
@@ -2929,7 +2524,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/79.png",
       "tcgplayerId": "688721",
-      "LowPrice": "0.34"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -2937,17 +2532,11 @@
       "Name": "Urgent Mission",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "PLAN"
-        }
+        "PLAN"
       ],
       "cid": "9066758387",
       "Cost": "2",
@@ -2969,14 +2558,10 @@
       "Name": "Vanquish the Legion",
       "Type": "Event",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "TACTIC"
-        }
+        "TACTIC"
       ],
       "cid": "5236803699",
       "Cost": "4",
@@ -2986,7 +2571,7 @@
       "Unique": false,
       "Artist": "Ivan Fiorelli",
       "VariantType": "Normal",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/48.png",
       "tcgplayerId": "688701",
@@ -2998,14 +2583,10 @@
       "Name": "Wartime Mercenaries",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Command"
-        }
+        "Command"
       ],
       "Traits": [
-        {
-          "S": "TROOPER"
-        }
+        "TROOPER"
       ],
       "Arenas": [
         "Ground"
@@ -3032,20 +2613,12 @@
       "Name": "Wartime Pirate",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        }
+        "Aggression"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        },
-        {
-          "S": "VEHICLE"
-        },
-        {
-          "S": "CAPITAL SHIP"
-        }
+        "UNDERWORLD",
+        "VEHICLE",
+        "CAPITAL SHIP"
       ],
       "Arenas": [
         "Space"
@@ -3064,7 +2637,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/66.png",
       "tcgplayerId": "688709",
-      "LowPrice": "0.10"
+      "LowPrice": "0.25"
     },
     {
       "Set": "TS26",
@@ -3072,14 +2645,10 @@
       "Name": "Wartime Profiteer",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Cunning"
-        }
+        "Cunning"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        }
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -3098,7 +2667,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/76.png",
       "tcgplayerId": "688719",
-      "LowPrice": "0.09"
+      "LowPrice": "0.14"
     },
     {
       "Set": "TS26",
@@ -3106,14 +2675,10 @@
       "Name": "Wartime Refugee",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        }
+        "Vigilance"
       ],
       "Traits": [
-        {
-          "S": "TWI'LEK"
-        }
+        "TWI'LEK"
       ],
       "Arenas": [
         "Ground"
@@ -3141,26 +2706,14 @@
       "Subtitle": "Begun, the Clone War Has",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Command"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Command",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "FORCE"
-        },
-        {
-          "S": "JEDI"
-        },
-        {
-          "S": "REPUBLIC"
-        }
+        "FORCE",
+        "JEDI",
+        "REPUBLIC"
       ],
       "Arenas": [
         "Ground"
@@ -3182,7 +2735,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/14.png",
       "tcgplayerId": "682310",
-      "LowPrice": "11.20"
+      "LowPrice": "10.11"
     },
     {
       "Set": "TS26",
@@ -3191,20 +2744,12 @@
       "Subtitle": "Sowing Chaos",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Cunning"
-        },
-        {
-          "S": "Villainy"
-        }
+        "Aggression",
+        "Cunning",
+        "Villainy"
       ],
       "Traits": [
-        {
-          "S": "UNDERWORLD"
-        }
+        "UNDERWORLD"
       ],
       "Arenas": [
         "Ground"
@@ -3222,11 +2767,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "6.03",
+      "MarketPrice": "6.76",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/29.png",
       "tcgplayerId": "679175",
-      "LowPrice": "5.85"
+      "LowPrice": "7.24"
     }
   ]
 }

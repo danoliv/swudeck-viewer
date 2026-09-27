@@ -8,20 +8,12 @@
       "Subtitle": "It'll Work",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Aggression"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Aggression",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REBEL"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "REBEL",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
@@ -50,20 +42,12 @@
       "Subtitle": "Vigilant for Danger",
       "Type": "Unit",
       "Aspects": [
-        {
-          "S": "Vigilance"
-        },
-        {
-          "S": "Heroism"
-        }
+        "Vigilance",
+        "Heroism"
       ],
       "Traits": [
-        {
-          "S": "REBEL"
-        },
-        {
-          "S": "OFFICIAL"
-        }
+        "REBEL",
+        "OFFICIAL"
       ],
       "Arenas": [
         "Ground"
