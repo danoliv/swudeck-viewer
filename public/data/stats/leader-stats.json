@@ -1,8 +1,89 @@
 {
-  "generatedAt": "2026-10-06T06:28:30.673Z",
+  "generatedAt": "2026-10-13T06:31:45.185Z",
   "premier": {
-    "totalDecks": 0,
-    "leaders": {}
+    "totalDecks": 20,
+    "leaders": {
+      "JTL_009": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 66.7
+      },
+      "JTL_018": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 66.7
+      },
+      "JTL_012": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 66.7
+      },
+      "JTL_013": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 50
+      },
+      "LOF_002": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 40
+      },
+      "SEC_010": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 50
+      },
+      "SEC_002": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 16.7
+      },
+      "LAW_008": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 0
+      },
+      "ASH_009": {
+        "deckCount": 2,
+        "popularity": 10,
+        "winRate": 58.3
+      },
+      "ASH_017": {
+        "deckCount": 3,
+        "popularity": 15,
+        "winRate": 50
+      },
+      "ASH_005": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 16.7
+      },
+      "HMW_009": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 66.7
+      },
+      "HMW_003": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 83.3
+      },
+      "HMW_016": {
+        "deckCount": 2,
+        "popularity": 10,
+        "winRate": 33.3
+      },
+      "HMW_012": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 33.3
+      },
+      "HMW_010": {
+        "deckCount": 1,
+        "popularity": 5,
+        "winRate": 25
+      }
+    }
   },
   "eternal": {
     "totalDecks": 0,
