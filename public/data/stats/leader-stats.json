@@ -1,162 +1,483 @@
 {
-  "generatedAt": "2026-10-27T06:26:49.000Z",
+  "generatedAt": "2026-11-03T06:17:14.894Z",
   "premier": {
-    "totalDecks": 93,
+    "totalDecks": 831,
     "leaders": {
-      "JTL_009": {
-        "deckCount": 8,
-        "popularity": 8.6,
-        "winRate": 56.8
+      "JTL_005": {
+        "deckCount": 10,
+        "popularity": 1.2,
+        "winRate": 45.3
       },
-      "JTL_006": {
+      "JTL_014": {
         "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 66.7
-      },
-      "JTL_018": {
-        "deckCount": 4,
-        "popularity": 4.3,
-        "winRate": 42.9
-      },
-      "JTL_012": {
-        "deckCount": 5,
-        "popularity": 5.4,
-        "winRate": 53.6
-      },
-      "JTL_013": {
-        "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 50
-      },
-      "JTL_008": {
-        "deckCount": 1,
-        "popularity": 1.1,
+        "popularity": 0.1,
         "winRate": 33.3
       },
-      "LOF_002": {
-        "deckCount": 3,
-        "popularity": 3.2,
-        "winRate": 43.8
-      },
-      "SEC_010": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 76.9
-      },
-      "SEC_002": {
+      "JTL_001": {
         "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 50
+      },
+      "JTL_009": {
+        "deckCount": 49,
+        "popularity": 5.9,
+        "winRate": 44.8
+      },
+      "JTL_006": {
+        "deckCount": 26,
+        "popularity": 3.1,
+        "winRate": 45.2
+      },
+      "JTL_017": {
+        "deckCount": 6,
+        "popularity": 0.7,
+        "winRate": 52.3
+      },
+      "JTL_018": {
+        "deckCount": 9,
         "popularity": 1.1,
-        "winRate": 16.7
+        "winRate": 46.2
       },
-      "LAW_004": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 27.3
+      "JTL_012": {
+        "deckCount": 24,
+        "popularity": 2.9,
+        "winRate": 40.7
       },
-      "LAW_013": {
+      "JTL_011": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 66.7
+      },
+      "JTL_013": {
         "deckCount": 3,
-        "popularity": 3.2,
+        "popularity": 0.4,
+        "winRate": 54.2
+      },
+      "JTL_008": {
+        "deckCount": 3,
+        "popularity": 0.4,
         "winRate": 38.1
       },
-      "LAW_008": {
+      "LOF_009": {
+        "deckCount": 21,
+        "popularity": 2.5,
+        "winRate": 51.6
+      },
+      "LOF_001": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 57.1
+      },
+      "LOF_002": {
+        "deckCount": 30,
+        "popularity": 3.6,
+        "winRate": 57.8
+      },
+      "LOF_008": {
         "deckCount": 12,
-        "popularity": 12.9,
-        "winRate": 36.9
+        "popularity": 1.4,
+        "winRate": 40.3
+      },
+      "LOF_016": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 40
+      },
+      "LOF_006": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 25
+      },
+      "LOF_010": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 55.6
+      },
+      "SEC_006": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 25
+      },
+      "SEC_010": {
+        "deckCount": 20,
+        "popularity": 2.4,
+        "winRate": 58.6
+      },
+      "SEC_002": {
+        "deckCount": 3,
+        "popularity": 0.4,
+        "winRate": 54
+      },
+      "SEC_003": {
+        "deckCount": 3,
+        "popularity": 0.4,
+        "winRate": 45.8
+      },
+      "LAW_004": {
+        "deckCount": 5,
+        "popularity": 0.6,
+        "winRate": 38.9
+      },
+      "LAW_007": {
+        "deckCount": 3,
+        "popularity": 0.4,
+        "winRate": 37.5
+      },
+      "LAW_013": {
+        "deckCount": 5,
+        "popularity": 0.6,
+        "winRate": 47.9
+      },
+      "LAW_011": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 40
+      },
+      "LAW_008": {
+        "deckCount": 120,
+        "popularity": 14.4,
+        "winRate": 53.2
+      },
+      "LAW_017": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 53.8
+      },
+      "LAW_009": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 25
+      },
+      "LAW_005": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 33.3
       },
       "LAW_018": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 54.5
+        "deckCount": 33,
+        "popularity": 4,
+        "winRate": 45.9
       },
       "LAW_010": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 46.2
+      },
+      "LAW_016": {
         "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 50
+        "popularity": 0.1,
+        "winRate": 22.2
       },
       "LAW_002": {
         "deckCount": 1,
-        "popularity": 1.1,
+        "popularity": 0.1,
         "winRate": 0
+      },
+      "LAW_006": {
+        "deckCount": 1,
+        "popularity": 0.1,
+        "winRate": 62.5
       },
       "ASH_009": {
-        "deckCount": 14,
-        "popularity": 15.1,
-        "winRate": 50.6
+        "deckCount": 149,
+        "popularity": 17.9,
+        "winRate": 51.6
       },
       "ASH_013": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 53.3
+        "deckCount": 5,
+        "popularity": 0.6,
+        "winRate": 48.7
       },
       "ASH_007": {
+        "deckCount": 5,
+        "popularity": 0.6,
+        "winRate": 56.8
+      },
+      "ASH_004": {
         "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 60
+        "popularity": 0.1,
+        "winRate": 50
       },
       "ASH_017": {
-        "deckCount": 6,
-        "popularity": 6.5,
-        "winRate": 42.9
+        "deckCount": 22,
+        "popularity": 2.6,
+        "winRate": 48.2
       },
       "ASH_005": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 33.3
+        "deckCount": 14,
+        "popularity": 1.7,
+        "winRate": 46
+      },
+      "ASH_006": {
+        "deckCount": 3,
+        "popularity": 0.4,
+        "winRate": 23.1
+      },
+      "ASH_016": {
+        "deckCount": 4,
+        "popularity": 0.5,
+        "winRate": 19.5
       },
       "ASH_001": {
-        "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 40
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 41.7
       },
       "ASH_014": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 50
+      },
+      "ASH_012": {
+        "deckCount": 6,
+        "popularity": 0.7,
+        "winRate": 30
+      },
+      "HMW_001": {
         "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 33.3
+        "popularity": 0.1,
+        "winRate": 0
       },
       "HMW_015": {
-        "deckCount": 1,
+        "deckCount": 9,
         "popularity": 1.1,
-        "winRate": 0
+        "winRate": 41.2
       },
       "HMW_009": {
+        "deckCount": 3,
+        "popularity": 0.4,
+        "winRate": 41.2
+      },
+      "HMW_011": {
         "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 36.4
+        "popularity": 0.2,
+        "winRate": 50
+      },
+      "HMW_007": {
+        "deckCount": 5,
+        "popularity": 0.6,
+        "winRate": 28.1
       },
       "HMW_003": {
-        "deckCount": 6,
-        "popularity": 6.5,
-        "winRate": 60
+        "deckCount": 75,
+        "popularity": 9,
+        "winRate": 55.7
       },
       "HMW_008": {
-        "deckCount": 2,
-        "popularity": 2.2,
-        "winRate": 0
-      },
-      "HMW_016": {
-        "deckCount": 3,
-        "popularity": 3.2,
+        "deckCount": 7,
+        "popularity": 0.8,
         "winRate": 27.8
       },
-      "HMW_012": {
+      "HMW_005": {
         "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 33.3
+        "popularity": 0.1,
+        "winRate": 20
+      },
+      "HMW_016": {
+        "deckCount": 17,
+        "popularity": 2,
+        "winRate": 48.9
+      },
+      "HMW_002": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 28.6
+      },
+      "HMW_012": {
+        "deckCount": 10,
+        "popularity": 1.2,
+        "winRate": 37.1
       },
       "HMW_010": {
-        "deckCount": 1,
-        "popularity": 1.1,
-        "winRate": 25
+        "deckCount": 18,
+        "popularity": 2.2,
+        "winRate": 47.9
+      },
+      "HMW_018": {
+        "deckCount": 2,
+        "popularity": 0.2,
+        "winRate": 18.2
       },
       "HMW_014": {
-        "deckCount": 3,
-        "popularity": 3.2,
-        "winRate": 7.1
+        "deckCount": 61,
+        "popularity": 7.3,
+        "winRate": 54.1
       }
     }
   },
   "eternal": {
-    "totalDecks": 0,
-    "leaders": {}
+    "totalDecks": 116,
+    "leaders": {
+      "SOR_006": {
+        "deckCount": 9,
+        "popularity": 7.8,
+        "winRate": 47.9
+      },
+      "SOR_017": {
+        "deckCount": 6,
+        "popularity": 5.2,
+        "winRate": 42.1
+      },
+      "SOR_014": {
+        "deckCount": 4,
+        "popularity": 3.4,
+        "winRate": 50
+      },
+      "SHD_014": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 50
+      },
+      "SHD_015": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 0
+      },
+      "SHD_001": {
+        "deckCount": 6,
+        "popularity": 5.2,
+        "winRate": 44.4
+      },
+      "SHD_013": {
+        "deckCount": 4,
+        "popularity": 3.4,
+        "winRate": 45.8
+      },
+      "SHD_011": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 42.9
+      },
+      "SHD_002": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 28.6
+      },
+      "TWI_011": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 42.9
+      },
+      "TWI_012": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 28.6
+      },
+      "TWI_016": {
+        "deckCount": 15,
+        "popularity": 12.9,
+        "winRate": 55.6
+      },
+      "TWI_018": {
+        "deckCount": 2,
+        "popularity": 1.7,
+        "winRate": 64.3
+      },
+      "TWI_004": {
+        "deckCount": 10,
+        "popularity": 8.6,
+        "winRate": 60
+      },
+      "JTL_005": {
+        "deckCount": 3,
+        "popularity": 2.6,
+        "winRate": 50
+      },
+      "JTL_009": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 0
+      },
+      "JTL_010": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 42.9
+      },
+      "JTL_006": {
+        "deckCount": 7,
+        "popularity": 6,
+        "winRate": 45.8
+      },
+      "LOF_002": {
+        "deckCount": 2,
+        "popularity": 1.7,
+        "winRate": 27.3
+      },
+      "SEC_006": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 40
+      },
+      "SEC_010": {
+        "deckCount": 2,
+        "popularity": 1.7,
+        "winRate": 58.3
+      },
+      "SEC_009": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 33.3
+      },
+      "SEC_005": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 14.3
+      },
+      "LAW_013": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 0
+      },
+      "LAW_008": {
+        "deckCount": 3,
+        "popularity": 2.6,
+        "winRate": 31.3
+      },
+      "LAW_018": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 28.6
+      },
+      "LAW_002": {
+        "deckCount": 3,
+        "popularity": 2.6,
+        "winRate": 66.7
+      },
+      "TS26_008": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 42.9
+      },
+      "TS26_002": {
+        "deckCount": 19,
+        "popularity": 16.4,
+        "winRate": 63.8
+      },
+      "ASH_009": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 14.3
+      },
+      "ASH_011": {
+        "deckCount": 3,
+        "popularity": 2.6,
+        "winRate": 25.7
+      },
+      "HMW_003": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 57.1
+      },
+      "HMW_016": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 14.3
+      },
+      "HMW_014": {
+        "deckCount": 1,
+        "popularity": 0.9,
+        "winRate": 42.9
+      }
+    }
   }
 }
