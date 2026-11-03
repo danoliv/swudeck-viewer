@@ -17,6 +17,12 @@ import { normalizeAspects, normalizeTraits } from './cards';
  * field, matches are OR'd (e.g. `types: ['Unit', 'Event']` matches either);
  * across fields, matches are AND'd.
  */
+/** Numeric threshold on a stat: keep cards whose value is `>=` or `<=` `value` (inclusive). */
+export interface StatThreshold {
+  op: '>=' | '<=';
+  value: number;
+}
+
 export interface CardFilter {
   search?: string;
   types?: string[];
@@ -26,6 +32,10 @@ export interface CardFilter {
   traits?: string[];
   triggers?: string[];
   sets?: string[];
+  /** Power threshold. Cards without a Power (events, most upgrades…) never match. */
+  power?: StatThreshold;
+  /** HP threshold. Cards without an HP never match. */
+  hp?: StatThreshold;
   /**
    * When set, only include cards whose Aspects are a subset of this list —
    * i.e. cards that incur no aspect resource penalty for a given leader+base.
@@ -95,6 +105,15 @@ export function cardTriggers(card: CardData): string[] {
   return Array.from(found);
 }
 
+/** Whether a card's numeric stat (data stores it as a string, absent when the card has none) passes a threshold. */
+function passesThreshold(raw: string | number | undefined, threshold: StatThreshold | undefined): boolean {
+  if (!threshold) return true;
+  if (raw === undefined || raw === '') return false;
+  const n = typeof raw === 'number' ? raw : Number(raw);
+  if (!Number.isFinite(n)) return false;
+  return threshold.op === '>=' ? n >= threshold.value : n <= threshold.value;
+}
+
 /**
  * Filter a card pool against the given criteria.
  * Adding a new filter dimension is one new field on CardFilter plus one
@@ -120,6 +139,8 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
     if (!overlaps(normalizeTraits(card.Traits), traits)) return false;
     if (triggers.length && !overlaps(cardTriggers(card), triggers)) return false;
     if (sets.length && !sets.includes(String(card.Set ?? ''))) return false;
+    if (!passesThreshold(card.Power, filter.power)) return false;
+    if (!passesThreshold(card.HP, filter.hp)) return false;
     if (noPenaltyAspects && !isSubsetOf(normalizeAspects(card.Aspects), noPenaltyAspects)) return false;
     return true;
   });

@@ -294,6 +294,8 @@ let rawCards: CardData[] = [];
 let allCards: CardData[] = [];
 let legalData: LegalData = { premier: { sets: [], bannedCards: [] }, eternal: { bannedCards: [] } };
 let filter: CardFilter = {};
+/** Operator picked for the Power/HP filters. Kept apart from `filter` so it survives while the number box is empty. */
+const statOps: Record<'power' | 'hp', '>=' | '<='> = { power: '>=', hp: '>=' };
 let browserSort: CardSortKey = 'cost';
 let browserSortDir: SortDirection = 'asc';
 let browserPage = 1;
@@ -871,6 +873,20 @@ function renderFilterDropdown(key: 'sets' | 'keywords' | 'traits' | 'triggers', 
   return html;
 }
 
+/** "Power ≥ [n]" / "HP ≤ [n]": operator select + number box; the filter is active only while the box has a value. */
+function renderStatFilter(key: 'power' | 'hp', label: string): string {
+  const op = statOps[key];
+  const value = filter[key]?.value;
+  return `<div class="stat-filter${value !== undefined ? ' active' : ''}">
+    <span class="stat-filter-label">${label}</span>
+    <select data-stat="${key}" aria-label="${label} comparison">
+      <option value=">="${op === '>=' ? ' selected' : ''}>&ge;</option>
+      <option value="<="${op === '<=' ? ' selected' : ''}>&le;</option>
+    </select>
+    <input type="number" min="0" step="1" inputmode="numeric" data-stat="${key}" aria-label="${label} value" value="${value ?? ''}">
+  </div>`;
+}
+
 function renderFilters(): string {
   const types = ['Unit', 'Upgrade', 'Event'];
   const arenas = ['Ground', 'Space'];
@@ -905,6 +921,8 @@ function renderFilters(): string {
   html += renderFilterDropdown('keywords', 'Keywords', keywords);
   html += renderFilterDropdown('traits', 'Traits', traits);
   html += renderFilterDropdown('triggers', 'Triggers', [...TRIGGER_OPTIONS]);
+  html += renderStatFilter('power', 'Power');
+  html += renderStatFilter('hp', 'HP');
 
   html += '</div>';
   html += `<div id="browserSortBar">${renderSortBar('browser', browserSort, browserSortDir)}</div>`;
@@ -1447,6 +1465,20 @@ document.addEventListener('click', (e) => {
   }
 });
 
+/** Read a Power/HP control pair and update the browser filter (empty/invalid number = filter off). */
+function applyStatFilter(key: 'power' | 'hp', group: Element | null): void {
+  if (!group) return;
+  const select = group.querySelector<HTMLSelectElement>('select');
+  const input = group.querySelector<HTMLInputElement>('input');
+  if (!select || !input) return;
+  statOps[key] = select.value === '<=' ? '<=' : '>=';
+  const n = input.value.trim() === '' ? NaN : Number(input.value);
+  filter = { ...filter, [key]: Number.isFinite(n) ? { op: statOps[key], value: n } : undefined };
+  group.classList.toggle('active', filter[key] !== undefined);
+  browserPage = 1;
+  renderBrowserResults();
+}
+
 document.addEventListener('input', (e) => {
   const target = e.target as HTMLElement;
 
@@ -1461,6 +1493,11 @@ document.addEventListener('input', (e) => {
     filter = { ...filter, search: (target as HTMLInputElement).value };
     browserPage = 1;
     renderBrowserResults();
+    return;
+  }
+
+  if (target.dataset['stat'] && target instanceof HTMLInputElement) {
+    applyStatFilter(target.dataset['stat'] as 'power' | 'hp', target.closest('.stat-filter'));
     return;
   }
 
@@ -1491,6 +1528,11 @@ document.addEventListener('input', (e) => {
 document.addEventListener('change', (e) => {
   const target = e.target as HTMLElement;
   const action = target.dataset['action'];
+
+  if (target.dataset['stat'] && target instanceof HTMLSelectElement) {
+    applyStatFilter(target.dataset['stat'] as 'power' | 'hp', target.closest('.stat-filter'));
+    return;
+  }
 
   if (action !== 'filter-checkbox') return;
 

@@ -1037,6 +1037,35 @@ html[data-page="builder"] body {
     box-shadow: 0 2px 8px var(--accent-soft);
 }
 
+/* Power / HP threshold filters: label + (≥|≤) select + number */
+.stat-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 6px 3px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface-deep);
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.stat-filter.active {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.stat-filter select,
+.stat-filter input[type="number"] {
+    padding: 3px 6px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: inherit;
+    font: inherit;
+}
+.stat-filter input[type="number"] {
+    width: 4.2em;
+}
+
 /* Keywords / Traits multi-select dropdowns */
 .filter-dropdown {
     position: relative;

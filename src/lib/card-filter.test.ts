@@ -560,3 +560,46 @@ describe("isDeckPoolCard", () => {
     expect(isDeckPoolCard({ id: "X_003" })).toBe(true);
   });
 });
+
+describe("filterCards — power / hp thresholds", () => {
+  const POOL: CardData[] = [
+    { id: "T_001", Type: "Unit", Name: "Small", Power: "1", HP: "2" },
+    { id: "T_002", Type: "Unit", Name: "Mid", Power: "3", HP: "3" },
+    { id: "T_003", Type: "Unit", Name: "Big", Power: 5, HP: 7 },
+    { id: "T_004", Type: "Event", Name: "No Stats" },
+    { id: "T_005", Type: "Upgrade", Name: "Upgrade", Power: "2" },
+  ];
+  const names = (f: Parameters<typeof filterCards>[1]) => filterCards(POOL, f).map((c) => c.Name);
+
+  it("power >= keeps cards with at least that power (string or number data)", () => {
+    expect(names({ power: { op: ">=", value: 3 } })).toEqual(["Mid", "Big"]);
+  });
+
+  it("power <= keeps cards with at most that power", () => {
+    expect(names({ power: { op: "<=", value: 2 } })).toEqual(["Small", "Upgrade"]);
+  });
+
+  it("hp >= / <= work the same way on HP", () => {
+    expect(names({ hp: { op: ">=", value: 3 } })).toEqual(["Mid", "Big"]);
+    expect(names({ hp: { op: "<=", value: 3 } })).toEqual(["Small", "Mid"]);
+  });
+
+  it("is inclusive on the boundary value", () => {
+    expect(names({ power: { op: ">=", value: 5 } })).toEqual(["Big"]);
+    expect(names({ power: { op: "<=", value: 1 } })).toEqual(["Small"]);
+  });
+
+  it("excludes cards that have no such stat (events, HP-less upgrades), including for <=", () => {
+    expect(names({ power: { op: "<=", value: 99 } })).not.toContain("No Stats");
+    expect(names({ hp: { op: "<=", value: 99 } })).not.toContain("Upgrade");
+  });
+
+  it("combines power and hp (and with other filters)", () => {
+    expect(names({ power: { op: ">=", value: 3 }, hp: { op: "<=", value: 3 } })).toEqual(["Mid"]);
+    expect(names({ power: { op: ">=", value: 1 }, types: ["Upgrade"] })).toEqual(["Upgrade"]);
+  });
+
+  it("ignores an unset threshold", () => {
+    expect(names({ power: undefined, hp: undefined })).toHaveLength(5);
+  });
+});
