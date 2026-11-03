@@ -20,8 +20,6 @@ interface LeaderStats {
   eternal?: FormatStats;
 }
 
-const DECK_COUNT_THRESHOLD = 50;
-
 const statsCache = new Map<string, LeaderStats | null>();
 const loadingPromises = new Map<string, Promise<LeaderStats | null>>();
 
@@ -51,13 +49,16 @@ export async function loadLeaderStats(leaderId: string): Promise<LeaderStats | n
   return promise;
 }
 
-/** Whether stats exist (above the deck-count threshold) for this leader+format, for sort-option visibility. */
+/**
+ * Whether stats exist for this leader+format, for sort-option visibility. The minimum-deck threshold lives only in
+ * `scripts/fetch-swubase.js` (MIN_DECK_COUNT): a format key is written to the file only when it passes it.
+ */
 export function hasLeaderStats(leaderId: string | undefined, format: Format | undefined): boolean {
   if (!leaderId || !format) return false;
   const leaderStats = statsCache.get(leaderId);
   if (!leaderStats) return false;
   const formatStats = leaderStats[format];
-  return Boolean(formatStats && formatStats.deckCount >= DECK_COUNT_THRESHOLD);
+  return Boolean(formatStats);
 }
 
 export function getCardStats(
@@ -69,6 +70,6 @@ export function getCardStats(
   const leaderStats = statsCache.get(leaderId);
   if (!leaderStats) return null;
   const formatStats = leaderStats[format];
-  if (!formatStats || formatStats.deckCount < DECK_COUNT_THRESHOLD) return null;
+  if (!formatStats) return null;
   return formatStats.cards[cardId] ?? null;
 }

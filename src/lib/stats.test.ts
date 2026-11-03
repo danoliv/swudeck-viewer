@@ -39,6 +39,15 @@ describe('hasLeaderStats / getCardStats', () => {
     expect(getCardStats('LAW_014', 'premier', 'SOME_OTHER')).toBeNull();
   });
 
+  it('trusts the file: a small deck count is not filtered again client-side', async () => {
+    const small = { ...LEADER_STATS, leaderId: 'LAW_SMALL', premier: { ...LEADER_STATS.premier, deckCount: 7 } };
+    (fetch as ReturnType<typeof vi.fn>).mockResponseOnce(JSON.stringify(small));
+    await loadLeaderStats('LAW_SMALL');
+
+    expect(hasLeaderStats('LAW_SMALL', 'premier')).toBe(true);
+    expect(getCardStats('LAW_SMALL', 'premier', 'JTL_149')).not.toBeNull();
+  });
+
   it('is false after a 404 (no stats for this leader)', async () => {
     (fetch as ReturnType<typeof vi.fn>).mockResponseOnce('', { status: 404 });
     await loadLeaderStats('LAW_404');
