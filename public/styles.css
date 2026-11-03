@@ -370,14 +370,14 @@ input {
     padding: 8px;
     margin-right: 10px;
 }
-input[type="text"], input[type="search"], select, textarea {
+input[type="text"], input[type="search"], input[type="number"], select, textarea {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     color: var(--text);
     font-family: var(--font-body);
 }
-input[type="text"]:focus, input[type="search"]:focus, select:focus, textarea:focus {
+input[type="text"]:focus, input[type="search"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px var(--accent-soft);
@@ -1037,33 +1037,59 @@ html[data-page="builder"] body {
     box-shadow: 0 2px 8px var(--accent-soft);
 }
 
-/* Power / HP threshold filters: label + (≥|≤) select + number */
+/* Power / HP threshold filters: label + (≥|≤) select + number. Self-contained: does not rely on the global
+   `input { width: 500px; margin-right: 10px }` default, so it can never inherit a huge white box. */
 .stat-filter {
     display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     gap: 6px;
-    padding: 3px 6px 3px 12px;
+    box-sizing: border-box;
+    min-height: 34px;
+    padding: 2px 4px 2px 12px;
     border: 1px solid var(--border);
     border-radius: var(--radius-pill);
     background: var(--surface-deep);
     color: var(--text-muted);
+    font-size: 0.9em;
     font-weight: 600;
 }
 .stat-filter.active {
     border-color: var(--accent);
     color: var(--accent);
 }
+.stat-filter:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
 .stat-filter select,
 .stat-filter input[type="number"] {
-    padding: 3px 6px;
+    box-sizing: border-box;
+    height: 28px;
+    min-width: 0;
+    margin: 0;
+    padding: 0 6px;
     border: 1px solid var(--border);
     border-radius: 6px;
     background: var(--surface);
-    color: inherit;
+    color: var(--text);
     font: inherit;
+    outline: none;
 }
 .stat-filter input[type="number"] {
     width: 4.2em;
+    max-width: none;
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+.stat-filter input[type="number"]::-webkit-outer-spin-button,
+.stat-filter input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.stat-filter input[type="number"]::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
 }
 
 /* Keywords / Traits multi-select dropdowns */

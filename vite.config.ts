@@ -1,7 +1,23 @@
 /// <reference types="vitest/config" />
-import { defineConfig } from 'vite';
+import { defineConfig, type Plugin } from 'vite';
+
+/**
+ * `styles.css` lives in public/, so Vite copies it verbatim (no content hash in the name). Browsers that cached an
+ * older copy then render new JS-generated markup with stale rules. Stamp its <link> with a per-build id so every
+ * deploy invalidates it.
+ */
+function cacheBustStyles(): Plugin {
+  const buildId = process.env.GITHUB_SHA?.slice(0, 10) ?? String(Date.now());
+  return {
+    name: 'cache-bust-styles',
+    apply: 'build',
+    transformIndexHtml: (html) => html.replace(/href="styles\.css"/g, `href="styles.css?v=${buildId}"`),
+  };
+}
 
 export default defineConfig({
+  plugins: [cacheBustStyles()],
+
   // Base URL: override with VITE_BASE env var for GitHub Pages (Phase 9)
   base: process.env.VITE_BASE ?? '/',
 

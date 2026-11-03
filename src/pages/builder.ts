@@ -877,13 +877,13 @@ function renderFilterDropdown(key: 'sets' | 'keywords' | 'traits' | 'triggers', 
 function renderStatFilter(key: 'power' | 'hp', label: string): string {
   const op = statOps[key];
   const value = filter[key]?.value;
-  return `<div class="stat-filter${value !== undefined ? ' active' : ''}">
+  return `<div class="stat-filter${value !== undefined ? ' active' : ''}" title="${label}: choose at least (≥) or at most (≤), then a number. Clear the box to turn off.">
     <span class="stat-filter-label">${label}</span>
     <select data-stat="${key}" aria-label="${label} comparison">
       <option value=">="${op === '>=' ? ' selected' : ''}>&ge;</option>
       <option value="<="${op === '<=' ? ' selected' : ''}>&le;</option>
     </select>
-    <input type="number" min="0" step="1" inputmode="numeric" data-stat="${key}" aria-label="${label} value" value="${value ?? ''}">
+    <input type="number" min="0" step="1" inputmode="numeric" placeholder="any" data-stat="${key}" aria-label="${label} value" value="${value ?? ''}">
   </div>`;
 }
 
@@ -1473,7 +1473,7 @@ function applyStatFilter(key: 'power' | 'hp', group: Element | null): void {
   if (!select || !input) return;
   statOps[key] = select.value === '<=' ? '<=' : '>=';
   const n = input.value.trim() === '' ? NaN : Number(input.value);
-  filter = { ...filter, [key]: Number.isFinite(n) ? { op: statOps[key], value: n } : undefined };
+  filter = { ...filter, [key]: Number.isFinite(n) && n >= 0 ? { op: statOps[key], value: n } : undefined };
   group.classList.toggle('active', filter[key] !== undefined);
   browserPage = 1;
   renderBrowserResults();
