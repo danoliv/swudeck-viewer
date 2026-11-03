@@ -65,3 +65,18 @@ describe('filterLegalCards', () => {
     expect(result).not.toContainEqual(expect.objectContaining({ id: 'JTL_170' }));
   });
 });
+
+describe('public/data/legal.json (real file)', () => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const real = require('../../public/data/legal.json') as LegalData;
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const knownSets = require('./sets.json') as string[];
+
+  it('only lists Premier sets that exist in sets.json', () => {
+    for (const code of real.premier.sets) expect(knownSets).toContain(code);
+  });
+
+  it('includes the latest main set (HMW) in Premier', () => {
+    expect(real.premier.sets).toContain('HMW');
+  });
+});
