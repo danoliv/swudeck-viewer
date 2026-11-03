@@ -210,6 +210,18 @@ export function toggleCardReady(deck: DeckData, cardId: string, zone: 'deck' | '
   return { ...deck, [zone]: next };
 }
 
+/** Remove the ready flag from every row of one zone. Returns the same deck when nothing was marked. */
+export function clearReady(deck: DeckData, zone: 'deck' | 'sideboard'): DeckData {
+  const list = deck[zone] ?? [];
+  if (!list.some((c) => c.ready)) return deck;
+  const next = list.map((c) => {
+    if (!c.ready) return c;
+    const { ready: _ready, ...rest } = c;
+    return rest;
+  });
+  return { ...deck, [zone]: next };
+}
+
 /** Copies marked ready vs. all copies in one zone. */
 export function countReady(deck: DeckData, zone: 'deck' | 'sideboard'): { readyCards: number; totalCards: number } {
   return (deck[zone] ?? []).reduce(

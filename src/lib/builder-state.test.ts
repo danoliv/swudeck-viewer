@@ -14,6 +14,7 @@ import {
   swapCard,
   toggleCardReady,
   countReady,
+  clearReady,
   placeReady,
   nextReadyPlacement,
 } from './builder-state';
@@ -348,6 +349,37 @@ describe('swapCard', () => {
 });
 
 // ─── ready flag ───────────────────────────────────────────────────────────────
+
+describe('clearReady', () => {
+  const marked: DeckData = {
+    deck: [{ id: 'SEC_213', count: 2, ready: true }, { id: 'SOR_001', count: 1, ready: true }, { id: 'JTL_001' }],
+    sideboard: [{ id: 'SEC_213', count: 1, ready: true }],
+  };
+
+  it('removes the ready flag from every row of the given zone only', () => {
+    const next = clearReady(marked, 'deck');
+    expect(next.deck).toEqual([{ id: 'SEC_213', count: 2 }, { id: 'SOR_001', count: 1 }, { id: 'JTL_001' }]);
+    expect(next.sideboard).toEqual([{ id: 'SEC_213', count: 1, ready: true }]);
+  });
+
+  it('works on the sideboard and leaves counts untouched', () => {
+    const next = clearReady(marked, 'sideboard');
+    expect(next.sideboard).toEqual([{ id: 'SEC_213', count: 1 }]);
+    expect(countReady(next, 'deck')).toEqual({ readyCards: 3, totalCards: 4 });
+  });
+
+  it('returns the same deck when nothing is marked or the zone is missing', () => {
+    const clean: DeckData = { deck: [{ id: 'SOR_001' }] };
+    expect(clearReady(clean, 'deck')).toBe(clean);
+    expect(clearReady(clean, 'sideboard')).toBe(clean);
+  });
+
+  it('does not mutate the input deck', () => {
+    const copy = JSON.parse(JSON.stringify(marked));
+    clearReady(marked, 'deck');
+    expect(marked).toEqual(copy);
+  });
+});
 
 describe('toggleCardReady', () => {
   const base: DeckData = {

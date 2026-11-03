@@ -24,6 +24,7 @@ import {
   setCombinedCardCount,
   swapCard,
   toggleCardReady,
+  clearReady,
   countReady,
   placeReady,
   nextReadyPlacement,
@@ -156,6 +157,9 @@ function renderSortBar(
     const placement = scope === 'deck' ? deckReadyPlacement : sideboardReadyPlacement;
     const label = placement === 'top' ? 'Ready on top' : placement === 'bottom' ? 'Ready at bottom' : 'Ready: off';
     html += `<button type="button" data-action="ready-placement-toggle" data-scope="${scope}" class="sort-button${placement !== 'off' ? ' active' : ''}">${label}</button>`;
+    if (countReady(deck, scope).readyCards > 0) {
+      html += `<button type="button" data-action="clear-ready" data-scope="${scope}" class="sort-button" title="Remove the ready mark from every card">Reset ready</button>`;
+    }
   }
   html += '</div>';
   return html;
@@ -1264,6 +1268,13 @@ document.addEventListener('click', (e) => {
       if (!cardId) return;
       const count = Number(actionEl.dataset['count'] ?? '0');
       updateDeck(setCombinedCardCount(deck, cardId, 'sideboard', count));
+      return;
+    }
+
+    case 'clear-ready': {
+      const scope = actionEl.dataset['scope'];
+      if (scope !== 'deck' && scope !== 'sideboard') return;
+      updateDeck(clearReady(deck, scope));
       return;
     }
 
