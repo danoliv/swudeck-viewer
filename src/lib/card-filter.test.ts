@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, cardTriggers, NEUTRAL_ALIGNMENT } from './card-filter';
+import { filterCards, getLeaders, getBases, categorizeBases, sortCards, combineAspects, cardTypeCategory, cardTriggers, NEUTRAL_ALIGNMENT, isDeckPoolCard } from './card-filter';
 import { normalizeAspects } from './cards';
 import type { CardData } from './cards';
 
@@ -537,5 +537,26 @@ describe('cardTypeCategory', () => {
 
   it('returns "Unknown" when Type is missing', () => {
     expect(cardTypeCategory({ id: 'F' })).toBe('Unknown');
+  });
+});
+
+describe("isDeckPoolCard", () => {
+  it("accepts the card types a deck can actually contain", () => {
+    for (const Type of ["Unit", "Upgrade", "Event"]) expect(isDeckPoolCard({ id: "X_001", Type })).toBe(true);
+  });
+
+  it("rejects leaders and bases (chosen separately)", () => {
+    expect(isDeckPoolCard({ id: "X_001", Type: "Leader" })).toBe(false);
+    expect(isDeckPoolCard({ id: "X_002", Type: "Base" })).toBe(false);
+  });
+
+  it("rejects every token type", () => {
+    for (const Type of ["Token Unit", "Token Upgrade", "Credit Token", "Force Token"]) {
+      expect(isDeckPoolCard({ id: "ASH_T01", Type })).toBe(false);
+    }
+  });
+
+  it("accepts a card with no Type rather than hiding it", () => {
+    expect(isDeckPoolCard({ id: "X_003" })).toBe(true);
   });
 });

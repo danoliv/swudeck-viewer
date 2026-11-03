@@ -1529,6 +1529,19 @@ html[data-page="builder"] body {
     height: 100%;
     object-fit: cover;
     display: block;
+    cursor: zoom-in;
+}
+/* Large hover preview of a thumbnail (see src/lib/card-zoom.ts) */
+.card-zoom-preview {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    background: var(--bg-elevated);
+}
+.card-zoom-preview[hidden] {
+    display: none;
 }
 .alternative-card-placeholder {
     width: 100%;

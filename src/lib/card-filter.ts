@@ -125,6 +125,15 @@ export function filterCards(cards: CardData[], filter: CardFilter): CardData[] {
   });
 }
 
+/**
+ * Whether a card can be added to a deck from the card browser: not a Leader/Base (picked in their own
+ * steps) and not a token (Experience, Shield, Credit… are created in play, never deckbuilt).
+ */
+export function isDeckPoolCard(card: CardData): boolean {
+  const type = String(card.Type ?? '');
+  return type !== 'Leader' && type !== 'Base' && !/token/i.test(type);
+}
+
 // ─── Leader / Base pools ──────────────────────────────────────────────────────
 
 /** All Leader cards in the given pool. */

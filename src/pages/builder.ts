@@ -30,11 +30,13 @@ import {
   nextReadyPlacement,
   type ReadyPlacement,
 } from '../lib/builder-state';
+import { initCardZoom } from '../lib/card-zoom';
 import { loadLegalData, filterLegalCards, type Format, type LegalData } from '../lib/legal';
 import { parseSwudbDeckId, fetchSwudbDeck, mapSwudbToDeckData, parseMeleeDecklist, detectFormat } from '../lib/import';
 import { exportToMeleeText, exportToSwudbJson } from '../lib/export';
 import {
   filterCards,
+  isDeckPoolCard,
   getLeaders,
   getBases,
   categorizeBases,
@@ -65,7 +67,6 @@ const BASE_ASPECTS = ASPECT_GROUPS[0];
 
 /** Same groups as ASPECT_GROUPS, but with a "No Affiliation" pseudo-value appended to the alignment group for rendering. */
 const ASPECT_GROUPS_UI: readonly string[][] = [ASPECT_GROUPS[0], [...ASPECT_GROUPS[1], NEUTRAL_ALIGNMENT]];
-const NON_POOL_TYPES = ['Leader', 'Base'];
 
 const setOrder = loadSets();
 const registry = createDefaultRegistry(setOrder);
@@ -402,9 +403,7 @@ function availableSets(): string[] {
  * name lookup for finding one card, not a criterion a substitute must match.
  */
 function alternativesPool(): CardData[] {
-  return filterCards(allCards, { ...filter, search: undefined }).filter(
-    (c) => !NON_POOL_TYPES.includes(String(c.Type)),
-  );
+  return filterCards(allCards, { ...filter, search: undefined }).filter(isDeckPoolCard);
 }
 
 // ─── Leader stats ─────────────────────────────────────────────────────────────
@@ -916,7 +915,7 @@ function renderBrowserResults(): void {
   const results = el('browserResults');
   if (!results) return;
 
-  const filtered = filterCards(allCards, filter).filter((c) => !NON_POOL_TYPES.includes(String(c.Type)));
+  const filtered = filterCards(allCards, filter).filter(isDeckPoolCard);
   const sorted = sortCards(filtered, effectiveSortKey(browserSort), setOrder, browserSortDir, currentStatsLookup);
   const deckCounts = new Map(deck.deck.map((c) => [c.id, c.count ?? 1]));
   const sideboardCounts = new Map((deck.sideboard ?? []).map((c) => [c.id, c.count ?? 1]));
@@ -1515,6 +1514,7 @@ async function init(): Promise<void> {
     Promise.all([loadAllCards(), loadLegalData(), loadLeaderStatsManifest()]),
     loadFromShareTarget(),
   ]);
+  initCardZoom();
   rawCards = cards;
   legalData = legal;
   applyFormatFilter(deck.metadata?.format);
