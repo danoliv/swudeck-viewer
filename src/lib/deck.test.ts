@@ -213,6 +213,47 @@ describe('TypeSortStrategy', () => {
     const sorted = strategy.sortGroups(['Unknown', 'Unit', 'Event'], {});
     expect(sorted).toEqual(['Event', 'Unit', 'Unknown']);
   });
+
+  it('sortWithinGroup orders cards by cost ascending, not by set/number', () => {
+    const cards = [
+      makeCard('LAW_050', { Cost: '4' }),
+      makeCard('JTL_203', { Cost: '5' }),
+      makeCard('SEC_148', { Cost: '2' }),
+      makeCard('LOF_191', { Cost: '1' }),
+    ];
+    const sorted = strategy.sortWithinGroup(cards, SET_ORDER);
+    expect(sorted.map((c) => c.data.Cost)).toEqual(['1', '2', '4', '5']);
+  });
+
+  it('sortWithinGroup compares costs numerically (10 comes after 9, not after 1)', () => {
+    const cards = [
+      makeCard('SOR_001', { Cost: '10' }),
+      makeCard('SOR_002', { Cost: '9' }),
+      makeCard('SOR_003', { Cost: '1' }),
+    ];
+    const sorted = strategy.sortWithinGroup(cards, SET_ORDER);
+    expect(sorted.map((c) => c.data.Cost)).toEqual(['1', '9', '10']);
+  });
+
+  it('sortWithinGroup breaks cost ties by set order, then card number', () => {
+    const cards = [
+      makeCard('LAW_010', { Cost: '3' }),
+      makeCard('JTL_099', { Cost: '3' }),
+      makeCard('JTL_005', { Cost: '3' }),
+    ];
+    const sorted = strategy.sortWithinGroup(cards, SET_ORDER);
+    expect(sorted.map((c) => c.id)).toEqual(['JTL_005', 'JTL_099', 'LAW_010']);
+  });
+
+  it('sortWithinGroup puts cards with a missing cost last', () => {
+    const cards = [
+      makeCard('SOR_001', { Cost: undefined }),
+      makeCard('SOR_002', { Cost: '7' }),
+      makeCard('SOR_003', { Cost: '0' }),
+    ];
+    const sorted = strategy.sortWithinGroup(cards, SET_ORDER);
+    expect(sorted.map((c) => c.id)).toEqual(['SOR_003', 'SOR_002', 'SOR_001']);
+  });
 });
 
 // ─── TraitSortStrategy ────────────────────────────────────────────────────────

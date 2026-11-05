@@ -198,6 +198,27 @@ export class TypeSortStrategy extends BaseSortStrategy {
     const unknown = keys.includes('Unknown') ? ['Unknown'] : [];
     return [...known, ...unknown];
   }
+
+  /**
+   * Type is the primary key (the sections); cost is the secondary key inside each
+   * section. Ties fall back to the base order (set, then card number); cards
+   * with a missing or non-numeric cost go last.
+   */
+  sortWithinGroup(cards: CardEntry[], setOrder: string[] = []): CardEntry[] {
+    const costOf = (c: CardEntry): number => {
+      const raw = c.data?.Cost;
+      if (raw === undefined || raw === null || raw === '') return Number.POSITIVE_INFINITY;
+      const n = Number(raw);
+      return Number.isNaN(n) ? Number.POSITIVE_INFINITY : n;
+    };
+    const baseOrder = super.sortWithinGroup(cards, setOrder);
+    const rank = new Map(baseOrder.map((c, i) => [c, i]));
+    return [...cards].sort((a, b) => {
+      const byCost = costOf(a) - costOf(b);
+      if (byCost !== 0 && !Number.isNaN(byCost)) return byCost;
+      return (rank.get(a) ?? 0) - (rank.get(b) ?? 0);
+    });
+  }
 }
 
 // ─── TraitSortStrategy ────────────────────────────────────────────────────────
