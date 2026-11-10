@@ -1,500 +1,495 @@
 {
-  "generatedAt": "2026-11-03T18:43:14.847Z",
+  "generatedAt": "2026-11-10T06:16:36.906Z",
   "leaderId": "HMW_014",
   "premier": {
     "metaId": 19,
     "metaName": "Homeworlds",
-    "deckCount": 61,
+    "deckCount": 199,
     "cards": {
       "SEC_148": {
-        "deckCount": 60,
-        "winRate": 56.4,
-        "inclusionRate": 98.4
+        "deckCount": 199,
+        "winRate": 56,
+        "inclusionRate": 100
       },
       "HMW_254": {
-        "deckCount": 58,
-        "winRate": 56.9,
-        "inclusionRate": 95.1
-      },
-      "ASH_248": {
-        "deckCount": 55,
-        "winRate": 57.2,
-        "inclusionRate": 90.2
-      },
-      "SEC_179": {
-        "deckCount": 61,
-        "winRate": 54.1,
-        "inclusionRate": 100
-      },
-      "LAW_191": {
-        "deckCount": 61,
-        "winRate": 55,
-        "inclusionRate": 100
+        "deckCount": 192,
+        "winRate": 56.1,
+        "inclusionRate": 96.5
       },
       "HMW_045": {
-        "deckCount": 51,
-        "winRate": 57.2,
-        "inclusionRate": 83.6
+        "deckCount": 189,
+        "winRate": 56.2,
+        "inclusionRate": 95
+      },
+      "ASH_248": {
+        "deckCount": 187,
+        "winRate": 56.6,
+        "inclusionRate": 94
       },
       "HMW_115": {
-        "deckCount": 49,
-        "winRate": 58.3,
-        "inclusionRate": 80.3
+        "deckCount": 184,
+        "winRate": 56.7,
+        "inclusionRate": 92.5
       },
-      "JTL_153": {
-        "deckCount": 57,
-        "winRate": 53.9,
-        "inclusionRate": 93.4
-      },
-      "JTL_096": {
-        "deckCount": 47,
-        "winRate": 56.5,
-        "inclusionRate": 77
-      },
-      "SEC_101": {
-        "deckCount": 49,
-        "winRate": 55.9,
-        "inclusionRate": 80.3
-      },
-      "HMW_175": {
-        "deckCount": 51,
-        "winRate": 56,
-        "inclusionRate": 83.6
-      },
-      "JTL_151": {
-        "deckCount": 44,
-        "winRate": 56,
-        "inclusionRate": 72.1
+      "SEC_179": {
+        "deckCount": 191,
+        "winRate": 54.8,
+        "inclusionRate": 96
       },
       "HMW_126": {
-        "deckCount": 40,
-        "winRate": 60.4,
-        "inclusionRate": 65.6
-      },
-      "ASH_171": {
-        "deckCount": 46,
+        "deckCount": 171,
         "winRate": 57.5,
-        "inclusionRate": 75.4
+        "inclusionRate": 85.9
       },
-      "LAW_037": {
-        "deckCount": 35,
-        "winRate": 59.3,
-        "inclusionRate": 57.4
+      "LAW_191": {
+        "deckCount": 188,
+        "winRate": 55.1,
+        "inclusionRate": 94.5
+      },
+      "JTL_151": {
+        "deckCount": 170,
+        "winRate": 55.8,
+        "inclusionRate": 85.4
+      },
+      "JTL_096": {
+        "deckCount": 176,
+        "winRate": 56.3,
+        "inclusionRate": 88.4
       },
       "LAW_078": {
-        "deckCount": 37,
-        "winRate": 59.8,
-        "inclusionRate": 60.7
+        "deckCount": 156,
+        "winRate": 57.3,
+        "inclusionRate": 78.4
+      },
+      "JTL_153": {
+        "deckCount": 180,
+        "winRate": 55.1,
+        "inclusionRate": 90.5
       },
       "JTL_250": {
-        "deckCount": 37,
-        "winRate": 58.4,
-        "inclusionRate": 60.7
+        "deckCount": 155,
+        "winRate": 56.4,
+        "inclusionRate": 77.9
       },
-      "ASH_183": {
-        "deckCount": 42,
-        "winRate": 58.5,
-        "inclusionRate": 68.9
+      "LAW_037": {
+        "deckCount": 142,
+        "winRate": 57,
+        "inclusionRate": 71.4
+      },
+      "ASH_171": {
+        "deckCount": 161,
+        "winRate": 56.5,
+        "inclusionRate": 80.9
+      },
+      "HMW_175": {
+        "deckCount": 165,
+        "winRate": 55.7,
+        "inclusionRate": 82.9
+      },
+      "SEC_101": {
+        "deckCount": 162,
+        "winRate": 55.3,
+        "inclusionRate": 81.4
       },
       "SEC_104": {
-        "deckCount": 40,
-        "winRate": 60.4,
-        "inclusionRate": 65.6
+        "deckCount": 155,
+        "winRate": 58,
+        "inclusionRate": 77.9
       },
-      "HMW_193": {
-        "deckCount": 23,
-        "winRate": 44,
-        "inclusionRate": 37.7
-      },
-      "HMW_177": {
-        "deckCount": 23,
-        "winRate": 43.4,
-        "inclusionRate": 37.7
-      },
-      "SEC_256": {
-        "deckCount": 26,
-        "winRate": 47.2,
-        "inclusionRate": 42.6
-      },
-      "SEC_163": {
-        "deckCount": 26,
-        "winRate": 44.9,
-        "inclusionRate": 42.6
+      "ASH_183": {
+        "deckCount": 154,
+        "winRate": 55.7,
+        "inclusionRate": 77.4
       },
       "ASH_163": {
-        "deckCount": 20,
-        "winRate": 63.8,
-        "inclusionRate": 32.8
+        "deckCount": 117,
+        "winRate": 57.3,
+        "inclusionRate": 58.8
       },
-      "HMW_124": {
-        "deckCount": 26,
-        "winRate": 43.5,
-        "inclusionRate": 42.6
+      "SEC_256": {
+        "deckCount": 88,
+        "winRate": 49.3,
+        "inclusionRate": 44.2
       },
-      "SEC_098": {
-        "deckCount": 16,
-        "winRate": 43.4,
-        "inclusionRate": 26.2
+      "SEC_163": {
+        "deckCount": 91,
+        "winRate": 48.2,
+        "inclusionRate": 45.7
       },
-      "ASH_079": {
-        "deckCount": 12,
-        "winRate": 51.4,
-        "inclusionRate": 19.7
+      "HMW_177": {
+        "deckCount": 45,
+        "winRate": 44.5,
+        "inclusionRate": 22.6
       },
-      "LAW_202": {
-        "deckCount": 18,
-        "winRate": 47.3,
-        "inclusionRate": 29.5
-      },
-      "HMW_166": {
-        "deckCount": 12,
-        "winRate": 43.3,
-        "inclusionRate": 19.7
-      },
-      "HMW_162": {
-        "deckCount": 11,
-        "winRate": 39.2,
-        "inclusionRate": 18
-      },
-      "LOF_100": {
-        "deckCount": 15,
-        "winRate": 40.6,
-        "inclusionRate": 24.6
-      },
-      "ASH_153": {
-        "deckCount": 10,
-        "winRate": 45.6,
-        "inclusionRate": 16.4
-      },
-      "HMW_122": {
-        "deckCount": 12,
-        "winRate": 49.7,
-        "inclusionRate": 19.7
-      },
-      "ASH_135": {
-        "deckCount": 14,
-        "winRate": 46.2,
-        "inclusionRate": 23
-      },
-      "HMW_136": {
-        "deckCount": 7,
-        "winRate": 39,
-        "inclusionRate": 11.5
-      },
-      "ASH_112": {
-        "deckCount": 11,
-        "winRate": 32.1,
-        "inclusionRate": 18
-      },
-      "SEC_094": {
-        "deckCount": 9,
-        "winRate": 39.7,
-        "inclusionRate": 14.8
-      },
-      "ASH_116": {
-        "deckCount": 9,
-        "winRate": 65.2,
-        "inclusionRate": 14.8
-      },
-      "ASH_154": {
-        "deckCount": 7,
-        "winRate": 65.4,
-        "inclusionRate": 11.5
-      },
-      "SEC_159": {
-        "deckCount": 6,
-        "winRate": 41.7,
-        "inclusionRate": 9.8
-      },
-      "LAW_048": {
-        "deckCount": 6,
-        "winRate": 41.7,
-        "inclusionRate": 9.8
-      },
-      "JTL_175": {
-        "deckCount": 9,
-        "winRate": 44.4,
-        "inclusionRate": 14.8
-      },
-      "LOF_148": {
-        "deckCount": 6,
-        "winRate": 43.9,
-        "inclusionRate": 9.8
-      },
-      "HMW_044": {
-        "deckCount": 6,
-        "winRate": 30.1,
-        "inclusionRate": 9.8
-      },
-      "LAW_045": {
-        "deckCount": 6,
-        "winRate": 34.2,
-        "inclusionRate": 9.8
-      },
-      "ASH_031": {
-        "deckCount": 5,
-        "winRate": 37,
-        "inclusionRate": 8.2
-      },
-      "HMW_213": {
-        "deckCount": 6,
-        "winRate": 46.1,
-        "inclusionRate": 9.8
-      },
-      "HMW_039": {
-        "deckCount": 6,
-        "winRate": 43.8,
-        "inclusionRate": 9.8
-      },
-      "JTL_078": {
-        "deckCount": 8,
-        "winRate": 62.1,
-        "inclusionRate": 13.1
+      "HMW_193": {
+        "deckCount": 44,
+        "winRate": 44.2,
+        "inclusionRate": 22.1
       },
       "HMW_118": {
-        "deckCount": 7,
-        "winRate": 69.2,
-        "inclusionRate": 11.5
-      },
-      "HMW_046": {
-        "deckCount": 7,
-        "winRate": 37,
-        "inclusionRate": 11.5
-      },
-      "ASH_062": {
-        "deckCount": 5,
-        "winRate": 35.7,
-        "inclusionRate": 8.2
-      },
-      "HMW_164": {
-        "deckCount": 4,
-        "winRate": 29.6,
-        "inclusionRate": 6.6
-      },
-      "ASH_109": {
-        "deckCount": 6,
-        "winRate": 33.3,
-        "inclusionRate": 9.8
-      },
-      "HMW_176": {
-        "deckCount": 5,
-        "winRate": 33.3,
-        "inclusionRate": 8.2
-      },
-      "JTL_106": {
-        "deckCount": 5,
-        "winRate": 69.1,
-        "inclusionRate": 8.2
+        "deckCount": 53,
+        "winRate": 58,
+        "inclusionRate": 26.6
       },
       "HMW_130": {
-        "deckCount": 4,
-        "winRate": 68.3,
-        "inclusionRate": 6.6
+        "deckCount": 42,
+        "winRate": 64.2,
+        "inclusionRate": 21.1
       },
-      "SEC_046": {
-        "deckCount": 6,
-        "winRate": 45.9,
-        "inclusionRate": 9.8
+      "LAW_202": {
+        "deckCount": 36,
+        "winRate": 46.9,
+        "inclusionRate": 18.1
+      },
+      "HMW_124": {
+        "deckCount": 43,
+        "winRate": 46.1,
+        "inclusionRate": 21.6
+      },
+      "ASH_154": {
+        "deckCount": 29,
+        "winRate": 61.8,
+        "inclusionRate": 14.6
+      },
+      "SEC_098": {
+        "deckCount": 30,
+        "winRate": 48.7,
+        "inclusionRate": 15.1
+      },
+      "JTL_106": {
+        "deckCount": 27,
+        "winRate": 64,
+        "inclusionRate": 13.6
+      },
+      "ASH_079": {
+        "deckCount": 19,
+        "winRate": 53.1,
+        "inclusionRate": 9.5
+      },
+      "HMW_162": {
+        "deckCount": 21,
+        "winRate": 37.6,
+        "inclusionRate": 10.6
+      },
+      "HMW_166": {
+        "deckCount": 20,
+        "winRate": 46,
+        "inclusionRate": 10.1
+      },
+      "ASH_112": {
+        "deckCount": 26,
+        "winRate": 47.1,
+        "inclusionRate": 13.1
+      },
+      "ASH_153": {
+        "deckCount": 22,
+        "winRate": 50.3,
+        "inclusionRate": 11.1
+      },
+      "ASH_156": {
+        "deckCount": 31,
+        "winRate": 62.9,
+        "inclusionRate": 15.6
+      },
+      "LOF_248": {
+        "deckCount": 19,
+        "winRate": 64.6,
+        "inclusionRate": 9.5
+      },
+      "ASH_135": {
+        "deckCount": 23,
+        "winRate": 42.1,
+        "inclusionRate": 11.6
+      },
+      "LOF_155": {
+        "deckCount": 23,
+        "winRate": 56.2,
+        "inclusionRate": 11.6
+      },
+      "HMW_136": {
+        "deckCount": 12,
+        "winRate": 35.1,
+        "inclusionRate": 6
+      },
+      "LOF_100": {
+        "deckCount": 21,
+        "winRate": 43.6,
+        "inclusionRate": 10.6
+      },
+      "HMW_122": {
+        "deckCount": 18,
+        "winRate": 53.5,
+        "inclusionRate": 9
+      },
+      "JTL_175": {
+        "deckCount": 18,
+        "winRate": 50.9,
+        "inclusionRate": 9
+      },
+      "HMW_164": {
+        "deckCount": 10,
+        "winRate": 27.5,
+        "inclusionRate": 5
+      },
+      "HMW_176": {
+        "deckCount": 11,
+        "winRate": 32.9,
+        "inclusionRate": 5.5
+      },
+      "SEC_159": {
+        "deckCount": 11,
+        "winRate": 43.6,
+        "inclusionRate": 5.5
+      },
+      "SEC_094": {
+        "deckCount": 12,
+        "winRate": 41.2,
+        "inclusionRate": 6
+      },
+      "ASH_116": {
+        "deckCount": 13,
+        "winRate": 66.2,
+        "inclusionRate": 6.5
+      },
+      "HMW_195": {
+        "deckCount": 16,
+        "winRate": 65.1,
+        "inclusionRate": 8
       },
       "JTL_112": {
-        "deckCount": 4,
-        "winRate": 55.7,
-        "inclusionRate": 6.6
+        "deckCount": 11,
+        "winRate": 60.7,
+        "inclusionRate": 5.5
       },
-      "LOF_107": {
-        "deckCount": 4,
-        "winRate": 31.4,
-        "inclusionRate": 6.6
+      "JTL_078": {
+        "deckCount": 15,
+        "winRate": 57.5,
+        "inclusionRate": 7.5
       },
-      "ASH_129": {
-        "deckCount": 7,
-        "winRate": 28.6,
-        "inclusionRate": 11.5
+      "LOF_148": {
+        "deckCount": 10,
+        "winRate": 42.4,
+        "inclusionRate": 5
       },
-      "LOF_070": {
-        "deckCount": 3,
-        "winRate": 54.2,
-        "inclusionRate": 4.9
+      "HMW_163": {
+        "deckCount": 8,
+        "winRate": 23.7,
+        "inclusionRate": 4
       },
-      "JTL_149": {
-        "deckCount": 3,
-        "winRate": 41.7,
-        "inclusionRate": 4.9
+      "HMW_044": {
+        "deckCount": 9,
+        "winRate": 34.8,
+        "inclusionRate": 4.5
       },
-      "LAW_129": {
-        "deckCount": 3,
-        "winRate": 31.3,
-        "inclusionRate": 4.9
+      "ASH_031": {
+        "deckCount": 8,
+        "winRate": 35.8,
+        "inclusionRate": 4
       },
-      "HMW_208": {
-        "deckCount": 3,
-        "winRate": 47.8,
-        "inclusionRate": 4.9
+      "HMW_117": {
+        "deckCount": 13,
+        "winRate": 56.6,
+        "inclusionRate": 6.5
+      },
+      "LAW_045": {
+        "deckCount": 8,
+        "winRate": 41.3,
+        "inclusionRate": 4
       },
       "HMW_257": {
-        "deckCount": 3,
-        "winRate": 14.6,
-        "inclusionRate": 4.9
+        "deckCount": 8,
+        "winRate": 19.4,
+        "inclusionRate": 4
       },
-      "SEC_170": {
-        "deckCount": 4,
-        "winRate": 50,
-        "inclusionRate": 6.6
+      "LAW_048": {
+        "deckCount": 7,
+        "winRate": 45.2,
+        "inclusionRate": 3.5
+      },
+      "ASH_129": {
+        "deckCount": 12,
+        "winRate": 29,
+        "inclusionRate": 6
+      },
+      "HMW_039": {
+        "deckCount": 9,
+        "winRate": 45.8,
+        "inclusionRate": 4.5
+      },
+      "HMW_213": {
+        "deckCount": 7,
+        "winRate": 46.5,
+        "inclusionRate": 3.5
+      },
+      "HMW_046": {
+        "deckCount": 10,
+        "winRate": 37.4,
+        "inclusionRate": 5
+      },
+      "LOF_107": {
+        "deckCount": 7,
+        "winRate": 30.9,
+        "inclusionRate": 3.5
+      },
+      "ASH_109": {
+        "deckCount": 8,
+        "winRate": 36.5,
+        "inclusionRate": 4
+      },
+      "ASH_062": {
+        "deckCount": 7,
+        "winRate": 39.8,
+        "inclusionRate": 3.5
+      },
+      "SEC_046": {
+        "deckCount": 8,
+        "winRate": 49,
+        "inclusionRate": 4
+      },
+      "LAW_205": {
+        "deckCount": 10,
+        "winRate": 66.2,
+        "inclusionRate": 5
+      },
+      "HMW_116": {
+        "deckCount": 5,
+        "winRate": 21.7,
+        "inclusionRate": 2.5
+      },
+      "ASH_068": {
+        "deckCount": 7,
+        "winRate": 66.3,
+        "inclusionRate": 3.5
       },
       "JTL_181": {
+        "deckCount": 6,
+        "winRate": 37.5,
+        "inclusionRate": 3
+      },
+      "LOF_096": {
+        "deckCount": 5,
+        "winRate": 41.8,
+        "inclusionRate": 2.5
+      },
+      "SEC_170": {
+        "deckCount": 6,
+        "winRate": 48.6,
+        "inclusionRate": 3
+      },
+      "HMW_129": {
+        "deckCount": 7,
+        "winRate": 60.2,
+        "inclusionRate": 3.5
+      },
+      "JTL_149": {
         "deckCount": 4,
-        "winRate": 36.4,
-        "inclusionRate": 6.6
-      },
-      "ASH_118": {
-        "deckCount": 4,
-        "winRate": 34.9,
-        "inclusionRate": 6.6
-      },
-      "LAW_208": {
-        "deckCount": 3,
-        "winRate": 29.4,
-        "inclusionRate": 4.9
-      },
-      "SEC_157": {
-        "deckCount": 3,
-        "winRate": 33.3,
-        "inclusionRate": 4.9
-      },
-      "LOF_191": {
-        "deckCount": 2,
-        "winRate": 52.6,
-        "inclusionRate": 3.3
-      },
-      "JTL_203": {
-        "deckCount": 2,
-        "winRate": 40,
-        "inclusionRate": 3.3
+        "winRate": 42.9,
+        "inclusionRate": 2
       },
       "LAW_089": {
-        "deckCount": 2,
-        "winRate": 27.3,
-        "inclusionRate": 3.3
+        "deckCount": 4,
+        "winRate": 42,
+        "inclusionRate": 2
       },
-      "LOF_215": {
-        "deckCount": 2,
-        "winRate": 40,
-        "inclusionRate": 3.3
+      "LOF_070": {
+        "deckCount": 4,
+        "winRate": 55.1,
+        "inclusionRate": 2
+      },
+      "HMW_165": {
+        "deckCount": 5,
+        "winRate": 24,
+        "inclusionRate": 2.5
+      },
+      "LAW_129": {
+        "deckCount": 4,
+        "winRate": 35.2,
+        "inclusionRate": 2
+      },
+      "HMW_208": {
+        "deckCount": 4,
+        "winRate": 47.9,
+        "inclusionRate": 2
+      },
+      "ASH_118": {
+        "deckCount": 5,
+        "winRate": 42.2,
+        "inclusionRate": 2.5
+      },
+      "SEC_213": {
+        "deckCount": 3,
+        "winRate": 42.9,
+        "inclusionRate": 1.5
+      },
+      "ASH_063": {
+        "deckCount": 5,
+        "winRate": 67.1,
+        "inclusionRate": 2.5
+      },
+      "LOF_160": {
+        "deckCount": 5,
+        "winRate": 54.3,
+        "inclusionRate": 2.5
+      },
+      "JTL_203": {
+        "deckCount": 3,
+        "winRate": 42.9,
+        "inclusionRate": 1.5
+      },
+      "LOF_191": {
+        "deckCount": 3,
+        "winRate": 52.2,
+        "inclusionRate": 1.5
+      },
+      "HMW_186": {
+        "deckCount": 3,
+        "winRate": 30.4,
+        "inclusionRate": 1.5
+      },
+      "SEC_254": {
+        "deckCount": 4,
+        "winRate": 54.8,
+        "inclusionRate": 2
+      },
+      "LAW_208": {
+        "deckCount": 4,
+        "winRate": 35,
+        "inclusionRate": 2
+      },
+      "LAW_149": {
+        "deckCount": 6,
+        "winRate": 43.6,
+        "inclusionRate": 3
+      },
+      "JTL_221": {
+        "deckCount": 3,
+        "winRate": 50,
+        "inclusionRate": 1.5
+      },
+      "LAW_056": {
+        "deckCount": 3,
+        "winRate": 10.5,
+        "inclusionRate": 1.5
+      },
+      "SEC_069": {
+        "deckCount": 3,
+        "winRate": 53.3,
+        "inclusionRate": 1.5
+      },
+      "ASH_161": {
+        "deckCount": 4,
+        "winRate": 52.2,
+        "inclusionRate": 2
+      },
+      "SEC_233": {
+        "deckCount": 4,
+        "winRate": 50,
+        "inclusionRate": 2
       },
       "LAW_172": {
         "deckCount": 2,
         "winRate": 45.5,
-        "inclusionRate": 3.3
-      },
-      "LOF_160": {
-        "deckCount": 3,
-        "winRate": 54.2,
-        "inclusionRate": 4.9
-      },
-      "HMW_117": {
-        "deckCount": 3,
-        "winRate": 68.6,
-        "inclusionRate": 4.9
-      },
-      "HMW_163": {
-        "deckCount": 2,
-        "winRate": 23.1,
-        "inclusionRate": 3.3
-      },
-      "HMW_116": {
-        "deckCount": 2,
-        "winRate": 23.1,
-        "inclusionRate": 3.3
-      },
-      "SEC_213": {
-        "deckCount": 2,
-        "winRate": 40,
-        "inclusionRate": 3.3
-      },
-      "LAW_149": {
-        "deckCount": 4,
-        "winRate": 45.7,
-        "inclusionRate": 6.6
-      },
-      "SEC_233": {
-        "deckCount": 3,
-        "winRate": 50,
-        "inclusionRate": 4.9
-      },
-      "LAW_049": {
-        "deckCount": 2,
-        "winRate": 43.5,
-        "inclusionRate": 3.3
-      },
-      "LOF_248": {
-        "deckCount": 2,
-        "winRate": 67.7,
-        "inclusionRate": 3.3
-      },
-      "ASH_090": {
-        "deckCount": 2,
-        "winRate": 53.7,
-        "inclusionRate": 3.3
-      },
-      "LOF_057": {
-        "deckCount": 2,
-        "winRate": 57.9,
-        "inclusionRate": 3.3
-      },
-      "JTL_121": {
-        "deckCount": 3,
-        "winRate": 9.5,
-        "inclusionRate": 4.9
-      },
-      "ASH_077": {
-        "deckCount": 3,
-        "winRate": 46.2,
-        "inclusionRate": 4.9
-      },
-      "ASH_056": {
-        "deckCount": 2,
-        "winRate": 45.5,
-        "inclusionRate": 3.3
-      },
-      "HMW_195": {
-        "deckCount": 2,
-        "winRate": 72,
-        "inclusionRate": 3.3
-      },
-      "ASH_156": {
-        "deckCount": 4,
-        "winRate": 75.5,
-        "inclusionRate": 6.6
-      },
-      "HMW_165": {
-        "deckCount": 2,
-        "winRate": 23.1,
-        "inclusionRate": 3.3
-      },
-      "ASH_161": {
-        "deckCount": 2,
-        "winRate": 50,
-        "inclusionRate": 3.3
-      },
-      "ASH_063": {
-        "deckCount": 2,
-        "winRate": 72,
-        "inclusionRate": 3.3
-      },
-      "SEC_043": {
-        "deckCount": 2,
-        "winRate": 45.5,
-        "inclusionRate": 3.3
-      },
-      "ASH_166": {
-        "deckCount": 1,
-        "winRate": 14.3,
-        "inclusionRate": 1.6
-      },
-      "LAW_205": {
-        "deckCount": 2,
-        "winRate": 66.7,
-        "inclusionRate": 3.3
+        "inclusionRate": 1
       }
     }
   }
