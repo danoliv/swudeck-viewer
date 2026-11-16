@@ -70,11 +70,11 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Foil",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/724.png",
       "tcgplayerId": "640444",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -128,11 +128,11 @@
       "Unique": false,
       "Artist": "Aarnoud De Rycker",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/106.png",
       "tcgplayerId": "637874",
-      "LowPrice": "0.05"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -161,7 +161,7 @@
       "Unique": false,
       "Artist": "Aarnoud De Rycker",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/370.png",
       "tcgplayerId": "640077",
@@ -227,7 +227,7 @@
       "Unique": false,
       "Artist": "Aarnoud De Rycker",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/846.png",
       "tcgplayerId": "640575",
@@ -293,7 +293,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/393.png",
       "tcgplayerId": "640100",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -320,7 +320,7 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/631.png",
       "tcgplayerId": "640351",
@@ -351,7 +351,7 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/869.png",
       "tcgplayerId": "640598",
@@ -513,11 +513,11 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Prestige",
-      "MarketPrice": "2.91",
+      "MarketPrice": "2.93",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1060.png",
       "tcgplayerId": "640785",
-      "LowPrice": "2.72"
+      "LowPrice": "2.73"
     },
     {
       "Set": "LOF",
@@ -581,7 +581,7 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "26.82",
+      "MarketPrice": "37.87",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1152.png",
       "tcgplayerId": "640877",
@@ -615,7 +615,7 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Normal",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/142.png",
       "tcgplayerId": "637898",
@@ -649,7 +649,7 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.76",
+      "MarketPrice": "0.75",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/406.png",
       "tcgplayerId": "640113",
@@ -683,7 +683,7 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Foil",
-      "MarketPrice": "0.58",
+      "MarketPrice": "0.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/644.png",
       "tcgplayerId": "640364",
@@ -717,7 +717,7 @@
       "Unique": true,
       "Artist": "Salomé Goré",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.21",
+      "MarketPrice": "2.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/882.png",
       "tcgplayerId": "640611",
@@ -795,12 +795,12 @@
       ],
       "Artist": "Afif Khaled",
       "VariantType": "Showcase",
-      "MarketPrice": "39.73",
+      "MarketPrice": "39.16",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1007.png",
       "tcgplayerId": "640888",
-      "LowPrice": "38.00",
-      "LowFoilPrice": "38.00"
+      "LowPrice": "37.20",
+      "LowFoilPrice": "37.20"
     },
     {
       "Set": "LOF",
@@ -835,7 +835,7 @@
       ],
       "Artist": "Reno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.20",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/267.png",
       "tcgplayerId": "639958",
@@ -861,7 +861,7 @@
       "Unique": false,
       "Artist": "Joey Vazquez",
       "VariantType": "Normal",
-      "MarketPrice": "0.85",
+      "MarketPrice": "0.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/042.png",
       "tcgplayerId": "637828",
@@ -887,11 +887,11 @@
       "Unique": false,
       "Artist": "Joey Vazquez",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.72",
+      "MarketPrice": "1.70",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/306.png",
       "tcgplayerId": "640013",
-      "LowPrice": "0.86"
+      "LowPrice": "0.80"
     },
     {
       "Set": "LOF",
@@ -913,7 +913,7 @@
       "Unique": false,
       "Artist": "Joey Vazquez",
       "VariantType": "Foil",
-      "MarketPrice": "1.12",
+      "MarketPrice": "1.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/544.png",
       "tcgplayerId": "640263",
@@ -939,7 +939,7 @@
       "Unique": false,
       "Artist": "Joey Vazquez",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.78",
+      "MarketPrice": "3.84",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/782.png",
       "tcgplayerId": "640511",
@@ -975,7 +975,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/018.png",
       "tcgplayerId": "638070",
@@ -1008,11 +1008,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "12.12",
+      "MarketPrice": "11.69",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/070.png",
       "tcgplayerId": "637847",
-      "LowPrice": "10.80"
+      "LowPrice": "9.79"
     },
     {
       "Set": "LOF",
@@ -1044,12 +1044,12 @@
       "Unique": true,
       "Artist": "Gabriel Gómez",
       "VariantType": "Showcase",
-      "MarketPrice": "49.90",
+      "MarketPrice": "49.74",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1022.png",
       "tcgplayerId": "640903",
-      "LowPrice": "45.00",
-      "LowFoilPrice": "45.00"
+      "LowPrice": "47.64",
+      "LowFoilPrice": "47.64"
     },
     {
       "Set": "LOF",
@@ -1086,7 +1086,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1052.png",
       "tcgplayerId": "640777",
-      "LowPrice": "0.68"
+      "LowPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -1115,11 +1115,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "17.03",
+      "MarketPrice": "16.87",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1067.png",
       "tcgplayerId": "640792",
-      "LowPrice": "14.37"
+      "LowPrice": "14.28"
     },
     {
       "Set": "LOF",
@@ -1152,11 +1152,11 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "2.53",
+      "MarketPrice": "2.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1098.png",
       "tcgplayerId": "640823",
-      "LowFoilPrice": "2.48"
+      "LowFoilPrice": "2.46"
     },
     {
       "Set": "LOF",
@@ -1185,11 +1185,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "30.17",
+      "MarketPrice": "30.46",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1113.png",
       "tcgplayerId": "640838",
-      "LowFoilPrice": "27.66"
+      "LowFoilPrice": "27.16"
     },
     {
       "Set": "LOF",
@@ -1222,7 +1222,7 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "103.04",
+      "MarketPrice": "144.88",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1144.png",
       "tcgplayerId": "640869",
@@ -1292,7 +1292,7 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/190.png",
       "tcgplayerId": "631948",
@@ -1361,11 +1361,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "15.55",
+      "MarketPrice": "15.48",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/334.png",
       "tcgplayerId": "640041",
-      "LowPrice": "12.99"
+      "LowPrice": "10.00"
     },
     {
       "Set": "LOF",
@@ -1431,11 +1431,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Foil",
-      "MarketPrice": "10.99",
+      "MarketPrice": "10.85",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/572.png",
       "tcgplayerId": "640291",
-      "LowFoilPrice": "9.50"
+      "LowFoilPrice": "9.36"
     },
     {
       "Set": "LOF",
@@ -1501,7 +1501,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "26.26",
+      "MarketPrice": "26.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/810.png",
       "tcgplayerId": "640539",
@@ -1538,7 +1538,7 @@
       ],
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.68",
+      "MarketPrice": "0.65",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/930.png",
       "tcgplayerId": "640659",
@@ -1692,7 +1692,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/188.png",
       "tcgplayerId": "631946",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -1740,7 +1740,7 @@
       "Unique": false,
       "Artist": "Axel Hutt",
       "VariantType": "Foil",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/690.png",
       "tcgplayerId": "640410",
@@ -1836,7 +1836,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/429.png",
       "tcgplayerId": "640136",
-      "LowPrice": "0.12"
+      "LowPrice": "0.11"
     },
     {
       "Set": "LOF",
@@ -1865,7 +1865,7 @@
       "Unique": true,
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/667.png",
       "tcgplayerId": "640387",
@@ -1898,7 +1898,7 @@
       "Unique": true,
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.85",
+      "MarketPrice": "0.83",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/905.png",
       "tcgplayerId": "640634",
@@ -1928,7 +1928,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/215.png",
       "tcgplayerId": "637953",
@@ -1958,7 +1958,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/479.png",
       "tcgplayerId": "640186",
@@ -2018,7 +2018,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/955.png",
       "tcgplayerId": "640684",
@@ -2068,7 +2068,7 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/438.png",
       "tcgplayerId": "640145",
@@ -2291,7 +2291,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/179.png",
       "tcgplayerId": "637928",
@@ -2328,7 +2328,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.82",
+      "MarketPrice": "0.80",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/443.png",
       "tcgplayerId": "640150",
@@ -2402,7 +2402,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.68",
+      "MarketPrice": "1.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/919.png",
       "tcgplayerId": "640648",
@@ -2482,12 +2482,12 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Showcase",
-      "MarketPrice": "80.14",
+      "MarketPrice": "74.60",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1011.png",
       "tcgplayerId": "640892",
-      "LowPrice": "60.32",
-      "LowFoilPrice": "60.32"
+      "LowPrice": "58.50",
+      "LowFoilPrice": "58.50"
     },
     {
       "Set": "LOF",
@@ -2682,7 +2682,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "2.28",
+      "MarketPrice": "2.24",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/062.png",
       "tcgplayerId": "637843",
@@ -2717,7 +2717,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.08",
+      "MarketPrice": "3.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/326.png",
       "tcgplayerId": "640033",
@@ -2752,7 +2752,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Foil",
-      "MarketPrice": "2.22",
+      "MarketPrice": "2.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/564.png",
       "tcgplayerId": "640283",
@@ -2787,11 +2787,11 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.92",
+      "MarketPrice": "3.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/802.png",
       "tcgplayerId": "640531",
-      "LowFoilPrice": "3.92"
+      "LowFoilPrice": "3.94"
     },
     {
       "Set": "LOF",
@@ -2824,11 +2824,11 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/191.png",
       "tcgplayerId": "637937",
-      "LowPrice": "0.05"
+      "LowPrice": "0.03"
     },
     {
       "Set": "LOF",
@@ -2935,7 +2935,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/931.png",
       "tcgplayerId": "640660",
@@ -2997,7 +2997,7 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.78",
+      "MarketPrice": "0.77",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/470.png",
       "tcgplayerId": "640177",
@@ -3059,7 +3059,7 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.62",
+      "MarketPrice": "1.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/946.png",
       "tcgplayerId": "640675",
@@ -3131,11 +3131,11 @@
       ],
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/445.png",
       "tcgplayerId": "640152",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -3240,7 +3240,7 @@
       "Unique": true,
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/013.png",
       "tcgplayerId": "638055",
@@ -3281,8 +3281,8 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1017.png",
       "tcgplayerId": "640898",
-      "LowPrice": "54.99",
-      "LowFoilPrice": "54.99"
+      "LowPrice": "53.00",
+      "LowFoilPrice": "53.00"
     },
     {
       "Set": "LOF",
@@ -3371,7 +3371,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/403.png",
       "tcgplayerId": "640110",
@@ -3427,7 +3427,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.94",
+      "MarketPrice": "0.96",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/879.png",
       "tcgplayerId": "640608",
@@ -3503,7 +3503,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1111.png",
       "tcgplayerId": "640836",
-      "LowFoilPrice": "3.59"
+      "LowFoilPrice": "3.60"
     },
     {
       "Set": "LOF",
@@ -3607,11 +3607,11 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/449.png",
       "tcgplayerId": "640156",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -3679,7 +3679,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/925.png",
       "tcgplayerId": "640654",
@@ -3711,7 +3711,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Prestige",
-      "MarketPrice": "2.12",
+      "MarketPrice": "2.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1045.png",
       "tcgplayerId": "640770",
@@ -3743,11 +3743,11 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "6.16",
+      "MarketPrice": "6.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1091.png",
       "tcgplayerId": "640816",
-      "LowFoilPrice": "4.00"
+      "LowFoilPrice": "3.80"
     },
     {
       "Set": "LOF",
@@ -3807,7 +3807,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.54",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/170.png",
       "tcgplayerId": "637920",
@@ -3839,7 +3839,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.68",
+      "MarketPrice": "0.67",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/434.png",
       "tcgplayerId": "640141",
@@ -3903,7 +3903,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.55",
+      "MarketPrice": "1.48",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/910.png",
       "tcgplayerId": "640639",
@@ -3942,7 +3942,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/166.png",
       "tcgplayerId": "637916",
-      "LowPrice": "0.05"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -3973,7 +3973,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/430.png",
       "tcgplayerId": "640137",
@@ -4008,7 +4008,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/668.png",
       "tcgplayerId": "640388",
@@ -4113,7 +4113,7 @@
       ],
       "Artist": "Kursad Karatas",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/515.png",
       "tcgplayerId": "640222",
@@ -4241,7 +4241,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/338.png",
       "tcgplayerId": "640045",
-      "LowPrice": "0.02"
+      "LowPrice": "0.03"
     },
     {
       "Set": "LOF",
@@ -4264,7 +4264,7 @@
       "Unique": false,
       "Artist": "Jakub Rebelka",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/576.png",
       "tcgplayerId": "640295",
@@ -4363,12 +4363,12 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Showcase",
-      "MarketPrice": "32.28",
+      "MarketPrice": "30.93",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1019.png",
       "tcgplayerId": "640900",
-      "LowPrice": "27.99",
-      "LowFoilPrice": "27.99"
+      "LowPrice": "27.54",
+      "LowFoilPrice": "27.54"
     },
     {
       "Set": "LOF",
@@ -4537,11 +4537,11 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/083.png",
       "tcgplayerId": "631923",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -4603,7 +4603,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/585.png",
       "tcgplayerId": "640304",
@@ -4636,7 +4636,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.93",
+      "MarketPrice": "0.89",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/823.png",
       "tcgplayerId": "640552",
@@ -4696,7 +4696,7 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/507.png",
       "tcgplayerId": "640214",
@@ -4826,7 +4826,7 @@
       ],
       "Artist": "Space Gooose",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/421.png",
       "tcgplayerId": "640128",
@@ -4861,7 +4861,7 @@
       ],
       "Artist": "Space Gooose",
       "VariantType": "Foil",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/659.png",
       "tcgplayerId": "640379",
@@ -4998,7 +4998,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/712.png",
       "tcgplayerId": "640432",
@@ -5032,7 +5032,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/950.png",
       "tcgplayerId": "640679",
@@ -5071,7 +5071,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/067.png",
       "tcgplayerId": "631918",
-      "LowPrice": "0.16"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -5106,7 +5106,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1046.png",
       "tcgplayerId": "640771",
-      "LowPrice": "3.38"
+      "LowPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -5137,11 +5137,11 @@
       ],
       "Artist": "EJ Dela Cruz",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "7.96",
+      "MarketPrice": "7.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1092.png",
       "tcgplayerId": "640817",
-      "LowFoilPrice": "3.95"
+      "LowFoilPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -5207,7 +5207,7 @@
       ],
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.86",
+      "MarketPrice": "0.85",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/331.png",
       "tcgplayerId": "640038",
@@ -5246,7 +5246,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/569.png",
       "tcgplayerId": "640288",
-      "LowFoilPrice": "0.05"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -5281,7 +5281,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/807.png",
       "tcgplayerId": "640536",
-      "LowFoilPrice": "0.75"
+      "LowFoilPrice": "0.77"
     },
     {
       "Set": "LOF",
@@ -5417,7 +5417,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/150.png",
       "tcgplayerId": "637904",
-      "LowPrice": "0.25"
+      "LowPrice": "0.17"
     },
     {
       "Set": "LOF",
@@ -5481,7 +5481,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/652.png",
       "tcgplayerId": "640372",
@@ -5542,11 +5542,11 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "22.48",
+      "MarketPrice": "21.76",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1001.png",
       "tcgplayerId": "640730",
-      "LowFoilPrice": "10.12"
+      "LowFoilPrice": "7.04"
     },
     {
       "Set": "LOF",
@@ -5569,11 +5569,11 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Normal",
-      "MarketPrice": "7.44",
+      "MarketPrice": "6.37",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/261.png",
       "tcgplayerId": "637986",
-      "LowPrice": "5.50"
+      "LowPrice": "5.40"
     },
     {
       "Set": "LOF",
@@ -5596,11 +5596,11 @@
       "Unique": false,
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "9.52",
+      "MarketPrice": "8.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/525.png",
       "tcgplayerId": "640232",
-      "LowPrice": "4.49"
+      "LowPrice": "4.80"
     },
     {
       "Set": "LOF",
@@ -5787,7 +5787,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/451.png",
       "tcgplayerId": "640158",
-      "LowPrice": "0.06"
+      "LowPrice": "0.07"
     },
     {
       "Set": "LOF",
@@ -5813,7 +5813,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Foil",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/689.png",
       "tcgplayerId": "640409",
@@ -5871,11 +5871,11 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "2.74",
+      "MarketPrice": "3.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/091.png",
       "tcgplayerId": "637864",
-      "LowPrice": "2.00"
+      "LowPrice": "3.10"
     },
     {
       "Set": "LOF",
@@ -5903,7 +5903,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/355.png",
       "tcgplayerId": "640062",
-      "LowPrice": "9.64"
+      "LowPrice": "5.00"
     },
     {
       "Set": "LOF",
@@ -5927,11 +5927,11 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "7.10",
+      "MarketPrice": "6.85",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/593.png",
       "tcgplayerId": "640312",
-      "LowFoilPrice": "3.30"
+      "LowFoilPrice": "3.83"
     },
     {
       "Set": "LOF",
@@ -5959,7 +5959,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/831.png",
       "tcgplayerId": "640560",
-      "LowFoilPrice": "17.33"
+      "LowFoilPrice": "17.28"
     },
     {
       "Set": "LOF",
@@ -6005,7 +6005,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/341.png",
       "tcgplayerId": "640048",
@@ -6030,7 +6030,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/579.png",
       "tcgplayerId": "640298",
@@ -6155,7 +6155,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/339.png",
       "tcgplayerId": "640046",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -6176,7 +6176,7 @@
       "Unique": false,
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/577.png",
       "tcgplayerId": "640296",
@@ -6229,7 +6229,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/255.png",
       "tcgplayerId": "631969",
@@ -6285,7 +6285,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Foil",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/757.png",
       "tcgplayerId": "640477",
@@ -6433,11 +6433,11 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.43",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/895.png",
       "tcgplayerId": "640624",
-      "LowFoilPrice": "0.24"
+      "LowFoilPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -6493,7 +6493,7 @@
       "Unique": false,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/379.png",
       "tcgplayerId": "640086",
@@ -6553,7 +6553,7 @@
       "Unique": false,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/855.png",
       "tcgplayerId": "640584",
@@ -6592,7 +6592,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1068.png",
       "tcgplayerId": "640793",
-      "LowPrice": "6.35"
+      "LowPrice": "5.15"
     },
     {
       "Set": "LOF",
@@ -6693,11 +6693,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Normal",
-      "MarketPrice": "2.09",
+      "MarketPrice": "2.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/234.png",
       "tcgplayerId": "631963",
-      "LowPrice": "1.75"
+      "LowPrice": "1.59"
     },
     {
       "Set": "LOF",
@@ -6728,11 +6728,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.52",
+      "MarketPrice": "3.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/498.png",
       "tcgplayerId": "640205",
-      "LowPrice": "0.94"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -6763,11 +6763,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "3.98",
+      "MarketPrice": "4.03",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/736.png",
       "tcgplayerId": "640456",
-      "LowFoilPrice": "2.80"
+      "LowFoilPrice": "1.99"
     },
     {
       "Set": "LOF",
@@ -6802,7 +6802,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/974.png",
       "tcgplayerId": "640703",
-      "LowFoilPrice": "3.00"
+      "LowFoilPrice": "2.90"
     },
     {
       "Set": "LOF",
@@ -6834,11 +6834,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "1.01",
+      "MarketPrice": "0.99",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/009.png",
       "tcgplayerId": "632065",
-      "LowPrice": "0.35"
+      "LowPrice": "0.20"
     },
     {
       "Set": "LOF",
@@ -6870,12 +6870,12 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Showcase",
-      "MarketPrice": "119.68",
+      "MarketPrice": "119.72",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1013.png",
       "tcgplayerId": "640894",
-      "LowPrice": "100.00",
-      "LowFoilPrice": "100.00"
+      "LowPrice": "96.52",
+      "LowFoilPrice": "96.52"
     },
     {
       "Set": "LOF",
@@ -6907,7 +6907,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.46",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/273.png",
       "tcgplayerId": "639964",
@@ -6937,7 +6937,7 @@
       "Unique": true,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.75",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/140.png",
       "tcgplayerId": "631937",
@@ -6967,7 +6967,7 @@
       "Unique": true,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.38",
+      "MarketPrice": "2.40",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/404.png",
       "tcgplayerId": "640111",
@@ -7031,7 +7031,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/880.png",
       "tcgplayerId": "640609",
-      "LowFoilPrice": "4.14"
+      "LowFoilPrice": "4.11"
     },
     {
       "Set": "LOF",
@@ -7103,7 +7103,7 @@
       ],
       "Artist": "Guillaume Ospital",
       "VariantType": "Showcase",
-      "MarketPrice": "229.31",
+      "MarketPrice": "221.33",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1021.png",
       "tcgplayerId": "640902",
@@ -7142,7 +7142,7 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.04",
+      "MarketPrice": "1.05",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/281.png",
       "tcgplayerId": "639972",
@@ -7174,7 +7174,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.77",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/238.png",
       "tcgplayerId": "631964",
@@ -7206,11 +7206,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.27",
+      "MarketPrice": "2.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/502.png",
       "tcgplayerId": "640209",
-      "LowPrice": "1.00"
+      "LowPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -7238,7 +7238,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.92",
+      "MarketPrice": "0.93",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/740.png",
       "tcgplayerId": "640460",
@@ -7344,7 +7344,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.80",
+      "MarketPrice": "0.79",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/303.png",
       "tcgplayerId": "640010",
@@ -7455,11 +7455,11 @@
       ],
       "Artist": "Pius Bak",
       "VariantType": "Normal",
-      "MarketPrice": "2.22",
+      "MarketPrice": "2.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/231.png",
       "tcgplayerId": "631961",
-      "LowPrice": "1.80"
+      "LowPrice": "1.75"
     },
     {
       "Set": "LOF",
@@ -7492,11 +7492,11 @@
       ],
       "Artist": "Pius Bak",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.08",
+      "MarketPrice": "4.01",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/495.png",
       "tcgplayerId": "640202",
-      "LowPrice": "1.80"
+      "LowPrice": "1.50"
     },
     {
       "Set": "LOF",
@@ -7529,11 +7529,11 @@
       ],
       "Artist": "Pius Bak",
       "VariantType": "Foil",
-      "MarketPrice": "1.28",
+      "MarketPrice": "1.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/733.png",
       "tcgplayerId": "640453",
-      "LowFoilPrice": "0.60"
+      "LowFoilPrice": "0.59"
     },
     {
       "Set": "LOF",
@@ -7566,7 +7566,7 @@
       ],
       "Artist": "Pius Bak",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.34",
+      "MarketPrice": "7.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/971.png",
       "tcgplayerId": "640700",
@@ -7600,7 +7600,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "2.98",
+      "MarketPrice": "2.93",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/037.png",
       "tcgplayerId": "637826",
@@ -7634,11 +7634,11 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Prestige",
-      "MarketPrice": "9.42",
+      "MarketPrice": "9.01",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1024.png",
       "tcgplayerId": "640749",
-      "LowPrice": "6.29"
+      "LowPrice": "4.00"
     },
     {
       "Set": "LOF",
@@ -7672,7 +7672,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1070.png",
       "tcgplayerId": "640795",
-      "LowFoilPrice": "14.99"
+      "LowFoilPrice": "14.43"
     },
     {
       "Set": "LOF",
@@ -7706,7 +7706,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1116.png",
       "tcgplayerId": "640841",
-      "LowFoilPrice": "899.00"
+      "LowFoilPrice": "13651.99"
     },
     {
       "Set": "LOF",
@@ -7736,7 +7736,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.76",
+      "MarketPrice": "2.62",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/301.png",
       "tcgplayerId": "640008",
@@ -7770,11 +7770,11 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "4.20",
+      "MarketPrice": "3.90",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/539.png",
       "tcgplayerId": "640258",
-      "LowFoilPrice": "2.86"
+      "LowFoilPrice": "2.40"
     },
     {
       "Set": "LOF",
@@ -7856,11 +7856,11 @@
       "Unique": false,
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.06",
+      "MarketPrice": "1.04",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/405.png",
       "tcgplayerId": "640112",
-      "LowPrice": "0.67"
+      "LowPrice": "0.68"
     },
     {
       "Set": "LOF",
@@ -7882,7 +7882,7 @@
       "Unique": false,
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/643.png",
       "tcgplayerId": "640363",
@@ -7908,11 +7908,11 @@
       "Unique": false,
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.70",
+      "MarketPrice": "4.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/881.png",
       "tcgplayerId": "640610",
-      "LowFoilPrice": "3.90"
+      "LowFoilPrice": "3.50"
     },
     {
       "Set": "LOF",
@@ -7943,7 +7943,7 @@
       ],
       "Artist": "Jakub Rebelka",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/180.png",
       "tcgplayerId": "637929",
@@ -7978,7 +7978,7 @@
       ],
       "Artist": "Jakub Rebelka",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.07",
+      "MarketPrice": "1.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/444.png",
       "tcgplayerId": "640151",
@@ -8086,11 +8086,11 @@
       ],
       "Artist": "Mali Vasanserekul",
       "VariantType": "Prestige",
-      "MarketPrice": "4.64",
+      "MarketPrice": "4.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1061.png",
       "tcgplayerId": "640786",
-      "LowPrice": "3.43"
+      "LowPrice": "3.40"
     },
     {
       "Set": "LOF",
@@ -8314,7 +8314,7 @@
       ],
       "Artist": "Mali Vasanserekul",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.63",
+      "MarketPrice": "0.62",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/939.png",
       "tcgplayerId": "640668",
@@ -8364,11 +8364,11 @@
       "Unique": false,
       "Artist": "Jessi Ochse",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/387.png",
       "tcgplayerId": "640094",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -8649,11 +8649,11 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Prestige",
-      "MarketPrice": "1.14",
+      "MarketPrice": "1.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1043.png",
       "tcgplayerId": "640768",
-      "LowPrice": "0.86"
+      "LowPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -8719,7 +8719,7 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "99.00",
+      "MarketPrice": "110.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1135.png",
       "tcgplayerId": "640860",
@@ -8824,7 +8824,7 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Foil",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/713.png",
       "tcgplayerId": "640433",
@@ -8885,7 +8885,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/041.png",
       "tcgplayerId": "631910",
@@ -8911,11 +8911,11 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/305.png",
       "tcgplayerId": "640012",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -8963,7 +8963,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.38",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/781.png",
       "tcgplayerId": "640510",
@@ -9065,7 +9065,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/588.png",
       "tcgplayerId": "640307",
@@ -9136,7 +9136,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/055.png",
       "tcgplayerId": "637838",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -9165,11 +9165,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "2.42",
+      "MarketPrice": "2.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1042.png",
       "tcgplayerId": "640767",
-      "LowPrice": "1.50"
+      "LowPrice": "1.99"
     },
     {
       "Set": "LOF",
@@ -9198,7 +9198,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "4.65",
+      "MarketPrice": "4.67",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1088.png",
       "tcgplayerId": "640813",
@@ -9264,7 +9264,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.75",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/319.png",
       "tcgplayerId": "640026",
@@ -9364,11 +9364,11 @@
       "Unique": true,
       "Artist": "Facundo Moyano",
       "VariantType": "Normal",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/097.png",
       "tcgplayerId": "637868",
-      "LowPrice": "0.24"
+      "LowPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -9398,7 +9398,7 @@
       "Unique": true,
       "Artist": "Facundo Moyano",
       "VariantType": "Prestige",
-      "MarketPrice": "1.57",
+      "MarketPrice": "1.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1054.png",
       "tcgplayerId": "640779",
@@ -9432,11 +9432,11 @@
       "Unique": true,
       "Artist": "Facundo Moyano",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "5.21",
+      "MarketPrice": "5.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1100.png",
       "tcgplayerId": "640825",
-      "LowFoilPrice": "3.45"
+      "LowFoilPrice": "3.36"
     },
     {
       "Set": "LOF",
@@ -9642,11 +9642,11 @@
       ],
       "Artist": "Baldemar Rivas",
       "VariantType": "Prestige",
-      "MarketPrice": "0.99",
+      "MarketPrice": "1.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1025.png",
       "tcgplayerId": "640750",
-      "LowPrice": "0.94"
+      "LowPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -9790,11 +9790,11 @@
       ],
       "Artist": "Baldemar Rivas",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/589.png",
       "tcgplayerId": "640308",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -9905,7 +9905,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/344.png",
       "tcgplayerId": "640051",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -9938,7 +9938,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Foil",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/582.png",
       "tcgplayerId": "640301",
@@ -9975,11 +9975,11 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/820.png",
       "tcgplayerId": "640549",
-      "LowFoilPrice": "0.24"
+      "LowFoilPrice": "0.12"
     },
     {
       "Set": "LOF",
@@ -10059,11 +10059,11 @@
       ],
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/088.png",
       "tcgplayerId": "637861",
-      "LowPrice": "0.11"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -10099,7 +10099,7 @@
       ],
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.70",
+      "MarketPrice": "0.69",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/352.png",
       "tcgplayerId": "640059",
@@ -10249,7 +10249,7 @@
       "Unique": true,
       "Artist": "Derek Laufman",
       "VariantType": "Prestige",
-      "MarketPrice": "2.67",
+      "MarketPrice": "2.60",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1032.png",
       "tcgplayerId": "640757",
@@ -10284,7 +10284,7 @@
       "Unique": true,
       "Artist": "Derek Laufman",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "5.68",
+      "MarketPrice": "5.47",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1078.png",
       "tcgplayerId": "640803",
@@ -10354,7 +10354,7 @@
       "Unique": true,
       "Artist": "Derek Laufman",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.97",
+      "MarketPrice": "0.96",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/310.png",
       "tcgplayerId": "640017",
@@ -10428,7 +10428,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/786.png",
       "tcgplayerId": "640515",
-      "LowFoilPrice": "1.14"
+      "LowFoilPrice": "1.08"
     },
     {
       "Set": "LOF",
@@ -10486,7 +10486,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/494.png",
       "tcgplayerId": "640201",
@@ -10548,7 +10548,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/970.png",
       "tcgplayerId": "640699",
@@ -10738,7 +10738,7 @@
       ],
       "Artist": "Milos Slavkovic",
       "VariantType": "Foil",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/654.png",
       "tcgplayerId": "640374",
@@ -10901,7 +10901,7 @@
       ],
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/223.png",
       "tcgplayerId": "637960",
@@ -11063,7 +11063,7 @@
       "Unique": false,
       "Artist": "Kursad Karatas",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/719.png",
       "tcgplayerId": "640439",
@@ -11092,7 +11092,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/957.png",
       "tcgplayerId": "640686",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.06"
     },
     {
       "Set": "LOF",
@@ -11140,7 +11140,7 @@
       "Unique": false,
       "Artist": "Kevin Libranda",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/469.png",
       "tcgplayerId": "640176",
@@ -11300,7 +11300,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/730.png",
       "tcgplayerId": "640450",
@@ -11336,7 +11336,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.49",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/968.png",
       "tcgplayerId": "640697",
@@ -11469,7 +11469,7 @@
       "Unique": false,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/758.png",
       "tcgplayerId": "640478",
@@ -11502,7 +11502,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/996.png",
       "tcgplayerId": "640725",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.14"
     },
     {
       "Set": "LOF",
@@ -11567,7 +11567,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/526.png",
       "tcgplayerId": "640233",
@@ -11802,7 +11802,7 @@
       ],
       "Artist": "Benjamin Paulus van Onzen",
       "VariantType": "Showcase",
-      "MarketPrice": "22.76",
+      "MarketPrice": "22.22",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1018.png",
       "tcgplayerId": "640899",
@@ -11841,11 +11841,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "4.11",
+      "MarketPrice": "4.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1031.png",
       "tcgplayerId": "640756",
-      "LowPrice": "2.76"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -11955,11 +11955,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "1.25",
+      "MarketPrice": "1.37",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/132.png",
       "tcgplayerId": "637894",
-      "LowPrice": "1.15"
+      "LowPrice": "0.99"
     },
     {
       "Set": "LOF",
@@ -12033,11 +12033,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.40",
+      "MarketPrice": "2.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/396.png",
       "tcgplayerId": "640103",
-      "LowPrice": "1.84"
+      "LowPrice": "1.69"
     },
     {
       "Set": "LOF",
@@ -12075,7 +12075,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/634.png",
       "tcgplayerId": "640354",
-      "LowFoilPrice": "0.72"
+      "LowFoilPrice": "0.54"
     },
     {
       "Set": "LOF",
@@ -12109,11 +12109,11 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.16",
+      "MarketPrice": "4.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/872.png",
       "tcgplayerId": "640601",
-      "LowFoilPrice": "1.85"
+      "LowFoilPrice": "1.36"
     },
     {
       "Set": "LOF",
@@ -12169,7 +12169,7 @@
       "Unique": false,
       "Artist": "Facundo Moyano",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/335.png",
       "tcgplayerId": "640042",
@@ -12263,7 +12263,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Prestige",
-      "MarketPrice": "5.16",
+      "MarketPrice": "5.02",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1039.png",
       "tcgplayerId": "640764",
@@ -12297,7 +12297,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "18.81",
+      "MarketPrice": "18.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1085.png",
       "tcgplayerId": "640810",
@@ -12365,7 +12365,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Normal",
-      "MarketPrice": "2.57",
+      "MarketPrice": "2.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/246.png",
       "tcgplayerId": "631966",
@@ -12399,11 +12399,11 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.24",
+      "MarketPrice": "3.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/510.png",
       "tcgplayerId": "640217",
-      "LowPrice": "2.34"
+      "LowPrice": "2.29"
     },
     {
       "Set": "LOF",
@@ -12433,11 +12433,11 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Foil",
-      "MarketPrice": "2.72",
+      "MarketPrice": "2.54",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/748.png",
       "tcgplayerId": "640468",
-      "LowFoilPrice": "1.79"
+      "LowFoilPrice": "1.75"
     },
     {
       "Set": "LOF",
@@ -12467,11 +12467,11 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.44",
+      "MarketPrice": "7.41",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/986.png",
       "tcgplayerId": "640715",
-      "LowFoilPrice": "5.42"
+      "LowFoilPrice": "5.00"
     },
     {
       "Set": "LOF",
@@ -12533,7 +12533,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/322.png",
       "tcgplayerId": "640029",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -12591,7 +12591,7 @@
       "Unique": false,
       "Artist": "Alexandria Huntington",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/798.png",
       "tcgplayerId": "640527",
@@ -12735,7 +12735,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/987.png",
       "tcgplayerId": "640716",
-      "LowFoilPrice": "0.24"
+      "LowFoilPrice": "0.26"
     },
     {
       "Set": "LOF",
@@ -12765,11 +12765,11 @@
       "Unique": true,
       "Artist": "Ario Anindito",
       "VariantType": "Normal",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/093.png",
       "tcgplayerId": "637866",
-      "LowPrice": "0.15"
+      "LowPrice": "0.06"
     },
     {
       "Set": "LOF",
@@ -12799,11 +12799,11 @@
       "Unique": true,
       "Artist": "Ario Anindito",
       "VariantType": "Prestige",
-      "MarketPrice": "2.84",
+      "MarketPrice": "2.80",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1037.png",
       "tcgplayerId": "640762",
-      "LowPrice": "2.00"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -12935,7 +12935,7 @@
       "Unique": true,
       "Artist": "Ario Anindito",
       "VariantType": "Foil",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/595.png",
       "tcgplayerId": "640314",
@@ -12969,7 +12969,7 @@
       "Unique": true,
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.58",
+      "MarketPrice": "0.59",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/833.png",
       "tcgplayerId": "640562",
@@ -13002,11 +13002,11 @@
       "Unique": true,
       "Artist": "Guillaume Ospital",
       "VariantType": "Normal",
-      "MarketPrice": "5.98",
+      "MarketPrice": "6.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/130.png",
       "tcgplayerId": "631933",
-      "LowPrice": "5.98"
+      "LowPrice": "4.49"
     },
     {
       "Set": "LOF",
@@ -13035,11 +13035,11 @@
       "Unique": true,
       "Artist": "Guillaume Ospital",
       "VariantType": "Hyperspace",
-      "MarketPrice": "8.90",
+      "MarketPrice": "7.40",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/394.png",
       "tcgplayerId": "640101",
-      "LowPrice": "4.49"
+      "LowPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -13068,11 +13068,11 @@
       "Unique": true,
       "Artist": "Guillaume Ospital",
       "VariantType": "Foil",
-      "MarketPrice": "8.12",
+      "MarketPrice": "7.83",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/632.png",
       "tcgplayerId": "640352",
-      "LowFoilPrice": "5.78"
+      "LowFoilPrice": "4.99"
     },
     {
       "Set": "LOF",
@@ -13101,11 +13101,11 @@
       "Unique": true,
       "Artist": "Guillaume Ospital",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "14.75",
+      "MarketPrice": "14.53",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/870.png",
       "tcgplayerId": "640599",
-      "LowFoilPrice": "8.96"
+      "LowFoilPrice": "5.00"
     },
     {
       "Set": "LOF",
@@ -13194,11 +13194,11 @@
       "Unique": false,
       "Artist": "Guillaume Ospital",
       "VariantType": "Foil",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/737.png",
       "tcgplayerId": "640457",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -13405,11 +13405,11 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/398.png",
       "tcgplayerId": "640105",
-      "LowPrice": "0.07"
+      "LowPrice": "0.08"
     },
     {
       "Set": "LOF",
@@ -13439,11 +13439,11 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Foil",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/636.png",
       "tcgplayerId": "640356",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -13539,7 +13539,7 @@
       ],
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.27",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/317.png",
       "tcgplayerId": "640024",
@@ -13910,7 +13910,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/158.png",
       "tcgplayerId": "637910",
@@ -13943,7 +13943,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/422.png",
       "tcgplayerId": "640129",
@@ -13976,7 +13976,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Foil",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/660.png",
       "tcgplayerId": "640380",
@@ -14009,7 +14009,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/898.png",
       "tcgplayerId": "640627",
@@ -14069,7 +14069,7 @@
       "Unique": false,
       "Artist": "Leonardo Giammichele",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/383.png",
       "tcgplayerId": "640090",
@@ -14233,7 +14233,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/958.png",
       "tcgplayerId": "640687",
-      "LowFoilPrice": "0.24"
+      "LowFoilPrice": "0.23"
     },
     {
       "Set": "LOF",
@@ -14313,7 +14313,7 @@
       ],
       "Artist": "Johnny Morrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/743.png",
       "tcgplayerId": "640463",
@@ -14434,7 +14434,7 @@
       "Unique": false,
       "Artist": "Gustavo Pelissari",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/658.png",
       "tcgplayerId": "640378",
@@ -14529,7 +14529,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/354.png",
       "tcgplayerId": "640061",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -14555,7 +14555,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/592.png",
       "tcgplayerId": "640311",
@@ -14620,11 +14620,11 @@
       ],
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/169.png",
       "tcgplayerId": "637919",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -14729,7 +14729,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/909.png",
       "tcgplayerId": "640638",
-      "LowFoilPrice": "0.84"
+      "LowFoilPrice": "0.69"
     },
     {
       "Set": "LOF",
@@ -14794,7 +14794,7 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/528.png",
       "tcgplayerId": "640235",
@@ -14817,7 +14817,7 @@
       "Unique": false,
       "Artist": "JB Casacop",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/766.png",
       "tcgplayerId": "640486",
@@ -14887,7 +14887,7 @@
       ],
       "Artist": "Mali Vasanserekul",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.36",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/312.png",
       "tcgplayerId": "640019",
@@ -14990,7 +14990,7 @@
       "Unique": false,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.05",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/194.png",
       "tcgplayerId": "631950",
@@ -15027,7 +15027,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/458.png",
       "tcgplayerId": "640165",
-      "LowPrice": "0.03"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -15093,7 +15093,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/934.png",
       "tcgplayerId": "640663",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.13"
     },
     {
       "Set": "LOF",
@@ -15249,7 +15249,7 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Normal",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/049.png",
       "tcgplayerId": "631912",
@@ -15281,11 +15281,11 @@
       "Unique": false,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/313.png",
       "tcgplayerId": "640020",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -15349,7 +15349,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/789.png",
       "tcgplayerId": "640518",
-      "LowFoilPrice": "0.16"
+      "LowFoilPrice": "0.15"
     },
     {
       "Set": "LOF",
@@ -15378,7 +15378,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/051.png",
       "tcgplayerId": "637834",
-      "LowPrice": "0.07"
+      "LowPrice": "0.09"
     },
     {
       "Set": "LOF",
@@ -15403,11 +15403,11 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/315.png",
       "tcgplayerId": "640022",
-      "LowPrice": "0.19"
+      "LowPrice": "0.20"
     },
     {
       "Set": "LOF",
@@ -15461,7 +15461,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.54",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/791.png",
       "tcgplayerId": "640520",
@@ -15563,7 +15563,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/661.png",
       "tcgplayerId": "640381",
@@ -15693,7 +15693,7 @@
       "Unique": false,
       "Artist": "Facundo Moyano",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/647.png",
       "tcgplayerId": "640367",
@@ -15760,7 +15760,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Normal",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/196.png",
       "tcgplayerId": "631951",
@@ -15865,11 +15865,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.33",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/936.png",
       "tcgplayerId": "640665",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -16117,11 +16117,11 @@
       ],
       "Artist": "Salomé Goré",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/377.png",
       "tcgplayerId": "640084",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -16220,7 +16220,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/052.png",
       "tcgplayerId": "637835",
-      "LowPrice": "0.08"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -16245,11 +16245,11 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.54",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/316.png",
       "tcgplayerId": "640023",
-      "LowPrice": "0.24"
+      "LowPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -16335,7 +16335,7 @@
       "Unique": false,
       "Artist": "Thomas Wievegg",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/244.png",
       "tcgplayerId": "637973",
@@ -16367,7 +16367,7 @@
       "Unique": false,
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/508.png",
       "tcgplayerId": "640215",
@@ -16596,11 +16596,11 @@
       "Unique": true,
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/512.png",
       "tcgplayerId": "640219",
-      "LowPrice": "0.01"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -16732,7 +16732,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/378.png",
       "tcgplayerId": "640085",
-      "LowPrice": "0.01"
+      "LowPrice": "0.03"
     },
     {
       "Set": "LOF",
@@ -16761,7 +16761,7 @@
       ],
       "Artist": "Omercan Cirit",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/616.png",
       "tcgplayerId": "640336",
@@ -16839,7 +16839,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/004.png",
       "tcgplayerId": "632063",
-      "LowPrice": "0.06"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -16876,7 +16876,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Showcase",
-      "MarketPrice": "80.66",
+      "MarketPrice": "81.39",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1008.png",
       "tcgplayerId": "640889",
@@ -16955,7 +16955,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/031.png",
       "tcgplayerId": "631905",
-      "LowPrice": "0.10"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -16984,11 +16984,11 @@
       "Unique": true,
       "Artist": "Nabetse Zitro",
       "VariantType": "Prestige",
-      "MarketPrice": "2.04",
+      "MarketPrice": "1.97",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1029.png",
       "tcgplayerId": "640754",
-      "LowPrice": "1.25"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -17017,11 +17017,11 @@
       "Unique": true,
       "Artist": "Nabetse Zitro",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "7.08",
+      "MarketPrice": "6.90",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1075.png",
       "tcgplayerId": "640800",
-      "LowFoilPrice": "4.24"
+      "LowFoilPrice": "3.73"
     },
     {
       "Set": "LOF",
@@ -17083,11 +17083,11 @@
       "Unique": true,
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.68",
+      "MarketPrice": "0.65",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/295.png",
       "tcgplayerId": "640002",
-      "LowPrice": "0.20"
+      "LowPrice": "0.24"
     },
     {
       "Set": "LOF",
@@ -17153,7 +17153,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/771.png",
       "tcgplayerId": "640500",
-      "LowFoilPrice": "0.80"
+      "LowFoilPrice": "0.87"
     },
     {
       "Set": "LOF",
@@ -17183,7 +17183,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/100.png",
       "tcgplayerId": "631927",
@@ -17221,7 +17221,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1040.png",
       "tcgplayerId": "640765",
-      "LowPrice": "3.06"
+      "LowPrice": "2.70"
     },
     {
       "Set": "LOF",
@@ -17251,11 +17251,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "9.02",
+      "MarketPrice": "8.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1086.png",
       "tcgplayerId": "640811",
-      "LowFoilPrice": "5.00"
+      "LowFoilPrice": "7.80"
     },
     {
       "Set": "LOF",
@@ -17285,11 +17285,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "80.11",
+      "MarketPrice": "77.98",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1132.png",
       "tcgplayerId": "640857",
-      "LowFoilPrice": "76.90"
+      "LowFoilPrice": "74.45"
     },
     {
       "Set": "LOF",
@@ -17319,7 +17319,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.06",
+      "MarketPrice": "0.96",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/364.png",
       "tcgplayerId": "640071",
@@ -17387,7 +17387,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.24",
+      "MarketPrice": "1.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/840.png",
       "tcgplayerId": "640569",
@@ -17425,7 +17425,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1058.png",
       "tcgplayerId": "640783",
-      "LowPrice": "1.99"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -17455,11 +17455,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "5.00",
+      "MarketPrice": "5.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1104.png",
       "tcgplayerId": "640829",
-      "LowFoilPrice": "4.94"
+      "LowFoilPrice": "4.85"
     },
     {
       "Set": "LOF",
@@ -17523,11 +17523,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/146.png",
       "tcgplayerId": "637900",
-      "LowPrice": "0.08"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -17561,7 +17561,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/410.png",
       "tcgplayerId": "640117",
-      "LowPrice": "0.36"
+      "LowPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -17591,7 +17591,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/648.png",
       "tcgplayerId": "640368",
@@ -17629,7 +17629,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/886.png",
       "tcgplayerId": "640615",
-      "LowFoilPrice": "0.43"
+      "LowFoilPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -17705,12 +17705,12 @@
       ],
       "Artist": "Gabriel Gómez",
       "VariantType": "Showcase",
-      "MarketPrice": "39.52",
+      "MarketPrice": "38.95",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1015.png",
       "tcgplayerId": "640896",
-      "LowPrice": "30.00",
-      "LowFoilPrice": "30.00"
+      "LowPrice": "34.00",
+      "LowFoilPrice": "34.00"
     },
     {
       "Set": "LOF",
@@ -17746,7 +17746,7 @@
       ],
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/275.png",
       "tcgplayerId": "639967",
@@ -17822,7 +17822,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.83",
+      "MarketPrice": "3.69",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/411.png",
       "tcgplayerId": "640118",
@@ -17860,7 +17860,7 @@
       ],
       "Artist": "Francois Cannels",
       "VariantType": "Foil",
-      "MarketPrice": "0.96",
+      "MarketPrice": "0.89",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/649.png",
       "tcgplayerId": "640369",
@@ -17960,11 +17960,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/348.png",
       "tcgplayerId": "640055",
-      "LowPrice": "0.06"
+      "LowPrice": "0.07"
     },
     {
       "Set": "LOF",
@@ -18026,7 +18026,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/824.png",
       "tcgplayerId": "640553",
-      "LowFoilPrice": "0.30"
+      "LowFoilPrice": "0.27"
     },
     {
       "Set": "LOF",
@@ -18142,7 +18142,7 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/891.png",
       "tcgplayerId": "640620",
@@ -18173,7 +18173,7 @@
       ],
       "Artist": "Ivan Shavrin",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.05",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/257.png",
       "tcgplayerId": "637982",
@@ -18302,7 +18302,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.13",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/001.png",
       "tcgplayerId": "638053",
@@ -18338,12 +18338,12 @@
       "Unique": true,
       "Artist": "Borja Pindado",
       "VariantType": "Showcase",
-      "MarketPrice": "88.31",
+      "MarketPrice": "87.32",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1005.png",
       "tcgplayerId": "640886",
-      "LowPrice": "65.00",
-      "LowFoilPrice": "65.00"
+      "LowPrice": "64.99",
+      "LowFoilPrice": "64.99"
     },
     {
       "Set": "LOF",
@@ -18378,7 +18378,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1030.png",
       "tcgplayerId": "640755",
-      "LowPrice": "1.42"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -18413,7 +18413,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1076.png",
       "tcgplayerId": "640801",
-      "LowFoilPrice": "4.00"
+      "LowFoilPrice": "4.20"
     },
     {
       "Set": "LOF",
@@ -18479,7 +18479,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/229.png",
       "tcgplayerId": "631960",
@@ -18585,7 +18585,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/731.png",
       "tcgplayerId": "640451",
@@ -18620,7 +18620,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/969.png",
       "tcgplayerId": "640698",
@@ -18654,7 +18654,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/040.png",
       "tcgplayerId": "637827",
-      "LowPrice": "0.15"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -18763,7 +18763,7 @@
       "Unique": false,
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1003.png",
       "tcgplayerId": "640732",
@@ -18866,7 +18866,7 @@
       "Unique": true,
       "Artist": "Jessi Ochse",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/098.png",
       "tcgplayerId": "637869",
@@ -18900,7 +18900,7 @@
       "Unique": true,
       "Artist": "Jessi Ochse",
       "VariantType": "Prestige",
-      "MarketPrice": "0.93",
+      "MarketPrice": "0.90",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1036.png",
       "tcgplayerId": "640761",
@@ -18968,11 +18968,11 @@
       "Unique": true,
       "Artist": "Jessi Ochse",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "55.72",
+      "MarketPrice": "55.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1128.png",
       "tcgplayerId": "640853",
-      "LowFoilPrice": "52.95"
+      "LowFoilPrice": "52.70"
     },
     {
       "Set": "LOF",
@@ -19002,11 +19002,11 @@
       "Unique": true,
       "Artist": "Jessi Ochse",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.66",
+      "MarketPrice": "0.65",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/362.png",
       "tcgplayerId": "640069",
-      "LowPrice": "0.20"
+      "LowPrice": "0.24"
     },
     {
       "Set": "LOF",
@@ -19070,7 +19070,7 @@
       "Unique": true,
       "Artist": "Jessi Ochse",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.34",
+      "MarketPrice": "1.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/838.png",
       "tcgplayerId": "640567",
@@ -19122,7 +19122,7 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.92",
+      "MarketPrice": "1.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/453.png",
       "tcgplayerId": "640160",
@@ -19211,7 +19211,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/212.png",
       "tcgplayerId": "637950",
-      "LowPrice": "0.03"
+      "LowPrice": "0.02"
     },
     {
       "Set": "LOF",
@@ -19331,7 +19331,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/176.png",
       "tcgplayerId": "637925",
@@ -19381,7 +19381,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/678.png",
       "tcgplayerId": "640398",
@@ -19406,7 +19406,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/916.png",
       "tcgplayerId": "640645",
@@ -19476,7 +19476,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.13",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/517.png",
       "tcgplayerId": "640224",
@@ -19550,7 +19550,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/993.png",
       "tcgplayerId": "640722",
-      "LowFoilPrice": "0.07"
+      "LowFoilPrice": "0.06"
     },
     {
       "Set": "LOF",
@@ -19610,7 +19610,7 @@
       "Unique": true,
       "Artist": "Afif Khaled",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/359.png",
       "tcgplayerId": "640066",
@@ -19678,7 +19678,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/835.png",
       "tcgplayerId": "640564",
-      "LowFoilPrice": "0.02"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -19764,7 +19764,7 @@
       "Unique": false,
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/709.png",
       "tcgplayerId": "640429",
@@ -19962,7 +19962,7 @@
       "Unique": true,
       "Artist": "Joey Vazquez",
       "VariantType": "Prestige",
-      "MarketPrice": "1.53",
+      "MarketPrice": "1.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1033.png",
       "tcgplayerId": "640758",
@@ -19998,7 +19998,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1079.png",
       "tcgplayerId": "640804",
-      "LowFoilPrice": "4.13"
+      "LowFoilPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -20154,11 +20154,11 @@
       "Unique": true,
       "Artist": "Joey Vazquez",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.05",
+      "MarketPrice": "2.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/989.png",
       "tcgplayerId": "640718",
-      "LowFoilPrice": "1.50"
+      "LowFoilPrice": "1.39"
     },
     {
       "Set": "LOF",
@@ -20206,7 +20206,7 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.47",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/368.png",
       "tcgplayerId": "640075",
@@ -20258,7 +20258,7 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.84",
+      "MarketPrice": "0.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/844.png",
       "tcgplayerId": "640573",
@@ -20351,11 +20351,11 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/570.png",
       "tcgplayerId": "640289",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -20456,7 +20456,7 @@
       ],
       "Artist": "Eduardo Mello - Nikola Righi",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "3.67",
+      "MarketPrice": "3.59",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1102.png",
       "tcgplayerId": "640827",
@@ -20534,7 +20534,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/149.png",
       "tcgplayerId": "637903",
-      "LowPrice": "0.08"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -20567,7 +20567,7 @@
       ],
       "Artist": "Eduardo Mello - Nikola Righi",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.49",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/413.png",
       "tcgplayerId": "640120",
@@ -20676,7 +20676,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/032.png",
       "tcgplayerId": "637823",
@@ -20711,7 +20711,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/296.png",
       "tcgplayerId": "640003",
@@ -20812,7 +20812,7 @@
       "Unique": true,
       "Artist": "Felipe Gonçalves",
       "VariantType": "Normal",
-      "MarketPrice": "0.26",
+      "MarketPrice": "0.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/108.png",
       "tcgplayerId": "637876",
@@ -20843,7 +20843,7 @@
       "Unique": true,
       "Artist": "Felipe Gonçalves",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/372.png",
       "tcgplayerId": "640079",
@@ -20874,7 +20874,7 @@
       "Unique": true,
       "Artist": "Felipe Gonçalves",
       "VariantType": "Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/610.png",
       "tcgplayerId": "640330",
@@ -20941,11 +20941,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.97",
+      "MarketPrice": "0.92",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/186.png",
       "tcgplayerId": "637935",
-      "LowPrice": "0.39"
+      "LowPrice": "0.40"
     },
     {
       "Set": "LOF",
@@ -20977,7 +20977,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.00",
+      "MarketPrice": "1.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/450.png",
       "tcgplayerId": "640157",
@@ -21013,11 +21013,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "1.20",
+      "MarketPrice": "1.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/688.png",
       "tcgplayerId": "640408",
-      "LowFoilPrice": "0.57"
+      "LowFoilPrice": "0.58"
     },
     {
       "Set": "LOF",
@@ -21115,7 +21115,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/375.png",
       "tcgplayerId": "640082",
-      "LowPrice": "0.08"
+      "LowPrice": "0.09"
     },
     {
       "Set": "LOF",
@@ -21142,7 +21142,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Foil",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/613.png",
       "tcgplayerId": "640333",
@@ -21173,7 +21173,7 @@
       "Unique": true,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/851.png",
       "tcgplayerId": "640580",
@@ -21269,7 +21269,7 @@
       "Unique": false,
       "Artist": "Thomas Wievegg",
       "VariantType": "Foil",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/752.png",
       "tcgplayerId": "640472",
@@ -21333,7 +21333,7 @@
       "Unique": true,
       "Artist": "Sandra Chlewińska",
       "VariantType": "Prestige",
-      "MarketPrice": "2.89",
+      "MarketPrice": "2.92",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1048.png",
       "tcgplayerId": "640773",
@@ -21552,7 +21552,7 @@
       "Unique": false,
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/202.png",
       "tcgplayerId": "637940",
@@ -21583,7 +21583,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/466.png",
       "tcgplayerId": "640173",
-      "LowPrice": "0.09"
+      "LowPrice": "0.10"
     },
     {
       "Set": "LOF",
@@ -21817,12 +21817,12 @@
       "Unique": true,
       "Artist": "Pius Bak",
       "VariantType": "Showcase",
-      "MarketPrice": "110.79",
+      "MarketPrice": "108.99",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1006.png",
       "tcgplayerId": "640887",
-      "LowPrice": "72.00",
-      "LowFoilPrice": "72.00"
+      "LowPrice": "70.00",
+      "LowFoilPrice": "70.00"
     },
     {
       "Set": "LOF",
@@ -21854,7 +21854,7 @@
       "Unique": true,
       "Artist": "Axel Hutt",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/266.png",
       "tcgplayerId": "639957",
@@ -22058,7 +22058,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/472.png",
       "tcgplayerId": "640179",
-      "LowPrice": "0.01"
+      "LowPrice": "0.06"
     },
     {
       "Set": "LOF",
@@ -22122,7 +22122,7 @@
       ],
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/948.png",
       "tcgplayerId": "640677",
@@ -22145,7 +22145,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/022.png",
       "tcgplayerId": "638086",
@@ -22191,7 +22191,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Foil",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/530.png",
       "tcgplayerId": "640249",
@@ -22214,11 +22214,11 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.12",
+      "MarketPrice": "2.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/768.png",
       "tcgplayerId": "640497",
-      "LowFoilPrice": "1.58"
+      "LowFoilPrice": "1.80"
     },
     {
       "Set": "LOF",
@@ -22249,11 +22249,11 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.41",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/073.png",
       "tcgplayerId": "637850",
-      "LowPrice": "0.25"
+      "LowPrice": "0.23"
     },
     {
       "Set": "LOF",
@@ -22284,11 +22284,11 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.81",
+      "MarketPrice": "0.83",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/337.png",
       "tcgplayerId": "640044",
-      "LowPrice": "0.35"
+      "LowPrice": "0.39"
     },
     {
       "Set": "LOF",
@@ -22319,7 +22319,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/575.png",
       "tcgplayerId": "640294",
@@ -22354,7 +22354,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.45",
+      "MarketPrice": "1.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/813.png",
       "tcgplayerId": "640542",
@@ -22387,11 +22387,11 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/192.png",
       "tcgplayerId": "637938",
-      "LowPrice": "0.05"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -22457,7 +22457,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/694.png",
       "tcgplayerId": "640414",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -22486,7 +22486,7 @@
       "Unique": false,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.79",
+      "MarketPrice": "0.81",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/932.png",
       "tcgplayerId": "640661",
@@ -22780,11 +22780,11 @@
       "Unique": false,
       "Artist": "Jessi Ochse",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.73",
+      "MarketPrice": "1.60",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/799.png",
       "tcgplayerId": "640528",
-      "LowFoilPrice": "1.32"
+      "LowFoilPrice": "1.26"
     },
     {
       "Set": "LOF",
@@ -22816,7 +22816,7 @@
       ],
       "Artist": "Facundo Moyano",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/182.png",
       "tcgplayerId": "637931",
@@ -22856,7 +22856,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/446.png",
       "tcgplayerId": "640153",
-      "LowPrice": "0.04"
+      "LowPrice": "0.03"
     },
     {
       "Set": "LOF",
@@ -22974,11 +22974,11 @@
       "Unique": false,
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/388.png",
       "tcgplayerId": "640095",
-      "LowPrice": "0.11"
+      "LowPrice": "0.08"
     },
     {
       "Set": "LOF",
@@ -23098,11 +23098,11 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
-      "MarketPrice": "5.13",
+      "MarketPrice": "4.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/096.png",
       "tcgplayerId": "631925",
-      "LowPrice": "3.01"
+      "LowPrice": "3.24"
     },
     {
       "Set": "LOF",
@@ -23135,12 +23135,12 @@
       "Unique": true,
       "Artist": "Renaud Scheidt",
       "VariantType": "Showcase",
-      "MarketPrice": "116.98",
+      "MarketPrice": "113.93",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1012.png",
       "tcgplayerId": "640893",
-      "LowPrice": "90.00",
-      "LowFoilPrice": "90.00"
+      "LowPrice": "85.00",
+      "LowFoilPrice": "85.00"
     },
     {
       "Set": "LOF",
@@ -23173,11 +23173,11 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Prestige",
-      "MarketPrice": "4.47",
+      "MarketPrice": "4.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1050.png",
       "tcgplayerId": "640775",
-      "LowPrice": "3.00"
+      "LowPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -23284,7 +23284,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.17",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/272.png",
       "tcgplayerId": "639963",
@@ -23321,11 +23321,11 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.85",
+      "MarketPrice": "4.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/360.png",
       "tcgplayerId": "640067",
-      "LowPrice": "3.50"
+      "LowPrice": "3.95"
     },
     {
       "Set": "LOF",
@@ -23358,7 +23358,7 @@
       ],
       "Artist": "Sandra Chlewińska",
       "VariantType": "Foil",
-      "MarketPrice": "0.85",
+      "MarketPrice": "0.84",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/598.png",
       "tcgplayerId": "640317",
@@ -23426,11 +23426,11 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.48",
+      "MarketPrice": "0.47",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/063.png",
       "tcgplayerId": "631916",
-      "LowPrice": "0.28"
+      "LowPrice": "0.27"
     },
     {
       "Set": "LOF",
@@ -23457,7 +23457,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.24",
+      "MarketPrice": "1.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/327.png",
       "tcgplayerId": "640034",
@@ -23488,7 +23488,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/565.png",
       "tcgplayerId": "640284",
@@ -23585,11 +23585,11 @@
       "Unique": true,
       "Artist": "Monika Palosz",
       "VariantType": "Prestige",
-      "MarketPrice": "0.88",
+      "MarketPrice": "0.86",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1026.png",
       "tcgplayerId": "640751",
-      "LowPrice": "0.75"
+      "LowPrice": "0.74"
     },
     {
       "Set": "LOF",
@@ -23618,7 +23618,7 @@
       "Unique": true,
       "Artist": "Monika Palosz",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "2.56",
+      "MarketPrice": "2.57",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1072.png",
       "tcgplayerId": "640797",
@@ -23655,7 +23655,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1118.png",
       "tcgplayerId": "640843",
-      "LowFoilPrice": "63.98"
+      "LowFoilPrice": "63.97"
     },
     {
       "Set": "LOF",
@@ -23688,7 +23688,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/300.png",
       "tcgplayerId": "640007",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -23750,7 +23750,7 @@
       "Unique": true,
       "Artist": "Monika Palosz",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/776.png",
       "tcgplayerId": "640505",
@@ -23795,7 +23795,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.59",
+      "MarketPrice": "0.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/105.png",
       "tcgplayerId": "637873",
@@ -23840,7 +23840,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige",
-      "MarketPrice": "1.73",
+      "MarketPrice": "1.72",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1053.png",
       "tcgplayerId": "640778",
@@ -23885,11 +23885,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "3.13",
+      "MarketPrice": "3.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1099.png",
       "tcgplayerId": "640824",
-      "LowFoilPrice": "2.44"
+      "LowFoilPrice": "2.29"
     },
     {
       "Set": "LOF",
@@ -23930,7 +23930,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "98.75",
+      "MarketPrice": "89.01",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1145.png",
       "tcgplayerId": "640870",
@@ -23975,7 +23975,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.77",
+      "MarketPrice": "0.78",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/369.png",
       "tcgplayerId": "640076",
@@ -24020,7 +24020,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/607.png",
       "tcgplayerId": "640327",
@@ -24249,7 +24249,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/390.png",
       "tcgplayerId": "640097",
-      "LowPrice": "0.07"
+      "LowPrice": "0.08"
     },
     {
       "Set": "LOF",
@@ -24369,7 +24369,7 @@
       ],
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.80",
+      "MarketPrice": "0.81",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/321.png",
       "tcgplayerId": "640028",
@@ -24603,7 +24603,7 @@
       "Unique": false,
       "Artist": "Thomas Wievegg",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/099.png",
       "tcgplayerId": "631926",
@@ -24737,7 +24737,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/153.png",
       "tcgplayerId": "637907",
@@ -24833,7 +24833,7 @@
       "Unique": true,
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.13",
+      "MarketPrice": "1.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/893.png",
       "tcgplayerId": "640622",
@@ -24891,7 +24891,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/522.png",
       "tcgplayerId": "640229",
@@ -24920,11 +24920,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/760.png",
       "tcgplayerId": "640480",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -24949,11 +24949,11 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/998.png",
       "tcgplayerId": "640727",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.13"
     },
     {
       "Set": "LOF",
@@ -25003,7 +25003,7 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/386.png",
       "tcgplayerId": "640093",
@@ -25030,11 +25030,11 @@
       "Unique": true,
       "Artist": "Amad Mir",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.09",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/624.png",
       "tcgplayerId": "640344",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -25094,7 +25094,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.12",
+      "MarketPrice": "0.10",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/050.png",
       "tcgplayerId": "631913",
@@ -25131,7 +25131,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Prestige",
-      "MarketPrice": "0.96",
+      "MarketPrice": "0.97",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1034.png",
       "tcgplayerId": "640759",
@@ -25172,7 +25172,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1080.png",
       "tcgplayerId": "640805",
-      "LowFoilPrice": "2.50"
+      "LowFoilPrice": "2.49"
     },
     {
       "Set": "LOF",
@@ -25205,11 +25205,11 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "175.88",
+      "MarketPrice": "175.86",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1126.png",
       "tcgplayerId": "640851",
-      "LowFoilPrice": "169.96"
+      "LowFoilPrice": "168.00"
     },
     {
       "Set": "LOF",
@@ -25242,7 +25242,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/314.png",
       "tcgplayerId": "640021",
@@ -25279,7 +25279,7 @@
       ],
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "0.17",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/552.png",
       "tcgplayerId": "640271",
@@ -25382,7 +25382,7 @@
       "Unique": false,
       "Artist": "Facundo Moyano",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/356.png",
       "tcgplayerId": "640063",
@@ -25485,7 +25485,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/038.png",
       "tcgplayerId": "631908",
@@ -25522,11 +25522,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige",
-      "MarketPrice": "1.03",
+      "MarketPrice": "0.99",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1028.png",
       "tcgplayerId": "640753",
-      "LowPrice": "0.58"
+      "LowPrice": "0.55"
     },
     {
       "Set": "LOF",
@@ -25670,7 +25670,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.24",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/540.png",
       "tcgplayerId": "640259",
@@ -25707,7 +25707,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.15",
+      "MarketPrice": "1.03",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/778.png",
       "tcgplayerId": "640507",
@@ -25735,7 +25735,7 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Normal",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/254.png",
       "tcgplayerId": "631968",
@@ -25869,7 +25869,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/488.png",
       "tcgplayerId": "640195",
@@ -25953,7 +25953,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/085.png",
       "tcgplayerId": "637858",
@@ -26055,7 +26055,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/825.png",
       "tcgplayerId": "640554",
@@ -26107,7 +26107,7 @@
       "Unique": false,
       "Artist": "Kaihound Studios",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/467.png",
       "tcgplayerId": "640174",
@@ -26137,7 +26137,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/705.png",
       "tcgplayerId": "640425",
-      "LowFoilPrice": "0.03"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -26225,7 +26225,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1041.png",
       "tcgplayerId": "640766",
-      "LowPrice": "0.90"
+      "LowPrice": "0.89"
     },
     {
       "Set": "LOF",
@@ -26256,7 +26256,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1087.png",
       "tcgplayerId": "640812",
-      "LowFoilPrice": "0.75"
+      "LowFoilPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -26345,11 +26345,11 @@
       "Unique": true,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Foil",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/574.png",
       "tcgplayerId": "640293",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -26376,7 +26376,7 @@
       "Unique": true,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.23",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/812.png",
       "tcgplayerId": "640541",
@@ -26426,7 +26426,7 @@
       "Unique": false,
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.30",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/392.png",
       "tcgplayerId": "640099",
@@ -26551,7 +26551,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/721.png",
       "tcgplayerId": "640441",
@@ -26576,7 +26576,7 @@
       "Unique": false,
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.75",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/959.png",
       "tcgplayerId": "640688",
@@ -26644,7 +26644,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/397.png",
       "tcgplayerId": "640104",
-      "LowPrice": "0.08"
+      "LowPrice": "0.09"
     },
     {
       "Set": "LOF",
@@ -26741,7 +26741,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "1.89",
+      "MarketPrice": "1.84",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/016.png",
       "tcgplayerId": "632066",
@@ -26778,12 +26778,12 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Showcase",
-      "MarketPrice": "110.02",
+      "MarketPrice": "109.36",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1020.png",
       "tcgplayerId": "640901",
-      "LowPrice": "97.50",
-      "LowFoilPrice": "97.50"
+      "LowPrice": "89.00",
+      "LowFoilPrice": "89.00"
     },
     {
       "Set": "LOF",
@@ -26816,11 +26816,11 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Prestige",
-      "MarketPrice": "7.13",
+      "MarketPrice": "7.04",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1051.png",
       "tcgplayerId": "640776",
-      "LowPrice": "5.00"
+      "LowPrice": "4.52"
     },
     {
       "Set": "LOF",
@@ -26927,7 +26927,7 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Normal",
-      "MarketPrice": "2.12",
+      "MarketPrice": "2.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/200.png",
       "tcgplayerId": "631955",
@@ -26968,7 +26968,7 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/280.png",
       "tcgplayerId": "639971",
-      "LowPrice": "0.09"
+      "LowPrice": "0.20"
     },
     {
       "Set": "LOF",
@@ -27005,7 +27005,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/464.png",
       "tcgplayerId": "640171",
-      "LowPrice": "2.99"
+      "LowPrice": "2.90"
     },
     {
       "Set": "LOF",
@@ -27038,11 +27038,11 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Foil",
-      "MarketPrice": "6.14",
+      "MarketPrice": "5.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/702.png",
       "tcgplayerId": "640422",
-      "LowFoilPrice": "2.75"
+      "LowFoilPrice": "1.99"
     },
     {
       "Set": "LOF",
@@ -27075,11 +27075,11 @@
       ],
       "Artist": "Gustavo Pelissari",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "7.66",
+      "MarketPrice": "7.46",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/940.png",
       "tcgplayerId": "640669",
-      "LowFoilPrice": "4.18"
+      "LowFoilPrice": "4.24"
     },
     {
       "Set": "LOF",
@@ -27114,7 +27114,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/197.png",
       "tcgplayerId": "631952",
-      "LowPrice": "0.29"
+      "LowPrice": "0.30"
     },
     {
       "Set": "LOF",
@@ -27215,7 +27215,7 @@
       "Unique": true,
       "Artist": "Aarnoud De Rycker",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.45",
+      "MarketPrice": "2.41",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/937.png",
       "tcgplayerId": "640666",
@@ -27245,7 +27245,7 @@
       "Unique": true,
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/201.png",
       "tcgplayerId": "631956",
@@ -27275,7 +27275,7 @@
       "Unique": true,
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.04",
+      "MarketPrice": "1.05",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/465.png",
       "tcgplayerId": "640172",
@@ -27339,7 +27339,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/941.png",
       "tcgplayerId": "640670",
-      "LowFoilPrice": "1.60"
+      "LowFoilPrice": "1.40"
     },
     {
       "Set": "LOF",
@@ -27623,7 +27623,7 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/523.png",
       "tcgplayerId": "640230",
@@ -27651,7 +27651,7 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Foil",
-      "MarketPrice": "0.25",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/761.png",
       "tcgplayerId": "640481",
@@ -27679,7 +27679,7 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/999.png",
       "tcgplayerId": "640728",
@@ -27743,7 +27743,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/432.png",
       "tcgplayerId": "640139",
-      "LowPrice": "0.04"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -27867,11 +27867,11 @@
       ],
       "Artist": "Salomé Goré",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/506.png",
       "tcgplayerId": "640213",
-      "LowPrice": "0.01"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -28103,11 +28103,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.14",
+      "MarketPrice": "0.15",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/012.png",
       "tcgplayerId": "639955",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -28139,7 +28139,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Showcase",
-      "MarketPrice": "37.65",
+      "MarketPrice": "36.92",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1016.png",
       "tcgplayerId": "640897",
@@ -28174,11 +28174,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "0.40",
+      "MarketPrice": "0.39",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/148.png",
       "tcgplayerId": "637902",
-      "LowPrice": "0.20"
+      "LowPrice": "0.19"
     },
     {
       "Set": "LOF",
@@ -28210,7 +28210,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.20",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/276.png",
       "tcgplayerId": "639968",
@@ -28244,7 +28244,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.66",
+      "MarketPrice": "1.59",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/412.png",
       "tcgplayerId": "640119",
@@ -28312,11 +28312,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.11",
+      "MarketPrice": "1.92",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/888.png",
       "tcgplayerId": "640617",
-      "LowFoilPrice": "1.44"
+      "LowFoilPrice": "1.49"
     },
     {
       "Set": "LOF",
@@ -28378,11 +28378,11 @@
       "Unique": true,
       "Artist": "Baldemar Rivas",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "1.55",
+      "MarketPrice": "1.56",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1090.png",
       "tcgplayerId": "640815",
-      "LowFoilPrice": "1.47"
+      "LowFoilPrice": "1.46"
     },
     {
       "Set": "LOF",
@@ -28543,7 +28543,7 @@
       "Unique": true,
       "Artist": "Baldemar Rivas",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/907.png",
       "tcgplayerId": "640636",
@@ -28613,7 +28613,7 @@
       ],
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/496.png",
       "tcgplayerId": "640203",
@@ -28719,11 +28719,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige",
-      "MarketPrice": "0.96",
+      "MarketPrice": "0.95",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1027.png",
       "tcgplayerId": "640752",
-      "LowPrice": "0.69"
+      "LowPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -28755,11 +28755,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "2.02",
+      "MarketPrice": "2.03",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1073.png",
       "tcgplayerId": "640798",
-      "LowFoilPrice": "0.53"
+      "LowFoilPrice": "0.50"
     },
     {
       "Set": "LOF",
@@ -28791,11 +28791,11 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "134.60",
+      "MarketPrice": "123.90",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1119.png",
       "tcgplayerId": "640844",
-      "LowFoilPrice": "126.66"
+      "LowFoilPrice": "117.77"
     },
     {
       "Set": "LOF",
@@ -28827,7 +28827,7 @@
       ],
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/137.png",
       "tcgplayerId": "631971",
@@ -28939,7 +28939,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/877.png",
       "tcgplayerId": "640606",
-      "LowFoilPrice": "0.19"
+      "LowFoilPrice": "0.18"
     },
     {
       "Set": "LOF",
@@ -28968,7 +28968,7 @@
       "Unique": true,
       "Artist": "Aaron Dhanda",
       "VariantType": "Normal",
-      "MarketPrice": "1.05",
+      "MarketPrice": "1.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/233.png",
       "tcgplayerId": "631962",
@@ -29001,7 +29001,7 @@
       "Unique": true,
       "Artist": "Aaron Dhanda",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.26",
+      "MarketPrice": "2.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/497.png",
       "tcgplayerId": "640204",
@@ -29034,7 +29034,7 @@
       "Unique": true,
       "Artist": "Aaron Dhanda",
       "VariantType": "Foil",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.43",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/735.png",
       "tcgplayerId": "640455",
@@ -29067,11 +29067,11 @@
       "Unique": true,
       "Artist": "Aaron Dhanda",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "3.79",
+      "MarketPrice": "3.70",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/973.png",
       "tcgplayerId": "640702",
-      "LowFoilPrice": "2.70"
+      "LowFoilPrice": "2.65"
     },
     {
       "Set": "LOF",
@@ -29102,7 +29102,7 @@
       "Unique": true,
       "Artist": "Christian Papazoglakis",
       "VariantType": "Normal",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.19",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/135.png",
       "tcgplayerId": "631935",
@@ -29176,7 +29176,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/637.png",
       "tcgplayerId": "640357",
-      "LowFoilPrice": "0.05"
+      "LowFoilPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -29207,7 +29207,7 @@
       "Unique": true,
       "Artist": "Christian Papazoglakis",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.90",
+      "MarketPrice": "0.86",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/875.png",
       "tcgplayerId": "640604",
@@ -29241,7 +29241,7 @@
       "Unique": true,
       "Artist": "Omercan Cirit",
       "VariantType": "Prestige",
-      "MarketPrice": "0.77",
+      "MarketPrice": "0.74",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1023.png",
       "tcgplayerId": "640748",
@@ -29279,7 +29279,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1069.png",
       "tcgplayerId": "640794",
-      "LowFoilPrice": "1.75"
+      "LowFoilPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -29343,7 +29343,7 @@
       "Unique": true,
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/184.png",
       "tcgplayerId": "637933",
@@ -29513,11 +29513,11 @@
       ],
       "Artist": "Jakub Rebelka",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.38",
+      "MarketPrice": "1.34",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/325.png",
       "tcgplayerId": "640032",
-      "LowPrice": "0.85"
+      "LowPrice": "0.87"
     },
     {
       "Set": "LOF",
@@ -29581,7 +29581,7 @@
       ],
       "Artist": "Jakub Rebelka",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.16",
+      "MarketPrice": "2.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/801.png",
       "tcgplayerId": "640530",
@@ -29604,7 +29604,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/021.png",
       "tcgplayerId": "639589",
@@ -29627,7 +29627,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/285.png",
       "tcgplayerId": "639980",
@@ -29652,11 +29652,11 @@
       "Unique": false,
       "Artist": "Eduardo Mello - Nikola Righi",
       "VariantType": "Normal",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/079.png",
       "tcgplayerId": "637854",
-      "LowPrice": "0.23"
+      "LowPrice": "0.22"
     },
     {
       "Set": "LOF",
@@ -29677,11 +29677,11 @@
       "Unique": false,
       "Artist": "Eduardo Mello - Nikola Righi",
       "VariantType": "Hyperspace",
-      "MarketPrice": "2.41",
+      "MarketPrice": "2.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/343.png",
       "tcgplayerId": "640050",
-      "LowPrice": "0.68"
+      "LowPrice": "1.17"
     },
     {
       "Set": "LOF",
@@ -29702,7 +29702,7 @@
       "Unique": false,
       "Artist": "Eduardo Mello - Nikola Righi",
       "VariantType": "Foil",
-      "MarketPrice": "0.38",
+      "MarketPrice": "0.40",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/581.png",
       "tcgplayerId": "640300",
@@ -29829,7 +29829,7 @@
       ],
       "Artist": "Patrick Brown",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.94",
+      "MarketPrice": "0.93",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/484.png",
       "tcgplayerId": "640191",
@@ -29885,11 +29885,11 @@
       ],
       "Artist": "Patrick Brown",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.95",
+      "MarketPrice": "1.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/960.png",
       "tcgplayerId": "640689",
-      "LowFoilPrice": "1.10"
+      "LowFoilPrice": "1.11"
     },
     {
       "Set": "LOF",
@@ -29922,11 +29922,11 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Prestige",
-      "MarketPrice": "5.93",
+      "MarketPrice": "5.67",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1066.png",
       "tcgplayerId": "640791",
-      "LowPrice": "3.88"
+      "LowPrice": "4.55"
     },
     {
       "Set": "LOF",
@@ -29959,7 +29959,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "11.30",
+      "MarketPrice": "11.29",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1112.png",
       "tcgplayerId": "640837",
@@ -30070,7 +30070,7 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.39",
+      "MarketPrice": "0.38",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/447.png",
       "tcgplayerId": "640154",
@@ -30107,11 +30107,11 @@
       ],
       "Artist": "David Buisán",
       "VariantType": "Foil",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/685.png",
       "tcgplayerId": "640405",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.10"
     },
     {
       "Set": "LOF",
@@ -30208,7 +30208,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "1.39",
+      "MarketPrice": "1.38",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1095.png",
       "tcgplayerId": "640820",
@@ -30304,7 +30304,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/381.png",
       "tcgplayerId": "640088",
@@ -30336,7 +30336,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Foil",
-      "MarketPrice": "0.22",
+      "MarketPrice": "0.21",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/619.png",
       "tcgplayerId": "640339",
@@ -30368,7 +30368,7 @@
       "Unique": true,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.96",
+      "MarketPrice": "0.87",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/857.png",
       "tcgplayerId": "640586",
@@ -30426,7 +30426,7 @@
       "Unique": false,
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.22",
+      "MarketPrice": "1.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/402.png",
       "tcgplayerId": "640109",
@@ -30552,7 +30552,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/345.png",
       "tcgplayerId": "640052",
-      "LowPrice": "0.05"
+      "LowPrice": "0.06"
     },
     {
       "Set": "LOF",
@@ -30580,7 +30580,7 @@
       "Unique": false,
       "Artist": "Facundo Moyano",
       "VariantType": "Foil",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/583.png",
       "tcgplayerId": "640302",
@@ -30612,7 +30612,7 @@
       "Unique": false,
       "Artist": "Facundo Moyano",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.37",
+      "MarketPrice": "0.38",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/821.png",
       "tcgplayerId": "640550",
@@ -30644,7 +30644,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/056.png",
       "tcgplayerId": "637839",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "LOF",
@@ -30724,7 +30724,7 @@
       "Unique": false,
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.96",
+      "MarketPrice": "0.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/796.png",
       "tcgplayerId": "640525",
@@ -30796,7 +30796,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/478.png",
       "tcgplayerId": "640185",
-      "LowPrice": "0.02"
+      "LowPrice": "0.01"
     },
     {
       "Set": "LOF",
@@ -30826,7 +30826,7 @@
       ],
       "Artist": "Monika Palosz",
       "VariantType": "Foil",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/716.png",
       "tcgplayerId": "640436",
@@ -30985,7 +30985,7 @@
       "Unique": false,
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "0.10",
+      "MarketPrice": "0.11",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/076.png",
       "tcgplayerId": "631921",
@@ -31064,7 +31064,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/816.png",
       "tcgplayerId": "640545",
-      "LowFoilPrice": "0.19"
+      "LowFoilPrice": "0.07"
     },
     {
       "Set": "LOF",
@@ -31106,11 +31106,11 @@
       "Unique": false,
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.22",
+      "MarketPrice": "1.28",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/288.png",
       "tcgplayerId": "639987",
-      "LowPrice": "1.87"
+      "LowPrice": "1.28"
     },
     {
       "Set": "LOF",
@@ -31178,7 +31178,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/462.png",
       "tcgplayerId": "640169",
-      "LowPrice": "0.01"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -31208,11 +31208,11 @@
       "Unique": true,
       "Artist": "Thomas Wievegg",
       "VariantType": "Foil",
-      "MarketPrice": "0.08",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/700.png",
       "tcgplayerId": "640420",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -31368,7 +31368,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/395.png",
       "tcgplayerId": "640102",
-      "LowPrice": "0.15"
+      "LowPrice": "0.16"
     },
     {
       "Set": "LOF",
@@ -31664,7 +31664,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/298.png",
       "tcgplayerId": "640005",
-      "LowPrice": "0.15"
+      "LowPrice": "0.16"
     },
     {
       "Set": "LOF",
@@ -31696,7 +31696,7 @@
       ],
       "Artist": "Robert Bonchune",
       "VariantType": "Foil",
-      "MarketPrice": "0.16",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/536.png",
       "tcgplayerId": "640255",
@@ -31732,7 +31732,7 @@
       ],
       "Artist": "Robert Bonchune",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.68",
+      "MarketPrice": "0.70",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/774.png",
       "tcgplayerId": "640503",
@@ -31806,12 +31806,12 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Showcase",
-      "MarketPrice": "36.59",
+      "MarketPrice": "35.54",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1010.png",
       "tcgplayerId": "640891",
-      "LowPrice": "29.30",
-      "LowFoilPrice": "29.30"
+      "LowPrice": "28.45",
+      "LowFoilPrice": "28.45"
     },
     {
       "Set": "LOF",
@@ -31844,7 +31844,7 @@
       "Unique": true,
       "Artist": "Pius Bak",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.12",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/270.png",
       "tcgplayerId": "639961",
@@ -31980,7 +31980,7 @@
       "Unique": true,
       "Artist": "Aaron Dhanda",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.85",
+      "MarketPrice": "0.86",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/787.png",
       "tcgplayerId": "640516",
@@ -32044,7 +32044,7 @@
       "Unique": false,
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.46",
+      "MarketPrice": "0.45",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/299.png",
       "tcgplayerId": "640006",
@@ -32108,11 +32108,11 @@
       "Unique": false,
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.92",
+      "MarketPrice": "1.90",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/775.png",
       "tcgplayerId": "640504",
-      "LowFoilPrice": "1.60"
+      "LowFoilPrice": "1.49"
     },
     {
       "Set": "LOF",
@@ -32232,7 +32232,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/804.png",
       "tcgplayerId": "640533",
-      "LowFoilPrice": "0.20"
+      "LowFoilPrice": "0.19"
     },
     {
       "Set": "LOF",
@@ -32274,7 +32274,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.56",
+      "MarketPrice": "0.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/289.png",
       "tcgplayerId": "639988",
@@ -32297,7 +32297,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Foil",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.23",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/531.png",
       "tcgplayerId": "640250",
@@ -32320,7 +32320,7 @@
       "Unique": false,
       "Artist": "Marko Fiedler",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.68",
+      "MarketPrice": "2.58",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/769.png",
       "tcgplayerId": "640498",
@@ -32452,7 +32452,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/858.png",
       "tcgplayerId": "640587",
@@ -32502,7 +32502,7 @@
       "Unique": false,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.43",
+      "MarketPrice": "0.44",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/389.png",
       "tcgplayerId": "640096",
@@ -32583,7 +32583,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "3.65",
+      "MarketPrice": "3.64",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1062.png",
       "tcgplayerId": "640787",
@@ -32614,7 +32614,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "7.82",
+      "MarketPrice": "7.67",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1108.png",
       "tcgplayerId": "640833",
@@ -32645,7 +32645,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "120.00",
+      "MarketPrice": "118.25",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1154.png",
       "tcgplayerId": "640879",
@@ -32676,11 +32676,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/252.png",
       "tcgplayerId": "637979",
-      "LowPrice": "0.23"
+      "LowPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -32711,7 +32711,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/516.png",
       "tcgplayerId": "640223",
-      "LowPrice": "0.46"
+      "LowPrice": "0.45"
     },
     {
       "Set": "LOF",
@@ -32769,7 +32769,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.61",
+      "MarketPrice": "1.59",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/992.png",
       "tcgplayerId": "640721",
@@ -32827,7 +32827,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "1.74",
+      "MarketPrice": "1.73",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1063.png",
       "tcgplayerId": "640788",
@@ -32856,11 +32856,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "7.58",
+      "MarketPrice": "7.53",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1109.png",
       "tcgplayerId": "640834",
-      "LowFoilPrice": "5.23"
+      "LowFoilPrice": "4.00"
     },
     {
       "Set": "LOF",
@@ -32885,11 +32885,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "65.00",
+      "MarketPrice": "62.50",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1155.png",
       "tcgplayerId": "640880",
-      "LowFoilPrice": "65.00"
+      "LowFoilPrice": "99.99"
     },
     {
       "Set": "LOF",
@@ -32943,7 +32943,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.45",
+      "MarketPrice": "0.46",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/524.png",
       "tcgplayerId": "640231",
@@ -32972,11 +32972,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Foil",
-      "MarketPrice": "0.62",
+      "MarketPrice": "0.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/762.png",
       "tcgplayerId": "640482",
-      "LowFoilPrice": "0.23"
+      "LowFoilPrice": "0.22"
     },
     {
       "Set": "LOF",
@@ -33093,11 +33093,11 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Normal",
-      "MarketPrice": "3.65",
+      "MarketPrice": "3.61",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/213.png",
       "tcgplayerId": "637951",
-      "LowPrice": "3.00"
+      "LowPrice": "3.60"
     },
     {
       "Set": "LOF",
@@ -33126,7 +33126,7 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
-      "MarketPrice": "5.55",
+      "MarketPrice": "5.41",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/477.png",
       "tcgplayerId": "640184",
@@ -33159,11 +33159,11 @@
       "Unique": true,
       "Artist": "Ario Murti",
       "VariantType": "Foil",
-      "MarketPrice": "5.85",
+      "MarketPrice": "4.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/715.png",
       "tcgplayerId": "640435",
-      "LowFoilPrice": "2.05"
+      "LowFoilPrice": "2.09"
     },
     {
       "Set": "LOF",
@@ -33196,7 +33196,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/953.png",
       "tcgplayerId": "640682",
-      "LowFoilPrice": "7.08"
+      "LowFoilPrice": "7.79"
     },
     {
       "Set": "LOF",
@@ -33230,7 +33230,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/121.png",
       "tcgplayerId": "637886",
-      "LowPrice": "0.10"
+      "LowPrice": "0.07"
     },
     {
       "Set": "LOF",
@@ -33294,7 +33294,7 @@
       ],
       "Artist": "Joshua Carson",
       "VariantType": "Foil",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/623.png",
       "tcgplayerId": "640343",
@@ -33332,7 +33332,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/861.png",
       "tcgplayerId": "640590",
-      "LowFoilPrice": "0.65"
+      "LowFoilPrice": "0.59"
     },
     {
       "Set": "LOF",
@@ -33359,11 +33359,11 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige",
-      "MarketPrice": "4.17",
+      "MarketPrice": "3.89",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1064.png",
       "tcgplayerId": "640789",
-      "LowPrice": "2.49"
+      "LowPrice": "2.80"
     },
     {
       "Set": "LOF",
@@ -33390,7 +33390,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "12.66",
+      "MarketPrice": "12.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1110.png",
       "tcgplayerId": "640835",
@@ -33452,7 +33452,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
-      "MarketPrice": "0.34",
+      "MarketPrice": "0.32",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/237.png",
       "tcgplayerId": "637968",
@@ -33518,7 +33518,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/739.png",
       "tcgplayerId": "640459",
-      "LowFoilPrice": "0.19"
+      "LowFoilPrice": "0.18"
     },
     {
       "Set": "LOF",
@@ -33545,7 +33545,7 @@
       "Unique": true,
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.62",
+      "MarketPrice": "1.65",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/977.png",
       "tcgplayerId": "640706",
@@ -33597,7 +33597,7 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.91",
+      "MarketPrice": "0.89",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/307.png",
       "tcgplayerId": "640014",
@@ -33649,11 +33649,11 @@
       "Unique": false,
       "Artist": "Milos Slavkovic",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "1.88",
+      "MarketPrice": "1.82",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/783.png",
       "tcgplayerId": "640512",
-      "LowFoilPrice": "0.95"
+      "LowFoilPrice": "0.94"
     },
     {
       "Set": "LOF",
@@ -33674,7 +33674,7 @@
       "Unique": false,
       "Artist": "Tatsiana Maksimuk",
       "VariantType": "Normal",
-      "MarketPrice": "0.09",
+      "MarketPrice": "0.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/227.png",
       "tcgplayerId": "631958",
@@ -33972,7 +33972,7 @@
       ],
       "Artist": "Eslam AboShady",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/638.png",
       "tcgplayerId": "640358",
@@ -34062,7 +34062,7 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.21",
+      "MarketPrice": "0.22",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/489.png",
       "tcgplayerId": "640196",
@@ -34090,11 +34090,11 @@
       ],
       "Artist": "Benjamin Paulus",
       "VariantType": "Foil",
-      "MarketPrice": "0.20",
+      "MarketPrice": "0.17",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/727.png",
       "tcgplayerId": "640447",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -34147,7 +34147,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/177.png",
       "tcgplayerId": "637926",
-      "LowPrice": "0.07"
+      "LowPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -34168,7 +34168,7 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.52",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/441.png",
       "tcgplayerId": "640148",
@@ -34193,7 +34193,7 @@
       "Unique": false,
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.19",
+      "MarketPrice": "0.20",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/679.png",
       "tcgplayerId": "640399",
@@ -34368,7 +34368,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.31",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/292.png",
       "tcgplayerId": "639995",
@@ -34414,7 +34414,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.51",
+      "MarketPrice": "0.53",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/770.png",
       "tcgplayerId": "640499",
@@ -34583,7 +34583,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/221.png",
       "tcgplayerId": "637958",
-      "LowPrice": "0.20"
+      "LowPrice": "0.15"
     },
     {
       "Set": "LOF",
@@ -34629,7 +34629,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "0.35",
+      "MarketPrice": "0.33",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/723.png",
       "tcgplayerId": "640443",
@@ -34654,7 +34654,7 @@
       "Unique": false,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "2.40",
+      "MarketPrice": "2.34",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/961.png",
       "tcgplayerId": "640690",
@@ -34687,7 +34687,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "0.06",
+      "MarketPrice": "0.07",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/161.png",
       "tcgplayerId": "631944",
@@ -34720,7 +34720,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.15",
+      "MarketPrice": "0.16",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/425.png",
       "tcgplayerId": "640132",
@@ -34753,7 +34753,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Foil",
-      "MarketPrice": "0.11",
+      "MarketPrice": "0.12",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/663.png",
       "tcgplayerId": "640383",
@@ -34790,7 +34790,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/901.png",
       "tcgplayerId": "640630",
-      "LowFoilPrice": "0.18"
+      "LowFoilPrice": "0.05"
     },
     {
       "Set": "LOF",
@@ -35204,7 +35204,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.89",
+      "MarketPrice": "0.84",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/283.png",
       "tcgplayerId": "639974",
@@ -35250,7 +35250,7 @@
       "Unique": false,
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "4.94",
+      "MarketPrice": "4.69",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/767.png",
       "tcgplayerId": "640496",
@@ -35316,11 +35316,11 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Prestige Foil",
-      "MarketPrice": "4.02",
+      "MarketPrice": "3.94",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1081.png",
       "tcgplayerId": "640806",
-      "LowFoilPrice": "3.39"
+      "LowFoilPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -35349,7 +35349,7 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "142.32",
+      "MarketPrice": "131.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1127.png",
       "tcgplayerId": "640852",
@@ -35382,7 +35382,7 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Normal",
-      "MarketPrice": "0.50",
+      "MarketPrice": "0.51",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/195.png",
       "tcgplayerId": "637939",
@@ -35415,11 +35415,11 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Hyperspace",
-      "MarketPrice": "1.32",
+      "MarketPrice": "1.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/459.png",
       "tcgplayerId": "640166",
-      "LowPrice": "0.74"
+      "LowPrice": "0.71"
     },
     {
       "Set": "LOF",
@@ -35448,7 +35448,7 @@
       "Unique": true,
       "Artist": "Kaihound Studios",
       "VariantType": "Foil",
-      "MarketPrice": "0.53",
+      "MarketPrice": "0.52",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/697.png",
       "tcgplayerId": "640417",
@@ -35485,7 +35485,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/935.png",
       "tcgplayerId": "640664",
-      "LowFoilPrice": "1.94"
+      "LowFoilPrice": "1.89"
     },
     {
       "Set": "LOF",
@@ -35782,7 +35782,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
-      "MarketPrice": "0.07",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/164.png",
       "tcgplayerId": "637914",
@@ -35815,11 +35815,11 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.13",
+      "MarketPrice": "0.14",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/428.png",
       "tcgplayerId": "640135",
-      "LowPrice": "0.03"
+      "LowPrice": "0.04"
     },
     {
       "Set": "LOF",
@@ -35848,7 +35848,7 @@
       ],
       "Artist": "Luke Harrington",
       "VariantType": "Foil",
-      "MarketPrice": "0.04",
+      "MarketPrice": "0.06",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/666.png",
       "tcgplayerId": "640386",
@@ -35941,7 +35941,7 @@
       "Unique": true,
       "Artist": "Reno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.28",
+      "MarketPrice": "0.27",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/329.png",
       "tcgplayerId": "640036",
@@ -36051,7 +36051,7 @@
       "Unique": false,
       "Artist": "Reno",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.24",
+      "MarketPrice": "0.26",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/342.png",
       "tcgplayerId": "640049",
@@ -36203,7 +36203,7 @@
       ],
       "Artist": "Kyle Petchock",
       "VariantType": "Foil",
-      "MarketPrice": "0.18",
+      "MarketPrice": "0.15",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/656.png",
       "tcgplayerId": "640376",
@@ -36274,7 +36274,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Normal",
-      "MarketPrice": "1.95",
+      "MarketPrice": "1.91",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/045.png",
       "tcgplayerId": "637831",
@@ -36315,7 +36315,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1055.png",
       "tcgplayerId": "640780",
-      "LowPrice": "5.40"
+      "LowPrice": "4.81"
     },
     {
       "Set": "LOF",
@@ -36352,7 +36352,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1101.png",
       "tcgplayerId": "640826",
-      "LowFoilPrice": "10.00"
+      "LowFoilPrice": "9.95"
     },
     {
       "Set": "LOF",
@@ -36385,7 +36385,7 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "73.89",
+      "MarketPrice": "72.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1147.png",
       "tcgplayerId": "640872",
@@ -36422,11 +36422,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Hyperspace",
-      "MarketPrice": "4.89",
+      "MarketPrice": "4.35",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/309.png",
       "tcgplayerId": "640016",
-      "LowPrice": "0.75"
+      "LowPrice": "1.00"
     },
     {
       "Set": "LOF",
@@ -36459,11 +36459,11 @@
       ],
       "Artist": "Aitor Prieto",
       "VariantType": "Foil",
-      "MarketPrice": "2.17",
+      "MarketPrice": "2.08",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/547.png",
       "tcgplayerId": "640266",
-      "LowFoilPrice": "1.99"
+      "LowFoilPrice": "1.98"
     },
     {
       "Set": "LOF",
@@ -36500,7 +36500,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/785.png",
       "tcgplayerId": "640514",
-      "LowFoilPrice": "3.89"
+      "LowFoilPrice": "2.00"
     },
     {
       "Set": "LOF",
@@ -36530,7 +36530,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Normal",
-      "MarketPrice": "2.91",
+      "MarketPrice": "2.85",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/101.png",
       "tcgplayerId": "637870",
@@ -36564,11 +36564,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Prestige",
-      "MarketPrice": "13.67",
+      "MarketPrice": "13.18",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1057.png",
       "tcgplayerId": "640782",
-      "LowPrice": "4.34"
+      "LowPrice": "3.88"
     },
     {
       "Set": "LOF",
@@ -36602,7 +36602,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1103.png",
       "tcgplayerId": "640828",
-      "LowFoilPrice": "15.20"
+      "LowFoilPrice": "10.00"
     },
     {
       "Set": "LOF",
@@ -36666,11 +36666,11 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
-      "MarketPrice": "3.88",
+      "MarketPrice": "3.84",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/365.png",
       "tcgplayerId": "640072",
-      "LowPrice": "2.85"
+      "LowPrice": "2.90"
     },
     {
       "Set": "LOF",
@@ -36700,7 +36700,7 @@
       "Unique": true,
       "Artist": "David Buisán",
       "VariantType": "Foil",
-      "MarketPrice": "2.90",
+      "MarketPrice": "2.87",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/603.png",
       "tcgplayerId": "640322",
@@ -36764,7 +36764,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
-      "MarketPrice": "0.83",
+      "MarketPrice": "0.86",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/102.png",
       "tcgplayerId": "637871",
@@ -36798,7 +36798,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/366.png",
       "tcgplayerId": "640073",
-      "LowPrice": "3.00"
+      "LowPrice": "3.07"
     },
     {
       "Set": "LOF",
@@ -36824,7 +36824,7 @@
       "Unique": true,
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Foil",
-      "MarketPrice": "1.06",
+      "MarketPrice": "1.01",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/604.png",
       "tcgplayerId": "640323",
@@ -36918,7 +36918,7 @@
       "Unique": false,
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
-      "MarketPrice": "0.29",
+      "MarketPrice": "0.30",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/457.png",
       "tcgplayerId": "640164",
@@ -37019,7 +37019,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1047.png",
       "tcgplayerId": "640772",
-      "LowPrice": "0.64"
+      "LowPrice": "0.57"
     },
     {
       "Set": "LOF",
@@ -37081,11 +37081,11 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Prestige Serialized",
-      "MarketPrice": "125.10",
+      "MarketPrice": "119.55",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/1139.png",
       "tcgplayerId": "640864",
-      "LowFoilPrice": "114.00"
+      "LowFoilPrice": "113.99"
     },
     {
       "Set": "LOF",
@@ -37114,7 +37114,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
-      "MarketPrice": "0.32",
+      "MarketPrice": "0.31",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/204.png",
       "tcgplayerId": "637942",
@@ -37151,7 +37151,7 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/468.png",
       "tcgplayerId": "640175",
-      "LowPrice": "0.24"
+      "LowPrice": "0.25"
     },
     {
       "Set": "LOF",
@@ -37180,7 +37180,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Foil",
-      "MarketPrice": "0.44",
+      "MarketPrice": "0.42",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/706.png",
       "tcgplayerId": "640426",
@@ -37213,7 +37213,7 @@
       "Unique": true,
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace Foil",
-      "MarketPrice": "0.72",
+      "MarketPrice": "0.70",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LOF/944.png",
       "tcgplayerId": "640673",
