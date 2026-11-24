@@ -935,7 +935,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/253.png",
       "tcgplayerId": "681324",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "SOR-237"
+      ]
     },
     {
       "Set": "LAW",
@@ -966,7 +969,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/517.png",
       "tcgplayerId": "681566",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "SOR-237"
+      ]
     },
     {
       "Set": "LAW",
@@ -997,7 +1003,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/755.png",
       "tcgplayerId": "681837",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "SOR-237"
+      ]
     },
     {
       "Set": "LAW",
@@ -2793,7 +2802,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/130.png",
       "tcgplayerId": "677599",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-055"
+      ]
     },
     {
       "Set": "LAW",
@@ -2818,7 +2830,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/394.png",
       "tcgplayerId": "681444",
-      "LowPrice": "0.10"
+      "LowPrice": "0.10",
+      "OtherPrintings": [
+        "IC27-055"
+      ]
     },
     {
       "Set": "LAW",
@@ -2843,7 +2858,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/632.png",
       "tcgplayerId": "681714",
-      "LowFoilPrice": "0.10"
+      "LowFoilPrice": "0.10",
+      "OtherPrintings": [
+        "IC27-055"
+      ]
     },
     {
       "Set": "LAW",
@@ -9206,7 +9224,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/T02.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "SEC-T02",
+        "TS26-T03",
+        "IC27-T01"
+      ]
     },
     {
       "Set": "LAW",
@@ -9228,7 +9255,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/T05.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "SEC-T02",
+        "TS26-T03",
+        "IC27-T01"
+      ]
     },
     {
       "Set": "LAW",
@@ -13349,7 +13385,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/180.png",
       "tcgplayerId": "681290",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "ASH-152"
+      ]
     },
     {
       "Set": "LAW",
@@ -13381,7 +13420,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/444.png",
       "tcgplayerId": "681493",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "ASH-152"
+      ]
     },
     {
       "Set": "LAW",
@@ -13413,7 +13455,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/682.png",
       "tcgplayerId": "681764",
-      "LowFoilPrice": "0.03"
+      "LowFoilPrice": "0.03",
+      "OtherPrintings": [
+        "ASH-152"
+      ]
     },
     {
       "Set": "LAW",
@@ -20384,7 +20429,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/175.png",
       "tcgplayerId": "681288",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "JTL-136"
+      ]
     },
     {
       "Set": "LAW",
@@ -20417,7 +20465,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/439.png",
       "tcgplayerId": "681488",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "JTL-136"
+      ]
     },
     {
       "Set": "LAW",
@@ -20450,7 +20501,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/677.png",
       "tcgplayerId": "681759",
-      "LowFoilPrice": "0.08"
+      "LowFoilPrice": "0.08",
+      "OtherPrintings": [
+        "JTL-136"
+      ]
     },
     {
       "Set": "LAW",
@@ -21354,7 +21408,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/115.png",
       "tcgplayerId": "681269",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "SHD-057"
+      ]
     },
     {
       "Set": "LAW",
@@ -21386,7 +21443,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/379.png",
       "tcgplayerId": "681429",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "SHD-057"
+      ]
     },
     {
       "Set": "LAW",
@@ -21418,7 +21478,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/617.png",
       "tcgplayerId": "681699",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "SHD-057"
+      ]
     },
     {
       "Set": "LAW",
@@ -23684,7 +23747,17 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/T03.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "TS26-T04",
+        "ASH-T03",
+        "HMW-T01",
+        "IC27-T02"
+      ]
     },
     {
       "Set": "LAW",
@@ -23707,7 +23780,17 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/T06.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "TS26-T04",
+        "ASH-T03",
+        "HMW-T01",
+        "IC27-T02"
+      ]
     },
     {
       "Set": "LAW",
@@ -24670,7 +24753,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/261.png",
       "tcgplayerId": "681330",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "SHD-260"
+      ]
     },
     {
       "Set": "LAW",
@@ -24697,7 +24783,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/525.png",
       "tcgplayerId": "681574",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "SHD-260"
+      ]
     },
     {
       "Set": "LAW",
@@ -24724,7 +24813,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/LAW/763.png",
       "tcgplayerId": "681845",
-      "LowFoilPrice": "0.02"
+      "LowFoilPrice": "0.02",
+      "OtherPrintings": [
+        "SHD-260"
+      ]
     },
     {
       "Set": "LAW",

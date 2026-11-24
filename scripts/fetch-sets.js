@@ -75,6 +75,58 @@ async function saveToFile(data, filename) {
     }
 }
 
+const dataDir = () => path.join(__dirname, '..', 'public', 'data');
+
+function printingKey(card) {
+    return [card.Name, card.Subtitle, card.Type].map((v) => String(v ?? '').trim().toLowerCase()).join('|');
+}
+
+/**
+ * Pure: given `{ SET: [cards] }`, set `OtherPrintings` on every card to the
+ * IDs ("SET-NUMBER") of the Normal printings of the same card (same Name +
+ * Subtitle + Type) in OTHER sets. Hyperspace/Foil variants of a card share the
+ * list of their Normal counterpart. The field is omitted when there is none,
+ * and removed if it went stale. Mutates and returns `cardsBySet`.
+ */
+function addOtherPrintings(cardsBySet) {
+    const normals = new Map();
+    for (const [set, cards] of Object.entries(cardsBySet)) {
+        for (const card of cards) {
+            if (card.VariantType && card.VariantType !== 'Normal') continue;
+            const key = printingKey(card);
+            if (!normals.has(key)) normals.set(key, []);
+            normals.get(key).push({ set, id: `${set}-${card.Number}` });
+        }
+    }
+    for (const [set, cards] of Object.entries(cardsBySet)) {
+        for (const card of cards) {
+            const others = (normals.get(printingKey(card)) ?? []).filter((p) => p.set !== set).map((p) => p.id);
+            if (others.length) card.OtherPrintings = others;
+            else delete card.OtherPrintings;
+        }
+    }
+    return cardsBySet;
+}
+
+/** Read every set file from public/data, run addOtherPrintings, and write them back. */
+async function enrichOtherPrintings() {
+    const files = {};
+    for (const set of loadSets()) {
+        const file = path.join(dataDir(), `${set.toLowerCase()}.json`);
+        try {
+            files[set] = { file, json: JSON.parse(await fs.readFile(file, 'utf8')) };
+        } catch (error) {
+            console.warn(`Skipping ${set} while adding OtherPrintings:`, error.message);
+        }
+    }
+    const bySet = Object.fromEntries(Object.entries(files).map(([set, f]) => [set, f.json.data ?? []]));
+    addOtherPrintings(bySet);
+    for (const { file, json } of Object.values(files)) {
+        await fs.writeFile(file, JSON.stringify(json, null, 2));
+    }
+    console.log('Added OtherPrintings to set data');
+}
+
 async function fetchAllSets() {
     try {
         console.log('Starting to fetch all sets...');
@@ -102,6 +154,7 @@ async function fetchAllSets() {
                 console.error(`\nError processing set ${set}:`, error);
             }
         }
+        await enrichOtherPrintings();
         console.log('\nFinished fetching all sets!');
     } catch (error) {
         console.error('\nFatal error:', error);
@@ -110,13 +163,17 @@ async function fetchAllSets() {
 }
 
 // Run the script if called directly
+// (`--enrich-only` re-derives OtherPrintings from the data already on disk, no network.)
 if (require.main === module) {
-    fetchAllSets().catch(console.error);
+    const run = process.argv.includes('--enrich-only') ? enrichOtherPrintings : fetchAllSets;
+    run().catch(console.error);
 }
 
 // Export functions for testing
 module.exports = {
     fetchWithRetry,
     saveToFile,
-    fetchAllSets
+    fetchAllSets,
+    addOtherPrintings,
+    enrichOtherPrintings
 };

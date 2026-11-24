@@ -230,3 +230,34 @@ afterEach(() => {
     });
   });
 });
+
+describe('addOtherPrintings', () => {
+  const mk = (Number, Name, extra = {}) => ({ Number, Name, Type: 'Unit', VariantType: 'Normal', ...extra });
+
+  it('lists Normal printings in other sets, as SET-NUMBER ids', () => {
+    const data = { TWI: [mk('180', 'Separatist Commando')], IC27: [mk('140', 'Separatist Commando')] };
+    require('../scripts/fetch-sets.js').addOtherPrintings(data);
+    expect(data.TWI[0].OtherPrintings).toEqual(['IC27-140']);
+    expect(data.IC27[0].OtherPrintings).toEqual(['TWI-180']);
+  });
+
+  it('gives variants the list of their Normal counterpart and skips variant ids', () => {
+    const data = {
+      TWI: [mk('207', 'B1 Security Team'), mk('472', 'B1 Security Team', { VariantType: 'Hyperspace' })],
+      IC27: [mk('170', 'B1 Security Team')],
+    };
+    require('../scripts/fetch-sets.js').addOtherPrintings(data);
+    expect(data.TWI[1].OtherPrintings).toEqual(['IC27-170']);
+    expect(data.IC27[0].OtherPrintings).toEqual(['TWI-207']);
+  });
+
+  it('does not link different subtitles, and omits the field when there are no other sets', () => {
+    const data = {
+      JTL: [mk('188', 'Moff Gideon', { Subtitle: 'I Know Everything' })],
+      IC27: [mk('022', 'Moff Gideon', { Subtitle: 'Cold Calling', OtherPrintings: ['X-1'] })],
+    };
+    require('../scripts/fetch-sets.js').addOtherPrintings(data);
+    expect(data.JTL[0].OtherPrintings).toBeUndefined();
+    expect(data.IC27[0].OtherPrintings).toBeUndefined();
+  });
+});

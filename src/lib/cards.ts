@@ -32,6 +32,8 @@ export interface CardData {
   Power?: string | number;
   HP?: string | number;
   FrontArt?: string;
+  /** IDs ("SET-NUMBER") of this card's Normal printings in other sets; written by scripts/fetch-sets.js. */
+  OtherPrintings?: string[];
   BackArt?: string;
   DoubleSided?: boolean;
   Set?: string;
@@ -542,6 +544,7 @@ export function buildCardDetailHTML(
 
   const metaParts = [cardData.Type, ...arenas].filter(Boolean) as string[];
   const metaLine = [metaParts.join(' • '), traits.join(' • ')].filter(Boolean).join(' — ');
+  const otherPrintings = cardData.OtherPrintings ?? [];
 
   const textParts: string[] = [];
   if (cardData.FrontText) textParts.push(String(cardData.FrontText));
@@ -574,6 +577,7 @@ export function buildCardDetailHTML(
                         ${textParts.map((p) => `<p>${p}</p>`).join('')}
                     </div>
                 ` : ''}
+                ${otherPrintings.length ? `<div class="card-detail-printings">Also in: ${otherPrintings.join(', ')}</div>` : ''}
                 ${cardData.Artist ? `<div class="card-detail-artist">Illustrated by ${cardData.Artist}</div>` : ''}
             </div>
         </div>

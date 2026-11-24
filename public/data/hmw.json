@@ -7120,7 +7120,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/096.png",
       "tcgplayerId": "720057",
-      "LowPrice": "0.08"
+      "LowPrice": "0.08",
+      "OtherPrintings": [
+        "SOR-070"
+      ]
     },
     {
       "Set": "HMW",
@@ -7150,7 +7153,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/368.png",
       "tcgplayerId": "720313",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "SOR-070"
+      ]
     },
     {
       "Set": "HMW",
@@ -7180,7 +7186,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/606.png",
       "tcgplayerId": "720780",
-      "LowFoilPrice": "0.05"
+      "LowFoilPrice": "0.05",
+      "OtherPrintings": [
+        "SOR-070"
+      ]
     },
     {
       "Set": "HMW",
@@ -17616,7 +17625,11 @@
       "VariantType": "Normal",
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/032.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/032.png",
+      "OtherPrintings": [
+        "JTL-030",
+        "IC27-012"
+      ]
     },
     {
       "Set": "HMW",
@@ -17639,7 +17652,11 @@
       "Artist": "Rocío Espin",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/304.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/304.png",
+      "OtherPrintings": [
+        "JTL-030",
+        "IC27-012"
+      ]
     },
     {
       "Set": "HMW",
@@ -20784,7 +20801,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/239.png",
       "tcgplayerId": "720200",
-      "LowPrice": "0.10"
+      "LowPrice": "0.10",
+      "OtherPrintings": [
+        "LOF-224"
+      ]
     },
     {
       "Set": "HMW",
@@ -20809,7 +20829,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/511.png",
       "tcgplayerId": "720456",
-      "LowPrice": "0.10"
+      "LowPrice": "0.10",
+      "OtherPrintings": [
+        "LOF-224"
+      ]
     },
     {
       "Set": "HMW",
@@ -20834,7 +20857,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/749.png",
       "tcgplayerId": "720923",
-      "LowFoilPrice": "0.04"
+      "LowFoilPrice": "0.04",
+      "OtherPrintings": [
+        "LOF-224"
+      ]
     },
     {
       "Set": "HMW",
@@ -24303,7 +24329,17 @@
       "VariantType": "Normal",
       "MarketPrice": "0.00",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/T01.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/T01.png",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "LAW-T03",
+        "TS26-T04",
+        "ASH-T03",
+        "IC27-T02"
+      ]
     },
     {
       "Set": "HMW",
@@ -24325,7 +24361,17 @@
       "VariantType": "Hyperspace",
       "MarketPrice": "0.00",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/T06.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/T06.png",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "LAW-T03",
+        "TS26-T04",
+        "ASH-T03",
+        "IC27-T02"
+      ]
     },
     {
       "Set": "HMW",
@@ -24349,7 +24395,10 @@
       "VariantType": "Normal",
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/022.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/022.png",
+      "OtherPrintings": [
+        "JTL-020"
+      ]
     },
     {
       "Set": "HMW",
@@ -24372,7 +24421,10 @@
       "Artist": "Marko Fiedler",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/294.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/294.png",
+      "OtherPrintings": [
+        "JTL-020"
+      ]
     },
     {
       "Set": "HMW",
@@ -26929,7 +26981,10 @@
       "VariantType": "Normal",
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/025.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/025.png",
+      "OtherPrintings": [
+        "JTL-023"
+      ]
     },
     {
       "Set": "HMW",
@@ -26952,7 +27007,10 @@
       "Artist": "Adrien Girod",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/297.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/HMW/297.png",
+      "OtherPrintings": [
+        "JTL-023"
+      ]
     },
     {
       "Set": "HMW",

@@ -32,7 +32,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/169.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SEC-213"
+      ]
     },
     {
       "Set": "IC27",
@@ -63,7 +66,10 @@
       "Artist": "Kursad Karatas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/358.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/358.png",
+      "OtherPrintings": [
+        "SEC-213"
+      ]
     },
     {
       "Set": "IC27",
@@ -94,7 +100,10 @@
       "Artist": "Kursad Karatas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/536.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/536.png",
+      "OtherPrintings": [
+        "SEC-213"
+      ]
     },
     {
       "Set": "IC27",
@@ -127,7 +136,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/027.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-039"
+      ]
     },
     {
       "Set": "IC27",
@@ -157,7 +169,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/216.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/216.png",
+      "OtherPrintings": [
+        "SOR-039"
+      ]
     },
     {
       "Set": "IC27",
@@ -187,7 +202,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/394.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/394.png",
+      "OtherPrintings": [
+        "SOR-039"
+      ]
     },
     {
       "Set": "IC27",
@@ -219,7 +237,10 @@
       "Artist": "Stephen Zavala",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/183.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/183.png",
+      "OtherPrintings": [
+        "SOR-232"
+      ]
     },
     {
       "Set": "IC27",
@@ -251,7 +272,10 @@
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/371.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/371.png",
+      "OtherPrintings": [
+        "SOR-232"
+      ]
     },
     {
       "Set": "IC27",
@@ -283,7 +307,10 @@
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/549.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/549.png",
+      "OtherPrintings": [
+        "SOR-232"
+      ]
     },
     {
       "Set": "IC27",
@@ -310,7 +337,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/093.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-120"
+      ]
     },
     {
       "Set": "IC27",
@@ -334,7 +364,10 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/282.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/282.png",
+      "OtherPrintings": [
+        "SOR-120"
+      ]
     },
     {
       "Set": "IC27",
@@ -358,7 +391,10 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/460.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/460.png",
+      "OtherPrintings": [
+        "SOR-120"
+      ]
     },
     {
       "Set": "IC27",
@@ -655,7 +691,11 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/020.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-60",
+        "IBH-65"
+      ]
     },
     {
       "Set": "IC27",
@@ -685,7 +725,11 @@
       "Artist": "David Nash",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/209.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/209.png",
+      "OtherPrintings": [
+        "IBH-60",
+        "IBH-65"
+      ]
     },
     {
       "Set": "IC27",
@@ -715,7 +759,11 @@
       "Artist": "David Nash",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/387.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/387.png",
+      "OtherPrintings": [
+        "IBH-60",
+        "IBH-65"
+      ]
     },
     {
       "Set": "IC27",
@@ -748,7 +796,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/074.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/074.png",
+      "OtherPrintings": [
+        "TWI-093"
+      ]
     },
     {
       "Set": "IC27",
@@ -781,7 +832,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/263.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/263.png",
+      "OtherPrintings": [
+        "TWI-093"
+      ]
     },
     {
       "Set": "IC27",
@@ -814,7 +868,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/441.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/441.png",
+      "OtherPrintings": [
+        "TWI-093"
+      ]
     },
     {
       "Set": "IC27",
@@ -1113,7 +1170,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/069.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/069.png",
+      "OtherPrintings": [
+        "JTL-091"
+      ]
     },
     {
       "Set": "IC27",
@@ -1136,7 +1196,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/258.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/258.png",
+      "OtherPrintings": [
+        "JTL-091"
+      ]
     },
     {
       "Set": "IC27",
@@ -1159,7 +1222,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/436.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/436.png",
+      "OtherPrintings": [
+        "JTL-091"
+      ]
     },
     {
       "Set": "IC27",
@@ -1598,7 +1664,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/028.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-72"
+      ]
     },
     {
       "Set": "IC27",
@@ -1629,7 +1698,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/217.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/217.png",
+      "OtherPrintings": [
+        "IBH-72"
+      ]
     },
     {
       "Set": "IC27",
@@ -1660,7 +1732,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/395.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/395.png",
+      "OtherPrintings": [
+        "IBH-72"
+      ]
     },
     {
       "Set": "IC27",
@@ -1692,7 +1767,10 @@
       "Artist": "Stefano Landini",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/170.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/170.png",
+      "OtherPrintings": [
+        "TWI-207"
+      ]
     },
     {
       "Set": "IC27",
@@ -1724,7 +1802,10 @@
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/359.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/359.png",
+      "OtherPrintings": [
+        "TWI-207"
+      ]
     },
     {
       "Set": "IC27",
@@ -1756,7 +1837,10 @@
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/537.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/537.png",
+      "OtherPrintings": [
+        "TWI-207"
+      ]
     },
     {
       "Set": "IC27",
@@ -1879,7 +1963,10 @@
       "Artist": "Shane Molina",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/141.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/141.png",
+      "OtherPrintings": [
+        "LOF-181"
+      ]
     },
     {
       "Set": "IC27",
@@ -1912,7 +1999,10 @@
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/330.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/330.png",
+      "OtherPrintings": [
+        "LOF-181"
+      ]
     },
     {
       "Set": "IC27",
@@ -1945,7 +2035,10 @@
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/508.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/508.png",
+      "OtherPrintings": [
+        "LOF-181"
+      ]
     },
     {
       "Set": "IC27",
@@ -2063,7 +2156,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/111.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/111.png",
+      "OtherPrintings": [
+        "LOF-139"
+      ]
     },
     {
       "Set": "IC27",
@@ -2088,7 +2184,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/300.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/300.png",
+      "OtherPrintings": [
+        "LOF-139"
+      ]
     },
     {
       "Set": "IC27",
@@ -2113,7 +2212,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/478.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/478.png",
+      "OtherPrintings": [
+        "LOF-139"
+      ]
     },
     {
       "Set": "IC27",
@@ -2135,7 +2237,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/055.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/055.png",
+      "OtherPrintings": [
+        "LAW-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -2157,7 +2262,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/244.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/244.png",
+      "OtherPrintings": [
+        "LAW-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -2179,7 +2287,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/422.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/422.png",
+      "OtherPrintings": [
+        "LAW-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -2212,7 +2323,10 @@
       "Artist": "Steve Morris",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/139.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/139.png",
+      "OtherPrintings": [
+        "SOR-177"
+      ]
     },
     {
       "Set": "IC27",
@@ -2245,7 +2359,10 @@
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/328.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/328.png",
+      "OtherPrintings": [
+        "SOR-177"
+      ]
     },
     {
       "Set": "IC27",
@@ -2278,7 +2395,10 @@
       "Artist": "Steve Morris",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/506.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/506.png",
+      "OtherPrintings": [
+        "SOR-177"
+      ]
     },
     {
       "Set": "IC27",
@@ -2404,7 +2524,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/025.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-99"
+      ]
     },
     {
       "Set": "IC27",
@@ -2435,7 +2558,10 @@
       "Artist": "Reno",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/214.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/214.png",
+      "OtherPrintings": [
+        "IBH-99"
+      ]
     },
     {
       "Set": "IC27",
@@ -2466,7 +2592,10 @@
       "Artist": "Reno",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/392.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/392.png",
+      "OtherPrintings": [
+        "IBH-99"
+      ]
     },
     {
       "Set": "IC27",
@@ -2676,7 +2805,10 @@
       "Artist": "Maxine Vee",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/125.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/125.png",
+      "OtherPrintings": [
+        "TWI-153"
+      ]
     },
     {
       "Set": "IC27",
@@ -2699,7 +2831,10 @@
       "Artist": "Maxine Vee",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/314.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/314.png",
+      "OtherPrintings": [
+        "TWI-153"
+      ]
     },
     {
       "Set": "IC27",
@@ -2722,7 +2857,10 @@
       "Artist": "Maxine Vee",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/492.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/492.png",
+      "OtherPrintings": [
+        "TWI-153"
+      ]
     },
     {
       "Set": "IC27",
@@ -2755,7 +2893,10 @@
       "Artist": "Aaron Dhanda",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/152.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/152.png",
+      "OtherPrintings": [
+        "SEC-199"
+      ]
     },
     {
       "Set": "IC27",
@@ -2788,7 +2929,10 @@
       "Artist": "Aaron Dhanda",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/341.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/341.png",
+      "OtherPrintings": [
+        "SEC-199"
+      ]
     },
     {
       "Set": "IC27",
@@ -2821,7 +2965,10 @@
       "Artist": "Aaron Dhanda",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/519.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/519.png",
+      "OtherPrintings": [
+        "SEC-199"
+      ]
     },
     {
       "Set": "IC27",
@@ -2846,7 +2993,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/176.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/176.png",
+      "OtherPrintings": [
+        "TWI-224"
+      ]
     },
     {
       "Set": "IC27",
@@ -2871,7 +3021,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/365.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/365.png",
+      "OtherPrintings": [
+        "TWI-224"
+      ]
     },
     {
       "Set": "IC27",
@@ -2896,7 +3049,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/543.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/543.png",
+      "OtherPrintings": [
+        "TWI-224"
+      ]
     },
     {
       "Set": "IC27",
@@ -2932,7 +3088,11 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/080.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-14",
+        "IBH-26"
+      ]
     },
     {
       "Set": "IC27",
@@ -2966,7 +3126,11 @@
       "Artist": "Ignacio Bazan-Lazcano",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/269.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/269.png",
+      "OtherPrintings": [
+        "IBH-14",
+        "IBH-26"
+      ]
     },
     {
       "Set": "IC27",
@@ -3000,7 +3164,11 @@
       "Artist": "Ignacio Bazan-Lazcano",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/447.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/447.png",
+      "OtherPrintings": [
+        "IBH-14",
+        "IBH-26"
+      ]
     },
     {
       "Set": "IC27",
@@ -3031,7 +3199,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/188.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-238"
+      ]
     },
     {
       "Set": "IC27",
@@ -3151,7 +3322,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/064.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/064.png",
+      "OtherPrintings": [
+        "JTL-088"
+      ]
     },
     {
       "Set": "IC27",
@@ -3181,7 +3355,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/253.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/253.png",
+      "OtherPrintings": [
+        "JTL-088"
+      ]
     },
     {
       "Set": "IC27",
@@ -3211,7 +3388,10 @@
       "Artist": "Hoan Nguyen",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/431.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/431.png",
+      "OtherPrintings": [
+        "JTL-088"
+      ]
     },
     {
       "Set": "IC27",
@@ -3352,7 +3532,10 @@
       "Artist": "Space Gooose",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/130.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/130.png",
+      "OtherPrintings": [
+        "LOF-157"
+      ]
     },
     {
       "Set": "IC27",
@@ -3384,7 +3567,10 @@
       "Artist": "Space Gooose",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/319.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/319.png",
+      "OtherPrintings": [
+        "LOF-157"
+      ]
     },
     {
       "Set": "IC27",
@@ -3416,7 +3602,10 @@
       "Artist": "Space Gooose",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/497.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/497.png",
+      "OtherPrintings": [
+        "LOF-157"
+      ]
     },
     {
       "Set": "IC27",
@@ -3541,7 +3730,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/131.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/131.png",
+      "OtherPrintings": [
+        "JTL-164"
+      ]
     },
     {
       "Set": "IC27",
@@ -3570,7 +3762,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/320.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/320.png",
+      "OtherPrintings": [
+        "JTL-164"
+      ]
     },
     {
       "Set": "IC27",
@@ -3599,7 +3794,10 @@
       "Artist": "Gabriel Gómez Almenzar",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/498.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/498.png",
+      "OtherPrintings": [
+        "JTL-164"
+      ]
     },
     {
       "Set": "IC27",
@@ -3822,7 +4020,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/009.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-019"
+      ]
     },
     {
       "Set": "IC27",
@@ -3851,7 +4052,10 @@
       "Artist": "Andrea De Dominicis",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/033.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/033.png",
+      "OtherPrintings": [
+        "SHD-040"
+      ]
     },
     {
       "Set": "IC27",
@@ -3880,7 +4084,10 @@
       "Artist": "Andrea De Dominicis",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/222.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/222.png",
+      "OtherPrintings": [
+        "SHD-040"
+      ]
     },
     {
       "Set": "IC27",
@@ -3909,7 +4116,10 @@
       "Artist": "Andrea De Dominicis",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/400.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/400.png",
+      "OtherPrintings": [
+        "SHD-040"
+      ]
     },
     {
       "Set": "IC27",
@@ -4135,7 +4345,10 @@
       "Artist": "André Mealha",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/036.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/036.png",
+      "OtherPrintings": [
+        "SHD-042"
+      ]
     },
     {
       "Set": "IC27",
@@ -4168,7 +4381,10 @@
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/225.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/225.png",
+      "OtherPrintings": [
+        "SHD-042"
+      ]
     },
     {
       "Set": "IC27",
@@ -4201,7 +4417,10 @@
       "Artist": "André Mealha",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/403.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/403.png",
+      "OtherPrintings": [
+        "SHD-042"
+      ]
     },
     {
       "Set": "IC27",
@@ -4225,7 +4444,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/184.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "LOF-239"
+      ]
     },
     {
       "Set": "IC27",
@@ -4247,7 +4469,10 @@
       "Artist": "David Kegg",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/372.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/372.png",
+      "OtherPrintings": [
+        "LOF-239"
+      ]
     },
     {
       "Set": "IC27",
@@ -4269,7 +4494,10 @@
       "Artist": "David Kegg",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/550.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/550.png",
+      "OtherPrintings": [
+        "LOF-239"
+      ]
     },
     {
       "Set": "IC27",
@@ -4291,7 +4519,10 @@
       "Artist": "Eslam AboShady",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/193.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/193.png",
+      "OtherPrintings": [
+        "JTL-253"
+      ]
     },
     {
       "Set": "IC27",
@@ -4313,7 +4544,10 @@
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/379.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/379.png",
+      "OtherPrintings": [
+        "JTL-253"
+      ]
     },
     {
       "Set": "IC27",
@@ -4335,7 +4569,10 @@
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/557.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/557.png",
+      "OtherPrintings": [
+        "JTL-253"
+      ]
     },
     {
       "Set": "IC27",
@@ -4530,7 +4767,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/129.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "LOF-155"
+      ]
     },
     {
       "Set": "IC27",
@@ -4557,7 +4797,10 @@
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/318.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/318.png",
+      "OtherPrintings": [
+        "LOF-155"
+      ]
     },
     {
       "Set": "IC27",
@@ -4584,7 +4827,10 @@
       "Artist": "Shane Molina",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/496.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/496.png",
+      "OtherPrintings": [
+        "LOF-155"
+      ]
     },
     {
       "Set": "IC27",
@@ -5128,7 +5374,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/097.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-128"
+      ]
     },
     {
       "Set": "IC27",
@@ -5156,7 +5405,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/286.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/286.png",
+      "OtherPrintings": [
+        "SOR-128"
+      ]
     },
     {
       "Set": "IC27",
@@ -5184,7 +5436,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/464.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/464.png",
+      "OtherPrintings": [
+        "SOR-128"
+      ]
     },
     {
       "Set": "IC27",
@@ -5216,7 +5471,12 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/017.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-033",
+        "SHD-030",
+        "SEC-030"
+      ]
     },
     {
       "Set": "IC27",
@@ -5247,7 +5507,10 @@
       "Artist": "Luke Harrington",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/091.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/091.png",
+      "OtherPrintings": [
+        "ASH-129"
+      ]
     },
     {
       "Set": "IC27",
@@ -5278,7 +5541,10 @@
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/280.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/280.png",
+      "OtherPrintings": [
+        "ASH-129"
+      ]
     },
     {
       "Set": "IC27",
@@ -5309,7 +5575,10 @@
       "Artist": "Luke Harrington",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/458.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/458.png",
+      "OtherPrintings": [
+        "ASH-129"
+      ]
     },
     {
       "Set": "IC27",
@@ -5331,7 +5600,10 @@
       "Artist": "Liana Anatolievich",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/134.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/134.png",
+      "OtherPrintings": [
+        "SHD-179"
+      ]
     },
     {
       "Set": "IC27",
@@ -5353,7 +5625,10 @@
       "Artist": "Liana Anatolievich",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/323.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/323.png",
+      "OtherPrintings": [
+        "SHD-179"
+      ]
     },
     {
       "Set": "IC27",
@@ -5375,7 +5650,10 @@
       "Artist": "Liana Anatolievich",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/501.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/501.png",
+      "OtherPrintings": [
+        "SHD-179"
+      ]
     },
     {
       "Set": "IC27",
@@ -5403,7 +5681,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/048.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/048.png",
+      "OtherPrintings": [
+        "JTL-060"
+      ]
     },
     {
       "Set": "IC27",
@@ -5431,7 +5712,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/237.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/237.png",
+      "OtherPrintings": [
+        "JTL-060"
+      ]
     },
     {
       "Set": "IC27",
@@ -5459,7 +5743,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/415.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/415.png",
+      "OtherPrintings": [
+        "JTL-060"
+      ]
     },
     {
       "Set": "IC27",
@@ -5676,7 +5963,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/190.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-248"
+      ]
     },
     {
       "Set": "IC27",
@@ -5705,7 +5995,10 @@
       "Artist": "Jake Parker",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/376.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/376.png",
+      "OtherPrintings": [
+        "JTL-248"
+      ]
     },
     {
       "Set": "IC27",
@@ -5734,7 +6027,10 @@
       "Artist": "Jake Parker",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/554.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/554.png",
+      "OtherPrintings": [
+        "JTL-248"
+      ]
     },
     {
       "Set": "IC27",
@@ -5851,7 +6147,10 @@
       "Artist": "David Buisán",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/053.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/053.png",
+      "OtherPrintings": [
+        "SEC-071"
+      ]
     },
     {
       "Set": "IC27",
@@ -5878,7 +6177,10 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/242.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/242.png",
+      "OtherPrintings": [
+        "SEC-071"
+      ]
     },
     {
       "Set": "IC27",
@@ -5905,7 +6207,10 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/420.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/420.png",
+      "OtherPrintings": [
+        "SEC-071"
+      ]
     },
     {
       "Set": "IC27",
@@ -5927,7 +6232,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/094.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/094.png",
+      "OtherPrintings": [
+        "JTL-123"
+      ]
     },
     {
       "Set": "IC27",
@@ -5949,7 +6257,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/283.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/283.png",
+      "OtherPrintings": [
+        "JTL-123"
+      ]
     },
     {
       "Set": "IC27",
@@ -5971,7 +6282,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/461.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/461.png",
+      "OtherPrintings": [
+        "JTL-123"
+      ]
     },
     {
       "Set": "IC27",
@@ -6079,7 +6393,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/010.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-024"
+      ]
     },
     {
       "Set": "IC27",
@@ -6304,7 +6621,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/192.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-244"
+      ]
     },
     {
       "Set": "IC27",
@@ -6336,7 +6656,10 @@
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/378.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/378.png",
+      "OtherPrintings": [
+        "TWI-244"
+      ]
     },
     {
       "Set": "IC27",
@@ -6368,7 +6691,10 @@
       "Artist": "Stephen Zavala",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/556.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/556.png",
+      "OtherPrintings": [
+        "TWI-244"
+      ]
     },
     {
       "Set": "IC27",
@@ -6402,7 +6728,10 @@
       "Artist": "Fernando Correa",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/059.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/059.png",
+      "OtherPrintings": [
+        "LOF-080"
+      ]
     },
     {
       "Set": "IC27",
@@ -6436,7 +6765,10 @@
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/248.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/248.png",
+      "OtherPrintings": [
+        "LOF-080"
+      ]
     },
     {
       "Set": "IC27",
@@ -6470,7 +6802,10 @@
       "Artist": "Fernando Correa",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/426.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/426.png",
+      "OtherPrintings": [
+        "LOF-080"
+      ]
     },
     {
       "Set": "IC27",
@@ -6492,7 +6827,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/T01.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "SEC-T02",
+        "LAW-T02",
+        "TS26-T03"
+      ]
     },
     {
       "Set": "IC27",
@@ -6722,7 +7066,10 @@
       "Artist": "Reno",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/177.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/177.png",
+      "OtherPrintings": [
+        "LOF-223"
+      ]
     },
     {
       "Set": "IC27",
@@ -6748,7 +7095,10 @@
       "Artist": "Reno",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/366.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/366.png",
+      "OtherPrintings": [
+        "LOF-223"
+      ]
     },
     {
       "Set": "IC27",
@@ -6774,7 +7124,10 @@
       "Artist": "Reno",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/544.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/544.png",
+      "OtherPrintings": [
+        "LOF-223"
+      ]
     },
     {
       "Set": "IC27",
@@ -6799,7 +7152,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/150.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/150.png",
+      "OtherPrintings": [
+        "SHD-193"
+      ]
     },
     {
       "Set": "IC27",
@@ -6824,7 +7180,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/339.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/339.png",
+      "OtherPrintings": [
+        "SHD-193"
+      ]
     },
     {
       "Set": "IC27",
@@ -6849,7 +7208,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/517.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/517.png",
+      "OtherPrintings": [
+        "SHD-193"
+      ]
     },
     {
       "Set": "IC27",
@@ -7103,7 +7465,11 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/105.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-68",
+        "IBH-88"
+      ]
     },
     {
       "Set": "IC27",
@@ -7166,7 +7532,11 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/294.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/294.png",
+      "OtherPrintings": [
+        "IBH-68",
+        "IBH-88"
+      ]
     },
     {
       "Set": "IC27",
@@ -7229,7 +7599,11 @@
       "Artist": "David Buisán",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/472.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/472.png",
+      "OtherPrintings": [
+        "IBH-68",
+        "IBH-88"
+      ]
     },
     {
       "Set": "IC27",
@@ -7760,7 +8134,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/154.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SHD-196"
+      ]
     },
     {
       "Set": "IC27",
@@ -7789,7 +8166,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/343.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/343.png",
+      "OtherPrintings": [
+        "SHD-196"
+      ]
     },
     {
       "Set": "IC27",
@@ -7818,7 +8198,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/521.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/521.png",
+      "OtherPrintings": [
+        "SHD-196"
+      ]
     },
     {
       "Set": "IC27",
@@ -7848,7 +8231,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/182.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "LOF-235"
+      ]
     },
     {
       "Set": "IC27",
@@ -7914,7 +8300,11 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/161.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-10",
+        "IBH-42"
+      ]
     },
     {
       "Set": "IC27",
@@ -7978,7 +8368,11 @@
       "Artist": "Envar Entertainment",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/350.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/350.png",
+      "OtherPrintings": [
+        "IBH-10",
+        "IBH-42"
+      ]
     },
     {
       "Set": "IC27",
@@ -8042,7 +8436,11 @@
       "Artist": "Envar Entertainment",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/528.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/528.png",
+      "OtherPrintings": [
+        "IBH-10",
+        "IBH-42"
+      ]
     },
     {
       "Set": "IC27",
@@ -8065,7 +8463,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/044.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/044.png",
+      "OtherPrintings": [
+        "TWI-052"
+      ]
     },
     {
       "Set": "IC27",
@@ -8088,7 +8489,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/233.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/233.png",
+      "OtherPrintings": [
+        "TWI-052"
+      ]
     },
     {
       "Set": "IC27",
@@ -8111,7 +8515,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/411.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/411.png",
+      "OtherPrintings": [
+        "TWI-052"
+      ]
     },
     {
       "Set": "IC27",
@@ -8239,7 +8646,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/173.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-214"
+      ]
     },
     {
       "Set": "IC27",
@@ -8271,7 +8681,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/362.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/362.png",
+      "OtherPrintings": [
+        "TWI-214"
+      ]
     },
     {
       "Set": "IC27",
@@ -8303,7 +8716,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/540.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/540.png",
+      "OtherPrintings": [
+        "TWI-214"
+      ]
     },
     {
       "Set": "IC27",
@@ -8334,7 +8750,11 @@
       "Artist": "Joshua Carson",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/090.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/090.png",
+      "OtherPrintings": [
+        "SOR-113",
+        "JTL-113"
+      ]
     },
     {
       "Set": "IC27",
@@ -8365,7 +8785,11 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/279.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/279.png",
+      "OtherPrintings": [
+        "SOR-113",
+        "JTL-113"
+      ]
     },
     {
       "Set": "IC27",
@@ -8396,7 +8820,11 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/457.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/457.png",
+      "OtherPrintings": [
+        "SOR-113",
+        "JTL-113"
+      ]
     },
     {
       "Set": "IC27",
@@ -8420,7 +8848,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/185.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-233"
+      ]
     },
     {
       "Set": "IC27",
@@ -8442,7 +8873,10 @@
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/373.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/373.png",
+      "OtherPrintings": [
+        "SOR-233"
+      ]
     },
     {
       "Set": "IC27",
@@ -8464,7 +8898,10 @@
       "Artist": "Stefano Landini",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/551.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/551.png",
+      "OtherPrintings": [
+        "SOR-233"
+      ]
     },
     {
       "Set": "IC27",
@@ -8561,7 +8998,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/133.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/133.png",
+      "OtherPrintings": [
+        "SOR-166"
+      ]
     },
     {
       "Set": "IC27",
@@ -8588,7 +9028,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/322.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/322.png",
+      "OtherPrintings": [
+        "SOR-166"
+      ]
     },
     {
       "Set": "IC27",
@@ -8615,7 +9058,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/500.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/500.png",
+      "OtherPrintings": [
+        "SOR-166"
+      ]
     },
     {
       "Set": "IC27",
@@ -8643,7 +9089,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/085.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SHD-104"
+      ]
     },
     {
       "Set": "IC27",
@@ -8668,7 +9117,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/274.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/274.png",
+      "OtherPrintings": [
+        "SHD-104"
+      ]
     },
     {
       "Set": "IC27",
@@ -8693,7 +9145,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/452.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/452.png",
+      "OtherPrintings": [
+        "SHD-104"
+      ]
     },
     {
       "Set": "IC27",
@@ -8724,7 +9179,10 @@
       "Artist": "Sebastián Guidobono",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/132.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/132.png",
+      "OtherPrintings": [
+        "JTL-168"
+      ]
     },
     {
       "Set": "IC27",
@@ -8755,7 +9213,10 @@
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/321.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/321.png",
+      "OtherPrintings": [
+        "JTL-168"
+      ]
     },
     {
       "Set": "IC27",
@@ -8786,7 +9247,10 @@
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/499.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/499.png",
+      "OtherPrintings": [
+        "JTL-168"
+      ]
     },
     {
       "Set": "IC27",
@@ -8882,7 +9346,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/156.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/156.png",
+      "OtherPrintings": [
+        "LOF-194"
+      ]
     },
     {
       "Set": "IC27",
@@ -8912,7 +9379,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/345.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/345.png",
+      "OtherPrintings": [
+        "LOF-194"
+      ]
     },
     {
       "Set": "IC27",
@@ -8942,7 +9412,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/523.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/523.png",
+      "OtherPrintings": [
+        "LOF-194"
+      ]
     },
     {
       "Set": "IC27",
@@ -9253,7 +9726,10 @@
       "Artist": "Derek Laufman",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/118.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/118.png",
+      "OtherPrintings": [
+        "LOF-145"
+      ]
     },
     {
       "Set": "IC27",
@@ -9282,7 +9758,10 @@
       "Artist": "Derek Laufman",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/307.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/307.png",
+      "OtherPrintings": [
+        "LOF-145"
+      ]
     },
     {
       "Set": "IC27",
@@ -9311,7 +9790,10 @@
       "Artist": "Derek Laufman",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/485.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/485.png",
+      "OtherPrintings": [
+        "LOF-145"
+      ]
     },
     {
       "Set": "IC27",
@@ -9518,7 +10000,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/011.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-026"
+      ]
     },
     {
       "Set": "IC27",
@@ -9738,7 +10223,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/137.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/137.png",
+      "OtherPrintings": [
+        "SHD-183"
+      ]
     },
     {
       "Set": "IC27",
@@ -9766,7 +10254,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/326.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/326.png",
+      "OtherPrintings": [
+        "SHD-183"
+      ]
     },
     {
       "Set": "IC27",
@@ -9794,7 +10285,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/504.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/504.png",
+      "OtherPrintings": [
+        "SHD-183"
+      ]
     },
     {
       "Set": "IC27",
@@ -9822,7 +10316,10 @@
       "Artist": "Ignacio Bazan-Lazcano",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/061.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/061.png",
+      "OtherPrintings": [
+        "LOF-084"
+      ]
     },
     {
       "Set": "IC27",
@@ -9850,7 +10347,10 @@
       "Artist": "Ignacio Bazan-Lazcano",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/250.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/250.png",
+      "OtherPrintings": [
+        "LOF-084"
+      ]
     },
     {
       "Set": "IC27",
@@ -9878,7 +10378,10 @@
       "Artist": "Ignacio Bazan-Lazcano",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/428.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/428.png",
+      "OtherPrintings": [
+        "LOF-084"
+      ]
     },
     {
       "Set": "IC27",
@@ -10291,7 +10794,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/030.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-041"
+      ]
     },
     {
       "Set": "IC27",
@@ -10314,7 +10820,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/219.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/219.png",
+      "OtherPrintings": [
+        "TWI-041"
+      ]
     },
     {
       "Set": "IC27",
@@ -10337,7 +10846,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/397.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/397.png",
+      "OtherPrintings": [
+        "TWI-041"
+      ]
     },
     {
       "Set": "IC27",
@@ -10366,7 +10878,10 @@
       "Artist": "Afif Khaled",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/072.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/072.png",
+      "OtherPrintings": [
+        "LOF-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -10395,7 +10910,10 @@
       "Artist": "Afif Khaled",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/261.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/261.png",
+      "OtherPrintings": [
+        "LOF-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -10424,7 +10942,10 @@
       "Artist": "Afif Khaled",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/439.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/439.png",
+      "OtherPrintings": [
+        "LOF-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -10496,7 +11017,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/082.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-20"
+      ]
     },
     {
       "Set": "IC27",
@@ -10596,7 +11120,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/271.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/271.png",
+      "OtherPrintings": [
+        "IBH-20"
+      ]
     },
     {
       "Set": "IC27",
@@ -10659,7 +11186,10 @@
       "Artist": "Johnny Morrow",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/449.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/449.png",
+      "OtherPrintings": [
+        "IBH-20"
+      ]
     },
     {
       "Set": "IC27",
@@ -10971,7 +11501,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/018.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/018.png",
+      "OtherPrintings": [
+        "LOF-032"
+      ]
     },
     {
       "Set": "IC27",
@@ -11003,7 +11536,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/207.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/207.png",
+      "OtherPrintings": [
+        "LOF-032"
+      ]
     },
     {
       "Set": "IC27",
@@ -11035,7 +11571,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/385.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/385.png",
+      "OtherPrintings": [
+        "LOF-032"
+      ]
     },
     {
       "Set": "IC27",
@@ -11159,7 +11698,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/191.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "LOF-250"
+      ]
     },
     {
       "Set": "IC27",
@@ -11188,7 +11730,10 @@
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/377.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/377.png",
+      "OtherPrintings": [
+        "LOF-250"
+      ]
     },
     {
       "Set": "IC27",
@@ -11217,7 +11762,10 @@
       "Artist": "Thomas Wievegg",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/555.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/555.png",
+      "OtherPrintings": [
+        "LOF-250"
+      ]
     },
     {
       "Set": "IC27",
@@ -11281,7 +11829,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/164.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "IBH-31"
+      ]
     },
     {
       "Set": "IC27",
@@ -11343,7 +11894,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/353.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/353.png",
+      "OtherPrintings": [
+        "IBH-31"
+      ]
     },
     {
       "Set": "IC27",
@@ -11405,7 +11959,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/531.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/531.png",
+      "OtherPrintings": [
+        "IBH-31"
+      ]
     },
     {
       "Set": "IC27",
@@ -11527,7 +12084,10 @@
       "Artist": "David Kegg",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/047.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/047.png",
+      "OtherPrintings": [
+        "SHD-055"
+      ]
     },
     {
       "Set": "IC27",
@@ -11557,7 +12117,10 @@
       "Artist": "David Kegg",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/236.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/236.png",
+      "OtherPrintings": [
+        "SHD-055"
+      ]
     },
     {
       "Set": "IC27",
@@ -11587,7 +12150,10 @@
       "Artist": "David Kegg",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/414.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/414.png",
+      "OtherPrintings": [
+        "SHD-055"
+      ]
     },
     {
       "Set": "IC27",
@@ -11609,7 +12175,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/096.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/096.png",
+      "OtherPrintings": [
+        "SHD-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -11631,7 +12200,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/285.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/285.png",
+      "OtherPrintings": [
+        "SHD-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -11653,7 +12225,10 @@
       "Artist": "Chris Bjors",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/463.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/463.png",
+      "OtherPrintings": [
+        "SHD-130"
+      ]
     },
     {
       "Set": "IC27",
@@ -11675,7 +12250,10 @@
       "Artist": "Joshua Carson",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/054.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/054.png",
+      "OtherPrintings": [
+        "SOR-073"
+      ]
     },
     {
       "Set": "IC27",
@@ -11697,7 +12275,10 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/243.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/243.png",
+      "OtherPrintings": [
+        "SOR-073"
+      ]
     },
     {
       "Set": "IC27",
@@ -11719,7 +12300,10 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/421.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/421.png",
+      "OtherPrintings": [
+        "SOR-073"
+      ]
     },
     {
       "Set": "IC27",
@@ -11930,7 +12514,11 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/012.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-030",
+        "HMW-032"
+      ]
     },
     {
       "Set": "IC27",
@@ -12049,7 +12637,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/051.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/051.png",
+      "OtherPrintings": [
+        "JTL-069"
+      ]
     },
     {
       "Set": "IC27",
@@ -12078,7 +12669,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/240.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/240.png",
+      "OtherPrintings": [
+        "JTL-069"
+      ]
     },
     {
       "Set": "IC27",
@@ -12107,7 +12701,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/418.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/418.png",
+      "OtherPrintings": [
+        "JTL-069"
+      ]
     },
     {
       "Set": "IC27",
@@ -12529,7 +13126,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/015.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-033"
+      ]
     },
     {
       "Set": "IC27",
@@ -12559,7 +13159,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/205.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/205.png",
+      "OtherPrintings": [
+        "JTL-033"
+      ]
     },
     {
       "Set": "IC27",
@@ -12589,7 +13192,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/383.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/383.png",
+      "OtherPrintings": [
+        "JTL-033"
+      ]
     },
     {
       "Set": "IC27",
@@ -12611,7 +13217,11 @@
       "Artist": "Brian Matyas",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/136.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/136.png",
+      "OtherPrintings": [
+        "SOR-172",
+        "TWI-174"
+      ]
     },
     {
       "Set": "IC27",
@@ -12633,7 +13243,11 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/325.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/325.png",
+      "OtherPrintings": [
+        "SOR-172",
+        "TWI-174"
+      ]
     },
     {
       "Set": "IC27",
@@ -12655,7 +13269,11 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/503.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/503.png",
+      "OtherPrintings": [
+        "SOR-172",
+        "TWI-174"
+      ]
     },
     {
       "Set": "IC27",
@@ -12789,7 +13407,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/189.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -12818,7 +13439,10 @@
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/375.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/375.png",
+      "OtherPrintings": [
+        "TWI-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -12847,7 +13471,10 @@
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/553.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/553.png",
+      "OtherPrintings": [
+        "TWI-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -12879,7 +13506,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/073.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -12909,7 +13539,10 @@
       "Artist": "François Cannels",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/262.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/262.png",
+      "OtherPrintings": [
+        "JTL-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -12939,7 +13572,10 @@
       "Artist": "François Cannels",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/440.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/440.png",
+      "OtherPrintings": [
+        "JTL-095"
+      ]
     },
     {
       "Set": "IC27",
@@ -13138,7 +13774,10 @@
       "Artist": "Marc Escachx",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/135.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/135.png",
+      "OtherPrintings": [
+        "SOR-170"
+      ]
     },
     {
       "Set": "IC27",
@@ -13160,7 +13799,10 @@
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/324.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/324.png",
+      "OtherPrintings": [
+        "SOR-170"
+      ]
     },
     {
       "Set": "IC27",
@@ -13182,7 +13824,10 @@
       "Artist": "Marc Escachx",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/502.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/502.png",
+      "OtherPrintings": [
+        "SOR-170"
+      ]
     },
     {
       "Set": "IC27",
@@ -13206,7 +13851,10 @@
       "Artist": "Envar Entertainment",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/174.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/174.png",
+      "OtherPrintings": [
+        "ASH-228"
+      ]
     },
     {
       "Set": "IC27",
@@ -13230,7 +13878,10 @@
       "Artist": "Envar Entertainment",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/363.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/363.png",
+      "OtherPrintings": [
+        "ASH-228"
+      ]
     },
     {
       "Set": "IC27",
@@ -13254,7 +13905,10 @@
       "Artist": "Envar Entertainment",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/541.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/541.png",
+      "OtherPrintings": [
+        "ASH-228"
+      ]
     },
     {
       "Set": "IC27",
@@ -13694,7 +14348,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/186.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-236"
+      ]
     },
     {
       "Set": "IC27",
@@ -13978,7 +14635,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/112.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/112.png",
+      "OtherPrintings": [
+        "SEC-146"
+      ]
     },
     {
       "Set": "IC27",
@@ -14010,7 +14670,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/301.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/301.png",
+      "OtherPrintings": [
+        "SEC-146"
+      ]
     },
     {
       "Set": "IC27",
@@ -14042,7 +14705,10 @@
       "Artist": "Sandra Chlewińska",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/479.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/479.png",
+      "OtherPrintings": [
+        "SEC-146"
+      ]
     },
     {
       "Set": "IC27",
@@ -14073,7 +14739,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/128.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/128.png",
+      "OtherPrintings": [
+        "SEC-160"
+      ]
     },
     {
       "Set": "IC27",
@@ -14104,7 +14773,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/317.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/317.png",
+      "OtherPrintings": [
+        "SEC-160"
+      ]
     },
     {
       "Set": "IC27",
@@ -14135,7 +14807,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/495.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/495.png",
+      "OtherPrintings": [
+        "SEC-160"
+      ]
     },
     {
       "Set": "IC27",
@@ -14267,7 +14942,11 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/052.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-069",
+        "SHD-070"
+      ]
     },
     {
       "Set": "IC27",
@@ -14290,7 +14969,11 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/241.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/241.png",
+      "OtherPrintings": [
+        "SOR-069",
+        "SHD-070"
+      ]
     },
     {
       "Set": "IC27",
@@ -14313,7 +14996,11 @@
       "Artist": "Joshua Carson",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/419.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/419.png",
+      "OtherPrintings": [
+        "SOR-069",
+        "SHD-070"
+      ]
     },
     {
       "Set": "IC27",
@@ -14342,7 +15029,10 @@
       "Artist": "François Cannels",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/092.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/092.png",
+      "OtherPrintings": [
+        "JTL-119"
+      ]
     },
     {
       "Set": "IC27",
@@ -14371,7 +15061,10 @@
       "Artist": "François Cannels",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/281.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/281.png",
+      "OtherPrintings": [
+        "JTL-119"
+      ]
     },
     {
       "Set": "IC27",
@@ -14400,7 +15093,10 @@
       "Artist": "François Cannels",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/459.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/459.png",
+      "OtherPrintings": [
+        "JTL-119"
+      ]
     },
     {
       "Set": "IC27",
@@ -14620,7 +15316,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/181.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "JTL-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -14652,7 +15351,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/370.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/370.png",
+      "OtherPrintings": [
+        "JTL-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -14684,7 +15386,10 @@
       "Artist": "Omercan Cirit",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/548.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/548.png",
+      "OtherPrintings": [
+        "JTL-241"
+      ]
     },
     {
       "Set": "IC27",
@@ -14811,7 +15516,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/050.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/050.png",
+      "OtherPrintings": [
+        "SEC-063"
+      ]
     },
     {
       "Set": "IC27",
@@ -14842,7 +15550,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/239.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/239.png",
+      "OtherPrintings": [
+        "SEC-063"
+      ]
     },
     {
       "Set": "IC27",
@@ -14873,7 +15584,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/417.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/417.png",
+      "OtherPrintings": [
+        "SEC-063"
+      ]
     },
     {
       "Set": "IC27",
@@ -14906,7 +15620,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/016.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-031"
+      ]
     },
     {
       "Set": "IC27",
@@ -14936,7 +15653,10 @@
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/206.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/206.png",
+      "OtherPrintings": [
+        "TWI-031"
+      ]
     },
     {
       "Set": "IC27",
@@ -14966,7 +15686,10 @@
       "Artist": "Sebastián Guidobono",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/384.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/384.png",
+      "OtherPrintings": [
+        "TWI-031"
+      ]
     },
     {
       "Set": "IC27",
@@ -15102,7 +15825,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/108.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-137"
+      ]
     },
     {
       "Set": "IC27",
@@ -15133,7 +15859,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/297.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/297.png",
+      "OtherPrintings": [
+        "TWI-137"
+      ]
     },
     {
       "Set": "IC27",
@@ -15164,7 +15893,10 @@
       "Artist": "Kyle Petchock",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/475.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/475.png",
+      "OtherPrintings": [
+        "TWI-137"
+      ]
     },
     {
       "Set": "IC27",
@@ -15276,7 +16008,10 @@
       "Artist": "Nabetse Zitro",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/088.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/088.png",
+      "OtherPrintings": [
+        "SEC-108"
+      ]
     },
     {
       "Set": "IC27",
@@ -15304,7 +16039,10 @@
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/277.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/277.png",
+      "OtherPrintings": [
+        "SEC-108"
+      ]
     },
     {
       "Set": "IC27",
@@ -15332,7 +16070,10 @@
       "Artist": "Nabetse Zitro",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/455.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/455.png",
+      "OtherPrintings": [
+        "SEC-108"
+      ]
     },
     {
       "Set": "IC27",
@@ -15365,7 +16106,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/140.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/140.png",
+      "OtherPrintings": [
+        "TWI-180"
+      ]
     },
     {
       "Set": "IC27",
@@ -15398,7 +16142,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/329.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/329.png",
+      "OtherPrintings": [
+        "TWI-180"
+      ]
     },
     {
       "Set": "IC27",
@@ -15431,7 +16178,10 @@
       "Artist": "Amad Mir",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/507.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/507.png",
+      "OtherPrintings": [
+        "TWI-180"
+      ]
     },
     {
       "Set": "IC27",
@@ -15454,7 +16204,17 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/T02.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "LAW-T03",
+        "TS26-T04",
+        "ASH-T03",
+        "HMW-T01"
+      ]
     },
     {
       "Set": "IC27",
@@ -15479,7 +16239,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/175.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-217"
+      ]
     },
     {
       "Set": "IC27",
@@ -15501,7 +16264,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/364.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/364.png",
+      "OtherPrintings": [
+        "SOR-217"
+      ]
     },
     {
       "Set": "IC27",
@@ -15523,7 +16289,10 @@
       "Artist": "Ario Murti",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/542.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/542.png",
+      "OtherPrintings": [
+        "SOR-217"
+      ]
     },
     {
       "Set": "IC27",
@@ -15646,7 +16415,10 @@
       "Artist": "Ario Anindito",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/100.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/100.png",
+      "OtherPrintings": [
+        "JTL-135"
+      ]
     },
     {
       "Set": "IC27",
@@ -15676,7 +16448,10 @@
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/289.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/289.png",
+      "OtherPrintings": [
+        "JTL-135"
+      ]
     },
     {
       "Set": "IC27",
@@ -15706,7 +16481,10 @@
       "Artist": "Ario Anindito",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/467.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/467.png",
+      "OtherPrintings": [
+        "JTL-135"
+      ]
     },
     {
       "Set": "IC27",
@@ -15738,7 +16516,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/180.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-230"
+      ]
     },
     {
       "Set": "IC27",
@@ -15767,7 +16548,10 @@
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/369.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/369.png",
+      "OtherPrintings": [
+        "TWI-230"
+      ]
     },
     {
       "Set": "IC27",
@@ -15796,7 +16580,10 @@
       "Artist": "Eslam AboShady",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/547.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/547.png",
+      "OtherPrintings": [
+        "TWI-230"
+      ]
     },
     {
       "Set": "IC27",
@@ -16018,7 +16805,10 @@
       "Artist": "André Mealha",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/171.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/171.png",
+      "OtherPrintings": [
+        "SOR-210"
+      ]
     },
     {
       "Set": "IC27",
@@ -16045,7 +16835,10 @@
       "Artist": "André Mealha",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/360.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/360.png",
+      "OtherPrintings": [
+        "SOR-210"
+      ]
     },
     {
       "Set": "IC27",
@@ -16072,7 +16865,10 @@
       "Artist": "André Mealha",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/538.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/538.png",
+      "OtherPrintings": [
+        "SOR-210"
+      ]
     },
     {
       "Set": "IC27",
@@ -16103,7 +16899,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/178.png",
       "LowPrice": "0.00",
-      "LowFoilPrice": "0.00"
+      "LowFoilPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-225"
+      ]
     },
     {
       "Set": "IC27",
@@ -16131,7 +16930,10 @@
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/367.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/367.png",
+      "OtherPrintings": [
+        "SOR-225"
+      ]
     },
     {
       "Set": "IC27",
@@ -16159,7 +16961,10 @@
       "Artist": "French Carlomagno",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "0.00",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/545.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/545.png",
+      "OtherPrintings": [
+        "SOR-225"
+      ]
     },
     {
       "Set": "IC27",
@@ -16181,7 +16986,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/095.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/095.png",
+      "OtherPrintings": [
+        "JTL-124"
+      ]
     },
     {
       "Set": "IC27",
@@ -16203,7 +17011,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/284.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/284.png",
+      "OtherPrintings": [
+        "JTL-124"
+      ]
     },
     {
       "Set": "IC27",
@@ -16225,7 +17036,10 @@
       "Artist": "EJ Dela Cruz",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/462.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/462.png",
+      "OtherPrintings": [
+        "JTL-124"
+      ]
     },
     {
       "Set": "IC27",
@@ -17105,7 +17919,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Normal",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/194.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/194.png",
+      "OtherPrintings": [
+        "SOR-246"
+      ]
     },
     {
       "Set": "IC27",
@@ -17127,7 +17944,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/380.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/380.png",
+      "OtherPrintings": [
+        "SOR-246"
+      ]
     },
     {
       "Set": "IC27",
@@ -17149,7 +17969,10 @@
       "Artist": "Brian Matyas",
       "VariantType": "Hyperspace Foil",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/558.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/IC27/558.png",
+      "OtherPrintings": [
+        "SOR-246"
+      ]
     }
   ]
 }

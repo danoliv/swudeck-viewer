@@ -1535,6 +1535,11 @@ html[data-page="builder"] body {
     line-height: 1.5;
     color: var(--text);
 }
+.card-detail-printings {
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: var(--text-muted);
+}
 .card-detail-artist {
     margin-top: 10px;
     font-size: 0.8em;

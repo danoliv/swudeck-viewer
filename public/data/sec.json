@@ -33,7 +33,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/213.png",
       "tcgplayerId": "654205",
-      "LowPrice": "0.06"
+      "LowPrice": "0.06",
+      "OtherPrintings": [
+        "IC27-169"
+      ]
     },
     {
       "Set": "SEC",
@@ -67,7 +70,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/477.png",
       "tcgplayerId": "661201",
-      "LowPrice": "0.29"
+      "LowPrice": "0.29",
+      "OtherPrintings": [
+        "IC27-169"
+      ]
     },
     {
       "Set": "SEC",
@@ -101,7 +107,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/723.png",
       "tcgplayerId": "660963",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "IC27-169"
+      ]
     },
     {
       "Set": "SEC",
@@ -135,7 +144,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/969.png",
       "tcgplayerId": "661636",
-      "LowFoilPrice": "0.69"
+      "LowFoilPrice": "0.69",
+      "OtherPrintings": [
+        "IC27-169"
+      ]
     },
     {
       "Set": "SEC",
@@ -3501,7 +3513,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/199.png",
       "tcgplayerId": "652290",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "IC27-152"
+      ]
     },
     {
       "Set": "SEC",
@@ -3537,7 +3552,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/463.png",
       "tcgplayerId": "661187",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-152"
+      ]
     },
     {
       "Set": "SEC",
@@ -3573,7 +3591,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/709.png",
       "tcgplayerId": "660949",
-      "LowFoilPrice": "0.04"
+      "LowFoilPrice": "0.04",
+      "OtherPrintings": [
+        "IC27-152"
+      ]
     },
     {
       "Set": "SEC",
@@ -3609,7 +3630,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/955.png",
       "tcgplayerId": "661622",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "IC27-152"
+      ]
     },
     {
       "Set": "SEC",
@@ -10024,7 +10048,12 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/030.png",
       "tcgplayerId": "659196",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "SOR-033",
+        "SHD-030",
+        "IC27-017"
+      ]
     },
     {
       "Set": "SEC",
@@ -10056,7 +10085,12 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/294.png",
       "tcgplayerId": "661018",
-      "LowPrice": "0.04"
+      "LowPrice": "0.04",
+      "OtherPrintings": [
+        "SOR-033",
+        "SHD-030",
+        "IC27-017"
+      ]
     },
     {
       "Set": "SEC",
@@ -10088,7 +10122,12 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/540.png",
       "tcgplayerId": "660780",
-      "LowFoilPrice": "0.03"
+      "LowFoilPrice": "0.03",
+      "OtherPrintings": [
+        "SOR-033",
+        "SHD-030",
+        "IC27-017"
+      ]
     },
     {
       "Set": "SEC",
@@ -10120,7 +10159,12 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/786.png",
       "tcgplayerId": "661453",
-      "LowFoilPrice": "0.10"
+      "LowFoilPrice": "0.10",
+      "OtherPrintings": [
+        "SOR-033",
+        "SHD-030",
+        "IC27-017"
+      ]
     },
     {
       "Set": "SEC",
@@ -11284,7 +11328,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/071.png",
       "tcgplayerId": "656856",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-053"
+      ]
     },
     {
       "Set": "SEC",
@@ -11314,7 +11361,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/335.png",
       "tcgplayerId": "661059",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-053"
+      ]
     },
     {
       "Set": "SEC",
@@ -11344,7 +11394,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/581.png",
       "tcgplayerId": "660821",
-      "LowFoilPrice": "0.05"
+      "LowFoilPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-053"
+      ]
     },
     {
       "Set": "SEC",
@@ -11374,7 +11427,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/827.png",
       "tcgplayerId": "661494",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "IC27-053"
+      ]
     },
     {
       "Set": "SEC",
@@ -13382,7 +13438,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/T02.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "LAW-T02",
+        "TS26-T03",
+        "IC27-T01"
+      ]
     },
     {
       "Set": "SEC",
@@ -13404,7 +13469,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/T04.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "LAW-T02",
+        "TS26-T03",
+        "IC27-T01"
+      ]
     },
     {
       "Set": "SEC",
@@ -15875,7 +15949,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/1014.png",
       "tcgplayerId": "661681",
-      "LowFoilPrice": "0.10"
+      "LowFoilPrice": "0.10",
+      "OtherPrintings": [
+        "ASH-258"
+      ]
     },
     {
       "Set": "SEC",
@@ -15900,7 +15977,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/258.png",
       "tcgplayerId": "653874",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "ASH-258"
+      ]
     },
     {
       "Set": "SEC",
@@ -15925,7 +16005,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/522.png",
       "tcgplayerId": "661246",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "ASH-258"
+      ]
     },
     {
       "Set": "SEC",
@@ -15950,7 +16033,10 @@
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/768.png",
       "tcgplayerId": "661008",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "ASH-258"
+      ]
     },
     {
       "Set": "SEC",
@@ -17129,7 +17215,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/184.png",
       "tcgplayerId": "659211",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "SOR-176"
+      ]
     },
     {
       "Set": "SEC",
@@ -17160,7 +17249,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/448.png",
       "tcgplayerId": "661172",
-      "LowPrice": "0.04"
+      "LowPrice": "0.04",
+      "OtherPrintings": [
+        "SOR-176"
+      ]
     },
     {
       "Set": "SEC",
@@ -17191,7 +17283,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/694.png",
       "tcgplayerId": "660934",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "SOR-176"
+      ]
     },
     {
       "Set": "SEC",
@@ -17222,7 +17317,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/940.png",
       "tcgplayerId": "661607",
-      "LowFoilPrice": "0.10"
+      "LowFoilPrice": "0.10",
+      "OtherPrintings": [
+        "SOR-176"
+      ]
     },
     {
       "Set": "SEC",
@@ -27071,7 +27169,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/1006.png",
       "tcgplayerId": "661673",
-      "LowFoilPrice": "0.05"
+      "LowFoilPrice": "0.05",
+      "OtherPrintings": [
+        "SOR-239"
+      ]
     },
     {
       "Set": "SEC",
@@ -27105,7 +27206,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/250.png",
       "tcgplayerId": "659223",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "SOR-239"
+      ]
     },
     {
       "Set": "SEC",
@@ -27139,7 +27243,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/514.png",
       "tcgplayerId": "661238",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "SOR-239"
+      ]
     },
     {
       "Set": "SEC",
@@ -27173,7 +27280,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/760.png",
       "tcgplayerId": "661000",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "SOR-239"
+      ]
     },
     {
       "Set": "SEC",
@@ -27348,7 +27458,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/146.png",
       "tcgplayerId": "654111",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "IC27-112"
+      ]
     },
     {
       "Set": "SEC",
@@ -27383,7 +27496,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/410.png",
       "tcgplayerId": "661134",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "IC27-112"
+      ]
     },
     {
       "Set": "SEC",
@@ -27418,7 +27534,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/656.png",
       "tcgplayerId": "660896",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "IC27-112"
+      ]
     },
     {
       "Set": "SEC",
@@ -27453,7 +27572,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/902.png",
       "tcgplayerId": "661569",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "IC27-112"
+      ]
     },
     {
       "Set": "SEC",
@@ -27487,7 +27609,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/160.png",
       "tcgplayerId": "654799",
-      "LowPrice": "0.02"
+      "LowPrice": "0.02",
+      "OtherPrintings": [
+        "IC27-128"
+      ]
     },
     {
       "Set": "SEC",
@@ -27521,7 +27646,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/424.png",
       "tcgplayerId": "661148",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "IC27-128"
+      ]
     },
     {
       "Set": "SEC",
@@ -27555,7 +27683,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/670.png",
       "tcgplayerId": "660910",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "IC27-128"
+      ]
     },
     {
       "Set": "SEC",
@@ -27589,7 +27720,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/916.png",
       "tcgplayerId": "661583",
-      "LowFoilPrice": "0.06"
+      "LowFoilPrice": "0.06",
+      "OtherPrintings": [
+        "IC27-128"
+      ]
     },
     {
       "Set": "SEC",
@@ -28907,7 +29041,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/063.png",
       "tcgplayerId": "655907",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "IC27-050"
+      ]
     },
     {
       "Set": "SEC",
@@ -28941,7 +29078,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/327.png",
       "tcgplayerId": "661051",
-      "LowPrice": "0.07"
+      "LowPrice": "0.07",
+      "OtherPrintings": [
+        "IC27-050"
+      ]
     },
     {
       "Set": "SEC",
@@ -28975,7 +29115,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/572.png",
       "tcgplayerId": "660813",
-      "LowFoilPrice": "0.01"
+      "LowFoilPrice": "0.01",
+      "OtherPrintings": [
+        "IC27-050"
+      ]
     },
     {
       "Set": "SEC",
@@ -29009,7 +29152,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/818.png",
       "tcgplayerId": "661486",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "IC27-050"
+      ]
     },
     {
       "Set": "SEC",
@@ -30179,7 +30325,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/108.png",
       "tcgplayerId": "660178",
-      "LowPrice": "0.03"
+      "LowPrice": "0.03",
+      "OtherPrintings": [
+        "IC27-088"
+      ]
     },
     {
       "Set": "SEC",
@@ -30210,7 +30359,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/372.png",
       "tcgplayerId": "661096",
-      "LowPrice": "0.01"
+      "LowPrice": "0.01",
+      "OtherPrintings": [
+        "IC27-088"
+      ]
     },
     {
       "Set": "SEC",
@@ -30241,7 +30393,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/618.png",
       "tcgplayerId": "660858",
-      "LowFoilPrice": "0.04"
+      "LowFoilPrice": "0.04",
+      "OtherPrintings": [
+        "IC27-088"
+      ]
     },
     {
       "Set": "SEC",
@@ -30272,7 +30427,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/864.png",
       "tcgplayerId": "661531",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "IC27-088"
+      ]
     },
     {
       "Set": "SEC",
@@ -35815,7 +35973,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/239.png",
       "tcgplayerId": "659222",
-      "LowPrice": "0.04"
+      "LowPrice": "0.04",
+      "OtherPrintings": [
+        "SOR-228"
+      ]
     },
     {
       "Set": "SEC",
@@ -35846,7 +36007,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/503.png",
       "tcgplayerId": "661227",
-      "LowPrice": "0.05"
+      "LowPrice": "0.05",
+      "OtherPrintings": [
+        "SOR-228"
+      ]
     },
     {
       "Set": "SEC",
@@ -35877,7 +36041,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/749.png",
       "tcgplayerId": "660989",
-      "LowFoilPrice": "0.09"
+      "LowFoilPrice": "0.09",
+      "OtherPrintings": [
+        "SOR-228"
+      ]
     },
     {
       "Set": "SEC",
@@ -35908,7 +36075,10 @@
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/SEC/995.png",
       "tcgplayerId": "661662",
-      "LowFoilPrice": "0.15"
+      "LowFoilPrice": "0.15",
+      "OtherPrintings": [
+        "SOR-228"
+      ]
     },
     {
       "Set": "SEC",

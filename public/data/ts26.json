@@ -425,7 +425,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T01.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-T01"
+      ]
     },
     {
       "Set": "TS26",
@@ -640,7 +643,10 @@
       "MarketPrice": "0.00",
       "FoilPrice": "0.00",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T02.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "TWI-T02"
+      ]
     },
     {
       "Set": "TS26",
@@ -976,7 +982,16 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T03.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T01",
+        "SHD-T01",
+        "JTL-T03",
+        "LOF-T01",
+        "SEC-T02",
+        "LAW-T02",
+        "IC27-T01"
+      ]
     },
     {
       "Set": "TS26",
@@ -2203,7 +2218,17 @@
       "MarketPrice": "0.00",
       "FoilPrice": "",
       "FrontArt": "https://cdn.swu-db.com/images/cards/TS26/T04.png",
-      "LowPrice": "0.00"
+      "LowPrice": "0.00",
+      "OtherPrintings": [
+        "SOR-T02",
+        "SHD-T02",
+        "JTL-T04",
+        "LOF-T02",
+        "LAW-T03",
+        "ASH-T03",
+        "HMW-T01",
+        "IC27-T02"
+      ]
     },
     {
       "Set": "TS26",

@@ -33,7 +33,10 @@
       "VariantType": "Costco Exclusive",
       "MarketPrice": "0.00",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/CST/003.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/CST/003.png",
+      "OtherPrintings": [
+        "ASH-158"
+      ]
     },
     {
       "Set": "CST",
@@ -67,7 +70,10 @@
       "VariantType": "Costco Exclusive",
       "MarketPrice": "0.00",
       "FoilPrice": "",
-      "FrontArt": "https://cdn.swu-db.com/images/cards/CST/002.png"
+      "FrontArt": "https://cdn.swu-db.com/images/cards/CST/002.png",
+      "OtherPrintings": [
+        "ASH-059"
+      ]
     }
   ]
 }
