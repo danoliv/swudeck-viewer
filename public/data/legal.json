@@ -1,9 +1,27 @@
 {
   "premier": {
-    "sets": ["JTL", "LOF", "IBH", "SEC", "LAW", "ASH", "HMW", "IC27"],
-    "bannedCards": []
+    "sets": [
+      "JTL",
+      "LOF",
+      "IBH",
+      "SEC",
+      "LAW",
+      "ASH",
+      "HMW",
+      "IC27"
+    ],
+    "bannedCards": [
+      "ASH_011",
+      "ASH_052",
+      "ASH_079",
+      "ASH_248",
+      "SEC_179"
+    ]
   },
   "eternal": {
-    "bannedCards": ["JTL_140", "JTL_170"]
+    "bannedCards": [
+      "JTL_140",
+      "JTL_170"
+    ]
   }
 }
